@@ -111,6 +111,8 @@ def main(write=True):
         if row["flag"] == "red" and (p.get("injury_status") or "").lower() in ("ir", "out", "sus", "pup", "nfi"):
             continue  # nobody needs an IR stash surfaced as a waiver target
         trending.append(row)
+    # skill players first; K/DEF are streamed by matchup, not by add count
+    trending.sort(key=lambda r: (r["pos"] in ("K", "DEF"), -r["adds"]))
     trending = trending[:20]
 
     # --- this week's league transactions -----------------------------------

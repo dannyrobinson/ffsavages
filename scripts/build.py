@@ -48,7 +48,7 @@ def main():
     else:
         data = json.loads((ROOT / "data/sweep.json").read_text())
     # league calendar, cheap and cached with the sweep
-    if fetch or "league" not in data:
+    if fetch or "two_week_rounds" not in (data.get("league") or {}):
         import sleeper
         lg = sleeper.get(f"league/{sleeper.LEAGUE}")
         st = lg.get("settings") or {}

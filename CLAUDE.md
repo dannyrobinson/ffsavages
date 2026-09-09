@@ -53,6 +53,9 @@ republishes, and a scheduled Claude cloud agent writes the narrative briefing.
 - `data/` and `site/` — gitignored build outputs.
 
 ## How a briefing refresh works (this is the recurring job)
+Runs as the Claude cloud routine "Robinsavages briefing" (Sun/Tue/Thu/Sat 7 AM PT, model claude-sonnet-5,
+manage at https://claude.ai/code/routines/trig_01H2oT2z2gAX3SJTUo788aFw). The GitHub Action separately
+re-sweeps Sleeper data on its own schedule; both end in a Pages deploy.
 1. `python3 scripts/build.py` — sweeps Sleeper and bakes the data. Read `data/sweep.md`.
 2. Web-search news for every AMBER/RED player and for anything spiking in the `trending` list (a spike
    usually means an injury to the starter ahead of him). Check Danny's QBs first, then Nabers.
