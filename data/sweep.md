@@ -1,9 +1,9 @@
-# Sleeper sweep — Week 1 · Wed Sep 9, 2026 10:54 AM PT
+# Sleeper sweep — Week 1 · Wed Sep 9, 2026 10:55 AM PT
 
 Record 0-0 · FAAB $150 left of $150
 
 ## Roster
-- GREEN QB  Caleb Williams (CHI, START) — Healthy, starting · news Sep 3
+- GREEN QB  Caleb Williams (CHI, START) — Healthy, starting · news Sep 4
 - GREEN QB  Joe Burrow (CIN, START) — Healthy, starting · news Sep 3
 - GREEN QB  Malik Willis (MIA, BN) — Healthy, starting · news Sep 8
 - GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 5
@@ -11,13 +11,13 @@ Record 0-0 · FAAB $150 left of $150
 - AMBER RB  Jordan Mason (MIN, BN) — RB2 on the depth chart · news Sep 5
 - GREEN RB  MarShawn Lloyd (GB, BN) — Healthy, starting · news Sep 9
 - GREEN RB  Quinshon Judkins (CLE, START) — Healthy, starting · news Sep 3
-- GREEN WR  A.J. Brown (NE, START) — Healthy, starting · news Sep 8
+- GREEN WR  A.J. Brown (NE, START) — Healthy, starting · news Sep 9
 - GREEN WR  Alec Pierce (IND, BN) — Healthy, starting · news Sep 7
 - GREEN WR  Jaylen Waddle (DEN, START) — Healthy, starting · news Sep 4
 - AMBER WR  Malik Nabers (NYG, START) — Questionable · Knee - ACL · Surgery · news Sep 8
 - GREEN TE  Dalton Schultz (HOU, BN) — Healthy, starting · news Sep 7
 - GREEN TE  Juwan Johnson (NO, START) — Healthy, starting · news Sep 7
-- GREEN K   Ka'imi Fairbairn (HOU, START) — Healthy, starting · news Aug 28
+- GREEN K   Ka'imi Fairbairn (HOU, START) — Healthy, starting · news Aug 29
 - GREEN DEF Detroit Lions (DET, START) — Healthy, starting
 
 ## Free-agent QBs who start for their NFL team

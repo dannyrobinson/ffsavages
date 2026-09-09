@@ -1,6 +1,6 @@
 {
- "generated": "Wed Sep 9, 2026 10:54 AM PT",
- "generated_ms": 1788976475446,
+ "generated": "Wed Sep 9, 2026 10:55 AM PT",
+ "generated_ms": 1788976529967,
  "season": "2026",
  "week": 1,
  "faab_used": 0,
@@ -16,7 +16,7 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 3",
+   "news": "Sep 4",
    "news_ms": 1788480915807,
    "slot": "START"
   },
@@ -120,7 +120,7 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "LWR1",
-   "news": "Sep 8",
+   "news": "Sep 9",
    "news_ms": 1788932723019,
    "slot": "START"
   },
@@ -198,7 +198,7 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "K1",
-   "news": "Aug 28",
+   "news": "Aug 29",
    "news_ms": 1787986543802,
    "slot": "START"
   },
@@ -226,8 +226,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 5",
-   "news_ms": 1788629718424
+   "news": "Sep 9",
+   "news_ms": 1788975634301
   }
  ],
  "trending": [
@@ -253,7 +253,7 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "SWR2",
-   "news": "Sep 4",
+   "news": "Sep 5",
    "news_ms": 1788576324442,
    "adds": 346472
   },
@@ -266,7 +266,7 @@
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 7",
+   "news": "Sep 8",
    "news_ms": 1788843345303,
    "adds": 255204
   },
@@ -487,7 +487,7 @@
    "why": "WR4 on the depth chart",
    "injury": null,
    "depth": "SWR4",
-   "news": "Sep 8",
+   "news": "Sep 9",
    "news_ms": 1788915925425,
    "adds": 54018
   }
@@ -568,7 +568,7 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 3",
+    "news": "Sep 4",
     "news_ms": 1788493816928
    },
    {
@@ -580,7 +580,7 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 8",
+    "news": "Sep 9",
     "news_ms": 1788914121512
    },
    {
@@ -616,7 +616,7 @@
     "why": "Questionable \u00b7 Knee - ACL \u00b7 Surgery",
     "injury": "Questionable",
     "depth": "TE1",
-    "news": "Sep 3",
+    "news": "Sep 4",
     "news_ms": 1788485116064
    },
    {
@@ -628,7 +628,7 @@
     "why": "Questionable \u00b7 Illness",
     "injury": "Questionable",
     "depth": "RB1",
-    "news": "Sep 2",
+    "news": "Sep 3",
     "news_ms": 1788399334998
    },
    {
@@ -652,7 +652,7 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "QB1",
-    "news": "Sep 4",
+    "news": "Sep 5",
     "news_ms": 1788575124438
    },
    {
@@ -664,7 +664,7 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "K1",
-    "news": "Aug 27",
+    "news": "Aug 28",
     "news_ms": 1787898057539
    },
    {
