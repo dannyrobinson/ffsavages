@@ -41,7 +41,7 @@ jobs:
           git add data/sweep.json data/sweep.md
           if git diff --cached --quiet; then echo "sweep unchanged"; else
             git commit -m "Sweep: $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git pull --rebase origin main
+            git pull --rebase --autostash origin main   # build.py rewrites app/gm.html in place
             git push origin HEAD:main
           fi
       - uses: actions/upload-pages-artifact@v3
