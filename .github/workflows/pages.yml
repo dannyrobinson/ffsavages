@@ -1,0 +1,47 @@
+name: Sweep Sleeper and publish the GM app
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Pacific time is UTC-7 in season. 14:00 UTC = 7 AM PT.
+    - cron: "0 14 * * 2"   # Tue 7 AM PT   — waiver day
+    - cron: "0 14 * * 3"   # Wed 7 AM PT   — claims have cleared
+    - cron: "0 14 * * 4"   # Thu 7 AM PT   — TNF lock day
+    - cron: "0 14 * * 6"   # Sat 7 AM PT   — final designations are in
+    - cron: "0 14 * * 0"   # Sun 7 AM PT   — inactives morning
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sweep Sleeper and bake the app
+        run: python3 scripts/build.py
+      - name: Show the sweep
+        run: cat data/sweep.md
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

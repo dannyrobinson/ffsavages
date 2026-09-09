@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Robinsavages War Room</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#F1F3F6; --panel:#FFFFFF; --ink:#141C26; --ink2:#4E5A68; --ink3:#8B95A3; --line:#D8DDE4; --line2:#E9ECF0;
+  --mine:#1B6E4B; --mine-bg:#DDF0E6; --taken:#9AA3AE; --taken-bg:#EEF0F2;
+  --qb:#6B3FA0; --rb:#1E7A4F; --wr:#B7561C; --te:#2A5DA8; --kd:#5F6B78;
+  --qb-bg:#EFE7F7; --rb-bg:#E2F1E8; --wr-bg:#F8E8DC; --te-bg:#E2EBF7; --kd-bg:#E8EBEE;
+  --warn:#B4460F; --warn-bg:#FBE9DF; --focus:#2A5DA8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111820; --panel:#19222C; --ink:#EAEFF4; --ink2:#AAB5C2; --ink3:#6F7C8A; --line:#2A3540; --line2:#222C36;
+    --mine:#5CC996; --mine-bg:#173627; --taken:#5A6570; --taken-bg:#151C24;
+    --qb:#C9A6F0; --rb:#7BD3A5; --wr:#F0A56E; --te:#8FB3F0; --kd:#A5B0BC;
+    --qb-bg:#2A2138; --rb-bg:#16302A; --wr-bg:#3A2619; --te-bg:#1B2A42; --kd-bg:#222A33;
+    --warn:#F2A276; --warn-bg:#3A2418; --focus:#8FB3F0;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111820; --panel:#19222C; --ink:#EAEFF4; --ink2:#AAB5C2; --ink3:#6F7C8A; --line:#2A3540; --line2:#222C36;
+  --mine:#5CC996; --mine-bg:#173627; --taken:#5A6570; --taken-bg:#151C24;
+  --qb:#C9A6F0; --rb:#7BD3A5; --wr:#F0A56E; --te:#8FB3F0; --kd:#A5B0BC;
+  --qb-bg:#2A2138; --rb-bg:#16302A; --wr-bg:#3A2619; --te-bg:#1B2A42; --kd-bg:#222A33;
+  --warn:#F2A276; --warn-bg:#3A2418; --focus:#8FB3F0;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.45;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+button:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;text-wrap:balance;margin:0;line-height:1.05}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+.wrap{max-width:820px;margin:0 auto;padding:0 14px 60px}
+
+/* header */
+.hdr{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:20px 0 12px;border-bottom:2px solid var(--ink)}
+.hdr h1{font-size:34px;font-weight:700;letter-spacing:.01em;text-transform:uppercase}
+.hdr .sub{color:var(--ink2);font-size:13px;margin-top:4px}
+.hdr .sub b{color:var(--ink);font-weight:600}
+.reset{font-size:12px;color:var(--ink3);text-decoration:underline;text-underline-offset:3px;white-space:nowrap;padding-bottom:6px}
+
+/* pick tracker */
+.tracker{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 8px;border-bottom:1px solid var(--line)}
+.trk{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.trk .big{font-family:"Barlow Condensed",sans-serif;font-size:36px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.trk .lbl{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:600}
+.trk .next{font-size:13px;color:var(--ink2)}
+.trk .next b{color:var(--ink);font-weight:600}
+.trk .roster{display:flex;flex-wrap:wrap;gap:4px;justify-content:flex-end;max-width:210px}
+.slot{font-family:"IBM Plex Mono",monospace;font-size:10.5px;padding:2px 5px;border-radius:4px;border:1px dashed var(--line);color:var(--ink3);line-height:1.3}
+.slot.filled{border-style:solid;color:var(--ink);background:var(--line2)}
+.slot.filled.QB{background:var(--qb-bg);color:var(--qb);border-color:transparent}
+.slot.filled.RB{background:var(--rb-bg);color:var(--rb);border-color:transparent}
+.slot.filled.WR{background:var(--wr-bg);color:var(--wr);border-color:transparent}
+.slot.filled.TE{background:var(--te-bg);color:var(--te);border-color:transparent}
+.slot.filled.K,.slot.filled.DEF{background:var(--kd-bg);color:var(--kd);border-color:transparent}
+
+/* tabs */
+.tabs{display:flex;gap:4px;margin:14px 0 10px;border-bottom:1px solid var(--line)}
+.tab{padding:8px 12px;font-family:"Barlow Condensed",sans-serif;font-size:18px;font-weight:600;text-transform:uppercase;letter-spacing:.03em;color:var(--ink3);border-bottom:3px solid transparent;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--ink);border-color:var(--ink)}
+.pane[hidden]{display:none}
+
+/* filters */
+.filters{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+.chip{font-size:12.5px;font-weight:600;padding:5px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink2);background:var(--panel)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip.QB[aria-pressed="true"]{background:var(--qb);border-color:var(--qb);color:#fff}
+.chip.RB[aria-pressed="true"]{background:var(--rb);border-color:var(--rb);color:#fff}
+.chip.WR[aria-pressed="true"]{background:var(--wr);border-color:var(--wr);color:#fff}
+.chip.TE[aria-pressed="true"]{background:var(--te);border-color:var(--te);color:#fff}
+.chip.toggle{margin-left:auto}
+.search{flex:1 1 120px;min-width:110px;font:inherit;font-size:13px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.hint{font-size:12px;color:var(--ink3);margin:0 0 10px}
+
+/* tier blocks */
+.tier{margin:0 0 14px}
+.tier h3{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink2);padding:4px 0 6px;display:flex;align-items:baseline;gap:8px}
+.tier h3 .when{font-family:"IBM Plex Sans",sans-serif;font-size:11.5px;font-weight:500;text-transform:none;letter-spacing:0;color:var(--ink3)}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.row{display:grid;grid-template-columns:34px 44px 1fr auto;align-items:center;gap:8px;padding:8px 10px;border-top:1px solid var(--line2);width:100%;text-align:left}
+.row:first-child{border-top:0}
+.row .rk{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink3);font-variant-numeric:tabular-nums}
+.row .pos{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;padding:2px 0;text-align:center;border-radius:5px}
+.pos.QB{background:var(--qb-bg);color:var(--qb)} .pos.RB{background:var(--rb-bg);color:var(--rb)} .pos.WR{background:var(--wr-bg);color:var(--wr)} .pos.TE{background:var(--te-bg);color:var(--te)} .pos.K,.pos.DEF{background:var(--kd-bg);color:var(--kd)}
+.row .nm{font-weight:600;font-size:14.5px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;min-width:0}
+.row .tm{font-weight:500;color:var(--ink3);font-size:12px}
+.row .note{flex-basis:100%;font-size:12px;color:var(--ink2);font-weight:400;line-height:1.35}
+.row .note.warn{color:var(--warn)}
+.row .st{font-family:"Barlow Condensed",sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:5px;border:1px solid var(--line);color:var(--ink3);min-width:58px;text-align:center}
+.row.taken{opacity:.5} .row.taken .nm{text-decoration:line-through;text-decoration-color:var(--taken)}
+.row.taken .st{background:var(--taken-bg);color:var(--taken)}
+.row.mine{background:var(--mine-bg)} .row.mine .st{background:var(--mine);border-color:var(--mine);color:#fff}
+.row .tg{display:none}.row.target .tg{display:inline-block;font-family:"Barlow Condensed",sans-serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mine);border:1px solid var(--mine);border-radius:4px;padding:0 4px;line-height:1.4}
+.empty{padding:14px;color:var(--ink3);font-size:13px}
+
+/* plan */
+.plan{display:grid;gap:8px}
+.pk{display:grid;grid-template-columns:64px 1fr;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.pk .no{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.pk .no small{display:block;font-size:11px;font-weight:600;letter-spacing:.08em;color:var(--ink3);margin-top:3px;font-family:"IBM Plex Sans",sans-serif}
+.pk .aim{font-family:"Barlow Condensed",sans-serif;font-size:19px;font-weight:600;letter-spacing:.01em;margin-bottom:2px}
+.pk .why{font-size:13px;color:var(--ink2);line-height:1.4}
+.pk .why b{color:var(--ink);font-weight:600}
+.pk.done{opacity:.55}
+.pk.now{border-color:var(--mine);box-shadow:inset 3px 0 0 var(--mine)}
+
+/* notes */
+.notes h2{font-size:22px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin:18px 0 8px}
+.notes p{max-width:62ch;margin:0 0 10px;color:var(--ink2)}
+.notes p b{color:var(--ink);font-weight:600}
+.inj{display:grid;gap:6px}
+.inj div{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;color:var(--ink2)}
+.inj div b{color:var(--ink);font-weight:600}
+.src{font-size:12px;color:var(--ink3);margin-top:20px;line-height:1.6}
+.src a{color:var(--ink2)}
+/* live + suggestions */
+.live{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink2);padding:8px 2px 0}
+.live .dot{width:8px;height:8px;border-radius:50%;background:var(--ink3);flex:none}
+.live.on .dot{background:var(--mine);box-shadow:0 0 0 3px var(--mine-bg)}
+.live.err .dot{background:var(--warn)}
+.live #liveText{flex:1;min-width:0}
+.chip.small{font-size:11px;padding:3px 8px}
+.sugg{background:var(--panel);border:1px solid var(--mine);box-shadow:inset 4px 0 0 var(--mine);border-radius:10px;padding:10px 12px 10px 16px;margin:12px 0 0}
+.sugg .lbl{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mine);font-weight:600;margin-bottom:4px}
+.sugg .room{font-size:12.5px;color:var(--ink2);margin-bottom:8px}
+.sugg .room b{color:var(--ink);font-weight:600}
+.sugg ol{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.sugg li{display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:start}
+.sugg li .pos{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:14px;letter-spacing:.04em;padding:2px 0;text-align:center;border-radius:5px;margin-top:2px}
+.sugg li .who{font-weight:600;font-size:14.5px}
+.sugg li .why{font-size:12px;color:var(--ink2);line-height:1.35}
+.sugg li:first-child .who{font-size:16px}
+.offb{font-size:12px;color:var(--ink3);margin-top:8px}
+@media (max-width:560px){
+  .trk{grid-template-columns:auto 1fr;gap:10px}
+  .trk .roster{grid-column:1 / -1;justify-content:flex-start;max-width:none}
+  .hdr h1{font-size:28px}
+}
+@media (prefers-reduced-motion:no-preference){ .row,.pk{transition:background .15s,opacity .15s} }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hdr">
+    <div>
+      <h1>Robinsavages War Room</h1>
+      <div class="sub">West Van Super Studs · 12-team superflex PPR · pick <b>6</b> · Tue Sept 8, 7:00 PM PT · no keepers · <b>updated 6 PM draft night</b></div>
+    </div>
+    <button class="reset" id="reset">Reset board</button>
+  </header>
+
+  <div class="tracker">
+    <div class="trk">
+      <div>
+        <div class="lbl">Your next pick</div>
+        <div class="big" id="nextPick">1.06</div>
+      </div>
+      <div class="next" id="nextInfo"></div>
+      <div class="roster" id="roster"></div>
+    </div>
+    <div class="live" id="live">
+      <span class="dot" id="liveDot"></span>
+      <span id="liveText">Connecting to Sleeper…</span>
+      <button class="chip small" id="liveToggle" aria-pressed="true">Live</button>
+    </div>
+  </div>
+
+  <div class="sugg" id="sugg" hidden></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-pane="board">Board</button>
+    <button class="tab" role="tab" aria-selected="false" data-pane="plan">Pick plan</button>
+    <button class="tab" role="tab" aria-selected="false" data-pane="notes">Notes</button>
+  </div>
+
+  <section class="pane" id="board">
+    <div class="filters">
+      <button class="chip" aria-pressed="true" data-pos="ALL">All</button>
+      <button class="chip QB" aria-pressed="false" data-pos="QB">QB</button>
+      <button class="chip RB" aria-pressed="false" data-pos="RB">RB</button>
+      <button class="chip WR" aria-pressed="false" data-pos="WR">WR</button>
+      <button class="chip TE" aria-pressed="false" data-pos="TE">TE</button>
+      <input class="search" id="q" type="search" placeholder="Find a player" aria-label="Find a player">
+      <button class="chip toggle" id="hideTaken" aria-pressed="false">Hide taken</button>
+    </div>
+    <p class="hint">Live picks from Sleeper mark themselves. For anything the feed misses, tap once for taken, twice for yours, again to clear. Tiers are for this league's format — superflex, full PPR, +0.5 per TE catch.</p>
+    <div id="tiers"></div>
+  </section>
+
+  <section class="pane" id="plan" hidden>
+    <p class="hint">Snake draft from slot 6, no keepers. Each card is your pick, who you're aiming for, and the fallback if the run gets there first. Cards fade as you fill them in.</p>
+    <div class="plan" id="planList"></div>
+  </section>
+
+  <section class="pane notes" id="notes" hidden>
+    <h2>The one idea</h2>
+    <p>With two QB slots and 12 teams, <b>24 quarterbacks start every week</b> and there are maybe 26 you'd actually want. An elite QB scores 23–25 a week; the QB you'd otherwise start in your superflex slot scores 13–14. That 10-point weekly gap is the biggest edge on the board, and it's bigger than Gibbs over a mid-RB2.</p>
+    <h2>But this room was a 1QB league last year</h2>
+    <p>Superflex is <b>new to this league in 2026</b>. Last year's draft (1QB, same 12 managers) went <b>zero QBs in round 1</b>, four in round 2 (Allen at 13, Lamar 15, Daniels 16, Hurts 24), then none until Burrow and Mahomes at 45–46. You won it at 11–3 with Kyler in round 7 and Tua in round 13. Rooms like this usually under-adjust to a new superflex slot: some managers will read one article and go QB early, most will draft the way they always have. That means QBs will probably go <b>later here than industry ADP</b>, and your second and third QB can come cheaper than the rankings say.</p>
+    <p>The three managers who took QBs early last year are picking from <b>slots 12, 1 and 2</b> this year (TheBigHelmet, EasyIP, kwiksl). Expect picks 1–2 and 12–13 to be QB-heavy; the rest of the room is the wild card.</p>
+    <h2>Read the room at 1.06</h2>
+    <p>Look at picks 1–5 before you decide. <b>If three or more are QBs</b>, the room has adjusted — take the best tier-1 QB left (Maye, Burrow, Daniels, Lamar) and don't overthink it. <b>If two or fewer are QBs</b>, the room is drafting like 2025 — take <b>Gibbs, Bijan or Chase</b>, because they will not be there at 19, and a top-9 QB almost certainly will. Either way you leave round 3 with at least one QB1 and ideally two.</p>
+    <h2>Rounds 2–3: get to two QBs</h2>
+    <p>Your picks are 19 and 30. If you took a skill player at 6, take the best QB at 19 and another at 30 if a top-14 QB is there — two starting QBs by pick 30 puts you ahead of most of this room. If you took a QB at 6 and another tier-1 QB survived to 19, take him too; a WR1 will still be there at 30 in this room. What you should not do is leave round 3 with zero quarterbacks.</p>
+    
+<h2>Tight end is worth more here</h2>
+    <p>Half a point per catch on top of full PPR means Bowers, McBride, Loveland and Warren are effectively WR2s. If one falls to 43, that's a better pick than the fifth-best RB on the board. Don't reach for one at 30, though — QB or WR first.</p>
+    <h2>Third QB</h2>
+    <p>Take one around round 8–9 (Shough, Darnold, Ward, Daniel Jones, Stroud, Bryce Young). Bye weeks with two starting QBs will bite, and a spare QB is the best trade chip in a 2QB league by October.</p>
+    <h2>No keepers</h2>
+    <p>Confirmed with Danny: nobody keeps anyone, everyone drafts from scratch. McCaffrey is back in the pool — he's an RB1 on the board, but at 30 with his injury history he's a round-3/4 pick here, not a round-1 pick.</p>
+    
+<h2>Injury flags — updated draft night (Sept 8)</h2>
+    <div class="inj">
+      <div><b>Patrick Mahomes (KC)</b> — it's a torn ACL, not a tweak. Reid says a "good chance" he starts Monday night, but the plan is run-heavy while he gets up to speed. QB2 price at 30, not QB1 price at 19. <b>Kenneth Walker</b> is the winner.</div>
+      <div><b>Ja'Marr Chase (CIN)</b> — planted awkwardly in camp, practised Monday, no restrictions expected. Draft him like nothing happened. Higgins (heel) also back.</div>
+      <div><b>Ashton Jeanty (LV)</b> — ankle trending the right way for Week 1, but rookie Mike Washington earned work in preseason. Discount him half a tier; buy if he slides past 30.</div>
+      <div><b>Malik Nabers (NYG)</b> — off ACL/meniscus plus a cleanup; "has a chance" for SNF but hasn't committed. Round 4 is still fair, round 3 is a reach.</div>
+      <div><b>TreVeyon Henderson (NE)</b> — DNP Monday and Tuesday, likely out Wednesday night. <b>Rhamondre Stevenson</b> becomes a near-workhorse; he moved up the board.</div>
+      <div><b>Alvin Kamara (NO)</b> — knee, expected out Week 1. <b>Travis Etienne</b> gets one of the biggest Week 1 workloads in the league.</div>
+      <div><b>Michael Penix Jr. (ATL)</b> — knee; told the team he isn't ready. <b>Tua</b> is the Week 1 starter, short leash. Tua moved up, Penix down.</div>
+      <div><b>Josh Jacobs (GB)</b> — exempt list, court date moved up to Sept 10. Nothing soon. <b>MarShawn Lloyd</b> is the lead back.</div>
+      <div><b>Isiah Pacheco (DET)</b> — IR with a back problem; GM only "hopes" he returns this year. No longer the Gibbs handcuff.</div>
+      <div><b>Jeremiyah Love (ARI)</b> — ankle, missed four weeks. Allgeier is listed as the starter; Love will be eased in. Dropped a tier.</div>
+      <div><b>De'Von Achane (MIA)</b>, <b>Breece Hall (NYJ)</b>, <b>Puka Nacua (LAR)</b>, <b>Daniel Jones (IND)</b>, <b>Tyler Warren (IND)</b>, <b>Kenneth Walker (KC)</b> — all off their teams' injury reports. Take any lingering discount.</div>
+      <div><b>Rome Odunze (CHI)</b> — vague "leg" injury, hasn't practised, day-to-day. If he sits, Burden and Loveland both jump.</div>
+      <div><b>Emeka Egbuka (TB)</b> — turf toe, back at practice Monday, tentatively expected to play but will carry a designation.</div>
+      <div><b>George Kittle (SF)</b>, <b>Mike Evans (SF)</b> — both expected Thursday in Australia; Kittle's snaps will be capped early.</div>
+      <div><b>Jonathon Brooks (CAR)</b> — general soreness, side work Monday; Hubbard leads that timeshare for now.</div>
+      <div><b>Jordyn Tyson (NO)</b> IR ≥4 games · <b>Zach Charbonnet (SEA)</b> PUP ≥4 games (Price is the guy) · <b>Keaton Mitchell (LAC)</b> 5+ missed practices · <b>LeQuint Allen (JAC)</b> likely out (Tuten gets 3rd downs) · <b>Kyle Monangai (CHI)</b> may miss Wk 1–2.</div>
+    </div>
+    <div class="src">Last year's draft order and QB timing come from your league's 2025 draft on Sleeper. Rankings are a blend of Draft Buddy superflex (Aug 30), Pro Football Network superflex flex &amp; QB rankings, FantasyPros expert consensus (Sept 3) and SI's superflex top 200, adjusted for this league's scoring and for injury news through the afternoon of Sept 8 (Rotoworld/NBC, Yahoo, FantasyPros, ESPN team reports). Player–team listings vary slightly between sources this close to cutdowns; the board follows the most recent one.</div>
+  </section>
+</div>
+
+<script>
+// [rank, name, pos, team, tier, note, warn]
+const P = [
+[1, "Josh Allen", "QB", "BUF", 1, "Consensus QB1 every format"],
+[2, "Lamar Jackson", "QB", "BAL", 1, ""],
+[3, "Drake Maye", "QB", "NE", 1, "Now throwing to A.J. Brown"],
+[4, "Joe Burrow", "QB", "CIN", 1, "Chase + Higgins, throws every down"],
+[5, "Jayden Daniels", "QB", "WAS", 1, "Rushing floor"],
+[6, "Jalen Hurts", "QB", "PHI", 2, "Tush-push TDs"],
+[7, "Caleb Williams", "QB", "CHI", 2, "Big year-two leap in 2025"],
+[8, "Dak Prescott", "QB", "DAL", 2, "Lamb + Pickens"],
+[9, "Justin Herbert", "QB", "LAC", 2, ""],
+[10, "Jahmyr Gibbs", "RB", "DET", 1, "Best non-QB in PPR"],
+[11, "Bijan Robinson", "RB", "ATL", 1, ""],
+[12, "Ja'Marr Chase", "WR", "CIN", 1, "Knee scare in camp — practised Mon, full go. Still the only non-QB worth it at 1.06"],
+[13, "Puka Nacua", "WR", "LAR", 1, "Groin soreness, expected Week 1"],
+[14, "Amon-Ra St. Brown", "WR", "DET", 1, "PPR machine"],
+[15, "Jaxon Smith-Njigba", "WR", "SEA", 1, ""],
+[16, "Trevor Lawrence", "QB", "JAC", 3, "Sneaky QB1 upside"],
+[17, "Jaxson Dart", "QB", "NYG", 3, "Rushing floor, Nabers back"],
+[18, "Bo Nix", "QB", "DEN", 3, "Waddle added"],
+[19, "Brock Purdy", "QB", "SF", 3, "Evans + Kittle + CMC"],
+[20, "Jonathan Taylor", "RB", "IND", 1, "Daniel Jones offence was good for him"],
+[21, "Matthew Stafford", "QB", "LAR", 3, "Back tightness, playing Week 1"],
+[22, "CeeDee Lamb", "WR", "DAL", 2, ""],
+[23, "A.J. Brown", "WR", "NE", 2, "Maye's new WR1"],
+[24, "Justin Jefferson", "WR", "MIN", 2, "Kyler now throwing to him"],
+[25, "James Cook", "RB", "BUF", 2, ""],
+[26, "Kyler Murray", "QB", "MIN", 3, "Jefferson + Addison"],
+[27, "Jared Goff", "QB", "DET", 3, "Pure passer, no rush floor"],
+[28, "Patrick Mahomes", "QB", "KC", 3, "Off a torn ACL — Reid says 'good chance' he starts MNF. Expect run-heavy early", "warn"],
+[29, "Christian McCaffrey", "RB", "SF", 1, "Age 30, 49ers offence loaded; RB1 if healthy"],
+[30, "Chase Brown", "RB", "CIN", 2, ""],
+[31, "Ashton Jeanty", "RB", "LV", 2, "Ankle — trending toward Wk 1; rookie Mike Washington carved out a role", "warn"],
+[32, "Malik Nabers", "WR", "NYG", 2, "Off ACL + a cleanup procedure — 'has a chance' Wk 1. Watch practice reports", "warn"],
+[33, "Drake London", "WR", "ATL", 2, ""],
+[34, "Nico Collins", "WR", "HOU", 2, ""],
+[35, "Brock Bowers", "TE", "LV", 1, "TE premium makes him a WR2"],
+[36, "Trey McBride", "TE", "ARI", 1, "Target hog"],
+[37, "Kenneth Walker III", "RB", "KC", 2, "Chiefs lead back — run-heavy plan while Mahomes ramps is a real boost"],
+[38, "Omarion Hampton", "RB", "LAC", 2, ""],
+[39, "Saquon Barkley", "RB", "PHI", 2, "Age/workload risk, still elite"],
+[40, "Derrick Henry", "RB", "BAL", 2, ""],
+[41, "De'Von Achane", "RB", "MIA", 2, "Calf is behind him — not on Miami's injury report. Value at 43–54"],
+[42, "Rashee Rice", "WR", "KC", 2, ""],
+[43, "Chris Olave", "WR", "NO", 2, "Shough's WR1; Tyson on IR, Olave's target share is enormous"],
+[44, "Jaylen Waddle", "WR", "DEN", 2, "Nix's WR1"],
+[45, "Colston Loveland", "TE", "CHI", 1, "Odunze (leg) iffy → more targets Wk 1"],
+[46, "Jordan Love", "QB", "GB", 4, "More passing with Jacobs out"],
+[47, "Tyler Shough", "QB", "NO", 4, "Volume starter"],
+[48, "Baker Mayfield", "QB", "TB", 4, ""],
+[49, "Malik Willis", "QB", "MIA", 4, "Hill + Waddle gone but rushing floor"],
+[50, "Daniel Jones", "QB", "IND", 4, "Achilles cleared — Colts report is clean"],
+[51, "DeVonta Smith", "WR", "PHI", 3, ""],
+[52, "Tee Higgins", "WR", "CIN", 3, "Heel — practised Mon, fine"],
+[53, "Zay Flowers", "WR", "BAL", 3, ""],
+[54, "George Pickens", "WR", "DAL", 3, ""],
+[55, "Ladd McConkey", "WR", "LAC", 3, ""],
+[56, "Tyler Warren", "TE", "IND", 1, "Groin, expected Week 1"],
+[57, "Travis Etienne", "RB", "NO", 3, "Kamara expected OUT Wk 1 — one of the biggest Wk 1 workloads in the league"],
+[58, "Javonte Williams", "RB", "DAL", 3, ""],
+[59, "Breece Hall", "RB", "NYJ", 3, "Groin cleared — Jets report is clean"],
+[60, "Quinshon Judkins", "RB", "CLE", 3, ""],
+[61, "Terry McLaurin", "WR", "WAS", 3, ""],
+[62, "Garrett Wilson", "WR", "NYJ", 3, ""],
+[63, "Tetairoa McMillan", "WR", "CAR", 3, ""],
+[64, "Emeka Egbuka", "WR", "TB", 3, "Turf toe — practised Mon, tentatively expected to play Wk 1", "warn"],
+[65, "Sam Darnold", "QB", "SEA", 4, "JSN + Kupp"],
+[66, "C.J. Stroud", "QB", "HOU", 4, ""],
+[67, "Cam Ward", "QB", "TEN", 4, ""],
+[68, "Bryce Young", "QB", "CAR", 4, ""],
+[69, "Kyren Williams", "RB", "LAR", 3, ""],
+[70, "Cam Skattebo", "RB", "NYG", 3, ""],
+[71, "Jeremiyah Love", "RB", "ARI", 4, "Ankle — Allgeier listed as starter; Love will be eased in", "warn"],
+[72, "D'Andre Swift", "RB", "CHI", 3, "Monangai may miss Wk 1–2"],
+[73, "Luther Burden III", "WR", "CHI", 3, "Groin cleared; if Odunze (leg) sits, Burden and Loveland both jump"],
+[74, "Tucker Kraft", "TE", "GB", 2, "Off ACL, ramping"],
+[75, "Harold Fannin Jr.", "TE", "CLE", 2, "Big target share"],
+[76, "Davante Adams", "WR", "LAR", 3, ""],
+[77, "Mike Evans", "WR", "SF", 3, "Camp injuries minor per team — expected Thu in Australia"],
+[78, "Jameson Williams", "WR", "DET", 3, ""],
+[79, "DJ Moore", "WR", "BUF", 3, "Allen's WR1"],
+[80, "Rhamondre Stevenson", "RB", "NE", 4, "Henderson likely OUT Wk 1 → near-workhorse role. Buy the bump"],
+[81, "Bhayshul Tuten", "RB", "JAC", 4, "LeQuint Allen likely out → Tuten gets 3rd-down work too"],
+[82, "David Montgomery", "RB", "HOU", 4, "Goal-line back in Houston"],
+[83, "Jadarian Price", "RB", "SEA", 4, "Charbonnet on PUP — Price is the Seattle back"],
+[84, "Rome Odunze", "WR", "CHI", 4, "'Leg' injury — hasn't practised this week, day-to-day", "warn"],
+[85, "Carnell Tate", "WR", "TEN", 4, "Rookie with Ward"],
+[86, "Parker Washington", "WR", "JAC", 4, ""],
+[87, "Marvin Harrison Jr.", "WR", "ARI", 4, ""],
+[88, "George Kittle", "TE", "SF", 2, "Off Achilles — expected Wk 1, snaps limited early"],
+[89, "Kyle Pitts", "TE", "ATL", 2, ""],
+[90, "Sam LaPorta", "TE", "DET", 2, ""],
+[91, "Tua Tagovailoa", "QB", "ATL", 5, "Named Wk 1 starter with Penix hurt — short leash, but a starter is a starter in SF"],
+[92, "Geno Smith", "QB", "NYJ", 5, ""],
+[93, "Jacoby Brissett", "QB", "ARI", 5, ""],
+[94, "Aaron Rodgers", "QB", "PIT", 5, "Metcalf + Pittman"],
+[95, "Kirk Cousins", "QB", "LV", 5, "Bridge starter"],
+[96, "Christian Watson", "WR", "GB", 4, ""],
+[97, "TreVeyon Henderson", "RB", "NE", 4, "Ankle — DNP Mon and Tue, likely out Wk 1", "warn"],
+[98, "Bucky Irving", "RB", "TB", 4, ""],
+[99, "Jaylen Warren", "RB", "PIT", 4, "Just extended"],
+[100, "Tony Pollard", "RB", "TEN", 4, ""],
+[101, "Chuba Hubbard", "RB", "CAR", 4, "Brooks is the one banged up now — Hubbard leads the timeshare early"],
+[102, "Jonathon Brooks", "RB", "CAR", 4, "'General soreness' — side work with trainers Mon", "warn"],
+[103, "Jordan Mason", "RB", "MIN", 4, ""],
+[104, "MarShawn Lloyd", "RB", "GB", 4, "Lead back while Jacobs is out"],
+[105, "Josh Downs", "WR", "IND", 4, ""],
+[106, "Alec Pierce", "WR", "IND", 4, "Expected to play Wk 1"],
+[107, "Chris Godwin", "WR", "TB", 4, ""],
+[108, "Brian Thomas Jr.", "WR", "JAC", 4, ""],
+[109, "Quentin Johnston", "WR", "LAC", 4, "Cleared concussion protocol"],
+[110, "DK Metcalf", "WR", "PIT", 4, ""],
+[111, "Michael Pittman Jr.", "WR", "PIT", 4, ""],
+[112, "Jayden Reed", "WR", "GB", 4, ""],
+[113, "Stefon Diggs", "WR", "WAS", 4, ""],
+[114, "Dallas Goedert", "TE", "PHI", 3, ""],
+[115, "Dalton Kincaid", "TE", "BUF", 3, ""],
+[116, "Isaiah Likely", "TE", "NYG", 3, ""],
+[117, "Travis Kelce", "TE", "KC", 3, ""],
+[118, "Juwan Johnson", "TE", "NO", 3, "Tyson out → weekly TE1 floor"],
+[119, "Tyler Allgeier", "RB", "ARI", 5, "Listed starter over Love for Wk 1"],
+[120, "Kenneth Gainwell", "RB", "TB", 5, ""],
+[121, "Kyle Monangai", "RB", "CHI", 5, "May miss Wk 1–2", "warn"],
+[122, "Alvin Kamara", "RB", "NO", 5, "Knee — expected out Wk 1; Etienne's backfield now", "warn"],
+[123, "Rico Dowdle", "RB", "PIT", 5, ""],
+[124, "Blake Corum", "RB", "LAR", 5, "Kyren handcuff with standalone value"],
+[125, "Jacory Croskey-Merritt", "RB", "WAS", 5, ""],
+[126, "J.K. Dobbins", "RB", "DEN", 5, ""],
+[127, "RJ Harvey", "RB", "DEN", 5, ""],
+[128, "Rachaad White", "RB", "WAS", 5, ""],
+[129, "Jakobi Meyers", "WR", "JAC", 5, ""],
+[130, "Wan'Dale Robinson", "WR", "TEN", 5, ""],
+[131, "Michael Wilson", "WR", "ARI", 5, ""],
+[132, "Courtland Sutton", "WR", "DEN", 5, ""],
+[133, "Jordan Addison", "WR", "MIN", 5, ""],
+[134, "Khalil Shakir", "WR", "BUF", 5, "Undisclosed — team optimistic, but rotational behind DJ Moore"],
+[135, "Matthew Golden", "WR", "GB", 5, ""],
+[136, "KC Concepcion", "WR", "CLE", 5, ""],
+[137, "Makai Lemon", "WR", "PHI", 5, "Rookie slot"],
+[138, "Xavier Worthy", "WR", "KC", 5, ""],
+[139, "Jordyn Tyson", "WR", "NO", 5, "IR — out at least 4 games, mid-Oct return", "warn"],
+[140, "Fernando Mendoza", "QB", "LV", 5, "Rookie, may start midseason"],
+[141, "Michael Penix Jr.", "QB", "ATL", 5, "Knee — told team he's not ready; Tua starts Wk 1. Stash only", "warn"],
+[142, "Shedeur Sanders", "QB", "CLE", 5, ""],
+[143, "Jake Ferguson", "TE", "DAL", 3, ""],
+[144, "Mark Andrews", "TE", "BAL", 3, ""],
+[145, "Brenton Strange", "TE", "JAC", 3, ""],
+[146, "Chig Okonkwo", "TE", "WAS", 3, ""],
+[147, "Hunter Henry", "TE", "NE", 3, ""],
+[148, "Josh Jacobs", "RB", "GB", 5, "Exempt list; court date moved up to Sept 10 — don't expect him soon", "warn"],
+[149, "Chris Rodriguez Jr.", "RB", "JAC", 5, ""],
+[150, "Aaron Jones", "RB", "MIN", 5, ""],
+[151, "Zach Charbonnet", "RB", "SEA", 5, "PUP — out at least 4 games. Price runs Seattle", "warn"],
+[152, "Jonah Coleman", "RB", "DEN", 5, ""],
+[153, "Woody Marks", "RB", "HOU", 5, ""],
+[154, "Keaton Mitchell", "RB", "LAC", 5, "Undisclosed — 5+ straight missed practices", "warn"],
+[155, "Tank Bigsby", "RB", "PHI", 5, "Saquon handcuff"],
+[156, "Emmett Johnson", "RB", "KC", 5, "Walker handcuff"],
+[157, "Dylan Sampson", "RB", "CLE", 5, ""],
+[158, "Tyjae Spears", "RB", "TEN", 5, ""],
+[159, "Isiah Pacheco", "RB", "DET", 5, "IR (back) — GM only 'hopes' he returns this year. Not a handcuff", "warn"],
+[160, "Romeo Doubs", "WR", "NE", 5, ""],
+[161, "Jalen Coker", "WR", "CAR", 5, ""],
+[162, "Rashid Shaheed", "WR", "SEA", 5, ""],
+[163, "Jerry Jeudy", "WR", "CLE", 5, ""],
+[164, "Tre Tucker", "WR", "LV", 5, ""],
+[165, "Deebo Samuel", "WR", "SF", 5, ""],
+[166, "Travis Hunter", "WR", "JAC", 5, ""],
+[167, "Keenan Allen", "WR", "IND", 5, ""],
+[168, "Jauan Jennings", "WR", "MIN", 5, "Calf, back at practice"],
+[169, "Cooper Kupp", "WR", "SEA", 5, ""],
+[170, "Adonai Mitchell", "WR", "NYJ", 5, ""],
+[171, "Tyreek Hill", "WR", "MIA", 5, "Oblique, on track for Week 1"],
+[172, "Kenyon Sadiq", "TE", "NYJ", 3, ""],
+[173, "Oronde Gadsden II", "TE", "LAC", 3, ""],
+[174, "T.J. Hockenson", "TE", "MIN", 3, ""],
+[175, "David Njoku", "TE", "LAC", 3, ""],
+[176, "Denver Broncos", "DEF", "DEN", 1, ""],
+[177, "Philadelphia Eagles", "DEF", "PHI", 1, ""],
+[178, "Houston Texans", "DEF", "HOU", 1, ""],
+[179, "Detroit Lions", "DEF", "DET", 1, ""],
+[180, "Baltimore Ravens", "DEF", "BAL", 1, ""],
+[181, "Minnesota Vikings", "DEF", "MIN", 1, ""],
+[182, "Brandon Aubrey", "K", "DAL", 1, ""],
+[183, "Ka'imi Fairbairn", "K", "HOU", 1, ""],
+[184, "Cameron Dicker", "K", "LAC", 1, ""],
+[185, "Cam Little", "K", "JAC", 1, ""],
+[186, "Jason Myers", "K", "SEA", 1, ""],
+[187, "Eddy Pineiro", "K", "SF", 1, ""],
+];
+
+// Tiers for the "All" view: label and rank range
+const TIERS = [
+  ["Tier 1 · Franchise QBs","take one at 1.06, no debate",1,5],
+  ["Tier 2 · QB1s with rushing floors + the elite skill guys","picks 6–19",6,15],
+  ["Tier 3 · Second-QB tier + WR/RB anchors","picks 19–45",16,45],
+  ["Tier 4 · Last real starting QBs + strong RB2/WR2","picks 45–70",46,70],
+  ["Tier 5 · Depth with upside, TE premium plays","picks 70–95",71,95],
+  ["Tier 6 · Bench, handcuffs, QB3/QB4","picks 95–140",96,140],
+  ["Tier 7 · Late fliers","picks 140+",141,175],
+  ["DEF / K","last two rounds",176,187],
+];
+const POS_TIERS = {
+  QB:["Franchise","QB1 w/ rush floor","Second-QB tier","Last real starters","QB3 / stash"],
+  RB:["Elite","RB1","RB2","RB3 / flex","Handcuffs & fliers"],
+  WR:["Elite","WR1","WR2","WR3 / flex","Depth"],
+  TE:["Premium starters","Solid","Streamers"],
+  K:["Kickers"],DEF:["Defences"]
+};
+const TARGETS = new Set(["Drake Maye","Joe Burrow","Jayden Daniels","Caleb Williams","Justin Herbert","Brock Purdy","Bo Nix","Puka Nacua","Amon-Ra St. Brown","Brock Bowers","Trey McBride","Colston Loveland","De'Von Achane","Kenneth Walker III","Travis Etienne","Tyler Shough","Sam Darnold","MarShawn Lloyd","Blake Corum","Harold Fannin Jr."]);
+
+const PLAN = [
+ ["1.06",6,"Count the QBs gone in picks 1–5, then decide","<b>3+ QBs gone:</b> the room has adjusted to superflex — take the best tier-1 QB left (Maye / Burrow / Daniels / Lamar). <b>0–2 QBs gone:</b> the room is drafting like last year's 1QB league — take <b>Gibbs, Bijan or Chase</b> and let the QBs come to you at 19 and 30."],
+ ["2.07",19,"QB1 (or QB2 if you went QB at 6)","Whoever's best of Allen / Lamar / Maye / Burrow / Daniels / Hurts / Caleb / Dak / Herbert. If you took a QB at 6 and a tier-1 QB is still here, take a second one — two elite QBs in superflex is a weekly 10-point edge. If none of the nine are left, elite WR (Nacua, St. Brown, JSN, Lamb, A.J. Brown, Jefferson) and QB at 30."],
+ ["3.06",30,"Second QB, or RB1 if you already have two","QB from <b>Lawrence, Dart, Nix, Purdy, Stafford, Kyler, Goff</b>, then Mahomes (off a torn ACL, run-heavy early — QB2 price only). Watch the guys at slots 12, 1 and 2 (they were the QB-early drafters last year; slot 12 picks 12–13, slots 1–2 pick 23–24). Do not leave this pick without at least one QB."],
+ ["4.07",43,"RB1/RB2 or TE premium","No McCaffrey this year, so RB matters more: <b>Cook, Chase Brown, Taylor</b> if one slid, else <b>Walker</b> (Chiefs going run-heavy while Mahomes ramps), <b>Hampton, Saquon, Henry, Achane</b> (calf is cleared — pure value), Jeanty if his ankle scared people. If Bowers / McBride / Loveland is here, that still beats the 5th-best RB."],
+ ["5.06",54,"RB or WR — whichever the run left behind","RB: Etienne (Kamara out Wk 1 — huge workload), Judkins, Javonte, Breece (groin cleared), Kyren. WR: London, Collins, Nabers, Olave, Waddle, Rice. Take the better tier, not the position."],
+ ["6.07",67,"Fill the other one, or Tyler Warren / Kraft / Fannin","Higgins, DeVonta, Flowers, McConkey, McLaurin, McMillan at WR; Skattebo, Love, Swift at RB. If you don't have a TE yet, Warren here is a strong get."],
+ ["7.06",78,"Best available skill player","Tuten (LeQuint Allen out), Burden, Stevenson (Henderson likely out), Egbuka (toe), Jameson Williams, DJ Moore, Montgomery, Price, Pickens if he slid."],
+ ["8.07",91,"QB3","<b>Shough, Darnold, Ward, Daniel Jones, Stroud, Bryce Young, Jordan Love</b>. In this room some of these will still be here at 115 — but a starter at 91 is bye-week cover and your best trade chip by October."],
+ ["9.06",102,"RB depth","Irving, Warren (PIT), Pollard, Hubbard (Brooks banged up), Lloyd (lead back while Jacobs is out), Allgeier (starting over Love for now)."],
+ ["10.07",115,"WR depth or QB3 if you waited","Watson, Adams, Odunze, Tate, Downs, Pierce, Godwin — or the best remaining starting QB."],
+ ["11.06",126,"TE2 or an upside RB","Kittle / Pitts / LaPorta / Goedert, or Lloyd if he's somehow still there."],
+ ["12.07",139,"Upside WR / stash","Golden, Lemon, Concepcion, Worthy, Tyson (Oct return)."],
+ ["13.06",150,"Handcuff your studs","Corum (Kyren), E. Johnson (Walker), Bigsby (Saquon), Rodriguez (Tuten). Pacheco is on IR with a back issue — <b>not</b> a Gibbs handcuff any more."],
+ ["14.07",163,"QB4 if a starter is somehow left, else flier","Tua (named Wk 1 starter, Penix hurt), Geno, Brissett, Rodgers, Cousins — a starting QB at pick 163 is free trade value in a superflex league. Penix is a stash, not a starter."],
+ ["15.06",174,"Defence","Broncos, Eagles, Texans, Lions — whichever's left. Stream from Week 2 anyway."],
+ ["16.07",187,"Kicker","Aubrey, Fairbairn, Dicker. Last pick, always."],
+];
+
+
+const KEY="rsv-board-2026";
+const DRAFT_ID="1312551337711386624", LEAGUE_ID="1312551337698820096", ME="1263724329326100480", MY_SLOT=6, TEAMS=12;
+let state={}; try{state=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){state={}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+let filterPos="ALL", hideTaken=false, query="";
+
+// ---- live draft state (from Sleeper, or from the db fallback) ----
+let live={on:true, picks:[], users:{}, order:{}, status:"", src:"", err:"", offBoard:[]};
+const byName=Object.fromEntries(P.map(p=>[p[1],p]));
+function norm(s){return (s||"").toLowerCase().replace(/[.'’]/g,"").replace(/\b(jr|sr|ii|iii|iv)\b/g,"").replace(/[^a-z ]/g," ").replace(/\s+/g," ").trim()}
+const normIndex={}; P.forEach(p=>{normIndex[norm(p[1])]=p; const parts=norm(p[1]).split(" "); normIndex[parts[0]+" "+parts[parts.length-1]]=p;});
+const lastIndex={}; P.forEach(p=>{const parts=norm(p[1]).split(" "); const k=parts[parts.length-1]+"|"+p[2]; (lastIndex[k]=lastIndex[k]||[]).push(p)});
+function matchPick(m){
+  if(!m) return null;
+  if(m.position==="DEF"){ return P.find(p=>p[2]==="DEF"&&p[3]===m.team)||null; }
+  const full=norm((m.first_name||"")+" "+(m.last_name||""));
+  if(normIndex[full]) return normIndex[full];
+  const parts=full.split(" "); const k2=parts[0]+" "+parts[parts.length-1];
+  if(normIndex[k2]) return normIndex[k2];
+  const c=lastIndex[parts[parts.length-1]+"|"+m.position]||[];
+  if(c.length===1) return c[0];
+  const t=c.filter(p=>p[3]===m.team); if(t.length===1) return t[0];
+  return null;
+}
+// merged status: live picks override manual taps
+function statusOf(name){ return liveStatus[name]||state[name]||""; }
+let liveStatus={};
+function applyLive(){
+  liveStatus={}; live.offBoard=[];
+  live.picks.forEach(pk=>{
+    const p=matchPick(pk.metadata);
+    const mine=(pk.picked_by===ME)||(pk.draft_slot===MY_SLOT);
+    if(p) liveStatus[p[1]]=mine?"mine":"taken";
+    else live.offBoard.push(`${pk.metadata?.first_name||""} ${pk.metadata?.last_name||""} (${pk.metadata?.position||"?"}, ${pk.metadata?.team||"FA"})${mine?" — you":""}`);
+  });
+}
+function mineList(){ return P.filter(p=>statusOf(p[1])==="mine"); }
+function takenCount(){ return P.filter(p=>statusOf(p[1])).length + live.offBoard.length; }
+
+// ---- pick math ----
+const MY_PICKS=[]; for(let r=1;r<=16;r++){ MY_PICKS.push([r, r%2?MY_SLOT:TEAMS+1-MY_SLOT]); }
+function overallOf(r,s){ return (r-1)*TEAMS+s; }
+function slotAt(n){ const r=Math.ceil(n/TEAMS), i=(n-1)%TEAMS; return {round:r, slot: r%2? i+1 : TEAMS-i}; }
+function nameOfSlot(slot){ const uid=Object.keys(live.order).find(u=>live.order[u]===slot); return uid?(live.users[uid]||"slot "+slot):"slot "+slot; }
+
+function renderTracker(){
+  const mine=mineList(); const idx=mine.length;
+  const np=MY_PICKS[Math.min(idx,15)]; const overall=overallOf(np[0],np[1]);
+  const tc = live.picks.length? live.picks.length : takenCount();
+  document.getElementById("nextPick").textContent= idx>=16?"Done":`${np[0]}.${String(np[1]).padStart(2,"0")}`;
+  let info;
+  if(idx>=16) info="Roster full. Go win.";
+  else {
+    const gap=overall-tc-1;
+    const cur=slotAt(tc+1);
+    const clock = live.picks.length? ` · on the clock: <b>${nameOfSlot(cur.slot)}</b> (${cur.round}.${String(cur.slot).padStart(2,"0")})` : "";
+    info=`Overall <b>#${overall}</b> · <b>${tc}</b> picks made${gap>0?` · <b>${gap}</b> until you're up`:` · <b>you're on the clock</b>`}${clock}`;
+  }
+  document.getElementById("nextInfo").innerHTML=info;
+  const slots=["QB","RB","RB","WR","WR","TE","FLEX","FLEX","SFLEX","K","DEF","BN","BN","BN","BN","BN"];
+  const filled=[]; const pool=mine.map(p=>({name:p[1].split(" ").slice(-1)[0],pos:p[2]}));
+  const used=new Set();
+  const take=(i,ok)=>{for(let j=0;j<pool.length;j++){if(!used.has(j)&&ok(pool[j].pos)){used.add(j);filled[i]=pool[j];return}}};
+  slots.forEach((s,i)=>{ if(["QB","RB","WR","TE","K","DEF"].includes(s)) take(i,p=>p===s); });
+  slots.forEach((s,i)=>{ if(s==="FLEX") take(i,p=>["RB","WR","TE"].includes(p)); });
+  slots.forEach((s,i)=>{ if(s==="SFLEX") take(i,p=>["QB","RB","WR","TE"].includes(p)); });
+  slots.forEach((s,i)=>{ if(s==="BN") take(i,p=>true); });
+  document.getElementById("roster").innerHTML=slots.map((s,i)=>{const f=filled[i]; return f?`<span class="slot filled ${f.pos}" title="${s}">${f.name}</span>`:`<span class="slot">${s}</span>`;}).join("");
+}
+
+// ---- suggestions: best available for YOUR next pick, roster-aware ----
+function suggest(){
+  const mine=mineList(); const idx=mine.length; if(idx>=16) return null;
+  const round=MY_PICKS[idx][0];
+  const have={QB:0,RB:0,WR:0,TE:0,K:0,DEF:0}; mine.forEach(p=>have[p[2]]++);
+  const avail=P.filter(p=>!statusOf(p[1]));
+  const scored=avail.map(p=>{
+    let s=200-p[0]; const why=[]; const pos=p[2];
+    if(pos==="QB"){
+      if(have.QB===0){ s+= round<=2?18:round<=4?45:70; why.push(round<=2?"you need two QBs; elite ones vanish":"still no QB — this is urgent"); }
+      else if(have.QB===1){ s+= round<=4?22:round<=8?30:10; why.push("second starting QB"); }
+      else if(have.QB===2){ s+= round>=8?12:-30; why.push(round>=8?"QB3 = bye cover + trade chip":"you have two; don't reach for a third yet"); }
+      else s-=90;
+    }
+    if(pos==="TE"){
+      if(have.TE===0){ if(p[4]===1){ s+=10; why.push("premium TE plays like a WR2 here (+0.5/rec)"); } }
+      else if(have.TE===1){ s-= p[4]===1?12:35; }
+      else s-=90;
+    }
+    if(pos==="RB"){ if(have.RB===0&&round>=4){ s+=14; why.push("no RB yet"); } if(have.RB>=4) s-=20; }
+    if(pos==="WR"){ if(have.WR===0&&round>=4){ s+=10; why.push("no WR yet"); } if(have.WR>=5) s-=20; }
+    if(pos==="K"||pos==="DEF"){ if(round<15) s-=500; else if(have[pos]===0){ s+=120; why.push("last two rounds"); } else s-=500; }
+    if(p[6]==="warn"){ s-=4; why.push(p[5]); } else if(p[5]&&!why.length) why.push(p[5]);
+    if(TARGETS.has(p[1])){ s+=0.5; }
+    return {p,s,why:why.join(" · ")};
+  }).sort((a,b)=>b.s-a.s).slice(0,4);
+  // read-the-room rule at 1.06
+  let room="";
+  if(round===1){
+    const first5=live.picks.filter(pk=>pk.pick_no<=5);
+    if(first5.length){
+      const q=first5.filter(pk=>pk.metadata?.position==="QB").length;
+      room = q>=3 ? `<b>${q} QBs gone in picks 1–${first5.length}.</b> The room has adjusted — take the best tier-1 QB left.` : `<b>${q} QB${q===1?"":"s"} gone in picks 1–${first5.length}.</b> The room is drafting like 2025 — Gibbs / Bijan / Chase now, QBs at 19 and 30.`;
+    } else room="Waiting for picks 1–5 to see how the room treats QBs.";
+  } else {
+    const plan=PLAN[idx]; room=`<b>Plan for ${plan[0]}:</b> ${plan[2]}.`;
+  }
+  return {scored,room,round};
+}
+function renderSugg(){
+  const el=document.getElementById("sugg"); const s=suggest();
+  if(!s||!s.scored.length){ el.hidden=true; return; }
+  el.hidden=false;
+  el.innerHTML=`<div class="lbl">If you were up right now</div><div class="room">${s.room}</div><ol>${s.scored.map(x=>`<li><span class="pos ${x.p[2]}">${x.p[2]}</span><div><div class="who">${x.p[1]} <span class="tm" style="color:var(--ink3);font-weight:500;font-size:12px">${x.p[3]} · #${x.p[0]}</span></div>${x.why?`<div class="why">${x.why}</div>`:""}</div></li>`).join("")}</ol>${live.offBoard.length?`<div class="offb">Picked but not on the board: ${live.offBoard.join(", ")}</div>`:""}`;
+}
+
+// ---- board / plan ----
+function rowHTML(p){
+  const st=statusOf(p[1]);
+  const cls=["row",st,TARGETS.has(p[1])?"target":""].join(" ");
+  const note=p[5]?`<span class="note ${p[6]||""}">${p[5]}</span>`:"";
+  return `<button class="${cls}" data-n="${p[1].replace(/"/g,"&quot;")}" aria-pressed="${st?'true':'false'}">
+    <span class="rk">${p[0]}</span><span class="pos ${p[2]}">${p[2]}</span>
+    <span class="nm">${p[1]} <span class="tm">${p[3]}</span><span class="tg">target</span>${note}</span>
+    <span class="st">${st==="mine"?"Mine":st==="taken"?"Gone":"Open"}</span></button>`;
+}
+function visible(p){
+  if(filterPos!=="ALL"&&p[2]!==filterPos) return false;
+  if(hideTaken&&statusOf(p[1])==="taken") return false;
+  if(query&&!p[1].toLowerCase().includes(query)) return false;
+  return true;
+}
+function renderBoard(){
+  const el=document.getElementById("tiers"); let html="";
+  if(filterPos==="ALL"){
+    TIERS.forEach(([label,when,a,b])=>{
+      const rows=P.filter(p=>p[0]>=a&&p[0]<=b&&visible(p)); if(!rows.length) return;
+      html+=`<div class="tier"><h3>${label} <span class="when">${when}</span></h3><div class="list">${rows.map(rowHTML).join("")}</div></div>`;
+    });
+  } else {
+    const names=POS_TIERS[filterPos]||[]; const groups={};
+    P.filter(p=>visible(p)).forEach(p=>{(groups[p[4]]=groups[p[4]]||[]).push(p)});
+    Object.keys(groups).sort((a,b)=>a-b).forEach(t=>{
+      html+=`<div class="tier"><h3>${filterPos} tier ${t} <span class="when">${names[t-1]||""}</span></h3><div class="list">${groups[t].map(rowHTML).join("")}</div></div>`;
+    });
+  }
+  el.innerHTML=html||`<div class="list"><div class="empty">Nothing matches.</div></div>`;
+}
+function renderPlan(){
+  const n=mineList().length;
+  document.getElementById("planList").innerHTML=PLAN.map((k,i)=>`<div class="pk ${i<n?'done':i===n?'now':''}"><div class="no">${k[0]}<small>#${k[1]} overall</small></div><div><div class="aim">${k[2]}</div><div class="why">${k[3]}</div></div></div>`).join("");
+}
+function renderLive(){
+  const el=document.getElementById("live"); el.classList.toggle("on",live.on&&!live.err&&!!live.src); el.classList.toggle("err",!!live.err);
+  const t=document.getElementById("liveText");
+  if(!live.on) t.textContent="Live updates paused — tap players to mark them yourself.";
+  else if(live.err) t.textContent=live.err;
+  else if(!live.src) t.textContent="Connecting to Sleeper…";
+  else t.textContent=`Live from Sleeper${live.src==="db"?" (via Claude)":""} · draft ${live.status||"pre_draft"} · ${live.picks.length} picks · updated ${new Date().toLocaleTimeString([],{hour:"numeric",minute:"2-digit",second:"2-digit"})}`;
+}
+function renderAll(){applyLive();renderTracker();renderSugg();renderBoard();renderPlan();renderLive()}
+
+// ---- live feed: direct Sleeper first, db fallback ----
+const API="https://api.sleeper.app/v1";
+async function j(u){ const r=await fetch(u,{cache:"no-store"}); if(!r.ok) throw new Error(r.status); return r.json(); }
+async function loadMeta(){
+  try{
+    const [d,u]=await Promise.all([j(`${API}/draft/${DRAFT_ID}`), j(`${API}/league/${LEAGUE_ID}/users`)]);
+    live.order=d.draft_order||{}; live.status=d.status||"";
+    u.forEach(x=>live.users[x.user_id]=x.display_name);
+  }catch(e){}
+}
+let timer=null, directOK=null, dbUnsub=null;
+async function pollDirect(){
+  try{
+    const picks=await j(`${API}/draft/${DRAFT_ID}/picks`);
+    live.picks=picks; live.src="sleeper"; live.err=""; directOK=true;
+    if(live.picks.length && live.status!=="complete"){ try{ const d=await j(`${API}/draft/${DRAFT_ID}`); live.status=d.status||live.status; live.order=d.draft_order||live.order; }catch(e){} }
+    renderAll();
+  }catch(e){
+    if(directOK===null){ directOK=false; startDb(); } else if(live.src==="sleeper"){ live.err="Lost Sleeper connection — retrying"; renderLive(); }
+  }
+}
+async function startDb(){
+  let db=null; try{ db=await (window.claude&&window.claude.use?window.claude.use("db"):Promise.resolve(null)); }catch(e){}
+  if(!db){ live.err="Can't reach Sleeper from here. Open the saved war-room file in a browser for live picks, or mark them by hand."; renderLive(); return; }
+  dbUnsub=db.doc("draft/live").onSnapshot(snap=>{
+    const d=snap.data(); if(!d){ live.src="db"; live.err="Waiting for the first live update from Claude."; renderLive(); return; }
+    live.picks=d.picks||[]; live.status=d.status||live.status; if(d.users) live.users=d.users; if(d.order) live.order=d.order;
+    live.src="db"; live.err=""; renderAll();
+  }, err=>{ live.err="Live feed unavailable — mark picks by hand."; renderLive(); });
+}
+function startLive(){
+  stopLive(); if(!live.on) return;
+  loadMeta().then(()=>{ pollDirect(); timer=setInterval(()=>{ if(live.src==="sleeper"||directOK===null) pollDirect(); }, live.status==="drafting"?8000:20000); });
+}
+function stopLive(){ if(timer) clearInterval(timer); timer=null; if(dbUnsub){dbUnsub();dbUnsub=null;} }
+
+// ---- events ----
+document.getElementById("tiers").addEventListener("click",e=>{
+  const b=e.target.closest(".row"); if(!b) return;
+  const n=b.dataset.n; if(liveStatus[n]) return; // live picks are authoritative
+  const cur=state[n]||""; state[n]= cur===""?"taken":cur==="taken"?"mine":""; if(!state[n]) delete state[n];
+  save(); renderAll();
+});
+document.querySelectorAll(".chip[data-pos]").forEach(c=>c.addEventListener("click",()=>{ filterPos=c.dataset.pos; document.querySelectorAll(".chip[data-pos]").forEach(x=>x.setAttribute("aria-pressed",x===c)); renderBoard(); }));
+document.getElementById("hideTaken").addEventListener("click",e=>{hideTaken=!hideTaken;e.currentTarget.setAttribute("aria-pressed",hideTaken);renderBoard()});
+document.getElementById("q").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();renderBoard()});
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{ document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected",x===t)); document.querySelectorAll(".pane").forEach(p=>p.hidden=p.id!==t.dataset.pane); }));
+document.getElementById("reset").addEventListener("click",()=>{ if(confirm("Clear every hand-marked pick? Live picks from Sleeper stay.")){state={};save();renderAll()} });
+document.getElementById("liveToggle").addEventListener("click",e=>{ live.on=!live.on; e.currentTarget.setAttribute("aria-pressed",live.on); if(live.on) startLive(); else { stopLive(); live.src=""; live.err=""; } renderAll(); });
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden&&live.on&&live.src==="sleeper") pollDirect(); });
+renderAll(); startLive();
+</script>
+
+</body>
+</html>

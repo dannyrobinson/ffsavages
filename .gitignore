@@ -1,0 +1,5 @@
+data/*.json
+data/*.md
+site/
+.DS_Store
+__pycache__/
