@@ -1,21 +1,26 @@
-# Wed Sept 9, 2026, 10:45 AM PT · Week 1 · written by Claude from today's news sweep and Sleeper data
-**Tonight: the season opens at 5:20 PM PT (NE at SEA). A.J. Brown plays and locks at kickoff, so set your lineup before then.** Everything else can wait for Friday's injury report.
+# Wed Sep 9, 2026, 11:00 AM PT · Week 1 · written by Claude from today's news sweep and Sleeper data
+
+**Bench Malik Nabers — he has no Week 1 timeline after his second ACL/meniscus surgery and could open the year on IR, so start Alec Pierce and grab Devaughn Vele as insurance before Sunday's early window (10 AM PT / 1 PM ET).**
+
 ## Do now
-- **Start A.J. Brown tonight.** Dislocated thumb Monday, missed nothing, no designation.
-- **Nabers: start him if Friday's report is clean.** Full practice Sept 8, no-contact jersey gone, Giants cut Slayton. He plays SNF and your whole bench plays early, so if he is still Questionable on Saturday night, flex **MarShawn Lloyd** instead. Do not wait for a game-time call.
-- **Bench is full (5 of 5).** Free agents are first-come today after this morning's clear, so any add is a drop. Nothing on the wire is worth more than what you have. Hold.
-- **Thursday: Jacobs' court hearing (Sept 10).** If he stays on the exempt list, add **Chris Brooks** (GB RB2, free here) as Lloyd's insurance, dropping Schultz. If Jacobs is cleared, Lloyd becomes a sell.
+- **Bench Nabers, start Alec Pierce.** No official timeline; reporting says the Giants may open him on IR, out to Week 5+. Don't gamble a starting spot.
+- **Claim Devaughn Vele — $17.** Rookie WR2 Jordyn Tyson is on IR to at least Week 5, so Vele is New Orleans' No. 2 receiver behind Chris Olave. Cheap volume for your Nabers hole.
+- **Add Deshaun Watson — $7.** Confirmed Week 1 starter over Shedeur Sanders. You're set at QB, but superflex makes a free rushing QB worth stashing before someone else does.
+- **Speculate on Darren Waller — $9.** TE (Johnson/Schultz) is your weakest spot; Waller signed with Carolina and projects as a low-end TE2 red-zone target.
+- **Lock your lineup by Sunday's early window** — Willis (MIA) and Burrow (CIN) both kick 10 AM PT.
+
 ## Your players
-- **RED:** none.
-- **AMBER Nabers** (knee, trending up) · **Waddle** (camp strain, back at practice, MNF vs KC; Payton says "doing good") · **Warren** (Dowdle signed, expected split; Warren keeps the passing work) · **Mason** (co-starter with Aaron Jones on the Week 1 chart) · **Pierce** (cleared for Week 1 but only practicing since Aug 27, no preseason).
-- **GREEN Burrow · Caleb Williams · Willis** (locked-in MIA starter, $45M guaranteed, only McCord behind him) · **Chase Brown** (clear lead back) · **Judkins** (fully recovered, unquestioned RB1) · **Lloyd** (starter while Jacobs is out) · **Juwan Johnson · Schultz** (Tank Dell to IR helps) · **Fairbairn · DET**.
+- **RED:** none this week.
+- **AMBER:** **Malik Nabers** (knee, likely IR — see above); **Jordan Mason** (co-starting with Aaron Jones in MIN, ~11-12 touches projected — solid FLEX floor, not a bell cow).
+- **GREEN:** **Caleb Williams** and **Joe Burrow** both confirmed healthy Week 1 starters; **Malik Willis** is now Miami's Week 1 starter after Tua's release. All three QBs are locked in.
+
 ## Waiver wire, checked against this league
-- **Deshaun Watson, QB CLE: free agent and the Week 1 starter** (named Aug 24 over Sanders). You already carry three startable QBs, so no claim. He is your emergency QB if one goes down. Four teams here have only two QBs, so expect him gone by Week 3.
-- **Chris Brooks, RB GB** (free): Lloyd handcuff. $0 today, $7 next Tuesday.
-- **Samaje Perine, RB CIN** (free): Chase Brown handcuff. $3 if a bench spot opens.
-- **Roschon Johnson, RB CHI** (free, most-added player on Sleeper): Swift left practice (side) and Monangai is week to week, but the Bears say both return for Sunday. Speculative only. $0.
-- **Kaelon Black, RB SF** (free): CMC handcuff, and CMC had tightness this week. Only matters to whoever owns CMC, which is this week's opponent.
-- **Ja'Kobi Lane, WR BAL** (free): rookie with camp buzz, WR3 on the chart. Watch, $6 later if targets show up.
-- **Already rostered here, ignore the pickup lists:** Tua (smitty1060), Tyler Shough (kwiksl), Kaleb Johnson and Dylan Sampson (EasyIP grabbed both this week), Hockenson (wflemons33), Rico Dowdle (jimmyd66).
+- **Devaughn Vele**, WR, NO — Saints' No. 2 WR with Tyson on IR — $17.
+- **Darren Waller**, TE, CAR — thin TE room, red-zone role — $9.
+- **Deshaun Watson**, QB, CLE — confirmed starter, cheap superflex depth — $7.
+- **Roschon Johnson**, RB, CHI — backup if Kyle Monangai (knee) sits, but Chicago may elevate practice-squad Salvon Ahmed instead — $3 speculative.
+- **Malik Davis**, RB, DAL — Javonte Williams' primary backup, pure insurance — $1.
+- Already gone here: **Kirk Cousins**, a common superflex QB target, was claimed by daviddhaliwal this morning — don't waste a bid.
+
 ## This week: paulhemsley
-- Purdy, Jonathan Taylor, CMC (tightness, plays Thursday in Melbourne), McMillan, McLaurin, Kraft, Tuten, Stafford, Mevis, HOU DEF. **They have Jordyn Tyson (IR) in a starting slot** as of this morning. Strong roster, but your QB pair beats Purdy/Stafford.
+Purdy, Jonathan Taylor and McCaffrey are all healthy — a stacked lineup with two elite RBs, expect a shootout. Their one soft spot: Tucker Kraft is playing but on a snap count returning from ACL surgery, capping his TE ceiling, and bench WR Jordyn Tyson (their RED) is out on IR. No exploitable hole on offense — win it with your own lineup calls.
