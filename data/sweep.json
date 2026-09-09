@@ -1,6 +1,6 @@
 {
- "generated": "Wed Sep 9, 2026 10:58 AM PT",
- "generated_ms": 1788976690678,
+ "generated": "Wed Sep 9, 2026 11:08 AM PT",
+ "generated_ms": 1788977312645,
  "season": "2026",
  "week": 1,
  "faab_used": 0,
@@ -159,8 +159,8 @@
    "why": "Questionable \u00b7 Knee - ACL \u00b7 Surgery",
    "injury": "Questionable",
    "depth": "LWR1",
-   "news": "Sep 8",
-   "news_ms": 1788875749375,
+   "news": "Sep 9",
+   "news_ms": 1788976534888,
    "slot": "START"
   },
   {
@@ -242,7 +242,7 @@
    "depth": "RB3",
    "news": "Sep 8",
    "news_ms": 1788877549423,
-   "adds": 509816
+   "adds": 512600
   },
   {
    "id": "11834",
@@ -255,7 +255,7 @@
    "depth": "SWR2",
    "news": "Sep 5",
    "news_ms": 1788576324442,
-   "adds": 346472
+   "adds": 348565
   },
   {
    "id": "8800",
@@ -268,7 +268,7 @@
    "depth": "RB2",
    "news": "Sep 8",
    "news_ms": 1788843345303,
-   "adds": 255204
+   "adds": 256581
   },
   {
    "id": "13414",
@@ -281,7 +281,7 @@
    "depth": "RB2",
    "news": "Sep 9",
    "news_ms": 1788960625981,
-   "adds": 201544
+   "adds": 202524
   },
   {
    "id": "2505",
@@ -294,7 +294,7 @@
    "depth": "TE1",
    "news": "Sep 7",
    "news_ms": 1788806741393,
-   "adds": 157806
+   "adds": 158904
   },
   {
    "id": "13296",
@@ -307,7 +307,7 @@
    "depth": "RWR2",
    "news": "Sep 9",
    "news_ms": 1788972635806,
-   "adds": 110528
+   "adds": 111360
   },
   {
    "id": "10213",
@@ -320,7 +320,7 @@
    "depth": "LWR1",
    "news": "Sep 9",
    "news_ms": 1788962726159,
-   "adds": 109506
+   "adds": 110172
   },
   {
    "id": "13311",
@@ -333,7 +333,7 @@
    "depth": "LWR4",
    "news": "Sep 9",
    "news_ms": 1788973834685,
-   "adds": 105364
+   "adds": 107296
   },
   {
    "id": "13285",
@@ -346,7 +346,7 @@
    "depth": "RWR3",
    "news": "Sep 8",
    "news_ms": 1788880850116,
-   "adds": 102705
+   "adds": 103455
   },
   {
    "id": "2078",
@@ -359,7 +359,7 @@
    "depth": "LWR4",
    "news": "Sep 6",
    "news_ms": 1788709230912,
-   "adds": 97797
+   "adds": 98315
   },
   {
    "id": "9511",
@@ -372,7 +372,7 @@
    "depth": "RB2",
    "news": "Sep 7",
    "news_ms": 1788813942310,
-   "adds": 86805
+   "adds": 87318
   },
   {
    "id": "13424",
@@ -385,7 +385,7 @@
    "depth": "RB2",
    "news": "Sep 8",
    "news_ms": 1788897951398,
-   "adds": 81032
+   "adds": 81304
   },
   {
    "id": "8127",
@@ -398,7 +398,7 @@
    "depth": "TE3",
    "news": "Sep 8",
    "news_ms": 1788881749731,
-   "adds": 77763
+   "adds": 78363
   },
   {
    "id": "8134",
@@ -411,7 +411,7 @@
    "depth": "SWR2",
    "news": "Sep 7",
    "news_ms": 1788809441631,
-   "adds": 64305
+   "adds": 64764
   },
   {
    "id": "13533",
@@ -424,7 +424,7 @@
    "depth": "SWR4",
    "news": "Sep 9",
    "news_ms": 1788966926414,
-   "adds": 63432
+   "adds": 63954
   },
   {
    "id": "4147",
@@ -437,7 +437,7 @@
    "depth": "RB2",
    "news": "Sep 8",
    "news_ms": 1788888050537,
-   "adds": 63400
+   "adds": 63832
   },
   {
    "id": "11610",
@@ -450,7 +450,7 @@
    "depth": "SWR1",
    "news": "Sep 4",
    "news_ms": 1788549622032,
-   "adds": 60304
+   "adds": 60608
   },
   {
    "id": "8180",
@@ -463,7 +463,7 @@
    "depth": "RWR2",
    "news": "Sep 4",
    "news_ms": 1788550822308,
-   "adds": 59742
+   "adds": 60165
   },
   {
    "id": "4039",
@@ -476,7 +476,7 @@
    "depth": "SWR3",
    "news": "Sep 8",
    "news_ms": 1788906320887,
-   "adds": 55458
+   "adds": 55830
   },
   {
    "id": "13411",
@@ -489,7 +489,7 @@
    "depth": "SWR4",
    "news": "Sep 9",
    "news_ms": 1788915925425,
-   "adds": 54018
+   "adds": 54225
   }
  ],
  "transactions": [
@@ -616,8 +616,8 @@
     "why": "Questionable \u00b7 Knee - ACL \u00b7 Surgery",
     "injury": "Questionable",
     "depth": "TE1",
-    "news": "Sep 4",
-    "news_ms": 1788485116064
+    "news": "Sep 9",
+    "news_ms": 1788976234850
    },
    {
     "id": "12490",
