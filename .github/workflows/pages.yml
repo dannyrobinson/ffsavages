@@ -4,16 +4,17 @@ on:
   push:
     branches: [main]
   schedule:
-    # Pacific time is UTC-7 in season. 14:00 UTC = 7 AM PT.
-    - cron: "0 14 * * 2"   # Tue 7 AM PT   — waiver day
-    - cron: "0 14 * * 3"   # Wed 7 AM PT   — claims have cleared
-    - cron: "0 14 * * 4"   # Thu 7 AM PT   — TNF lock day
-    - cron: "0 14 * * 6"   # Sat 7 AM PT   — final designations are in
-    - cron: "0 14 * * 0"   # Sun 7 AM PT   — inactives morning
+    # Pacific time is UTC-7 in season. 13:30 UTC = 6:30 AM PT, half an hour before the Claude routine
+    # (7 AM PT) so the committed sweep is fresh when it reads it.
+    - cron: "30 13 * * 2"   # Tue 6:30 AM PT   — waiver day
+    - cron: "30 13 * * 3"   # Wed 6:30 AM PT   — claims have cleared
+    - cron: "30 13 * * 4"   # Thu 6:30 AM PT   — TNF lock day
+    - cron: "30 13 * * 6"   # Sat 6:30 AM PT   — final designations are in
+    - cron: "30 13 * * 0"   # Sun 6:30 AM PT   — inactives morning
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -33,6 +34,16 @@ jobs:
         run: python3 scripts/build.py
       - name: Show the sweep
         run: cat data/sweep.md
+      - name: Commit the sweep so the Claude cloud routine can read it (its sandbox can't reach Sleeper)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sweep.json data/sweep.md
+          if git diff --cached --quiet; then echo "sweep unchanged"; else
+            git commit -m "Sweep: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

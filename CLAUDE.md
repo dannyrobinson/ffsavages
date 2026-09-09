@@ -49,14 +49,19 @@ republishes, and a scheduled Claude cloud agent writes the narrative briefing.
   `data/sweep.json` (the `trending` list and the league rosters) before it is recommended.
 - `docs/playbook.md` — researched champions' rules with sources; condensed copies live in `app/gm.html`
   (Plan tab and the RULES prompt).
-- `.github/workflows/pages.yml` — on push and Tue/Wed/Thu/Sat/Sun 7 AM PT: sweep, build, deploy Pages.
-- `data/` and `site/` — gitignored build outputs.
+- `.github/workflows/pages.yml` — on push and Tue/Wed/Thu/Sat/Sun 6:30 AM PT: sweep, commit `data/sweep.*`,
+  build, deploy Pages.
+- `data/sweep.json` + `data/sweep.md` are committed (by the Action); everything else in `data/` and all of
+  `site/` is gitignored.
 
 ## How a briefing refresh works (this is the recurring job)
 Runs as the Claude cloud routine "Robinsavages briefing" (Sun/Tue/Thu/Sat 7 AM PT, model claude-sonnet-5,
 manage at https://claude.ai/code/routines/trig_01H2oT2z2gAX3SJTUo788aFw). The GitHub Action separately
 re-sweeps Sleeper data on its own schedule; both end in a Pages deploy.
-1. `python3 scripts/build.py` — sweeps Sleeper and bakes the data. Read `data/sweep.md`.
+1. `python3 scripts/build.py` — sweeps Sleeper and bakes the data. Read `data/sweep.md`. **Claude cloud
+   sandboxes cannot reach `api.sleeper.app`** (egress policy returns 403), so there the script falls back to
+   the committed `data/sweep.json`, which the GitHub Action refreshes and commits at 6:30 AM PT on sweep
+   days. Check the sweep's `generated` stamp; if it is more than a day old, say so in the briefing.
 2. Web-search news for every AMBER/RED player and for anything spiking in the `trending` list (a spike
    usually means an injury to the starter ahead of him). Check Danny's QBs first, then Nabers.
 3. Write `docs/briefing.md` in Danny's format (see above). Whole-dollar FAAB bids out of what's left,
