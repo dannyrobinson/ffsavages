@@ -1,5 +1,7 @@
-data/*.json
-data/*.md
+data/*
+!data/.gitkeep
+!data/sweep.json
+!data/sweep.md
 site/
 .DS_Store
 __pycache__/
