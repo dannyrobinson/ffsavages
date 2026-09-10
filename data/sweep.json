@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 10, 2026 10:03 AM PT",
- "generated_ms": 1789059809752,
+ "generated": "Thu Sep 10, 2026 4:59 PM PT",
+ "generated_ms": 1789084747550,
  "season": "2026",
  "week": 1,
  "faab_used": 0,
@@ -121,7 +121,7 @@
    "injury": "Out",
    "depth": "LWR1",
    "news": "Sep 10",
-   "news_ms": 1789049110575,
+   "news_ms": 1789083629209,
    "slot": "START"
   },
   {
@@ -134,7 +134,7 @@
    "injury": "Questionable",
    "depth": "LWR1",
    "news": "Sep 10",
-   "news_ms": 1789004434452,
+   "news_ms": 1789073420766,
    "slot": "BN"
   },
   {
@@ -159,8 +159,8 @@
    "why": "Questionable \u00b7 Knee - ACL \u00b7 Surgery",
    "injury": "Questionable",
    "depth": "LWR1",
-   "news": "Sep 9",
-   "news_ms": 1788984345767,
+   "news": "Sep 10",
+   "news_ms": 1789079728136,
    "slot": "START"
   },
   {
@@ -229,7 +229,7 @@
    "depth": "TE1",
    "news": "Sep 9",
    "news_ms": 1788985545679,
-   "adds": 1660761
+   "adds": 1832274
   },
   {
    "id": "10235",
@@ -242,7 +242,7 @@
    "depth": "RB3",
    "news": "Sep 8",
    "news_ms": 1788877549423,
-   "adds": 412040
+   "adds": 334728
   },
   {
    "id": "11834",
@@ -255,7 +255,7 @@
    "depth": "SWR2",
    "news": "Sep 9",
    "news_ms": 1788984645640,
-   "adds": 333942
+   "adds": 295225
   },
   {
    "id": "2505",
@@ -268,7 +268,7 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789051202505,
-   "adds": 265518
+   "adds": 271818
   },
   {
    "id": "8800",
@@ -281,7 +281,7 @@
    "depth": "RB2",
    "news": "Sep 8",
    "news_ms": 1788843345303,
-   "adds": 253305
+   "adds": 222318
   },
   {
    "id": "10213",
@@ -294,7 +294,7 @@
    "depth": "LWR1",
    "news": "Sep 9",
    "news_ms": 1788962726159,
-   "adds": 171744
+   "adds": 183792
   },
   {
    "id": "13414",
@@ -307,7 +307,7 @@
    "depth": "RB2",
    "news": "Sep 9",
    "news_ms": 1788960625981,
-   "adds": 162386
+   "adds": 127918
   },
   {
    "id": "4039",
@@ -319,8 +319,8 @@
    "injury": null,
    "depth": "SWR3",
    "news": "Sep 10",
-   "news_ms": 1789054805058,
-   "adds": 108240
+   "news_ms": 1789067120814,
+   "adds": 107496
   },
   {
    "id": "8127",
@@ -333,7 +333,7 @@
    "depth": "TE3",
    "news": "Sep 10",
    "news_ms": 1789048502354,
-   "adds": 107988
+   "adds": 90747
   },
   {
    "id": "13296",
@@ -346,7 +346,7 @@
    "depth": "RWR2",
    "news": "Sep 9",
    "news_ms": 1788986445775,
-   "adds": 100728
+   "adds": 86288
   },
   {
    "id": "13285",
@@ -359,7 +359,7 @@
    "depth": "RWR3",
    "news": "Sep 9",
    "news_ms": 1788982545388,
-   "adds": 92480
+   "adds": 82075
   },
   {
    "id": "2078",
@@ -372,7 +372,7 @@
    "depth": "LWR4",
    "news": "Sep 6",
    "news_ms": 1788709230912,
-   "adds": 89985
+   "adds": 77539
   },
   {
    "id": "9511",
@@ -384,73 +384,8 @@
    "injury": "Questionable",
    "depth": "RB2",
    "news": "Sep 10",
-   "news_ms": 1789015235533,
-   "adds": 79740
-  },
-  {
-   "id": "8134",
-   "name": "Khalil Shakir",
-   "pos": "WR",
-   "team": "BUF",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR2",
-   "news": "Sep 9",
-   "news_ms": 1788990347732,
-   "adds": 72225
-  },
-  {
-   "id": "7090",
-   "name": "Darnell Mooney",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR2",
-   "news": "Sep 8",
-   "news_ms": 1788892850926,
-   "adds": 63963
-  },
-  {
-   "id": "4147",
-   "name": "Samaje Perine",
-   "pos": "RB",
-   "team": "CIN",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 8",
-   "news_ms": 1788888050537,
-   "adds": 62584
-  },
-  {
-   "id": "12491",
-   "name": "Corey Kiner",
-   "pos": "RB",
-   "team": "NE",
-   "flag": "amber",
-   "why": "RB5 on the depth chart",
-   "injury": null,
-   "depth": "RB5",
-   "news": "Aug 29",
-   "news_ms": 1788035150497,
-   "adds": 58974
-  },
-  {
-   "id": "13533",
-   "name": "Barion Brown",
-   "pos": "WR",
-   "team": "NO",
-   "flag": "amber",
-   "why": "WR4 on the depth chart",
-   "injury": null,
-   "depth": "SWR4",
-   "news": "Sep 9",
-   "news_ms": 1788966926414,
-   "adds": 57627
+   "news_ms": 1789080328104,
+   "adds": 71244
   },
   {
    "id": "5854",
@@ -463,20 +398,85 @@
    "depth": "QB2",
    "news": "Sep 10",
    "news_ms": 1789054504152,
-   "adds": 56143
+   "adds": 68423
   },
   {
-   "id": "11610",
-   "name": "Malik Washington",
+   "id": "8134",
+   "name": "Khalil Shakir",
    "pos": "WR",
-   "team": "MIA",
+   "team": "BUF",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "SWR1",
+   "depth": "SWR2",
    "news": "Sep 9",
-   "news_ms": 1788983445756,
-   "adds": 53944
+   "news_ms": 1788990347732,
+   "adds": 67932
+  },
+  {
+   "id": "7090",
+   "name": "Darnell Mooney",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "SWR2",
+   "news": "Sep 8",
+   "news_ms": 1788892850926,
+   "adds": 58491
+  },
+  {
+   "id": "8111",
+   "name": "Cade Otton",
+   "pos": "TE",
+   "team": "TB",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 10",
+   "news_ms": 1789071620602,
+   "adds": 55902
+  },
+  {
+   "id": "4147",
+   "name": "Samaje Perine",
+   "pos": "RB",
+   "team": "CIN",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 8",
+   "news_ms": 1788888050537,
+   "adds": 54884
+  },
+  {
+   "id": "12491",
+   "name": "Corey Kiner",
+   "pos": "RB",
+   "team": "NE",
+   "flag": "amber",
+   "why": "RB5 on the depth chart",
+   "injury": null,
+   "depth": "RB5",
+   "news": "Aug 29",
+   "news_ms": 1788035150497,
+   "adds": 54018
+  },
+  {
+   "id": "13533",
+   "name": "Barion Brown",
+   "pos": "WR",
+   "team": "NO",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "SWR4",
+   "news": "Sep 9",
+   "news_ms": 1788966926414,
+   "adds": 50607
   }
  ],
  "transactions": [
@@ -580,8 +580,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "QB1",
-    "news": "Sep 6",
-    "news_ms": 1788701730242
+    "news": "Sep 10",
+    "news_ms": 1789059603861
    },
    {
     "id": "6813",
@@ -604,8 +604,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 9",
-    "news_ms": 1788914121512
+    "news": "Sep 10",
+    "news_ms": 1789060503576
    },
    {
     "id": "12526",
