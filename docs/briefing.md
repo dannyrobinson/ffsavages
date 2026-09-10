@@ -1,19 +1,18 @@
-# Wed Sep 9, 2026, 12:33 PM PT · Week 1 · written by Claude from today's news sweep and Sleeper data
-**Set your lineup before 5:20 PM PT TODAY.** The season opens with NE at SEA (Patriots-Seahawks, Super Bowl LX rematch) — A.J. Brown plays and locks at that kickoff, the first of the year.
+# Thu Sep 10, 2026, 7:11 AM PT · Week 1 · written by Claude from today's news sweep and Sleeper data
+**A.J. Brown is out indefinitely with a high-ankle sprain from Wednesday's Patriots debut — that game already happened, so there's nothing to fix there; your next lineup lock is Sunday 10 AM PT when Burrow, Caleb Williams, Chase Brown, Warren, Judkins and Juwan Johnson all kick off.**
 ## Do now
-- **Confirm A.J. Brown is starting before 5:20 PM PT.** Dislocated his thumb Monday, played through it, no injury designation (Sept 8) — healthy, first lock of the season.
-- **Start Nabers.** Full practice Wed Sept 9, first through WR drills, trending to play Sunday Night vs Dallas. He's your late-window Questionable (SNF, last game of the day) — if Friday's report turns him Doubtful, flex **Lloyd** instead, don't wait for a game-time call.
-- **Add Roschon Johnson (RB CHI, free agent), drop Mason.** Bears backfield mates D'Andre Swift and Kyle Monangai are both banged up (Sept 8-9 reports), leaving Johnson the clear early-down back on Caleb Williams' team. Mason still splits Minnesota's backfield with Aaron Jones. Waivers cleared this morning and no Week 1 game has kicked off yet, so it's first-come — no FAAB needed, grab him now.
-- **Flex Lloyd, not just as insurance.** Jacobs is on the Commissioner's Exempt list on domestic-violence charges; reports point to no return before Week 11-12, not a quick Thursday resolution. Lloyd is Green Bay's lead back for the long haul.
-- **Hold the rest of the bench.** Willis (locked-in MIA starter), Pierce (Colts' new $114M WR1 after Pittman left), and Schultz (Houston's No. 2 target with Higgins/Dell out) all have real Week 1 roles now — nothing on the wire clearly beats any of them.
+- **Don't panic-drop A.J. Brown.** Ruled out with a high-ankle (eversion) sprain in his Patriots debut Wed night vs. Seattle; HC Vrabel had no return timeline as of Sep 10. Stash him — he's your WR1 again the moment he's back.
+- **Recheck Nabers' practice report before locking Sunday's flex.** Full team drills Wed, trending to play (Sep 9 reports), but Giants-Cowboys is the last game of the day (Sun 5:20 PM PT) — if he's downgraded Saturday you'll want a same-window backup ready, and Pierce is your only bench WR.
+- **Pierce (heel) is trending to play but could be on a snap count** (Colts.com, Sep 9-10) — fine as emergency Nabers insurance, not a must-start.
+- **Consider a short-term TE stream: Michael Mayer (LV).** Brock Bowers is out for the next 1-2 games after a meniscus trim, making Mayer the clear Raiders TE1 for now (Sep 8 reports) — worth a small speculative bid given your TE spot is thin, not a season-long claim.
+- **No rush chasing a waiver QB.** Every Week 1 starting QB in this league is already rostered by someone (the sweep's free-agent-QB list is empty) — your 3-QB superflex edge is intact.
 ## Your players
-- **RED:** none.
-- **AMBER:** **Nabers** (knee/ACL, full practice, trending to play SNF — recheck Friday) · **Mason** (MN co-starter with Aaron Jones, replaceable — see above).
-- **GREEN:** **Burrow, Caleb Williams, Willis** all healthy Week 1 starters · **Chase Brown, Warren, Judkins** unquestioned workhorse backs · **A.J. Brown, Waddle** healthy · **Juwan Johnson, Schultz** real TE roles · **Lloyd** elevated to GB's starter · **Pierce** healthy, expanded role · **Fairbairn, DET** fine.
+- **RED:** **A.J. Brown** — out indefinitely, high-ankle sprain from Wed's Patriots debut; Week 1 stat line is locked, watch for a return update next week.
+- **AMBER:** **Nabers** — knee, fully practicing, trending to play Sunday night, recheck Saturday's report · **Pierce** — heel, expected to play but maybe limited snaps · **Mason** — stuck as Minnesota's RB2, not in play as a start.
+- **GREEN:** **Burrow, Caleb Williams, Willis** are all confirmed Week 1 starters (Willis is now Miami's clear QB1) · **Chase Brown**, **Warren** (hamstring resolved) and **Judkins** (minor camp knock, on track) all clean · **Waddle** (minor tightness, cleared) · **Juwan Johnson** healthy with an even bigger role now that Saints' WR2 spot is open · **Fairbairn**, **Detroit DEF** fine.
 ## Waiver wire, checked against this league
-- **Roschon Johnson, RB CHI** (free) — see above. Drop Mason. First-come, no bid.
-- **Devaughn Vele, WR NO** (free) — Saints' No. 2 receiver with Jordyn Tyson on IR. Speculative only; your bench has no clean drop for him right now. First-come, no bid.
-- **Deshaun Watson, QB CLE** (free) — named Week 1 starter Aug 24. You already carry 3 startable QBs, so this is a stash, not a claim — hold off cutting Willis for him.
-- **Already rostered here, ignore the general pickup lists:** Malik Willis and Dalton Schultz (both already on your own bench) and Kaleb Johnson, RB (added by EasyIP this week).
+- **Michael Mayer, TE, LV (free agent)** — Bowers out 1-2 games with a meniscus trim, Mayer is the clear fill-in starter. Drop **Lloyd** (buried behind Jacobs in Green Bay, your weakest bench spot). Bid **$9**.
+- Nothing else on this week's trending list clearly beats your bench — Vele, Waller, Tucker, Kupp and Shakir are all speculative WR/TE depth with no clean roster spot to open for them right now.
+- **Already accounted for:** every Week 1 starting QB is rostered by someone in this league already (see the QB depth chart) — none are free agents here, so ignore any national "stream a QB" list this week.
 ## This week: paulhemsley
-Their studs go first: Purdy and McCaffrey (both full-go) open the league's season Thursday 5:35 PM PT in Melbourne against the Rams. Kraft is full-go off his ACL, Tuten is questionable with an illness but expected to play Sunday. Jordyn Tyson is on IR yet still shown in a starting slot on their roster — worth watching for a correction. Real talent (Taylor, McLaurin), but your QB pair should outscore Purdy/Stafford in superflex.
+Purdy and McCaffrey (both trending to play — McCaffrey's calf tightness looks like a non-issue) tip off the league's season tonight in Melbourne, so he banks those stats first. Taylor, McMillan, McLaurin and Kraft round out a deep, healthy lineup with no real holes. His superflex spot is the gap: he only runs 2 startable QBs (Purdy/Stafford) to your 3, so lean on that edge if it's close.
