@@ -11,7 +11,8 @@ Inputs
                       written by the scheduled cloud agent. Tiny markdown subset: #, ##, -, **, links.
 Outputs
   app/gm.html         same file, with the SWEEP and BRIEF blocks replaced in place
-  site/index.html     copy of gm.html for GitHub Pages, plus site/war-room.html and site/sweep.json
+  site/index.html     copy of gm.html for GitHub Pages / Vercel, plus war-room.html, sweep.json,
+                      sw.js, manifest.webmanifest and icons/ (the PWA shell)
 """
 import sys, json, re, html, shutil, pathlib, datetime
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -86,6 +87,9 @@ def main():
     site = ROOT / "site"; site.mkdir(exist_ok=True)
     (site / "index.html").write_text(page)
     shutil.copy(ROOT / "app/war-room.html", site / "war-room.html")
+    for f in ("sw.js", "manifest.webmanifest"):          # PWA shell (service worker must sit beside index.html)
+        shutil.copy(ROOT / "app" / f, site / f)
+    shutil.copytree(ROOT / "app/icons", site / "icons", dirs_exist_ok=True)
     (site / "sweep.json").write_text(json.dumps(data, indent=1))
     (site / ".nojekyll").write_text("")
     print(f"built site/ · week {data['week']} · sweep {data['generated']} · briefing {'yes' if brief_md.exists() else 'none'}")

@@ -1,10 +1,13 @@
 # Robinsavages — fantasy football GM for Danny
 
 Danny Robinson's team in the **West Van Super Studs** Sleeper league (2026). This repo holds the draft
-board we used on draft night, a phone GM app, and the Sleeper sweep that keeps it current. The app is
-published at https://dannyrobinson.github.io/ffsavages/ (repo `dannyrobinson/ffsavages`, public because
-GitHub Pages on a free plan needs it). The monitoring runs itself: a GitHub Action sweeps Sleeper and
-republishes, and a scheduled Claude cloud agent writes the narrative briefing.
+board we used on draft night, a phone GM app (an installable PWA), the Sleeper sweep that keeps it current,
+and the Vercel functions behind push alerts. The app lives at **https://robinsavages.vercel.app** (Vercel
+project `robinsavages`, team FirstPointEnergy, the only team on Danny's account) and is mirrored at
+https://dannyrobinson.github.io/ffsavages/ (repo `dannyrobinson/ffsavages`, public because GitHub Pages on
+a free plan needs it). The monitoring runs itself: the page pulls Sleeper live on every open, a Vercel cron
+checks Danny's roster every 15 minutes and pushes alerts, a GitHub Action re-sweeps and republishes, and a
+scheduled Claude cloud agent writes the narrative briefing.
 
 ## The league (don't re-derive this; it's confirmed)
 - Sleeper league `1312551337698820096`, draft `1312551337711386624`, Danny = user `1263724329326100480`
@@ -30,19 +33,38 @@ republishes, and a scheduled Claude cloud agent writes the narrative briefing.
 - He reads this on his phone. Short beats thorough.
 
 ## What's here
-- `app/gm.html` — phone app. Tabs: Moves, Roster, News, Ask, Plan. Two blocks are baked in by
+- `app/gm.html` — phone app, single file. Tabs: Moves, Roster, News, Ask, Plan. Two blocks are baked in by
   `scripts/build.py` between HTML comment markers: `SWEEP` (JSON from the Sleeper sweep: roster with
   red/amber/green flags, free-agent starting QBs, trending adds that are free agents *here*, league
   transactions, this week's opponent, QB count per team) and `BRIEF` (Claude's narrative from
-  `docs/briefing.md`). The roster re-syncs from the baked sweep whenever it is newer than what the phone
-  saved. "What should I do next?" and Ask use the claude.ai artifact `sample` capability and only work
-  inside the Claude app; on GitHub Pages the page is read-only but still current. The `POOL` array is
-  the draft board's player list.
+  `docs/briefing.md`). **The baked SWEEP is only the fallback**: on open, on the ↻ button and when the app
+  comes back to the foreground, the page fetches `api/sweep` (Vercel) and, where there is no API (GitHub
+  Pages, localhost), talks to api.sleeper.app directly (CORS is open) with the 2.5 MB player feed slimmed
+  and cached in localStorage for an hour. `applySweep()` replaces SWEEP, FLAGS and the roster. The alerts
+  card (Moves tab) subscribes the phone to push via `sw.js` + `api/subscribe`; the install chip nudges
+  Add to Home Screen (iOS needs the installed copy for push). "What should I do next?" and Ask use the
+  claude.ai artifact `sample` capability and only work inside the Claude app. The `POOL` array is the
+  draft board's player list.
+- `app/sw.js`, `app/manifest.webmanifest`, `app/icons/` — the PWA shell. Network-first cache for our own
+  files, never the API. `push` shows the notification, `notificationclick` focuses the app.
+- `lib/sleeper.js` — the sweep ported to Node (same flags and shapes as `scripts/sweep.py`; a harness
+  diffed the two and they matched field for field). `lib/check.js` is the alert diff: a flag colour
+  change or injury-status change on Danny's players, a practice-report change on an amber/red player,
+  or a new free-agent starting QB. First run stores state and sends nothing.
+- `api/sweep.js` (GET, CDN-cached 2 min; `?fresh=1` bypasses), `api/config.js` (VAPID public key + last
+  check), `api/subscribe.js` (POST subscribe/unsubscribe/test; subscribe sends a welcome push),
+  `api/check.js` (the cron; needs `Authorization: Bearer $CRON_SECRET`; `?dry=1` diffs without sending or
+  storing). Vercel runs `/api/check` every 15 min (`vercel.json`). Env on Vercel: `DATABASE_URL` (Neon
+  project `robinsavages`, org "Danny", tables `push_subscriptions` + `kv`), `VAPID_PUBLIC_KEY`,
+  `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`. Deps: `web-push`, `@neondatabase/serverless`.
+- To test the functions locally: `node --env-file=.env.local <harness>` importing the handlers as Web
+  `Request`/`Response`; `vercel env pull` writes `.env.local` (gitignored).
 - `app/war-room.html` — the draft-night board (ranked 187 players, tiers, pick plan).
 - `scripts/sleeper.py` — stdlib-only Sleeper client. `roster`, `picks`, `transactions`, `players`.
 - `scripts/sweep.py` — the Sleeper sweep. Writes `data/sweep.json` + `data/sweep.md`.
 - `scripts/build.py` — runs the sweep, converts `docs/briefing.md`, injects both into `app/gm.html`
-  in place, and stages `site/` (index.html, war-room.html, sweep.json) for Pages. `--no-fetch` reuses
+  in place, and stages `site/` (index.html, war-room.html, sweep.json, sw.js, manifest, icons) for Pages
+  and Vercel (`vercel.json` runs it with `--no-fetch` as the build command). `--no-fetch` reuses
   `data/sweep.json`.
 - `docs/briefing.md` — Claude's narrative briefing. Headline first, then "Do now", "Your players",
   "Waiver wire, checked against this league", "This week". Every waiver name must be checked against
@@ -72,7 +94,9 @@ Nice-to-have next: `scripts/lineup.py` (optimal lineup from the sweep + projecti
 Danny's players (Sleeper doesn't expose them; research once and bake into the Plan tab).
 
 ## Conventions
-- Python 3.9+, no third-party deps unless there's a good reason. Keep the HTML apps single-file.
+- Python 3.9+, no third-party deps unless there's a good reason. Keep the HTML apps single-file. The Vercel
+  side is plain Node ESM (`"type": "module"`), Web-standard handlers, two deps.
+- Secrets live only in Vercel env (and `.env.local`, gitignored). Never commit `.vercel/` or a Neon URL.
 - Don't commit `data/*.json`. Don't put anything private in the HTML — the GM app is a hosted page.
 - Dates matter: it's the 2026 season. Player-team pairs in the HTML reflect Sept 8 2026 cutdowns.
 

@@ -3,7 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="color-scheme" content="light dark">
 <title>Robinsavages GM</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#141C26">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Robinsavages">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
 :root{
@@ -31,13 +41,16 @@
 }
 *{box-sizing:border-box}
 html,body{height:100%}
+html{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent}
+button,a,input,textarea{touch-action:manipulation}
+@media (hover:none){button:hover{opacity:1}}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.45;-webkit-text-size-adjust:100%}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;margin:0;line-height:1.05;text-wrap:balance}
-textarea,input{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
+textarea,input{font:inherit;font-size:16px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
 textarea{min-height:120px;resize:vertical;line-height:1.4}
-.wrap{max-width:680px;margin:0 auto;padding:0 14px calc(84px + env(safe-area-inset-bottom))}
+.wrap{max-width:680px;margin:0 auto;padding:env(safe-area-inset-top) 14px calc(84px + env(safe-area-inset-bottom))}
 .hdr{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:18px 0 10px;border-bottom:2px solid var(--ink)}
 .hdr h1{font-size:30px;font-weight:700;text-transform:uppercase;letter-spacing:.01em}
 .hdr .sub{color:var(--ink2);font-size:13px;margin-top:3px}
@@ -49,7 +62,7 @@ p.lead{color:var(--ink2);max-width:60ch;margin:0 0 12px;font-size:13.5px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:"Barlow Condensed",sans-serif;font-size:19px;font-weight:700;letter-spacing:.02em;padding:11px 18px;border-radius:12px;background:var(--ink);color:var(--bg);width:100%}
 .btn:disabled{opacity:.5;cursor:default}
 .btn.sec{background:var(--panel);color:var(--ink);border:1px solid var(--line)}
-.btn.small{width:auto;font-size:15px;padding:6px 12px;border-radius:9px}
+.btn.small{width:auto;font-size:15px;padding:8px 14px;min-height:40px;border-radius:9px}
 .row2{display:flex;gap:8px;margin-top:10px}
 .row2 .btn{flex:1}
 .status{font-size:12.5px;color:var(--ink3);margin-top:8px;min-height:1.2em}
@@ -96,9 +109,9 @@ h3.sec{font-size:20px;font-weight:700;margin:18px 0 8px}
 .pr:first-child{border-top:0}
 .pr .nm{flex:1;font-weight:600;font-size:14.5px;min-width:0}
 .pr .nm small{font-weight:500;color:var(--ink3);font-size:12px;margin-left:5px}
-.pr .st{font-family:"Barlow Condensed",sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em;padding:3px 8px;border-radius:6px;border:1px solid var(--line);color:var(--ink2);min-width:54px;text-align:center}
+.pr .st{font-family:"Barlow Condensed",sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em;padding:6px 8px;min-height:32px;border-radius:6px;border:1px solid var(--line);color:var(--ink2);min-width:54px;text-align:center}
 .pr .st.IR{background:var(--red-bg);color:var(--red);border-color:transparent}
-.pr .x{color:var(--ink3);font-size:18px;padding:0 6px;line-height:1}
+.pr .x{color:var(--ink3);font-size:20px;min-width:40px;min-height:40px;display:grid;place-items:center;line-height:1;margin-right:-6px}
 .pr .x:hover{color:var(--red)}
 .count{font-size:12.5px;color:var(--ink3);margin:6px 0 10px}
 .sug{margin-top:6px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;max-height:260px;overflow-y:auto}
@@ -115,7 +128,7 @@ h3.sec{font-size:20px;font-weight:700;margin:18px 0 8px}
 .lg .ts{font-size:11.5px;color:var(--ink3);display:block;margin-bottom:2px}
 .lg .body{white-space:pre-wrap;max-height:4.2em;overflow:hidden;color:var(--ink)}
 .lg.open .body{max-height:none}
-.lg .x{color:var(--ink3);align-self:start}
+.lg .x{color:var(--ink3);align-self:start;min-width:36px;min-height:36px;display:grid;place-items:center;font-size:20px}
 .file{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:13px;color:var(--ink2)}
 .file input{width:auto;padding:6px}
 .thumb{width:44px;height:44px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
@@ -131,7 +144,7 @@ h3.sec{font-size:20px;font-weight:700;margin:18px 0 8px}
 
 /* nav */
 .nav{position:fixed;left:0;right:0;bottom:0;z-index:9;background:var(--nav);border-top:1px solid var(--line);display:flex;padding:4px 6px calc(4px + env(safe-area-inset-bottom))}
-.nav button{flex:1;font-family:"Barlow Condensed",sans-serif;font-size:16px;font-weight:600;letter-spacing:.02em;color:var(--ink3);padding:8px 4px 6px;border-radius:10px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.nav button{flex:1;min-height:52px;font-family:"Barlow Condensed",sans-serif;font-size:16px;font-weight:600;letter-spacing:.02em;color:var(--ink3);padding:8px 4px 6px;border-radius:10px;display:flex;flex-direction:column;align-items:center;gap:2px}
 .nav button[aria-selected="true"]{color:var(--ink);background:var(--line2)}
 .nav svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .badge{display:inline-block;min-width:16px;padding:0 4px;border-radius:8px;background:var(--red);color:#fff;font-size:11px;line-height:16px;text-align:center;font-family:"IBM Plex Sans",sans-serif;font-weight:600;position:absolute;transform:translate(14px,-6px)}
@@ -165,6 +178,28 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
 .txn div b{color:var(--ink);font-weight:600}
 .txn div .bid{font-family:"IBM Plex Mono",monospace;color:var(--go)}
 @media (prefers-reduced-motion:no-preference){.mv,.al{transition:background .15s}}
+/* live stamp, refresh, alerts */
+.hdr .tools{display:flex;align-items:center;gap:8px;padding-bottom:4px}
+.iconbtn{width:44px;height:44px;border:1px solid var(--line);border-radius:11px;background:var(--panel);display:grid;place-items:center;color:var(--ink2)}
+.iconbtn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.iconbtn.spin svg{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.live{font-size:12px;color:var(--ink3);margin-top:3px;display:flex;align-items:center;gap:6px}
+.live .dot{width:7px;height:7px;background:currentColor;opacity:.7}
+.live.ok{color:var(--go)} .live.err{color:var(--amber)}
+.alertcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-top:10px;font-size:13.5px;color:var(--ink2);display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center}
+.alertcard b{color:var(--ink);font-weight:600}
+.alertcard .txt{flex:1 1 200px;min-width:0}
+.alertcard .txt small{display:block;color:var(--ink3);font-size:12px;margin-top:2px}
+.alertcard .btn.small{width:auto}
+.alertcard .bell{font-size:18px;flex:none}
+.alertcard a{color:var(--te)}
+.chip{display:flex;align-items:center;gap:6px;margin-top:10px;background:var(--ink);color:var(--bg);border-radius:999px;padding:4px 6px 4px 14px;font-size:14px;font-weight:600}
+.chip[hidden]{display:none}
+.chip .go{flex:1;text-align:left;color:inherit;font:inherit;font-weight:600;min-height:36px;display:flex;align-items:center;gap:8px}
+.chip .x{color:inherit;opacity:.7;font-size:20px;min-width:36px;min-height:36px;display:grid;place-items:center;line-height:1}
+.chip .how{flex-basis:100%;font-weight:400;font-size:13px;opacity:.9;padding:0 8px 6px 0;line-height:1.4}
+.chip.open{border-radius:16px;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -173,11 +208,15 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
     <div>
       <h1>Robinsavages GM</h1>
       <div class="sub" id="sub">West Van Super Studs · 12-team superflex, full PPR · $150 FAAB</div>
+      <div class="live" id="liveStamp"><span class="dot"></span><span id="liveText">Sleeper snapshot</span></div>
     </div>
+    <div class="tools"><button class="iconbtn" id="refreshBtn" aria-label="Refresh from Sleeper" title="Refresh from Sleeper"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg></button></div>
   </header>
+  <div class="chip" id="installChip" hidden><button class="go" id="installBtn">📲 Install this app</button><button class="x" id="installX" aria-label="Not now">×</button><div class="how" id="installHow" hidden></div></div>
 
   <!-- MOVES -->
   <section class="pane" id="moves">
+    <div id="alertsCard"></div>
     <div id="movesBody"></div>
     <div style="margin-top:12px">
       <button class="btn" id="runBtn">What should I do next?</button>
@@ -235,7 +274,7 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
 
   <!-- NEWS -->
   <section class="pane" id="news" hidden>
-    <p class="lead">This page can't reach the internet on its own, so feed it: paste injury notes, Sleeper's news feed, a waiver-wire list, a trade offer, or upload a screenshot. Claude reads all of it when you ask for next moves.</p>
+    <p class="lead">Claude can't browse from here, so feed it: paste injury notes, Sleeper's news feed, a waiver-wire list, a trade offer, or upload a screenshot. Claude reads all of it when you ask for next moves.</p>
     <textarea id="newsText" placeholder="Paste news, the waiver wire, or a trade offer here…"></textarea>
     <div class="file" id="fileRow" hidden>
       <input type="file" id="shot" aria-label="Upload a screenshot">
@@ -289,7 +328,7 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
 </nav>
 
 <!-- SWEEP:START -->
-<script id="sweep" type="application/json">{"generated":"Thu Sep 10, 2026 7:11 AM PT","generated_ms":1789049474965,"season":"2026","week":1,"faab_used":0,"faab_total":150,"record":"0-0","roster":[{"id":"11560","name":"Caleb Williams","pos":"QB","team":"CHI","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 4","news_ms":1788480915807,"slot":"START"},{"id":"6770","name":"Joe Burrow","pos":"QB","team":"CIN","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 3","news_ms":1788453005931,"slot":"START"},{"id":"8161","name":"Malik Willis","pos":"QB","team":"MIA","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 8","news_ms":1788906620891,"slot":"BN"},{"id":"9224","name":"Chase Brown","pos":"RB","team":"CIN","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 5","news_ms":1788619217404,"slot":"START"},{"id":"8228","name":"Jaylen Warren","pos":"RB","team":"PIT","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 9","news_ms":1788973234282,"slot":"START"},{"id":"8408","name":"Jordan Mason","pos":"RB","team":"MIN","flag":"amber","why":"RB2 on the depth chart","injury":null,"depth":"RB2","news":"Sep 5","news_ms":1788618317218,"slot":"BN"},{"id":"11581","name":"MarShawn Lloyd","pos":"RB","team":"GB","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 9","news_ms":1788964526354,"slot":"BN"},{"id":"12512","name":"Quinshon Judkins","pos":"RB","team":"CLE","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 3","news_ms":1788449105184,"slot":"START"},{"id":"5859","name":"A.J. Brown","pos":"WR","team":"NE","flag":"red","why":"Out \u00b7 Ankle","injury":"Out","depth":"LWR1","news":"Sep 10","news_ms":1789042512912,"slot":"START"},{"id":"8142","name":"Alec Pierce","pos":"WR","team":"IND","flag":"amber","why":"Questionable \u00b7 Heel","injury":"Questionable","depth":"LWR1","news":"Sep 10","news_ms":1789004434452,"slot":"BN"},{"id":"7526","name":"Jaylen Waddle","pos":"WR","team":"DEN","flag":"green","why":"Healthy, starting","injury":null,"depth":"RWR1","news":"Sep 4","news_ms":1788537921125,"slot":"START"},{"id":"11632","name":"Malik Nabers","pos":"WR","team":"NYG","flag":"amber","why":"Questionable \u00b7 Knee - ACL \u00b7 Surgery","injury":"Questionable","depth":"LWR1","news":"Sep 9","news_ms":1788984345767,"slot":"START"},{"id":"5001","name":"Dalton Schultz","pos":"TE","team":"HOU","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE1","news":"Sep 7","news_ms":1788810041847,"slot":"BN"},{"id":"7002","name":"Juwan Johnson","pos":"TE","team":"NO","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE1","news":"Sep 9","news_ms":1788987345817,"slot":"START"},{"id":"3451","name":"Ka'imi Fairbairn","pos":"K","team":"HOU","flag":"green","why":"Healthy, starting","injury":null,"depth":"K1","news":"Aug 29","news_ms":1787986543802,"slot":"START"},{"id":"DET","name":"Detroit Lions","pos":"DEF","team":"DET","flag":"green","why":"Healthy, starting","injury":null,"depth":null,"news":null,"news_ms":null,"slot":"START"}],"fa_qbs":[],"trending":[{"id":"9482","name":"Michael Mayer","pos":"TE","team":"LV","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE2","news":"Sep 9","news_ms":1788985545679,"adds":1595664},{"id":"10235","name":"Roschon Johnson","pos":"RB","team":"CHI","flag":"amber","why":"RB3 on the depth chart","injury":null,"depth":"RB3","news":"Sep 8","news_ms":1788877549423,"adds":430736},{"id":"11834","name":"Devaughn Vele","pos":"WR","team":"NO","flag":"green","why":"Healthy, starting","injury":null,"depth":"SWR2","news":"Sep 9","news_ms":1788984645640,"adds":340151},{"id":"2505","name":"Darren Waller","pos":"TE","team":"CAR","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE1","news":"Sep 7","news_ms":1788806741393,"adds":261063},{"id":"8800","name":"Malik Davis","pos":"RB","team":"DAL","flag":"amber","why":"RB2 on the depth chart","injury":null,"depth":"RB2","news":"Sep 8","news_ms":1788843345303,"adds":255555},{"id":"13414","name":"Kaelon Black","pos":"RB","team":"SF","flag":"amber","why":"RB2 on the depth chart","injury":null,"depth":"RB2","news":"Sep 9","news_ms":1788960625981,"adds":171150},{"id":"10213","name":"Tre Tucker","pos":"WR","team":"LV","flag":"green","why":"Healthy, starting","injury":null,"depth":"LWR1","news":"Sep 9","news_ms":1788962726159,"adds":162390},{"id":"8127","name":"Charlie Kolar","pos":"TE","team":"LAC","flag":"amber","why":"TE3 on the depth chart","injury":null,"depth":"TE3","news":"Sep 10","news_ms":1789048502354,"adds":108657},{"id":"4039","name":"Cooper Kupp","pos":"WR","team":"SEA","flag":"amber","why":"WR3 on the depth chart","injury":null,"depth":"SWR3","news":"Sep 10","news_ms":1789047602183,"adds":107466},{"id":"13296","name":"Caleb Douglas","pos":"WR","team":"MIA","flag":"green","why":"Healthy, starting","injury":null,"depth":"RWR2","news":"Sep 9","news_ms":1788986445775,"adds":103424},{"id":"13285","name":"Malachi Fields","pos":"WR","team":"NYG","flag":"amber","why":"WR3 on the depth chart","injury":null,"depth":"RWR3","news":"Sep 9","news_ms":1788982545388,"adds":94285},{"id":"2078","name":"Odell Beckham","pos":"WR","team":"NYG","flag":"amber","why":"WR4 on the depth chart","injury":null,"depth":"LWR4","news":"Sep 6","news_ms":1788709230912,"adds":93709},{"id":"9511","name":"Keaton Mitchell","pos":"RB","team":"LAC","flag":"amber","why":"Questionable \u00b7 Undisclosed","injury":"Questionable","depth":"RB2","news":"Sep 10","news_ms":1789015235533,"adds":80433},{"id":"8134","name":"Khalil Shakir","pos":"WR","team":"BUF","flag":"green","why":"Healthy, starting","injury":null,"depth":"SWR2","news":"Sep 9","news_ms":1788990347732,"adds":72882},{"id":"4147","name":"Samaje Perine","pos":"RB","team":"CIN","flag":"amber","why":"RB2 on the depth chart","injury":null,"depth":"RB2","news":"Sep 8","news_ms":1788888050537,"adds":64072},{"id":"7090","name":"Darnell Mooney","pos":"WR","team":"NYG","flag":"green","why":"Healthy, starting","injury":null,"depth":"SWR2","news":"Sep 8","news_ms":1788892850926,"adds":63036},{"id":"13533","name":"Barion Brown","pos":"WR","team":"NO","flag":"amber","why":"WR4 on the depth chart","injury":null,"depth":"SWR4","news":"Sep 9","news_ms":1788966926414,"adds":59868},{"id":"13424","name":"Seth McGowan","pos":"RB","team":"IND","flag":"amber","why":"RB2 on the depth chart","injury":null,"depth":"RB2","news":"Sep 8","news_ms":1788897951398,"adds":58672},{"id":"12491","name":"Corey Kiner","pos":"RB","team":"NE","flag":"amber","why":"RB5 on the depth chart","injury":null,"depth":"RB5","news":"Aug 29","news_ms":1788035150497,"adds":58626},{"id":"11610","name":"Malik Washington","pos":"WR","team":"MIA","flag":"green","why":"Healthy, starting","injury":null,"depth":"SWR1","news":"Sep 9","news_ms":1788983445756,"adds":54776}],"transactions":[{"type":"free_agent","status":"complete","team":"kwiksl","adds":["Deshaun Watson"],"drops":["Kenny Gainwell"],"bid":null,"ts":1789025743098},{"type":"free_agent","status":"complete","team":"kwiksl","adds":["Jalen Nailor"],"drops":["Matthew Golden"],"bid":null,"ts":1789025655481},{"type":"free_agent","status":"complete","team":"paulhemsley","adds":["Chris Bell"],"drops":[],"bid":null,"ts":1788985499062},{"type":"free_agent","status":"complete","team":"EasyIP","adds":["Kaleb Johnson"],"drops":[],"bid":null,"ts":1788969165711},{"type":"free_agent","status":"complete","team":"EasyIP","adds":["Emmett Johnson"],"drops":[],"bid":null,"ts":1788969028446},{"type":"free_agent","status":"complete","team":"EasyIP","adds":["Dylan Sampson"],"drops":["Zack Moss"],"bid":null,"ts":1788925572042},{"type":"free_agent","status":"complete","team":"daviddhaliwal","adds":["Kirk Cousins"],"drops":["Minnesota Vikings"],"bid":null,"ts":1788925560124}],"opponent":{"team":"paulhemsley","roster_id":2,"record":"0-0","starters":[{"id":"8183","name":"Brock Purdy","pos":"QB","team":"SF","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 6","news_ms":1788701730242},{"id":"6813","name":"Jonathan Taylor","pos":"RB","team":"IND","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 4","news_ms":1788493816928},{"id":"4034","name":"Christian McCaffrey","pos":"RB","team":"SF","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 9","news_ms":1788914121512},{"id":"12526","name":"Tetairoa McMillan","pos":"WR","team":"CAR","flag":"green","why":"Healthy, starting","injury":null,"depth":"LWR1","news":"Sep 5","news_ms":1788623417640},{"id":"5927","name":"Terry McLaurin","pos":"WR","team":"WAS","flag":"green","why":"Healthy, starting","injury":null,"depth":"LWR1","news":"Sep 4","news_ms":1788544521740},{"id":"9484","name":"Tucker Kraft","pos":"TE","team":"GB","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE1","news":"Sep 9","news_ms":1788994246524},{"id":"12490","name":"Bhayshul Tuten","pos":"RB","team":"JAX","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 9","news_ms":1788988246606},{"id":"5846","name":"DK Metcalf","pos":"WR","team":"PIT","flag":"green","why":"Healthy, starting","injury":null,"depth":"LWR1","news":"Sep 9","news_ms":1788989147702},{"id":"421","name":"Matthew Stafford","pos":"QB","team":"LAR","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 10","news_ms":1789047602228},{"id":"12015","name":"Harrison Mevis","pos":"K","team":"LAR","flag":"green","why":"Healthy, starting","injury":null,"depth":"K1","news":"Sep 10","news_ms":1789021535986},{"id":"HOU","name":"Houston Texans","pos":"DEF","team":"HOU","flag":"green","why":"Healthy, starting","injury":null,"depth":null,"news":null,"news_ms":null}],"my_points":6.6,"their_points":0.0},"qb_depth":[{"team":"daviddhaliwal","roster_id":4,"qbs":["Kirk Cousins","Bryce Young"],"n":2,"record":"0-0"},{"team":"wflemons33","roster_id":9,"qbs":["Cam Ward","Jordan Love"],"n":2,"record":"0-0"},{"team":"EasyIP","roster_id":12,"qbs":["Patrick Mahomes","Josh Allen"],"n":2,"record":"0-0"},{"team":"HappyChappy18","roster_id":1,"qbs":["Drake Maye","Trevor Lawrence","Aaron Rodgers"],"n":3,"record":"0-0"},{"team":"paulhemsley","roster_id":2,"qbs":["Jacoby Brissett","Matthew Stafford","Brock Purdy"],"n":3,"record":"0-0"},{"team":"MasonMafia","roster_id":3,"qbs":["Fernando Mendoza","Jared Goff","Jalen Hurts"],"n":3,"record":"0-0"},{"team":"GK","roster_id":5,"qbs":["Jayden Daniels","Dak Prescott","Daniel Jones"],"n":3,"record":"0-0"},{"team":"Robinsavages","roster_id":6,"qbs":["Caleb Williams","Joe Burrow","Malik Willis"],"n":3,"record":"0-0"},{"team":"kwiksl","roster_id":7,"qbs":["Bo Nix","Tyler Shough","Deshaun Watson"],"n":3,"record":"0-0"},{"team":"KUZ1","roster_id":8,"qbs":["Jaxson Dart","Lamar Jackson","Kyler Murray"],"n":3,"record":"0-0"},{"team":"smitty1060","roster_id":10,"qbs":["Baker Mayfield","Tua Tagovailoa","C.J. Stroud"],"n":3,"record":"0-0"},{"team":"jimmyd66","roster_id":11,"qbs":["Geno Smith","Sam Darnold","Justin Herbert"],"n":3,"record":"0-0"}],"league":{"trade_deadline":10,"playoff_week_start":12,"playoff_teams":6,"regular_weeks":11,"two_week_rounds":true,"name":"West Van Super Studs"}}</script>
+<script id="sweep" type="application/json">{"generated":"Thu Sep 10, 2026 10:03 AM PT","generated_ms":1789059809752,"season":"2026","week":1,"faab_used":0,"faab_total":150,"record":"0-0","roster":[{"id":"11560","name":"Caleb Williams","pos":"QB","team":"CHI","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 4","news_ms":1788480915807,"slot":"START"},{"id":"6770","name":"Joe Burrow","pos":"QB","team":"CIN","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 3","news_ms":1788453005931,"slot":"START"},{"id":"8161","name":"Malik Willis","pos":"QB","team":"MIA","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 8","news_ms":1788906620891,"slot":"BN"},{"id":"9224","name":"Chase Brown","pos":"RB","team":"CIN","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 5","news_ms":1788619217404,"slot":"START"},{"id":"8228","name":"Jaylen Warren","pos":"RB","team":"PIT","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 9","news_ms":1788973234282,"slot":"START"},{"id":"8408","name":"Jordan Mason","pos":"RB","team":"MIN","flag":"amber","why":"RB2 on the depth chart","injury":null,"depth":"RB2","news":"Sep 5","news_ms":1788618317218,"slot":"BN"},{"id":"11581","name":"MarShawn Lloyd","pos":"RB","team":"GB","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 9","news_ms":1788964526354,"slot":"BN"},{"id":"12512","name":"Quinshon Judkins","pos":"RB","team":"CLE","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 3","news_ms":1788449105184,"slot":"START"},{"id":"5859","name":"A.J. Brown","pos":"WR","team":"NE","flag":"red","why":"Out \u00b7 Ankle","injury":"Out","depth":"LWR1","news":"Sep 10","news_ms":1789049110575,"slot":"START"},{"id":"8142","name":"Alec Pierce","pos":"WR","team":"IND","flag":"amber","why":"Questionable \u00b7 Heel","injury":"Questionable","depth":"LWR1","news":"Sep 10","news_ms":1789004434452,"slot":"BN"},{"id":"7526","name":"Jaylen Waddle","pos":"WR","team":"DEN","flag":"green","why":"Healthy, starting","injury":null,"depth":"RWR1","news":"Sep 4","news_ms":1788537921125,"slot":"START"},{"id":"11632","name":"Malik Nabers","pos":"WR","team":"NYG","flag":"amber","why":"Questionable \u00b7 Knee - ACL \u00b7 Surgery","injury":"Questionable","depth":"LWR1","news":"Sep 9","news_ms":1788984345767,"slot":"START"},{"id":"5001","name":"Dalton Schultz","pos":"TE","team":"HOU","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE1","news":"Sep 7","news_ms":1788810041847,"slot":"BN"},{"id":"7002","name":"Juwan Johnson","pos":"TE","team":"NO","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE1","news":"Sep 9","news_ms":1788987345817,"slot":"START"},{"id":"3451","name":"Ka'imi Fairbairn","pos":"K","team":"HOU","flag":"green","why":"Healthy, starting","injury":null,"depth":"K1","news":"Aug 29","news_ms":1787986543802,"slot":"START"},{"id":"DET","name":"Detroit Lions","pos":"DEF","team":"DET","flag":"green","why":"Healthy, starting","injury":null,"depth":null,"news":null,"news_ms":null,"slot":"START"}],"fa_qbs":[],"trending":[{"id":"9482","name":"Michael Mayer","pos":"TE","team":"LV","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE1","news":"Sep 9","news_ms":1788985545679,"adds":1660761},{"id":"10235","name":"Roschon Johnson","pos":"RB","team":"CHI","flag":"amber","why":"RB3 on the depth chart","injury":null,"depth":"RB3","news":"Sep 8","news_ms":1788877549423,"adds":412040},{"id":"11834","name":"Devaughn Vele","pos":"WR","team":"NO","flag":"green","why":"Healthy, starting","injury":null,"depth":"SWR2","news":"Sep 9","news_ms":1788984645640,"adds":333942},{"id":"2505","name":"Darren Waller","pos":"TE","team":"CAR","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE1","news":"Sep 10","news_ms":1789051202505,"adds":265518},{"id":"8800","name":"Malik Davis","pos":"RB","team":"DAL","flag":"amber","why":"RB2 on the depth chart","injury":null,"depth":"RB2","news":"Sep 8","news_ms":1788843345303,"adds":253305},{"id":"10213","name":"Tre Tucker","pos":"WR","team":"LV","flag":"green","why":"Healthy, starting","injury":null,"depth":"LWR1","news":"Sep 9","news_ms":1788962726159,"adds":171744},{"id":"13414","name":"Kaelon Black","pos":"RB","team":"SF","flag":"amber","why":"RB2 on the depth chart","injury":null,"depth":"RB2","news":"Sep 9","news_ms":1788960625981,"adds":162386},{"id":"4039","name":"Cooper Kupp","pos":"WR","team":"SEA","flag":"amber","why":"WR3 on the depth chart","injury":null,"depth":"SWR3","news":"Sep 10","news_ms":1789054805058,"adds":108240},{"id":"8127","name":"Charlie Kolar","pos":"TE","team":"LAC","flag":"amber","why":"TE3 on the depth chart","injury":null,"depth":"TE3","news":"Sep 10","news_ms":1789048502354,"adds":107988},{"id":"13296","name":"Caleb Douglas","pos":"WR","team":"MIA","flag":"green","why":"Healthy, starting","injury":null,"depth":"RWR2","news":"Sep 9","news_ms":1788986445775,"adds":100728},{"id":"13285","name":"Malachi Fields","pos":"WR","team":"NYG","flag":"amber","why":"WR3 on the depth chart","injury":null,"depth":"RWR3","news":"Sep 9","news_ms":1788982545388,"adds":92480},{"id":"2078","name":"Odell Beckham","pos":"WR","team":"NYG","flag":"amber","why":"WR4 on the depth chart","injury":null,"depth":"LWR4","news":"Sep 6","news_ms":1788709230912,"adds":89985},{"id":"9511","name":"Keaton Mitchell","pos":"RB","team":"LAC","flag":"amber","why":"Questionable \u00b7 Undisclosed","injury":"Questionable","depth":"RB2","news":"Sep 10","news_ms":1789015235533,"adds":79740},{"id":"8134","name":"Khalil Shakir","pos":"WR","team":"BUF","flag":"green","why":"Healthy, starting","injury":null,"depth":"SWR2","news":"Sep 9","news_ms":1788990347732,"adds":72225},{"id":"7090","name":"Darnell Mooney","pos":"WR","team":"NYG","flag":"green","why":"Healthy, starting","injury":null,"depth":"SWR2","news":"Sep 8","news_ms":1788892850926,"adds":63963},{"id":"4147","name":"Samaje Perine","pos":"RB","team":"CIN","flag":"amber","why":"RB2 on the depth chart","injury":null,"depth":"RB2","news":"Sep 8","news_ms":1788888050537,"adds":62584},{"id":"12491","name":"Corey Kiner","pos":"RB","team":"NE","flag":"amber","why":"RB5 on the depth chart","injury":null,"depth":"RB5","news":"Aug 29","news_ms":1788035150497,"adds":58974},{"id":"13533","name":"Barion Brown","pos":"WR","team":"NO","flag":"amber","why":"WR4 on the depth chart","injury":null,"depth":"SWR4","news":"Sep 9","news_ms":1788966926414,"adds":57627},{"id":"5854","name":"Drew Lock","pos":"QB","team":"SEA","flag":"red","why":"Not the starter (QB2)","injury":null,"depth":"QB2","news":"Sep 10","news_ms":1789054504152,"adds":56143},{"id":"11610","name":"Malik Washington","pos":"WR","team":"MIA","flag":"green","why":"Healthy, starting","injury":null,"depth":"SWR1","news":"Sep 9","news_ms":1788983445756,"adds":53944}],"transactions":[{"type":"free_agent","status":"complete","team":"kwiksl","adds":["Deshaun Watson"],"drops":["Kenny Gainwell"],"bid":null,"ts":1789025743098},{"type":"free_agent","status":"complete","team":"kwiksl","adds":["Jalen Nailor"],"drops":["Matthew Golden"],"bid":null,"ts":1789025655481},{"type":"free_agent","status":"complete","team":"paulhemsley","adds":["Chris Bell"],"drops":[],"bid":null,"ts":1788985499062},{"type":"free_agent","status":"complete","team":"EasyIP","adds":["Kaleb Johnson"],"drops":[],"bid":null,"ts":1788969165711},{"type":"free_agent","status":"complete","team":"EasyIP","adds":["Emmett Johnson"],"drops":[],"bid":null,"ts":1788969028446},{"type":"free_agent","status":"complete","team":"EasyIP","adds":["Dylan Sampson"],"drops":["Zack Moss"],"bid":null,"ts":1788925572042},{"type":"free_agent","status":"complete","team":"daviddhaliwal","adds":["Kirk Cousins"],"drops":["Minnesota Vikings"],"bid":null,"ts":1788925560124}],"opponent":{"team":"paulhemsley","roster_id":2,"record":"0-0","starters":[{"id":"8183","name":"Brock Purdy","pos":"QB","team":"SF","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 6","news_ms":1788701730242},{"id":"6813","name":"Jonathan Taylor","pos":"RB","team":"IND","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 4","news_ms":1788493816928},{"id":"4034","name":"Christian McCaffrey","pos":"RB","team":"SF","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 9","news_ms":1788914121512},{"id":"12526","name":"Tetairoa McMillan","pos":"WR","team":"CAR","flag":"green","why":"Healthy, starting","injury":null,"depth":"LWR1","news":"Sep 5","news_ms":1788623417640},{"id":"5927","name":"Terry McLaurin","pos":"WR","team":"WAS","flag":"green","why":"Healthy, starting","injury":null,"depth":"LWR1","news":"Sep 4","news_ms":1788544521740},{"id":"9484","name":"Tucker Kraft","pos":"TE","team":"GB","flag":"green","why":"Healthy, starting","injury":null,"depth":"TE1","news":"Sep 10","news_ms":1789053603043},{"id":"12490","name":"Bhayshul Tuten","pos":"RB","team":"JAX","flag":"green","why":"Healthy, starting","injury":null,"depth":"RB1","news":"Sep 9","news_ms":1788988246606},{"id":"5846","name":"DK Metcalf","pos":"WR","team":"PIT","flag":"green","why":"Healthy, starting","injury":null,"depth":"LWR1","news":"Sep 9","news_ms":1788989147702},{"id":"421","name":"Matthew Stafford","pos":"QB","team":"LAR","flag":"green","why":"Healthy, starting","injury":null,"depth":"QB1","news":"Sep 10","news_ms":1789047602228},{"id":"12015","name":"Harrison Mevis","pos":"K","team":"LAR","flag":"green","why":"Healthy, starting","injury":null,"depth":"K1","news":"Sep 10","news_ms":1789021535986},{"id":"HOU","name":"Houston Texans","pos":"DEF","team":"HOU","flag":"green","why":"Healthy, starting","injury":null,"depth":null,"news":null,"news_ms":null}],"my_points":6.6,"their_points":0.0},"qb_depth":[{"team":"daviddhaliwal","roster_id":4,"qbs":["Kirk Cousins","Bryce Young"],"n":2,"record":"0-0"},{"team":"wflemons33","roster_id":9,"qbs":["Cam Ward","Jordan Love"],"n":2,"record":"0-0"},{"team":"EasyIP","roster_id":12,"qbs":["Patrick Mahomes","Josh Allen"],"n":2,"record":"0-0"},{"team":"HappyChappy18","roster_id":1,"qbs":["Drake Maye","Trevor Lawrence","Aaron Rodgers"],"n":3,"record":"0-0"},{"team":"paulhemsley","roster_id":2,"qbs":["Jacoby Brissett","Matthew Stafford","Brock Purdy"],"n":3,"record":"0-0"},{"team":"MasonMafia","roster_id":3,"qbs":["Fernando Mendoza","Jared Goff","Jalen Hurts"],"n":3,"record":"0-0"},{"team":"GK","roster_id":5,"qbs":["Jayden Daniels","Dak Prescott","Daniel Jones"],"n":3,"record":"0-0"},{"team":"Robinsavages","roster_id":6,"qbs":["Caleb Williams","Joe Burrow","Malik Willis"],"n":3,"record":"0-0"},{"team":"kwiksl","roster_id":7,"qbs":["Bo Nix","Tyler Shough","Deshaun Watson"],"n":3,"record":"0-0"},{"team":"KUZ1","roster_id":8,"qbs":["Jaxson Dart","Lamar Jackson","Kyler Murray"],"n":3,"record":"0-0"},{"team":"smitty1060","roster_id":10,"qbs":["Baker Mayfield","Tua Tagovailoa","C.J. Stroud"],"n":3,"record":"0-0"},{"team":"jimmyd66","roster_id":11,"qbs":["Geno Smith","Sam Darnold","Justin Herbert"],"n":3,"record":"0-0"}],"league":{"trade_deadline":10,"playoff_week_start":12,"playoff_teams":6,"regular_weeks":11,"two_week_rounds":true,"name":"West Van Super Studs"}}</script>
 <!-- SWEEP:END -->
 
 <script>
@@ -312,10 +351,11 @@ Champions' playbook (follow it):
 
 // ---- state ----
 const KEY="rsv-gm-2026";
-const SWEEP=(()=>{try{return JSON.parse(document.getElementById("sweep").textContent)||{}}catch(e){return {}}})();
+let SWEEP=(()=>{try{return JSON.parse(document.getElementById("sweep").textContent)||{}}catch(e){return {}}})();
 const DRAFTED=[{"name":"Joe Burrow","pos":"QB","team":"CIN","status":""},{"name":"Caleb Williams","pos":"QB","team":"CHI","status":""},{"name":"Malik Willis","pos":"QB","team":"MIA","status":""},{"name":"Chase Brown","pos":"RB","team":"CIN","status":""},{"name":"Quinshon Judkins","pos":"RB","team":"CLE","status":""},{"name":"Jaylen Warren","pos":"RB","team":"PIT","status":""},{"name":"Jordan Mason","pos":"RB","team":"MIN","status":""},{"name":"MarShawn Lloyd","pos":"RB","team":"GB","status":""},{"name":"A.J. Brown","pos":"WR","team":"NE","status":""},{"name":"Malik Nabers","pos":"WR","team":"NYG","status":""},{"name":"Jaylen Waddle","pos":"WR","team":"DEN","status":""},{"name":"Alec Pierce","pos":"WR","team":"IND","status":""},{"name":"Juwan Johnson","pos":"TE","team":"NO","status":""},{"name":"Dalton Schultz","pos":"TE","team":"HOU","status":""},{"name":"Ka'imi Fairbairn","pos":"K","team":"HOU","status":""},{"name":"Detroit Lions","pos":"DEF","team":"DET","status":""}];
-// The roster Sleeper says Danny has, baked in by scripts/build.py. Falls back to the drafted 16.
-const BAKED=(SWEEP.roster||[]).length?SWEEP.roster.map(p=>({name:p.name,pos:p.pos,team:p.team,status:p.slot==="IR"?"IR":""})):DRAFTED;
+// The roster Sleeper says Danny has: baked in by scripts/build.py, replaced live on open. Falls back to the drafted 16.
+function sleeperRoster(){ return (SWEEP.roster||[]).length?SWEEP.roster.map(p=>({name:p.name,pos:p.pos,team:p.team,status:p.slot==="IR"?"IR":""})):DRAFTED; }
+const BAKED=sleeperRoster();
 const FLAGS={}; (SWEEP.roster||[]).forEach(p=>FLAGS[p.name]=p);
 let S={roster:BAKED.map(p=>({...p})),log:[],last:null,chat:[],syncedMs:SWEEP.generated_ms||0};
 try{const raw=localStorage.getItem(KEY); if(raw) S={...S,...JSON.parse(raw)}}catch(e){}
@@ -359,7 +399,7 @@ function contextBlock(){
 function renderMoves(){
   const el=$("movesBody"); const L=S.last;
   if(!L){
-    el.innerHTML=`<div class="empty"><b>The briefing below is current.</b> Your roster syncs from Sleeper on its own. For a full ranked set of moves, open this page inside the Claude app and tap the button; paste extra news on the News tab first if you have it.</div>`;
+    el.innerHTML=`<div class="empty"><b>The briefing below is current.</b> Your roster, flags and the waiver watch refresh from Sleeper every time you open this. For a full ranked set of moves, open this page inside the Claude app and tap the button; paste extra news on the News tab first if you have it.</div>`;
     return;
   }
   const kinds={waiver:"Waiver",lineup:"Lineup",ir:"IR",trade:"Trade",drop:"Drop",hold:"Hold",watch:"Watch"};
@@ -440,7 +480,7 @@ $("sugList").addEventListener("click",e=>{
   }
   $("find").value=""; $("sugList").hidden=true; $("find").focus();
 });
-$("clearRoster").addEventListener("click",()=>{ if(confirm("Reset the roster to what Sleeper last reported?")){ S.roster=BAKED.map(p=>({...p})); save(); renderRoster(); } });
+$("clearRoster").addEventListener("click",()=>{ if(confirm("Reset the roster to what Sleeper last reported?")){ S.roster=sleeperRoster().map(p=>({...p})); save(); renderRoster(); } });
 
 // ---- News ----
 function renderLog(){
@@ -509,7 +549,7 @@ function flagLabel(f){return f==="red"?"Red":f==="amber"?"Amber":"Green"}
 function renderSweep(){
   const stamp=$("sweepStamp"); const ww=$("waiverWatch"); const oc=$("oppCard"); const tx=$("txnList");
   if(!SWEEP.roster){ ww.innerHTML=`<div class="empty">No Sleeper sweep baked in yet. Run <b>python3 scripts/build.py</b>.</div>`; oc.innerHTML=""; tx.innerHTML=""; return; }
-  $("sub").textContent=`West Van Super Studs · Week ${SWEEP.week} · ${SWEEP.record} · $${SWEEP.faab_total-SWEEP.faab_used} FAAB left`;
+  $("sub").textContent=`West Van Super Studs · Wk ${SWEEP.week} · ${SWEEP.record} · $${SWEEP.faab_total-SWEEP.faab_used} FAAB`;
   stamp.textContent=`Sleeper, ${SWEEP.generated}`;
   const qbs=(SWEEP.fa_qbs||[]).map(p=>`<div class="it qb"><span class="pos QB">QB</span><span class="nm">${esc(p.name)}<small>${esc(p.team)} · starts for his team · ${esc(p.why)}</small></span><span class="n">priority</span></div>`).join("");
   const tr=(SWEEP.trending||[]).slice(0,10).map(p=>`<div class="it"><span class="pos ${p.pos}">${p.pos}</span><span class="nm"><span class="dot ${p.flag}"></span> ${esc(p.name)}<small>${esc(p.team)}${p.depth?` · ${esc(p.depth)}`:""} · ${esc(p.why)}</small></span><span class="n">${(p.adds/1000).toFixed(0)}k adds</span></div>`).join("");
@@ -528,6 +568,152 @@ function renderPlan(){
   $("playbook").innerHTML=PLAYBOOK.map(([h,items])=>`<h4>${h}</h4><ul>${items.map(i=>`<li>${i}</li>`).join("")}</ul>`).join("");
 }
 
+// ---- live Sleeper ----
+// The baked SWEEP is only the fallback. On open (and on Refresh) the page asks this deployment's /api/sweep for a
+// fresh one; where there is no API (GitHub Pages) it talks to api.sleeper.app directly and caches the player feed.
+const APP_URL="https://robinsavages.vercel.app";
+const SL="https://api.sleeper.app/v1", LEAGUE_ID="1312551337698820096", MY_UID="1263724329326100480", MY_RID=6;
+const POSSET=new Set(["QB","RB","WR","TE","K","DEF"]), POSORD={QB:0,RB:1,WR:2,TE:3,K:4,DEF:5};
+const RED_INJ=new Set(["out","ir","pup","sus","nfi","cov","doubtful","dnr"]);
+const RED_ST=new Set(["Injured Reserve","Inactive","Suspended","PUP","Physically Unable to Perform","Non Football Injury","Reserve/COVID-19","Practice Squad"]);
+const LIVE={ts:0,busy:false,src:null};
+const NAMES={}; // id -> name from whatever sweep we last saw, for players the slim feed doesn't carry
+function noteNames(sw){ for(const r of [...(sw.roster||[]),...(sw.fa_qbs||[]),...(sw.trending||[]),...((sw.opponent&&sw.opponent.starters)||[])]) if(r&&r.id) NAMES[r.id]=r.name; }
+noteNames(SWEEP);
+async function getJ(u,opt){ const r=await fetch(u,opt); if(!r.ok) throw new Error(`${u.replace(SL,"").slice(0,40)} ${r.status}`); return r.json(); }
+function flagOf(p){
+  const inj=(p.inj||"").toLowerCase(), st=p.st||"", prac=p.prac||"", d=p.dco, pos=p.pos;
+  const detail=[p.inj,p.part,p.notes].filter(Boolean).join(" · ");
+  if(!p.team) return ["red","Free agent / no team"];
+  if(RED_INJ.has(inj)||RED_ST.has(st)) return ["red",detail||st];
+  if(pos==="QB"&&d&&d>=2) return ["red",`Not the starter (QB${d})`+(detail?` · ${detail}`:"")];
+  if(inj==="questionable") return ["amber",detail];
+  if(["limited","dnp","did not practice"].includes(prac.toLowerCase())) return ["amber",`Practice: ${prac}`+(detail?` · ${detail}`:"")];
+  if(pos==="RB"&&d&&d>=2) return ["amber",`RB${d} on the depth chart`];
+  if((pos==="WR"||pos==="TE")&&d&&d>=3) return ["amber",`${pos}${d} on the depth chart`];
+  if(inj) return ["amber",detail];
+  return ["green","Healthy, starting"];
+}
+function rowOf(pid,P){
+  const p=P[pid]||{n:NAMES[pid]||pid,pos:"?",team:null};
+  const [flag,why]=flagOf(p);
+  return {id:pid,name:p.n,pos:p.pos,team:p.team||"FA",flag,why,injury:p.inj||null,depth:((p.dcp||"")+(p.dco||""))||null,
+          news:p.news?new Date(p.news).toLocaleDateString([],{month:"short",day:"numeric"}):null,news_ms:p.news||null};
+}
+const PKEY="rsv-players-v2", PTTL=60*60*1000;
+async function playersMap(force,keep){
+  if(!force){ try{ const c=JSON.parse(localStorage.getItem(PKEY)||"null"); if(c&&c.p&&Date.now()-c.ts<PTTL) return c.p; }catch(e){} }
+  setLive("Loading Sleeper's player feed (2.5 MB)…");
+  const raw=await getJ(`${SL}/players/nfl`); const p={};
+  for(const k in raw){ const v=raw[k]; if(!POSSET.has(v.position)) continue; if(!(v.team||(keep&&keep.has(k)))) continue;
+    p[k]={n:v.full_name||((v.first_name||"")+" "+(v.last_name||"")).trim(),pos:v.position,team:v.team||null,inj:v.injury_status||null,part:v.injury_body_part||null,notes:v.injury_notes||null,prac:v.practice_participation||null,dcp:v.depth_chart_position||null,dco:v.depth_chart_order||null,st:v.status||null,news:v.news_updated||null,rank:v.search_rank||null}; }
+  try{ localStorage.setItem(PKEY,JSON.stringify({ts:Date.now(),p})); }catch(e){}
+  return p;
+}
+async function directSweep(force){
+  const st=await getJ(`${SL}/state/nfl`); const week=+(st.leg||st.week||1);
+  const [rosters,usersRaw,trendRaw,txRaw,mus]=await Promise.all([getJ(`${SL}/league/${LEAGUE_ID}/rosters`),getJ(`${SL}/league/${LEAGUE_ID}/users`),getJ(`${SL}/players/nfl/trending/add?lookback_hours=48&limit=60`),getJ(`${SL}/league/${LEAGUE_ID}/transactions/${week}`),getJ(`${SL}/league/${LEAGUE_ID}/matchups/${week}`).catch(()=>null)]);
+  const taken={}; rosters.forEach(r=>(r.players||[]).forEach(pid=>taken[pid]=r.roster_id));
+  const P=await playersMap(force,new Set(Object.keys(taken)));
+  const users={}; usersRaw.forEach(u=>users[u.user_id]=(u.metadata&&u.metadata.team_name)||u.display_name);
+  const teamOf={}; rosters.forEach(r=>teamOf[r.roster_id]=users[r.owner_id]||`roster ${r.roster_id}`);
+  const mine=rosters.find(r=>r.owner_id===MY_UID); if(!mine) throw new Error("roster not found");
+  const starters=(mine.starters||[]).filter(p=>p&&p!=="0"), reserve=mine.reserve||[], set=mine.settings||{};
+  const roster=(mine.players||[]).map(pid=>{ const r=rowOf(pid,P); r.slot=reserve.includes(pid)?"IR":starters.includes(pid)?"START":"BN"; return r; }).sort((a,b)=>((POSORD[a.pos]??9)-(POSORD[b.pos]??9))||a.name.localeCompare(b.name));
+  const fa_qbs=Object.keys(P).filter(pid=>{const p=P[pid]; return p.pos==="QB"&&p.team&&!taken[pid]&&p.dco===1&&p.st==="Active";}).map(pid=>rowOf(pid,P)).sort((a,b)=>(P[a.id].rank||9999)-(P[b.id].rank||9999));
+  const trending=[]; for(const t of trendRaw){ const pid=t.player_id, p=P[pid]; if(!p||taken[pid]) continue; const r=rowOf(pid,P); r.adds=t.count; if(r.flag==="red"&&["ir","out","sus","pup","nfi"].includes((p.inj||"").toLowerCase())) continue; trending.push(r); }
+  trending.sort((a,b)=>(((a.pos==="K"||a.pos==="DEF")?1:0)-((b.pos==="K"||b.pos==="DEF")?1:0))||b.adds-a.adds);
+  const transactions=txRaw.map(t=>({type:t.type,status:t.status,team:teamOf[(t.roster_ids||[])[0]]||"?",adds:Object.keys(t.adds||{}).map(p=>(P[p]||{}).n||NAMES[p]||p),drops:Object.keys(t.drops||{}).map(p=>(P[p]||{}).n||NAMES[p]||p),bid:(t.settings||{}).waiver_bid??null,ts:t.status_updated||t.created})).sort((a,b)=>(b.ts||0)-(a.ts||0));
+  let opponent=null;
+  if(Array.isArray(mus)){ const me=mus.find(m=>m.roster_id===MY_RID); const o=me&&mus.find(m=>m.matchup_id===me.matchup_id&&m.roster_id!==MY_RID);
+    if(o){ const os=(rosters.find(r=>r.roster_id===o.roster_id)||{}).settings||{}; opponent={team:teamOf[o.roster_id],roster_id:o.roster_id,record:`${os.wins||0}-${os.losses||0}`+(os.ties?`-${os.ties}`:""),starters:(o.starters||[]).filter(p=>p&&p!=="0").map(p=>rowOf(p,P)),my_points:me.points,their_points:o.points}; } }
+  const qb_depth=rosters.map(r=>{ const qbs=(r.players||[]).filter(p=>(P[p]||{}).pos==="QB").map(p=>P[p].n); const s=r.settings||{}; return {team:teamOf[r.roster_id],roster_id:r.roster_id,qbs,n:qbs.length,record:`${s.wins||0}-${s.losses||0}`}; }).sort((a,b)=>a.n-b.n);
+  const now=new Date();
+  return {generated:now.toLocaleString([],{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}),generated_ms:now.getTime(),season:st.season,week,faab_used:set.waiver_budget_used||0,faab_total:150,record:`${set.wins||0}-${set.losses||0}`,roster,fa_qbs,trending:trending.slice(0,20),transactions,opponent,qb_depth,source:"direct"};
+}
+function applySweep(sw){
+  SWEEP={...SWEEP,...sw,league:sw.league||SWEEP.league}; noteNames(SWEEP);
+  Object.keys(FLAGS).forEach(k=>delete FLAGS[k]); (SWEEP.roster||[]).forEach(p=>FLAGS[p.name]=p);
+  if((SWEEP.generated_ms||0)>(S.syncedMs||0)){ S.roster=sleeperRoster().map(p=>({...p})); S.syncedMs=SWEEP.generated_ms; save(); }
+  renderSweep(); renderRoster(); renderPlan();
+}
+function setLive(msg,cls){ const el=$("liveStamp"); $("liveText").textContent=msg; el.className="live"+(cls?" "+cls:""); }
+async function refreshLive(force){
+  if(LIVE.busy) return; LIVE.busy=true; $("refreshBtn").classList.add("spin"); setLive("Checking Sleeper…");
+  try{
+    let sw=null;
+    try{ const r=await fetch("api/sweep"+(force?"?fresh=1":""),{cache:"no-store"}); if(r.ok){ const j=await r.json(); if(j&&j.roster) sw=j; } }catch(e){}
+    if(!sw) sw=await directSweep(force);
+    applySweep(sw); LIVE.ts=Date.now(); LIVE.src=sw.source;
+    setLive(`Live from Sleeper · ${new Date().toLocaleTimeString([],{hour:"numeric",minute:"2-digit"})}`,"ok");
+  }catch(e){ setLive(`Sleeper snapshot from ${SWEEP.generated} · live refresh failed (${String(e&&e.message||"offline").slice(0,60)})`,"err"); }
+  finally{ LIVE.busy=false; $("refreshBtn").classList.remove("spin"); }
+}
+$("refreshBtn").addEventListener("click",()=>refreshLive(true));
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&Date.now()-LIVE.ts>5*60*1000) refreshLive(false); });
+
+// ---- install chip ----
+let deferredInstall=null; const IKEY="rsv-install-snoozed";
+const isStandalone=()=>window.matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+function showInstallChip(){ if(isStandalone()) return; try{ if(+localStorage.getItem(IKEY)>Date.now()) return; }catch(e){} $("installChip").hidden=false; }
+window.addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); deferredInstall=e; showInstallChip(); });
+window.addEventListener("appinstalled",()=>{ $("installChip").hidden=true; });
+$("installBtn").addEventListener("click",async()=>{
+  if(deferredInstall){ deferredInstall.prompt(); const c=await deferredInstall.userChoice.catch(()=>({outcome:""})); deferredInstall=null; if(c.outcome==="accepted") $("installChip").hidden=true; return; }
+  const how=$("installHow"); const ios=/iPhone|iPad|iPod/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  how.innerHTML=ios?`Tap <b>Share</b> (the square with the arrow at the bottom of Safari), then <b>Add to Home Screen</b>. Open Robinsavages from the home screen: that copy works offline and can receive injury alerts.`
+                  :`In your browser's menu choose <b>Install app</b> or <b>Add to Home screen</b>. The installed copy opens full-screen and can receive injury alerts.`;
+  how.hidden=!how.hidden; $("installChip").classList.toggle("open",!how.hidden);
+});
+$("installX").addEventListener("click",()=>{ $("installChip").hidden=true; try{ localStorage.setItem(IKEY,String(Date.now()+7*864e5)); }catch(e){} });
+if(/iPhone|iPad|iPod/.test(navigator.userAgent)&&!isStandalone()) showInstallChip();   // iOS never fires beforeinstallprompt
+
+// ---- push alerts (service worker + /api/subscribe on the Vercel deployment) ----
+const AL={cfg:null,sub:null,reg:null,supported:null};
+const b64ToU8=s=>{ const p="=".repeat((4-s.length%4)%4); const b=atob((s+p).replace(/-/g,"+").replace(/_/g,"/")); return Uint8Array.from(b,c=>c.charCodeAt(0)); };
+const isIOS=/iPhone|iPad|iPod/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+const standalone=window.matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+function alertsHTML(inner){ return `<div class="alertcard"><span class="bell">🔔</span>${inner}</div>`; }
+function renderAlerts(){
+  const el=$("alertsCard"); if(!el) return;
+  const lc=AL.cfg&&AL.cfg.lastCheck; const when=lc&&lc.ts?new Date(lc.ts).toLocaleString([],{weekday:"short",hour:"numeric",minute:"2-digit"}):null;
+  const checked=when?`Checker last ran ${when}${lc.alerts&&lc.alerts.length?` · ${lc.alerts.length} alert${lc.alerts.length>1?"s":""}`:" · nothing changed"}.`:"Checker runs every 15 minutes.";
+  if(!AL.cfg){ el.innerHTML=alertsHTML(`<div class="txt">Push alerts live on the app copy at <a href="${APP_URL}">${APP_URL.replace("https://","")}</a>. Add that one to your home screen.</div>`); return; }
+  if(!AL.supported){
+    el.innerHTML=alertsHTML(isIOS&&!standalone
+      ?`<div class="txt"><b>Get injury alerts on this phone.</b><small>Tap Share, then <b>Add to Home Screen</b>, open Robinsavages from the home screen and turn alerts on there. iPhone only allows push for installed apps.</small></div>`
+      :`<div class="txt">This browser can't receive push alerts.<small>On iPhone add the app to your home screen; on Android or desktop use Chrome.</small></div>`);
+    return;
+  }
+  if(Notification.permission==="denied"){ el.innerHTML=alertsHTML(`<div class="txt"><b>Alerts are blocked.</b><small>Allow notifications for Robinsavages in Settings, then reopen the app.</small></div>`); return; }
+  if(AL.sub){
+    el.innerHTML=alertsHTML(`<div class="txt"><b>Alerts on.</b> You'll get a push when a player's status changes or a starting QB hits waivers.<small>${checked}</small></div><button class="btn sec small" id="alertTest">Send test</button><button class="btn sec small" id="alertOff">Turn off</button><div class="status" id="alertStatus" style="flex-basis:100%;margin:0"></div>`);
+    $("alertTest").addEventListener("click",testAlert); $("alertOff").addEventListener("click",disableAlerts);
+  } else {
+    el.innerHTML=alertsHTML(`<div class="txt"><b>Get a push when something happens.</b><small>Injury designations on your players, a cleared player, a starting QB on waivers. ${checked}</small></div><button class="btn small" id="alertOn">Enable alerts</button><div class="status" id="alertStatus" style="flex-basis:100%;margin:0"></div>`);
+    $("alertOn").addEventListener("click",enableAlerts);
+  }
+}
+async function postSub(body){ const r=await fetch("api/subscribe",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)}); const j=await r.json().catch(()=>({})); if(!r.ok||j.ok===false) throw new Error(j.error||`server ${r.status}`); return j; }
+async function enableAlerts(){
+  const btn=$("alertOn"); btn.disabled=true; setStatus("alertStatus","Asking for permission…");
+  try{
+    const perm=await Notification.requestPermission(); if(perm!=="granted") throw new Error("permission not granted");
+    if(!AL.cfg.vapidPublicKey) throw new Error("server has no push key");
+    const sub=await AL.reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64ToU8(AL.cfg.vapidPublicKey)});
+    const res=await postSub({action:"subscribe",subscription:sub.toJSON(),ua:navigator.userAgent});
+    AL.sub=sub; renderAlerts(); setStatus("alertStatus",res.welcome&&res.welcome.ok?"On. A welcome push is on its way.":"On, but the welcome push failed — tap Send test.");
+  }catch(e){ setStatus("alertStatus","Couldn't turn alerts on: "+(e.message||e),true); if(btn) btn.disabled=false; }
+}
+async function testAlert(){ setStatus("alertStatus","Sending…"); try{ const r=await postSub({action:"test",endpoint:AL.sub.endpoint}); setStatus("alertStatus",r.ok?"Sent. It should show within a few seconds.":"Push service refused it: "+JSON.stringify(r.result||{}).slice(0,120),!r.ok); }catch(e){ setStatus("alertStatus","Test failed: "+(e.message||e),true); } }
+async function disableAlerts(){ try{ const ep=AL.sub.endpoint; await AL.sub.unsubscribe().catch(()=>{}); AL.sub=null; renderAlerts(); await postSub({action:"unsubscribe",endpoint:ep}); }catch(e){ renderAlerts(); } }
+async function initAlerts(){
+  try{ const r=await fetch("api/config",{cache:"no-store"}); if(r.ok){ const j=await r.json(); if(j&&"vapidPublicKey" in j) AL.cfg=j; } }catch(e){}
+  if(AL.supported!==false) AL.supported=!!(AL.cfg&&"serviceWorker" in navigator&&"PushManager" in window&&"Notification" in window);
+  if(AL.supported){ try{ AL.reg=await navigator.serviceWorker.ready; AL.sub=await AL.reg.pushManager.getSubscription(); }catch(e){ AL.supported=false; } }
+  renderAlerts();
+}
+
 // ---- nav ----
 function go(id){ document.querySelectorAll(".nav button").forEach(b=>b.setAttribute("aria-selected",b.dataset.pane===id)); document.querySelectorAll(".pane").forEach(p=>p.hidden=p.id!==id); window.scrollTo(0,0); }
 document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>go(b.dataset.pane)));
@@ -535,6 +721,10 @@ document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",(
 // ---- boot ----
 renderMoves(); renderRoster(); renderLog(); renderChat(); renderSweep(); renderPlan(); save();
 if(S.last) $("runBtn").textContent="Update my moves";
+setLive(`Sleeper snapshot from ${SWEEP.generated||"—"}`);
+refreshLive(false);
+if("serviceWorker" in navigator){ navigator.serviceWorker.register("sw.js",{scope:"./"}).then(()=>initAlerts()).catch(()=>{ AL.supported=false; initAlerts(); }); }
+else { AL.supported=false; initAlerts(); }
 (async()=>{
   try{ sample=window.claude&&window.claude.use?await window.claude.use("sample"):null; }catch(e){ sample=null; }
   if(!sample){ setStatus("runStatus","Claude advice only works inside the Claude app. The briefing, waiver watch and roster flags below still update from Sleeper on their own."); return; }

@@ -5,3 +5,6 @@ data/*
 site/
 .DS_Store
 __pycache__/
+.vercel/
+node_modules/
+.env*.local

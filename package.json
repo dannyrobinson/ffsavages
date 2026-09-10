@@ -1,0 +1,10 @@
+{
+  "name": "robinsavages",
+  "private": true,
+  "type": "module",
+  "description": "Robinsavages GM: Vercel functions for the live Sleeper sweep and push alerts. The app itself is app/gm.html.",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "web-push": "^3.6.7"
+  }
+}
