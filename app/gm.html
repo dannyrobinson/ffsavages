@@ -314,6 +314,7 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
     <div class="card" id="qbMarket"></div>
     <h3 class="sec">Champions' playbook</h3>
     <div class="card pb" id="playbook"></div>
+    <div id="alertsPlan" hidden><h3 class="sec">Alerts</h3><div id="alertsSettings"></div></div>
   </section>
 
   <div class="foot">Rules baked in: QB · 2 RB · 2 WR · TE · 2 FLEX · SUPERFLEX · K · DEF · 5 bench · 2 IR. Full PPR, +0.5/rec for TEs, 4-pt pass TD, −1 INT, −2 fumble. Waivers are $150 FAAB. Six playoff teams, trade deadline week 10. No keepers.</div>
@@ -676,6 +677,7 @@ const standalone=window.matchMedia("(display-mode: standalone)").matches||naviga
 function alertsHTML(inner){ return `<div class="alertcard"><span class="bell">🔔</span>${inner}</div>`; }
 function renderAlerts(){
   const el=$("alertsCard"); if(!el) return;
+  $("alertsPlan").hidden=true; $("alertsSettings").innerHTML="";
   const lc=AL.cfg&&AL.cfg.lastCheck; const when=lc&&lc.ts?new Date(lc.ts).toLocaleString([],{weekday:"short",hour:"numeric",minute:"2-digit"}):null;
   const checked=when?`Checker last ran ${when}${lc.alerts&&lc.alerts.length?` · ${lc.alerts.length} alert${lc.alerts.length>1?"s":""}`:" · nothing changed"}.`:"Checker runs every 15 minutes.";
   if(!AL.cfg){ el.innerHTML=alertsHTML(`<div class="txt">Push alerts live on the app copy at <a href="${APP_URL}">${APP_URL.replace("https://","")}</a>. Add that one to your home screen.</div>`); return; }
@@ -687,7 +689,9 @@ function renderAlerts(){
   }
   if(Notification.permission==="denied"){ el.innerHTML=alertsHTML(`<div class="txt"><b>Alerts are blocked.</b><small>Allow notifications for Robinsavages in Settings, then reopen the app.</small></div>`); return; }
   if(AL.sub){
-    el.innerHTML=alertsHTML(`<div class="txt"><b>Alerts on.</b> You'll get a push when a player's status changes or a starting QB hits waivers.<small>${checked}</small></div><button class="btn sec small" id="alertTest">Send test</button><button class="btn sec small" id="alertOff">Turn off</button><div class="status" id="alertStatus" style="flex-basis:100%;margin:0"></div>`);
+    el.innerHTML="";   // subscribed: no prompt on the Moves tab, the controls live under Plan
+    $("alertsPlan").hidden=false;
+    $("alertsSettings").innerHTML=alertsHTML(`<div class="txt"><b>Alerts on.</b> You'll get a push when a player's status changes or a starting QB hits waivers.<small>${checked}</small></div><button class="btn sec small" id="alertTest">Send test</button><button class="btn sec small" id="alertOff">Turn off</button><div class="status" id="alertStatus" style="flex-basis:100%;margin:0"></div>`);
     $("alertTest").addEventListener("click",testAlert); $("alertOff").addEventListener("click",disableAlerts);
   } else {
     el.innerHTML=alertsHTML(`<div class="txt"><b>Get a push when something happens.</b><small>Injury designations on your players, a cleared player, a starting QB on waivers. ${checked}</small></div><button class="btn small" id="alertOn">Enable alerts</button><div class="status" id="alertStatus" style="flex-basis:100%;margin:0"></div>`);
@@ -702,7 +706,9 @@ async function enableAlerts(){
     if(!AL.cfg.vapidPublicKey) throw new Error("server has no push key");
     const sub=await AL.reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64ToU8(AL.cfg.vapidPublicKey)});
     const res=await postSub({action:"subscribe",subscription:sub.toJSON(),ua:navigator.userAgent});
-    AL.sub=sub; renderAlerts(); setStatus("alertStatus",res.welcome&&res.welcome.ok?"On. A welcome push is on its way.":"On, but the welcome push failed — tap Send test.");
+    AL.sub=sub; renderAlerts();   // fills Plan → Alerts and clears this card
+    $("alertsCard").innerHTML=alertsHTML(`<div class="txt"><b>Alerts on.</b><small>${res.welcome&&res.welcome.ok?"A welcome push is on its way.":"The welcome push failed."} Send test and Turn off are under Plan → Alerts.</small></div>`);
+    setTimeout(()=>{ if(AL.sub) $("alertsCard").innerHTML=""; },6000);
   }catch(e){ setStatus("alertStatus","Couldn't turn alerts on: "+(e.message||e),true); if(btn) btn.disabled=false; }
 }
 async function testAlert(){ setStatus("alertStatus","Sending…"); try{ const r=await postSub({action:"test",endpoint:AL.sub.endpoint}); setStatus("alertStatus",r.ok?"Sent. It should show within a few seconds.":"Push service refused it: "+JSON.stringify(r.result||{}).slice(0,120),!r.ok); }catch(e){ setStatus("alertStatus","Test failed: "+(e.message||e),true); } }
