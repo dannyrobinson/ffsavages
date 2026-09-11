@@ -15,10 +15,10 @@
   ],
   "functions": {
     "api/check.js": {
-      "maxDuration": 300
+      "maxDuration": 600
     },
     "api/advise.js": {
-      "maxDuration": 300
+      "maxDuration": 600
     },
     "api/ask.js": {
       "maxDuration": 120
