@@ -115,8 +115,12 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
 3. The advisor writes `advice` to kv (what the Moves tab shows) and pushes `alerts` with urgency high or
    medium to Danny's phone, deduplicated by key. Danny can also tap "Re-check now" in the app, which
    includes his pasted news log; that run stores advice but does not push.
-4. Cost control: `ADVISE_DAILY_CAP` and `ASK_DAILY_CAP` in kv, web search capped per call (advisor 8,
-   chat 3), Sonnet for advice, Haiku for screenshots.
+4. Cost and time: one advisor run is about 3 minutes and ~140k input / ~14k output tokens plus 5–6 web
+   searches (search results are large and count against `max_tokens`, hence the 32k budget), roughly
+   $0.60–0.70 per run at Sonnet 5 prices; hourly plus change-triggered runs is on the order of $10–15 a day
+   in season. Levers: the cron hours in `vercel.json`, `searches` in `runAdvisor`, `ADVISE_DAILY_CAP` and
+   `ASK_DAILY_CAP` (kv counters), Sonnet for advice, Haiku for screenshots. If a search loop leaves no JSON
+   the advisor retries once without search (`advice.fallback` says so).
 Nice-to-have next: bye weeks for Danny's players in the Plan tab; use actual points instead of the
 projection for players whose game is complete; a weekly recap after Monday night.
 
