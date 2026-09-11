@@ -291,6 +291,10 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
     <div class="card" id="seasonCard"></div>
     <h3 class="sec">FAAB</h3>
     <div class="card" id="faabCard"></div>
+    <h3 class="sec">Byes ahead</h3>
+    <div class="card" id="byeCard"></div>
+    <h3 class="sec">DEF stream</h3>
+    <div class="card" id="defCard"></div>
     <h3 class="sec">QB market</h3>
     <div class="card" id="qbMarket"></div>
     <h3 class="sec">Champions' playbook</h3>
@@ -429,7 +433,7 @@ function renderRoster(){
   const r=S.roster.slice().sort((a,b)=>order[a.pos]-order[b.pos]||a.name.localeCompare(b.name));
   const c={}; r.forEach(p=>c[p.pos]=(c[p.pos]||0)+1);
   $("rosterCount").textContent=r.length?`${r.length} rostered · ${["QB","RB","WR","TE","K","DEF"].filter(k=>c[k]).map(k=>`${c[k]} ${k}`).join(", ")}${r.filter(p=>p.status==="IR").length?` · ${r.filter(p=>p.status==="IR").length} on IR`:""}`:"No players yet. Start typing above.";
-  $("rosterList").innerHTML=r.length?r.map(p=>{const f=FLAGS[p.name]; return `<div class="pr"><span class="pos ${p.pos}">${p.pos}</span><span class="nm">${f?`<span class="dot ${f.flag}"></span> `:""}${esc(p.name)}<small>${esc(p.team)}</small>${f?`<span class="why ${f.flag}">${esc(f.why)}${f.news?` · ${esc(f.news)}`:""}</span>`:""}</span><button class="st ${p.status||""}" data-n="${esc(p.name)}" title="Toggle IR">${p.status==="IR"?"IR":"Active"}</button><button class="x" data-rm="${esc(p.name)}" aria-label="Remove ${esc(p.name)}">×</button></div>`}).join(""):"";
+  $("rosterList").innerHTML=r.length?r.map(p=>{const f=FLAGS[p.name]; return `<div class="pr"><span class="pos ${p.pos}">${p.pos}</span><span class="nm">${f?`<span class="dot ${f.flag}"></span> `:""}${esc(p.name)}<small>${esc(p.team)}${f&&f.bye?` · bye ${f.bye}`:""}</small>${f?`<span class="why ${f.flag}">${esc(f.why)}${f.news?` · ${esc(f.news)}`:""}</span>`:""}</span><button class="st ${p.status||""}" data-n="${esc(p.name)}" title="Toggle IR">${p.status==="IR"?"IR":"Active"}</button><button class="x" data-rm="${esc(p.name)}" aria-label="Remove ${esc(p.name)}">×</button></div>`}).join(""):"";
 }
 $("rosterList").addEventListener("click",e=>{
   const st=e.target.closest(".st"), x=e.target.closest(".x");
@@ -545,6 +549,10 @@ function renderPlan(){
   $("seasonCard").innerHTML=`Week <b>${SWEEP.week||"?"}</b> of an ${lg.regular_weeks||11}-week regular season. Trade deadline after <b>week ${lg.trade_deadline||10}</b>. Playoffs start <b>week ${lg.playoff_week_start||12}</b>: ${lg.playoff_teams||6} teams, ${lg.two_week_rounds?"two-week rounds (12–13, 14–15, 16–17)":"one-week rounds"}.`;
   const ft=SWEEP.faab_teams||[]; const left=SWEEP.faab_left??(SWEEP.faab_total!=null?SWEEP.faab_total-(SWEEP.faab_used||0):null);
   $("faabCard").innerHTML=left==null?"Budgets come with the live Sleeper refresh.":`You have <b>$${left}</b> of $${SWEEP.faab_total} left${SWEEP.waiver_position?` · waiver priority <b>${SWEEP.waiver_position}</b> of 12 (only breaks tied bids; winning a claim sends you to 12th)`:""}. Blind bids, min $${SWEEP.faab_min_bid??1}, highest wins. Weekly run <b>${esc(SWEEP.waiver_run||"Wednesday 12:05 AM PT")}</b>: anyone whose game has kicked off is on waivers until then. A dropped player clears 48 h after the drop.${ft.length?`<div class="txn" style="margin-top:8px">${ft.map(t=>`<div><b>${esc(t.team)}</b> <span class="bid">$${t.left}</span>${t.position?` · priority ${t.position}`:""}</div>`).join("")}</div>`:""}`;
+  const by=SWEEP.byes, qbb=SWEEP.qb_byes||[];
+  $("byeCard").innerHTML=!by?"Bye weeks come with the live Sleeper refresh.":(by.length?`<div class="txn">${by.map(b=>`<div><b>Week ${b.week}</b>${b.qbs>=2?` <span class="bid" style="color:var(--red)">${b.qbs} QBs out</span>`:""} — ${esc(b.players.join(", "))}</div>`).join("")}</div>`:"No byes for your players in the next five weeks.")+(qbb.length?`<div style="margin-top:6px">QB byes: ${esc(qbb.join(", "))}. Two QBs on one bye is a superflex hole; fix it two weeks ahead with a cheap QB whose bye differs.</div>`:"");
+  const d=SWEEP.def;
+  $("defCard").innerHTML=!d?"DEF projections come with the live Sleeper refresh.":`${d.mine?`<b>${esc(d.mine.name)}</b> projects ${d.mine.proj} this week (${esc(d.mine.game)}) and ${d.mine.next.proj} in week ${SWEEP.next_week} (${esc(d.mine.next.game)})${d.mine.bye?`; bye week ${d.mine.bye}`:""}.`:"No DEF rostered."}<div class="txn" style="margin-top:6px"><div><b>Free this week</b> ${d.fa_this.map(x=>`${esc(x.name)} <span class="bid">${x.proj}</span>${x.waivers?" (waivers)":""}`).join(" · ")||"none"}</div><div><b>Week ${SWEEP.next_week}</b> ${d.fa_next.map(x=>`${esc(x.name)} <span class="bid">${x.proj}</span> ${esc(x.game)}`).join(" · ")||"no projections yet"}</div></div><small>Streaming by matchup is the plan: $1 or free, added Tuesday or Wednesday for the coming week.</small>`;
   $("qbMarket").innerHTML=(SWEEP.qb_depth||[]).length?`Teams with only two QBs are buyers; you have three. `+SWEEP.qb_depth.map(q=>`<div><b>${esc(q.team)}</b> ${q.n} — ${esc(q.qbs.join(", "))}</div>`).join(""):"No data yet.";
   $("playbook").innerHTML=PLAYBOOK.map(([h,items])=>`<h4>${h}</h4><ul>${items.map(i=>`<li>${i}</li>`).join("")}</ul>`).join("");
 }
@@ -637,6 +645,13 @@ async function refreshLive(force){
   finally{ LIVE.busy=false; $("refreshBtn").classList.remove("spin"); }
 }
 $("refreshBtn").addEventListener("click",()=>refreshLive(true));
+// pull down at the top of the page to refresh from Sleeper (the browser's own gesture is disabled by overscroll-behavior)
+(()=>{ let y0=null, pulled=0; const ARM=80;
+  const liveText=()=>LIVE.ts?setLive(`Live from Sleeper · ${new Date(LIVE.ts).toLocaleTimeString([],{hour:"numeric",minute:"2-digit"})}`,"ok"):setLive(`Sleeper snapshot from ${SWEEP.generated}`);
+  document.addEventListener("touchstart",e=>{ y0=(window.scrollY<=0&&e.touches.length===1)?e.touches[0].clientY:null; pulled=0; },{passive:true});
+  document.addEventListener("touchmove",e=>{ if(y0==null||LIVE.busy) return; pulled=e.touches[0].clientY-y0; if(pulled>20) setLive(pulled>=ARM?"Release to refresh":"Pull to refresh…"); },{passive:true});
+  document.addEventListener("touchend",()=>{ if(y0!=null&&!LIVE.busy){ if(pulled>=ARM) refreshLive(true); else if(pulled>20) liveText(); } y0=null; pulled=0; });
+})();
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&Date.now()-LIVE.ts>5*60*1000) refreshLive(false); });
 
 // ---- install chip ----

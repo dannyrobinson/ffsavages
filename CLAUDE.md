@@ -61,7 +61,9 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   on open, on the ↻ button and when the app comes back to the foreground, the page fetches `api/sweep`
   (Vercel; the Node sweep, which also carries projections and the lineup math) and, where there is no API
   (GitHub Pages, localhost), talks to api.sleeper.app directly (CORS is open) with the 2.5 MB player feed
-  slimmed and cached in localStorage for an hour. `applySweep()` replaces SWEEP, FLAGS and the roster.
+  slimmed and cached in localStorage for an hour; pulling down at the top of the page also refreshes.
+  `applySweep()` replaces SWEEP, FLAGS and the roster. The Plan tab shows FAAB per team, byes ahead and a
+  DEF-stream card (this week and next); the Roster tab shows each player's bye.
   The Moves tab shows Claude's latest stored advice from `api/advice` (headline, summary, lineup changes,
   adds with the drop and bid for each, IR moves, watch list, player flags) and a "Lineup by projections" card (current vs best
   lineup from `SWEEP.lineup`); "Re-check now" POSTs `api/advise` with the phone's news log and shows the
@@ -82,7 +84,9 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   (current starters vs the best lineup by projection from `lib/lineup.js`, locked players fixed in place,
   red/Out/Doubtful excluded; `start`/`sit` name the swaps); `faab_total/used/left`, `faab_min_bid`,
   `faab_teams` (every team's budget left in priority order), `waiver_run` (next 12:05 AM Wed PT); every
-  free-agent row carries `waivers` (text: on waivers until when) and `claim_at`, or null = add now).
+  free-agent row carries `waivers` (text: on waivers until when) and `claim_at`, or null = add now; every
+  row carries `bye`; `byes` (Danny's active players on bye in the next 5 weeks, with a QB count), `qb_byes`,
+  `def` (his unit this week and next, best free-agent units for both weeks, from `projections` week+1)).
 - `lib/advise.js` — the advisor. `contextText(sweep, {news, prev, notified, reason})` writes the
   situation for Claude; `runAdvisor()` calls Sonnet with web search (`lib/claude.js`, `lib/rules.js` is
   the playbook), parses the JSON (headline, summary, lineup, adds with how/bid/backup/processes, ir, flags, watch, alerts), stores it in
@@ -145,8 +149,8 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
    in season. Levers: the cron hours in `vercel.json`, `searches` in `runAdvisor`, `ADVISE_DAILY_CAP` and
    `ASK_DAILY_CAP` (kv counters), Sonnet for advice, Haiku for screenshots. If a search loop leaves no JSON
    the advisor retries once without search (`advice.fallback` says so).
-Nice-to-have next: bye weeks for Danny's players in the Plan tab; use actual points instead of the
-projection for players whose game is complete; a weekly recap after Monday night.
+Nice-to-have next: use actual points instead of the projection for players whose game is complete; a
+weekly recap after Monday night.
 
 ## Conventions
 - Python 3.9+, no third-party deps unless there's a good reason. Keep the HTML apps single-file. The Vercel
