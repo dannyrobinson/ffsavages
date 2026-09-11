@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 1 · Fri Sep 11, 2026 1:14 PM PT
+# Sleeper sweep — Week 1 · Fri Sep 11, 2026 1:20 PM PT
 
 Record 0-0 · FAAB $150 left of $150 · waiver priority 7 of 12 (ties only)
 
@@ -24,26 +24,26 @@ Record 0-0 · FAAB $150 left of $150 · waiver priority 7 of 12 (ties only)
 - none
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- RB  Kaelon Black (SF) · 394,289 adds · RB2 · RB2 on the depth chart
-- TE  Darren Waller (CAR) · 241,569 adds · TE1 · Healthy, starting
-- WR  Devaughn Vele (NO) · 172,410 adds · SWR2 · Healthy, starting
-- RB  Roschon Johnson (CHI) · 143,352 adds · RB3 · RB3 on the depth chart
-- WR  Demarcus Robinson (SF) · 110,586 adds · LWR6 · WR6 on the depth chart
-- WR  Cooper Kupp (SEA) · 97,800 adds · SWR3 · WR3 on the depth chart
-- QB  Drew Lock (SEA) · 83,453 adds · QB2 · Not the starter (QB2)
+- RB  Kaelon Black (SF) · 396,879 adds · RB2 · RB2 on the depth chart
+- TE  Darren Waller (CAR) · 242,208 adds · TE1 · Healthy, starting
+- WR  Devaughn Vele (NO) · 173,110 adds · SWR2 · Healthy, starting
+- RB  Roschon Johnson (CHI) · 143,984 adds · RB3 · RB3 on the depth chart
+- WR  Demarcus Robinson (SF) · 111,816 adds · LWR6 · WR6 on the depth chart
+- WR  Cooper Kupp (SEA) · 97,908 adds · SWR3 · WR3 on the depth chart
+- QB  Drew Lock (SEA) · 83,658 adds · QB2 · Not the starter (QB2)
 - TE  Terrance Ferguson (LAR) · 73,104 adds · TE1 · Healthy, starting
-- TE  Cade Otton (TB) · 56,874 adds · TE1 · Healthy, starting
-- WR  Malachi Fields (NYG) · 49,900 adds · RWR3 · WR3 on the depth chart
-- WR  Mack Hollins (NE) · 49,233 adds · RWR4 · WR4 on the depth chart
-- WR  Caleb Douglas (MIA) · 45,784 adds · RWR2 · Healthy, starting
-- RB  Keaton Mitchell (LAC) · 45,693 adds · RB2 · Questionable · Undisclosed
-- WR  Odell Beckham (NYG) · 45,241 adds · LWR4 · WR4 on the depth chart
-- TE  Charlie Kolar (LAC) · 45,078 adds · TE3 · TE3 on the depth chart
-- WR  Tyreek Hill (FA) · 44,200 adds ·  · Free agent / no team
-- WR  Darnell Mooney (NYG) · 39,537 adds · SWR2 · Healthy, starting
-- TE  Eli Raridon (NE) · 39,354 adds · TE2 · Healthy, starting
-- RB  Corey Kiner (NE) · 33,528 adds · RB5 · RB5 on the depth chart
-- WR  Dontayvion Wicks (PHI) · 31,266 adds · RWR2 · Healthy, starting
+- TE  Cade Otton (TB) · 56,934 adds · TE1 · Healthy, starting
+- WR  Malachi Fields (NYG) · 50,605 adds · RWR3 · WR3 on the depth chart
+- WR  Mack Hollins (NE) · 49,527 adds · RWR4 · WR4 on the depth chart
+- RB  Keaton Mitchell (LAC) · 46,161 adds · RB2 · Questionable · Undisclosed
+- WR  Caleb Douglas (MIA) · 46,000 adds · RWR2 · Healthy, starting
+- WR  Odell Beckham (NYG) · 45,563 adds · LWR4 · WR4 on the depth chart
+- TE  Charlie Kolar (LAC) · 45,369 adds · TE3 · TE3 on the depth chart
+- WR  Tyreek Hill (FA) · 44,472 adds ·  · Free agent / no team
+- WR  Darnell Mooney (NYG) · 40,167 adds · SWR2 · Healthy, starting
+- TE  Eli Raridon (NE) · 39,431 adds · TE2 · Healthy, starting
+- RB  Corey Kiner (NE) · 33,612 adds · RB5 · RB5 on the depth chart
+- WR  Dontayvion Wicks (PHI) · 31,530 adds · RWR2 · Healthy, starting
 
 ## League transactions, week 1
 - daviddhaliwal: free_agent complete +['Cooper Rush'] -[]
