@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    # Pacific time is UTC-7 in season. 13:30 UTC = 6:30 AM PT, half an hour before the Claude routine
-    # (7 AM PT) so the committed sweep is fresh when it reads it.
+    # Pacific time is UTC-7 in season. 13:30 UTC = 6:30 AM PT. The committed sweep is only the offline
+    # fallback baked into the page; the Vercel app pulls Sleeper live and its advisor runs on its own.
     - cron: "30 13 * * 2"   # Tue 6:30 AM PT   — waiver day
     - cron: "30 13 * * 3"   # Wed 6:30 AM PT   — claims have cleared
     - cron: "30 13 * * 4"   # Thu 6:30 AM PT   — TNF lock day
@@ -34,7 +34,7 @@ jobs:
         run: python3 scripts/build.py
       - name: Show the sweep
         run: cat data/sweep.md
-      - name: Commit the sweep so the Claude cloud routine can read it (its sandbox can't reach Sleeper)
+      - name: Commit the sweep (the offline fallback baked into the page)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

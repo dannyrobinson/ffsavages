@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Bake the Sleeper sweep and Claude's briefing into app/gm.html, and stage the GitHub Pages site.
+"""Bake the Sleeper sweep into app/gm.html (the offline fallback) and stage the site for Pages / Vercel.
 
   python3 scripts/build.py              # runs the sweep, injects, writes app/gm.html + site/
   python3 scripts/build.py --no-fetch   # reuse data/sweep.json instead of hitting Sleeper
@@ -7,36 +7,14 @@
 
 Inputs
   data/sweep.json     from scripts/sweep.py (regenerated unless --no-fetch)
-  docs/briefing.md    Claude's narrative briefing (red/amber/green + FAAB bids). Hand-written or
-                      written by the scheduled cloud agent. Tiny markdown subset: #, ##, -, **, links.
 Outputs
-  app/gm.html         same file, with the SWEEP and BRIEF blocks replaced in place
+  app/gm.html         same file, with the SWEEP block replaced in place
   site/index.html     copy of gm.html for GitHub Pages / Vercel, plus war-room.html, sweep.json,
                       sw.js, manifest.webmanifest and icons/ (the PWA shell)
 """
-import sys, json, re, html, shutil, pathlib, datetime
+import sys, json, shutil, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
-
-def md_to_html(md):
-    out, in_ul = [], False
-    def inline(s):
-        s = html.escape(s, quote=False)
-        s = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", s)
-        s = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)", r'<a href="\2" target="_blank" rel="noopener">\1</a>', s)
-        return s
-    for line in md.splitlines():
-        line = line.rstrip()
-        if line.startswith("- ") or line.startswith("* "):
-            if not in_ul: out.append("<ul>"); in_ul = True
-            out.append(f"<li>{inline(line[2:])}</li>"); continue
-        if in_ul: out.append("</ul>"); in_ul = False
-        if not line: continue
-        if line.startswith("# "): out.append(f'<div class="stamp">{inline(line[2:])}</div>')
-        elif line.startswith("## "): out.append(f"<h4>{inline(line[3:])}</h4>")
-        else: out.append(f"<p>{inline(line)}</p>")
-    if in_ul: out.append("</ul>")
-    return "\n".join(out)
 
 def replace_block(src, start, end, body):
     a, b = src.index(start), src.index(end)
@@ -73,15 +51,10 @@ def main():
         except Exception as e:
             print(f"WARNING: league settings fetch failed ({type(e).__name__}); keeping cached values", file=sys.stderr)
 
-    brief_md = (ROOT / "docs/briefing.md")
-    brief_html = md_to_html(brief_md.read_text()) if brief_md.exists() else \
-        '<div class="stamp">No briefing written yet.</div>'
-
     page = (ROOT / "app/gm.html").read_text()
     sweep_json = json.dumps(data, separators=(",", ":")).replace("</", "<\\/")
     page = replace_block(page, "<!-- SWEEP:START -->", "<!-- SWEEP:END -->",
                          f'<script id="sweep" type="application/json">{sweep_json}</script>')
-    page = replace_block(page, "<!-- BRIEF:START -->", "<!-- BRIEF:END -->", brief_html)
     (ROOT / "app/gm.html").write_text(page)
 
     site = ROOT / "site"; site.mkdir(exist_ok=True)
@@ -92,7 +65,7 @@ def main():
     shutil.copytree(ROOT / "app/icons", site / "icons", dirs_exist_ok=True)
     (site / "sweep.json").write_text(json.dumps(data, indent=1))
     (site / ".nojekyll").write_text("")
-    print(f"built site/ · week {data['week']} · sweep {data['generated']} · briefing {'yes' if brief_md.exists() else 'none'}")
+    print(f"built site/ · week {data['week']} · sweep {data['generated']}")
 
 if __name__ == "__main__":
     main()
