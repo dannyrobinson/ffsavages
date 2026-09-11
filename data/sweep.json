@@ -1,6 +1,6 @@
 {
- "generated": "Fri Sep 11, 2026 12:57 PM PT",
- "generated_ms": 1789156656831,
+ "generated": "Fri Sep 11, 2026 1:14 PM PT",
+ "generated_ms": 1789157692881,
  "season": "2026",
  "week": 1,
  "faab_total": 150,
@@ -306,7 +306,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789103416633,
-   "adds": 391818
+   "adds": 394289
   },
   {
    "id": "2505",
@@ -319,7 +319,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789151412761,
-   "adds": 241029
+   "adds": 241569
   },
   {
    "id": "11834",
@@ -332,7 +332,7 @@
    "depth": "SWR2",
    "news": "Sep 9",
    "news_ms": 1788984645640,
-   "adds": 171864
+   "adds": 172410
   },
   {
    "id": "10235",
@@ -345,20 +345,7 @@
    "depth": "RB3",
    "news": "Sep 8",
    "news_ms": 1788877549423,
-   "adds": 143056
-  },
-  {
-   "id": "8800",
-   "name": "Malik Davis",
-   "pos": "RB",
-   "team": "DAL",
-   "flag": "amber",
-   "why": "Questionable \u00b7 Undisclosed",
-   "injury": "Questionable",
-   "depth": "RB2",
-   "news": "Sep 11",
-   "news_ms": 1789155013595,
-   "adds": 122814
+   "adds": 143352
   },
   {
    "id": "3286",
@@ -371,7 +358,7 @@
    "depth": "LWR6",
    "news": "Sep 11",
    "news_ms": 1789112423336,
-   "adds": 109332
+   "adds": 110586
   },
   {
    "id": "4039",
@@ -384,7 +371,7 @@
    "depth": "SWR3",
    "news": "Sep 10",
    "news_ms": 1789067120814,
-   "adds": 97704
+   "adds": 97800
   },
   {
    "id": "5854",
@@ -397,7 +384,7 @@
    "depth": "QB2",
    "news": "Sep 10",
    "news_ms": 1789084229446,
-   "adds": 83268
+   "adds": 83453
   },
   {
    "id": "12487",
@@ -410,7 +397,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789098616601,
-   "adds": 73056
+   "adds": 73104
   },
   {
    "id": "8111",
@@ -423,7 +410,7 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789071620602,
-   "adds": 56700
+   "adds": 56874
   },
   {
    "id": "13285",
@@ -436,7 +423,7 @@
    "depth": "RWR3",
    "news": "Sep 9",
    "news_ms": 1788982545388,
-   "adds": 49630
+   "adds": 49900
   },
   {
    "id": "4177",
@@ -449,7 +436,7 @@
    "depth": "RWR4",
    "news": "Sep 10",
    "news_ms": 1789053904718,
-   "adds": 48990
+   "adds": 49233
   },
   {
    "id": "13296",
@@ -462,7 +449,7 @@
    "depth": "RWR2",
    "news": "Sep 9",
    "news_ms": 1788986445775,
-   "adds": 45584
+   "adds": 45784
   },
   {
    "id": "9511",
@@ -475,7 +462,7 @@
    "depth": "RB2",
    "news": "Sep 10",
    "news_ms": 1789080328104,
-   "adds": 45360
+   "adds": 45693
   },
   {
    "id": "2078",
@@ -488,7 +475,7 @@
    "depth": "LWR4",
    "news": "Sep 6",
    "news_ms": 1788709230912,
-   "adds": 45115
+   "adds": 45241
   },
   {
    "id": "8127",
@@ -501,7 +488,7 @@
    "depth": "TE3",
    "news": "Sep 10",
    "news_ms": 1789048502354,
-   "adds": 44859
+   "adds": 45078
   },
   {
    "id": "3321",
@@ -514,7 +501,7 @@
    "depth": null,
    "news": "Sep 10",
    "news_ms": 1789069820372,
-   "adds": 43960
+   "adds": 44200
   },
   {
    "id": "7090",
@@ -527,7 +514,7 @@
    "depth": "SWR2",
    "news": "Sep 8",
    "news_ms": 1788892850926,
-   "adds": 39330
+   "adds": 39537
   },
   {
    "id": "13421",
@@ -540,7 +527,7 @@
    "depth": "TE2",
    "news": "Sep 10",
    "news_ms": 1789066820729,
-   "adds": 39312
+   "adds": 39354
   },
   {
    "id": "12491",
@@ -553,7 +540,20 @@
    "depth": "RB5",
    "news": "Sep 11",
    "news_ms": 1789086929698,
-   "adds": 33510
+   "adds": 33528
+  },
+  {
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 10",
+   "news_ms": 1789062903924,
+   "adds": 31266
   }
  ],
  "transactions": [
