@@ -41,7 +41,7 @@ export async function POST(req) {
     }
     const [sweep, advice] = await Promise.all([sweepFor(), kvGet("advice").catch(() => null)]);
     const system = `${RULES}\n\n${contextText(sweep, { news: String(news || "").slice(0, 20000), prev: advice, reason: "Danny is asking a question in the app" })}` +
-      (advice ? `\n\nYour latest full advice (${advice.when}): ${advice.headline} ${advice.summary} Lineup changes: ${(advice.lineup || []).map(l => `${l.slot}: ${l.start} over ${l.sit || "empty"}`).join("; ") || "none"}. Adds: ${(advice.waivers || []).map(w => `${w.add} for ${w.drop}${w.claim ? ` (FAAB bid ${w.bid})` : " (free agent, no bid)"}`).join("; ") || "none"}.` : "") +
+      (advice ? `\n\nYour latest full advice (${advice.when}): ${advice.headline} ${advice.summary} Lineup changes: ${(advice.lineup || []).map(l => `${l.slot}: ${l.start} over ${l.sit || "empty"}`).join("; ") || "none"}. IR moves: ${(advice.ir || []).map(i => `${i.player} ${i.move}`).join("; ") || "none"}. Adds: ${(advice.waivers || []).map(w => `${w.add} for ${w.drop}${w.claim ? ` (FAAB bid ${w.bid})` : " (free agent, no bid)"}`).join("; ") || "none"}.` : "") +
       `\n\nToday is ${todayPT()}. Answer Danny's question conversationally and briefly: a short paragraph or a few lines of plain text, no markdown, no URLs. Be decisive; say what you'd do and why in one breath, with the numbers that decide it. You have a web_search tool for anything that depends on today's news.`;
     const res = await callClaude({ model: MODEL, max_tokens: 6000, system, messages: msgs, tools: [WEB_SEARCH(3)] });   // search results count against max_tokens
     return Response.json({ ok: true, text: res.text, model: res.model, searches: res.searches, usage: res.usage }, { headers: NO });
