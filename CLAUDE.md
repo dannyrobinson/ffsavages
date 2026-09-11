@@ -41,10 +41,12 @@ scheduled Claude cloud agent writes the narrative briefing.
   comes back to the foreground, the page fetches `api/sweep` (Vercel) and, where there is no API (GitHub
   Pages, localhost), talks to api.sleeper.app directly (CORS is open) with the 2.5 MB player feed slimmed
   and cached in localStorage for an hour. `applySweep()` replaces SWEEP, FLAGS and the roster. The alerts
-  card (Moves tab) subscribes the phone to push via `sw.js` + `api/subscribe`; the install chip nudges
-  Add to Home Screen (iOS needs the installed copy for push). "What should I do next?" and Ask use the
-  claude.ai artifact `sample` capability and only work inside the Claude app. The `POOL` array is the
-  draft board's player list.
+  card (Moves tab) subscribes the phone to push via `sw.js` + `api/subscribe`, then disappears once
+  subscribed (Send test / Turn off move to Plan → Alerts); the install chip nudges Add to Home Screen
+  (iOS needs the installed copy for push). "What should I do next?", Ask and the screenshot reader call
+  `api/ask` (Anthropic API direct, see below) when `api/config` reports `ask: true`; inside the Claude
+  app with no API they fall back to the artifact `sample` capability; on the Pages mirror they are off.
+  The `POOL` array is the draft board's player list.
 - `app/sw.js`, `app/manifest.webmanifest`, `app/icons/` — the PWA shell. Network-first cache for our own
   files, never the API. `push` shows the notification, `notificationclick` focuses the app.
 - `lib/sleeper.js` — the sweep ported to Node (same flags and shapes as `scripts/sweep.py`; a harness
@@ -52,11 +54,16 @@ scheduled Claude cloud agent writes the narrative briefing.
   change or injury-status change on Danny's players, a practice-report change on an amber/red player,
   or a new free-agent starting QB. First run stores state and sends nothing.
 - `api/sweep.js` (GET, CDN-cached 2 min; `?fresh=1` bypasses), `api/config.js` (VAPID public key + last
-  check), `api/subscribe.js` (POST subscribe/unsubscribe/test; subscribe sends a welcome push),
-  `api/check.js` (the cron; needs `Authorization: Bearer $CRON_SECRET`; `?dry=1` diffs without sending or
-  storing). Vercel runs `/api/check` every 15 min (`vercel.json`). Env on Vercel: `DATABASE_URL` (Neon
+  check + whether `api/ask` is live), `api/subscribe.js` (POST subscribe/unsubscribe/test; subscribe sends
+  a welcome push), `api/check.js` (the cron; needs `Authorization: Bearer $CRON_SECRET`; `?dry=1` diffs
+  without sending or storing), `api/ask.js` (POST; Claude via the Anthropic Messages API: `mode` moves |
+  chat | shot, `system`, `messages`, optional base64 `image`; web search is on for moves and chat so the
+  advice reflects today's news; same-origin only, `ASK_DAILY_CAP` requests/day (default 60) counted in
+  `kv`). Vercel runs `/api/check` every 15 min (`vercel.json`). Env on Vercel: `DATABASE_URL` (Neon
   project `robinsavages`, org "Danny", tables `push_subscriptions` + `kv`), `VAPID_PUBLIC_KEY`,
-  `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`. Deps: `web-push`, `@neondatabase/serverless`.
+  `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`, `ANTHROPIC_API_KEY` (Danny sets it himself; never
+  paste a key into the repo or chat), optional `ASK_MODEL` (default `claude-sonnet-5`), `ASK_QUICK_MODEL`
+  (default `claude-haiku-4-5-20251001`), `ASK_DAILY_CAP`. Deps: `web-push`, `@neondatabase/serverless`.
 - To test the functions locally: `node --env-file=.env.local <harness>` importing the handlers as Web
   `Request`/`Response`; `vercel env pull` writes `.env.local` (gitignored).
 - `app/war-room.html` — the draft-night board (ranked 187 players, tiers, pick plan).

@@ -8,7 +8,8 @@
   ],
   "functions": {
     "api/check.js": { "maxDuration": 120 },
-    "api/sweep.js": { "maxDuration": 60 }
+    "api/sweep.js": { "maxDuration": 60 },
+    "api/ask.js": { "maxDuration": 120 }
   },
   "headers": [
     { "source": "/sw.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }, { "key": "Service-Worker-Allowed", "value": "/" }] },
