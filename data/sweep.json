@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 10, 2026 4:59 PM PT",
- "generated_ms": 1789084747550,
+ "generated": "Thu Sep 10, 2026 9:34 PM PT",
+ "generated_ms": 1789101247727,
  "season": "2026",
  "week": 1,
  "faab_used": 0,
@@ -219,43 +219,17 @@
  "fa_qbs": [],
  "trending": [
   {
-   "id": "9482",
-   "name": "Michael Mayer",
-   "pos": "TE",
-   "team": "LV",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 9",
-   "news_ms": 1788985545679,
-   "adds": 1832274
-  },
-  {
-   "id": "10235",
-   "name": "Roschon Johnson",
+   "id": "13414",
+   "name": "Kaelon Black",
    "pos": "RB",
-   "team": "CHI",
+   "team": "SF",
    "flag": "amber",
-   "why": "RB3 on the depth chart",
+   "why": "RB2 on the depth chart",
    "injury": null,
-   "depth": "RB3",
-   "news": "Sep 8",
-   "news_ms": 1788877549423,
-   "adds": 334728
-  },
-  {
-   "id": "11834",
-   "name": "Devaughn Vele",
-   "pos": "WR",
-   "team": "NO",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR2",
-   "news": "Sep 9",
-   "news_ms": 1788984645640,
-   "adds": 295225
+   "depth": "RB2",
+   "news": "Sep 11",
+   "news_ms": 1789100416667,
+   "adds": 286965
   },
   {
    "id": "2505",
@@ -268,20 +242,33 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789051202505,
-   "adds": 271818
+   "adds": 269811
   },
   {
-   "id": "8800",
-   "name": "Malik Davis",
+   "id": "10235",
+   "name": "Roschon Johnson",
    "pos": "RB",
-   "team": "DAL",
+   "team": "CHI",
    "flag": "amber",
-   "why": "RB2 on the depth chart",
+   "why": "RB3 on the depth chart",
    "injury": null,
-   "depth": "RB2",
+   "depth": "RB3",
    "news": "Sep 8",
-   "news_ms": 1788843345303,
-   "adds": 222318
+   "news_ms": 1788877549423,
+   "adds": 268224
+  },
+  {
+   "id": "11834",
+   "name": "Devaughn Vele",
+   "pos": "WR",
+   "team": "NO",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "SWR2",
+   "news": "Sep 9",
+   "news_ms": 1788984645640,
+   "adds": 253883
   },
   {
    "id": "10213",
@@ -294,20 +281,20 @@
    "depth": "LWR1",
    "news": "Sep 9",
    "news_ms": 1788962726159,
-   "adds": 183792
+   "adds": 197742
   },
   {
-   "id": "13414",
-   "name": "Kaelon Black",
+   "id": "8800",
+   "name": "Malik Davis",
    "pos": "RB",
-   "team": "SF",
+   "team": "DAL",
    "flag": "amber",
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 9",
-   "news_ms": 1788960625981,
-   "adds": 127918
+   "news": "Sep 8",
+   "news_ms": 1788843345303,
+   "adds": 191232
   },
   {
    "id": "4039",
@@ -320,7 +307,20 @@
    "depth": "SWR3",
    "news": "Sep 10",
    "news_ms": 1789067120814,
-   "adds": 107496
+   "adds": 109776
+  },
+  {
+   "id": "12487",
+   "name": "Terrance Ferguson",
+   "pos": "TE",
+   "team": "LAR",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 11",
+   "news_ms": 1789098616601,
+   "adds": 97520
   },
   {
    "id": "8127",
@@ -333,20 +333,7 @@
    "depth": "TE3",
    "news": "Sep 10",
    "news_ms": 1789048502354,
-   "adds": 90747
-  },
-  {
-   "id": "13296",
-   "name": "Caleb Douglas",
-   "pos": "WR",
-   "team": "MIA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 9",
-   "news_ms": 1788986445775,
-   "adds": 86288
+   "adds": 78294
   },
   {
    "id": "13285",
@@ -359,7 +346,33 @@
    "depth": "RWR3",
    "news": "Sep 9",
    "news_ms": 1788982545388,
-   "adds": 82075
+   "adds": 76600
+  },
+  {
+   "id": "5854",
+   "name": "Drew Lock",
+   "pos": "QB",
+   "team": "SEA",
+   "flag": "red",
+   "why": "Not the starter (QB2)",
+   "injury": null,
+   "depth": "QB2",
+   "news": "Sep 10",
+   "news_ms": 1789084229446,
+   "adds": 74725
+  },
+  {
+   "id": "13296",
+   "name": "Caleb Douglas",
+   "pos": "WR",
+   "team": "MIA",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 9",
+   "news_ms": 1788986445775,
+   "adds": 73704
   },
   {
    "id": "2078",
@@ -372,7 +385,20 @@
    "depth": "LWR4",
    "news": "Sep 6",
    "news_ms": 1788709230912,
-   "adds": 77539
+   "adds": 67655
+  },
+  {
+   "id": "3286",
+   "name": "Demarcus Robinson",
+   "pos": "WR",
+   "team": "SF",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "LWR4",
+   "news": "Aug 21",
+   "news_ms": 1787354729510,
+   "adds": 66282
   },
   {
    "id": "9511",
@@ -385,20 +411,7 @@
    "depth": "RB2",
    "news": "Sep 10",
    "news_ms": 1789080328104,
-   "adds": 71244
-  },
-  {
-   "id": "5854",
-   "name": "Drew Lock",
-   "pos": "QB",
-   "team": "SEA",
-   "flag": "red",
-   "why": "Not the starter (QB2)",
-   "injury": null,
-   "depth": "QB2",
-   "news": "Sep 10",
-   "news_ms": 1789054504152,
-   "adds": 68423
+   "adds": 62217
   },
   {
    "id": "8134",
@@ -411,20 +424,7 @@
    "depth": "SWR2",
    "news": "Sep 9",
    "news_ms": 1788990347732,
-   "adds": 67932
-  },
-  {
-   "id": "7090",
-   "name": "Darnell Mooney",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR2",
-   "news": "Sep 8",
-   "news_ms": 1788892850926,
-   "adds": 58491
+   "adds": 61650
   },
   {
    "id": "8111",
@@ -437,20 +437,20 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789071620602,
-   "adds": 55902
+   "adds": 58194
   },
   {
-   "id": "4147",
-   "name": "Samaje Perine",
-   "pos": "RB",
-   "team": "CIN",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
+   "id": "7090",
+   "name": "Darnell Mooney",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "RB2",
+   "depth": "SWR2",
    "news": "Sep 8",
-   "news_ms": 1788888050537,
-   "adds": 54884
+   "news_ms": 1788892850926,
+   "adds": 53496
   },
   {
    "id": "12491",
@@ -461,25 +461,38 @@
    "why": "RB5 on the depth chart",
    "injury": null,
    "depth": "RB5",
-   "news": "Aug 29",
-   "news_ms": 1788035150497,
-   "adds": 54018
+   "news": "Sep 11",
+   "news_ms": 1789086929698,
+   "adds": 51096
   },
   {
-   "id": "13533",
-   "name": "Barion Brown",
+   "id": "3321",
+   "name": "Tyreek Hill",
    "pos": "WR",
-   "team": "NO",
-   "flag": "amber",
-   "why": "WR4 on the depth chart",
-   "injury": null,
-   "depth": "SWR4",
-   "news": "Sep 9",
-   "news_ms": 1788966926414,
-   "adds": 50607
+   "team": "FA",
+   "flag": "red",
+   "why": "Free agent / no team",
+   "injury": "",
+   "depth": null,
+   "news": "Sep 10",
+   "news_ms": 1789069820372,
+   "adds": 50112
   }
  ],
  "transactions": [
+  {
+   "type": "free_agent",
+   "status": "complete",
+   "team": "GK",
+   "adds": [
+    "Michael Mayer"
+   ],
+   "drops": [
+    "Terrance Ferguson"
+   ],
+   "bid": null,
+   "ts": 1789095710066
+  },
   {
    "type": "free_agent",
    "status": "complete",
@@ -580,8 +593,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "QB1",
-    "news": "Sep 10",
-    "news_ms": 1789059603861
+    "news": "Sep 11",
+    "news_ms": 1789100416705
    },
    {
     "id": "6813",
@@ -604,8 +617,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 10",
-    "news_ms": 1789060503576
+    "news": "Sep 11",
+    "news_ms": 1789099816596
    },
    {
     "id": "12526",
@@ -640,8 +653,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "TE1",
-    "news": "Sep 10",
-    "news_ms": 1789053603043
+    "news": "Sep 11",
+    "news_ms": 1789089329487
    },
    {
     "id": "12490",
@@ -676,8 +689,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "QB1",
-    "news": "Sep 10",
-    "news_ms": 1789047602228
+    "news": "Sep 11",
+    "news_ms": 1789097716818
    },
    {
     "id": "12015",
@@ -688,8 +701,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "K1",
-    "news": "Sep 10",
-    "news_ms": 1789021535986
+    "news": "Sep 11",
+    "news_ms": 1789099216730
    },
    {
     "id": "HOU",
@@ -705,7 +718,7 @@
    }
   ],
   "my_points": 6.6,
-  "their_points": 0.0
+  "their_points": 54.0
  },
  "qb_depth": [
   {
