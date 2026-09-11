@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 10, 2026 10:50 PM PT",
- "generated_ms": 1789105807889,
+ "generated": "Thu Sep 10, 2026 11:08 PM PT",
+ "generated_ms": 1789106928076,
  "season": "2026",
  "week": 1,
  "faab_used": 0,
@@ -229,7 +229,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789103416633,
-   "adds": 290892
+   "adds": 293216
   },
   {
    "id": "2505",
@@ -242,7 +242,7 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789051202505,
-   "adds": 264132
+   "adds": 264465
   },
   {
    "id": "10235",
@@ -255,7 +255,7 @@
    "depth": "RB3",
    "news": "Sep 8",
    "news_ms": 1788877549423,
-   "adds": 247424
+   "adds": 247480
   },
   {
    "id": "11834",
@@ -268,7 +268,7 @@
    "depth": "SWR2",
    "news": "Sep 9",
    "news_ms": 1788984645640,
-   "adds": 239036
+   "adds": 239218
   },
   {
    "id": "10213",
@@ -281,7 +281,7 @@
    "depth": "LWR1",
    "news": "Sep 9",
    "news_ms": 1788962726159,
-   "adds": 195444
+   "adds": 195954
   },
   {
    "id": "8800",
@@ -294,7 +294,7 @@
    "depth": "RB2",
    "news": "Sep 8",
    "news_ms": 1788843345303,
-   "adds": 178380
+   "adds": 178578
   },
   {
    "id": "4039",
@@ -307,7 +307,7 @@
    "depth": "SWR3",
    "news": "Sep 10",
    "news_ms": 1789067120814,
-   "adds": 107730
+   "adds": 107814
   },
   {
    "id": "12487",
@@ -320,7 +320,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789098616601,
-   "adds": 93920
+   "adds": 93936
   },
   {
    "id": "5854",
@@ -333,20 +333,7 @@
    "depth": "QB2",
    "news": "Sep 10",
    "news_ms": 1789084229446,
-   "adds": 75294
-  },
-  {
-   "id": "8127",
-   "name": "Charlie Kolar",
-   "pos": "TE",
-   "team": "LAC",
-   "flag": "amber",
-   "why": "TE3 on the depth chart",
-   "injury": null,
-   "depth": "TE3",
-   "news": "Sep 10",
-   "news_ms": 1789048502354,
-   "adds": 72645
+   "adds": 75426
   },
   {
    "id": "13285",
@@ -359,7 +346,20 @@
    "depth": "RWR3",
    "news": "Sep 9",
    "news_ms": 1788982545388,
-   "adds": 72595
+   "adds": 72715
+  },
+  {
+   "id": "8127",
+   "name": "Charlie Kolar",
+   "pos": "TE",
+   "team": "LAC",
+   "flag": "amber",
+   "why": "TE3 on the depth chart",
+   "injury": null,
+   "depth": "TE3",
+   "news": "Sep 10",
+   "news_ms": 1789048502354,
+   "adds": 72681
   },
   {
    "id": "3286",
@@ -372,7 +372,7 @@
    "depth": "LWR4",
    "news": "Sep 11",
    "news_ms": 1789101016443,
-   "adds": 68874
+   "adds": 69408
   },
   {
    "id": "13296",
@@ -385,7 +385,7 @@
    "depth": "RWR2",
    "news": "Sep 9",
    "news_ms": 1788986445775,
-   "adds": 68160
+   "adds": 68280
   },
   {
    "id": "2078",
@@ -398,7 +398,7 @@
    "depth": "LWR4",
    "news": "Sep 6",
    "news_ms": 1788709230912,
-   "adds": 63686
+   "adds": 63756
   },
   {
    "id": "9511",
@@ -411,7 +411,7 @@
    "depth": "RB2",
    "news": "Sep 10",
    "news_ms": 1789080328104,
-   "adds": 58689
+   "adds": 58824
   },
   {
    "id": "8134",
@@ -424,7 +424,7 @@
    "depth": "SWR2",
    "news": "Sep 9",
    "news_ms": 1788990347732,
-   "adds": 58653
+   "adds": 58770
   },
   {
    "id": "8111",
@@ -437,7 +437,7 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789071620602,
-   "adds": 57582
+   "adds": 57648
   },
   {
    "id": "7090",
@@ -450,7 +450,7 @@
    "depth": "SWR2",
    "news": "Sep 8",
    "news_ms": 1788892850926,
-   "adds": 51129
+   "adds": 51192
   },
   {
    "id": "12491",
@@ -463,7 +463,7 @@
    "depth": "RB5",
    "news": "Sep 11",
    "news_ms": 1789086929698,
-   "adds": 49182
+   "adds": 49188
   },
   {
    "id": "3321",
@@ -476,7 +476,7 @@
    "depth": null,
    "news": "Sep 10",
    "news_ms": 1789069820372,
-   "adds": 49016
+   "adds": 49144
   }
  ],
  "transactions": [
