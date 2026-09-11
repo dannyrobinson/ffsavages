@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 10, 2026 9:34 PM PT",
- "generated_ms": 1789101247727,
+ "generated": "Thu Sep 10, 2026 9:39 PM PT",
+ "generated_ms": 1789101587283,
  "season": "2026",
  "week": 1,
  "faab_used": 0,
@@ -229,7 +229,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789100416667,
-   "adds": 286965
+   "adds": 284445
   },
   {
    "id": "2505",
@@ -242,7 +242,7 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789051202505,
-   "adds": 269811
+   "adds": 265932
   },
   {
    "id": "10235",
@@ -255,7 +255,7 @@
    "depth": "RB3",
    "news": "Sep 8",
    "news_ms": 1788877549423,
-   "adds": 268224
+   "adds": 255576
   },
   {
    "id": "11834",
@@ -268,7 +268,7 @@
    "depth": "SWR2",
    "news": "Sep 9",
    "news_ms": 1788984645640,
-   "adds": 253883
+   "adds": 244300
   },
   {
    "id": "10213",
@@ -281,7 +281,7 @@
    "depth": "LWR1",
    "news": "Sep 9",
    "news_ms": 1788962726159,
-   "adds": 197742
+   "adds": 195240
   },
   {
    "id": "8800",
@@ -294,7 +294,7 @@
    "depth": "RB2",
    "news": "Sep 8",
    "news_ms": 1788843345303,
-   "adds": 191232
+   "adds": 182736
   },
   {
    "id": "4039",
@@ -307,7 +307,7 @@
    "depth": "SWR3",
    "news": "Sep 10",
    "news_ms": 1789067120814,
-   "adds": 109776
+   "adds": 108330
   },
   {
    "id": "12487",
@@ -320,7 +320,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789098616601,
-   "adds": 97520
+   "adds": 95360
   },
   {
    "id": "8127",
@@ -333,20 +333,7 @@
    "depth": "TE3",
    "news": "Sep 10",
    "news_ms": 1789048502354,
-   "adds": 78294
-  },
-  {
-   "id": "13285",
-   "name": "Malachi Fields",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "RWR3",
-   "news": "Sep 9",
-   "news_ms": 1788982545388,
-   "adds": 76600
+   "adds": 75030
   },
   {
    "id": "5854",
@@ -359,7 +346,20 @@
    "depth": "QB2",
    "news": "Sep 10",
    "news_ms": 1789084229446,
-   "adds": 74725
+   "adds": 74819
+  },
+  {
+   "id": "13285",
+   "name": "Malachi Fields",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "RWR3",
+   "news": "Sep 9",
+   "news_ms": 1788982545388,
+   "adds": 74280
   },
   {
    "id": "13296",
@@ -372,7 +372,20 @@
    "depth": "RWR2",
    "news": "Sep 9",
    "news_ms": 1788986445775,
-   "adds": 73704
+   "adds": 70248
+  },
+  {
+   "id": "3286",
+   "name": "Demarcus Robinson",
+   "pos": "WR",
+   "team": "SF",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "LWR4",
+   "news": "Sep 11",
+   "news_ms": 1789101016443,
+   "adds": 66558
   },
   {
    "id": "2078",
@@ -385,20 +398,7 @@
    "depth": "LWR4",
    "news": "Sep 6",
    "news_ms": 1788709230912,
-   "adds": 67655
-  },
-  {
-   "id": "3286",
-   "name": "Demarcus Robinson",
-   "pos": "WR",
-   "team": "SF",
-   "flag": "amber",
-   "why": "WR4 on the depth chart",
-   "injury": null,
-   "depth": "LWR4",
-   "news": "Aug 21",
-   "news_ms": 1787354729510,
-   "adds": 66282
+   "adds": 65191
   },
   {
    "id": "9511",
@@ -411,7 +411,7 @@
    "depth": "RB2",
    "news": "Sep 10",
    "news_ms": 1789080328104,
-   "adds": 62217
+   "adds": 59895
   },
   {
    "id": "8134",
@@ -424,7 +424,7 @@
    "depth": "SWR2",
    "news": "Sep 9",
    "news_ms": 1788990347732,
-   "adds": 61650
+   "adds": 59634
   },
   {
    "id": "8111",
@@ -437,7 +437,7 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789071620602,
-   "adds": 58194
+   "adds": 57666
   },
   {
    "id": "7090",
@@ -450,7 +450,7 @@
    "depth": "SWR2",
    "news": "Sep 8",
    "news_ms": 1788892850926,
-   "adds": 53496
+   "adds": 51939
   },
   {
    "id": "12491",
@@ -463,7 +463,7 @@
    "depth": "RB5",
    "news": "Sep 11",
    "news_ms": 1789086929698,
-   "adds": 51096
+   "adds": 50190
   },
   {
    "id": "3321",
@@ -476,7 +476,7 @@
    "depth": null,
    "news": "Sep 10",
    "news_ms": 1789069820372,
-   "adds": 50112
+   "adds": 49240
   }
  ],
  "transactions": [
