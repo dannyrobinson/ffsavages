@@ -47,8 +47,9 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
 - Be decisive. Headline the single most important move, then a short prioritized list naming the drop for
   every add and the bid for every claim (odd numbers; free-agent adds say "no bid"). Bid sizing follows the
   season plan in `lib/rules.js`: $90+ of the $150 stays untouched for a league-winner (bell-cow job, QB named
-  starter), proven role changes $5–20, speculation/committee backs $1–8 or wait and add free, K/DEF $1, hold
-  $20–30 through week 11. Danny set this Sept 11 after the advisor bid $43 on Kenny Gainwell in week 1 ("rich").
+  starter), a proven role change Danny would START $5–20, anyone bound for his bench $1–3 or wait and add free
+  ("$15 is 10% of my full season budget" for a bench player, Sept 11), K/DEF $1, hold $20–30 through week 11.
+  Danny set this Sept 11 after the advisor bid $43 on Kenny Gainwell in week 1 ("rich").
   Flag injuries/suspensions on his own players red/amber/green.
 - He reads this on his phone. Short beats thorough.
 
