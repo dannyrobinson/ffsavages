@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 10, 2026 10:25 PM PT",
- "generated_ms": 1789104330080,
+ "generated": "Thu Sep 10, 2026 10:29 PM PT",
+ "generated_ms": 1789104598038,
  "season": "2026",
  "week": 1,
  "faab_used": 0,
@@ -690,7 +690,7 @@
     "injury": null,
     "depth": "QB1",
     "news": "Sep 11",
-    "news_ms": 1789102516671
+    "news_ms": 1789104022458
    },
    {
     "id": "12015",
