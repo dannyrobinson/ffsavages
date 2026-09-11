@@ -58,11 +58,13 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   `scripts/build.py` between HTML comment markers: `SWEEP` (JSON from the Python sweep: roster with
   red/amber/green flags, free-agent starting QBs, trending adds that are free agents *here*, league
   transactions with bids, this week's opponent, QB count per team, FAAB left per team). **The baked SWEEP is only the offline fallback**:
-  on open, on the ↻ button and when the app comes back to the foreground, the page fetches `api/sweep`
+  on open, on pull-down and when the app comes back to the foreground, the page fetches `api/sweep`
   (Vercel; the Node sweep, which also carries projections and the lineup math) and, where there is no API
   (GitHub Pages, localhost), talks to api.sleeper.app directly (CORS is open) with the 2.5 MB player feed
-  slimmed and cached in localStorage for an hour; pulling down at the top of the page also refreshes.
-  `applySweep()` replaces SWEEP, FLAGS and the roster. The Plan tab shows FAAB per team, byes ahead and a
+  slimmed and cached in localStorage for an hour. Pull-to-refresh is the only manual refresh (no button): the
+  page follows the finger, a spinner sits in the gap, and the refresh shows two steps, Sleeper then Claude's
+  latest stored read (it never runs the advisor; that is "Re-check now"). `applySweep()` replaces SWEEP, FLAGS
+  and the roster. The Plan tab shows FAAB per team, byes ahead and a
   DEF-stream card (this week and next); the Roster tab shows each player's bye.
   The Moves tab shows Claude's latest stored advice from `api/advice` (headline, summary, lineup changes,
   adds with the drop and bid for each, IR moves, watch list, player flags) and a "Lineup by projections" card (current vs best

@@ -185,11 +185,12 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
 .txn div .bid{font-family:"IBM Plex Mono",monospace;color:var(--go)}
 @media (prefers-reduced-motion:no-preference){.mv,.al{transition:background .15s}}
 /* live stamp, refresh, alerts */
-.hdr .tools{display:flex;align-items:center;gap:8px;padding-bottom:4px}
-.iconbtn{width:44px;height:44px;border:1px solid var(--line);border-radius:11px;background:var(--panel);display:grid;place-items:center;color:var(--ink2)}
-.iconbtn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.iconbtn.spin svg{animation:spin 1s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
+/* pull to refresh: the page follows the finger, the indicator sits in the gap it reveals */
+.ptr{position:fixed;top:env(safe-area-inset-top);left:0;right:0;height:64px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:12.5px;color:var(--ink3);opacity:0;z-index:0;pointer-events:none}
+.ptr .sp{width:18px;height:18px;border-radius:50%;border:2px solid var(--line);border-top-color:var(--ink2)}
+.ptr.busy .sp{animation:spin .8s linear infinite}
+.wrap{position:relative;z-index:1;background:var(--bg);will-change:transform}
 .live{font-size:12px;color:var(--ink3);margin-top:3px;display:flex;align-items:center;gap:6px}
 .live .dot{width:7px;height:7px;background:currentColor;opacity:.7}
 .live.ok{color:var(--go)} .live.err{color:var(--amber)}
@@ -209,6 +210,7 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
 </style>
 </head>
 <body>
+<div class="ptr" id="ptr" aria-hidden="true"><div class="sp"></div><span id="ptrText">Pull to refresh</span></div>
 <div class="wrap">
   <header class="hdr">
     <div>
@@ -216,7 +218,6 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
       <div class="sub" id="sub">West Van Super Studs · 12-team superflex, full PPR · $150 FAAB</div>
       <div class="live" id="liveStamp"><span class="dot"></span><span id="liveText">Sleeper snapshot</span></div>
     </div>
-    <div class="tools"><button class="iconbtn" id="refreshBtn" aria-label="Refresh from Sleeper" title="Refresh from Sleeper"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg></button></div>
   </header>
   <div class="chip" id="installChip" hidden><button class="go" id="installBtn">📲 Install this app</button><button class="x" id="installX" aria-label="Not now">×</button><div class="how" id="installHow" hidden></div></div>
 
@@ -398,9 +399,10 @@ function renderLineup(){
   const gain=Math.round((lu.optimal_pts-lu.current_pts)*10)/10;
   el.innerHTML=`<div class="card"><div class="lsum">Current <b>${lu.current_pts}</b> · Best by projections <b>${lu.optimal_pts}</b>${gain>0?` <span class="up">+${gain}</span>`:""}</div><div class="lgrid">${rows}</div><small>Sleeper's weekly projections under this league's scoring. Locked players stay put. Claude's read above overrides these when the news says so.</small></div>`;
 }
-async function fetchAdvice(){
-  try{ const r=await fetch("api/advice",{cache:"no-store"}); if(!r.ok) return; const j=await r.json();
-    if(j&&j.advice&&j.advice.headline&&(!S.advice||(j.advice.ts||0)>=(S.advice.ts||0))){ S.advice=j.advice; save(); renderAdvice(); renderLog(); } }catch(e){}
+async function fetchAdvice(){   // true when a newer read from Claude came down
+  try{ const r=await fetch("api/advice",{cache:"no-store"}); if(!r.ok) return false; const j=await r.json();
+    if(j&&j.advice&&j.advice.headline&&(!S.advice||(j.advice.ts||0)>(S.advice.ts||0))){ S.advice=j.advice; save(); renderAdvice(); renderLog(); return true; } }catch(e){}
+  return false;
 }
 $("runBtn").addEventListener("click",async()=>{
   if(!AI.api){ setStatus("runStatus",NOT_HERE(),true); return; }
@@ -633,24 +635,32 @@ function applySweep(sw){
   renderSweep(); renderRoster(); renderPlan(); renderLineup();
 }
 function setLive(msg,cls){ const el=$("liveStamp"); $("liveText").textContent=msg; el.className="live"+(cls?" "+cls:""); }
+// ---- pull to refresh ----
+const PTR={el:$("ptr"),text:$("ptrText"),sp:$("ptr").querySelector(".sp"),wrap:document.querySelector(".wrap"),HOLD:64,ARM:72};
+function ptrSet(y,anim){ PTR.wrap.style.transition=anim?"transform .28s cubic-bezier(.2,.8,.2,1)":"none"; PTR.wrap.style.transform=y?`translateY(${y}px)`:""; PTR.el.style.opacity=Math.min(1,y/40); }
+const clock=ms=>new Date(ms).toLocaleTimeString([],{hour:"numeric",minute:"2-digit"});
 async function refreshLive(force){
-  if(LIVE.busy) return; LIVE.busy=true; $("refreshBtn").classList.add("spin"); setLive("Checking Sleeper…");
+  if(LIVE.busy) return; LIVE.busy=true; const started=Date.now();
+  PTR.el.classList.add("busy"); ptrSet(PTR.HOLD,true); PTR.text.textContent="Checking Sleeper…"; setLive("Checking Sleeper…");
   try{
     let sw=null;
     try{ const r=await fetch("api/sweep"+(force?"?fresh=1":""),{cache:"no-store"}); if(r.ok){ const j=await r.json(); if(j&&j.roster) sw=j; } }catch(e){}
     if(!sw) sw=await directSweep(force);
-    applySweep(sw); LIVE.ts=Date.now(); LIVE.src=sw.source; fetchAdvice();
-    setLive(`Live from Sleeper · ${new Date().toLocaleTimeString([],{hour:"numeric",minute:"2-digit"})}`,"ok");
-  }catch(e){ setLive(`Sleeper snapshot from ${SWEEP.generated} · live refresh failed (${String(e&&e.message||"offline").slice(0,60)})`,"err"); }
-  finally{ LIVE.busy=false; $("refreshBtn").classList.remove("spin"); }
+    applySweep(sw); LIVE.ts=Date.now(); LIVE.src=sw.source;
+    PTR.text.textContent="Getting Claude's latest read…"; const newer=await fetchAdvice();
+    PTR.text.textContent=newer?"New read from Claude":"Up to date";
+    setLive(`Sleeper ${clock(LIVE.ts)}${S.advice&&S.advice.ts?` · Claude's read ${fmtTs(S.advice.ts)}${newer?" (new)":""}`:""}`,"ok");
+  }catch(e){ PTR.text.textContent="Refresh failed"; setLive(`Sleeper snapshot from ${SWEEP.generated} · live refresh failed (${String(e&&e.message||"offline").slice(0,60)})`,"err"); }
+  finally{ await new Promise(r=>setTimeout(r,Math.max(0,900-(Date.now()-started)))); PTR.el.classList.remove("busy"); ptrSet(0,true); PTR.sp.style.transform=""; LIVE.busy=false; }
 }
-$("refreshBtn").addEventListener("click",()=>refreshLive(true));
-// pull down at the top of the page to refresh from Sleeper (the browser's own gesture is disabled by overscroll-behavior)
-(()=>{ let y0=null, pulled=0; const ARM=80;
-  const liveText=()=>LIVE.ts?setLive(`Live from Sleeper · ${new Date(LIVE.ts).toLocaleTimeString([],{hour:"numeric",minute:"2-digit"})}`,"ok"):setLive(`Sleeper snapshot from ${SWEEP.generated}`);
-  document.addEventListener("touchstart",e=>{ y0=(window.scrollY<=0&&e.touches.length===1)?e.touches[0].clientY:null; pulled=0; },{passive:true});
-  document.addEventListener("touchmove",e=>{ if(y0==null||LIVE.busy) return; pulled=e.touches[0].clientY-y0; if(pulled>20) setLive(pulled>=ARM?"Release to refresh":"Pull to refresh…"); },{passive:true});
-  document.addEventListener("touchend",()=>{ if(y0!=null&&!LIVE.busy){ if(pulled>=ARM) refreshLive(true); else if(pulled>20) liveText(); } y0=null; pulled=0; });
+// the page follows the finger from the top of the scroll; release past the threshold to refresh
+(()=>{ let y0=null, pull=0, active=false;
+  document.addEventListener("touchstart",e=>{ if(LIVE.busy||e.touches.length!==1||window.scrollY>0){ y0=null; return; } y0=e.touches[0].clientY; pull=0; active=false; },{passive:true});
+  document.addEventListener("touchmove",e=>{ if(y0==null||LIVE.busy) return; const d=e.touches[0].clientY-y0;
+    if(d<=0||window.scrollY>0){ if(active){ active=false; pull=0; ptrSet(0,false); } return; }
+    active=true; pull=Math.min(120,d*0.55); ptrSet(pull,false); PTR.sp.style.transform=`rotate(${Math.min(1,pull/PTR.ARM)*360}deg)`; PTR.text.textContent=pull>=PTR.ARM?"Release to refresh":"Pull to refresh"; },{passive:true});
+  const end=()=>{ if(y0==null) return; const go=active&&pull>=PTR.ARM; y0=null; active=false; pull=0; if(go) refreshLive(true); else ptrSet(0,true); };
+  document.addEventListener("touchend",end); document.addEventListener("touchcancel",end);
 })();
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&Date.now()-LIVE.ts>5*60*1000) refreshLive(false); });
 
