@@ -80,6 +80,8 @@ p.lead{color:var(--ink2);max-width:60ch;margin:0 0 12px;font-size:13.5px}
 .mv .t .kind.waiver{background:var(--go-bg);color:var(--go)}
 .mv .t .kind.ir,.mv .t .kind.drop{background:var(--red-bg);color:var(--red)}
 .mv .t .kind.lineup,.mv .t .kind.trade{background:var(--te-bg);color:var(--te)}
+.mv .t .kind.sub{background:var(--amber-bg);color:var(--amber)}
+.subs textarea{width:100%;min-height:52px;margin-top:8px}.subs small{display:block;color:var(--ink2);font-size:12.5px;margin-top:2px;line-height:1.4}.subs .row2{align-items:center;gap:10px}.subs .status{margin:0}
 .mv .w{font-size:13px;color:var(--ink2);margin-top:2px;line-height:1.4}
 .mv .faab{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--go);margin-top:4px}
 .mv .ev{font-size:12px;color:var(--ink3)}
@@ -232,6 +234,7 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
 
     <h3 class="sec">Lineup by projections</h3>
     <div id="lineupCard"></div>
+    <div class="card subs" id="subsCard"></div>
 
     <h3 class="sec">Waiver watch <small id="sweepStamp"></small></h3>
     <div id="waiverWatch"></div>
@@ -329,7 +332,7 @@ const DRAFTED=[{"name":"Joe Burrow","pos":"QB","team":"CIN","status":""},{"name"
 function sleeperRoster(){ return (SWEEP.roster||[]).length?SWEEP.roster.map(p=>({name:p.name,pos:p.pos,team:p.team,status:p.slot==="IR"?"IR":""})):DRAFTED; }
 const BAKED=sleeperRoster();
 const FLAGS={}; (SWEEP.roster||[]).forEach(p=>FLAGS[p.name]=p);
-let S={roster:BAKED.map(p=>({...p})),log:[],advice:null,chat:[],syncedMs:SWEEP.generated_ms||0};
+let S={roster:BAKED.map(p=>({...p})),log:[],advice:null,chat:[],subs:null,syncedMs:SWEEP.generated_ms||0};
 try{const raw=localStorage.getItem(KEY); if(raw) S={...S,...JSON.parse(raw)}}catch(e){}
 // Sleeper is the source of truth: a newer bake replaces whatever was edited by hand.
 if((SWEEP.generated_ms||0)>(S.syncedMs||0)||!S.roster.length){ S.roster=BAKED.map(p=>({...p})); S.syncedMs=SWEEP.generated_ms||0; }
@@ -380,11 +383,12 @@ function renderAdvice(){
     el.innerHTML=`<div class="empty"><b>No read from Claude yet.</b> It checks Sleeper, projections and the news every hour and after every change in the league, and pushes an alert when you should act. Tap the button for a read now.</div>`;
     return;
   }
-  const kinds={waiver:"Add",lineup:"Lineup",ir:"IR",watch:"Watch"};
+  const kinds={waiver:"Add",lineup:"Lineup",ir:"IR",watch:"Watch",sub:"Auto-sub"};
   const urg=u=>u==="high"?`<span class="kind ir">NOW</span>`:u==="medium"?`<span class="kind waiver">THIS WEEK</span>`:"";
   const items=[];
   for(const l of A.lineup||[]) items.push({kind:"lineup",title:`Start ${l.start}${l.sit?` over ${l.sit}`:""}${l.slot?` at ${slotLabel(l.slot)}`:""}`,why:l.why,evidence:l.evidence,urgency:l.urgency});
   for(const i of A.ir||[]) items.push({kind:"ir",title:`Move ${i.player} ${i.move==="off IR"?"off IR":"to IR"}`,why:i.why,urgency:i.urgency});
+  for(const s of A.subs||[]) items.push({kind:"sub",title:`Set ${s.sub} as the auto-sub for ${s.starter}${s.slot?` (${slotLabel(s.slot)})`:""}`,why:s.why,urgency:s.urgency});
   for(const w of A.adds||[]) items.push({kind:"waiver",title:`Add ${w.add}${w.pos?` (${w.pos}${w.team?" "+w.team:""})`:""}${w.drop?`, drop ${w.drop}`:" (into the spot the IR move frees)"}`,why:w.why,evidence:w.evidence,how:w.how,bid:w.bid,backup:w.backup,processes:w.processes,urgency:w.urgency});
   for(const w of A.watch||[]) items.push({kind:"watch",title:`Watch ${w.player}`,why:w.what});
   const pr=A.projections;
@@ -399,6 +403,26 @@ function renderLineup(){
   const gain=Math.round((lu.optimal_pts-lu.current_pts)*10)/10;
   el.innerHTML=`<div class="card"><div class="lsum">Current <b>${lu.current_pts}</b> · Best by projections <b>${lu.optimal_pts}</b>${gain>0?` <span class="up">+${gain}</span>`:""}</div><div class="lgrid">${rows}</div><small>Sleeper's weekly projections under this league's scoring. Locked players stay put. Claude's read above overrides these when the news says so.</small></div>`;
 }
+// ---- Sleeper auto-subs. The API can't see which subs Danny set, so he records them here (kv "subs" via api/subs);
+// the advisor reads the note and recommends pairings it doesn't mention. A note from an earlier week is stale. ----
+function subsWeek(){ return S.subs&&S.subs.text&&Number(S.subs.week)===Number(SWEEP.week)?S.subs:null; }
+function renderSubs(){
+  const el=$("subsCard"); const as=(SWEEP.league||{}).auto_subs; const cur=subsWeek();
+  if(as&&!as.max){ el.hidden=true; return; } el.hidden=false;
+  el.innerHTML=`<b>Auto-subs you've set</b>${as?` <span class="bid">${as.max} a week</span>`:""}<small>In Sleeper: Swap Player → Set an AutoSub. The sub steps in if the starter is inactive at kickoff. Both lock when either game starts, so pick a sub who kicks off at the same time or later. Claude reads this note and won't repeat what you've set.</small>
+  <textarea id="subsText" placeholder="e.g. Shakir for Nabers">${esc(cur?cur.text:"")}</textarea>
+  <div class="row2"><button class="btn sec small" id="subsSave">Save for week ${SWEEP.week||"?"}</button><span class="status" id="subsStatus">${cur&&cur.ts?`Saved ${fmtTs(cur.ts)}`:(S.subs&&S.subs.text?`Week ${S.subs.week} note cleared; nothing for week ${SWEEP.week}`:"Nothing recorded this week")}</span></div>`;
+  $("subsSave").addEventListener("click",saveSubs);
+}
+async function saveSubs(){
+  const text=$("subsText").value.trim(); S.subs={week:SWEEP.week,text,ts:Date.now()}; save(); setStatus("subsStatus","Saving…");
+  try{ const j=await apiPost("api/subs",{week:SWEEP.week,text}); if(j.subs) S.subs=j.subs; save(); setStatus("subsStatus",`Saved ${fmtTs(S.subs.ts)} · Claude reads it on its next run`); }
+  catch(e){ setStatus("subsStatus",AI.api?"Couldn't reach the server; kept on this phone and sent with your next Re-check.":"Kept on this phone. Claude reads it on the Vercel app.",true); }
+}
+async function fetchSubs(){   // the server copy wins when it is newer (another device, or a save after this page loaded)
+  try{ const r=await fetch("api/subs",{cache:"no-store"}); if(!r.ok) return; const j=await r.json(); const s=j&&j.subs;
+    if(s&&s.ts&&(!S.subs||s.ts>(S.subs.ts||0))){ S.subs=s; save(); renderSubs(); } }catch(e){}
+}
 async function fetchAdvice(){   // true when a newer read from Claude came down
   try{ const r=await fetch("api/advice",{cache:"no-store"}); if(!r.ok) return false; const j=await r.json();
     if(j&&j.advice&&j.advice.headline&&(!S.advice||(j.advice.ts||0)>(S.advice.ts||0))){ S.advice=j.advice; save(); renderAdvice(); renderLog(); return true; } }catch(e){}
@@ -408,7 +432,7 @@ $("runBtn").addEventListener("click",async()=>{
   if(!AI.api){ setStatus("runStatus",NOT_HERE(),true); return; }
   const btn=$("runBtn"); btn.disabled=true; btn.textContent="Checking…"; setStatus("runStatus","Claude is pulling Sleeper, projections and today's news. This takes two to three minutes; the page can stay open in the background.");
   try{
-    const j=await apiPost("api/advise",{news:logText()});
+    const j=await apiPost("api/advise",{news:logText(),subs:subsWeek()});
     S.advice=j.advice; save(); renderAdvice(); renderLog(); setStatus("runStatus",""); window.scrollTo({top:0,behavior:"smooth"});
   }catch(e){ setStatus("runStatus",copyFor(e),true); }
   finally{ btn.disabled=false; btn.textContent="Re-check now"; }
@@ -524,11 +548,11 @@ $("clearChat").addEventListener("click",()=>{ S.chat=[]; save(); renderChat(); }
 const PLAYBOOK=[
  ["Waivers",["$150 FAAB for the season. Blind bids, min $1, highest wins; ties go to waiver priority, which rolls when you win a claim.","Weekly run: Wednesday 12:05 AM PT. Anyone whose game kicked off is on waivers until then. A dropped player clears 48 h after the drop, at that hour.","The $150 is for one or two league-winners a season (a backup handed a bell-cow job, a QB named starter). Keep $90+ untouched until one appears, then bid $60–90, up to $112–120 for a top-10 asset.","Real money only for players who start for you: a proven role change you'd start $5–20. Anyone bound for your bench (committee backs, handcuffs, stashes) is $1–3 or wait and add him free; $15 is 10% of the season. K/DEF/fill-ins $1.","After the week-10 deadline FAAB is the only roster tool: hold $20–30 through week 11, then spend down by week 14.","Bid odd numbers. Sleeper's suggested range is public, so go above it for a must-have. Bid $1 more than a needy rival has left.","Backup claims: give the fallback the same drop as the main claim, so it only lands if the first loses.","A backup into a bell-cow job or a QB named starter is the pickup that wins leagues. Free agents are first-come: act the moment news breaks.","Add next-man-up RBs before the news. Lean on handcuffs from week 10.","Churn the last two bench spots toward rising snap/target share. Don't cut after one quiet week.","Locked players (game started) can't be benched, dropped or moved to IR until the week completes Tuesday morning."]],
  ["Superflex",["Carry exactly three startable QBs. Two is panic; four wastes a bench spot.","Any QB who becomes a starter is a priority claim.","A mid-tier starting QB beats a good flex by 6–10 points a week.","Start the higher of your lowest QB vs your best benched skill player.","Sell a spare QB during QB byes or right after a rival's QB goes down. Teams with two QBs are the buyers."]],
- ["Lineups",["Volume over talent: 8+ targets is a floor, 4–5 is a prayer.","Use Vegas implied totals, not defensive rankings.","Start studs. Matchups only break ties.","Questionable plays ~71% of the time, Doubtful ~6%. Bench Doubtful; judge Questionable by practice trend.","Never start a late-window Questionable without a late-window backup.","Only wind matters for weather."]],
+ ["Lineups",["Volume over talent: 8+ targets is a floor, 4–5 is a prayer.","Use Vegas implied totals, not defensive rankings.","Start studs. Matchups only break ties.","Questionable plays ~71% of the time, Doubtful ~6%. Bench Doubtful; judge Questionable by practice trend.","Never start a late-window Questionable without a late-window backup.","Auto-subs (two a week here): pair every Questionable starter with the best bench player allowed in his slot who kicks off at the same time or later. Both lock when either game starts, so an earlier sub only covers a downgrade announced before his own kickoff.","Only wind matters for weather."]],
  ["Trades",["Ask: does this raise my starting nine?","Offer two for their star plus their worst player.","Buy low only when usage is intact. Sell high on TD spikes with flat volume.","Target 0–3 teams, positional gluts, frustrated managers.","Firm opening offers. Nothing in league chat.","Weeks 6–10 is the window for playoff-schedule assets. Deadline is week 10."]],
  ["Playoffs",["This league: 6 teams, playoffs start week 12, two-week rounds. Only 11 regular-season weeks.","From week 5, the weeks 12–17 schedule is the tiebreaker, never the reason.","Stream DEF/K weekly; lock a playoff DEF by week 10.","By week 10 turn bench upside into handcuffs and a bye-proof QB3.","Thursday/Saturday games in weeks 15–17: inactives lock early."]],
  ["Process",["Fantasy is ~80% luck. Grade the process, not the week.","React to usage, not box scores. Week-1 overreactions are usually wrong.","Three news passes: Tuesday, Friday, 90 minutes before kickoff.","Drop season-ending injuries immediately. No loyalty to draft capital."]]];
-const WEEK=[["Mon","Read Sunday's usage, not the box score. Note injuries and MNF."],["Tue","Waiver day. Bids in before midnight; the run is Wednesday 12:05 AM PT. Everyone who played is on waivers until then. IR moves on last week's locked players open now."],["Wed","Claims clear at 12:05 AM PT: check what you won and what you paid. Free agents are first-come after that. Send trade offers."],["Thu","TNF locks those players. First injury report."],["Fri","Final designations. Re-check every Questionable."],["Sat","Sweep runs. Set the lineup."],["Sun","Inactives ~90 min before each kickoff. Keep a late-window backup for late-window Questionables."]];
+const WEEK=[["Mon","Read Sunday's usage, not the box score. Note injuries and MNF."],["Tue","Waiver day. Bids in before midnight; the run is Wednesday 12:05 AM PT. Everyone who played is on waivers until then. IR moves on last week's locked players open now."],["Wed","Claims clear at 12:05 AM PT: check what you won and what you paid. Free agents are first-come after that. Send trade offers."],["Thu","TNF locks those players. First injury report."],["Fri","Final designations. Re-check every Questionable."],["Sat","Sweep runs. Set the lineup, and an auto-sub for every Questionable starter: a bench player who kicks off at the same time or later."],["Sun","Inactives ~90 min before each kickoff; an auto-sub fires then. Keep a late-window backup for late-window Questionables."]];
 function flagLabel(f){return f==="red"?"Red":f==="amber"?"Amber":"Green"}
 function renderSweep(){
   const stamp=$("sweepStamp"); const ww=$("waiverWatch"); const oc=$("oppCard"); const tx=$("txnList");
@@ -548,7 +572,7 @@ function renderSweep(){
 function renderPlan(){
   $("weekList").innerHTML=WEEK.map(([d,t])=>`<div class="d"><b>${d}</b><span>${t}</span></div>`).join("");
   const lg=SWEEP.league||{};
-  $("seasonCard").innerHTML=`Week <b>${SWEEP.week||"?"}</b> of an ${lg.regular_weeks||11}-week regular season. Trade deadline after <b>week ${lg.trade_deadline||10}</b>. Playoffs start <b>week ${lg.playoff_week_start||12}</b>: ${lg.playoff_teams||6} teams, ${lg.two_week_rounds?"two-week rounds (12–13, 14–15, 16–17)":"one-week rounds"}.`;
+  $("seasonCard").innerHTML=`Week <b>${SWEEP.week||"?"}</b> of an ${lg.regular_weeks||11}-week regular season. Trade deadline after <b>week ${lg.trade_deadline||10}</b>. Playoffs start <b>week ${lg.playoff_week_start||12}</b>: ${lg.playoff_teams||6} teams, ${lg.two_week_rounds?"two-week rounds (12–13, 14–15, 16–17)":"one-week rounds"}.${lg.auto_subs&&lg.auto_subs.max?` Sleeper auto-subs: <b>${lg.auto_subs.max}</b> a week${lg.auto_subs.any_start_time?", any kickoff allowed (but an earlier one is weak cover)":""}.`:""}`;
   const ft=SWEEP.faab_teams||[]; const left=SWEEP.faab_left??(SWEEP.faab_total!=null?SWEEP.faab_total-(SWEEP.faab_used||0):null);
   $("faabCard").innerHTML=left==null?"Budgets come with the live Sleeper refresh.":`You have <b>$${left}</b> of $${SWEEP.faab_total} left${SWEEP.waiver_position?` · waiver priority <b>${SWEEP.waiver_position}</b> of 12 (only breaks tied bids; winning a claim sends you to 12th)`:""}. Blind bids, min $${SWEEP.faab_min_bid??1}, highest wins. Weekly run <b>${esc(SWEEP.waiver_run||"Wednesday 12:05 AM PT")}</b>: anyone whose game has kicked off is on waivers until then. A dropped player clears 48 h after the drop.${ft.length?`<div class="txn" style="margin-top:8px">${ft.map(t=>`<div><b>${esc(t.team)}</b> <span class="bid">$${t.left}</span>${t.position?` · priority ${t.position}`:""}</div>`).join("")}</div>`:""}`;
   const by=SWEEP.byes, qbb=SWEEP.qb_byes||[];
@@ -632,7 +656,7 @@ function applySweep(sw){
   SWEEP={...SWEEP,...sw,league:sw.league||SWEEP.league}; noteNames(SWEEP);
   Object.keys(FLAGS).forEach(k=>delete FLAGS[k]); (SWEEP.roster||[]).forEach(p=>FLAGS[p.name]=p);
   if((SWEEP.generated_ms||0)>(S.syncedMs||0)){ S.roster=sleeperRoster().map(p=>({...p})); S.syncedMs=SWEEP.generated_ms; save(); }
-  renderSweep(); renderRoster(); renderPlan(); renderLineup();
+  renderSweep(); renderRoster(); renderPlan(); renderLineup(); renderSubs();
 }
 function setLive(msg,cls){ const el=$("liveStamp"); $("liveText").textContent=msg; el.className="live"+(cls?" "+cls:""); }
 // ---- pull to refresh ----
@@ -647,7 +671,7 @@ async function refreshLive(force){
     try{ const r=await fetch("api/sweep"+(force?"?fresh=1":""),{cache:"no-store"}); if(r.ok){ const j=await r.json(); if(j&&j.roster) sw=j; } }catch(e){}
     if(!sw) sw=await directSweep(force);
     applySweep(sw); LIVE.ts=Date.now(); LIVE.src=sw.source;
-    PTR.text.textContent="Getting Claude's latest read…"; const newer=await fetchAdvice();
+    PTR.text.textContent="Getting Claude's latest read…"; const newer=await fetchAdvice(); await fetchSubs();
     PTR.text.textContent=newer?"New read from Claude":"Up to date";
     setLive(`Sleeper ${clock(LIVE.ts)}${S.advice&&S.advice.ts?` · Claude's read ${fmtTs(S.advice.ts)}${newer?" (new)":""}`:""}`,"ok");
   }catch(e){ PTR.text.textContent="Refresh failed"; setLive(`Sleeper snapshot from ${SWEEP.generated} · live refresh failed (${String(e&&e.message||"offline").slice(0,60)})`,"err"); }
@@ -738,7 +762,7 @@ function go(id){ document.querySelectorAll(".nav button").forEach(b=>b.setAttrib
 document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>go(b.dataset.pane)));
 
 // ---- boot ----
-renderAdvice(); renderLineup(); renderRoster(); renderLog(); renderChat(); renderSweep(); renderPlan(); save();
+renderAdvice(); renderLineup(); renderSubs(); renderRoster(); renderLog(); renderChat(); renderSweep(); renderPlan(); save();
 setLive(`Sleeper snapshot from ${SWEEP.generated||"—"}`);
 refreshLive(false);
 if("serviceWorker" in navigator){ navigator.serviceWorker.register("sw.js",{scope:"./"}).then(()=>initAlerts()).catch(()=>{ AL.supported=false; initAlerts(); }); }
@@ -747,7 +771,7 @@ else { AL.supported=false; initAlerts(); }
   const cfg=await CFG_READY.promise; AI.api=!!(cfg&&cfg.ask);
   if(AI.api){ $("fileRow").hidden=false; $("shot").accept="image/*"; }
   else setStatus("runStatus",NOT_HERE());
-  fetchAdvice();
+  fetchAdvice(); fetchSubs();
 })();
 </script>
 </body>

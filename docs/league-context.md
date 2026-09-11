@@ -11,6 +11,15 @@
 **FAAB is real this year** (confirmed Sept 11; the 2025 league was rolling waivers, hence the earlier confusion). Sleeper mechanics: blind bids, min $1, highest wins, ties by rolling waiver priority; weekly run 12:05 AM PT Wednesday (everyone who played is on waivers until then); a dropped player clears 48 h after the drop and claims on him process right then; free agents are first-come otherwise. Backup claims: same drop as the main claim. FAAB can be traded.
 **No keepers** (Danny confirmed Sept 3; Sleeper's max_keepers=1 is just a setting). Superflex is NEW in 2026 — 2025 was 1QB.
 
+## Auto-subs (Sleeper Player AutoSubs, researched Sept 11)
+On in this league: `max_subs=2` a week; `sub_start_time_eligibility=0` ("Require AutoSub To Not Play Before Starter" off);
+`sub_lock_if_starter_active=0` (sub released if the starter plays). Set in the app: Swap Player → Set an AutoSub, a bench
+player allowed in the starter's slot; he steps in automatically if the starter is inactive at kickoff. Both players lock
+when either game kicks off, so a sub who plays earlier only covers a downgrade announced before his own kickoff. The
+public API does not expose which subs are set (GraphQL `matchup_legs.subs` needs a login); Danny records his note in the
+app (kv `subs`). Week 1: Shakir (BUF, 10 AM PT) for Nabers (NYG, SNF 5:20 PM PT) — early cover only.
+Sources: support.sleeper.com "How does Player AutoSubs work?"; Sleeper's Sept 2024 AutoSub update on X.
+
 ## Draft position
 Slot 6. Picks: 6, 19, 30, 43, 54, 67, 78, 91, 102, 115, 126, 139, 150, 163, 174, 187.
 

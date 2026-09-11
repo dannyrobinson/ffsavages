@@ -36,6 +36,16 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   Sleeper mechanics that bit us: a player locks at kickoff and cannot be benched, dropped or moved to IR until
   the week's games are complete (Tuesday morning PT). Danny hit this Sept 10 trying to IR A.J. Brown after his
   game. IR: 2 slots; Out, Doubtful, NA, DNR, COV qualify (not Suspended).
+- **Auto-subs (Sleeper's Player AutoSubs) are on**, per the league settings (researched Sept 11): `max_subs=2` a
+  week, `sub_start_time_eligibility=0` (the "Require AutoSub To Not Play Before Starter" toggle is off, so a sub
+  may kick off before his starter), `sub_lock_if_starter_active=0` (the sub is released if the starter plays).
+  Danny sets one in the Sleeper app (Swap Player → Set an AutoSub): a bench player allowed in the starter's slot who
+  is swapped in automatically if the starter is inactive at kickoff. Both players in a pair lock the moment EITHER
+  game kicks off, so a sub who plays earlier only covers a downgrade announced before his own kickoff; a Sunday- or
+  Monday-night starter needs a sub from the same or a later window. The public API does not show which subs a
+  manager has set (that is the authenticated GraphQL `matchup_legs.subs`), so Danny records his in the app
+  (Moves tab → Auto-subs card → kv `subs` via `api/subs`) and the advisor reads the note. Week 1 (Sept 11) he set
+  Shakir for Nabers; Shakir kicks off 10 AM PT, Nabers 5:20 PM PT (SNF), so that pair only covers an early downgrade.
 - Draft was Tue Sept 8 2026, 7 PM PT, 16 rounds. Danny picked 6, 19, 30, 43, 54, 67, 78, 91, 102, 115,
   126, 139, 150, 163, 174, 187.
 - Full notes and the strategy we used: `docs/league-context.md`. Injury flags as of Sept 8 are in
@@ -50,7 +60,8 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   starter), a proven role change Danny would START $5–20, anyone bound for his bench $1–3 or wait and add free
   ("$15 is 10% of my full season budget" for a bench player, Sept 11), K/DEF $1, hold $20–30 through week 11.
   Danny set this Sept 11 after the advisor bid $43 on Kenny Gainwell in week 1 ("rich").
-  Flag injuries/suspensions on his own players red/amber/green.
+  Flag injuries/suspensions on his own players red/amber/green. For every Questionable starter, name the auto-sub
+  to set (a bench player allowed in the slot who kicks off at the same time or later), unless his note says it is set.
 - He reads this on his phone. Short beats thorough.
 
 ## What's here
@@ -67,8 +78,8 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   and the roster. The Plan tab shows FAAB per team, byes ahead and a
   DEF-stream card (this week and next); the Roster tab shows each player's bye.
   The Moves tab shows Claude's latest stored advice from `api/advice` (headline, summary, lineup changes,
-  adds with the drop and bid for each, IR moves, watch list, player flags) and a "Lineup by projections" card (current vs best
-  lineup from `SWEEP.lineup`); "Re-check now" POSTs `api/advise` with the phone's news log and shows the
+  adds with the drop and bid for each, IR moves, auto-subs to set, watch list, player flags), a "Lineup by projections" card (current vs best
+  lineup from `SWEEP.lineup`) and an "Auto-subs you've set" card (a note saved to `api/subs`, stale once the week changes); "Re-check now" POSTs `api/advise` with the phone's news log and shows the
   fresh read. Ask POSTs `api/ask` (mode chat) with the news log and the chat turns; the server builds the
   context. The screenshot reader POSTs mode shot with a shrunken JPEG. All of that needs `api/config` to
   report `ask: true`; on the Pages mirror those buttons explain that Claude lives on the Vercel app. The
@@ -88,10 +99,12 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   `faab_teams` (every team's budget left in priority order), `waiver_run` (next 12:05 AM Wed PT); every
   free-agent row carries `waivers` (text: on waivers until when) and `claim_at`, or null = add now; every
   row carries `bye`; `byes` (Danny's active players on bye in the next 5 weeks, with a QB count), `qb_byes`,
-  `def` (his unit this week and next, best free-agent units for both weeks, from `projections` week+1)).
+  `def` (his unit this week and next, best free-agent units for both weeks, from `projections` week+1));
+  `auto_subs` (the league's settings plus `at_risk`: each amber starter with the unlocked bench players allowed
+  in his slot and whether each plays a later, the same or an EARLIER day); every row carries `date` (game date).
 - `lib/advise.js` — the advisor. `contextText(sweep, {news, prev, notified, reason})` writes the
-  situation for Claude; `runAdvisor()` calls Sonnet with web search (`lib/claude.js`, `lib/rules.js` is
-  the playbook), parses the JSON (headline, summary, lineup, adds with how/bid/backup/processes, ir, flags, watch, alerts), stores it in
+  situation for Claude, including Danny's auto-sub note (kv `subs`); `runAdvisor()` calls Sonnet with web search (`lib/claude.js`, `lib/rules.js` is
+  the playbook), parses the JSON (headline, summary, lineup, adds with how/bid/backup/processes, ir, subs (auto-sub pairings to set), flags, watch, alerts), stores it in
   kv `advice`, and pushes the alerts whose urgency is high or medium. Each alert carries a stable `key`;
   kv `notified` remembers when a key was last pushed (high: not again within 12 h, medium: 72 h, pruned
   after 7 days); at most 4 pushes per run. `dry` skips pushes and storage; `push:false` (on-demand runs
@@ -107,7 +120,8 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   `?dry=1` diffs without sending or storing), `api/advise.js` (GET = cron, hourly 6 AM–10 PM PT, same
   auth, `?dry=1`; POST = on-demand from the app, same-origin, body `{news}`, returns the advice, never
   pushes), `api/advice.js` (GET, the stored advice), `api/ask.js` (POST, same-origin; `mode` chat | shot;
-  chat gets the advisor's context plus web search). Daily caps counted in `kv`: `ADVISE_DAILY_CAP`
+  chat gets the advisor's context plus web search), `api/subs.js` (GET the stored auto-sub note; POST same-origin
+  `{week, text}` stores it as kv `subs`; the app's Re-check also sends its copy in case that save failed). Daily caps counted in `kv`: `ADVISE_DAILY_CAP`
   (default 40, cron runs excepted), `ASK_DAILY_CAP` (default 60). `lib/http.js` has the shared guards.
   Env on Vercel: `DATABASE_URL` (Neon project `robinsavages`, org "Danny", tables `push_subscriptions` +
   `kv`), `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`, `ANTHROPIC_API_KEY`

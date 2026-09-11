@@ -19,9 +19,11 @@ export async function POST(req) {
   if (!sameOrigin(req)) return bad("origin", "cross-origin request refused", 403);
   let body; try { body = await req.json(); } catch { body = {}; }
   const news = String((body && body.news) || "").slice(0, 20000);
+  const s = body && body.subs;   // the phone's copy of Danny's auto-sub note, in case the server save failed
+  const subs = s && s.text ? { week: Number(s.week) || null, text: String(s.text).slice(0, 1000), ts: Number(s.ts) || Date.now() } : null;
   if (!(await underCap("advise", ADVISE_CAP))) return bad("cap", `advisor daily cap of ${ADVISE_CAP} reached; it resets at midnight Pacific`, 429);
   try {
-    const res = await runAdvisor({ trigger: "app", reason: "Danny asked for a fresh read from the app" + (news ? " and pasted news" : ""), news, push: false });
+    const res = await runAdvisor({ trigger: "app", reason: "Danny asked for a fresh read from the app" + (news ? " and pasted news" : ""), news, subs, push: false });
     return Response.json({ ok: true, advice: res.advice }, { headers: NO });
   } catch (e) { return errJson(e); }
 }
