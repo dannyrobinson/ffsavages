@@ -16,12 +16,17 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   (`dannyrobinson`, team "Robinsavages", roster_id 6, draft slot 6). 2025 league: `1261840012253597696`.
 - Sleeper's API is public, no auth: `https://api.sleeper.app/v1/...` — see `scripts/sleeper.py`.
 - 12 teams, **superflex** (QB, 2 RB, 2 WR, TE, 2 FLEX, SUPERFLEX, K, DEF, 5 BN, 2 IR). Full PPR, +0.5/rec
-  for TE, 4-pt pass TD, −1 INT, −2 fumble. **$150 FAAB**, trade deadline week 10. No keepers. Superflex is
+  for TE, 4-pt pass TD, −1 INT, −2 fumble. **No bidding on waivers** (Sleeper's settings show FAAB 150, but Danny
+  confirmed Sept 10 that the league doesn't bid; never mention bids, FAAB or budgets). Trade deadline week 10.
+  No keepers. Superflex is
   new in 2026 (2025 was 1QB).
 - **Playoffs: 6 teams, start week 12, two-week rounds (12–13, 14–15, 16–17)** per Sleeper's league settings
   (`playoff_week_start=12`, `playoff_round_type=2`). The regular season is only 11 weeks.
-- Waivers: FAAB claims clear Wednesday morning PT (`waiver_day_of_week=2`, `waiver_clear_days=2`); free
-  agents are first-come after that until they lock.
+- Waivers: claims process Wednesday morning PT by waiver priority (`waiver_day_of_week=2`,
+  `waiver_clear_days=2`); free agents are first-come until they lock. Sleeper mechanics that bit us: a player
+  locks at kickoff and cannot be benched, dropped or moved to IR until the week's games are complete
+  (Tuesday morning PT). Danny hit this Sept 10 trying to IR A.J. Brown after his game. IR: 2 slots; Out,
+  Doubtful, NA, DNR, COV qualify (not Suspended).
 - Draft was Tue Sept 8 2026, 7 PM PT, 16 rounds. Danny picked 6, 19, 30, 43, 54, 67, 78, 91, 102, 115,
   126, 139, 150, 163, 174, 187.
 - Full notes and the strategy we used: `docs/league-context.md`. Injury flags as of Sept 8 are in
@@ -30,8 +35,8 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
 ## How Danny wants to be advised
 - Superflex first: a starting QB in the superflex slot ≈ +10 pts/week over a flex skill player. Keep 3
   startable QBs; any starting QB on waivers is a priority claim. TEs carry a premium (+0.5/rec).
-- Be decisive. Headline the single most important move, then a short prioritized list with FAAB bids as
-  whole dollars out of $150. Flag injuries/suspensions on his own players red/amber/green.
+- Be decisive. Headline the single most important move, then a short prioritized list naming the drop for
+  every add. Flag injuries/suspensions on his own players red/amber/green.
 - He reads this on his phone. Short beats thorough.
 
 ## What's here
@@ -44,7 +49,7 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   (GitHub Pages, localhost), talks to api.sleeper.app directly (CORS is open) with the 2.5 MB player feed
   slimmed and cached in localStorage for an hour. `applySweep()` replaces SWEEP, FLAGS and the roster.
   The Moves tab shows Claude's latest stored advice from `api/advice` (headline, summary, lineup changes,
-  waiver adds with bids, watch list, player flags) and a "Lineup by projections" card (current vs best
+  adds with the drop for each, IR moves, watch list, player flags) and a "Lineup by projections" card (current vs best
   lineup from `SWEEP.lineup`); "Re-check now" POSTs `api/advise` with the phone's news log and shows the
   fresh read. Ask POSTs `api/ask` (mode chat) with the news log and the chat turns; the server builds the
   context. The screenshot reader POSTs mode shot with a shrunken JPEG. All of that needs `api/config` to
