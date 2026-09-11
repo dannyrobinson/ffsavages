@@ -45,8 +45,11 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
 - Superflex first: a starting QB in the superflex slot ≈ +10 pts/week over a flex skill player. Keep 3
   startable QBs; any starting QB on waivers is a priority claim. TEs carry a premium (+0.5/rec).
 - Be decisive. Headline the single most important move, then a short prioritized list naming the drop for
-  every add and the bid for every claim (odd numbers, sized to the playbook and the rivals' remaining
-  budgets; free-agent adds say "no bid"). Flag injuries/suspensions on his own players red/amber/green.
+  every add and the bid for every claim (odd numbers; free-agent adds say "no bid"). Bid sizing follows the
+  season plan in `lib/rules.js`: $90+ of the $150 stays untouched for a league-winner (bell-cow job, QB named
+  starter), proven role changes $5–20, speculation/committee backs $1–8 or wait and add free, K/DEF $1, hold
+  $20–30 through week 11. Danny set this Sept 11 after the advisor bid $43 on Kenny Gainwell in week 1 ("rich").
+  Flag injuries/suspensions on his own players red/amber/green.
 - He reads this on his phone. Short beats thorough.
 
 ## What's here
