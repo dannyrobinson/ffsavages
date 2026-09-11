@@ -7,7 +7,7 @@ What it pulls (all public Sleeper endpoints):
   - my roster with injury / practice / depth-chart status -> RED / AMBER / GREEN per player
   - every free agent QB who is his team's starter (superflex priority claims)
   - trending adds (last 48h, league-wide on Sleeper) that are free agents in OUR league
-  - this week's league transactions (who's spending FAAB on what)
+  - this week's league transactions (who's spending FAAB on what, with the winning bids)
   - this week's opponent and their lineup
   - QB depth of every team in the league (who's a QB buyer / seller)
 """
@@ -84,6 +84,16 @@ def main(write=True):
     starters = [p for p in (mine.get("starters") or []) if p and p != "0"]
     reserve = mine.get("reserve") or []
     settings = mine.get("settings") or {}
+    # FAAB: the league's budget and minimum bid, and what every team has left (priority only breaks tied bids)
+    try:
+        ls = S.get(f"league/{S.LEAGUE}").get("settings") or {}
+    except Exception:
+        ls = {}
+    budget = ls.get("waiver_budget") or 150
+    faab_teams = sorted([{"team": team_of[r["roster_id"]], "roster_id": r["roster_id"],
+                          "left": budget - ((r.get("settings") or {}).get("waiver_budget_used") or 0),
+                          "position": (r.get("settings") or {}).get("waiver_position")} for r in rosters],
+                        key=lambda t: t["position"] or 99)
 
     # --- my roster ---------------------------------------------------------
     roster = []
@@ -122,7 +132,10 @@ def main(write=True):
         adds = [P.get(p, {}).get("name", p) for p in (t.get("adds") or {})]
         drops = [P.get(p, {}).get("name", p) for p in (t.get("drops") or {})]
         txns.append({"type": t["type"], "status": t["status"], "team": who, "adds": adds, "drops": drops,
-                     "bid": (t.get("settings") or {}).get("waiver_bid"), "ts": t.get("status_updated") or t.get("created")})
+                     "bid": (t.get("settings") or {}).get("waiver_bid"), "note": (t.get("metadata") or {}).get("notes"),
+                     "faab_moved": [{"from": team_of.get(b.get("sender"), "?"), "to": team_of.get(b.get("receiver"), "?"), "amount": b.get("amount")}
+                                    for b in (t.get("waiver_budget") or [])],
+                     "ts": t.get("status_updated") or t.get("created")})
     txns.sort(key=lambda x: -(x["ts"] or 0))
 
     # --- opponent this week --------------------------------------------------
@@ -151,7 +164,9 @@ def main(write=True):
     qb_depth.sort(key=lambda x: x["n"])
 
     out = {"generated": now_pt().strftime("%a %b %-d, %Y %-I:%M %p PT"), "generated_ms": int(time.time() * 1000),
-           "season": season, "week": week, "faab_used": settings.get("waiver_budget_used", 0), "faab_total": 150,
+           "season": season, "week": week, "faab_total": budget, "faab_used": settings.get("waiver_budget_used", 0),
+           "faab_left": budget - (settings.get("waiver_budget_used") or 0), "faab_min_bid": ls.get("waiver_bid_min", 1),
+           "faab_teams": faab_teams, "waiver_position": settings.get("waiver_position"),
            "record": f"{settings.get('wins',0)}-{settings.get('losses',0)}",
            "roster": roster, "fa_qbs": fa_qbs, "trending": trending, "transactions": txns, "opponent": opp,
            "qb_depth": qb_depth}
@@ -162,7 +177,8 @@ def main(write=True):
 
 def to_md(o):
     L = [f"# Sleeper sweep — Week {o['week']} · {o['generated']}", "",
-         f"Record {o['record']} · FAAB ${o['faab_total'] - o['faab_used']} left of ${o['faab_total']}", "", "## Roster"]
+         f"Record {o['record']} · FAAB ${o['faab_total'] - o['faab_used']} left of ${o['faab_total']}"
+         + (f" · waiver priority {o['waiver_position']} of 12 (ties only)" if o.get('waiver_position') else ""), "", "## Roster"]
     for r in o["roster"]:
         L.append(f"- {r['flag'].upper():<5} {r['pos']:<3} {r['name']} ({r['team']}, {r['slot']}) — {r['why']}" + (f" · news {r['news']}" if r['news'] else ""))
     L += ["", "## Free-agent QBs who start for their NFL team"]
@@ -175,6 +191,8 @@ def to_md(o):
         op = o["opponent"]
         L += ["", f"## Opponent: {op['team']} ({op['record']})"]
         L += [f"- {r['pos']:<3} {r['name']} ({r['team']}) {r['flag'].upper()}" for r in op["starters"]]
+    L += ["", "## FAAB left by team (waiver-priority order)"]
+    L += [f"- {t['team']}: ${t['left']}" + (f" (priority {t['position']})" if t.get('position') else "") for t in o.get("faab_teams", [])] or ["- n/a"]
     L += ["", "## QB depth by team (buyers have 2)"]
     L += [f"- {q['team']}: {q['n']} — {', '.join(q['qbs'])}" for q in o["qb_depth"]]
     return "\n".join(L) + "\n"

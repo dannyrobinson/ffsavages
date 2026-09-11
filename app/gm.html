@@ -213,7 +213,7 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
   <header class="hdr">
     <div>
       <h1>Robinsavages GM</h1>
-      <div class="sub" id="sub">West Van Super Studs · 12-team superflex, full PPR · no-bid waivers</div>
+      <div class="sub" id="sub">West Van Super Studs · 12-team superflex, full PPR · $150 FAAB</div>
       <div class="live" id="liveStamp"><span class="dot"></span><span id="liveText">Sleeper snapshot</span></div>
     </div>
     <div class="tools"><button class="iconbtn" id="refreshBtn" aria-label="Refresh from Sleeper" title="Refresh from Sleeper"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg></button></div>
@@ -289,6 +289,8 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
     <div class="week" id="weekList"></div>
     <h3 class="sec">Season</h3>
     <div class="card" id="seasonCard"></div>
+    <h3 class="sec">FAAB</h3>
+    <div class="card" id="faabCard"></div>
     <h3 class="sec">QB market</h3>
     <div class="card" id="qbMarket"></div>
     <h3 class="sec">Champions' playbook</h3>
@@ -296,7 +298,7 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
     <div id="alertsPlan" hidden><h3 class="sec">Alerts</h3><div id="alertsSettings"></div></div>
   </section>
 
-  <div class="foot">Rules baked in: QB · 2 RB · 2 WR · TE · 2 FLEX · SUPERFLEX · K · DEF · 5 bench · 2 IR. Full PPR, +0.5/rec for TEs, 4-pt pass TD, −1 INT, −2 fumble. Waivers: no bidding, claims process Wednesday by priority, free agents first-come. Six playoff teams, trade deadline week 10. No keepers.</div>
+  <div class="foot">Rules baked in: QB · 2 RB · 2 WR · TE · 2 FLEX · SUPERFLEX · K · DEF · 5 bench · 2 IR. Full PPR, +0.5/rec for TEs, 4-pt pass TD, −1 INT, −2 fumble. Waivers: $150 FAAB, blind bids (min $1), highest wins, ties by waiver priority; the weekly run is Wednesday 12:05 AM PT and a dropped player clears 48 h after the drop. Free agents are first-come. Six playoff teams, trade deadline week 10. No keepers.</div>
 </div>
 
 <nav class="nav" role="tablist">
@@ -378,11 +380,11 @@ function renderAdvice(){
   const items=[];
   for(const l of A.lineup||[]) items.push({kind:"lineup",title:`Start ${l.start}${l.sit?` over ${l.sit}`:""}${l.slot?` at ${slotLabel(l.slot)}`:""}`,why:l.why,evidence:l.evidence,urgency:l.urgency});
   for(const i of A.ir||[]) items.push({kind:"ir",title:`Move ${i.player} ${i.move==="off IR"?"off IR":"to IR"}`,why:i.why,urgency:i.urgency});
-  for(const w of A.adds||[]) items.push({kind:"waiver",title:`Add ${w.add}${w.pos?` (${w.pos}${w.team?" "+w.team:""})`:""}${w.drop?`, drop ${w.drop}`:" (into the spot the IR move frees)"}`,why:w.why,evidence:w.evidence,how:w.how,urgency:w.urgency});
+  for(const w of A.adds||[]) items.push({kind:"waiver",title:`Add ${w.add}${w.pos?` (${w.pos}${w.team?" "+w.team:""})`:""}${w.drop?`, drop ${w.drop}`:" (into the spot the IR move frees)"}`,why:w.why,evidence:w.evidence,how:w.how,bid:w.bid,backup:w.backup,processes:w.processes,urgency:w.urgency});
   for(const w of A.watch||[]) items.push({kind:"watch",title:`Watch ${w.player}`,why:w.what});
   const pr=A.projections;
-  el.innerHTML=`<div class="hero"><div class="when">Claude · ${fmtTs(A.ts)}${A.reason?` · ${esc(A.reason).slice(0,90)}`:""}</div><h2>${esc(A.headline)}</h2><div class="w" style="font-size:14px;color:var(--ink2);line-height:1.45">${esc(A.summary||"")}</div>${pr?`<div class="faab" style="margin-top:8px">Lineup projects ${pr.current} pts${pr.optimal>pr.current+0.05?` · best by projections ${pr.optimal}`:" · best by projections already"}</div>`:""}</div>
-  ${items.length?`<div class="moves">${items.map((m,i)=>`<div class="mv"><div class="n">${i+1}</div><div><div class="t">${esc(m.title)}<span class="kind ${m.kind}">${kinds[m.kind]}</span>${urg(m.urgency)}</div><div class="w">${esc(clean(m.why))}</div>${m.evidence?`<div class="w ev">Checked: ${esc(clean(m.evidence))}</div>`:""}${m.kind==="waiver"?`<div class="faab">${m.how==="waiver claim"?"On waivers: put a claim in, it processes Wednesday morning":"Free agent right now: add him"}</div>`:""}</div></div>`).join("")}</div>`:`<div class="empty" style="margin-top:10px">Lineup and bench are right as they stand. Nothing worth adding.</div>`}
+  el.innerHTML=`<div class="hero"><div class="when">Claude · ${fmtTs(A.ts)}${A.reason?` · ${esc(A.reason).slice(0,90)}`:""}</div><h2>${esc(A.headline)}</h2><div class="w" style="font-size:14px;color:var(--ink2);line-height:1.45">${esc(A.summary||"")}</div>${pr?`<div class="faab" style="margin-top:8px">Lineup projects ${pr.current} pts${pr.optimal>pr.current+0.05?` · best by projections ${pr.optimal}`:" · best by projections already"}${A.faab_left!=null?` · FAAB $${A.faab_left} left`:""}</div>`:""}</div>
+  ${items.length?`<div class="moves">${items.map((m,i)=>`<div class="mv"><div class="n">${i+1}</div><div><div class="t">${esc(m.title)}<span class="kind ${m.kind}">${kinds[m.kind]}</span>${urg(m.urgency)}</div><div class="w">${esc(clean(m.why))}</div>${m.evidence?`<div class="w ev">Checked: ${esc(clean(m.evidence))}</div>`:""}${m.kind==="waiver"?`<div class="faab">${m.how==="waiver claim"?`On waivers: bid $${m.bid??"?"}${m.backup?" as a backup (same drop; only lands if the claim above loses)":""}${m.processes?` · processes ${esc(m.processes)}`:""}`:"Free agent right now: add him, no bid"}</div>`:""}</div></div>`).join("")}</div>`:`<div class="empty" style="margin-top:10px">Lineup and bench are right as they stand. Nothing worth adding.</div>`}
   ${(A.flags||[]).length?`<h3 class="sec">Your players</h3><div class="alerts">${A.flags.map(f=>`<div class="al ${esc(f.severity)}"><b>${esc(f.player)}</b> — ${esc(f.what)}</div>`).join("")}</div>`:""}`;
 }
 function renderLineup(){
@@ -514,32 +516,35 @@ $("clearChat").addEventListener("click",()=>{ S.chat=[]; save(); renderChat(); }
 
 // ---- Sleeper sweep (baked in by scripts/build.py) ----
 const PLAYBOOK=[
- ["Waivers",["No bidding here: free agents are first-come, so act the moment news breaks. A dropped player sits on waivers two days; claims process Wednesday by priority.","A backup into a bell-cow job or a QB named starter is the pickup that wins leagues.","Add next-man-up RBs before the news. Lean on handcuffs from week 10.","Churn the last two bench spots toward rising snap/target share. Don't cut after one quiet week.","Locked players (game started) can't be benched, dropped or moved to IR until the week completes Tuesday morning."]],
+ ["Waivers",["$150 FAAB for the season. Blind bids, min $1, highest wins; ties go to waiver priority, which rolls when you win a claim.","Weekly run: Wednesday 12:05 AM PT. Anyone whose game kicked off is on waivers until then. A dropped player clears 48 h after the drop, at that hour.","Budget depreciates: spend early. A bell-cow RB or a QB named starter: $60–90 early, up to $112–120 for a top-10 asset. Two-week fill-in $8–20; K/DEF $1–3.","Bid odd numbers. Sleeper's suggested range is public, so go above it for a must-have. Bid $1 more than a needy rival has left.","Backup claims: give the fallback the same drop as the main claim, so it only lands if the first loses.","A backup into a bell-cow job or a QB named starter is the pickup that wins leagues. Free agents are first-come: act the moment news breaks.","Add next-man-up RBs before the news. Lean on handcuffs from week 10.","Churn the last two bench spots toward rising snap/target share. Don't cut after one quiet week.","Locked players (game started) can't be benched, dropped or moved to IR until the week completes Tuesday morning."]],
  ["Superflex",["Carry exactly three startable QBs. Two is panic; four wastes a bench spot.","Any QB who becomes a starter is a priority claim.","A mid-tier starting QB beats a good flex by 6–10 points a week.","Start the higher of your lowest QB vs your best benched skill player.","Sell a spare QB during QB byes or right after a rival's QB goes down. Teams with two QBs are the buyers."]],
  ["Lineups",["Volume over talent: 8+ targets is a floor, 4–5 is a prayer.","Use Vegas implied totals, not defensive rankings.","Start studs. Matchups only break ties.","Questionable plays ~71% of the time, Doubtful ~6%. Bench Doubtful; judge Questionable by practice trend.","Never start a late-window Questionable without a late-window backup.","Only wind matters for weather."]],
  ["Trades",["Ask: does this raise my starting nine?","Offer two for their star plus their worst player.","Buy low only when usage is intact. Sell high on TD spikes with flat volume.","Target 0–3 teams, positional gluts, frustrated managers.","Firm opening offers. Nothing in league chat.","Weeks 6–10 is the window for playoff-schedule assets. Deadline is week 10."]],
  ["Playoffs",["This league: 6 teams, playoffs start week 12, two-week rounds. Only 11 regular-season weeks.","From week 5, the weeks 12–17 schedule is the tiebreaker, never the reason.","Stream DEF/K weekly; lock a playoff DEF by week 10.","By week 10 turn bench upside into handcuffs and a bye-proof QB3.","Thursday/Saturday games in weeks 15–17: inactives lock early."]],
  ["Process",["Fantasy is ~80% luck. Grade the process, not the week.","React to usage, not box scores. Week-1 overreactions are usually wrong.","Three news passes: Tuesday, Friday, 90 minutes before kickoff.","Drop season-ending injuries immediately. No loyalty to draft capital."]]];
-const WEEK=[["Mon","Read Sunday's usage, not the box score. Note injuries and MNF."],["Tue","Waiver day. Put claims in tonight; they process Wednesday by priority. IR moves on last week's locked players open now."],["Wed","Claims clear early morning PT. Free agents are first-come after that. Send trade offers."],["Thu","TNF locks those players. First injury report."],["Fri","Final designations. Re-check every Questionable."],["Sat","Sweep runs. Set the lineup."],["Sun","Inactives ~90 min before each kickoff. Keep a late-window backup for late-window Questionables."]];
+const WEEK=[["Mon","Read Sunday's usage, not the box score. Note injuries and MNF."],["Tue","Waiver day. Bids in before midnight; the run is Wednesday 12:05 AM PT. Everyone who played is on waivers until then. IR moves on last week's locked players open now."],["Wed","Claims clear at 12:05 AM PT: check what you won and what you paid. Free agents are first-come after that. Send trade offers."],["Thu","TNF locks those players. First injury report."],["Fri","Final designations. Re-check every Questionable."],["Sat","Sweep runs. Set the lineup."],["Sun","Inactives ~90 min before each kickoff. Keep a late-window backup for late-window Questionables."]];
 function flagLabel(f){return f==="red"?"Red":f==="amber"?"Amber":"Green"}
 function renderSweep(){
   const stamp=$("sweepStamp"); const ww=$("waiverWatch"); const oc=$("oppCard"); const tx=$("txnList");
   if(!SWEEP.roster){ ww.innerHTML=`<div class="empty">No Sleeper sweep baked in yet. Run <b>python3 scripts/build.py</b>.</div>`; oc.innerHTML=""; tx.innerHTML=""; return; }
-  $("sub").textContent=`West Van Super Studs · Wk ${SWEEP.week} · ${SWEEP.record}${SWEEP.waiver_position?` · waiver priority ${SWEEP.waiver_position}`:""}`;
+  const faabLeft=SWEEP.faab_left??(SWEEP.faab_total!=null?SWEEP.faab_total-(SWEEP.faab_used||0):null);
+  $("sub").textContent=`West Van Super Studs · Wk ${SWEEP.week} · ${SWEEP.record}${faabLeft!=null?` · FAAB $${faabLeft} left`:""}${SWEEP.waiver_position?` · priority ${SWEEP.waiver_position}`:""}`;
   stamp.textContent=`Sleeper, ${SWEEP.generated}`;
-  const qbs=(SWEEP.fa_qbs||[]).map(p=>`<div class="it qb"><span class="pos QB">QB</span><span class="nm">${esc(p.name)}<small>${esc(p.team)} · starts for his team · ${esc(p.why)}</small></span><span class="n">priority</span></div>`).join("");
-  const tr=(SWEEP.trending||[]).slice(0,10).map(p=>`<div class="it"><span class="pos ${p.pos}">${p.pos}</span><span class="nm"><span class="dot ${p.flag}"></span> ${esc(p.name)}<small>${esc(p.team)}${p.depth?` · ${esc(p.depth)}`:""} · ${esc(p.why)}</small></span><span class="n">${(p.adds/1000).toFixed(0)}k adds</span></div>`).join("");
+  const qbs=(SWEEP.fa_qbs||[]).map(p=>`<div class="it qb"><span class="pos QB">QB</span><span class="nm">${esc(p.name)}<small>${esc(p.team)} · starts for his team · ${esc(p.why)}${p.waivers?" · on waivers":""}</small></span><span class="n">${p.waivers?"claim":"add now"}</span></div>`).join("");
+  const tr=(SWEEP.trending||[]).slice(0,10).map(p=>`<div class="it"><span class="pos ${p.pos}">${p.pos}</span><span class="nm"><span class="dot ${p.flag}"></span> ${esc(p.name)}<small>${esc(p.team)}${p.depth?` · ${esc(p.depth)}`:""} · ${esc(p.why)}${p.waivers?" · on waivers":""}</small></span><span class="n">${(p.adds/1000).toFixed(0)}k adds</span></div>`).join("");
   ww.innerHTML=(qbs||tr)?`<div class="wl">${qbs}${tr}</div>`:`<div class="empty">Nothing trending is available here right now.</div>`;
   const o=SWEEP.opponent;
   if(o&&o.team){
     oc.innerHTML=`<div class="card"><b>${esc(o.team)}</b> · ${esc(o.record)}${o.their_points||o.my_points?` · ${o.my_points} – ${o.their_points}`:""}<div class="opp">${o.starters.map(p=>`<span><i>${p.pos}</i><span class="dot ${p.flag}"></span><b>${esc(p.name)}</b></span>`).join("")}</div></div>`;
   } else oc.innerHTML=`<div class="card">No matchup posted yet.</div>`;
-  tx.innerHTML=(SWEEP.transactions||[]).length?SWEEP.transactions.map(t=>`<div><b>${esc(t.team)}</b> ${t.type==="waiver"?"claimed":t.type==="trade"?"traded":"added"} ${esc(t.adds.join(", ")||"nobody")}${t.drops.length?`, dropped ${esc(t.drops.join(", "))}`:""}${t.status!=="complete"?` (${esc(t.status)})`:""}</div>`).join(""):`<div>No moves in the league yet this week.</div>`;
+  tx.innerHTML=(SWEEP.transactions||[]).length?SWEEP.transactions.map(t=>`<div><b>${esc(t.team)}</b> ${t.type==="waiver"?"claimed":t.type==="trade"?"traded":"added"} ${esc(t.adds.join(", ")||"nobody")}${t.drops.length?`, dropped ${esc(t.drops.join(", "))}`:""}${t.bid!=null?` <span class="bid">$${t.bid}</span>`:""}${(t.faab_moved||[]).length?` <span class="bid">${t.faab_moved.map(m=>`$${m.amount} ${esc(m.from)} → ${esc(m.to)}`).join(", ")}</span>`:""}${t.status!=="complete"?` (${esc(t.status)}${t.note?`: ${esc(t.note)}`:""})`:""}</div>`).join(""):`<div>No moves in the league yet this week.</div>`;
 }
 function renderPlan(){
   $("weekList").innerHTML=WEEK.map(([d,t])=>`<div class="d"><b>${d}</b><span>${t}</span></div>`).join("");
   const lg=SWEEP.league||{};
   $("seasonCard").innerHTML=`Week <b>${SWEEP.week||"?"}</b> of an ${lg.regular_weeks||11}-week regular season. Trade deadline after <b>week ${lg.trade_deadline||10}</b>. Playoffs start <b>week ${lg.playoff_week_start||12}</b>: ${lg.playoff_teams||6} teams, ${lg.two_week_rounds?"two-week rounds (12–13, 14–15, 16–17)":"one-week rounds"}.`;
+  const ft=SWEEP.faab_teams||[]; const left=SWEEP.faab_left??(SWEEP.faab_total!=null?SWEEP.faab_total-(SWEEP.faab_used||0):null);
+  $("faabCard").innerHTML=left==null?"Budgets come with the live Sleeper refresh.":`You have <b>$${left}</b> of $${SWEEP.faab_total} left${SWEEP.waiver_position?` · waiver priority <b>${SWEEP.waiver_position}</b> of 12 (only breaks tied bids; winning a claim sends you to 12th)`:""}. Blind bids, min $${SWEEP.faab_min_bid??1}, highest wins. Weekly run <b>${esc(SWEEP.waiver_run||"Wednesday 12:05 AM PT")}</b>: anyone whose game has kicked off is on waivers until then. A dropped player clears 48 h after the drop.${ft.length?`<div class="txn" style="margin-top:8px">${ft.map(t=>`<div><b>${esc(t.team)}</b> <span class="bid">$${t.left}</span>${t.position?` · priority ${t.position}`:""}</div>`).join("")}</div>`:""}`;
   $("qbMarket").innerHTML=(SWEEP.qb_depth||[]).length?`Teams with only two QBs are buyers; you have three. `+SWEEP.qb_depth.map(q=>`<div><b>${esc(q.team)}</b> ${q.n} — ${esc(q.qbs.join(", "))}</div>`).join(""):"No data yet.";
   $("playbook").innerHTML=PLAYBOOK.map(([h,items])=>`<h4>${h}</h4><ul>${items.map(i=>`<li>${i}</li>`).join("")}</ul>`).join("");
 }
@@ -586,9 +591,14 @@ async function playersMap(force,keep){
   try{ localStorage.setItem(PKEY,JSON.stringify({ts:Date.now(),p})); }catch(e){}
   return p;
 }
+function nextWaiverRun(){ // Sleeper's weekly run for this league: 12:05 AM Wednesday (the phone is on Pacific time)
+  const d=new Date(); let days=(3-d.getDay()+7)%7; if(days===0&&(d.getHours()>0||d.getMinutes()>=5)) days=7;
+  return new Date(d.getFullYear(),d.getMonth(),d.getDate()+days,0,5).toLocaleString([],{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
+}
 async function directSweep(force){
   const st=await getJ(`${SL}/state/nfl`); const week=+(st.leg||st.week||1);
-  const [rosters,usersRaw,trendRaw,txRaw,mus]=await Promise.all([getJ(`${SL}/league/${LEAGUE_ID}/rosters`),getJ(`${SL}/league/${LEAGUE_ID}/users`),getJ(`${SL}/players/nfl/trending/add?lookback_hours=48&limit=60`),getJ(`${SL}/league/${LEAGUE_ID}/transactions/${week}`),getJ(`${SL}/league/${LEAGUE_ID}/matchups/${week}`).catch(()=>null)]);
+  const [rosters,usersRaw,trendRaw,txRaw,mus,lg]=await Promise.all([getJ(`${SL}/league/${LEAGUE_ID}/rosters`),getJ(`${SL}/league/${LEAGUE_ID}/users`),getJ(`${SL}/players/nfl/trending/add?lookback_hours=48&limit=60`),getJ(`${SL}/league/${LEAGUE_ID}/transactions/${week}`),getJ(`${SL}/league/${LEAGUE_ID}/matchups/${week}`).catch(()=>null),getJ(`${SL}/league/${LEAGUE_ID}`).catch(()=>null)]);
+  const ls=(lg&&lg.settings)||{}; const budget=ls.waiver_budget||150;
   const taken={}; rosters.forEach(r=>(r.players||[]).forEach(pid=>taken[pid]=r.roster_id));
   const P=await playersMap(force,new Set(Object.keys(taken)));
   const users={}; usersRaw.forEach(u=>users[u.user_id]=(u.metadata&&u.metadata.team_name)||u.display_name);
@@ -599,13 +609,14 @@ async function directSweep(force){
   const fa_qbs=Object.keys(P).filter(pid=>{const p=P[pid]; return p.pos==="QB"&&p.team&&!taken[pid]&&p.dco===1&&p.st==="Active";}).map(pid=>rowOf(pid,P)).sort((a,b)=>(P[a.id].rank||9999)-(P[b.id].rank||9999));
   const trending=[]; for(const t of trendRaw){ const pid=t.player_id, p=P[pid]; if(!p||taken[pid]) continue; const r=rowOf(pid,P); r.adds=t.count; if(r.flag==="red"&&["ir","out","sus","pup","nfi"].includes((p.inj||"").toLowerCase())) continue; trending.push(r); }
   trending.sort((a,b)=>(((a.pos==="K"||a.pos==="DEF")?1:0)-((b.pos==="K"||b.pos==="DEF")?1:0))||b.adds-a.adds);
-  const transactions=txRaw.map(t=>({type:t.type,status:t.status,team:teamOf[(t.roster_ids||[])[0]]||"?",adds:Object.keys(t.adds||{}).map(p=>(P[p]||{}).n||NAMES[p]||p),drops:Object.keys(t.drops||{}).map(p=>(P[p]||{}).n||NAMES[p]||p),bid:(t.settings||{}).waiver_bid??null,ts:t.status_updated||t.created})).sort((a,b)=>(b.ts||0)-(a.ts||0));
+  const transactions=txRaw.map(t=>({type:t.type,status:t.status,team:teamOf[(t.roster_ids||[])[0]]||"?",adds:Object.keys(t.adds||{}).map(p=>(P[p]||{}).n||NAMES[p]||p),drops:Object.keys(t.drops||{}).map(p=>(P[p]||{}).n||NAMES[p]||p),bid:(t.settings||{}).waiver_bid??null,note:(t.metadata||{}).notes||null,faab_moved:(t.waiver_budget||[]).map(b=>({from:teamOf[b.sender]||`roster ${b.sender}`,to:teamOf[b.receiver]||`roster ${b.receiver}`,amount:b.amount})),ts:t.status_updated||t.created})).sort((a,b)=>(b.ts||0)-(a.ts||0));
+  const faab_teams=rosters.map(r=>{ const s=r.settings||{}; return {team:teamOf[r.roster_id],roster_id:r.roster_id,left:budget-(s.waiver_budget_used||0),position:s.waiver_position||null}; }).sort((a,b)=>(a.position||99)-(b.position||99));
   let opponent=null;
   if(Array.isArray(mus)){ const me=mus.find(m=>m.roster_id===MY_RID); const o=me&&mus.find(m=>m.matchup_id===me.matchup_id&&m.roster_id!==MY_RID);
     if(o){ const os=(rosters.find(r=>r.roster_id===o.roster_id)||{}).settings||{}; opponent={team:teamOf[o.roster_id],roster_id:o.roster_id,record:`${os.wins||0}-${os.losses||0}`+(os.ties?`-${os.ties}`:""),starters:(o.starters||[]).filter(p=>p&&p!=="0").map(p=>rowOf(p,P)),my_points:me.points,their_points:o.points}; } }
   const qb_depth=rosters.map(r=>{ const qbs=(r.players||[]).filter(p=>(P[p]||{}).pos==="QB").map(p=>P[p].n); const s=r.settings||{}; return {team:teamOf[r.roster_id],roster_id:r.roster_id,qbs,n:qbs.length,record:`${s.wins||0}-${s.losses||0}`}; }).sort((a,b)=>a.n-b.n);
   const now=new Date();
-  return {generated:now.toLocaleString([],{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}),generated_ms:now.getTime(),season:st.season,week,faab_used:set.waiver_budget_used||0,faab_total:150,record:`${set.wins||0}-${set.losses||0}`,roster,fa_qbs,trending:trending.slice(0,20),transactions,opponent,qb_depth,source:"direct"};
+  return {generated:now.toLocaleString([],{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}),generated_ms:now.getTime(),season:st.season,week,faab_total:budget,faab_used:set.waiver_budget_used||0,faab_left:budget-(set.waiver_budget_used||0),faab_min_bid:ls.waiver_bid_min??1,faab_teams,waiver_position:set.waiver_position||null,waiver_run:nextWaiverRun(),record:`${set.wins||0}-${set.losses||0}`,roster,fa_qbs,trending:trending.slice(0,20),transactions,opponent,qb_depth,source:"direct"};
 }
 function applySweep(sw){
   SWEEP={...SWEEP,...sw,league:sw.league||SWEEP.league}; noteNames(SWEEP);

@@ -6,6 +6,12 @@ The condensed version of this is baked into `app/gm.html` (Plan tab) and into th
 when it advises.
 
 ## 1. Waiver wire / FAAB
+Sleeper mechanics in this league (support.sleeper.com, checked Sept 11 2026 against the 2025 league's transaction log):
+- $150 for the season, blind bids in whole dollars, minimum $1, highest bid wins; Sleeper processes the league's claims from the highest bid down. Equal bids go to waiver priority, which rolls: winning a waiver claim sends you to 12th, free-agent adds don't move it.
+- The weekly run is 12:05 AM PT Wednesday ("Tue After Day"). A free agent locks at kickoff and sits on waivers until that run, so Sunday night to Wednesday everybody who played is a claim, not an add.
+- A dropped player sits on waivers 48 hours and the claims on him process exactly then, at that hour on any day. His deadline is his own clearing time.
+- Several claims can be entered; a later claim naming the same drop as one that already won fails harmlessly, so a backup claim = same drop as the main claim. Sleeper only lets you reorder claims with equal bids.
+- Sleeper shows every manager the same suggested bid range ("FAAB suggestions" is on), so rivals anchor to it. FAAB can be included in trades.
 - FAAB depreciates like a new car: a Week 2–4 pickup helps for 14 weeks, a Week 13 pickup for three. Spend the bulk of the budget early rather than hoarding it.
 - A backup stepping into a clear bell-cow job, or a QB named starter, is "the one pickup that wins leagues": bid 40–60% ($60–90) early-season, up to 75–80% ($112–120) for a legitimate top-10 asset. 19% of teams that rostered Bucky Irving made the 2024 final; 23% with Kyren Williams in 2023.
 - Bid odd, non-round numbers ($11, $16, $21, $46) because rivals default to round ones. Against one known rival, bid $1 more than their remaining budget.
@@ -52,6 +58,10 @@ when it advises.
 - No grudges against players who burned you, no loyalty to draft capital.
 
 ## Sources
+- https://support.sleeper.com/en/articles/1876040-how-does-faab-bidding-work — Sleeper FAAB: blind bids, tiebreak by rolling waiver priority, reordering only among equal bids.
+- https://support.sleeper.com/en/articles/9657110-how-do-faab-and-waivers-work — claims processed highest bid first; $0 bids where allowed.
+- https://support.sleeper.com/en/articles/3978868-waivers-for-regular-season-playoffs — free agents lock at kickoff and stay on waivers until "Tue After Day" (12:05 AM PT Wednesday); 2-day clearing for drops.
+- https://support.sleeper.com/en/articles/12111984-suggested-faab-bids — the suggested-bid range every manager sees.
 - https://www.4for4.com/2025/preseason/ultimate-guide-waiver-wire-faab-strategy-2025 — FAAB bid sizing, odd-number bids, Irving/Kyren championship-roster rates.
 - https://www.fantasypros.com/2025/09/fantasy-football-faab-waiver-wire-strategy-advice/ — early-season aggression, $0 on D/K, FAAB depreciation.
 - https://fantasywaiverwizard.com/learn/superflex-strategy — three-QB rule, QB trade timing, superflex start/sit check.

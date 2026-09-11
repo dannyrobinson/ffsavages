@@ -8,6 +8,7 @@
 
 ## Format
 12 teams, superflex (QB, 2RB, 2WR, TE, 2FLEX, SUPER_FLEX, K, DEF, 5 BN, 2 IR). Full PPR, +0.5/rec for TE, 4-pt pass TD, -1 INT, -2 fumble. $150 FAAB, 6 playoff teams, trade deadline week 10.
+**FAAB is real this year** (confirmed Sept 11; the 2025 league was rolling waivers, hence the earlier confusion). Sleeper mechanics: blind bids, min $1, highest wins, ties by rolling waiver priority; weekly run 12:05 AM PT Wednesday (everyone who played is on waivers until then); a dropped player clears 48 h after the drop and claims on him process right then; free agents are first-come otherwise. Backup claims: same drop as the main claim. FAAB can be traded.
 **No keepers** (Danny confirmed Sept 3; Sleeper's max_keepers=1 is just a setting). Superflex is NEW in 2026 — 2025 was 1QB.
 
 ## Draft position
