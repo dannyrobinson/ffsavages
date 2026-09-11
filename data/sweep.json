@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 10, 2026 10:44 PM PT",
- "generated_ms": 1789105476739,
+ "generated": "Thu Sep 10, 2026 10:50 PM PT",
+ "generated_ms": 1789105807889,
  "season": "2026",
  "week": 1,
  "faab_used": 0,
@@ -229,7 +229,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789103416633,
-   "adds": 292915
+   "adds": 290892
   },
   {
    "id": "2505",
@@ -242,7 +242,7 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789051202505,
-   "adds": 266958
+   "adds": 264132
   },
   {
    "id": "10235",
@@ -255,7 +255,7 @@
    "depth": "RB3",
    "news": "Sep 8",
    "news_ms": 1788877549423,
-   "adds": 255744
+   "adds": 247424
   },
   {
    "id": "11834",
@@ -268,7 +268,7 @@
    "depth": "SWR2",
    "news": "Sep 9",
    "news_ms": 1788984645640,
-   "adds": 245140
+   "adds": 239036
   },
   {
    "id": "10213",
@@ -281,7 +281,7 @@
    "depth": "LWR1",
    "news": "Sep 9",
    "news_ms": 1788962726159,
-   "adds": 196908
+   "adds": 195444
   },
   {
    "id": "8800",
@@ -294,7 +294,7 @@
    "depth": "RB2",
    "news": "Sep 8",
    "news_ms": 1788843345303,
-   "adds": 183465
+   "adds": 178380
   },
   {
    "id": "4039",
@@ -307,7 +307,7 @@
    "depth": "SWR3",
    "news": "Sep 10",
    "news_ms": 1789067120814,
-   "adds": 108570
+   "adds": 107730
   },
   {
    "id": "12487",
@@ -320,7 +320,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789098616601,
-   "adds": 95392
+   "adds": 93920
   },
   {
    "id": "5854",
@@ -333,7 +333,7 @@
    "depth": "QB2",
    "news": "Sep 10",
    "news_ms": 1789084229446,
-   "adds": 75220
+   "adds": 75294
   },
   {
    "id": "8127",
@@ -346,7 +346,7 @@
    "depth": "TE3",
    "news": "Sep 10",
    "news_ms": 1789048502354,
-   "adds": 75216
+   "adds": 72645
   },
   {
    "id": "13285",
@@ -359,20 +359,7 @@
    "depth": "RWR3",
    "news": "Sep 9",
    "news_ms": 1788982545388,
-   "adds": 74670
-  },
-  {
-   "id": "13296",
-   "name": "Caleb Douglas",
-   "pos": "WR",
-   "team": "MIA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 9",
-   "news_ms": 1788986445775,
-   "adds": 70632
+   "adds": 72595
   },
   {
    "id": "3286",
@@ -385,7 +372,20 @@
    "depth": "LWR4",
    "news": "Sep 11",
    "news_ms": 1789101016443,
-   "adds": 68610
+   "adds": 68874
+  },
+  {
+   "id": "13296",
+   "name": "Caleb Douglas",
+   "pos": "WR",
+   "team": "MIA",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 9",
+   "news_ms": 1788986445775,
+   "adds": 68160
   },
   {
    "id": "2078",
@@ -398,7 +398,7 @@
    "depth": "LWR4",
    "news": "Sep 6",
    "news_ms": 1788709230912,
-   "adds": 65457
+   "adds": 63686
   },
   {
    "id": "9511",
@@ -411,7 +411,7 @@
    "depth": "RB2",
    "news": "Sep 10",
    "news_ms": 1789080328104,
-   "adds": 60219
+   "adds": 58689
   },
   {
    "id": "8134",
@@ -424,7 +424,7 @@
    "depth": "SWR2",
    "news": "Sep 9",
    "news_ms": 1788990347732,
-   "adds": 59814
+   "adds": 58653
   },
   {
    "id": "8111",
@@ -437,7 +437,7 @@
    "depth": "TE1",
    "news": "Sep 10",
    "news_ms": 1789071620602,
-   "adds": 57942
+   "adds": 57582
   },
   {
    "id": "7090",
@@ -450,7 +450,7 @@
    "depth": "SWR2",
    "news": "Sep 8",
    "news_ms": 1788892850926,
-   "adds": 52191
+   "adds": 51129
   },
   {
    "id": "12491",
@@ -463,7 +463,7 @@
    "depth": "RB5",
    "news": "Sep 11",
    "news_ms": 1789086929698,
-   "adds": 50244
+   "adds": 49182
   },
   {
    "id": "3321",
@@ -476,7 +476,7 @@
    "depth": null,
    "news": "Sep 10",
    "news_ms": 1789069820372,
-   "adds": 49640
+   "adds": 49016
   }
  ],
  "transactions": [
