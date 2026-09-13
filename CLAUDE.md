@@ -7,7 +7,7 @@ and the Vercel functions behind the Claude advisor and push alerts. The app live
 Danny's account) and is mirrored, Sleeper-data only, at https://dannyrobinson.github.io/ffsavages/ (repo
 `dannyrobinson/ffsavages`, public because GitHub Pages on a free plan needs it). Everything runs itself on
 Vercel: the page pulls Sleeper live on every open; a cron checks Danny's world every 15 minutes and, when
-anything moved, hands it to the Claude advisor; the advisor also runs hourly; it pushes a notification when
+anything URGENT moved, hands it to the Claude advisor; the advisor also runs four times a day; it pushes a notification when
 Danny should act. The goal it optimises for is the most fantasy points Danny's lineup can score. There is no
 scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine is disabled).
 
@@ -135,18 +135,21 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   from the app) stores but never pushes.
 - `lib/check.js` — the 15-minute checker. Diffs Danny's roster flags/injuries, his lineup and roster
   edits, new league transactions (`tx_seen`) and new free-agent starting QBs against kv `roster_state`.
-  Any change becomes a `reason` and the advisor runs with it (`trigger: "change"`); a red flag on one of
-  his starters is also pushed immediately, and if the advisor fails the old raw alerts go out instead.
+  Only an URGENT change (a red flag on one of his starters, a starting QB newly on waivers) runs the advisor
+  (`trigger: "change"`), at most every 90 min and under the shared daily cap; every other change is parked in
+  kv `pending_reasons` and handed to the next run (cleared after it). A red flag on one of his starters is
+  also pushed immediately, and if the advisor fails the old raw alerts go out instead.
   First run stores state and sends nothing.
 - `api/sweep.js` (GET, CDN-cached 2 min; `?fresh=1` bypasses), `api/config.js` (VAPID public key + last
   check + `ask: true` when the Anthropic key is set), `api/subscribe.js` (POST subscribe/unsubscribe/test;
   subscribe sends a welcome push), `api/check.js` (cron every 15 min; `Authorization: Bearer $CRON_SECRET`;
-  `?dry=1` diffs without sending or storing), `api/advise.js` (GET = cron, hourly 6 AM–10 PM PT, same
+  `?dry=1` diffs without sending or storing), `api/advise.js` (GET = cron, 4× a day: 7 AM, 1 PM, 6 PM, 9 PM PT while PDT holds (UTC in `vercel.json`), same
   auth, `?dry=1`; POST = on-demand from the app, same-origin, body `{news}`, returns the advice, never
   pushes), `api/advice.js` (GET, the stored advice), `api/ask.js` (POST, same-origin; `mode` chat | shot;
   chat gets the advisor's context plus web search), `api/subs.js` (GET the stored auto-sub note; POST same-origin
   `{week, text}` stores it as kv `subs`; the app's Re-check also sends its copy in case that save failed). Daily caps counted in `kv`: `ADVISE_DAILY_CAP`
-  (default 40, cron runs excepted), `ASK_DAILY_CAP` (default 60). `lib/http.js` has the shared guards.
+  (default 12, every trigger counted, exported from `lib/advise.js`), `ASK_DAILY_CAP` (default 60); `ADVISE_SEARCHES`
+  (default 5) is the web-search budget per advisor run. `lib/http.js` has the shared guards.
   Env on Vercel: `DATABASE_URL` (Neon project `robinsavages`, org "Danny", tables `push_subscriptions` +
   `kv`), `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`, `CRON_SECRET`, `ANTHROPIC_API_KEY`
   (Danny sets it himself; never paste a key into the repo or chat), optional `ASK_MODEL` (default
@@ -176,19 +179,20 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
    a flag or injury change on Danny's player, a change to his lineup or roster, a completed league
    transaction by another team (drops are called out with whether he is
    still unowned and when claims on him process; winning bids are shown), the result of Danny's own claim
-   (won or failed, with Sleeper's note), a new free-agent starting QB. Any change runs the advisor with the
-   reasons.
-2. Hourly 6 AM–10 PM PT `api/advise` runs the advisor anyway, so news Sleeper doesn't show (practice
+   (won or failed, with Sleeper's note), a new free-agent starting QB. Only an urgent change (red starter,
+   free-agent starting QB) runs the advisor; the rest waits in `pending_reasons` for the next scheduled run.
+2. Four times a day (7 AM, 1 PM, 6 PM, 9 PM PT) `api/advise` runs the advisor anyway, so news Sleeper doesn't show (practice
    reports, role changes, Vegas totals) still gets caught by Claude's web searches.
 3. The advisor writes `advice` to kv (what the Moves tab shows) and pushes `alerts` with urgency high or
    medium to Danny's phone, deduplicated by key. Danny can also tap "Re-check now" in the app, which
    includes his pasted news log; that run stores advice but does not push.
-4. Cost and time: one advisor run is about 3 minutes and ~140k input / ~14k output tokens plus 5–6 web
-   searches (search results are large and count against `max_tokens`, hence the 32k budget), roughly
-   $0.60–0.70 per run at Sonnet 5 prices; hourly plus change-triggered runs is on the order of $10–15 a day
-   in season. Levers: the cron hours in `vercel.json`, `searches` in `runAdvisor`, `ADVISE_DAILY_CAP` and
-   `ASK_DAILY_CAP` (kv counters), Sonnet for advice, Haiku for screenshots. If a search loop leaves no JSON
-   the advisor retries once without search (`advice.fallback` says so).
+4. Cost and time: one advisor run is about 3 minutes and ~140k input (mostly cached) / ~13k output tokens plus
+   up to 5 web searches, roughly $0.60–0.70 at Sonnet 5 prices. Until Sept 13 it ran hourly plus on EVERY
+   15-minute change, uncapped (Danny's own lineup edits included), which on a game day was dozens of runs;
+   Danny called uncle. Now: 4 scheduled runs + rare urgent runs, hard cap 12 a day, so ~$3–5 a day in season.
+   Levers: the cron hours in `vercel.json`, `ADVISE_SEARCHES`, `ADVISE_DAILY_CAP`, `ASK_DAILY_CAP` (env),
+   `MIN_GAP` in `lib/check.js`, Sonnet for advice, Haiku for screenshots. If a search loop leaves no JSON the
+   advisor retries once without search (`advice.fallback` says so).
 Nice-to-have next: use actual points instead of the projection for players whose game is complete; a
 weekly recap after Monday night.
 

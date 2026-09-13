@@ -1,9 +1,8 @@
 // Runs the advisor. GET from Vercel Cron (Authorization: Bearer $CRON_SECRET; ?dry=1 to skip pushes and
 // storage). POST from the app (same-origin; body {news}) for an on-demand re-check that returns the advice.
-import { runAdvisor } from "../lib/advise.js";
+import { runAdvisor, ADVISE_CAP } from "../lib/advise.js";
 import { bad, cronAuthed, sameOrigin, underCap, NO } from "../lib/http.js";
 
-const ADVISE_CAP = Math.max(1, +(process.env.ADVISE_DAILY_CAP || 40));
 const errJson = e => Response.json({ ok: false, code: e.code || "error", error: String(e.message || e) }, { status: e.status || 502, headers: NO });
 
 export async function GET(req) {
