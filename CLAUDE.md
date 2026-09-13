@@ -71,7 +71,9 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   rival); $15–28 is the dead zone; anyone bound for his bench $1–3 or wait and add free ("$15 is 10% of my full
   season budget" for a bench player, Sept 11); K/DEF $1; hold $20–30 through week 11, keep $5–10 for the week
   15–17 runs. Danny set the core of this Sept 11 after the advisor bid $43 on Kenny Gainwell in week 1 ("rich");
-  the decay and dead zone came from the Sept 12 research.
+  the decay and dead zone came from the Sept 12 research. Never churn a K or DEF for a projected gain under 2
+  points, and hold a unit Sleeper ranks top-5 at the position through ordinary weeks: Danny rejected the advisor's
+  "add Matt Gay, drop Fairbairn" for +0.8 on Sept 12 (Fairbairn 97% rostered, Gay 13%). Rows carry `rank` for K/DEF.
   Flag injuries/suspensions on his own players red/amber/green. For every Questionable starter, name the auto-sub
   to set (the best bench player allowed in the slot, any kickoff, before the earlier kickoff), unless his note says it is set.
 - He reads this on his phone. Short beats thorough.

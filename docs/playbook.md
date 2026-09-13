@@ -151,6 +151,11 @@ Rules, with verdicts:
   Wednesday add; holding a unit 2–3 weeks is fine when its schedule lines up.
 - **K (new).** Implied total 27+ more than doubles 10-point games; dome 8.7 vs outdoor 8.3, 20+ mph wind 7.7, home
   +0.5; year-to-year kicker rank is "basically insignificant". Stream for $1 or free.
+- **A stream replaces a bad matchup; it never chases a small edge (Danny, Sept 12).** The advisor once proposed dropping
+  Fairbairn (97% rostered, Sleeper's K4) for Matt Gay (13%, K20) for +0.8 projected points. Never drop a K or DEF for a
+  projected gain under 2 points, and hold a unit Sleeper ranks top-5 at the position through ordinary weeks; swap only
+  for a bye, an injury, an implied total that makes the week bad (under 20 for the offence, over 26 for a DEF's
+  opponent) or 20+ mph wind. The dropped unit is gone for good; the projection edge is noise.
 
 ## 7. Mindset / process
 - Season-long fantasy is roughly 80% luck / 20% skill: grade decisions by process (supported).
