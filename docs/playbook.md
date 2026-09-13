@@ -7,6 +7,10 @@ The condensed version of this is baked into `app/gm.html` (Plan tab) and into `l
 follows when it advises. Verdicts: **supported**, **partly** (kept with a changed number or caveat),
 **contradicted** (replaced).
 
+**Sleeper's projected points are withheld from the advisor** (Danny, Sept 12: "I can see those numbers myself"). The
+advisor decides from role, usage (projected and actual volume), the game environment, injury status and news, and never
+writes a projected-point figure; the app's lineup card still shows the projections to Danny.
+
 ## 1. Waiver wire / FAAB
 Sleeper mechanics in this league (support.sleeper.com, checked Sept 11–12 2026 against the 2025 league's transaction log):
 - $150 for the season, blind bids in whole dollars, minimum $1, highest bid wins; Sleeper processes the league's claims
@@ -153,7 +157,7 @@ Rules, with verdicts:
   +0.5; year-to-year kicker rank is "basically insignificant". Stream for $1 or free.
 - **A stream replaces a bad matchup; it never chases a small edge (Danny, Sept 12).** The advisor once proposed dropping
   Fairbairn (97% rostered, Sleeper's K4) for Matt Gay (13%, K20) for +0.8 projected points. Never drop a K or DEF for a
-  projected gain under 2 points, and hold a unit Sleeper ranks top-5 at the position through ordinary weeks; swap only
+  marginal edge, and hold a unit Sleeper ranks top-5 at the position through ordinary weeks; swap only
   for a bye, an injury, an implied total that makes the week bad (under 20 for the offence, over 26 for a DEF's
   opponent) or 20+ mph wind. The dropped unit is gone for good; the projection edge is noise.
 
