@@ -52,14 +52,24 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   `app/war-room.html` (Notes tab).
 
 ## How Danny wants to be advised
-- Superflex first: a starting QB in the superflex slot ≈ +10 pts/week over a flex skill player. Keep 3
-  startable QBs; any starting QB on waivers is a priority claim. TEs carry a premium (+0.5/rec).
+- Superflex first, sized honestly (researched Sept 12 on 2025 data): a QB12–16 in the superflex slot is +4–7
+  pts/week over the flex-grade RB/WR he replaces, a QB18–24 +2–4, only a top-8 QB +10. Keep 3 startable QBs
+  with different byes; any starting QB on waivers is a priority claim. TEs carry a premium (+0.5/rec): a TE5–12
+  scores like a WR20–30, so Danny's two 2025 top-10 TEs are not a weak spot.
+- Every playbook rule was researched rule by rule on Sept 12 (verdicts, numbers and sources in
+  `docs/playbook.md`; condensed in `lib/rules.js` and the Plan tab). The lineup order is projection → usage
+  (targets are stable, TDs are noise) → game environment (implied total, spread) → opponent as a tiebreaker only
+  → weather (wind 20+ mph or snow only). The sweep now carries the kickoff, line and weather per player so the
+  advisor never searches for them; it searches the opponent's pressure rate only when two options are within 2
+  points.
 - Be decisive. Headline the single most important move, then a short prioritized list naming the drop for
   every add and the bid for every claim (odd numbers; free-agent adds say "no bid"). Bid sizing follows the
-  season plan in `lib/rules.js`: $90+ of the $150 stays untouched for a league-winner (bell-cow job, QB named
-  starter), a proven role change Danny would START $5–20, anyone bound for his bench $1–3 or wait and add free
-  ("$15 is 10% of my full season budget" for a bench player, Sept 11), K/DEF $1, hold $20–30 through week 11.
-  Danny set this Sept 11 after the advisor bid $43 on Kenny Gainwell in week 1 ("rich").
+  season plan in `lib/rules.js`: the league-winner reserve (bell-cow job, QB named starter) is $90 through week 4,
+  $75 through week 8, $45 after; a proven role change Danny would START $5–13 (up to $20 only against a named
+  rival); $15–28 is the dead zone; anyone bound for his bench $1–3 or wait and add free ("$15 is 10% of my full
+  season budget" for a bench player, Sept 11); K/DEF $1; hold $20–30 through week 11, keep $5–10 for the week
+  15–17 runs. Danny set the core of this Sept 11 after the advisor bid $43 on Kenny Gainwell in week 1 ("rich");
+  the decay and dead zone came from the Sept 12 research.
   Flag injuries/suspensions on his own players red/amber/green. For every Questionable starter, name the auto-sub
   to set (a bench player allowed in the slot who kicks off at the same time or later), unless his note says it is set.
 - He reads this on his phone. Short beats thorough.
@@ -101,7 +111,14 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   row carries `bye`; `byes` (Danny's active players on bye in the next 5 weeks, with a QB count), `qb_byes`,
   `def` (his unit this week and next, best free-agent units for both weeks, from `projections` week+1));
   `auto_subs` (the league's settings plus `at_risk`: each amber starter with the unlocked bench players allowed
-  in his slot and whether each plays a later, the same or an EARLIER day); every row carries `date` (game date).
+  in his slot and whether each kicks off in a later, the same or an EARLIER window); every row carries `date`
+  (game date) and, from `lib/games.js`, `kick_pt` (kickoff in PT, also baked into `game`: "Sun 10:00 AM vs TB"),
+  `kick_ms`, `window`, `line` ("underdog by 3.5, total 50.5, implied 23.5 (opp 27)"), `env` ("outdoor, wind 6 mph,
+  dry, 84°F" or "indoor"), `spread`, `implied`, `opp_implied`, `wind`, plus `vol` (projected targets/carries/pass
+  attempts from Sleeper's projection feed). DEF rows carry `opp_implied`, the first filter for a stream.
+- `lib/games.js` — the game environment: ESPN's public scoreboard (kickoff, venue and whether it is indoor, the
+  DraftKings line, sky and temperature; no key) plus Open-Meteo (wind, gusts, rain chance, snow at kickoff for
+  outdoor stadiums; no key; a static table of stadium coordinates and roofs). Best-effort: failures leave nulls.
 - `lib/advise.js` — the advisor. `contextText(sweep, {news, prev, notified, reason})` writes the
   situation for Claude, including Danny's auto-sub note (kv `subs`); `runAdvisor()` calls Sonnet with web search (`lib/claude.js`, `lib/rules.js` is
   the playbook), parses the JSON (headline, summary, lineup, adds with how/bid/backup/processes, ir, subs (auto-sub pairings to set), flags, watch, alerts), stores it in
@@ -182,7 +199,10 @@ WR Malik Nabers (5.06, Questionable — knee) · WR Jaylen Waddle (6.07) · RB Q
 QB Malik Willis (8.07) · RB Jaylen Warren (9.06) · RB Jordan Mason (10.07) · WR Alec Pierce (11.06) ·
 TE Juwan Johnson (12.07) · RB MarShawn Lloyd (13.06) · K Ka'imi Fairbairn (14.07) · DEF Detroit (15.06) ·
 TE Dalton Schultz (16.07).
-Weak spots: TE (Juwan Johnson / Schultz), QB3 (Willis is a starter but low ceiling), no elite RB.
+Roster as of Sept 12 (the sweep is the source of truth; this is a snapshot): QB Burrow, C. Williams, Willis ·
+RB Chase Brown, Warren, Gainwell (claimed week 1), Lloyd, Judkins · WR A.J. Brown (NE), Waddle (DEN), Nabers,
+Shakir, Tre Tucker · TE Juwan Johnson · K Fairbairn · DEF Jacksonville. Schultz, Pierce, Mason and the Detroit
+DEF are gone. Weak spots: QB3 (Willis shares Burrow's week-6 bye, so he is no cover), no elite RB.
 Nabers' Week 1 status was the first thing to check every sweep; the checker now does that itself. Notable league roster facts: TheBigHelmet
 (slot 12) has Mahomes + Etienne; EasyIP (slot 1) has Gibbs + McBride + Shough; HappyChappy18 (slot 5, commish)
 has Lawrence + Jefferson + Kyren.
