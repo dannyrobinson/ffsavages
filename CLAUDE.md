@@ -6,10 +6,13 @@ and the Vercel functions behind the Claude advisor and push alerts. The app live
 **https://robinsavages.vercel.app** (Vercel project `robinsavages`, team FirstPointEnergy, the only team on
 Danny's account) and is mirrored, Sleeper-data only, at https://dannyrobinson.github.io/ffsavages/ (repo
 `dannyrobinson/ffsavages`, public because GitHub Pages on a free plan needs it). Everything runs itself on
-Vercel: the page pulls Sleeper live on every open; a cron checks Danny's world every 15 minutes and, when
-anything URGENT moved, hands it to the Claude advisor; the advisor also runs four times a day; it pushes a notification when
-Danny should act. The goal it optimises for is the most fantasy points Danny's lineup can score. There is no
-scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine is disabled).
+Vercel: the page pulls Sleeper live on every open; a cron checks Danny's world every 15 minutes and pushes a
+notification when something moved. **The advisor is a Claude cloud routine on Danny's subscription** ("Robinsavages
+advisor", trig_01H2oT2z2gAX3SJTUo788aFw, 7 AM / 1 PM / 9 PM PT): it reads the prompt from `api/context` (or the
+committed `data/context.json`), researches with WebSearch, commits `data/advice.json`, and the checker ingests that
+file and pushes its alerts. **No Anthropic API spend on a schedule** since Sept 13 (Danny: "$3–5 a day is not
+acceptable"); the API is used only if he taps Re-check or Ask, and removing `ANTHROPIC_API_KEY` from Vercel turns
+those off. The goal it optimises for is the most fantasy points Danny's lineup can score.
 
 ## The league (don't re-derive this; it's confirmed)
 - Sleeper league `1312551337698820096`, draft `1312551337711386624`, Danny = user `1263724329326100480`
@@ -127,25 +130,27 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   DraftKings line, sky and temperature; no key) plus Open-Meteo (wind, gusts, rain chance, snow at kickoff for
   outdoor stadiums; no key; a static table of stadium coordinates and roofs). Best-effort: failures leave nulls.
 - `lib/advise.js` — the advisor. `contextText(sweep, {news, prev, notified, reason})` writes the
-  situation for Claude, including Danny's auto-sub note (kv `subs`); `runAdvisor()` calls Sonnet with web search (`lib/claude.js`, `lib/rules.js` is
-  the playbook), parses the JSON (headline, summary, lineup, adds with how/bid/backup/processes, ir, subs (auto-sub pairings to set), flags, watch, alerts), stores it in
-  kv `advice`, and pushes the alerts whose urgency is high or medium. Each alert carries a stable `key`;
+  situation for Claude, including Danny's auto-sub note (kv `subs`); `promptFor(sweep, opts)` returns `{system, user}`
+  (`RULES` + `SCHEMA` + `RESEARCH`, then the situation); `stateFor()` reads kv `advice`, `notified`, `subs`,
+  `pending_reasons`. `storeAdvice(data, …)` turns a reply in the schema shape (headline, summary, lineup, adds with
+  how/bid/backup/processes, ir, subs (auto-sub pairings to set), flags, watch, alerts) into kv `advice` and pushes the
+  alerts whose urgency is high or medium. `ingestAdvice({sweep})` fetches `data/advice.json` from GitHub raw and stores
+  it when its `ts` is newer than kv `advice_ingested` (the cloud routine's path). `runAdvisor()` (the Anthropic API,
+  Sonnet with web search via `lib/claude.js`) is now only the app's on-demand Re-check. Each alert carries a stable `key`;
   kv `notified` remembers when a key was last pushed (high: not again within 12 h, medium: 72 h, pruned
   after 7 days); at most 4 pushes per run. `dry` skips pushes and storage; `push:false` (on-demand runs
   from the app) stores but never pushes.
 - `lib/check.js` — the 15-minute checker. Diffs Danny's roster flags/injuries, his lineup and roster
   edits, new league transactions (`tx_seen`) and new free-agent starting QBs against kv `roster_state`.
-  Only an URGENT change (a red flag on one of his starters, a starting QB newly on waivers) runs the advisor
-  (`trigger: "change"`), at most every 90 min and under the shared daily cap; every other change is parked in
-  kv `pending_reasons` and handed to the next run (cleared after it). A red flag on one of his starters is
-  also pushed immediately, and if the advisor fails the old raw alerts go out instead.
+  Every alert is pushed as it is (critical first), every change is parked in kv `pending_reasons` for the next
+  advisor run (cleared after it), and then `ingestAdvice` picks up a new `data/advice.json`. No Claude call.
   First run stores state and sends nothing.
 - `api/sweep.js` (GET, CDN-cached 2 min; `?fresh=1` bypasses), `api/config.js` (VAPID public key + last
   check + `ask: true` when the Anthropic key is set), `api/subscribe.js` (POST subscribe/unsubscribe/test;
   subscribe sends a welcome push), `api/check.js` (cron every 15 min; `Authorization: Bearer $CRON_SECRET`;
-  `?dry=1` diffs without sending or storing), `api/advise.js` (GET = cron, 4× a day: 7 AM, 1 PM, 6 PM, 9 PM PT while PDT holds (UTC in `vercel.json`), same
-  auth, `?dry=1`; POST = on-demand from the app, same-origin, body `{news}`, returns the advice, never
-  pushes), `api/advice.js` (GET, the stored advice), `api/ask.js` (POST, same-origin; `mode` chat | shot;
+  `?dry=1` diffs without sending or storing), `api/advise.js` (GET = a manual API run, same auth, `?dry=1`, no cron any more; POST = on-demand from the app,
+  same-origin, body `{news}`, returns the advice, never pushes; both cost API money), `api/context.js` (GET, public,
+  `?fresh=1`: the advisor's prompt as `{system, user}`, what the cloud routine and the Action read), `api/advice.js` (GET, the stored advice), `api/ask.js` (POST, same-origin; `mode` chat | shot;
   chat gets the advisor's context plus web search), `api/subs.js` (GET the stored auto-sub note; POST same-origin
   `{week, text}` stores it as kv `subs`; the app's Re-check also sends its copy in case that save failed). Daily caps counted in `kv`: `ADVISE_DAILY_CAP`
   (default 12, every trigger counted, exported from `lib/advise.js`), `ASK_DAILY_CAP` (default 60); `ADVISE_SEARCHES`
@@ -175,24 +180,24 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   `site/` is gitignored.
 
 ## How the advice loop works (nothing to run by hand)
-1. Every 15 min `api/check` rebuilds the sweep and diffs it against the last run. Changes it reacts to:
-   a flag or injury change on Danny's player, a change to his lineup or roster, a completed league
-   transaction by another team (drops are called out with whether he is
-   still unowned and when claims on him process; winning bids are shown), the result of Danny's own claim
-   (won or failed, with Sleeper's note), a new free-agent starting QB. Only an urgent change (red starter,
-   free-agent starting QB) runs the advisor; the rest waits in `pending_reasons` for the next scheduled run.
-2. Four times a day (7 AM, 1 PM, 6 PM, 9 PM PT) `api/advise` runs the advisor anyway, so news Sleeper doesn't show (practice
-   reports, role changes, Vegas totals) still gets caught by Claude's web searches.
-3. The advisor writes `advice` to kv (what the Moves tab shows) and pushes `alerts` with urgency high or
-   medium to Danny's phone, deduplicated by key. Danny can also tap "Re-check now" in the app, which
-   includes his pasted news log; that run stores advice but does not push.
-4. Cost and time: one advisor run is about 3 minutes and ~140k input (mostly cached) / ~13k output tokens plus
-   up to 5 web searches, roughly $0.60–0.70 at Sonnet 5 prices. Until Sept 13 it ran hourly plus on EVERY
-   15-minute change, uncapped (Danny's own lineup edits included), which on a game day was dozens of runs;
-   Danny called uncle. Now: 4 scheduled runs + rare urgent runs, hard cap 12 a day, so ~$3–5 a day in season.
-   Levers: the cron hours in `vercel.json`, `ADVISE_SEARCHES`, `ADVISE_DAILY_CAP`, `ASK_DAILY_CAP` (env),
-   `MIN_GAP` in `lib/check.js`, Sonnet for advice, Haiku for screenshots. If a search loop leaves no JSON the
-   advisor retries once without search (`advice.fallback` says so).
+1. Every 15 min `api/check` rebuilds the sweep and diffs it against the last run: a flag or injury change on
+   Danny's player, a change to his lineup or roster, a completed league transaction by another team (drops are
+   called out with whether he is still unowned and when claims on him process; winning bids are shown), the
+   result of Danny's own claim, a new free-agent starting QB. Flag changes and new free-agent QBs are pushed raw
+   at once; every change is parked in kv `pending_reasons` for the advisor. Then it ingests a new
+   `data/advice.json` if the routine committed one (kv `advice`, alerts pushed, `advice_ingested` remembers the ts).
+2. The GitHub Action (`pages.yml`) runs at 3:45, 13:45 and 19:45 UTC (15 min before each routine run): sweeps,
+   fetches `api/context?fresh=1` into `data/context.json`, commits both, deploys Pages.
+3. The cloud routine "Robinsavages advisor" (claude.ai/code/routines, Sonnet 5 on Danny's subscription) runs at
+   4, 14 and 20 UTC (9 PM, 7 AM, 1 PM PT while PDT holds): tries `curl api/context`, falls back to the committed
+   `data/context.json` (its sandbox cannot reach Vercel or Sleeper by default), researches with WebSearch (≤ 8),
+   writes `data/advice.json` (the schema plus `ts` and `week`), commits "Advice: …" and pushes to main. The checker
+   picks it up within 15 min (raw GitHub caches ~5 min; the fetch is cache-busted).
+4. Cost: nothing on the API. Until Sept 13 the API advisor ran hourly plus on every checker change ($0.60–0.70 a
+   run, dozens of runs on a game day); Danny called uncle twice (first at "$3–5 a day"). The Anthropic API is now
+   only behind the app's Re-check (a full `runAdvisor`, ~$0.65, `ADVISE_DAILY_CAP` 12) and Ask (`ASK_DAILY_CAP`);
+   remove `ANTHROPIC_API_KEY` from Vercel to turn both off (`api/config` then reports `ask: false` and the app
+   explains). Levers on the routine: its cron and search budget in the prompt at claude.ai/code/routines.
 Nice-to-have next: use actual points instead of the projection for players whose game is complete; a
 weekly recap after Monday night.
 

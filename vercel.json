@@ -7,10 +7,6 @@
     {
       "path": "/api/check",
       "schedule": "*/15 * * * *"
-    },
-    {
-      "path": "/api/advise",
-      "schedule": "0 1,4,14,20 * * *"
     }
   ],
   "functions": {
@@ -24,6 +20,9 @@
       "maxDuration": 120
     },
     "api/sweep.js": {
+      "maxDuration": 60
+    },
+    "api/context.js": {
       "maxDuration": 60
     }
   },
