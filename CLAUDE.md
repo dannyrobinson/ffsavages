@@ -174,10 +174,10 @@ those off. The goal it optimises for is the most fantasy points Danny's lineup c
   runs it with `--no-fetch` as the build command). `--no-fetch` reuses `data/sweep.json`.
 - `docs/playbook.md` — researched champions' rules with sources; condensed copies live in `lib/rules.js`
   (what Claude follows) and the Plan tab of `app/gm.html`.
-- `.github/workflows/pages.yml` — on push and Tue/Wed/Thu/Sat/Sun 6:30 AM PT: sweep, commit `data/sweep.*`,
-  build, deploy Pages.
-- `data/sweep.json` + `data/sweep.md` are committed (by the Action); everything else in `data/` and all of
-  `site/` is gitignored.
+- `.github/workflows/pages.yml` — on push and daily at 3:45, 13:45, 19:45 UTC (15 min before each routine run):
+  sweep, fetch `api/context?fresh=1` into `data/context.json`, commit `data/sweep.*` + the context, build, deploy Pages.
+- `data/sweep.json`, `data/sweep.md`, `data/context.json` (the Action) and `data/advice.json` (the routine) are
+  committed; everything else in `data/` and all of `site/` is gitignored.
 
 ## How the advice loop works (nothing to run by hand)
 1. Every 15 min `api/check` rebuilds the sweep and diffs it against the last run: a flag or injury change on
