@@ -1,6 +1,6 @@
 {
- "generated": "Sat Sep 12, 2026 5:35 PM PT",
- "generated_ms": 1789259701154,
+ "generated": "Sun Sep 13, 2026 10:01 AM PT",
+ "generated_ms": 1789318916320,
  "season": "2026",
  "week": 1,
  "faab_total": 150,
@@ -145,8 +145,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 9",
-   "news_ms": 1788973234282,
+   "news": "Sep 13",
+   "news_ms": 1789268747760,
    "slot": "START"
   },
   {
@@ -197,8 +197,8 @@
    "why": "IR \u00b7 Ankle \u00b7 Sprain",
    "injury": "IR",
    "depth": "LWR1",
-   "news": "Sep 11",
-   "news_ms": 1789145727264,
+   "news": "Sep 13",
+   "news_ms": 1789310753064,
    "slot": "START"
   },
   {
@@ -210,8 +210,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RWR1",
-   "news": "Sep 4",
-   "news_ms": 1788537921125,
+   "news": "Sep 13",
+   "news_ms": 1789273848216,
    "slot": "START"
   },
   {
@@ -236,8 +236,8 @@
    "why": "Questionable \u00b7 Knee - ACL \u00b7 Surgery",
    "injury": "Questionable",
    "depth": "LWR1",
-   "news": "Sep 12",
-   "news_ms": 1789229443810,
+   "news": "Sep 13",
+   "news_ms": 1789311953080,
    "slot": "BN"
   },
   {
@@ -306,7 +306,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789103416633,
-   "adds": 465731
+   "adds": 222306
   },
   {
    "id": "3286",
@@ -319,33 +319,7 @@
    "depth": "LWR6",
    "news": "Sep 12",
    "news_ms": 1789171515202,
-   "adds": 170994
-  },
-  {
-   "id": "2505",
-   "name": "Darren Waller",
-   "pos": "TE",
-   "team": "CAR",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 12",
-   "news_ms": 1789216818818,
-   "adds": 72387
-  },
-  {
-   "id": "11834",
-   "name": "Devaughn Vele",
-   "pos": "WR",
-   "team": "NO",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR2",
-   "news": "Sep 12",
-   "news_ms": 1789245945296,
-   "adds": 67039
+   "adds": 122832
   },
   {
    "id": "13285",
@@ -358,46 +332,20 @@
    "depth": "RWR3",
    "news": "Sep 12",
    "news_ms": 1789229743847,
-   "adds": 50460
+   "adds": 102150
   },
   {
-   "id": "4035",
-   "name": "Alvin Kamara",
-   "pos": "RB",
+   "id": "11834",
+   "name": "Devaughn Vele",
+   "pos": "WR",
    "team": "NO",
-   "flag": "amber",
-   "why": "Questionable \u00b7 Knee",
-   "injury": "Questionable",
-   "depth": "RB2",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "SWR2",
    "news": "Sep 12",
-   "news_ms": 1789243845189,
-   "adds": 40808
-  },
-  {
-   "id": "13602",
-   "name": "Jack Strand",
-   "pos": "QB",
-   "team": "ATL",
-   "flag": "red",
-   "why": "Not the starter (QB4)",
-   "injury": null,
-   "depth": "QB4",
-   "news": "Sep 11",
-   "news_ms": 1789169415117,
-   "adds": 39605
-  },
-  {
-   "id": "9511",
-   "name": "Keaton Mitchell",
-   "pos": "RB",
-   "team": "LAC",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 11",
-   "news_ms": 1789163714488,
-   "adds": 38646
+   "news_ms": 1789245945296,
+   "adds": 77007
   },
   {
    "id": "7090",
@@ -410,20 +358,46 @@
    "depth": "SWR2",
    "news": "Sep 8",
    "news_ms": 1788892850926,
-   "adds": 35091
+   "adds": 76473
   },
   {
-   "id": "4177",
-   "name": "Mack Hollins",
-   "pos": "WR",
-   "team": "NE",
-   "flag": "amber",
-   "why": "WR4 on the depth chart",
+   "id": "2505",
+   "name": "Darren Waller",
+   "pos": "TE",
+   "team": "CAR",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR4",
-   "news": "Sep 10",
-   "news_ms": 1789053904718,
-   "adds": 34668
+   "depth": "TE1",
+   "news": "Sep 13",
+   "news_ms": 1789317653670,
+   "adds": 68589
+  },
+  {
+   "id": "9511",
+   "name": "Keaton Mitchell",
+   "pos": "RB",
+   "team": "LAC",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 11",
+   "news_ms": 1789163714488,
+   "adds": 59319
+  },
+  {
+   "id": "13602",
+   "name": "Jack Strand",
+   "pos": "QB",
+   "team": "ATL",
+   "flag": "red",
+   "why": "Not the starter (QB4)",
+   "injury": null,
+   "depth": "QB4",
+   "news": "Sep 11",
+   "news_ms": 1789169415117,
+   "adds": 57570
   },
   {
    "id": "2078",
@@ -436,59 +410,7 @@
    "depth": "LWR4",
    "news": "Sep 12",
    "news_ms": 1789230043874,
-   "adds": 30163
-  },
-  {
-   "id": "5854",
-   "name": "Drew Lock",
-   "pos": "QB",
-   "team": "SEA",
-   "flag": "red",
-   "why": "Not the starter (QB2)",
-   "injury": null,
-   "depth": "QB2",
-   "news": "Sep 10",
-   "news_ms": 1789084229446,
-   "adds": 27278
-  },
-  {
-   "id": "13296",
-   "name": "Caleb Douglas",
-   "pos": "WR",
-   "team": "MIA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 12",
-   "news_ms": 1789214118477,
-   "adds": 25280
-  },
-  {
-   "id": "3321",
-   "name": "Tyreek Hill",
-   "pos": "WR",
-   "team": "FA",
-   "flag": "red",
-   "why": "Free agent / no team",
-   "injury": "",
-   "depth": null,
-   "news": "Sep 10",
-   "news_ms": 1789069820372,
-   "adds": 23416
-  },
-  {
-   "id": "10235",
-   "name": "Roschon Johnson",
-   "pos": "RB",
-   "team": "CHI",
-   "flag": "amber",
-   "why": "RB3 on the depth chart",
-   "injury": null,
-   "depth": "RB3",
-   "news": "Sep 8",
-   "news_ms": 1788877549423,
-   "adds": 22552
+   "adds": 54845
   },
   {
    "id": "13424",
@@ -501,20 +423,33 @@
    "depth": "RB2",
    "news": "Sep 10",
    "news_ms": 1789057803708,
-   "adds": 22464
+   "adds": 41520
   },
   {
-   "id": "4039",
-   "name": "Cooper Kupp",
+   "id": "4177",
+   "name": "Mack Hollins",
    "pos": "WR",
-   "team": "SEA",
+   "team": "NE",
    "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "why": "WR4 on the depth chart",
    "injury": null,
-   "depth": "SWR3",
+   "depth": "RWR4",
    "news": "Sep 10",
-   "news_ms": 1789067120814,
-   "adds": 22026
+   "news_ms": 1789053904718,
+   "adds": 30039
+  },
+  {
+   "id": "13296",
+   "name": "Caleb Douglas",
+   "pos": "WR",
+   "team": "MIA",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 12",
+   "news_ms": 1789214118477,
+   "adds": 27872
   },
   {
    "id": "8111",
@@ -527,20 +462,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789163413962,
-   "adds": 21924
-  },
-  {
-   "id": "9486",
-   "name": "Dontayvion Wicks",
-   "pos": "WR",
-   "team": "PHI",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 10",
-   "news_ms": 1789062903924,
-   "adds": 21129
+   "adds": 27738
   },
   {
    "id": "9225",
@@ -553,7 +475,85 @@
    "depth": "RB2",
    "news": "Sep 9",
    "news_ms": 1788970534035,
-   "adds": 21091
+   "adds": 24815
+  },
+  {
+   "id": "11237",
+   "name": "Jacob Saylors",
+   "pos": "RB",
+   "team": "DET",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 12",
+   "news_ms": 1789222519440,
+   "adds": 24705
+  },
+  {
+   "id": "8225",
+   "name": "Daniel Bellinger",
+   "pos": "TE",
+   "team": "TEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE2",
+   "news": "Aug 9",
+   "news_ms": 1786290028229,
+   "adds": 24150
+  },
+  {
+   "id": "11571",
+   "name": "Isaiah Davis",
+   "pos": "RB",
+   "team": "NYJ",
+   "flag": "amber",
+   "why": "RB3 on the depth chart",
+   "injury": null,
+   "depth": "RB3",
+   "news": "Sep 12",
+   "news_ms": 1789180815654,
+   "adds": 22887
+  },
+  {
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 10",
+   "news_ms": 1789062903924,
+   "adds": 22731
+  },
+  {
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 12",
+   "news_ms": 1789228843916,
+   "adds": 22144
+  },
+  {
+   "id": "13533",
+   "name": "Barion Brown",
+   "pos": "WR",
+   "team": "NO",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "SWR4",
+   "news": "Sep 9",
+   "news_ms": 1788966926414,
+   "adds": 20178
   }
  ],
  "transactions": [
