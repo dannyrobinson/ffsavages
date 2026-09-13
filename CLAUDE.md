@@ -40,12 +40,14 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   week, `sub_start_time_eligibility=0` (the "Require AutoSub To Not Play Before Starter" toggle is off, so a sub
   may kick off before his starter), `sub_lock_if_starter_active=0` (the sub is released if the starter plays).
   Danny sets one in the Sleeper app (Swap Player → Set an AutoSub): a bench player allowed in the starter's slot who
-  is swapped in automatically if the starter is inactive at kickoff. Both players in a pair lock the moment EITHER
-  game kicks off, so a sub who plays earlier only covers a downgrade announced before his own kickoff; a Sunday- or
-  Monday-night starter needs a sub from the same or a later window. The public API does not show which subs a
+  is swapped in automatically at the STARTER's kickoff if he is inactive. Both players lock INTO the pair the moment
+  EITHER game kicks off, but the swap still fires later: with the start-time toggle off, a sub whose game is already
+  over goes in and his points count (Danny corrected this Sept 12; Sleeper added the toggle because some leagues
+  objected to exactly that). So an early-window sub is full cover for a night starter, ranked by projection, and the
+  pair just has to be set before the earlier kickoff. The public API does not show which subs a
   manager has set (that is the authenticated GraphQL `matchup_legs.subs`), so Danny records his in the app
   (Moves tab → Auto-subs card → kv `subs` via `api/subs`) and the advisor reads the note. Week 1 (Sept 11) he set
-  Shakir for Nabers; Shakir kicks off 10 AM PT, Nabers 5:20 PM PT (SNF), so that pair only covers an early downgrade.
+  Shakir for Nabers; Shakir kicks off 10 AM PT, Nabers 5:20 PM PT (SNF): full cover, as long as it was set before 10 AM.
 - Draft was Tue Sept 8 2026, 7 PM PT, 16 rounds. Danny picked 6, 19, 30, 43, 54, 67, 78, 91, 102, 115,
   126, 139, 150, 163, 174, 187.
 - Full notes and the strategy we used: `docs/league-context.md`. Injury flags as of Sept 8 are in
@@ -71,7 +73,7 @@ scheduled Claude cloud routine any more (the old "Robinsavages briefing" routine
   15–17 runs. Danny set the core of this Sept 11 after the advisor bid $43 on Kenny Gainwell in week 1 ("rich");
   the decay and dead zone came from the Sept 12 research.
   Flag injuries/suspensions on his own players red/amber/green. For every Questionable starter, name the auto-sub
-  to set (a bench player allowed in the slot who kicks off at the same time or later), unless his note says it is set.
+  to set (the best bench player allowed in the slot, any kickoff, before the earlier kickoff), unless his note says it is set.
 - He reads this on his phone. Short beats thorough.
 
 ## What's here

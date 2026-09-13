@@ -91,9 +91,13 @@ Rules, with verdicts:
 - **Questionable 71% / Doubtful 7% (supported; refreshed).** Footballguys 2017–24 (2,000+ injuries): Questionable
   played 70.7%, Doubtful 6.9%. Last practice day: full ≈ 86%, limited ≈ 71%, DNP ≈ 42%. A DNP-LP-FP week is a start;
   three DNPs is a coin flip.
-- **Late-window Questionable needs a late-window backup (supported).** Inactives land ~90 minutes before kickoff, after
-  every early-window bench player has locked. The auto-sub is the tool; Danny's week-1 pair (Shakir 10 AM for Nabers
-  5:20 PM) is the case it guards against.
+- **Late-window Questionable needs a backup (supported, but the backup is the auto-sub, whatever his kickoff).**
+  Inactives land ~90 minutes before kickoff, after every early-window bench player has locked, so a manual pivot is
+  impossible. Sleeper's AutoSub fires at the starter's kickoff, and because this league leaves "Require AutoSub To
+  Not Play Before Starter" off, a sub whose game is already over still goes in and his points count (Sleeper added
+  that toggle because some leagues objected to "swapping out a 4pm player for a 1pm player who already played").
+  So: set an auto-sub for every Questionable starter, ranked by projection, before the earlier of the two kickoffs;
+  Danny's week-1 pair (Shakir 10 AM for Nabers 5:20 PM) is full cover. Danny corrected our earlier reading on Sept 12.
 - **Only wind matters (partly).** Below 20 mph there is no measurable shift; at 20+ (3.7% of games) completions fall
   ~5 points, deep passes and field goals fall off (FG% −6–7), and ~8% more targets go to RBs; mobile QBs hold up.
   Snow: −7% completions, −110 pass yards, QB ≈ −4.4 expected points, RB +4.3. Rain: −3% completions, −2 attempts,
@@ -169,6 +173,7 @@ Sleeper mechanics
 - https://support.sleeper.com/en/articles/3978868-waivers-for-regular-season-playoffs — locks at kickoff, "Tue After Day", Thursday players, 2-day clearing.
 - https://support.sleeper.com/en/articles/12111984-suggested-faab-bids — the suggested-bid range (no methodology).
 - https://support.sleeper.com/en/articles/4238872-can-i-set-tiebreakers — seeding: record, points for, points against.
+- https://support.sleeper.com/en/articles/9731991-how-does-player-autosubs-work · https://sleeper.com/topic/170000000000000000/1129162286456852480 — AutoSubs: the swap fires at the starter's kickoff; the start-time toggle (off here) exists because early-game subs who already played otherwise count.
 
 FAAB
 - https://www.4for4.com/2025/preseason/ultimate-guide-waiver-wire-faab-strategy-2025 — bid sizing, odd bids, Irving/Kyren championship-roster rates.

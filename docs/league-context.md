@@ -14,11 +14,15 @@
 ## Auto-subs (Sleeper Player AutoSubs, researched Sept 11)
 On in this league: `max_subs=2` a week; `sub_start_time_eligibility=0` ("Require AutoSub To Not Play Before Starter" off);
 `sub_lock_if_starter_active=0` (sub released if the starter plays). Set in the app: Swap Player → Set an AutoSub, a bench
-player allowed in the starter's slot; he steps in automatically if the starter is inactive at kickoff. Both players lock
-when either game kicks off, so a sub who plays earlier only covers a downgrade announced before his own kickoff. The
-public API does not expose which subs are set (GraphQL `matchup_legs.subs` needs a login); Danny records his note in the
-app (kv `subs`). Week 1: Shakir (BUF, 10 AM PT) for Nabers (NYG, SNF 5:20 PM PT) — early cover only.
-Sources: support.sleeper.com "How does Player AutoSubs work?"; Sleeper's Sept 2024 AutoSub update on X.
+player allowed in the starter's slot; he steps in automatically at the STARTER's kickoff if the starter is inactive.
+Both players lock INTO the pair when either game kicks off (it can no longer be changed), but the swap still fires
+later: with the start-time toggle off, a sub whose game is already over goes in and his points count. Sleeper added
+the toggle because some leagues objected to "swapping out a 4pm player for a 1pm player who already played"; this
+league did not turn it on, so an early-window sub is full cover for a night starter (Danny corrected this Sept 12;
+our earlier note said the opposite). The pair must be set before the earlier of the two kickoffs. The public API
+does not expose which subs are set (GraphQL `matchup_legs.subs` needs a login); Danny records his note in the app
+(kv `subs`). Week 1: Shakir (BUF, 10 AM PT) for Nabers (NYG, SNF 5:20 PM PT) — full cover, set before 10 AM.
+Sources: support.sleeper.com "How does Player AutoSubs work?" (9731991); Sleeper's launch thread "a new way to manage game-time decisions" (topic 1129162286456852480) on why the start-time toggle exists; Sleeper's Sept 2024 AutoSub update on X.
 
 ## Draft position
 Slot 6. Picks: 6, 19, 30, 43, 54, 67, 78, 91, 102, 115, 126, 139, 150, 163, 174, 187.
