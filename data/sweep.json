@@ -1,6 +1,6 @@
 {
- "generated": "Sat Sep 12, 2026 9:25 AM PT",
- "generated_ms": 1789230308780,
+ "generated": "Sat Sep 12, 2026 5:01 PM PT",
+ "generated_ms": 1789257674177,
  "season": "2026",
  "week": 1,
  "faab_total": 150,
@@ -160,7 +160,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789161913780,
-   "slot": "BN"
+   "slot": "START"
   },
   {
    "id": "11581",
@@ -173,7 +173,7 @@
    "depth": "RB1",
    "news": "Sep 12",
    "news_ms": 1789171514766,
-   "slot": "BN"
+   "slot": "START"
   },
   {
    "id": "12512",
@@ -184,9 +184,9 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 3",
-   "news_ms": 1788449105184,
-   "slot": "START"
+   "news": "Sep 12",
+   "news_ms": 1789235144397,
+   "slot": "BN"
   },
   {
    "id": "5859",
@@ -238,7 +238,7 @@
    "depth": "LWR1",
    "news": "Sep 12",
    "news_ms": 1789229443810,
-   "slot": "START"
+   "slot": "BN"
   },
   {
    "id": "10213",
@@ -262,8 +262,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "TE1",
-   "news": "Sep 9",
-   "news_ms": 1788987345817,
+   "news": "Sep 12",
+   "news_ms": 1789246545436,
    "slot": "START"
   },
   {
@@ -306,7 +306,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789103416633,
-   "adds": 447104
+   "adds": 464387
   },
   {
    "id": "3286",
@@ -319,7 +319,7 @@
    "depth": "LWR6",
    "news": "Sep 12",
    "news_ms": 1789171515202,
-   "adds": 149700
+   "adds": 170094
   },
   {
    "id": "2505",
@@ -332,7 +332,7 @@
    "depth": "TE1",
    "news": "Sep 12",
    "news_ms": 1789216818818,
-   "adds": 100845
+   "adds": 71766
   },
   {
    "id": "11834",
@@ -343,9 +343,9 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "SWR2",
-   "news": "Sep 9",
-   "news_ms": 1788984645640,
-   "adds": 82320
+   "news": "Sep 12",
+   "news_ms": 1789245945296,
+   "adds": 66367
   },
   {
    "id": "13285",
@@ -358,46 +358,7 @@
    "depth": "RWR3",
    "news": "Sep 12",
    "news_ms": 1789229743847,
-   "adds": 44815
-  },
-  {
-   "id": "5854",
-   "name": "Drew Lock",
-   "pos": "QB",
-   "team": "SEA",
-   "flag": "red",
-   "why": "Not the starter (QB2)",
-   "injury": null,
-   "depth": "QB2",
-   "news": "Sep 10",
-   "news_ms": 1789084229446,
-   "adds": 40487
-  },
-  {
-   "id": "10235",
-   "name": "Roschon Johnson",
-   "pos": "RB",
-   "team": "CHI",
-   "flag": "amber",
-   "why": "RB3 on the depth chart",
-   "injury": null,
-   "depth": "RB3",
-   "news": "Sep 8",
-   "news_ms": 1788877549423,
-   "adds": 39320
-  },
-  {
-   "id": "4177",
-   "name": "Mack Hollins",
-   "pos": "WR",
-   "team": "NE",
-   "flag": "amber",
-   "why": "WR4 on the depth chart",
-   "injury": null,
-   "depth": "RWR4",
-   "news": "Sep 10",
-   "news_ms": 1789053904718,
-   "adds": 38358
+   "adds": 49630
   },
   {
    "id": "4035",
@@ -409,21 +370,8 @@
    "injury": "Questionable",
    "depth": "RB2",
    "news": "Sep 12",
-   "news_ms": 1789197019141,
-   "adds": 36896
-  },
-  {
-   "id": "9511",
-   "name": "Keaton Mitchell",
-   "pos": "RB",
-   "team": "LAC",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 11",
-   "news_ms": 1789163714488,
-   "adds": 36756
+   "news_ms": 1789243845189,
+   "adds": 40264
   },
   {
    "id": "13602",
@@ -436,20 +384,20 @@
    "depth": "QB4",
    "news": "Sep 11",
    "news_ms": 1789169415117,
-   "adds": 34605
+   "adds": 38800
   },
   {
-   "id": "4039",
-   "name": "Cooper Kupp",
-   "pos": "WR",
-   "team": "SEA",
+   "id": "9511",
+   "name": "Keaton Mitchell",
+   "pos": "RB",
+   "team": "LAC",
    "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "why": "RB2 on the depth chart",
    "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 10",
-   "news_ms": 1789067120814,
-   "adds": 30846
+   "depth": "RB2",
+   "news": "Sep 11",
+   "news_ms": 1789163714488,
+   "adds": 38088
   },
   {
    "id": "7090",
@@ -462,7 +410,46 @@
    "depth": "SWR2",
    "news": "Sep 8",
    "news_ms": 1788892850926,
-   "adds": 30132
+   "adds": 34623
+  },
+  {
+   "id": "4177",
+   "name": "Mack Hollins",
+   "pos": "WR",
+   "team": "NE",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "RWR4",
+   "news": "Sep 10",
+   "news_ms": 1789053904718,
+   "adds": 34359
+  },
+  {
+   "id": "2078",
+   "name": "Odell Beckham",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "LWR4",
+   "news": "Sep 12",
+   "news_ms": 1789230043874,
+   "adds": 29694
+  },
+  {
+   "id": "5854",
+   "name": "Drew Lock",
+   "pos": "QB",
+   "team": "SEA",
+   "flag": "red",
+   "why": "Not the starter (QB2)",
+   "injury": null,
+   "depth": "QB2",
+   "news": "Sep 10",
+   "news_ms": 1789084229446,
+   "adds": 27098
   },
   {
    "id": "13296",
@@ -475,7 +462,7 @@
    "depth": "RWR2",
    "news": "Sep 12",
    "news_ms": 1789214118477,
-   "adds": 28632
+   "adds": 25032
   },
   {
    "id": "3321",
@@ -488,33 +475,46 @@
    "depth": null,
    "news": "Sep 10",
    "news_ms": 1789069820372,
-   "adds": 27408
+   "adds": 23192
   },
   {
-   "id": "2078",
-   "name": "Odell Beckham",
-   "pos": "WR",
-   "team": "NYG",
+   "id": "10235",
+   "name": "Roschon Johnson",
+   "pos": "RB",
+   "team": "CHI",
    "flag": "amber",
-   "why": "WR4 on the depth chart",
+   "why": "RB3 on the depth chart",
    "injury": null,
-   "depth": "LWR4",
-   "news": "Sep 6",
-   "news_ms": 1788709230912,
-   "adds": 26985
+   "depth": "RB3",
+   "news": "Sep 8",
+   "news_ms": 1788877549423,
+   "adds": 22456
   },
   {
-   "id": "12487",
-   "name": "Terrance Ferguson",
-   "pos": "TE",
-   "team": "LAR",
-   "flag": "green",
-   "why": "Healthy, starting",
+   "id": "13424",
+   "name": "Seth McGowan",
+   "pos": "RB",
+   "team": "IND",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
    "injury": null,
-   "depth": "TE1",
-   "news": "Sep 11",
-   "news_ms": 1789170915103,
-   "adds": 25520
+   "depth": "RB2",
+   "news": "Sep 10",
+   "news_ms": 1789057803708,
+   "adds": 22160
+  },
+  {
+   "id": "4039",
+   "name": "Cooper Kupp",
+   "pos": "WR",
+   "team": "SEA",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 10",
+   "news_ms": 1789067120814,
+   "adds": 21960
   },
   {
    "id": "8111",
@@ -527,7 +527,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789163413962,
-   "adds": 25416
+   "adds": 21684
   },
   {
    "id": "9486",
@@ -540,7 +540,7 @@
    "depth": "RWR2",
    "news": "Sep 10",
    "news_ms": 1789062903924,
-   "adds": 23094
+   "adds": 20991
   },
   {
    "id": "9225",
@@ -553,7 +553,7 @@
    "depth": "RB2",
    "news": "Sep 9",
    "news_ms": 1788970534035,
-   "adds": 22099
+   "adds": 20958
   }
  ],
  "transactions": [
