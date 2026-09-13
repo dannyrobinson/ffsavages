@@ -189,8 +189,9 @@ those off. The goal it optimises for is the most fantasy points Danny's lineup c
 2. The GitHub Action (`pages.yml`) runs at 3:45, 13:45 and 19:45 UTC (15 min before each routine run): sweeps,
    fetches `api/context?fresh=1` into `data/context.json`, commits both, deploys Pages.
 3. The cloud routine "Robinsavages advisor" (claude.ai/code/routines, Sonnet 5 on Danny's subscription) runs at
-   4, 14 and 20 UTC (9 PM, 7 AM, 1 PM PT while PDT holds): tries `curl api/context`, falls back to the committed
-   `data/context.json` (its sandbox cannot reach Vercel or Sleeper by default), researches with WebSearch (≤ 8),
+   4, 14 and 20 UTC (9 PM, 7 AM, 1 PM PT while PDT holds): curls `api/context` live (verified Sept 13: the sandbox
+   reaches the Vercel app, though not api.sleeper.app), falls back to the committed `data/context.json` if that
+   ever fails, researches with WebSearch (≤ 8; the first run used 4 and took 190 s),
    writes `data/advice.json` (the schema plus `ts` and `week`), commits "Advice: …" and pushes to main. The checker
    picks it up within 15 min (raw GitHub caches ~5 min; the fetch is cache-busted).
 4. Cost: nothing on the API. Until Sept 13 the API advisor ran hourly plus on every checker change ($0.60–0.70 a
