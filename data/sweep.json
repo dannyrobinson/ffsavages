@@ -1,6 +1,6 @@
 {
- "generated": "Sun Sep 13, 2026 12:57 PM PT",
- "generated_ms": 1789329450347,
+ "generated": "Sun Sep 13, 2026 1:12 PM PT",
+ "generated_ms": 1789330362461,
  "season": "2026",
  "week": 1,
  "faab_total": 150,
@@ -306,33 +306,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789103416633,
-   "adds": 217777
-  },
-  {
-   "id": "3286",
-   "name": "Demarcus Robinson",
-   "pos": "WR",
-   "team": "SF",
-   "flag": "amber",
-   "why": "WR6 on the depth chart",
-   "injury": null,
-   "depth": "LWR6",
-   "news": "Sep 12",
-   "news_ms": 1789171515202,
-   "adds": 119046
-  },
-  {
-   "id": "13285",
-   "name": "Malachi Fields",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "RWR3",
-   "news": "Sep 12",
-   "news_ms": 1789229743847,
-   "adds": 118880
+   "adds": 220066
   },
   {
    "id": "11834",
@@ -345,7 +319,33 @@
    "depth": "SWR2",
    "news": "Sep 12",
    "news_ms": 1789245945296,
-   "adds": 110985
+   "adds": 128835
+  },
+  {
+   "id": "13285",
+   "name": "Malachi Fields",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "RWR3",
+   "news": "Sep 12",
+   "news_ms": 1789229743847,
+   "adds": 120580
+  },
+  {
+   "id": "3286",
+   "name": "Demarcus Robinson",
+   "pos": "WR",
+   "team": "SF",
+   "flag": "amber",
+   "why": "WR6 on the depth chart",
+   "injury": null,
+   "depth": "LWR6",
+   "news": "Sep 12",
+   "news_ms": 1789171515202,
+   "adds": 119910
   },
   {
    "id": "7090",
@@ -358,20 +358,7 @@
    "depth": "SWR2",
    "news": "Sep 8",
    "news_ms": 1788892850926,
-   "adds": 89901
-  },
-  {
-   "id": "2505",
-   "name": "Darren Waller",
-   "pos": "TE",
-   "team": "CAR",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 13",
-   "news_ms": 1789318854490,
-   "adds": 71613
+   "adds": 91206
   },
   {
    "id": "9511",
@@ -384,7 +371,20 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789163714488,
-   "adds": 71532
+   "adds": 72666
+  },
+  {
+   "id": "2505",
+   "name": "Darren Waller",
+   "pos": "TE",
+   "team": "CAR",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 13",
+   "news_ms": 1789318854490,
+   "adds": 71856
   },
   {
    "id": "4993",
@@ -397,7 +397,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789154412932,
-   "adds": 65492
+   "adds": 70776
   },
   {
    "id": "2078",
@@ -410,7 +410,7 @@
    "depth": "LWR4",
    "news": "Sep 12",
    "news_ms": 1789230043874,
-   "adds": 62503
+   "adds": 63077
   },
   {
    "id": "13602",
@@ -423,20 +423,7 @@
    "depth": "QB4",
    "news": "Sep 11",
    "news_ms": 1789169415117,
-   "adds": 51490
-  },
-  {
-   "id": "13424",
-   "name": "Seth McGowan",
-   "pos": "RB",
-   "team": "IND",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 10",
-   "news_ms": 1789057803708,
-   "adds": 40872
+   "adds": 51580
   },
   {
    "id": "13330",
@@ -449,7 +436,20 @@
    "depth": "TE2",
    "news": "Sep 11",
    "news_ms": 1789158613342,
-   "adds": 40140
+   "adds": 41094
+  },
+  {
+   "id": "13424",
+   "name": "Seth McGowan",
+   "pos": "RB",
+   "team": "IND",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 10",
+   "news_ms": 1789057803708,
+   "adds": 41040
   },
   {
    "id": "13296",
@@ -462,7 +462,7 @@
    "depth": "RWR2",
    "news": "Sep 12",
    "news_ms": 1789214118477,
-   "adds": 29536
+   "adds": 30008
   },
   {
    "id": "8111",
@@ -475,7 +475,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789163413962,
-   "adds": 27960
+   "adds": 28062
   },
   {
    "id": "4177",
@@ -488,7 +488,7 @@
    "depth": "RWR4",
    "news": "Sep 10",
    "news_ms": 1789053904718,
-   "adds": 27357
+   "adds": 27555
   },
   {
    "id": "9225",
@@ -501,7 +501,7 @@
    "depth": "RB2",
    "news": "Sep 9",
    "news_ms": 1788970534035,
-   "adds": 26761
+   "adds": 27202
   },
   {
    "id": "11625",
@@ -514,33 +514,7 @@
    "depth": "RWR2",
    "news": "Sep 12",
    "news_ms": 1789228843916,
-   "adds": 25336
-  },
-  {
-   "id": "11237",
-   "name": "Jacob Saylors",
-   "pos": "RB",
-   "team": "DET",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 12",
-   "news_ms": 1789222519440,
-   "adds": 23885
-  },
-  {
-   "id": "8225",
-   "name": "Daniel Bellinger",
-   "pos": "TE",
-   "team": "TEN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE2",
-   "news": "Aug 9",
-   "news_ms": 1786290028229,
-   "adds": 23877
+   "adds": 25480
   },
   {
    "id": "9486",
@@ -553,7 +527,33 @@
    "depth": "RWR2",
    "news": "Sep 10",
    "news_ms": 1789062903924,
-   "adds": 23646
+   "adds": 23961
+  },
+  {
+   "id": "11237",
+   "name": "Jacob Saylors",
+   "pos": "RB",
+   "team": "DET",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 12",
+   "news_ms": 1789222519440,
+   "adds": 23900
+  },
+  {
+   "id": "8225",
+   "name": "Daniel Bellinger",
+   "pos": "TE",
+   "team": "TEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE2",
+   "news": "Aug 9",
+   "news_ms": 1786290028229,
+   "adds": 23884
   }
  ],
  "transactions": [
@@ -954,8 +954,8 @@
     "news_ms": null
    }
   ],
-  "my_points": 123.0,
-  "their_points": 107.2
+  "my_points": 135.92,
+  "their_points": 108.1
  },
  "qb_depth": [
   {
