@@ -31,14 +31,21 @@ jobs:
       - name: Sweep Sleeper and bake the app
         run: python3 scripts/build.py
       - name: Fetch the advisor's prompt from the Vercel app (for the cloud routine)
-        run: curl -sf --max-time 150 "https://robinsavages.vercel.app/api/context?fresh=1" -o data/context.json && python3 -c "import json; d=json.load(open('data/context.json')); assert d['ok'], d" || { echo "context fetch failed; keeping the previous one"; git checkout -- data/context.json 2>/dev/null || true; }
+        run: |
+          for i in 1 2 3 4; do
+            if curl -sf --max-time 150 "https://robinsavages.vercel.app/api/context?fresh=1" -o data/context.new && python3 -c "import json; d=json.load(open('data/context.new')); assert d['ok'], d"; then
+              mv data/context.new data/context.json; echo "context fetched"; break
+            fi
+            echo "context fetch failed (try $i)"; rm -f data/context.new; sleep 20
+          done
       - name: Show the sweep
         run: cat data/sweep.md
       - name: Commit the sweep (the offline fallback baked into the page)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sweep.json data/sweep.md data/context.json
+          git add data/sweep.json data/sweep.md
+          [ -f data/context.json ] && git add data/context.json
           if git diff --cached --quiet; then echo "sweep unchanged"; else
             git commit -m "Sweep: $(date -u +'%Y-%m-%d %H:%M UTC')"
             git pull --rebase --autostash origin main   # build.py rewrites app/gm.html in place
