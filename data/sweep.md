@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 1 · Sun Sep 13, 2026 12:56 PM PT
+# Sleeper sweep — Week 1 · Sun Sep 13, 2026 12:57 PM PT
 
 Record 0-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 
@@ -24,26 +24,26 @@ Record 0-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 - none
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- RB  Kaelon Black (SF) · 214,522 adds · RB2 · RB2 on the depth chart
-- WR  Demarcus Robinson (SF) · 117,828 adds · LWR6 · WR6 on the depth chart
-- WR  Malachi Fields (NYG) · 117,240 adds · RWR3 · WR3 on the depth chart
-- WR  Darnell Mooney (NYG) · 88,470 adds · SWR2 · Healthy, starting
-- WR  Devaughn Vele (NO) · 78,792 adds · SWR2 · Healthy, starting
-- TE  Darren Waller (CAR) · 71,334 adds · TE1 · Healthy, starting
-- RB  Keaton Mitchell (LAC) · 70,236 adds · RB2 · RB2 on the depth chart
-- WR  Odell Beckham (NYG) · 61,712 adds · LWR4 · WR4 on the depth chart
-- TE  Mike Gesicki (CIN) · 59,468 adds · TE1 · Healthy, starting
-- QB  Jack Strand (ATL) · 51,440 adds · QB4 · Not the starter (QB4)
-- RB  Seth McGowan (IND) · 40,840 adds · RB2 · RB2 on the depth chart
-- TE  Kenyon Sadiq (NYJ) · 38,610 adds · TE2 · Healthy, starting
-- WR  Caleb Douglas (MIA) · 29,104 adds · RWR2 · Healthy, starting
-- TE  Cade Otton (TB) · 27,816 adds · TE1 · Healthy, starting
-- WR  Mack Hollins (NE) · 27,168 adds · RWR4 · WR4 on the depth chart
-- RB  Tank Bigsby (PHI) · 26,404 adds · RB2 · RB2 on the depth chart
-- WR  Adonai Mitchell (NYJ) · 25,096 adds · RWR2 · Healthy, starting
-- RB  Jacob Saylors (DET) · 23,875 adds · RB2 · RB2 on the depth chart
-- TE  Daniel Bellinger (TEN) · 23,835 adds · TE2 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 23,358 adds · RWR2 · Healthy, starting
+- RB  Kaelon Black (SF) · 217,777 adds · RB2 · RB2 on the depth chart
+- WR  Demarcus Robinson (SF) · 119,046 adds · LWR6 · WR6 on the depth chart
+- WR  Malachi Fields (NYG) · 118,880 adds · RWR3 · WR3 on the depth chart
+- WR  Devaughn Vele (NO) · 110,985 adds · SWR2 · Healthy, starting
+- WR  Darnell Mooney (NYG) · 89,901 adds · SWR2 · Healthy, starting
+- TE  Darren Waller (CAR) · 71,613 adds · TE1 · Healthy, starting
+- RB  Keaton Mitchell (LAC) · 71,532 adds · RB2 · RB2 on the depth chart
+- TE  Mike Gesicki (CIN) · 65,492 adds · TE1 · Healthy, starting
+- WR  Odell Beckham (NYG) · 62,503 adds · LWR4 · WR4 on the depth chart
+- QB  Jack Strand (ATL) · 51,490 adds · QB4 · Not the starter (QB4)
+- RB  Seth McGowan (IND) · 40,872 adds · RB2 · RB2 on the depth chart
+- TE  Kenyon Sadiq (NYJ) · 40,140 adds · TE2 · Healthy, starting
+- WR  Caleb Douglas (MIA) · 29,536 adds · RWR2 · Healthy, starting
+- TE  Cade Otton (TB) · 27,960 adds · TE1 · Healthy, starting
+- WR  Mack Hollins (NE) · 27,357 adds · RWR4 · WR4 on the depth chart
+- RB  Tank Bigsby (PHI) · 26,761 adds · RB2 · RB2 on the depth chart
+- WR  Adonai Mitchell (NYJ) · 25,336 adds · RWR2 · Healthy, starting
+- RB  Jacob Saylors (DET) · 23,885 adds · RB2 · RB2 on the depth chart
+- TE  Daniel Bellinger (TEN) · 23,877 adds · TE2 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 23,646 adds · RWR2 · Healthy, starting
 
 ## League transactions, week 1
 - Robinsavages: waiver complete +['Kenny Gainwell'] -['Dalton Schultz'] ($5)

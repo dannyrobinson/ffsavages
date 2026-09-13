@@ -1,6 +1,6 @@
 {
- "generated": "Sun Sep 13, 2026 12:56 PM PT",
- "generated_ms": 1789329417103,
+ "generated": "Sun Sep 13, 2026 12:57 PM PT",
+ "generated_ms": 1789329450347,
  "season": "2026",
  "week": 1,
  "faab_total": 150,
@@ -306,7 +306,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789103416633,
-   "adds": 214522
+   "adds": 217777
   },
   {
    "id": "3286",
@@ -319,7 +319,7 @@
    "depth": "LWR6",
    "news": "Sep 12",
    "news_ms": 1789171515202,
-   "adds": 117828
+   "adds": 119046
   },
   {
    "id": "13285",
@@ -332,20 +332,7 @@
    "depth": "RWR3",
    "news": "Sep 12",
    "news_ms": 1789229743847,
-   "adds": 117240
-  },
-  {
-   "id": "7090",
-   "name": "Darnell Mooney",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR2",
-   "news": "Sep 8",
-   "news_ms": 1788892850926,
-   "adds": 88470
+   "adds": 118880
   },
   {
    "id": "11834",
@@ -358,7 +345,20 @@
    "depth": "SWR2",
    "news": "Sep 12",
    "news_ms": 1789245945296,
-   "adds": 78792
+   "adds": 110985
+  },
+  {
+   "id": "7090",
+   "name": "Darnell Mooney",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "SWR2",
+   "news": "Sep 8",
+   "news_ms": 1788892850926,
+   "adds": 89901
   },
   {
    "id": "2505",
@@ -371,7 +371,7 @@
    "depth": "TE1",
    "news": "Sep 13",
    "news_ms": 1789318854490,
-   "adds": 71334
+   "adds": 71613
   },
   {
    "id": "9511",
@@ -384,20 +384,7 @@
    "depth": "RB2",
    "news": "Sep 11",
    "news_ms": 1789163714488,
-   "adds": 70236
-  },
-  {
-   "id": "2078",
-   "name": "Odell Beckham",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "WR4 on the depth chart",
-   "injury": null,
-   "depth": "LWR4",
-   "news": "Sep 12",
-   "news_ms": 1789230043874,
-   "adds": 61712
+   "adds": 71532
   },
   {
    "id": "4993",
@@ -410,7 +397,20 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789154412932,
-   "adds": 59468
+   "adds": 65492
+  },
+  {
+   "id": "2078",
+   "name": "Odell Beckham",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "LWR4",
+   "news": "Sep 12",
+   "news_ms": 1789230043874,
+   "adds": 62503
   },
   {
    "id": "13602",
@@ -423,7 +423,7 @@
    "depth": "QB4",
    "news": "Sep 11",
    "news_ms": 1789169415117,
-   "adds": 51440
+   "adds": 51490
   },
   {
    "id": "13424",
@@ -436,7 +436,7 @@
    "depth": "RB2",
    "news": "Sep 10",
    "news_ms": 1789057803708,
-   "adds": 40840
+   "adds": 40872
   },
   {
    "id": "13330",
@@ -449,7 +449,7 @@
    "depth": "TE2",
    "news": "Sep 11",
    "news_ms": 1789158613342,
-   "adds": 38610
+   "adds": 40140
   },
   {
    "id": "13296",
@@ -462,7 +462,7 @@
    "depth": "RWR2",
    "news": "Sep 12",
    "news_ms": 1789214118477,
-   "adds": 29104
+   "adds": 29536
   },
   {
    "id": "8111",
@@ -475,7 +475,7 @@
    "depth": "TE1",
    "news": "Sep 11",
    "news_ms": 1789163413962,
-   "adds": 27816
+   "adds": 27960
   },
   {
    "id": "4177",
@@ -488,7 +488,7 @@
    "depth": "RWR4",
    "news": "Sep 10",
    "news_ms": 1789053904718,
-   "adds": 27168
+   "adds": 27357
   },
   {
    "id": "9225",
@@ -501,7 +501,7 @@
    "depth": "RB2",
    "news": "Sep 9",
    "news_ms": 1788970534035,
-   "adds": 26404
+   "adds": 26761
   },
   {
    "id": "11625",
@@ -514,7 +514,7 @@
    "depth": "RWR2",
    "news": "Sep 12",
    "news_ms": 1789228843916,
-   "adds": 25096
+   "adds": 25336
   },
   {
    "id": "11237",
@@ -527,7 +527,7 @@
    "depth": "RB2",
    "news": "Sep 12",
    "news_ms": 1789222519440,
-   "adds": 23875
+   "adds": 23885
   },
   {
    "id": "8225",
@@ -540,7 +540,7 @@
    "depth": "TE2",
    "news": "Aug 9",
    "news_ms": 1786290028229,
-   "adds": 23835
+   "adds": 23877
   },
   {
    "id": "9486",
@@ -553,7 +553,7 @@
    "depth": "RWR2",
    "news": "Sep 10",
    "news_ms": 1789062903924,
-   "adds": 23358
+   "adds": 23646
   }
  ],
  "transactions": [
