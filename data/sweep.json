@@ -1,6 +1,6 @@
 {
- "generated": "Mon Sep 14, 2026 1:14 PM PT",
- "generated_ms": 1789416874883,
+ "generated": "Mon Sep 14, 2026 3:45 PM PT",
+ "generated_ms": 1789425911161,
  "season": "2026",
  "week": 1,
  "faab_total": 150,
@@ -306,7 +306,7 @@
    "depth": "SWR2",
    "news": "Sep 14",
    "news_ms": 1789393504525,
-   "adds": 1045681
+   "adds": 1128463
   },
   {
    "id": "13296",
@@ -319,7 +319,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 389776
+   "adds": 444528
   },
   {
    "id": "13414",
@@ -332,7 +332,7 @@
    "depth": "RB2",
    "news": "Sep 14",
    "news_ms": 1789396503107,
-   "adds": 337750
+   "adds": 359758
   },
   {
    "id": "4993",
@@ -345,20 +345,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 326572
-  },
-  {
-   "id": "3161",
-   "name": "Carson Wentz",
-   "pos": "QB",
-   "team": "MIN",
-   "flag": "red",
-   "why": "Not the starter (QB3)",
-   "injury": null,
-   "depth": "QB3",
-   "news": "Sep 14",
-   "news_ms": 1789363561296,
-   "adds": 296856
+   "adds": 343776
   },
   {
    "id": "6130",
@@ -371,7 +358,20 @@
    "depth": "RB4",
    "news": "Sep 14",
    "news_ms": 1789386903701,
-   "adds": 290772
+   "adds": 334692
+  },
+  {
+   "id": "3161",
+   "name": "Carson Wentz",
+   "pos": "QB",
+   "team": "MIN",
+   "flag": "red",
+   "why": "Not the starter (QB3)",
+   "injury": null,
+   "depth": "QB3",
+   "news": "Sep 14",
+   "news_ms": 1789363561296,
+   "adds": 324156
   },
   {
    "id": "9486",
@@ -384,7 +384,7 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789401604194,
-   "adds": 192039
+   "adds": 202644
   },
   {
    "id": "13285",
@@ -396,8 +396,8 @@
    "injury": null,
    "depth": "RWR2",
    "news": "Sep 14",
-   "news_ms": 1789386303712,
-   "adds": 154540
+   "news_ms": 1789418706039,
+   "adds": 150405
   },
   {
    "id": "3286",
@@ -410,7 +410,7 @@
    "depth": "LWR6",
    "news": "Sep 12",
    "news_ms": 1789171515202,
-   "adds": 122994
+   "adds": 118374
   },
   {
    "id": "7090",
@@ -423,7 +423,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789386903735,
-   "adds": 101853
+   "adds": 97722
   },
   {
    "id": "13330",
@@ -436,7 +436,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 89856
+   "adds": 94860
   },
   {
    "id": "3634",
@@ -449,7 +449,20 @@
    "depth": "SWR5",
    "news": "Sep 14",
    "news_ms": 1789394704925,
-   "adds": 74340
+   "adds": 79660
+  },
+  {
+   "id": "4454",
+   "name": "Kendrick Bourne",
+   "pos": "WR",
+   "team": "ARI",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 14",
+   "news_ms": 1789417805639,
+   "adds": 74067
   },
   {
    "id": "2078",
@@ -462,46 +475,7 @@
    "depth": "LWR5",
    "news": "Sep 14",
    "news_ms": 1789386903685,
-   "adds": 70777
-  },
-  {
-   "id": "4454",
-   "name": "Kendrick Bourne",
-   "pos": "WR",
-   "team": "ARI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789389003884,
-   "adds": 66708
-  },
-  {
-   "id": "9511",
-   "name": "Keaton Mitchell",
-   "pos": "RB",
-   "team": "LAC",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 14",
-   "news_ms": 1789415705111,
-   "adds": 60039
-  },
-  {
-   "id": "2505",
-   "name": "Darren Waller",
-   "pos": "TE",
-   "team": "CAR",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789396204472,
-   "adds": 59517
+   "adds": 67249
   },
   {
    "id": "6826",
@@ -514,7 +488,33 @@
    "depth": "TE2",
    "news": "Sep 14",
    "news_ms": 1789394704906,
-   "adds": 59130
+   "adds": 61200
+  },
+  {
+   "id": "9511",
+   "name": "Keaton Mitchell",
+   "pos": "RB",
+   "team": "LAC",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 14",
+   "news_ms": 1789415705111,
+   "adds": 56925
+  },
+  {
+   "id": "2505",
+   "name": "Darren Waller",
+   "pos": "TE",
+   "team": "CAR",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789396204472,
+   "adds": 55404
   },
   {
    "id": "12492",
@@ -527,7 +527,7 @@
    "depth": "SWR3",
    "news": "Sep 13",
    "news_ms": 1789278348657,
-   "adds": 51328
+   "adds": 54448
   },
   {
    "id": "12501",
@@ -540,20 +540,20 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789362960844,
-   "adds": 45612
+   "adds": 50470
   },
   {
-   "id": "13602",
-   "name": "Jack Strand",
-   "pos": "QB",
-   "team": "ATL",
-   "flag": "red",
-   "why": "Not the starter (QB4)",
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "QB4",
-   "news": "Sep 11",
-   "news_ms": 1789169415117,
-   "adds": 40535
+   "depth": "RWR2",
+   "news": "Sep 14",
+   "news_ms": 1789419005737,
+   "adds": 32816
   }
  ],
  "transactions": [
