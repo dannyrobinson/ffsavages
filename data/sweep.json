@@ -1,6 +1,6 @@
 {
- "generated": "Mon Sep 14, 2026 11:52 AM PT",
- "generated_ms": 1789411966855,
+ "generated": "Mon Sep 14, 2026 1:14 PM PT",
+ "generated_ms": 1789416874883,
  "season": "2026",
  "week": 1,
  "faab_total": 150,
@@ -250,7 +250,7 @@
    "injury": null,
    "depth": "LWR1",
    "news": "Sep 14",
-   "news_ms": 1789400104891,
+   "news_ms": 1789414204979,
    "slot": "BN"
   },
   {
@@ -306,7 +306,7 @@
    "depth": "SWR2",
    "news": "Sep 14",
    "news_ms": 1789393504525,
-   "adds": 997766
+   "adds": 1045681
   },
   {
    "id": "13296",
@@ -319,7 +319,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 359992
+   "adds": 389776
   },
   {
    "id": "13414",
@@ -332,7 +332,7 @@
    "depth": "RB2",
    "news": "Sep 14",
    "news_ms": 1789396503107,
-   "adds": 325836
+   "adds": 337750
   },
   {
    "id": "4993",
@@ -345,7 +345,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 315784
+   "adds": 326572
   },
   {
    "id": "3161",
@@ -358,7 +358,7 @@
    "depth": "QB3",
    "news": "Sep 14",
    "news_ms": 1789363561296,
-   "adds": 280710
+   "adds": 296856
   },
   {
    "id": "6130",
@@ -371,7 +371,7 @@
    "depth": "RB4",
    "news": "Sep 14",
    "news_ms": 1789386903701,
-   "adds": 266535
+   "adds": 290772
   },
   {
    "id": "9486",
@@ -384,7 +384,7 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789401604194,
-   "adds": 185763
+   "adds": 192039
   },
   {
    "id": "13285",
@@ -397,7 +397,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789386303712,
-   "adds": 156380
+   "adds": 154540
   },
   {
    "id": "3286",
@@ -410,7 +410,7 @@
    "depth": "LWR6",
    "news": "Sep 12",
    "news_ms": 1789171515202,
-   "adds": 124536
+   "adds": 122994
   },
   {
    "id": "7090",
@@ -423,7 +423,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789386903735,
-   "adds": 103599
+   "adds": 101853
   },
   {
    "id": "13330",
@@ -436,20 +436,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 86751
-  },
-  {
-   "id": "2078",
-   "name": "Odell Beckham",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "WR5 on the depth chart",
-   "injury": null,
-   "depth": "LWR5",
-   "news": "Sep 14",
-   "news_ms": 1789386903685,
-   "adds": 72198
+   "adds": 89856
   },
   {
    "id": "3634",
@@ -462,7 +449,20 @@
    "depth": "SWR5",
    "news": "Sep 14",
    "news_ms": 1789394704925,
-   "adds": 70970
+   "adds": 74340
+  },
+  {
+   "id": "2078",
+   "name": "Odell Beckham",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR5 on the depth chart",
+   "injury": null,
+   "depth": "LWR5",
+   "news": "Sep 14",
+   "news_ms": 1789386903685,
+   "adds": 70777
   },
   {
    "id": "4454",
@@ -475,7 +475,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789389003884,
-   "adds": 63267
+   "adds": 66708
   },
   {
    "id": "9511",
@@ -487,8 +487,8 @@
    "injury": null,
    "depth": "RB2",
    "news": "Sep 14",
-   "news_ms": 1789394104466,
-   "adds": 61677
+   "news_ms": 1789415705111,
+   "adds": 60039
   },
   {
    "id": "2505",
@@ -501,7 +501,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789396204472,
-   "adds": 60921
+   "adds": 59517
   },
   {
    "id": "6826",
@@ -514,7 +514,7 @@
    "depth": "TE2",
    "news": "Sep 14",
    "news_ms": 1789394704906,
-   "adds": 57843
+   "adds": 59130
   },
   {
    "id": "12492",
@@ -527,7 +527,7 @@
    "depth": "SWR3",
    "news": "Sep 13",
    "news_ms": 1789278348657,
-   "adds": 49560
+   "adds": 51328
   },
   {
    "id": "12501",
@@ -540,7 +540,7 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789362960844,
-   "adds": 42434
+   "adds": 45612
   },
   {
    "id": "13602",
@@ -553,7 +553,7 @@
    "depth": "QB4",
    "news": "Sep 11",
    "news_ms": 1789169415117,
-   "adds": 41185
+   "adds": 40535
   }
  ],
  "transactions": [
