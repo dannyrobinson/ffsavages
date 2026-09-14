@@ -1,6 +1,6 @@
 {
- "generated": "Mon Sep 14, 2026 7:15 AM PT",
- "generated_ms": 1789395303366,
+ "generated": "Mon Sep 14, 2026 11:52 AM PT",
+ "generated_ms": 1789411966855,
  "season": "2026",
  "week": 1,
  "faab_total": 150,
@@ -120,7 +120,7 @@
    "injury": null,
    "depth": "QB1",
    "news": "Sep 14",
-   "news_ms": 1789351258946,
+   "news_ms": 1789399505153,
    "slot": "BN"
   },
   {
@@ -224,7 +224,7 @@
    "injury": null,
    "depth": "SWR2",
    "news": "Sep 14",
-   "news_ms": 1789347658654,
+   "news_ms": 1789409104763,
    "slot": "BN"
   },
   {
@@ -237,7 +237,7 @@
    "injury": null,
    "depth": "LWR1",
    "news": "Sep 14",
-   "news_ms": 1789385103342,
+   "news_ms": 1789396803294,
    "slot": "START"
   },
   {
@@ -250,7 +250,7 @@
    "injury": null,
    "depth": "LWR1",
    "news": "Sep 14",
-   "news_ms": 1789353359425,
+   "news_ms": 1789400104891,
    "slot": "BN"
   },
   {
@@ -275,8 +275,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "K1",
-   "news": "Sep 12",
-   "news_ms": 1789180815655,
+   "news": "Sep 14",
+   "news_ms": 1789400404015,
    "slot": "START"
   },
   {
@@ -306,33 +306,7 @@
    "depth": "SWR2",
    "news": "Sep 14",
    "news_ms": 1789393504525,
-   "adds": 810292
-  },
-  {
-   "id": "13414",
-   "name": "Kaelon Black",
-   "pos": "RB",
-   "team": "SF",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 11",
-   "news_ms": 1789103416633,
-   "adds": 292103
-  },
-  {
-   "id": "4993",
-   "name": "Mike Gesicki",
-   "pos": "TE",
-   "team": "CIN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789361460464,
-   "adds": 270924
+   "adds": 997766
   },
   {
    "id": "13296",
@@ -344,8 +318,34 @@
    "injury": null,
    "depth": "RWR2",
    "news": "Sep 14",
-   "news_ms": 1789356659384,
-   "adds": 252936
+   "news_ms": 1789399803938,
+   "adds": 359992
+  },
+  {
+   "id": "13414",
+   "name": "Kaelon Black",
+   "pos": "RB",
+   "team": "SF",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 14",
+   "news_ms": 1789396503107,
+   "adds": 325836
+  },
+  {
+   "id": "4993",
+   "name": "Mike Gesicki",
+   "pos": "TE",
+   "team": "CIN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789398903824,
+   "adds": 315784
   },
   {
    "id": "3161",
@@ -358,7 +358,7 @@
    "depth": "QB3",
    "news": "Sep 14",
    "news_ms": 1789363561296,
-   "adds": 220764
+   "adds": 280710
   },
   {
    "id": "6130",
@@ -371,7 +371,7 @@
    "depth": "RB4",
    "news": "Sep 14",
    "news_ms": 1789386903701,
-   "adds": 180243
+   "adds": 266535
   },
   {
    "id": "9486",
@@ -383,8 +383,8 @@
    "injury": null,
    "depth": "RWR3",
    "news": "Sep 14",
-   "news_ms": 1789350658621,
-   "adds": 162537
+   "news_ms": 1789401604194,
+   "adds": 185763
   },
   {
    "id": "13285",
@@ -397,7 +397,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789386303712,
-   "adds": 161405
+   "adds": 156380
   },
   {
    "id": "3286",
@@ -410,7 +410,7 @@
    "depth": "LWR6",
    "news": "Sep 12",
    "news_ms": 1789171515202,
-   "adds": 126024
+   "adds": 124536
   },
   {
    "id": "7090",
@@ -423,7 +423,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789386903735,
-   "adds": 108099
+   "adds": 103599
   },
   {
    "id": "13330",
@@ -435,8 +435,8 @@
    "injury": null,
    "depth": "TE1",
    "news": "Sep 14",
-   "news_ms": 1789347058215,
-   "adds": 76932
+   "news_ms": 1789411204698,
+   "adds": 86751
   },
   {
    "id": "2078",
@@ -449,33 +449,7 @@
    "depth": "LWR5",
    "news": "Sep 14",
    "news_ms": 1789386903685,
-   "adds": 76048
-  },
-  {
-   "id": "9511",
-   "name": "Keaton Mitchell",
-   "pos": "RB",
-   "team": "LAC",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 14",
-   "news_ms": 1789394104466,
-   "adds": 66852
-  },
-  {
-   "id": "2505",
-   "name": "Darren Waller",
-   "pos": "TE",
-   "team": "CAR",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789354859427,
-   "adds": 64647
+   "adds": 72198
   },
   {
    "id": "3634",
@@ -487,21 +461,8 @@
    "injury": null,
    "depth": "SWR5",
    "news": "Sep 14",
-   "news_ms": 1789345258047,
-   "adds": 58478
-  },
-  {
-   "id": "6826",
-   "name": "Cole Kmet",
-   "pos": "TE",
-   "team": "CHI",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE2",
-   "news": "Sep 14",
-   "news_ms": 1789346758152,
-   "adds": 52641
+   "news_ms": 1789394704925,
+   "adds": 70970
   },
   {
    "id": "4454",
@@ -514,20 +475,46 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789389003884,
-   "adds": 49737
+   "adds": 63267
   },
   {
-   "id": "13602",
-   "name": "Jack Strand",
-   "pos": "QB",
-   "team": "ATL",
-   "flag": "red",
-   "why": "Not the starter (QB4)",
+   "id": "9511",
+   "name": "Keaton Mitchell",
+   "pos": "RB",
+   "team": "LAC",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
    "injury": null,
-   "depth": "QB4",
-   "news": "Sep 11",
-   "news_ms": 1789169415117,
-   "adds": 43650
+   "depth": "RB2",
+   "news": "Sep 14",
+   "news_ms": 1789394104466,
+   "adds": 61677
+  },
+  {
+   "id": "2505",
+   "name": "Darren Waller",
+   "pos": "TE",
+   "team": "CAR",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789396204472,
+   "adds": 60921
+  },
+  {
+   "id": "6826",
+   "name": "Cole Kmet",
+   "pos": "TE",
+   "team": "CHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE2",
+   "news": "Sep 14",
+   "news_ms": 1789394704906,
+   "adds": 57843
   },
   {
    "id": "12492",
@@ -540,20 +527,33 @@
    "depth": "SWR3",
    "news": "Sep 13",
    "news_ms": 1789278348657,
-   "adds": 43296
+   "adds": 49560
   },
   {
-   "id": "13424",
-   "name": "Seth McGowan",
-   "pos": "RB",
-   "team": "IND",
+   "id": "12501",
+   "name": "Matthew Golden",
+   "pos": "WR",
+   "team": "GB",
    "flag": "amber",
-   "why": "RB3 on the depth chart",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "RB3",
-   "news": "Sep 13",
-   "news_ms": 1789339558095,
-   "adds": 37648
+   "depth": "RWR3",
+   "news": "Sep 14",
+   "news_ms": 1789362960844,
+   "adds": 42434
+  },
+  {
+   "id": "13602",
+   "name": "Jack Strand",
+   "pos": "QB",
+   "team": "ATL",
+   "flag": "red",
+   "why": "Not the starter (QB4)",
+   "injury": null,
+   "depth": "QB4",
+   "news": "Sep 11",
+   "news_ms": 1789169415117,
+   "adds": 41185
   }
  ],
  "transactions": [
@@ -866,8 +866,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "LWR1",
-    "news": "Sep 13",
-    "news_ms": 1789338357080
+    "news": "Sep 14",
+    "news_ms": 1789397105039
    },
    {
     "id": "5927",
