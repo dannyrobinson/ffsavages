@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 1 · Mon Sep 14, 2026 2:16 AM PT
+# Sleeper sweep — Week 1 · Mon Sep 14, 2026 7:15 AM PT
 
 Record 0-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 
@@ -7,9 +7,9 @@ Record 0-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 - GREEN QB  Joe Burrow (CIN, START) — Healthy, starting · news Sep 14
 - GREEN QB  Malik Willis (MIA, BN) — Healthy, starting · news Sep 14
 - GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 14
-- GREEN RB  Jaylen Warren (PIT, START) — Healthy, starting · news Sep 13
+- GREEN RB  Jaylen Warren (PIT, START) — Healthy, starting · news Sep 14
 - AMBER RB  Kenny Gainwell (TB, START) — RB2 on the depth chart · news Sep 14
-- GREEN RB  MarShawn Lloyd (GB, BN) — Healthy, starting · news Sep 14
+- AMBER RB  MarShawn Lloyd (GB, BN) — RB2 on the depth chart · news Sep 14
 - GREEN RB  Quinshon Judkins (CLE, BN) — Healthy, starting · news Sep 14
 - RED   WR  A.J. Brown (NE, START) — IR · Ankle · Sprain · news Sep 13
 - GREEN WR  Jaylen Waddle (DEN, START) — Healthy, starting · news Sep 13
@@ -24,26 +24,26 @@ Record 0-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 - none
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- WR  Devaughn Vele (NO) · 678,020 adds · SWR2 · Healthy, starting
-- RB  Kaelon Black (SF) · 270,585 adds · RB2 · RB2 on the depth chart
-- TE  Mike Gesicki (CIN) · 238,948 adds · TE1 · Healthy, starting
-- WR  Caleb Douglas (MIA) · 205,824 adds · RWR2 · Healthy, starting
-- QB  Carson Wentz (MIN) · 181,014 adds · QB2 · Not the starter (QB2)
-- WR  Malachi Fields (NYG) · 162,385 adds · RWR3 · WR3 on the depth chart
-- WR  Dontayvion Wicks (PHI) · 148,617 adds · RWR2 · Healthy, starting
-- WR  Demarcus Robinson (SF) · 124,698 adds · LWR6 · WR6 on the depth chart
-- RB  Devin Singletary (NYG) · 123,975 adds · RB4 · RB4 on the depth chart
-- WR  Darnell Mooney (NYG) · 109,296 adds · SWR2 · Healthy, starting
-- WR  Odell Beckham (NYG) · 76,958 adds · LWR4 · WR4 on the depth chart
-- TE  Kenyon Sadiq (NYJ) · 70,173 adds · TE2 · Healthy, starting
-- RB  Keaton Mitchell (LAC) · 68,166 adds · RB2 · RB2 on the depth chart
-- TE  Darren Waller (CAR) · 65,673 adds · TE1 · Healthy, starting
-- TE  Cole Kmet (CHI) · 48,690 adds · TE2 · Healthy, starting
-- WR  Kalif Raymond (CHI) · 48,496 adds · SWR3 · WR3 on the depth chart
-- QB  Jack Strand (ATL) · 44,955 adds · QB4 · Not the starter (QB4)
-- WR  Kendrick Bourne (ARI) · 41,163 adds · SWR3 · WR3 on the depth chart
-- WR  Pat Bryant (DEN) · 39,360 adds · SWR3 · WR3 on the depth chart
-- RB  Seth McGowan (IND) · 38,400 adds · RB2 · RB2 on the depth chart
+- WR  Devaughn Vele (NO) · 810,292 adds · SWR2 · Healthy, starting
+- RB  Kaelon Black (SF) · 292,103 adds · RB2 · RB2 on the depth chart
+- TE  Mike Gesicki (CIN) · 270,924 adds · TE1 · Healthy, starting
+- WR  Caleb Douglas (MIA) · 252,936 adds · RWR2 · Healthy, starting
+- QB  Carson Wentz (MIN) · 220,764 adds · QB3 · Not the starter (QB3)
+- RB  Devin Singletary (NYG) · 180,243 adds · RB4 · RB4 on the depth chart
+- WR  Dontayvion Wicks (PHI) · 162,537 adds · RWR3 · WR3 on the depth chart
+- WR  Malachi Fields (NYG) · 161,405 adds · RWR2 · Healthy, starting
+- WR  Demarcus Robinson (SF) · 126,024 adds · LWR6 · WR6 on the depth chart
+- WR  Darnell Mooney (NYG) · 108,099 adds · SWR3 · WR3 on the depth chart
+- TE  Kenyon Sadiq (NYJ) · 76,932 adds · TE1 · Healthy, starting
+- WR  Odell Beckham (NYG) · 76,048 adds · LWR5 · WR5 on the depth chart
+- RB  Keaton Mitchell (LAC) · 66,852 adds · RB2 · RB2 on the depth chart
+- TE  Darren Waller (CAR) · 64,647 adds · TE1 · Healthy, starting
+- WR  Kalif Raymond (CHI) · 58,478 adds · SWR5 · WR5 on the depth chart
+- TE  Cole Kmet (CHI) · 52,641 adds · TE2 · Healthy, starting
+- WR  Kendrick Bourne (ARI) · 49,737 adds · SWR3 · WR3 on the depth chart
+- QB  Jack Strand (ATL) · 43,650 adds · QB4 · Not the starter (QB4)
+- WR  Pat Bryant (DEN) · 43,296 adds · SWR3 · WR3 on the depth chart
+- RB  Seth McGowan (IND) · 37,648 adds · RB3 · RB3 on the depth chart
 
 ## League transactions, week 1
 - Robinsavages: waiver complete +['Kenny Gainwell'] -['Dalton Schultz'] ($5)
