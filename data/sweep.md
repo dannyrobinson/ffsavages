@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 2 · Mon Sep 14, 2026 10:00 PM PT
+# Sleeper sweep — Week 2 · Mon Sep 14, 2026 10:07 PM PT
 
 Record 1-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 
