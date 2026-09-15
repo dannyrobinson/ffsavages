@@ -116,7 +116,9 @@ those off. The goal it optimises for is the most fantasy points Danny's lineup c
   unowned), `bid`, `note` (Sleeper's reason on a failed claim) and `faab_moved` (budget traded); `lineup`
   (current starters vs the best lineup by projection from `lib/lineup.js`, locked players fixed in place,
   red/Out/Doubtful excluded; `start`/`sit` name the swaps); `faab_total/used/left`, `faab_min_bid`,
-  `faab_teams` (every team's budget left in priority order), `waiver_run` (next 12:05 AM Wed PT); every
+  `faab_teams` (every team's budget left in priority order), `teams` (all 12 rosters for the trade view:
+  starters by slot, bench and IR as plain strings, plus record, points for, points this week, FAAB left and a
+  positional count each; the advisor gets the counts, bench and IR), `waiver_run` (next 12:05 AM Wed PT); every
   free-agent row carries `waivers` (text: on waivers until when) and `claim_at`, or null = add now; every
   row carries `bye`; `byes` (Danny's active players on bye in the next 5 weeks, with a QB count), `qb_byes`,
   `def` (his unit this week and next, best free-agent units for both weeks, from `projections` week+1));

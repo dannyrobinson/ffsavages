@@ -86,9 +86,10 @@ def main(write=True):
     settings = mine.get("settings") or {}
     # FAAB: the league's budget and minimum bid, and what every team has left (priority only breaks tied bids)
     try:
-        ls = S.get(f"league/{S.LEAGUE}").get("settings") or {}
+        league = S.get(f"league/{S.LEAGUE}") or {}
     except Exception:
-        ls = {}
+        league = {}
+    ls = league.get("settings") or {}
     budget = ls.get("waiver_budget") or 150
     faab_teams = sorted([{"team": team_of[r["roster_id"]], "roster_id": r["roster_id"],
                           "left": budget - ((r.get("settings") or {}).get("waiver_budget_used") or 0),
@@ -140,8 +141,10 @@ def main(write=True):
 
     # --- opponent this week --------------------------------------------------
     opp = None
+    week_pts = {}
     try:
         mus = S.get(f"league/{S.LEAGUE}/matchups/{week}")
+        week_pts = {m["roster_id"]: m.get("points") for m in mus}
         me_mu = next((m for m in mus if m["roster_id"] == S.MY_ROSTER_ID), None)
         if me_mu:
             o = next((m for m in mus if m["matchup_id"] == me_mu["matchup_id"] and m["roster_id"] != S.MY_ROSTER_ID), None)
@@ -163,13 +166,45 @@ def main(write=True):
                          "record": f"{(r.get('settings') or {}).get('wins',0)}-{(r.get('settings') or {}).get('losses',0)}"})
     qb_depth.sort(key=lambda x: x["n"])
 
+    # --- every team's full roster (the trade view) ---------------------------
+    # who is thin where, who is desperate, who can pay. Player strings, not rows; detail lives in "roster".
+    slot_names = [x for x in (league.get("roster_positions") or []) if x not in ("BN", "IR")]
+
+    def p_str(pid):
+        p = P.get(pid) or {}
+        inj = f" ({p['injury_status']})" if p.get("injury_status") else ""
+        return f"{p.get('name') or pid} {p.get('pos') or '?'} {p.get('team') or 'FA'}{inj}"
+
+    teams = []
+    for r in sorted(rosters, key=lambda x: x["roster_id"]):
+        s_ = r.get("settings") or {}
+        res = r.get("reserve") or []
+        st8 = [p for p in (r.get("starters") or []) if p and p != "0"]
+        allp = r.get("players") or []
+        counts = {}
+        for pid in allp:
+            pos = (P.get(pid) or {}).get("pos")
+            if pos:
+                counts[pos] = counts.get(pos, 0) + 1
+        teams.append({
+            "team": team_of[r["roster_id"]], "roster_id": r["roster_id"], "mine": r["owner_id"] == S.ME,
+            "record": f"{s_.get('wins',0)}-{s_.get('losses',0)}" + (f"-{s_['ties']}" if s_.get("ties") else ""),
+            "pts_for": float(f"{s_.get('fpts',0)}.{s_.get('fpts_decimal',0)}"),
+            "pts_week": week_pts.get(r["roster_id"]),
+            "faab_left": budget - (s_.get("waiver_budget_used") or 0), "counts": counts,
+            "starters": [f"{slot_names[i] if i < len(slot_names) else '?'}: " + (p_str(pid) if pid and pid != "0" else "empty")
+                         for i, pid in enumerate(r.get("starters") or [])],
+            "bench": [p_str(p) for p in allp if p not in st8 and p not in res],
+            "ir": [p_str(p) for p in res],
+        })
+
     out = {"generated": now_pt().strftime("%a %b %-d, %Y %-I:%M %p PT"), "generated_ms": int(time.time() * 1000),
            "season": season, "week": week, "faab_total": budget, "faab_used": settings.get("waiver_budget_used", 0),
            "faab_left": budget - (settings.get("waiver_budget_used") or 0), "faab_min_bid": ls.get("waiver_bid_min", 1),
            "faab_teams": faab_teams, "waiver_position": settings.get("waiver_position"),
            "record": f"{settings.get('wins',0)}-{settings.get('losses',0)}",
            "roster": roster, "fa_qbs": fa_qbs, "trending": trending, "transactions": txns, "opponent": opp,
-           "qb_depth": qb_depth}
+           "qb_depth": qb_depth, "teams": teams}
     if write:
         (S.DATA / "sweep.json").write_text(json.dumps(out, indent=1))
         (S.DATA / "sweep.md").write_text(to_md(out))
@@ -195,6 +230,13 @@ def to_md(o):
     L += [f"- {t['team']}: ${t['left']}" + (f" (priority {t['position']})" if t.get('position') else "") for t in o.get("faab_teams", [])] or ["- n/a"]
     L += ["", "## QB depth by team (buyers have 2)"]
     L += [f"- {q['team']}: {q['n']} — {', '.join(q['qbs'])}" for q in o["qb_depth"]]
+    L += ["", "## Every team's roster (the trade view)"]
+    for t in o.get("teams", []):
+        pos = ", ".join(f"{k}{v}" for k, v in sorted(t["counts"].items()))
+        L += ["", f"### {t['team']}{' (Danny)' if t['mine'] else ''} — {t['record']}, {t['pts_for']} PF, ${t['faab_left']} FAAB · {pos}"]
+        L += [f"- {x}" for x in t["starters"]]
+        L += [f"- BN: {x}" for x in t["bench"]]
+        L += [f"- IR: {x}" for x in t["ir"]]
     return "\n".join(L) + "\n"
 
 if __name__ == "__main__":
