@@ -1,8 +1,8 @@
 {
- "generated": "Mon Sep 14, 2026 3:45 PM PT",
- "generated_ms": 1789425911161,
+ "generated": "Mon Sep 14, 2026 9:16 PM PT",
+ "generated_ms": 1789445805782,
  "season": "2026",
- "week": 1,
+ "week": 2,
  "faab_total": 150,
  "faab_used": 5,
  "faab_left": 145,
@@ -210,8 +210,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RWR1",
-   "news": "Sep 13",
-   "news_ms": 1789273848216,
+   "news": "Sep 15",
+   "news_ms": 1789443609392,
    "slot": "START"
   },
   {
@@ -306,7 +306,7 @@
    "depth": "SWR2",
    "news": "Sep 14",
    "news_ms": 1789393504525,
-   "adds": 1128463
+   "adds": 1506064
   },
   {
    "id": "13296",
@@ -319,7 +319,20 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 444528
+   "adds": 653968
+  },
+  {
+   "id": "6130",
+   "name": "Devin Singletary",
+   "pos": "RB",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "RB4 on the depth chart",
+   "injury": null,
+   "depth": "RB4",
+   "news": "Sep 15",
+   "news_ms": 1789436108574,
+   "adds": 552114
   },
   {
    "id": "13414",
@@ -332,33 +345,7 @@
    "depth": "RB2",
    "news": "Sep 14",
    "news_ms": 1789396503107,
-   "adds": 359758
-  },
-  {
-   "id": "4993",
-   "name": "Mike Gesicki",
-   "pos": "TE",
-   "team": "CIN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789398903824,
-   "adds": 343776
-  },
-  {
-   "id": "6130",
-   "name": "Devin Singletary",
-   "pos": "RB",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "RB4 on the depth chart",
-   "injury": null,
-   "depth": "RB4",
-   "news": "Sep 14",
-   "news_ms": 1789386903701,
-   "adds": 334692
+   "adds": 460831
   },
   {
    "id": "3161",
@@ -371,7 +358,20 @@
    "depth": "QB3",
    "news": "Sep 14",
    "news_ms": 1789363561296,
-   "adds": 324156
+   "adds": 423090
+  },
+  {
+   "id": "4993",
+   "name": "Mike Gesicki",
+   "pos": "TE",
+   "team": "CIN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789398903824,
+   "adds": 420716
   },
   {
    "id": "9486",
@@ -384,137 +384,7 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789401604194,
-   "adds": 202644
-  },
-  {
-   "id": "13285",
-   "name": "Malachi Fields",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 14",
-   "news_ms": 1789418706039,
-   "adds": 150405
-  },
-  {
-   "id": "3286",
-   "name": "Demarcus Robinson",
-   "pos": "WR",
-   "team": "SF",
-   "flag": "amber",
-   "why": "WR6 on the depth chart",
-   "injury": null,
-   "depth": "LWR6",
-   "news": "Sep 12",
-   "news_ms": 1789171515202,
-   "adds": 118374
-  },
-  {
-   "id": "7090",
-   "name": "Darnell Mooney",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789386903735,
-   "adds": 97722
-  },
-  {
-   "id": "13330",
-   "name": "Kenyon Sadiq",
-   "pos": "TE",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789411204698,
-   "adds": 94860
-  },
-  {
-   "id": "3634",
-   "name": "Kalif Raymond",
-   "pos": "WR",
-   "team": "CHI",
-   "flag": "amber",
-   "why": "WR5 on the depth chart",
-   "injury": null,
-   "depth": "SWR5",
-   "news": "Sep 14",
-   "news_ms": 1789394704925,
-   "adds": 79660
-  },
-  {
-   "id": "4454",
-   "name": "Kendrick Bourne",
-   "pos": "WR",
-   "team": "ARI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789417805639,
-   "adds": 74067
-  },
-  {
-   "id": "2078",
-   "name": "Odell Beckham",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "WR5 on the depth chart",
-   "injury": null,
-   "depth": "LWR5",
-   "news": "Sep 14",
-   "news_ms": 1789386903685,
-   "adds": 67249
-  },
-  {
-   "id": "6826",
-   "name": "Cole Kmet",
-   "pos": "TE",
-   "team": "CHI",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE2",
-   "news": "Sep 14",
-   "news_ms": 1789394704906,
-   "adds": 61200
-  },
-  {
-   "id": "9511",
-   "name": "Keaton Mitchell",
-   "pos": "RB",
-   "team": "LAC",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 14",
-   "news_ms": 1789415705111,
-   "adds": 56925
-  },
-  {
-   "id": "2505",
-   "name": "Darren Waller",
-   "pos": "TE",
-   "team": "CAR",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789396204472,
-   "adds": 55404
+   "adds": 244413
   },
   {
    "id": "12492",
@@ -527,7 +397,98 @@
    "depth": "SWR3",
    "news": "Sep 13",
    "news_ms": 1789278348657,
-   "adds": 54448
+   "adds": 192088
+  },
+  {
+   "id": "13285",
+   "name": "Malachi Fields",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 15",
+   "news_ms": 1789434908408,
+   "adds": 145665
+  },
+  {
+   "id": "3286",
+   "name": "Demarcus Robinson",
+   "pos": "WR",
+   "team": "SF",
+   "flag": "amber",
+   "why": "WR6 on the depth chart",
+   "injury": null,
+   "depth": "LWR6",
+   "news": "Sep 12",
+   "news_ms": 1789171515202,
+   "adds": 127212
+  },
+  {
+   "id": "13330",
+   "name": "Kenyon Sadiq",
+   "pos": "TE",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789411204698,
+   "adds": 115929
+  },
+  {
+   "id": "4454",
+   "name": "Kendrick Bourne",
+   "pos": "WR",
+   "team": "ARI",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 14",
+   "news_ms": 1789427707415,
+   "adds": 105615
+  },
+  {
+   "id": "3634",
+   "name": "Kalif Raymond",
+   "pos": "WR",
+   "team": "CHI",
+   "flag": "amber",
+   "why": "WR5 on the depth chart",
+   "injury": null,
+   "depth": "SWR5",
+   "news": "Sep 14",
+   "news_ms": 1789428306629,
+   "adds": 102698
+  },
+  {
+   "id": "7090",
+   "name": "Darnell Mooney",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 15",
+   "news_ms": 1789435208214,
+   "adds": 93204
+  },
+  {
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 13",
+   "news_ms": 1789307452642,
+   "adds": 74288
   },
   {
    "id": "12501",
@@ -540,412 +501,192 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789362960844,
-   "adds": 50470
+   "adds": 70574
   },
   {
-   "id": "11625",
-   "name": "Adonai Mitchell",
-   "pos": "WR",
-   "team": "NYJ",
+   "id": "6826",
+   "name": "Cole Kmet",
+   "pos": "TE",
+   "team": "CHI",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR2",
+   "depth": "TE2",
    "news": "Sep 14",
-   "news_ms": 1789419005737,
-   "adds": 32816
+   "news_ms": 1789394704906,
+   "adds": 70011
+  },
+  {
+   "id": "2078",
+   "name": "Odell Beckham",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR5 on the depth chart",
+   "injury": null,
+   "depth": "LWR5",
+   "news": "Sep 15",
+   "news_ms": 1789436708459,
+   "adds": 63126
+  },
+  {
+   "id": "12472",
+   "name": "Raheim Sanders",
+   "pos": "RB",
+   "team": "CLE",
+   "flag": "amber",
+   "why": "RB3 on the depth chart",
+   "injury": null,
+   "depth": "RB3",
+   "news": "Sep 15",
+   "news_ms": 1789433108262,
+   "adds": 54816
+  },
+  {
+   "id": "9511",
+   "name": "Keaton Mitchell",
+   "pos": "RB",
+   "team": "LAC",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 14",
+   "news_ms": 1789415705111,
+   "adds": 54288
   }
  ],
- "transactions": [
-  {
-   "type": "waiver",
-   "status": "complete",
-   "team": "Robinsavages",
-   "adds": [
-    "Kenny Gainwell"
-   ],
-   "drops": [
-    "Dalton Schultz"
-   ],
-   "bid": 5,
-   "note": "Your waiver claim was processed successfully!",
-   "faab_moved": [],
-   "ts": 1789195256996
-  },
-  {
-   "type": "waiver",
-   "status": "failed",
-   "team": "MasonMafia",
-   "adds": [
-    "Kenny Gainwell"
-   ],
-   "drops": [],
-   "bid": 1,
-   "note": "This player was claimed by another owner.",
-   "faab_moved": [],
-   "ts": 1789195256996
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "Robinsavages",
-   "adds": [
-    "Jacksonville Jaguars"
-   ],
-   "drops": [
-    "Detroit Lions"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789158765483
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "daviddhaliwal",
-   "adds": [
-    "Cooper Rush"
-   ],
-   "drops": [],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789150447563
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "daviddhaliwal",
-   "adds": [
-    "Michael Penix"
-   ],
-   "drops": [
-    "Cooper Rush"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789150423375
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "daviddhaliwal",
-   "adds": [
-    "Cooper Rush"
-   ],
-   "drops": [
-    "Aaron Jones"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789149003063
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "MasonMafia",
-   "adds": [
-    "Samaje Perine"
-   ],
-   "drops": [],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789147016038
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "Robinsavages",
-   "adds": [
-    "Khalil Shakir"
-   ],
-   "drops": [
-    "Alec Pierce"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789142644492
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "GK",
-   "adds": [
-    "Spencer Shrader"
-   ],
-   "drops": [
-    "Wil Lutz"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789141076579
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "Robinsavages",
-   "adds": [
-    "Tre Tucker"
-   ],
-   "drops": [
-    "Jordan Mason"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789109502553
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "GK",
-   "adds": [
-    "Michael Mayer"
-   ],
-   "drops": [
-    "Terrance Ferguson"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789095710066
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "kwiksl",
-   "adds": [
-    "Deshaun Watson"
-   ],
-   "drops": [
-    "Kenny Gainwell"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789025743098
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "kwiksl",
-   "adds": [
-    "Jalen Nailor"
-   ],
-   "drops": [
-    "Matthew Golden"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1789025655481
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "paulhemsley",
-   "adds": [
-    "Chris Bell"
-   ],
-   "drops": [],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1788985499062
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "EasyIP",
-   "adds": [
-    "Kaleb Johnson"
-   ],
-   "drops": [],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1788969165711
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "EasyIP",
-   "adds": [
-    "Emmett Johnson"
-   ],
-   "drops": [],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1788969028446
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "EasyIP",
-   "adds": [
-    "Dylan Sampson"
-   ],
-   "drops": [
-    "Zack Moss"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1788925572042
-  },
-  {
-   "type": "free_agent",
-   "status": "complete",
-   "team": "daviddhaliwal",
-   "adds": [
-    "Kirk Cousins"
-   ],
-   "drops": [
-    "Minnesota Vikings"
-   ],
-   "bid": null,
-   "note": null,
-   "faab_moved": [],
-   "ts": 1788925560124
-  }
- ],
+ "transactions": [],
  "opponent": {
-  "team": "paulhemsley",
-  "roster_id": 2,
+  "team": "kwiksl",
+  "roster_id": 7,
   "record": "0-0",
   "starters": [
    {
-    "id": "8183",
-    "name": "Brock Purdy",
+    "id": "12545",
+    "name": "Tyler Shough",
     "pos": "QB",
-    "team": "SF",
+    "team": "NO",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
     "depth": "QB1",
-    "news": "Sep 11",
-    "news_ms": 1789103415223
+    "news": "Sep 14",
+    "news_ms": 1789420205634
    },
    {
-    "id": "6813",
-    "name": "Jonathan Taylor",
+    "id": "9221",
+    "name": "Jahmyr Gibbs",
     "pos": "RB",
-    "team": "IND",
+    "team": "DET",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
     "news": "Sep 14",
-    "news_ms": 1789360558963
+    "news_ms": 1789392004011
    },
    {
-    "id": "4034",
-    "name": "Christian McCaffrey",
+    "id": "3198",
+    "name": "Derrick Henry",
     "pos": "RB",
-    "team": "SF",
+    "team": "BAL",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 11",
-    "news_ms": 1789143026694
+    "news": "Sep 13",
+    "news_ms": 1789337757697
    },
    {
-    "id": "12526",
-    "name": "Tetairoa McMillan",
+    "id": "7525",
+    "name": "DeVonta Smith",
     "pos": "WR",
-    "team": "CAR",
+    "team": "PHI",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
     "depth": "LWR1",
     "news": "Sep 14",
-    "news_ms": 1789397105039
+    "news_ms": 1789344958186
    },
    {
-    "id": "5927",
-    "name": "Terry McLaurin",
+    "id": "4983",
+    "name": "DJ Moore",
     "pos": "WR",
-    "team": "WAS",
+    "team": "BUF",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
     "depth": "LWR1",
-    "news": "Sep 14",
-    "news_ms": 1789349458665
+    "news": "Sep 13",
+    "news_ms": 1789335356615
    },
    {
-    "id": "9484",
-    "name": "Tucker Kraft",
+    "id": "8130",
+    "name": "Trey McBride",
     "pos": "TE",
-    "team": "GB",
+    "team": "ARI",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
     "depth": "TE1",
     "news": "Sep 14",
-    "news_ms": 1789362960823
+    "news_ms": 1789422906090
    },
    {
-    "id": "12490",
-    "name": "Bhayshul Tuten",
+    "id": "7611",
+    "name": "Rhamondre Stevenson",
     "pos": "RB",
-    "team": "JAX",
+    "team": "NE",
+    "flag": "amber",
+    "why": "RB2 on the depth chart",
+    "injury": null,
+    "depth": "RB2",
+    "news": "Sep 10",
+    "news_ms": 1789052704550
+   },
+   {
+    "id": "8131",
+    "name": "Isaiah Likely",
+    "pos": "TE",
+    "team": "NYG",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
-    "depth": "RB1",
+    "depth": "TE1",
     "news": "Sep 14",
-    "news_ms": 1789349459570
+    "news_ms": 1789397403210
    },
    {
-    "id": "5846",
-    "name": "DK Metcalf",
-    "pos": "WR",
-    "team": "PIT",
-    "flag": "green",
-    "why": "Healthy, starting",
-    "injury": null,
-    "depth": "LWR1",
-    "news": "Sep 14",
-    "news_ms": 1789381203060
-   },
-   {
-    "id": "421",
-    "name": "Matthew Stafford",
+    "id": "11563",
+    "name": "Bo Nix",
     "pos": "QB",
-    "team": "LAR",
+    "team": "DEN",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
     "depth": "QB1",
-    "news": "Sep 11",
-    "news_ms": 1789104022458
+    "news": "Sep 12",
+    "news_ms": 1789254946371
    },
    {
-    "id": "12015",
-    "name": "Harrison Mevis",
+    "id": "5189",
+    "name": "Eddy Pineiro",
     "pos": "K",
-    "team": "LAR",
+    "team": "SF",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
     "depth": "K1",
     "news": "Sep 11",
-    "news_ms": 1789101316528
+    "news_ms": 1789101016428
    },
    {
-    "id": "HOU",
-    "name": "Houston Texans",
+    "id": "SEA",
+    "name": "Seattle Seahawks",
     "pos": "DEF",
-    "team": "HOU",
+    "team": "SEA",
     "flag": "green",
     "why": "Healthy, starting",
     "injury": null,
@@ -954,8 +695,8 @@
     "news_ms": null
    }
   ],
-  "my_points": 167.22,
-  "their_points": 130.8
+  "my_points": 0.0,
+  "their_points": 0.0
  },
  "qb_depth": [
   {
