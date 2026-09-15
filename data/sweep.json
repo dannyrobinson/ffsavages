@@ -1,6 +1,6 @@
 {
- "generated": "Mon Sep 14, 2026 9:37 PM PT",
- "generated_ms": 1789447033509,
+ "generated": "Mon Sep 14, 2026 9:52 PM PT",
+ "generated_ms": 1789447976412,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -82,7 +82,7 @@
   }
  ],
  "waiver_position": 12,
- "record": "0-0",
+ "record": "1-0",
  "roster": [
   {
    "id": "11560",
@@ -193,7 +193,7 @@
    "depth": "RB1",
    "news": "Sep 14",
    "news_ms": 1789347059520,
-   "slot": "BN",
+   "slot": "START",
    "stories": []
   },
   {
@@ -207,7 +207,7 @@
    "depth": "LWR1",
    "news": "Sep 13",
    "news_ms": 1789318253868,
-   "slot": "START",
+   "slot": "IR",
    "stories": []
   },
   {
@@ -322,7 +322,7 @@
    "depth": "SWR2",
    "news": "Sep 14",
    "news_ms": 1789393504525,
-   "adds": 1543619
+   "adds": 1564374
   },
   {
    "id": "13296",
@@ -335,7 +335,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 677088
+   "adds": 690176
   },
   {
    "id": "6130",
@@ -348,7 +348,7 @@
    "depth": "RB4",
    "news": "Sep 15",
    "news_ms": 1789436108574,
-   "adds": 570672
+   "adds": 579402
   },
   {
    "id": "13414",
@@ -361,7 +361,7 @@
    "depth": "RB2",
    "news": "Sep 14",
    "news_ms": 1789396503107,
-   "adds": 471513
+   "adds": 478583
   },
   {
    "id": "3161",
@@ -374,7 +374,7 @@
    "depth": "QB3",
    "news": "Sep 14",
    "news_ms": 1789363561296,
-   "adds": 432390
+   "adds": 437340
   },
   {
    "id": "4993",
@@ -387,7 +387,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 426648
+   "adds": 429796
   },
   {
    "id": "9486",
@@ -400,7 +400,7 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789401604194,
-   "adds": 248151
+   "adds": 250260
   },
   {
    "id": "12492",
@@ -413,7 +413,7 @@
    "depth": "SWR3",
    "news": "Sep 13",
    "news_ms": 1789278348657,
-   "adds": 194240
+   "adds": 195640
   },
   {
    "id": "13285",
@@ -426,7 +426,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789434908408,
-   "adds": 144220
+   "adds": 144345
   },
   {
    "id": "3286",
@@ -439,7 +439,7 @@
    "depth": "LWR6",
    "news": "Sep 12",
    "news_ms": 1789171515202,
-   "adds": 128556
+   "adds": 130200
   },
   {
    "id": "13330",
@@ -452,7 +452,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 118089
+   "adds": 119007
   },
   {
    "id": "4454",
@@ -465,7 +465,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 109032
+   "adds": 110883
   },
   {
    "id": "3634",
@@ -478,7 +478,7 @@
    "depth": "SWR5",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 105098
+   "adds": 106530
   },
   {
    "id": "7090",
@@ -491,7 +491,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435208214,
-   "adds": 92214
+   "adds": 92232
   },
   {
    "id": "4066",
@@ -504,7 +504,7 @@
    "depth": "TE1",
    "news": "Sep 13",
    "news_ms": 1789307452642,
-   "adds": 76984
+   "adds": 78336
   },
   {
    "id": "12501",
@@ -517,7 +517,7 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789362960844,
-   "adds": 73045
+   "adds": 74354
   },
   {
    "id": "6826",
@@ -530,7 +530,7 @@
    "depth": "TE2",
    "news": "Sep 14",
    "news_ms": 1789394704906,
-   "adds": 70767
+   "adds": 71181
   },
   {
    "id": "2078",
@@ -543,7 +543,7 @@
    "depth": "LWR5",
    "news": "Sep 15",
    "news_ms": 1789436708459,
-   "adds": 62244
+   "adds": 62251
   },
   {
    "id": "12472",
@@ -556,7 +556,7 @@
    "depth": "RB3",
    "news": "Sep 15",
    "news_ms": 1789433108262,
-   "adds": 59504
+   "adds": 62208
   },
   {
    "id": "9511",
@@ -569,14 +569,14 @@
    "depth": "RB2",
    "news": "Sep 14",
    "news_ms": 1789415705111,
-   "adds": 53523
+   "adds": 53604
   }
  ],
  "transactions": [],
  "opponent": {
   "team": "kwiksl",
   "roster_id": 7,
-  "record": "0-0",
+  "record": "1-0",
   "starters": [
    {
     "id": "12545",
@@ -684,7 +684,7 @@
     "injury": null,
     "depth": "QB1",
     "news": "Sep 15",
-    "news_ms": 1789445708633
+    "news_ms": 1789446309511
    },
    {
     "id": "5189",
@@ -723,7 +723,7 @@
     "Jordan Love"
    ],
    "n": 2,
-   "record": "0-0"
+   "record": "1-0"
   },
   {
    "team": "EasyIP",
@@ -733,7 +733,7 @@
     "Josh Allen"
    ],
    "n": 2,
-   "record": "0-0"
+   "record": "0-1"
   },
   {
    "team": "HappyChappy18",
@@ -744,7 +744,7 @@
     "Aaron Rodgers"
    ],
    "n": 3,
-   "record": "0-0"
+   "record": "1-0"
   },
   {
    "team": "paulhemsley",
@@ -755,7 +755,7 @@
     "Brock Purdy"
    ],
    "n": 3,
-   "record": "0-0"
+   "record": "0-1"
   },
   {
    "team": "MasonMafia",
@@ -766,7 +766,7 @@
     "Jalen Hurts"
    ],
    "n": 3,
-   "record": "0-0"
+   "record": "1-0"
   },
   {
    "team": "GK",
@@ -777,7 +777,7 @@
     "Daniel Jones"
    ],
    "n": 3,
-   "record": "0-0"
+   "record": "0-1"
   },
   {
    "team": "Robinsavages",
@@ -788,7 +788,7 @@
     "Malik Willis"
    ],
    "n": 3,
-   "record": "0-0"
+   "record": "1-0"
   },
   {
    "team": "kwiksl",
@@ -799,7 +799,7 @@
     "Deshaun Watson"
    ],
    "n": 3,
-   "record": "0-0"
+   "record": "1-0"
   },
   {
    "team": "KUZ1",
@@ -810,7 +810,7 @@
     "Kyler Murray"
    ],
    "n": 3,
-   "record": "0-0"
+   "record": "0-1"
   },
   {
    "team": "smitty1060",
@@ -821,7 +821,7 @@
     "C.J. Stroud"
    ],
    "n": 3,
-   "record": "0-0"
+   "record": "0-1"
   },
   {
    "team": "jimmyd66",
@@ -832,7 +832,7 @@
     "Justin Herbert"
    ],
    "n": 3,
-   "record": "0-0"
+   "record": "0-1"
   },
   {
    "team": "daviddhaliwal",
@@ -844,7 +844,7 @@
     "Bryce Young"
    ],
    "n": 4,
-   "record": "0-0"
+   "record": "1-0"
   }
  ],
  "teams": [
@@ -852,8 +852,8 @@
    "team": "HappyChappy18",
    "roster_id": 1,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "1-0",
+   "pts_for": 205.42,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -890,8 +890,8 @@
    "team": "paulhemsley",
    "roster_id": 2,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "0-1",
+   "pts_for": 130.8,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -930,8 +930,8 @@
    "team": "MasonMafia",
    "roster_id": 3,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "1-0",
+   "pts_for": 141.56,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -970,8 +970,8 @@
    "team": "daviddhaliwal",
    "roster_id": 4,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "1-0",
+   "pts_for": 253.4,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -1010,8 +1010,8 @@
    "team": "GK",
    "roster_id": 5,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "0-1",
+   "pts_for": 174.56,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -1048,8 +1048,8 @@
    "team": "Robinsavages",
    "roster_id": 6,
    "mine": true,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "1-0",
+   "pts_for": 168.42,
    "pts_week": 0.0,
    "faab_left": 145,
    "counts": {
@@ -1064,11 +1064,11 @@
     "QB: Joe Burrow QB CIN",
     "RB: Chase Brown RB CIN",
     "RB: Jaylen Warren RB PIT",
-    "WR: A.J. Brown WR NE (IR)",
+    "WR: Malik Nabers WR NYG",
     "WR: Jaylen Waddle WR DEN",
     "TE: Juwan Johnson TE NO",
     "FLEX: Kenny Gainwell RB TB",
-    "FLEX: Malik Nabers WR NYG",
+    "FLEX: Quinshon Judkins RB CLE",
     "SUPER_FLEX: Caleb Williams QB CHI",
     "K: Ka'imi Fairbairn K HOU",
     "DEF: Jacksonville Jaguars DEF JAX"
@@ -1076,18 +1076,19 @@
    "bench": [
     "Tre Tucker WR LV",
     "MarShawn Lloyd RB GB",
-    "Quinshon Judkins RB CLE",
     "Khalil Shakir WR BUF",
     "Malik Willis QB MIA"
    ],
-   "ir": []
+   "ir": [
+    "A.J. Brown WR NE (IR)"
+   ]
   },
   {
    "team": "kwiksl",
    "roster_id": 7,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "1-0",
+   "pts_for": 262.14,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -1124,8 +1125,8 @@
    "team": "KUZ1",
    "roster_id": 8,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "0-1",
+   "pts_for": 153.6,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -1162,8 +1163,8 @@
    "team": "wflemons33",
    "roster_id": 9,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "1-0",
+   "pts_for": 209.98,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -1200,8 +1201,8 @@
    "team": "smitty1060",
    "roster_id": 10,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "0-1",
+   "pts_for": 128.54,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -1238,8 +1239,8 @@
    "team": "jimmyd66",
    "roster_id": 11,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "0-1",
+   "pts_for": 114.58,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
@@ -1276,8 +1277,8 @@
    "team": "EasyIP",
    "roster_id": 12,
    "mine": false,
-   "record": "0-0",
-   "pts_for": 0.0,
+   "record": "0-1",
+   "pts_for": 163.12,
    "pts_week": 0.0,
    "faab_left": 150,
    "counts": {
