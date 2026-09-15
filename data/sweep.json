@@ -1,6 +1,6 @@
 {
- "generated": "Mon Sep 14, 2026 10:07 PM PT",
- "generated_ms": 1789448847884,
+ "generated": "Tue Sep 15, 2026 1:58 AM PT",
+ "generated_ms": 1789462720769,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -165,7 +165,7 @@
    "depth": "RB2",
    "news": "Sep 14",
    "news_ms": 1789359960506,
-   "slot": "START",
+   "slot": "BN",
    "stories": []
   },
   {
@@ -263,7 +263,7 @@
    "depth": "LWR1",
    "news": "Sep 14",
    "news_ms": 1789414204979,
-   "slot": "BN",
+   "slot": "START",
    "stories": []
   },
   {
@@ -322,7 +322,7 @@
    "depth": "SWR2",
    "news": "Sep 14",
    "news_ms": 1789393504525,
-   "adds": 1587978
+   "adds": 1804817
   },
   {
    "id": "13296",
@@ -335,7 +335,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 704568
+   "adds": 844504
   },
   {
    "id": "6130",
@@ -348,7 +348,7 @@
    "depth": "RB4",
    "news": "Sep 15",
    "news_ms": 1789436108574,
-   "adds": 590256
+   "adds": 694413
   },
   {
    "id": "13414",
@@ -361,7 +361,7 @@
    "depth": "RB2",
    "news": "Sep 14",
    "news_ms": 1789396503107,
-   "adds": 486654
+   "adds": 563227
   },
   {
    "id": "3161",
@@ -372,9 +372,9 @@
    "why": "Not the starter (QB3)",
    "injury": null,
    "depth": "QB3",
-   "news": "Sep 14",
-   "news_ms": 1789363561296,
-   "adds": 443400
+   "news": "Sep 15",
+   "news_ms": 1789452609370,
+   "adds": 496194
   },
   {
    "id": "4993",
@@ -387,7 +387,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 433436
+   "adds": 468524
   },
   {
    "id": "9486",
@@ -400,7 +400,7 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789401604194,
-   "adds": 252765
+   "adds": 276192
   },
   {
    "id": "12492",
@@ -413,7 +413,20 @@
    "depth": "SWR3",
    "news": "Sep 13",
    "news_ms": 1789278348657,
-   "adds": 197344
+   "adds": 211408
+  },
+  {
+   "id": "3286",
+   "name": "Demarcus Robinson",
+   "pos": "WR",
+   "team": "SF",
+   "flag": "amber",
+   "why": "WR6 on the depth chart",
+   "injury": null,
+   "depth": "LWR6",
+   "news": "Sep 15",
+   "news_ms": 1789451109211,
+   "adds": 149022
   },
   {
    "id": "13285",
@@ -426,20 +439,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789434908408,
-   "adds": 144440
-  },
-  {
-   "id": "3286",
-   "name": "Demarcus Robinson",
-   "pos": "WR",
-   "team": "SF",
-   "flag": "amber",
-   "why": "WR6 on the depth chart",
-   "injury": null,
-   "depth": "LWR6",
-   "news": "Sep 12",
-   "news_ms": 1789171515202,
-   "adds": 132330
+   "adds": 141505
   },
   {
    "id": "13330",
@@ -452,7 +452,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 120429
+   "adds": 133560
   },
   {
    "id": "4454",
@@ -465,7 +465,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 113106
+   "adds": 133431
   },
   {
    "id": "3634",
@@ -478,59 +478,7 @@
    "depth": "SWR5",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 108080
-  },
-  {
-   "id": "7090",
-   "name": "Darnell Mooney",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 15",
-   "news_ms": 1789435208214,
-   "adds": 92232
-  },
-  {
-   "id": "4066",
-   "name": "Evan Engram",
-   "pos": "TE",
-   "team": "DEN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 13",
-   "news_ms": 1789307452642,
-   "adds": 80032
-  },
-  {
-   "id": "12501",
-   "name": "Matthew Golden",
-   "pos": "WR",
-   "team": "GB",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "RWR3",
-   "news": "Sep 14",
-   "news_ms": 1789362960844,
-   "adds": 75950
-  },
-  {
-   "id": "6826",
-   "name": "Cole Kmet",
-   "pos": "TE",
-   "team": "CHI",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE2",
-   "news": "Sep 14",
-   "news_ms": 1789394704906,
-   "adds": 71721
+   "adds": 122656
   },
   {
    "id": "12472",
@@ -543,7 +491,72 @@
    "depth": "RB3",
    "news": "Sep 15",
    "news_ms": 1789433108262,
-   "adds": 65440
+   "adds": 96160
+  },
+  {
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 13",
+   "news_ms": 1789307452642,
+   "adds": 95936
+  },
+  {
+   "id": "12501",
+   "name": "Matthew Golden",
+   "pos": "WR",
+   "team": "GB",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "RWR3",
+   "news": "Sep 14",
+   "news_ms": 1789362960844,
+   "adds": 92337
+  },
+  {
+   "id": "7090",
+   "name": "Darnell Mooney",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 15",
+   "news_ms": 1789435208214,
+   "adds": 89811
+  },
+  {
+   "id": "6826",
+   "name": "Cole Kmet",
+   "pos": "TE",
+   "team": "CHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE2",
+   "news": "Sep 14",
+   "news_ms": 1789394704906,
+   "adds": 75717
+  },
+  {
+   "id": "4177",
+   "name": "Mack Hollins",
+   "pos": "WR",
+   "team": "NE",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "RWR4",
+   "news": "Sep 10",
+   "news_ms": 1789053904718,
+   "adds": 63483
   },
   {
    "id": "2078",
@@ -556,20 +569,7 @@
    "depth": "LWR5",
    "news": "Sep 15",
    "news_ms": 1789436708459,
-   "adds": 62265
-  },
-  {
-   "id": "9511",
-   "name": "Keaton Mitchell",
-   "pos": "RB",
-   "team": "LAC",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 14",
-   "news_ms": 1789415705111,
-   "adds": 53748
+   "adds": 60417
   }
  ],
  "transactions": [],
@@ -1067,15 +1067,15 @@
     "WR: Malik Nabers WR NYG",
     "WR: Jaylen Waddle WR DEN",
     "TE: Juwan Johnson TE NO",
-    "FLEX: Kenny Gainwell RB TB",
+    "FLEX: Tre Tucker WR LV",
     "FLEX: Quinshon Judkins RB CLE",
     "SUPER_FLEX: Caleb Williams QB CHI",
     "K: Ka'imi Fairbairn K HOU",
     "DEF: Jacksonville Jaguars DEF JAX"
    ],
    "bench": [
-    "Tre Tucker WR LV",
     "MarShawn Lloyd RB GB",
+    "Kenny Gainwell RB TB",
     "Khalil Shakir WR BUF",
     "Malik Willis QB MIA"
    ],
