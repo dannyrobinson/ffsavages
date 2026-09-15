@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 2 · Tue Sep 15, 2026 3:26 PM PT
+# Sleeper sweep — Week 2 · Tue Sep 15, 2026 4:34 PM PT
 
 Record 1-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 
@@ -24,26 +24,26 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 - Drew Lock (SEA) — Healthy, starting
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- WR  Devaughn Vele (NO) · 3,457,853 adds · SWR2 · Healthy, starting
-- WR  Caleb Douglas (MIA) · 1,952,912 adds · RWR2 · Healthy, starting
-- RB  Devin Singletary (NYG) · 1,595,124 adds · RB2 · RB2 on the depth chart
-- RB  Kaelon Black (SF) · 1,209,824 adds · RB2 · RB2 on the depth chart
-- QB  Carson Wentz (MIN) · 907,914 adds · QB2 · Not the starter (QB2)
-- TE  Mike Gesicki (CIN) · 633,412 adds · TE1 · Healthy, starting
-- RB  Raheim Sanders (CLE) · 445,872 adds · RB2 · RB2 on the depth chart
-- WR  Dontayvion Wicks (PHI) · 421,416 adds · RWR2 · Healthy, starting
-- WR  Pat Bryant (DEN) · 416,968 adds · SWR3 · WR3 on the depth chart
-- WR  Demarcus Robinson (SF) · 304,680 adds · LWR3 · WR3 on the depth chart
-- WR  Kendrick Bourne (ARI) · 263,259 adds · SWR3 · WR3 on the depth chart
-- TE  Evan Engram (DEN) · 248,384 adds · TE1 · Healthy, starting
-- WR  Mack Hollins (NE) · 231,861 adds · RWR2 · Healthy, starting
-- WR  Kalif Raymond (CHI) · 229,362 adds · SWR3 · WR3 on the depth chart
-- WR  Matthew Golden (GB) · 222,061 adds · RWR3 · WR3 on the depth chart
-- TE  Kenyon Sadiq (NYJ) · 202,707 adds · TE1 · Healthy, starting
-- WR  Roman Wilson (PIT) · 98,829 adds · SWR3 · WR3 on the depth chart
-- QB  Drew Lock (SEA) · 86,972 adds · QB1 · Healthy, starting
-- RB  Kendre Miller (NO) · 83,398 adds · RB3 · RB3 on the depth chart
-- RB  Sione Vaki (DET) · 80,780 adds · RB2 · RB2 on the depth chart
+- WR  Devaughn Vele (NO) · 3,549,854 adds · SWR2 · Healthy, starting
+- WR  Caleb Douglas (MIA) · 2,014,320 adds · RWR2 · Healthy, starting
+- RB  Devin Singletary (NYG) · 1,673,469 adds · RB2 · RB2 on the depth chart
+- RB  Kaelon Black (SF) · 1,269,779 adds · RB2 · RB2 on the depth chart
+- QB  Carson Wentz (MIN) · 935,196 adds · QB2 · Not the starter (QB2)
+- TE  Mike Gesicki (CIN) · 634,800 adds · TE1 · Healthy, starting
+- RB  Raheim Sanders (CLE) · 496,576 adds · RB2 · RB2 on the depth chart
+- WR  Pat Bryant (DEN) · 441,920 adds · SWR3 · WR3 on the depth chart
+- WR  Dontayvion Wicks (PHI) · 408,291 adds · RWR2 · Healthy, starting
+- WR  Demarcus Robinson (SF) · 323,796 adds · LWR3 · WR3 on the depth chart
+- WR  Kendrick Bourne (ARI) · 269,502 adds · SWR3 · WR3 on the depth chart
+- TE  Evan Engram (DEN) · 260,808 adds · TE1 · Healthy, starting
+- WR  Mack Hollins (NE) · 250,095 adds · RWR2 · Healthy, starting
+- WR  Kalif Raymond (CHI) · 237,796 adds · SWR3 · WR3 on the depth chart
+- WR  Matthew Golden (GB) · 234,248 adds · RWR3 · WR3 on the depth chart
+- TE  Kenyon Sadiq (NYJ) · 215,505 adds · TE1 · Healthy, starting
+- WR  Roman Wilson (PIT) · 107,145 adds · SWR3 · WR3 on the depth chart
+- QB  Drew Lock (SEA) · 93,648 adds · QB1 · Healthy, starting
+- RB  Sione Vaki (DET) · 92,113 adds · RB2 · RB2 on the depth chart
+- RB  Kendre Miller (NO) · 87,954 adds · RB3 · RB3 on the depth chart
 
 ## League transactions, week 2
 - none yet
