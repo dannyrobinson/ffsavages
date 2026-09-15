@@ -85,7 +85,7 @@ those off. The goal it optimises for is the most fantasy points Danny's lineup c
 - He reads this on his phone. Short beats thorough.
 
 ## What's here
-- `app/gm.html` — phone app, single file. Tabs: Moves, Roster, News, Ask, Trades, Plan. One block is baked in by
+- `app/gm.html` — phone app, single file. Tabs: Moves, My roster, News, Trades, Plan. One block is baked in by
   `scripts/build.py` between HTML comment markers: `SWEEP` (JSON from the Python sweep: roster with
   red/amber/green flags, free-agent starting QBs, trending adds that are free agents *here*, league
   transactions with bids, this week's opponent, QB count per team, FAAB left per team). **The baked SWEEP is only the offline fallback**:
@@ -96,19 +96,23 @@ those off. The goal it optimises for is the most fantasy points Danny's lineup c
   page follows the finger, a spinner sits in the gap, and the refresh shows two steps, Sleeper then Claude's
   latest stored read (it never runs the advisor; that is "Re-check now"). `applySweep()` replaces SWEEP, FLAGS
   and the roster. The Plan tab shows FAAB per team, byes ahead and a
-  DEF-stream card (this week and next); the Roster tab shows each player's bye. The **Trades** tab reads
+  DEF-stream card (this week and next); the My roster tab is read-only Sleeper — slot (Starting/Bench/IR), flag, bye, game and line, no hand edits — and tapping a player opens the News tab filtered to him. The **Trades** tab reads
   `SWEEP.teams`: Danny's thin and deep positions, the other 11 ranked by fit (their need against his glut, plus
   anyone they are starting or stashing hurt) and the players to ask for; "Get trade ideas" POSTs `api/ask` for up
   to three concrete trades (a Claude call, like Ask). Depth thresholds live in the page: QB 2/4, RB 3/6, WR 3/6, TE 1/3.
   The Moves tab shows Claude's latest stored advice from `api/advice` (headline, summary, lineup changes,
   adds with the drop and bid for each, IR moves, auto-subs to set, watch list, player flags), a "Lineup by projections" card (current vs best
   lineup from `SWEEP.lineup`) and an "Auto-subs you've set" card (a note saved to `api/subs`, stale once the week changes); "Re-check now" POSTs `api/advise` with the phone's news log and shows the
-  fresh read. Ask POSTs `api/ask` (mode chat) with the news log and the chat turns; the server builds the
-  context. The screenshot reader POSTs mode shot with a shrunken JPEG. All of that needs `api/config` to
+  fresh read. The **News** tab is ESPN headlines about Danny's own players (`SWEEP.stories`, newest first, with the
+  players each is about), plus the league's moves this week; the badge counts stories from the last 24 h. Danny does
+  not type news in: the paste box, the log and the screenshot reader were removed Sept 15 ("i'm not going to upload
+  news"), and so was the Ask tab. `api/ask` mode shot is now unused by the app (the endpoint still exists);
+  mode chat is what the Trades tab calls. Anything Claude-backed needs `api/config` to
   report `ask: true`; on the Pages mirror those buttons explain that Claude lives on the Vercel app. The
   alerts card (Moves tab) subscribes the phone to push via `sw.js` + `api/subscribe`, then disappears
   once subscribed (Send test / Turn off move to Plan → Alerts); the install chip nudges Add to Home Screen
   (iOS needs the installed copy for push). The `POOL` array is the draft board's player list.
+  `directSweep()` (the no-API path) builds `teams` and `stories` itself, so the Pages mirror has the Trades and News tabs too.
 - `app/sw.js`, `app/manifest.webmanifest`, `app/icons/` — the PWA shell. Network-first cache for our own
   files, never the API. `push` shows the notification, `notificationclick` focuses the app.
 - `lib/sleeper.js` — the sweep in Node (same flags and shapes as `scripts/sweep.py`, plus: `proj`
@@ -125,12 +129,15 @@ those off. The goal it optimises for is the most fantasy points Danny's lineup c
   free-agent row carries `waivers` (text: on waivers until when) and `claim_at`, or null = add now; every
   row carries `bye`; `byes` (Danny's active players on bye in the next 5 weeks, with a QB count), `qb_byes`,
   `def` (his unit this week and next, best free-agent units for both weeks, from `projections` week+1));
-  `auto_subs` (the league's settings plus `at_risk`: each amber starter with the unlocked bench players allowed
+  `stories` (ESPN headlines about his players, newest first; every roster row carries its own top 4 in `stories`) and `news_error`; `auto_subs` (the league's settings plus `at_risk`: each amber starter with the unlocked bench players allowed
   in his slot and whether each kicks off in a later, the same or an EARLIER window); every row carries `date`
   (game date) and, from `lib/games.js`, `kick_pt` (kickoff in PT, also baked into `game`: "Sun 10:00 AM vs TB"),
   `kick_ms`, `window`, `line` ("underdog by 3.5, total 50.5, implied 23.5 (opp 27)"), `env` ("outdoor, wind 6 mph,
   dry, 84°F" or "indoor"), `spread`, `implied`, `opp_implied`, `wind`, plus `vol` (projected targets/carries/pass
   attempts from Sleeper's projection feed). DEF rows carry `opp_implied`, the first filter for a stream.
+- `lib/news.js` — headlines for Danny's players from ESPN's public NFL news feed (no key): the league feed plus one
+  per team he rosters, deduped, matched on Sleeper's `espn_id` against the feed's athlete categories with a full-name
+  match as the fallback. Best effort, like `lib/games.js`. `scripts/news.py` is the same join for the Python sweep.
 - `lib/games.js` — the game environment: ESPN's public scoreboard (kickoff, venue and whether it is indoor, the
   DraftKings line, sky and temperature; no key) plus Open-Meteo (wind, gusts, rain chance, snow at kickoff for
   outdoor stadiums; no key; a static table of stadium coordinates and roofs). Best-effort: failures leave nulls.

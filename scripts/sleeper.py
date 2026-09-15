@@ -18,7 +18,7 @@ DATA.mkdir(exist_ok=True)
 
 PLAYER_FIELDS = ("position", "team", "injury_status", "injury_body_part", "injury_notes", "injury_start_date",
                  "news_updated", "practice_participation", "practice_description", "depth_chart_position",
-                 "depth_chart_order", "status", "search_rank", "years_exp", "age")
+                 "depth_chart_order", "status", "search_rank", "years_exp", "age", "espn_id")
 
 def get(path):
     req = urllib.request.Request(f"{API}/{path}", headers={"User-Agent": "robinsavages-gm/1.0"})
@@ -38,7 +38,7 @@ def players(max_age=6 * 3600):
     if f.exists() and time.time() - f.stat().st_mtime < max_age:
         try:
             cached = json.loads(f.read_text())
-            if cached.get("_v") == 2:
+            if cached.get("_v") == 3:
                 return cached["players"]
         except Exception:
             pass
@@ -53,7 +53,7 @@ def players(max_age=6 * 3600):
             row[fld] = v.get(fld)
         row["injury"] = v.get("injury_status")
         slim[k] = row
-    f.write_text(json.dumps({"_v": 2, "fetched": int(time.time()), "players": slim}))
+    f.write_text(json.dumps({"_v": 3, "fetched": int(time.time()), "players": slim}))
     return slim
 
 def my_roster(rosters=None):

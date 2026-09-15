@@ -14,6 +14,7 @@ What it pulls (all public Sleeper endpoints):
 import json, sys, time, datetime, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import sleeper as S
+from news import player_news
 
 POS_ORDER = {"QB": 0, "RB": 1, "WR": 2, "TE": 3, "K": 4, "DEF": 5}
 RED_INJ = {"out", "ir", "pup", "sus", "nfi", "cov", "doubtful", "dnr"}
@@ -166,6 +167,16 @@ def main(write=True):
                          "record": f"{(r.get('settings') or {}).get('wins',0)}-{(r.get('settings') or {}).get('losses',0)}"})
     qb_depth.sort(key=lambda x: x["n"])
 
+    # --- headlines for Danny's own players (ESPN; see scripts/news.py) -------
+    stories, news_error = player_news([{"id": r["id"], "name": r["name"], "team": r.get("team"),
+                                        "espn_id": (P.get(r["id"]) or {}).get("espn_id")} for r in roster])
+    stories_for = {}
+    for st in stories:
+        for pl in st["players"]:
+            stories_for.setdefault(pl["id"], []).append(st)
+    for r in roster:
+        r["stories"] = [{k: v for k, v in st.items() if k != "players"} for st in stories_for.get(r["id"], [])[:4]]
+
     # --- every team's full roster (the trade view) ---------------------------
     # who is thin where, who is desperate, who can pay. Player strings, not rows; detail lives in "roster".
     slot_names = [x for x in (league.get("roster_positions") or []) if x not in ("BN", "IR")]
@@ -204,7 +215,7 @@ def main(write=True):
            "faab_teams": faab_teams, "waiver_position": settings.get("waiver_position"),
            "record": f"{settings.get('wins',0)}-{settings.get('losses',0)}",
            "roster": roster, "fa_qbs": fa_qbs, "trending": trending, "transactions": txns, "opponent": opp,
-           "qb_depth": qb_depth, "teams": teams}
+           "qb_depth": qb_depth, "teams": teams, "stories": stories, "news_error": news_error}
     if write:
         (S.DATA / "sweep.json").write_text(json.dumps(out, indent=1))
         (S.DATA / "sweep.md").write_text(to_md(out))
