@@ -1,6 +1,6 @@
 {
- "generated": "Tue Sep 15, 2026 10:46 AM PT",
- "generated_ms": 1789494385497,
+ "generated": "Tue Sep 15, 2026 1:14 PM PT",
+ "generated_ms": 1789503290370,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -335,7 +335,7 @@
    "depth": "SWR2",
    "news": "Sep 14",
    "news_ms": 1789393504525,
-   "adds": 3074806
+   "adds": 3367154
   },
   {
    "id": "13296",
@@ -348,7 +348,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 1602376
+   "adds": 1790656
   },
   {
    "id": "6130",
@@ -361,7 +361,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789478412496,
-   "adds": 1311669
+   "adds": 1471752
   },
   {
    "id": "13414",
@@ -372,9 +372,9 @@
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 14",
-   "news_ms": 1789396503107,
-   "adds": 1010583
+   "news": "Sep 15",
+   "news_ms": 1789497360029,
+   "adds": 1120189
   },
   {
    "id": "3161",
@@ -387,7 +387,7 @@
    "depth": "QB2",
    "news": "Sep 15",
    "news_ms": 1789452609370,
-   "adds": 794928
+   "adds": 868164
   },
   {
    "id": "4993",
@@ -400,7 +400,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 649552
+   "adds": 645568
   },
   {
    "id": "9486",
@@ -413,7 +413,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789401604194,
-   "adds": 403044
+   "adds": 433842
   },
   {
    "id": "12492",
@@ -426,7 +426,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789481112948,
-   "adds": 340208
+   "adds": 380048
   },
   {
    "id": "12472",
@@ -439,7 +439,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789433108262,
-   "adds": 291712
+   "adds": 369704
   },
   {
    "id": "3286",
@@ -452,7 +452,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 251118
+   "adds": 277698
   },
   {
    "id": "4454",
@@ -465,20 +465,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 225603
-  },
-  {
-   "id": "3634",
-   "name": "Kalif Raymond",
-   "pos": "WR",
-   "team": "CHI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789428306629,
-   "adds": 205606
+   "adds": 246591
   },
   {
    "id": "4066",
@@ -491,33 +478,20 @@
    "depth": "TE1",
    "news": "Sep 15",
    "news_ms": 1789476913969,
-   "adds": 205368
+   "adds": 229360
   },
   {
-   "id": "13330",
-   "name": "Kenyon Sadiq",
-   "pos": "TE",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789411204698,
-   "adds": 182655
-  },
-  {
-   "id": "12501",
-   "name": "Matthew Golden",
+   "id": "3634",
+   "name": "Kalif Raymond",
    "pos": "WR",
-   "team": "GB",
+   "team": "CHI",
    "flag": "amber",
    "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "RWR3",
+   "depth": "SWR3",
    "news": "Sep 14",
-   "news_ms": 1789362960844,
-   "adds": 181356
+   "news_ms": 1789428306629,
+   "adds": 223248
   },
   {
    "id": "4177",
@@ -530,33 +504,33 @@
    "depth": "RWR2",
    "news": "Sep 10",
    "news_ms": 1789053904718,
-   "adds": 178467
+   "adds": 206937
   },
   {
-   "id": "6826",
-   "name": "Cole Kmet",
-   "pos": "TE",
-   "team": "CHI",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE2",
-   "news": "Sep 14",
-   "news_ms": 1789394704906,
-   "adds": 92934
-  },
-  {
-   "id": "13285",
-   "name": "Malachi Fields",
+   "id": "12501",
+   "name": "Matthew Golden",
    "pos": "WR",
-   "team": "NYG",
+   "team": "GB",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "RWR3",
+   "news": "Sep 14",
+   "news_ms": 1789362960844,
+   "adds": 202846
+  },
+  {
+   "id": "13330",
+   "name": "Kenyon Sadiq",
+   "pos": "TE",
+   "team": "NYJ",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 15",
-   "news_ms": 1789434908408,
-   "adds": 90200
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789411204698,
+   "adds": 187686
   },
   {
    "id": "11630",
@@ -569,7 +543,33 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435508374,
-   "adds": 82026
+   "adds": 87237
+  },
+  {
+   "id": "6826",
+   "name": "Cole Kmet",
+   "pos": "TE",
+   "team": "CHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE2",
+   "news": "Sep 14",
+   "news_ms": 1789394704906,
+   "adds": 84807
+  },
+  {
+   "id": "13285",
+   "name": "Malachi Fields",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 15",
+   "news_ms": 1789434908408,
+   "adds": 79675
   },
   {
    "id": "9757",
@@ -582,7 +582,7 @@
    "depth": "RB3",
    "news": "Sep 14",
    "news_ms": 1789421106276,
-   "adds": 71358
+   "adds": 77082
   }
  ],
  "transactions": [],
@@ -1317,7 +1317,7 @@
     "DEF: San Francisco 49ers DEF SF"
    ],
    "bench": [
-    "Dylan Sampson RB CLE (Out)",
+    "Dylan Sampson RB CLE (IR)",
     "Kaleb Johnson RB GB",
     "Emmett Johnson RB KC",
     "Romeo Doubs WR NE",
