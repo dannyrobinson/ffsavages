@@ -1,6 +1,6 @@
 {
- "generated": "Tue Sep 15, 2026 7:15 AM PT",
- "generated_ms": 1789481741209,
+ "generated": "Tue Sep 15, 2026 10:46 AM PT",
+ "generated_ms": 1789494385497,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -121,8 +121,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 14",
-   "news_ms": 1789399505153,
+   "news": "Sep 15",
+   "news_ms": 1789487113582,
    "slot": "BN",
    "stories": []
   },
@@ -149,8 +149,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 14",
-   "news_ms": 1789381203088,
+   "news": "Sep 15",
+   "news_ms": 1789489559035,
    "slot": "START",
    "stories": []
   },
@@ -233,8 +233,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "SWR2",
-   "news": "Sep 14",
-   "news_ms": 1789409104763,
+   "news": "Sep 15",
+   "news_ms": 1789487760811,
    "slot": "BN",
    "stories": []
   },
@@ -247,8 +247,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "LWR1",
-   "news": "Sep 14",
-   "news_ms": 1789396803294,
+   "news": "Sep 15",
+   "news_ms": 1789488658914,
    "slot": "START",
    "stories": []
   },
@@ -289,8 +289,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "K1",
-   "news": "Sep 14",
-   "news_ms": 1789400404015,
+   "news": "Sep 15",
+   "news_ms": 1789486515298,
    "slot": "START",
    "stories": []
   },
@@ -309,7 +309,20 @@
    "stories": []
   }
  ],
- "fa_qbs": [],
+ "fa_qbs": [
+  {
+   "id": "5854",
+   "name": "Drew Lock",
+   "pos": "QB",
+   "team": "SEA",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "QB1",
+   "news": "Sep 15",
+   "news_ms": 1789486813667
+  }
+ ],
  "trending": [
   {
    "id": "11834",
@@ -322,7 +335,7 @@
    "depth": "SWR2",
    "news": "Sep 14",
    "news_ms": 1789393504525,
-   "adds": 2445352
+   "adds": 3074806
   },
   {
    "id": "13296",
@@ -335,7 +348,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 1221152
+   "adds": 1602376
   },
   {
    "id": "6130",
@@ -343,12 +356,12 @@
    "pos": "RB",
    "team": "NYG",
    "flag": "amber",
-   "why": "RB4 on the depth chart",
+   "why": "RB2 on the depth chart",
    "injury": null,
-   "depth": "RB4",
+   "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789478412496,
-   "adds": 993645
+   "adds": 1311669
   },
   {
    "id": "13414",
@@ -361,7 +374,7 @@
    "depth": "RB2",
    "news": "Sep 14",
    "news_ms": 1789396503107,
-   "adds": 791168
+   "adds": 1010583
   },
   {
    "id": "3161",
@@ -369,12 +382,12 @@
    "pos": "QB",
    "team": "MIN",
    "flag": "red",
-   "why": "Not the starter (QB3)",
+   "why": "Not the starter (QB2)",
    "injury": null,
-   "depth": "QB3",
+   "depth": "QB2",
    "news": "Sep 15",
    "news_ms": 1789452609370,
-   "adds": 647706
+   "adds": 794928
   },
   {
    "id": "4993",
@@ -387,20 +400,20 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 560180
+   "adds": 649552
   },
   {
    "id": "9486",
    "name": "Dontayvion Wicks",
    "pos": "WR",
    "team": "PHI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR3",
+   "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789401604194,
-   "adds": 343434
+   "adds": 403044
   },
   {
    "id": "12492",
@@ -408,12 +421,25 @@
    "pos": "WR",
    "team": "DEN",
    "flag": "amber",
-   "why": "WR4 on the depth chart",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "SWR4",
+   "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789481112948,
-   "adds": 273560
+   "adds": 340208
+  },
+  {
+   "id": "12472",
+   "name": "Raheim Sanders",
+   "pos": "RB",
+   "team": "CLE",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 15",
+   "news_ms": 1789433108262,
+   "adds": 291712
   },
   {
    "id": "3286",
@@ -426,20 +452,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 207204
-  },
-  {
-   "id": "12472",
-   "name": "Raheim Sanders",
-   "pos": "RB",
-   "team": "CLE",
-   "flag": "amber",
-   "why": "RB3 on the depth chart",
-   "injury": null,
-   "depth": "RB3",
-   "news": "Sep 15",
-   "news_ms": 1789433108262,
-   "adds": 189624
+   "adds": 251118
   },
   {
    "id": "4454",
@@ -452,7 +465,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 182346
+   "adds": 225603
   },
   {
    "id": "3634",
@@ -460,25 +473,12 @@
    "pos": "WR",
    "team": "CHI",
    "flag": "amber",
-   "why": "WR5 on the depth chart",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "SWR5",
+   "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 164486
-  },
-  {
-   "id": "13330",
-   "name": "Kenyon Sadiq",
-   "pos": "TE",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789411204698,
-   "adds": 163494
+   "adds": 205606
   },
   {
    "id": "4066",
@@ -491,20 +491,20 @@
    "depth": "TE1",
    "news": "Sep 15",
    "news_ms": 1789476913969,
-   "adds": 151024
+   "adds": 205368
   },
   {
-   "id": "13285",
-   "name": "Malachi Fields",
-   "pos": "WR",
-   "team": "NYG",
+   "id": "13330",
+   "name": "Kenyon Sadiq",
+   "pos": "TE",
+   "team": "NYJ",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 15",
-   "news_ms": 1789434908408,
-   "adds": 137475
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789411204698,
+   "adds": 182655
   },
   {
    "id": "12501",
@@ -517,20 +517,20 @@
    "depth": "RWR3",
    "news": "Sep 14",
    "news_ms": 1789362960844,
-   "adds": 136318
+   "adds": 181356
   },
   {
    "id": "4177",
    "name": "Mack Hollins",
    "pos": "WR",
    "team": "NE",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR3",
+   "depth": "RWR2",
    "news": "Sep 10",
    "news_ms": 1789053904718,
-   "adds": 121461
+   "adds": 178467
   },
   {
    "id": "6826",
@@ -543,20 +543,33 @@
    "depth": "TE2",
    "news": "Sep 14",
    "news_ms": 1789394704906,
-   "adds": 85671
+   "adds": 92934
   },
   {
-   "id": "7090",
-   "name": "Darnell Mooney",
+   "id": "13285",
+   "name": "Malachi Fields",
    "pos": "WR",
    "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 15",
+   "news_ms": 1789434908408,
+   "adds": 90200
+  },
+  {
+   "id": "11630",
+   "name": "Roman Wilson",
+   "pos": "WR",
+   "team": "PIT",
    "flag": "amber",
    "why": "WR3 on the depth chart",
    "injury": null,
    "depth": "SWR3",
    "news": "Sep 15",
-   "news_ms": 1789435208214,
-   "adds": 85302
+   "news_ms": 1789435508374,
+   "adds": 82026
   },
   {
    "id": "9757",
@@ -569,7 +582,7 @@
    "depth": "RB3",
    "news": "Sep 14",
    "news_ms": 1789421106276,
-   "adds": 59174
+   "adds": 71358
   }
  ],
  "transactions": [],
@@ -635,8 +648,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "LWR1",
-    "news": "Sep 13",
-    "news_ms": 1789335356615
+    "news": "Sep 15",
+    "news_ms": 1789486515258
    },
    {
     "id": "8130",
@@ -655,10 +668,10 @@
     "name": "Rhamondre Stevenson",
     "pos": "RB",
     "team": "NE",
-    "flag": "amber",
-    "why": "RB2 on the depth chart",
+    "flag": "green",
+    "why": "Healthy, starting",
     "injury": null,
-    "depth": "RB2",
+    "depth": "RB1",
     "news": "Sep 10",
     "news_ms": 1789052704550
    },
@@ -684,7 +697,7 @@
     "injury": null,
     "depth": "QB1",
     "news": "Sep 15",
-    "news_ms": 1789475713974
+    "news_ms": 1789490159165
    },
    {
     "id": "5189",

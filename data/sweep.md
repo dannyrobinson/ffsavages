@@ -1,49 +1,49 @@
-# Sleeper sweep — Week 2 · Tue Sep 15, 2026 7:15 AM PT
+# Sleeper sweep — Week 2 · Tue Sep 15, 2026 10:46 AM PT
 
 Record 1-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 
 ## Roster
 - GREEN QB  Caleb Williams (CHI, START) — Healthy, starting · news Sep 14
 - GREEN QB  Joe Burrow (CIN, START) — Healthy, starting · news Sep 14
-- GREEN QB  Malik Willis (MIA, BN) — Healthy, starting · news Sep 14
+- GREEN QB  Malik Willis (MIA, BN) — Healthy, starting · news Sep 15
 - GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 14
-- GREEN RB  Jaylen Warren (PIT, START) — Healthy, starting · news Sep 14
+- GREEN RB  Jaylen Warren (PIT, START) — Healthy, starting · news Sep 15
 - AMBER RB  Kenny Gainwell (TB, BN) — RB2 on the depth chart · news Sep 14
 - GREEN RB  MarShawn Lloyd (GB, BN) — Healthy, starting · news Sep 14
 - GREEN RB  Quinshon Judkins (CLE, START) — Healthy, starting · news Sep 14
 - RED   WR  A.J. Brown (NE, IR) — IR · Ankle · Sprain · news Sep 13
 - GREEN WR  Jaylen Waddle (DEN, START) — Healthy, starting · news Sep 15
-- GREEN WR  Khalil Shakir (BUF, BN) — Healthy, starting · news Sep 14
-- GREEN WR  Malik Nabers (NYG, START) — Healthy, starting · news Sep 14
+- GREEN WR  Khalil Shakir (BUF, BN) — Healthy, starting · news Sep 15
+- GREEN WR  Malik Nabers (NYG, START) — Healthy, starting · news Sep 15
 - GREEN WR  Tre Tucker (LV, START) — Healthy, starting · news Sep 14
 - GREEN TE  Juwan Johnson (NO, START) — Healthy, starting · news Sep 14
-- GREEN K   Ka'imi Fairbairn (HOU, START) — Healthy, starting · news Sep 14
+- GREEN K   Ka'imi Fairbairn (HOU, START) — Healthy, starting · news Sep 15
 - GREEN DEF Jacksonville Jaguars (JAX, START) — Healthy, starting
 
 ## Free-agent QBs who start for their NFL team
-- none
+- Drew Lock (SEA) — Healthy, starting
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- WR  Devaughn Vele (NO) · 2,445,352 adds · SWR2 · Healthy, starting
-- WR  Caleb Douglas (MIA) · 1,221,152 adds · RWR2 · Healthy, starting
-- RB  Devin Singletary (NYG) · 993,645 adds · RB4 · RB4 on the depth chart
-- RB  Kaelon Black (SF) · 791,168 adds · RB2 · RB2 on the depth chart
-- QB  Carson Wentz (MIN) · 647,706 adds · QB3 · Not the starter (QB3)
-- TE  Mike Gesicki (CIN) · 560,180 adds · TE1 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 343,434 adds · RWR3 · WR3 on the depth chart
-- WR  Pat Bryant (DEN) · 273,560 adds · SWR4 · WR4 on the depth chart
-- WR  Demarcus Robinson (SF) · 207,204 adds · LWR3 · WR3 on the depth chart
-- RB  Raheim Sanders (CLE) · 189,624 adds · RB3 · RB3 on the depth chart
-- WR  Kendrick Bourne (ARI) · 182,346 adds · SWR3 · WR3 on the depth chart
-- WR  Kalif Raymond (CHI) · 164,486 adds · SWR5 · WR5 on the depth chart
-- TE  Kenyon Sadiq (NYJ) · 163,494 adds · TE1 · Healthy, starting
-- TE  Evan Engram (DEN) · 151,024 adds · TE1 · Healthy, starting
-- WR  Malachi Fields (NYG) · 137,475 adds · RWR2 · Healthy, starting
-- WR  Matthew Golden (GB) · 136,318 adds · RWR3 · WR3 on the depth chart
-- WR  Mack Hollins (NE) · 121,461 adds · RWR3 · WR3 on the depth chart
-- TE  Cole Kmet (CHI) · 85,671 adds · TE2 · Healthy, starting
-- WR  Darnell Mooney (NYG) · 85,302 adds · SWR3 · WR3 on the depth chart
-- RB  Kendre Miller (NO) · 59,174 adds · RB3 · RB3 on the depth chart
+- WR  Devaughn Vele (NO) · 3,074,806 adds · SWR2 · Healthy, starting
+- WR  Caleb Douglas (MIA) · 1,602,376 adds · RWR2 · Healthy, starting
+- RB  Devin Singletary (NYG) · 1,311,669 adds · RB2 · RB2 on the depth chart
+- RB  Kaelon Black (SF) · 1,010,583 adds · RB2 · RB2 on the depth chart
+- QB  Carson Wentz (MIN) · 794,928 adds · QB2 · Not the starter (QB2)
+- TE  Mike Gesicki (CIN) · 649,552 adds · TE1 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 403,044 adds · RWR2 · Healthy, starting
+- WR  Pat Bryant (DEN) · 340,208 adds · SWR3 · WR3 on the depth chart
+- RB  Raheim Sanders (CLE) · 291,712 adds · RB2 · RB2 on the depth chart
+- WR  Demarcus Robinson (SF) · 251,118 adds · LWR3 · WR3 on the depth chart
+- WR  Kendrick Bourne (ARI) · 225,603 adds · SWR3 · WR3 on the depth chart
+- WR  Kalif Raymond (CHI) · 205,606 adds · SWR3 · WR3 on the depth chart
+- TE  Evan Engram (DEN) · 205,368 adds · TE1 · Healthy, starting
+- TE  Kenyon Sadiq (NYJ) · 182,655 adds · TE1 · Healthy, starting
+- WR  Matthew Golden (GB) · 181,356 adds · RWR3 · WR3 on the depth chart
+- WR  Mack Hollins (NE) · 178,467 adds · RWR2 · Healthy, starting
+- TE  Cole Kmet (CHI) · 92,934 adds · TE2 · Healthy, starting
+- WR  Malachi Fields (NYG) · 90,200 adds · RWR2 · Healthy, starting
+- WR  Roman Wilson (PIT) · 82,026 adds · SWR3 · WR3 on the depth chart
+- RB  Kendre Miller (NO) · 71,358 adds · RB3 · RB3 on the depth chart
 
 ## League transactions, week 2
 - none yet
@@ -55,7 +55,7 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 - WR  DeVonta Smith (PHI) GREEN
 - WR  DJ Moore (BUF) GREEN
 - TE  Trey McBride (ARI) GREEN
-- RB  Rhamondre Stevenson (NE) AMBER
+- RB  Rhamondre Stevenson (NE) GREEN
 - TE  Isaiah Likely (NYG) GREEN
 - QB  Bo Nix (DEN) GREEN
 - K   Eddy Pineiro (SF) GREEN
