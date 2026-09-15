@@ -1,6 +1,6 @@
 {
- "generated": "Mon Sep 14, 2026 9:33 PM PT",
- "generated_ms": 1789446793969,
+ "generated": "Mon Sep 14, 2026 9:37 PM PT",
+ "generated_ms": 1789447033509,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -93,25 +93,10 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 13",
+   "news": "Sep 14",
    "news_ms": 1789361759080,
    "slot": "START",
-   "stories": [
-    {
-     "headline": "Caleb Williams and Bears trounce Panthers 59-37 in highest-scoring season opener in NFL history",
-     "summary": "\u2014 Ben Johnson said he slept well Saturday night at the Bears' team hotel, sensing that quarterback Caleb Williams was more than ready for the season opener.",
-     "published": "2026-09-13T22:31:30Z",
-     "published_ms": 1789338690000,
-     "link": "http://www.espn.com/nfl/recap?gameId=401872661"
-    },
-    {
-     "headline": "Three things Bears QB Caleb Williams wants to improve on",
-     "summary": "Ben Johnson laid out a careful plan for Williams' offseason tweaks, and the young QB has earned high marks.",
-     "published": "2026-09-12T10:12:47Z",
-     "published_ms": 1789207967000,
-     "link": "https://www.espn.com/nfl/story/_/id/49897273/chicago-bears-caleb-williams-2026-outlook"
-    }
-   ]
+   "stories": []
   },
   {
    "id": "6770",
@@ -122,39 +107,10 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 13",
+   "news": "Sep 14",
    "news_ms": 1789360860746,
    "slot": "START",
-   "stories": [
-    {
-     "headline": "Touchdowns galore, awards market moves and a great Sunday for NFL bettors",
-     "summary": "A high-scoring Week 1 with a variety of players scoring TDs made for a bettor-friendly Sunday.",
-     "published": "2026-09-14T16:28:29Z",
-     "published_ms": 1789403309000,
-     "link": "https://www.espn.com/espn/betting/story/_/id/49940225/nfl-week-1-betting-recap-odds-props-scores-mvp-super-bowl"
-    },
-    {
-     "headline": "Joe Burrow: It's put up or shut up time",
-     "summary": "Joe Burrow: It's put up or shut up time",
-     "published": "2026-09-13T16:22:04Z",
-     "published_ms": 1789316524000,
-     "link": "https://www.espn.com/video/clip/_/id/49927173/put-shut"
-    },
-    {
-     "headline": "Baker Mayfield\u2019s Week 1 success meets Joe Burrow\u2019s September urgency in Cincinnati",
-     "summary": "Baker Mayfield and Tampa Bay have gotten off to fast starts over the past three seasons.",
-     "published": "2026-09-10T21:02:32Z",
-     "published_ms": 1789074152000,
-     "link": "http://www.espn.com/nfl/preview?gameId=401872925"
-    },
-    {
-     "headline": "Allen, Jackson, Burrow lead MVP faves; non-QBs lead OROY odds",
-     "summary": "Quarterbacks Josh Allen, Lamar Jackson and Joe Burrow lead an early list of NFL MVP favorites, while RB Jeremiyah Love and WR Carnell Tate top Offensive Rookie of the Year odds.",
-     "published": "2026-09-09T11:02:14Z",
-     "published_ms": 1788951734000,
-     "link": "https://www.espn.com/espn/betting/story/_/id/49871989/allen-jackson-burrow-lead-mvp-faves-non-qbs-lead-oroy-odds"
-    }
-   ]
+   "stories": []
   },
   {
    "id": "8161",
@@ -168,22 +124,7 @@
    "news": "Sep 14",
    "news_ms": 1789399505153,
    "slot": "BN",
-   "stories": [
-    {
-     "headline": "QB Malik Willis takes blame for five-sack Dolphins debut",
-     "summary": "Dolphins coach Jeff Hafley said Willis still has his 'total confidence and faith' after a rough debut for Miami.",
-     "published": "2026-09-14T18:51:15Z",
-     "published_ms": 1789411875000,
-     "link": "https://www.espn.com/nfl/story/_/id/49941591/qb-malik-willis-takes-blame-five-sack-dolphins-debut-vs-raiders"
-    },
-    {
-     "headline": "How did Malik Willis fare in his Dolphins' debut?",
-     "summary": "Marcel Louis-Jacques breaks down QB Malik Willis' debut with the Dolphins in Week 1.",
-     "published": "2026-09-14T16:24:15Z",
-     "published_ms": 1789403055000,
-     "link": "https://www.espn.com/video/clip/_/id/49941051/how-did-malik-willis-fare-dolphins-debut"
-    }
-   ]
+   "stories": []
   },
   {
    "id": "9224",
@@ -194,7 +135,7 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 13",
+   "news": "Sep 14",
    "news_ms": 1789360860729,
    "slot": "START",
    "stories": []
@@ -222,7 +163,7 @@
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 13",
+   "news": "Sep 14",
    "news_ms": 1789359960506,
    "slot": "START",
    "stories": []
@@ -236,18 +177,10 @@
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 13",
+   "news": "Sep 14",
    "news_ms": 1789362360443,
    "slot": "BN",
-   "stories": [
-    {
-     "headline": "Expectations for Packers' MarShawn Lloyd with Josh Jacobs out",
-     "summary": "Lloyd is finally healthy and Josh Jacobs is on the commissioner exempt list, but how much of a workload can Lloyd handle in Week 1?",
-     "published": "2026-09-09T10:00:02Z",
-     "published_ms": 1788948002000,
-     "link": "https://www.espn.com/nfl/story/_/id/49869653/nfl-green-bay-packers-marshawn-lloyd-josh-jacobs-commissioner-exempt"
-    }
-   ]
+   "stories": []
   },
   {
    "id": "12512",
@@ -258,7 +191,7 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 13",
+   "news": "Sep 14",
    "news_ms": 1789347059520,
    "slot": "BN",
    "stories": []
@@ -275,36 +208,7 @@
    "news": "Sep 13",
    "news_ms": 1789318253868,
    "slot": "START",
-   "stories": [
-    {
-     "headline": "How will the Patriots play without A.J. Brown?",
-     "summary": "Mike Reiss breaks down who steps up in A.J. Brown's absence and how training looked heading into Sunday's game against the Steelers.",
-     "published": "2026-09-14T21:24:50Z",
-     "published_ms": 1789421090000,
-     "link": "https://www.espn.com/video/clip/_/id/49943225/how-patriots-play-aj-brown"
-    },
-    {
-     "headline": "Patriots face uphill battle without A.J. Brown for four weeks",
-     "summary": "Brown suffered a high ankle sprain in Week 1 that will keep him out of the lineup. Who will need to step up for the Patriots in his absence?",
-     "published": "2026-09-13T12:13:31Z",
-     "published_ms": 1789301611000,
-     "link": "https://www.espn.com/nfl/story/_/id/49907771/new-england-patriots-receivers-replace-aj-brown"
-    },
-    {
-     "headline": "Sources: Patriots' A.J. Brown to go on IR, miss at least 4 games",
-     "summary": "The Patriots are placing wide receiver A.J .Brown on injured reserve due to his high ankle sprain, sidelining him for a minimum of four games, sources told ESPN's Adam Schefter.",
-     "published": "2026-09-11T17:42:00Z",
-     "published_ms": 1789148520000,
-     "link": "https://www.espn.com/nfl/story/_/id/49905144/sources-patriots-aj-brown-go-ir-miss-least-4-games"
-    },
-    {
-     "headline": "Source: Patriots' A.J. Brown likely out at least 4 weeks",
-     "summary": "An MRI on the right ankle of A.J. Brown on Thursday confirmed that the New England Patriots' receiver suffered a high ankle sprain in the team's season opener, and he will be out at least four weeks, a source told NFL Network's Ian Rapoport.",
-     "published": "2026-09-11T00:28:00Z",
-     "published_ms": 1789086480000,
-     "link": "https://www.espn.com/nfl/story/_/id/49897884/sources-patriots-aj-brown-likely-least-4-weeks"
-    }
-   ]
+   "stories": []
   },
   {
    "id": "7526",
@@ -315,18 +219,10 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RWR1",
-   "news": "Sep 14",
+   "news": "Sep 15",
    "news_ms": 1789445408710,
    "slot": "START",
-   "stories": [
-    {
-     "headline": "Jaylen Waddle's impact goes beyond the numbers",
-     "summary": "Jeff Legwold explains how Jaylen Waddle's presence could create more opportunities for the Broncos' other receivers.",
-     "published": "2026-09-13T05:55:58Z",
-     "published_ms": 1789278958000,
-     "link": "https://www.espn.com/video/clip/_/id/49924180/jaylen-waddle-impact-goes-numbers"
-    }
-   ]
+   "stories": []
   },
   {
    "id": "8134",
@@ -354,22 +250,7 @@
    "news": "Sep 14",
    "news_ms": 1789396803294,
    "slot": "START",
-   "stories": [
-    {
-     "headline": "Giants' Harbaugh admits tackling Nabers to relax WR's injury fears",
-     "summary": "Giants coach John Harbaugh says tackling star receiver Malik Nabers was \"all in fun\" and was an effort to help the wideout move beyond his injury fears.",
-     "published": "2026-09-14T21:39:20Z",
-     "published_ms": 1789421960000,
-     "link": "https://www.espn.com/nfl/story/_/id/49943099/giants-harbaugh-tackled-nabers-relax-wideout-injury-fears"
-    },
-    {
-     "headline": "Giants WR Malik Nabers makes return in opener vs. Cowboys",
-     "summary": "Giants standout wide receiver Malik Nabers caught six passes on nine targets for 69 yards in Sunday night's win over the Cowboys, his first game action since last September.",
-     "published": "2026-09-14T07:41:35Z",
-     "published_ms": 1789371695000,
-     "link": "https://www.espn.com/nfl/story/_/id/49934374/giants-wr-malik-nabers-knee-active-opener-vs-cowboys"
-    }
-   ]
+   "stories": []
   },
   {
    "id": "10213",
@@ -397,15 +278,7 @@
    "news": "Sep 14",
    "news_ms": 1789393504493,
    "slot": "START",
-   "stories": [
-    {
-     "headline": "New Orleans Saints vs. Detroit Lions: Game Highlights",
-     "summary": "New Orleans Saints vs. Detroit Lions: Game Highlights",
-     "published": "2026-09-13T21:21:03Z",
-     "published_ms": 1789334463000,
-     "link": "https://www.espn.com/video/clip/_/id/49932634/game-highlights"
-    }
-   ]
+   "stories": []
   },
   {
    "id": "3451",
@@ -433,29 +306,7 @@
    "news": null,
    "news_ms": null,
    "slot": "START",
-   "stories": [
-    {
-     "headline": "Cleveland Browns vs. Jacksonville Jaguars - Game Highlights",
-     "summary": "Cleveland Browns vs. Jacksonville Jaguars - Game Highlights",
-     "published": "2026-09-13T22:39:35Z",
-     "published_ms": 1789339175000,
-     "link": "https://www.espn.com/video/clip/_/id/49933879/cleveland-browns-vs-jacksonville-jaguars-game-highlights"
-    },
-    {
-     "headline": "Trevor Lawrence throws 4 TD passes as the Jaguars rout the Browns 34-10 in season opener",
-     "summary": "\u2014 Trevor Lawrence and the Jacksonville Jaguars waited seven agonizing months to play another meaningful game at EverBank Stadium.",
-     "published": "2026-09-13T21:28:40Z",
-     "published_ms": 1789334920000,
-     "link": "http://www.espn.com/nfl/recap?gameId=401872922"
-    },
-    {
-     "headline": "Familiar-looking Jaguars open season with playoff aspirations against rebuilding Browns",
-     "summary": "\u2014 The Jacksonville Jaguars return many of the same players, all the same coaches and pretty much the same approach on both sides of the ball.",
-     "published": "2026-09-10T21:40:30Z",
-     "published_ms": 1789076430000,
-     "link": "http://www.espn.com/nfl/preview?gameId=401872922"
-    }
-   ]
+   "stories": []
   }
  ],
  "fa_qbs": [],
@@ -495,7 +346,7 @@
    "why": "RB4 on the depth chart",
    "injury": null,
    "depth": "RB4",
-   "news": "Sep 14",
+   "news": "Sep 15",
    "news_ms": 1789436108574,
    "adds": 570672
   },
@@ -521,7 +372,7 @@
    "why": "Not the starter (QB3)",
    "injury": null,
    "depth": "QB3",
-   "news": "Sep 13",
+   "news": "Sep 14",
    "news_ms": 1789363561296,
    "adds": 432390
   },
@@ -560,7 +411,7 @@
    "why": "WR3 on the depth chart",
    "injury": null,
    "depth": "SWR3",
-   "news": "Sep 12",
+   "news": "Sep 13",
    "news_ms": 1789278348657,
    "adds": 194240
   },
@@ -573,7 +424,7 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RWR2",
-   "news": "Sep 14",
+   "news": "Sep 15",
    "news_ms": 1789434908408,
    "adds": 144220
   },
@@ -586,7 +437,7 @@
    "why": "WR6 on the depth chart",
    "injury": null,
    "depth": "LWR6",
-   "news": "Sep 11",
+   "news": "Sep 12",
    "news_ms": 1789171515202,
    "adds": 128556
   },
@@ -638,7 +489,7 @@
    "why": "WR3 on the depth chart",
    "injury": null,
    "depth": "SWR3",
-   "news": "Sep 14",
+   "news": "Sep 15",
    "news_ms": 1789435208214,
    "adds": 92214
   },
@@ -664,7 +515,7 @@
    "why": "WR3 on the depth chart",
    "injury": null,
    "depth": "RWR3",
-   "news": "Sep 13",
+   "news": "Sep 14",
    "news_ms": 1789362960844,
    "adds": 73045
   },
@@ -690,7 +541,7 @@
    "why": "WR5 on the depth chart",
    "injury": null,
    "depth": "LWR5",
-   "news": "Sep 14",
+   "news": "Sep 15",
    "news_ms": 1789436708459,
    "adds": 62244
   },
@@ -703,7 +554,7 @@
    "why": "RB3 on the depth chart",
    "injury": null,
    "depth": "RB3",
-   "news": "Sep 14",
+   "news": "Sep 15",
    "news_ms": 1789433108262,
    "adds": 59504
   },
@@ -772,7 +623,7 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "LWR1",
-    "news": "Sep 13",
+    "news": "Sep 14",
     "news_ms": 1789344958186
    },
    {
@@ -832,7 +683,7 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "QB1",
-    "news": "Sep 14",
+    "news": "Sep 15",
     "news_ms": 1789445708633
    },
    {
@@ -844,7 +695,7 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "K1",
-    "news": "Sep 10",
+    "news": "Sep 11",
     "news_ms": 1789101016428
    },
    {
@@ -1463,308 +1314,8 @@
    ]
   }
  ],
- "stories": [
-  {
-   "headline": "Giants' Harbaugh admits tackling Nabers to relax WR's injury fears",
-   "summary": "Giants coach John Harbaugh says tackling star receiver Malik Nabers was \"all in fun\" and was an effort to help the wideout move beyond his injury fears.",
-   "published": "2026-09-14T21:39:20Z",
-   "published_ms": 1789421960000,
-   "link": "https://www.espn.com/nfl/story/_/id/49943099/giants-harbaugh-tackled-nabers-relax-wideout-injury-fears",
-   "players": [
-    {
-     "id": "11632",
-     "name": "Malik Nabers"
-    }
-   ]
-  },
-  {
-   "headline": "How will the Patriots play without A.J. Brown?",
-   "summary": "Mike Reiss breaks down who steps up in A.J. Brown's absence and how training looked heading into Sunday's game against the Steelers.",
-   "published": "2026-09-14T21:24:50Z",
-   "published_ms": 1789421090000,
-   "link": "https://www.espn.com/video/clip/_/id/49943225/how-patriots-play-aj-brown",
-   "players": [
-    {
-     "id": "5859",
-     "name": "A.J. Brown"
-    }
-   ]
-  },
-  {
-   "headline": "QB Malik Willis takes blame for five-sack Dolphins debut",
-   "summary": "Dolphins coach Jeff Hafley said Willis still has his 'total confidence and faith' after a rough debut for Miami.",
-   "published": "2026-09-14T18:51:15Z",
-   "published_ms": 1789411875000,
-   "link": "https://www.espn.com/nfl/story/_/id/49941591/qb-malik-willis-takes-blame-five-sack-dolphins-debut-vs-raiders",
-   "players": [
-    {
-     "id": "8161",
-     "name": "Malik Willis"
-    }
-   ]
-  },
-  {
-   "headline": "Touchdowns galore, awards market moves and a great Sunday for NFL bettors",
-   "summary": "A high-scoring Week 1 with a variety of players scoring TDs made for a bettor-friendly Sunday.",
-   "published": "2026-09-14T16:28:29Z",
-   "published_ms": 1789403309000,
-   "link": "https://www.espn.com/espn/betting/story/_/id/49940225/nfl-week-1-betting-recap-odds-props-scores-mvp-super-bowl",
-   "players": [
-    {
-     "id": "6770",
-     "name": "Joe Burrow"
-    }
-   ]
-  },
-  {
-   "headline": "How did Malik Willis fare in his Dolphins' debut?",
-   "summary": "Marcel Louis-Jacques breaks down QB Malik Willis' debut with the Dolphins in Week 1.",
-   "published": "2026-09-14T16:24:15Z",
-   "published_ms": 1789403055000,
-   "link": "https://www.espn.com/video/clip/_/id/49941051/how-did-malik-willis-fare-dolphins-debut",
-   "players": [
-    {
-     "id": "8161",
-     "name": "Malik Willis"
-    }
-   ]
-  },
-  {
-   "headline": "Giants WR Malik Nabers makes return in opener vs. Cowboys",
-   "summary": "Giants standout wide receiver Malik Nabers caught six passes on nine targets for 69 yards in Sunday night's win over the Cowboys, his first game action since last September.",
-   "published": "2026-09-14T07:41:35Z",
-   "published_ms": 1789371695000,
-   "link": "https://www.espn.com/nfl/story/_/id/49934374/giants-wr-malik-nabers-knee-active-opener-vs-cowboys",
-   "players": [
-    {
-     "id": "11632",
-     "name": "Malik Nabers"
-    }
-   ]
-  },
-  {
-   "headline": "Cleveland Browns vs. Jacksonville Jaguars - Game Highlights",
-   "summary": "Cleveland Browns vs. Jacksonville Jaguars - Game Highlights",
-   "published": "2026-09-13T22:39:35Z",
-   "published_ms": 1789339175000,
-   "link": "https://www.espn.com/video/clip/_/id/49933879/cleveland-browns-vs-jacksonville-jaguars-game-highlights",
-   "players": [
-    {
-     "id": "JAX",
-     "name": "Jacksonville Jaguars"
-    }
-   ]
-  },
-  {
-   "headline": "Caleb Williams and Bears trounce Panthers 59-37 in highest-scoring season opener in NFL history",
-   "summary": "\u2014 Ben Johnson said he slept well Saturday night at the Bears' team hotel, sensing that quarterback Caleb Williams was more than ready for the season opener.",
-   "published": "2026-09-13T22:31:30Z",
-   "published_ms": 1789338690000,
-   "link": "http://www.espn.com/nfl/recap?gameId=401872661",
-   "players": [
-    {
-     "id": "11560",
-     "name": "Caleb Williams"
-    }
-   ]
-  },
-  {
-   "headline": "Trevor Lawrence throws 4 TD passes as the Jaguars rout the Browns 34-10 in season opener",
-   "summary": "\u2014 Trevor Lawrence and the Jacksonville Jaguars waited seven agonizing months to play another meaningful game at EverBank Stadium.",
-   "published": "2026-09-13T21:28:40Z",
-   "published_ms": 1789334920000,
-   "link": "http://www.espn.com/nfl/recap?gameId=401872922",
-   "players": [
-    {
-     "id": "JAX",
-     "name": "Jacksonville Jaguars"
-    }
-   ]
-  },
-  {
-   "headline": "New Orleans Saints vs. Detroit Lions: Game Highlights",
-   "summary": "New Orleans Saints vs. Detroit Lions: Game Highlights",
-   "published": "2026-09-13T21:21:03Z",
-   "published_ms": 1789334463000,
-   "link": "https://www.espn.com/video/clip/_/id/49932634/game-highlights",
-   "players": [
-    {
-     "id": "7002",
-     "name": "Juwan Johnson"
-    }
-   ]
-  },
-  {
-   "headline": "Joe Burrow: It's put up or shut up time",
-   "summary": "Joe Burrow: It's put up or shut up time",
-   "published": "2026-09-13T16:22:04Z",
-   "published_ms": 1789316524000,
-   "link": "https://www.espn.com/video/clip/_/id/49927173/put-shut",
-   "players": [
-    {
-     "id": "6770",
-     "name": "Joe Burrow"
-    }
-   ]
-  },
-  {
-   "headline": "Patriots face uphill battle without A.J. Brown for four weeks",
-   "summary": "Brown suffered a high ankle sprain in Week 1 that will keep him out of the lineup. Who will need to step up for the Patriots in his absence?",
-   "published": "2026-09-13T12:13:31Z",
-   "published_ms": 1789301611000,
-   "link": "https://www.espn.com/nfl/story/_/id/49907771/new-england-patriots-receivers-replace-aj-brown",
-   "players": [
-    {
-     "id": "5859",
-     "name": "A.J. Brown"
-    }
-   ]
-  },
-  {
-   "headline": "Jaylen Waddle's impact goes beyond the numbers",
-   "summary": "Jeff Legwold explains how Jaylen Waddle's presence could create more opportunities for the Broncos' other receivers.",
-   "published": "2026-09-13T05:55:58Z",
-   "published_ms": 1789278958000,
-   "link": "https://www.espn.com/video/clip/_/id/49924180/jaylen-waddle-impact-goes-numbers",
-   "players": [
-    {
-     "id": "7526",
-     "name": "Jaylen Waddle"
-    }
-   ]
-  },
-  {
-   "headline": "Three things Bears QB Caleb Williams wants to improve on",
-   "summary": "Ben Johnson laid out a careful plan for Williams' offseason tweaks, and the young QB has earned high marks.",
-   "published": "2026-09-12T10:12:47Z",
-   "published_ms": 1789207967000,
-   "link": "https://www.espn.com/nfl/story/_/id/49897273/chicago-bears-caleb-williams-2026-outlook",
-   "players": [
-    {
-     "id": "11560",
-     "name": "Caleb Williams"
-    }
-   ]
-  },
-  {
-   "headline": "Sources: Patriots' A.J. Brown to go on IR, miss at least 4 games",
-   "summary": "The Patriots are placing wide receiver A.J .Brown on injured reserve due to his high ankle sprain, sidelining him for a minimum of four games, sources told ESPN's Adam Schefter.",
-   "published": "2026-09-11T17:42:00Z",
-   "published_ms": 1789148520000,
-   "link": "https://www.espn.com/nfl/story/_/id/49905144/sources-patriots-aj-brown-go-ir-miss-least-4-games",
-   "players": [
-    {
-     "id": "5859",
-     "name": "A.J. Brown"
-    }
-   ]
-  },
-  {
-   "headline": "Source: Patriots' A.J. Brown likely out at least 4 weeks",
-   "summary": "An MRI on the right ankle of A.J. Brown on Thursday confirmed that the New England Patriots' receiver suffered a high ankle sprain in the team's season opener, and he will be out at least four weeks, a source told NFL Network's Ian Rapoport.",
-   "published": "2026-09-11T00:28:00Z",
-   "published_ms": 1789086480000,
-   "link": "https://www.espn.com/nfl/story/_/id/49897884/sources-patriots-aj-brown-likely-least-4-weeks",
-   "players": [
-    {
-     "id": "5859",
-     "name": "A.J. Brown"
-    }
-   ]
-  },
-  {
-   "headline": "Familiar-looking Jaguars open season with playoff aspirations against rebuilding Browns",
-   "summary": "\u2014 The Jacksonville Jaguars return many of the same players, all the same coaches and pretty much the same approach on both sides of the ball.",
-   "published": "2026-09-10T21:40:30Z",
-   "published_ms": 1789076430000,
-   "link": "http://www.espn.com/nfl/preview?gameId=401872922",
-   "players": [
-    {
-     "id": "JAX",
-     "name": "Jacksonville Jaguars"
-    }
-   ]
-  },
-  {
-   "headline": "Baker Mayfield\u2019s Week 1 success meets Joe Burrow\u2019s September urgency in Cincinnati",
-   "summary": "Baker Mayfield and Tampa Bay have gotten off to fast starts over the past three seasons.",
-   "published": "2026-09-10T21:02:32Z",
-   "published_ms": 1789074152000,
-   "link": "http://www.espn.com/nfl/preview?gameId=401872925",
-   "players": [
-    {
-     "id": "6770",
-     "name": "Joe Burrow"
-    }
-   ]
-  },
-  {
-   "headline": "Stephen A.: A.J. Brown injury not a death knell, but not good news for Pats",
-   "summary": "Stephen A.: A.J. Brown injury not a death knell, but not good news for Pats",
-   "published": "2026-09-10T14:53:30Z",
-   "published_ms": 1789052010000,
-   "link": "https://www.espn.com/video/clip/_/id/49892139/aj-brown-injury-not-death-knell-not-good-news-pats",
-   "players": [
-    {
-     "id": "5859",
-     "name": "A.J. Brown"
-    }
-   ]
-  },
-  {
-   "headline": "Allen, Jackson, Burrow lead MVP faves; non-QBs lead OROY odds",
-   "summary": "Quarterbacks Josh Allen, Lamar Jackson and Joe Burrow lead an early list of NFL MVP favorites, while RB Jeremiyah Love and WR Carnell Tate top Offensive Rookie of the Year odds.",
-   "published": "2026-09-09T11:02:14Z",
-   "published_ms": 1788951734000,
-   "link": "https://www.espn.com/espn/betting/story/_/id/49871989/allen-jackson-burrow-lead-mvp-faves-non-qbs-lead-oroy-odds",
-   "players": [
-    {
-     "id": "6770",
-     "name": "Joe Burrow"
-    }
-   ]
-  },
-  {
-   "headline": "Joe Burrow in it for 'long haul' with Cincinnati Bengals",
-   "summary": "As the season opener nears, Cincinnati veteran quarterback Joe Burrow, 29, affirmed his desire to remain with the Bengals, telling the team's website that he's \"here for the long haul\" and ready to \"attack the day with a championship mindset.\"",
-   "published": "2026-09-09T10:40:45Z",
-   "published_ms": 1788950445000,
-   "link": "https://www.espn.com/nfl/story/_/id/49872935/joe-burrow-long-haul-cincinnati-bengals",
-   "players": [
-    {
-     "id": "6770",
-     "name": "Joe Burrow"
-    }
-   ]
-  },
-  {
-   "headline": "Expectations for Packers' MarShawn Lloyd with Josh Jacobs out",
-   "summary": "Lloyd is finally healthy and Josh Jacobs is on the commissioner exempt list, but how much of a workload can Lloyd handle in Week 1?",
-   "published": "2026-09-09T10:00:02Z",
-   "published_ms": 1788948002000,
-   "link": "https://www.espn.com/nfl/story/_/id/49869653/nfl-green-bay-packers-marshawn-lloyd-josh-jacobs-commissioner-exempt",
-   "players": [
-    {
-     "id": "11581",
-     "name": "MarShawn Lloyd"
-    }
-   ]
-  },
-  {
-   "headline": "NFL execs predict 2026 award winners: MVP, top rookies, more",
-   "summary": "Who will win MVP? Who will take offensive and defensive rookie of the year? Who is primed for a breakout? We asked execs and scouts for their picks.",
-   "published": "2026-09-08T14:56:14Z",
-   "published_ms": 1788879374000,
-   "link": "https://www.espn.com/nfl/story/_/id/49859670/2026-nfl-season-executives-award-winners-mvp-rookies-honors-breakouts",
-   "players": [
-    {
-     "id": "6770",
-     "name": "Joe Burrow"
-    }
-   ]
-  }
- ],
- "news_error": null,
+ "stories": [],
+ "news_error": "HTTP Error 403: Forbidden",
  "league": {
   "trade_deadline": 10,
   "playoff_week_start": 12,

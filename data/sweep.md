@@ -1,18 +1,18 @@
-# Sleeper sweep — Week 2 · Mon Sep 14, 2026 9:33 PM PT
+# Sleeper sweep — Week 2 · Mon Sep 14, 2026 9:37 PM PT
 
 Record 0-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 
 ## Roster
-- GREEN QB  Caleb Williams (CHI, START) — Healthy, starting · news Sep 13
-- GREEN QB  Joe Burrow (CIN, START) — Healthy, starting · news Sep 13
+- GREEN QB  Caleb Williams (CHI, START) — Healthy, starting · news Sep 14
+- GREEN QB  Joe Burrow (CIN, START) — Healthy, starting · news Sep 14
 - GREEN QB  Malik Willis (MIA, BN) — Healthy, starting · news Sep 14
-- GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 13
+- GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 14
 - GREEN RB  Jaylen Warren (PIT, START) — Healthy, starting · news Sep 14
-- AMBER RB  Kenny Gainwell (TB, START) — RB2 on the depth chart · news Sep 13
-- AMBER RB  MarShawn Lloyd (GB, BN) — RB2 on the depth chart · news Sep 13
-- GREEN RB  Quinshon Judkins (CLE, BN) — Healthy, starting · news Sep 13
+- AMBER RB  Kenny Gainwell (TB, START) — RB2 on the depth chart · news Sep 14
+- AMBER RB  MarShawn Lloyd (GB, BN) — RB2 on the depth chart · news Sep 14
+- GREEN RB  Quinshon Judkins (CLE, BN) — Healthy, starting · news Sep 14
 - RED   WR  A.J. Brown (NE, START) — IR · Ankle · Sprain · news Sep 13
-- GREEN WR  Jaylen Waddle (DEN, START) — Healthy, starting · news Sep 14
+- GREEN WR  Jaylen Waddle (DEN, START) — Healthy, starting · news Sep 15
 - GREEN WR  Khalil Shakir (BUF, BN) — Healthy, starting · news Sep 14
 - GREEN WR  Malik Nabers (NYG, START) — Healthy, starting · news Sep 14
 - GREEN WR  Tre Tucker (LV, BN) — Healthy, starting · news Sep 14
