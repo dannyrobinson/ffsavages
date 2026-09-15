@@ -64,6 +64,9 @@ def main():
         shutil.copy(ROOT / "app" / f, site / f)
     shutil.copytree(ROOT / "app/icons", site / "icons", dirs_exist_ok=True)
     (site / "sweep.json").write_text(json.dumps(data, indent=1))
+    ids = ROOT / "data/ids.json"                        # id -> "Name|POS|TEAM", so the app can name ids the slim feed drops
+    if ids.exists():
+        shutil.copy(ids, site / "ids.json")
     (site / ".nojekyll").write_text("")
     print(f"built site/ · week {data['week']} · sweep {data['generated']}")
 
