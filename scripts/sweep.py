@@ -219,6 +219,9 @@ def main(write=True):
     if write:
         (S.DATA / "sweep.json").write_text(json.dumps(out, indent=1))
         (S.DATA / "sweep.md").write_text(to_md(out))
+        # every player id -> "Name|POS|TEAM", so anything reading the repo can resolve an id
+        ids = {k: f"{v.get('name') or ''}|{v.get('pos') or ''}|{v.get('team') or 'FA'}" for k, v in P.items()}
+        (S.DATA / "ids.json").write_text(json.dumps(ids, separators=(",", ":")))
     return out
 
 def to_md(o):

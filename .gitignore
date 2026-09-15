@@ -2,6 +2,7 @@ data/*
 !data/.gitkeep
 !data/sweep.json
 !data/sweep.md
+!data/ids.json
 !data/advice.json
 !data/context.json
 site/

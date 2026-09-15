@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sweep.json data/sweep.md
+          git add data/sweep.json data/sweep.md data/ids.json
           [ -f data/context.json ] && git add data/context.json
           if git diff --cached --quiet; then echo "sweep unchanged"; else
             git commit -m "Sweep: $(date -u +'%Y-%m-%d %H:%M UTC')"
