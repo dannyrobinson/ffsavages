@@ -287,6 +287,18 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
     <div class="row2"><button class="btn sec small" id="clearChat">Clear chat</button></div>
   </section>
 
+  <!-- TRADES -->
+  <section class="pane" id="trades" hidden>
+    <p class="lead">Who in this league needs what you have. Read off every team's roster; the fits are ranked, the asks are named.</p>
+    <div class="card" id="tradeHead"></div>
+    <h3 class="sec">Claude's trade ideas</h3>
+    <div class="card" id="tradeOut"></div>
+    <div class="row2"><button class="btn" id="tradeAsk">Get trade ideas</button></div>
+    <div class="status" id="tradeStatus"></div>
+    <h3 class="sec">Best fits</h3>
+    <div id="tradeFits"></div>
+  </section>
+
   <!-- PLAN -->
   <section class="pane" id="plan" hidden>
     <p class="lead">The week, the rules that win, and where the QB market is. Claude follows the same playbook when it advises.</p>
@@ -315,6 +327,7 @@ h3.sec small{font-family:"IBM Plex Sans",sans-serif;font-weight:400;font-size:12
   <button role="tab" aria-selected="false" data-pane="roster"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Roster</button>
   <button role="tab" aria-selected="false" data-pane="news"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h8M8 17h5"/></svg>News<span class="badge" id="newsBadge" hidden></span></button>
   <button role="tab" aria-selected="false" data-pane="ask"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Ask</button>
+  <button role="tab" aria-selected="false" data-pane="trades"><svg viewBox="0 0 24 24"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg>Trades</button>
   <button role="tab" aria-selected="false" data-pane="plan"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM9 9h6M9 13h6M9 17h3"/></svg>Plan</button>
 </nav>
 
@@ -333,7 +346,7 @@ const DRAFTED=[{"name":"Joe Burrow","pos":"QB","team":"CIN","status":""},{"name"
 function sleeperRoster(){ return (SWEEP.roster||[]).length?SWEEP.roster.map(p=>({name:p.name,pos:p.pos,team:p.team,status:p.slot==="IR"?"IR":""})):DRAFTED; }
 const BAKED=sleeperRoster();
 const FLAGS={}; (SWEEP.roster||[]).forEach(p=>FLAGS[p.name]=p);
-let S={roster:BAKED.map(p=>({...p})),log:[],advice:null,chat:[],subs:null,syncedMs:SWEEP.generated_ms||0};
+let S={roster:BAKED.map(p=>({...p})),log:[],advice:null,chat:[],subs:null,trades:null,syncedMs:SWEEP.generated_ms||0};
 try{const raw=localStorage.getItem(KEY); if(raw) S={...S,...JSON.parse(raw)}}catch(e){}
 // Sleeper is the source of truth: a newer bake replaces whatever was edited by hand.
 if((SWEEP.generated_ms||0)>(S.syncedMs||0)||!S.roster.length){ S.roster=BAKED.map(p=>({...p})); S.syncedMs=SWEEP.generated_ms||0; }
@@ -586,6 +599,59 @@ function renderPlan(){
   $("playbook").innerHTML=PLAYBOOK.map(([h,items])=>`<h4>${h}</h4><ul>${items.map(i=>`<li>${i}</li>`).join("")}</ul>`).join("");
 }
 
+// ---- Trades ----
+// Rival rosters come from SWEEP.teams (starters/bench/IR as strings plus a positional count per team).
+// Depth for a 12-team superflex: QB3 is standard, 2 is thin, 4 is a spare to sell. Below a threshold is a need,
+// at or above the second is a glut — the two halves of every trade.
+const DEPTH={QB:[2,4],RB:[3,6],WR:[3,6],TE:[1,3]};
+const HURT=/\((Out|IR|PUP|NA|DNR|Sus|Doubtful)\)/i;
+function depthRead(counts){
+  const thin=[],deep=[];
+  for(const pos of ["QB","RB","WR","TE"]){ const n=(counts||{})[pos]||0; if(n<=DEPTH[pos][0]) thin.push(pos); else if(n>=DEPTH[pos][1]) deep.push(pos); }
+  return {thin,deep};
+}
+const unslot=s=>String(s||"").replace(/^[A-Z_]+:\s*/,"");
+const pName=s=>unslot(s).replace(/\s+(QB|RB|WR|TE|K|DEF)\s+.*$/,"");
+const pPos=s=>{ const m=unslot(s).match(/\s(QB|RB|WR|TE|K|DEF)\s/); return m?m[1]:null; };
+function renderTrades(){
+  const teams=SWEEP.teams||[], me=teams.find(t=>t.mine), lg=SWEEP.league||{}, dl=lg.trade_deadline||10;
+  if(!teams.length||!me){ $("tradeHead").innerHTML="League rosters come with the live Sleeper refresh."; $("tradeFits").innerHTML=""; renderTradeOut(); return; }
+  const mine=depthRead(me.counts), weeksLeft=Math.max(0,dl-(SWEEP.week||0));
+  $("tradeHead").innerHTML=`Week <b>${SWEEP.week}</b> · deadline after <b>week ${dl}</b>${weeksLeft?` (${weeksLeft} week${weeksLeft===1?"":"s"} left)`:" — closed"}. You are deep at <b>${mine.deep.join(", ")||"nothing"}</b>, thin at <b>${mine.thin.join(", ")||"nothing"}</b>.<div style="margin-top:6px">Does it raise your starting nine? Offer two for their best plus their worst. Firm opening offers, nothing in league chat. Weeks 5–10 is the window; discount teams whose bye is week 13 or 14.</div>`;
+  const rows=teams.filter(t=>!t.mine).map(t=>{
+    const d=depthRead(t.counts);
+    const wants=d.thin.filter(p=>mine.deep.includes(p));
+    const has=d.deep.filter(p=>mine.thin.includes(p));
+    const hurt=[...(t.starters||[]),...(t.ir||[])].filter(x=>HURT.test(x)).map(pName);
+    // who to ask for: their players at a position you are thin in — bench first (cheapest to prise loose), then starters
+    const pieces=[...(t.bench||[]),...(t.ir||[]),...(t.starters||[])].filter(x=>has.includes(pPos(x))).map(pName).slice(0,4);
+    return {t,d,wants,has,hurt,pieces,score:wants.length*2+has.length*2+hurt.length};
+  }).sort((a,b)=>b.score-a.score||b.t.faab_left-a.t.faab_left);
+  $("tradeFits").innerHTML=rows.map(r=>{
+    const t=r.t, counts=Object.entries(t.counts||{}).sort().map(([k,v])=>k+v).join(" ");
+    const line=[r.wants.length?`Thin at <b>${r.wants.join(", ")}</b> — where you have the spare`:"",
+                r.has.length?`Deep at <b>${r.has.join(", ")}</b> — where you need one`:"",
+                (!r.wants.length&&!r.has.length)?"No positional fit right now":""].filter(Boolean).join(" · ");
+    return `<div class="card"><b>${esc(t.team)}</b> ${esc(t.record)} · $${t.faab_left} FAAB · ${esc(counts)}<div style="margin-top:4px">${line}</div>${r.hurt.length?`<div style="color:var(--red)">Starting or stashing hurt: ${esc(r.hurt.join(", "))}</div>`:""}${r.pieces.length?`<small>Ask about: ${esc(r.pieces.join(", "))}</small>`:""}</div>`;
+  }).join("");
+  renderTradeOut();
+}
+function renderTradeOut(){
+  const o=S.trades;
+  $("tradeOut").innerHTML=o&&o.text?`${esc(o.text).replace(/\n/g,"<br>")}<div style="margin-top:6px"><small>${new Date(o.ts).toLocaleString()}</small></div>`:`<div class="empty">Nothing yet. Claude reads every roster in the league and proposes up to three trades — costs a Claude call, same as Ask.</div>`;
+}
+$("tradeAsk").addEventListener("click",async()=>{
+  if(!AI.api){ setStatus("tradeStatus",NOT_HERE(),true); return; }
+  const dl=(SWEEP.league||{}).trade_deadline||10;
+  $("tradeAsk").disabled=true; setStatus("tradeStatus","Reading all 12 rosters…");
+  const q=`Trade ideas only, nothing else. Using every team's roster in the data, propose at most three trades that would raise my starting nine before the week ${dl} deadline, best first. For each one: the team, exactly who goes each way, one line on why they accept, one line on what it does for my lineup. Only players who are actually on the rosters in the data. If no trade is worth making this week, say that in one line and stop.`;
+  try{
+    const {text}=await apiPost("api/ask",{mode:"chat",news:logText(),messages:[{role:"user",content:q}]});
+    S.trades={text,ts:Date.now()}; save(); renderTradeOut(); setStatus("tradeStatus","");
+  }catch(e){ setStatus("tradeStatus",copyFor(e),true); }
+  finally{ $("tradeAsk").disabled=false; }
+});
+
 // ---- live Sleeper ----
 // The baked SWEEP is only the fallback. On open (and on Refresh) the page asks this deployment's /api/sweep for a
 // fresh one; where there is no API (GitHub Pages) it talks to api.sleeper.app directly and caches the player feed.
@@ -659,7 +725,7 @@ function applySweep(sw){
   SWEEP={...SWEEP,...sw,league:sw.league||SWEEP.league}; noteNames(SWEEP);
   Object.keys(FLAGS).forEach(k=>delete FLAGS[k]); (SWEEP.roster||[]).forEach(p=>FLAGS[p.name]=p);
   if((SWEEP.generated_ms||0)>(S.syncedMs||0)){ S.roster=sleeperRoster().map(p=>({...p})); S.syncedMs=SWEEP.generated_ms; save(); }
-  renderSweep(); renderRoster(); renderPlan(); renderLineup(); renderSubs();
+  renderSweep(); renderRoster(); renderPlan(); renderTrades(); renderLineup(); renderSubs();
 }
 function setLive(msg,cls){ const el=$("liveStamp"); $("liveText").textContent=msg; el.className="live"+(cls?" "+cls:""); }
 // ---- pull to refresh ----
@@ -765,7 +831,7 @@ function go(id){ document.querySelectorAll(".nav button").forEach(b=>b.setAttrib
 document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>go(b.dataset.pane)));
 
 // ---- boot ----
-renderAdvice(); renderLineup(); renderSubs(); renderRoster(); renderLog(); renderChat(); renderSweep(); renderPlan(); save();
+renderAdvice(); renderLineup(); renderSubs(); renderRoster(); renderLog(); renderChat(); renderSweep(); renderPlan(); renderTrades(); save();
 setLive(`Sleeper snapshot from ${SWEEP.generated||"—"}`);
 refreshLive(false);
 if("serviceWorker" in navigator){ navigator.serviceWorker.register("sw.js",{scope:"./"}).then(()=>initAlerts()).catch(()=>{ AL.supported=false; initAlerts(); }); }

@@ -85,7 +85,7 @@ those off. The goal it optimises for is the most fantasy points Danny's lineup c
 - He reads this on his phone. Short beats thorough.
 
 ## What's here
-- `app/gm.html` — phone app, single file. Tabs: Moves, Roster, News, Ask, Plan. One block is baked in by
+- `app/gm.html` — phone app, single file. Tabs: Moves, Roster, News, Ask, Trades, Plan. One block is baked in by
   `scripts/build.py` between HTML comment markers: `SWEEP` (JSON from the Python sweep: roster with
   red/amber/green flags, free-agent starting QBs, trending adds that are free agents *here*, league
   transactions with bids, this week's opponent, QB count per team, FAAB left per team). **The baked SWEEP is only the offline fallback**:
@@ -96,7 +96,10 @@ those off. The goal it optimises for is the most fantasy points Danny's lineup c
   page follows the finger, a spinner sits in the gap, and the refresh shows two steps, Sleeper then Claude's
   latest stored read (it never runs the advisor; that is "Re-check now"). `applySweep()` replaces SWEEP, FLAGS
   and the roster. The Plan tab shows FAAB per team, byes ahead and a
-  DEF-stream card (this week and next); the Roster tab shows each player's bye.
+  DEF-stream card (this week and next); the Roster tab shows each player's bye. The **Trades** tab reads
+  `SWEEP.teams`: Danny's thin and deep positions, the other 11 ranked by fit (their need against his glut, plus
+  anyone they are starting or stashing hurt) and the players to ask for; "Get trade ideas" POSTs `api/ask` for up
+  to three concrete trades (a Claude call, like Ask). Depth thresholds live in the page: QB 2/4, RB 3/6, WR 3/6, TE 1/3.
   The Moves tab shows Claude's latest stored advice from `api/advice` (headline, summary, lineup changes,
   adds with the drop and bid for each, IR moves, auto-subs to set, watch list, player flags), a "Lineup by projections" card (current vs best
   lineup from `SWEEP.lineup`) and an "Auto-subs you've set" card (a note saved to `api/subs`, stale once the week changes); "Re-check now" POSTs `api/advise` with the phone's news log and shows the
