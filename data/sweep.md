@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 2 · Tue Sep 15, 2026 1:58 AM PT
+# Sleeper sweep — Week 2 · Tue Sep 15, 2026 7:15 AM PT
 
 Record 1-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 
@@ -9,7 +9,7 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 - GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 14
 - GREEN RB  Jaylen Warren (PIT, START) — Healthy, starting · news Sep 14
 - AMBER RB  Kenny Gainwell (TB, BN) — RB2 on the depth chart · news Sep 14
-- AMBER RB  MarShawn Lloyd (GB, BN) — RB2 on the depth chart · news Sep 14
+- GREEN RB  MarShawn Lloyd (GB, BN) — Healthy, starting · news Sep 14
 - GREEN RB  Quinshon Judkins (CLE, START) — Healthy, starting · news Sep 14
 - RED   WR  A.J. Brown (NE, IR) — IR · Ankle · Sprain · news Sep 13
 - GREEN WR  Jaylen Waddle (DEN, START) — Healthy, starting · news Sep 15
@@ -24,26 +24,26 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 - none
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- WR  Devaughn Vele (NO) · 1,804,817 adds · SWR2 · Healthy, starting
-- WR  Caleb Douglas (MIA) · 844,504 adds · RWR2 · Healthy, starting
-- RB  Devin Singletary (NYG) · 694,413 adds · RB4 · RB4 on the depth chart
-- RB  Kaelon Black (SF) · 563,227 adds · RB2 · RB2 on the depth chart
-- QB  Carson Wentz (MIN) · 496,194 adds · QB3 · Not the starter (QB3)
-- TE  Mike Gesicki (CIN) · 468,524 adds · TE1 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 276,192 adds · RWR3 · WR3 on the depth chart
-- WR  Pat Bryant (DEN) · 211,408 adds · SWR3 · WR3 on the depth chart
-- WR  Demarcus Robinson (SF) · 149,022 adds · LWR6 · WR6 on the depth chart
-- WR  Malachi Fields (NYG) · 141,505 adds · RWR2 · Healthy, starting
-- TE  Kenyon Sadiq (NYJ) · 133,560 adds · TE1 · Healthy, starting
-- WR  Kendrick Bourne (ARI) · 133,431 adds · SWR3 · WR3 on the depth chart
-- WR  Kalif Raymond (CHI) · 122,656 adds · SWR5 · WR5 on the depth chart
-- RB  Raheim Sanders (CLE) · 96,160 adds · RB3 · RB3 on the depth chart
-- TE  Evan Engram (DEN) · 95,936 adds · TE1 · Healthy, starting
-- WR  Matthew Golden (GB) · 92,337 adds · RWR3 · WR3 on the depth chart
-- WR  Darnell Mooney (NYG) · 89,811 adds · SWR3 · WR3 on the depth chart
-- TE  Cole Kmet (CHI) · 75,717 adds · TE2 · Healthy, starting
-- WR  Mack Hollins (NE) · 63,483 adds · RWR4 · WR4 on the depth chart
-- WR  Odell Beckham (NYG) · 60,417 adds · LWR5 · WR5 on the depth chart
+- WR  Devaughn Vele (NO) · 2,445,352 adds · SWR2 · Healthy, starting
+- WR  Caleb Douglas (MIA) · 1,221,152 adds · RWR2 · Healthy, starting
+- RB  Devin Singletary (NYG) · 993,645 adds · RB4 · RB4 on the depth chart
+- RB  Kaelon Black (SF) · 791,168 adds · RB2 · RB2 on the depth chart
+- QB  Carson Wentz (MIN) · 647,706 adds · QB3 · Not the starter (QB3)
+- TE  Mike Gesicki (CIN) · 560,180 adds · TE1 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 343,434 adds · RWR3 · WR3 on the depth chart
+- WR  Pat Bryant (DEN) · 273,560 adds · SWR4 · WR4 on the depth chart
+- WR  Demarcus Robinson (SF) · 207,204 adds · LWR3 · WR3 on the depth chart
+- RB  Raheim Sanders (CLE) · 189,624 adds · RB3 · RB3 on the depth chart
+- WR  Kendrick Bourne (ARI) · 182,346 adds · SWR3 · WR3 on the depth chart
+- WR  Kalif Raymond (CHI) · 164,486 adds · SWR5 · WR5 on the depth chart
+- TE  Kenyon Sadiq (NYJ) · 163,494 adds · TE1 · Healthy, starting
+- TE  Evan Engram (DEN) · 151,024 adds · TE1 · Healthy, starting
+- WR  Malachi Fields (NYG) · 137,475 adds · RWR2 · Healthy, starting
+- WR  Matthew Golden (GB) · 136,318 adds · RWR3 · WR3 on the depth chart
+- WR  Mack Hollins (NE) · 121,461 adds · RWR3 · WR3 on the depth chart
+- TE  Cole Kmet (CHI) · 85,671 adds · TE2 · Healthy, starting
+- WR  Darnell Mooney (NYG) · 85,302 adds · SWR3 · WR3 on the depth chart
+- RB  Kendre Miller (NO) · 59,174 adds · RB3 · RB3 on the depth chart
 
 ## League transactions, week 2
 - none yet
@@ -104,10 +104,10 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 12 of 12 (ties only)
 - K: Cameron Dicker K LAC
 - DEF: Los Angeles Rams DEF LAR
 - BN: Jonathon Brooks RB CAR
-- BN: De'Zhaun Stribling WR SF (Out)
 - BN: Michael Pittman WR PIT
 - BN: Chig Okonkwo TE WAS (Questionable)
 - BN: Aaron Rodgers QB PIT
+- IR: De'Zhaun Stribling WR SF (Out)
 
 ### paulhemsley — 0-1, 130.8 PF, $150 FAAB · DEF1, K1, QB3, RB3, TE2, WR7
 - QB: Brock Purdy QB SF
