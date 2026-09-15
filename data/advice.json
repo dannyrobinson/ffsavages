@@ -1,1 +1,65 @@
-{"headline":"Add free-agent QB Drew Lock now (no bid, no one else in the league has him) — he starts again with Darnold out and fixes your week 6 Burrow/Willis bye clash — then swap MarShawn Lloyd in for Kenny Gainwell before Sunday's 10:00 AM PT kickoffs.","summary":"Danny is 1-0 with an open bench spot and no Questionable starters this week, so this is about upgrading the FLEX and locking in cheap QB insurance. Lloyd has taken over Green Bay's early-down work with Jacobs on the exempt list, while Gainwell remains Tampa's clear passing-down 1B behind Bucky Irving.","lineup":[{"slot":"FLEX","start":"MarShawn Lloyd","sit":"Kenny Gainwell","why":"Lloyd is now Green Bay's early-down back with more confirmed volume (10.7 projected carries) than Gainwell's passing-down role (6.7) behind Tampa's clear starter Bucky Irving.","evidence":"Lloyd (GB): Josh Jacobs remains on the commissioner's exempt list facing misdemeanor charges with no return date (placed Aug 31 2026); Lloyd out-carried Chris Brooks 13-7 last week playing early-down/short-yardage snaps (Draft Sharks, reported this week). Gainwell (TB): Bucky Irving is the clear 1A starter; Gainwell is the 1B passing-down piece, out-snapped 62%-46% and out-targeted 26%-4% by Irving in Week 1 (CBS Sports/Pewter Report, reported this week).","urgency":"high"}],"adds":[{"add":"Drew Lock","pos":"QB","team":"SEA","drop":null,"how":"add now","bid":0,"backup":false,"processes":null,"why":"A real starting NFL QB, free, and nobody else in this superflex league owns him; his bye (week 11) covers the week Burrow and Willis both sit.","evidence":"Sam Darnold (hip/glute strain, no timeline given by the team) is out again and Lock starts at Arizona Sunday for the second straight week (CBS Sports, Sept 10-14 2026); Seahawks' bye is week 11, clear of Burrow's and Willis's shared week 6 bye.","urgency":"high"}],"ir":[],"subs":[],"flags":[{"player":"A.J. Brown","severity":"red","what":"IR, high ankle sprain, expected out about 6 weeks per Sept 13 2026 reports; no change from last IR placement"},{"player":"MarShawn Lloyd","severity":"amber","what":"Now Green Bay's early-down back with Jacobs on the exempt list; Chris Brooks still takes passing downs"},{"player":"Kenny Gainwell","severity":"amber","what":"Tampa's 1B passing-down back behind Bucky Irving, who leads in snaps, carries and targets"}],"watch":[{"player":"Josh Jacobs","what":"On Green Bay's commissioner's exempt list for pending misdemeanor charges with no return date; if he's reinstated, Lloyd's early-down role shrinks back down"}],"alerts":[{"key":"lineup:lloyd-over-gainwell-wk2","urgency":"high","title":"🔁 Start Lloyd over Gainwell in FLEX","body":"Lloyd is Green Bay's new early-down back with Jacobs on the exempt list (13 carries last week); Gainwell is stuck as Tampa's passing-down 1B. Swap before Sunday 10:00 AM PT kickoff."},{"key":"add:drew-lock-for-none-wk2","urgency":"high","title":"➕ Grab Drew Lock free, no bid","body":"Lock starts again for Seattle with Darnold out and nobody in the league owns him. His week 11 bye also covers your Burrow/Willis week 6 clash. Add now before another team does."}],"ts":1789448796000,"week":2}
+{
+  "headline": "Claim Drew Lock (bid 7, drop Malik Willis) before Wed 12:05 AM PT — he's confirmed Seattle's starter with Darnold out and fixes your week 6 Burrow/Willis bye clash.",
+  "summary": "Danny is 1-0 and healthy at the top of his lineup; the only open call is upgrading a thin FLEX spot and locking down a real QB3 before Wednesday's waiver run. MarShawn Lloyd cleared and is Green Bay's workhorse with Jacobs out indefinitely, so he swaps in for Tre Tucker, whose route/snap lead hasn't translated to targets.",
+  "lineup": [
+    {
+      "slot": "FLEX",
+      "start": "MarShawn Lloyd",
+      "sit": "Tre Tucker",
+      "why": "Lloyd is projected for 13+ touches as GB's clear early-down back in a favored, high-total game, while Tucker managed only 4 targets in Week 1 and Las Vegas is a 7-point road underdog.",
+      "evidence": "Lloyd: room shows him RB1 with Jacobs still on the exempt list (NA/Personal) and Chris Brooks the only real backup; reporting from this week confirms Lloyd is handling a workhorse role in Jacobs' absence. Tucker: led Raiders WRs in snaps/routes Week 1 but drew just 4 targets as the offense ran through RB Ashton Jeanty with Bowers out; this week Las Vegas is a 7-point underdog with a 18.3 implied total.",
+      "urgency": "medium"
+    }
+  ],
+  "adds": [
+    {
+      "add": "Drew Lock",
+      "pos": "QB",
+      "team": "SEA",
+      "drop": "Malik Willis",
+      "how": "waiver claim",
+      "bid": 7,
+      "backup": false,
+      "processes": "Wed, Sep 16, 12:05 AM PT",
+      "why": "tier 2, bid 7 of your 145: a confirmed but short-term starting QB, priced to the gap, and it also fixes the week 6 Burrow/Willis bye clash since Seattle's bye is week 11.",
+      "evidence": "Sleeper still tags Lock QB2/'not the starter' behind Darnold, but Darnold's hip injury is expected to keep him out this week and Seattle's coach has said he expects Lock to start at Arizona; Lock already started and won Week 1 for Seattle. Willis is Miami's own starter (room shows him QB1) but shares Burrow's week 6 bye, which is the specific hole being filled, and Miami is a 12.5-point underdog this week.",
+      "urgency": "high"
+    }
+  ],
+  "ir": [],
+  "subs": [],
+  "flags": [
+    {
+      "player": "A.J. Brown",
+      "severity": "red",
+      "what": "on IR, ankle sprain (flagged since last week, no change)"
+    },
+    {
+      "player": "Kenny Gainwell",
+      "severity": "amber",
+      "what": "RB2/change-of-pace behind Bucky Irving in Tampa Bay (Sep 13-15 reporting: out-targeted 7-1 by Irving in Week 1, a 1B role not a starting job)"
+    }
+  ],
+  "watch": [
+    {
+      "player": "Khalil Shakir",
+      "what": "Thursday 5:15 PM PT kickoff vs DET is this week's earliest lock; real slot role (6 targets Week 1) in a great spot (favored 4.5, implied 29), but thinner projected volume (5.8 targets) than Lloyd — only a lineup candidate if Danny wants a second FLEX change before Thursday."
+    }
+  ],
+  "alerts": [
+    {
+      "key": "add:drew-lock-for-malik-willis-wk2",
+      "urgency": "high",
+      "title": "➕ Claim Drew Lock, drop Willis",
+      "body": "Lock is Seattle's confirmed Week 2 starter (Darnold out, hip) and fixes your week 6 Burrow/Willis bye clash. Bid 7, drop Willis, claim processes Wed 12:05 AM PT."
+    },
+    {
+      "key": "lineup:lloyd-over-tucker-wk2",
+      "urgency": "medium",
+      "title": "🔁 Start Lloyd over Tucker",
+      "body": "MarShawn Lloyd cleared and is Green Bay's workhorse back with Jacobs still on the exempt list. Swap him in for Tre Tucker (LV) before Sunday 10:00 AM PT kickoffs."
+    }
+  ],
+  "ts": 1789481691000,
+  "week": 2
+}
