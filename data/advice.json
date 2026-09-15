@@ -1,10 +1,10 @@
-{"headline": "Claim Drew Lock (bid 7, drop Malik Willis) before Wed 12:05 AM PT — he's confirmed to start for Seattle with Darnold out, and it fixes your week 6 Burrow/Willis bye clash.",
-"summary": "Danny's 1-0 lineup is otherwise set right for week 2: no starters carry an injury flag, so no auto-subs are needed. The one lineup fix left on the board is moving MarShawn Lloyd into FLEX over Tre Tucker — Lloyd is Green Bay's clear starter with Josh Jacobs out on the exempt list. A.J. Brown stays on IR; new reporting puts his ankle timeline at 6-plus weeks.",
+{"headline": "Claim Drew Lock (bid 7, drop Malik Willis) before Wed 12:05 AM PT — he's confirmed to start for Seattle with Darnold out this week; whether he's still starting by your week 6 bye is unresolved (reports range from a week 3 Darnold return to 4-6 weeks out).",
+"summary": "Danny's 1-0 lineup is otherwise set right for week 2: no starters carry an injury flag, so no auto-subs are needed. The one lineup fix left on the board is moving MarShawn Lloyd into FLEX over Tre Tucker — Lloyd is Green Bay's clear starter with Josh Jacobs out on the exempt list. A.J. Brown stays on IR; new reporting puts his ankle timeline at 6-plus weeks. Claim Drew Lock for this week's start regardless, but don't count on him solving the week 6 Burrow/Willis bye clash — Darnold's return timeline is too unsettled to call that fixed; revisit around week 4-5.",
 "lineup": [
   {"slot": "FLEX", "start": "MarShawn Lloyd", "sit": "Tre Tucker", "why": "Lloyd is Green Bay's clear early-down back with Josh Jacobs on the exempt list into at least mid-November, projected for 10.7 carries plus 2.5 targets against Tucker's 5.3 targets in an offense built around Ashton Jeanty.", "evidence": "Packers GM Brian Gutekunst said Lloyd is 'as ready as he's ever been' with no injury designation in Sept 2-14 practice reports, and Jacobs' legal case (initial court appearance Nov 17) keeps him out well beyond this week; Raiders coach Klint Kubiak said the offense runs through Jeanty until Brock Bowers returns, capping Tucker's target share after a 4-target Week 1 (Sept 2026 reports).", "urgency": "medium"}
 ],
 "adds": [
-  {"add": "Drew Lock", "pos": "QB", "team": "SEA", "drop": "Malik Willis", "how": "waiver claim", "bid": 7, "backup": false, "processes": "Wed, Sep 16, 12:05 AM PT", "why": "tier 2, bid 7 of your 145: a confirmed short-term starter with a bye (11) that fixes your Burrow/Willis week 6 clash, priced low because Darnold's injury is being called a bruise, not a fracture, so the job may not last.", "evidence": "Seahawks coach Mike Macdonald said his early read is Lock starts Week 2 at Arizona with Darnold out (Sept 14-15 reports); Darnold's hip X-rays were negative for a fracture and it's described as 'more of a muscle thing,' so Lock's hold on the job is not guaranteed to last; Willis remains Miami's own QB1 but is Danny's bench QB3 with no path to starts here.", "urgency": "high"}
+  {"add": "Drew Lock", "pos": "QB", "team": "SEA", "drop": "Malik Willis", "how": "waiver claim", "bid": 7, "backup": false, "processes": "Wed, Sep 16, 12:05 AM PT", "why": "tier 2, bid 7 of your 145: a confirmed starter for this week with a bye (11) that differs from Willis's, priced low because reports disagree on how long Darnold is out, so Lock holding the job through your week 6 bye is a bonus, not a given.", "evidence": "Seahawks coach Mike Macdonald said his early read is Lock starts Week 2 at Arizona with Darnold out (Sept 14-15 reports); Darnold's return timeline is unsettled — Rapoport reported he could be back as soon as week 3 (Sept 27), while Florio put it at 4-6 weeks, and the Seahawks call it short-term (Sept 15 reports) — so treat any week 6 coverage from Lock as provisional; Willis remains Miami's own QB1 but is Danny's bench QB3 with no path to starts here.", "urgency": "high"}
 ],
 "ir": [],
 "subs": [],
@@ -16,13 +16,13 @@
   {"player": "Malik Willis", "severity": "green", "what": "Miami's own QB1, but Danny's bench QB3; recommended drop for Drew Lock this week."}
 ],
 "watch": [
-  {"player": "Sam Darnold", "what": "Hip injury is being called minor (no fracture); if he's cleared soon, Lock's run as starter could be short — don't chase Lock's price beyond a low bid."},
+  {"player": "Sam Darnold", "what": "Return timeline is contested: Rapoport says possibly back week 3 (Sept 27), Florio says 4-6 weeks, Seahawks call it short-term. Track this before assuming Lock covers your week 6 bye."},
   {"player": "Chris Brooks", "what": "GB's other back behind Lloyd getting early-down snaps too; watch his share if Lloyd's workload comes in light."}
 ],
 "alerts": [
-  {"key": "add:drew-lock-for-malik-willis-wk2", "urgency": "high", "title": "➕ Claim Drew Lock, drop Willis", "body": "Lock starts for Seattle with Darnold out; bid 7, drop Malik Willis, before the Wed 12:05 AM PT waiver run — fixes your week 6 QB bye clash."},
+  {"key": "add:drew-lock-for-malik-willis-wk2", "urgency": "high", "title": "➕ Claim Drew Lock, drop Willis", "body": "Lock starts for Seattle with Darnold out; bid 7, drop Malik Willis, before the Wed 12:05 AM PT waiver run. Cheap depth and a bye that differs from Willis's, but Darnold's return timeline is contested (week 3 to 6 weeks out) — don't assume Lock is still starting by your week 6 bye."},
   {"key": "lineup:lloyd-over-tucker-wk2", "urgency": "medium", "title": "🔁 Start Lloyd over Tucker in FLEX", "body": "MarShawn Lloyd is Green Bay's clear starter with Jacobs on the exempt list; move him into FLEX over Tre Tucker before Sunday's 10 AM PT kickoffs."},
   {"key": "flag:aj-brown-6-week-wk2", "urgency": "low", "title": "🔴 A.J. Brown out 6+ weeks", "body": "New reporting says Brown's high-ankle sprain keeps him out at least 6 weeks, into mid-October; he stays on IR, no action needed."}
 ],
-"ts": 1789503227000,
+"ts": 1789515247000,
 "week": 2}
