@@ -1,6 +1,6 @@
 {
- "generated": "Tue Sep 15, 2026 9:14 PM PT",
- "generated_ms": 1789532096993,
+ "generated": "Wed Sep 16, 2026 1:51 AM PT",
+ "generated_ms": 1789548666125,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -9,79 +9,79 @@
  "faab_min_bid": 1,
  "faab_teams": [
   {
-   "team": "GK",
-   "roster_id": 5,
-   "left": 150,
-   "position": 1
-  },
-  {
    "team": "paulhemsley",
    "roster_id": 2,
    "left": 150,
-   "position": 2
-  },
-  {
-   "team": "MasonMafia",
-   "roster_id": 3,
-   "left": 150,
-   "position": 3
+   "position": 1
   },
   {
    "team": "daviddhaliwal",
    "roster_id": 4,
    "left": 150,
-   "position": 4
+   "position": 2
   },
   {
    "team": "wflemons33",
    "roster_id": 9,
    "left": 150,
-   "position": 5
+   "position": 3
   },
   {
    "team": "smitty1060",
    "roster_id": 10,
    "left": 150,
-   "position": 6
+   "position": 4
   },
   {
    "team": "HappyChappy18",
    "roster_id": 1,
    "left": 150,
-   "position": 7
-  },
-  {
-   "team": "jimmyd66",
-   "roster_id": 11,
-   "left": 150,
-   "position": 8
-  },
-  {
-   "team": "KUZ1",
-   "roster_id": 8,
-   "left": 150,
-   "position": 9
-  },
-  {
-   "team": "kwiksl",
-   "roster_id": 7,
-   "left": 150,
-   "position": 10
+   "position": 5
   },
   {
    "team": "EasyIP",
    "roster_id": 12,
    "left": 150,
-   "position": 11
+   "position": 6
   },
   {
    "team": "Robinsavages",
    "roster_id": 6,
    "left": 145,
+   "position": 7
+  },
+  {
+   "team": "kwiksl",
+   "roster_id": 7,
+   "left": 129,
+   "position": 8
+  },
+  {
+   "team": "MasonMafia",
+   "roster_id": 3,
+   "left": 130,
+   "position": 9
+  },
+  {
+   "team": "GK",
+   "roster_id": 5,
+   "left": 139,
+   "position": 10
+  },
+  {
+   "team": "jimmyd66",
+   "roster_id": 11,
+   "left": 145,
+   "position": 11
+  },
+  {
+   "team": "KUZ1",
+   "roster_id": 8,
+   "left": 146,
    "position": 12
   }
  ],
- "waiver_position": 12,
+ "waiver_position": 7,
  "record": "1-0",
  "roster": [
   {
@@ -235,7 +235,7 @@
    "depth": "SWR2",
    "news": "Sep 15",
    "news_ms": 1789487760811,
-   "slot": "BN",
+   "slot": "START",
    "stories": []
   },
   {
@@ -263,7 +263,7 @@
    "depth": "LWR1",
    "news": "Sep 14",
    "news_ms": 1789414204979,
-   "slot": "START",
+   "slot": "BN",
    "stories": []
   },
   {
@@ -309,34 +309,8 @@
    "stories": []
   }
  ],
- "fa_qbs": [
-  {
-   "id": "5854",
-   "name": "Drew Lock",
-   "pos": "QB",
-   "team": "SEA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "QB1",
-   "news": "Sep 15",
-   "news_ms": 1789486813667
-  }
- ],
+ "fa_qbs": [],
  "trending": [
-  {
-   "id": "11834",
-   "name": "Devaughn Vele",
-   "pos": "WR",
-   "team": "NO",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR2",
-   "news": "Sep 14",
-   "news_ms": 1789393504525,
-   "adds": 4118289
-  },
   {
    "id": "13296",
    "name": "Caleb Douglas",
@@ -348,33 +322,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 2542144
-  },
-  {
-   "id": "6130",
-   "name": "Devin Singletary",
-   "pos": "RB",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 15",
-   "news_ms": 1789478412496,
-   "adds": 2027979
-  },
-  {
-   "id": "13414",
-   "name": "Kaelon Black",
-   "pos": "RB",
-   "team": "SF",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 15",
-   "news_ms": 1789497360029,
-   "adds": 1616629
+   "adds": 2810400
   },
   {
    "id": "3161",
@@ -387,7 +335,7 @@
    "depth": "QB2",
    "news": "Sep 15",
    "news_ms": 1789452609370,
-   "adds": 1135074
+   "adds": 1267212
   },
   {
    "id": "12472",
@@ -400,7 +348,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789504252807,
-   "adds": 799848
+   "adds": 933048
   },
   {
    "id": "4993",
@@ -413,7 +361,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 643764
+   "adds": 661076
   },
   {
    "id": "12492",
@@ -426,7 +374,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789518054967,
-   "adds": 573784
+   "adds": 635208
   },
   {
    "id": "9486",
@@ -439,7 +387,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 466302
+   "adds": 501513
   },
   {
    "id": "3286",
@@ -452,7 +400,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 439836
+   "adds": 493962
   },
   {
    "id": "4177",
@@ -465,7 +413,7 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 356712
+   "adds": 408639
   },
   {
    "id": "4066",
@@ -478,7 +426,7 @@
    "depth": "TE1",
    "news": "Sep 16",
    "news_ms": 1789518054978,
-   "adds": 326224
+   "adds": 358976
   },
   {
    "id": "4454",
@@ -491,7 +439,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 316680
+   "adds": 341067
   },
   {
    "id": "13330",
@@ -504,7 +452,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 288153
+   "adds": 328977
   },
   {
    "id": "3634",
@@ -517,20 +465,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 288134
-  },
-  {
-   "id": "12501",
-   "name": "Matthew Golden",
-   "pos": "WR",
-   "team": "GB",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 14",
-   "news_ms": 1789362960844,
-   "adds": 282744
+   "adds": 310406
   },
   {
    "id": "11729",
@@ -543,7 +478,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789500360224,
-   "adds": 169694
+   "adds": 206619
   },
   {
    "id": "11630",
@@ -556,20 +491,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435508374,
-   "adds": 156357
-  },
-  {
-   "id": "5854",
-   "name": "Drew Lock",
-   "pos": "QB",
-   "team": "SEA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "QB1",
-   "news": "Sep 15",
-   "news_ms": 1789486813667,
-   "adds": 133030
+   "adds": 178434
   },
   {
    "id": "11625",
@@ -582,10 +504,104 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789426207303,
-   "adds": 120952
+   "adds": 139872
+  },
+  {
+   "id": "9757",
+   "name": "Kendre Miller",
+   "pos": "RB",
+   "team": "NO",
+   "flag": "amber",
+   "why": "RB3 on the depth chart",
+   "injury": null,
+   "depth": "RB3",
+   "news": "Sep 14",
+   "news_ms": 1789421106276,
+   "adds": 128306
+  },
+  {
+   "id": "13301",
+   "name": "Antonio Williams",
+   "pos": "WR",
+   "team": "WAS",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 15",
+   "news_ms": 1789500961997,
+   "adds": 102794
+  },
+  {
+   "id": "11610",
+   "name": "Malik Washington",
+   "pos": "WR",
+   "team": "MIA",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "SWR1",
+   "news": "Sep 15",
+   "news_ms": 1789503352493,
+   "adds": 98752
+  },
+  {
+   "id": "4035",
+   "name": "Alvin Kamara",
+   "pos": "RB",
+   "team": "NO",
+   "flag": "amber",
+   "why": "Questionable \u00b7 Knee - MCL \u00b7 Sprain",
+   "injury": "Questionable",
+   "depth": "RB2",
+   "news": "Sep 13",
+   "news_ms": 1789314953421,
+   "adds": 82328
+  },
+  {
+   "id": "6826",
+   "name": "Cole Kmet",
+   "pos": "TE",
+   "team": "CHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE2",
+   "news": "Sep 16",
+   "news_ms": 1789523455049,
+   "adds": 81513
   }
  ],
- "transactions": [],
+ "transactions": [
+  {
+   "type": "free_agent",
+   "status": "complete",
+   "team": "HappyChappy18",
+   "adds": [
+    "Dalton Schultz"
+   ],
+   "drops": [],
+   "bid": null,
+   "note": null,
+   "faab_moved": [],
+   "ts": 1789542806453
+  },
+  {
+   "type": "free_agent",
+   "status": "complete",
+   "team": "HappyChappy18",
+   "adds": [
+    "Alec Pierce"
+   ],
+   "drops": [
+    "Chig Okonkwo"
+   ],
+   "bid": null,
+   "note": null,
+   "faab_moved": [],
+   "ts": 1789542794257
+  }
+ ],
  "opponent": {
   "team": "kwiksl",
   "roster_id": 7,
@@ -837,17 +853,6 @@
    "record": "0-1"
   },
   {
-   "team": "jimmyd66",
-   "roster_id": 11,
-   "qbs": [
-    "Geno Smith",
-    "Sam Darnold",
-    "Justin Herbert"
-   ],
-   "n": 3,
-   "record": "0-1"
-  },
-  {
    "team": "daviddhaliwal",
    "roster_id": 4,
    "qbs": [
@@ -858,6 +863,18 @@
    ],
    "n": 4,
    "record": "1-0"
+  },
+  {
+   "team": "jimmyd66",
+   "roster_id": 11,
+   "qbs": [
+    "Geno Smith",
+    "Sam Darnold",
+    "Drew Lock",
+    "Justin Herbert"
+   ],
+   "n": 4,
+   "record": "0-1"
   }
  ],
  "teams": [
@@ -873,7 +890,7 @@
     "TE": 2,
     "QB": 3,
     "RB": 4,
-    "WR": 5,
+    "WR": 6,
     "K": 1,
     "DEF": 1
    },
@@ -892,12 +909,13 @@
    ],
    "bench": [
     "Jonathon Brooks RB CAR",
+    "Dalton Schultz TE HOU",
     "Michael Pittman WR PIT",
-    "Chig Okonkwo TE WAS (Questionable)",
+    "Alec Pierce WR IND (Questionable)",
     "Aaron Rodgers QB PIT"
    ],
    "ir": [
-    "De'Zhaun Stribling WR SF (Out)"
+    "De'Zhaun Stribling WR SF (Doubtful)"
    ]
   },
   {
@@ -947,7 +965,7 @@
    "record": "1-0",
    "pts_for": 141.56,
    "pts_week": 0.0,
-   "faab_left": 150,
+   "faab_left": 130,
    "counts": {
     "TE": 3,
     "WR": 4,
@@ -960,7 +978,7 @@
     "QB: Jalen Hurts QB PHI",
     "RB: Tony Pollard RB TEN",
     "RB: Samaje Perine RB CIN",
-    "WR: Zay Flowers WR BAL (Out)",
+    "WR: Zay Flowers WR BAL (Questionable)",
     "WR: Courtland Sutton WR DEN",
     "TE: Hunter Henry TE NE",
     "FLEX: AJ Barner TE SEA",
@@ -971,13 +989,13 @@
    ],
    "bench": [
     "Marvin Harrison WR ARI",
-    "TreVeyon Henderson RB NE (Out)",
+    "TreVeyon Henderson RB NE (Questionable)",
     "Fernando Mendoza QB LV",
-    "Mike Washington RB LV",
+    "Devin Singletary RB NYG",
     "Zach Charbonnet RB SEA (PUP)"
    ],
    "ir": [
-    "Brock Bowers TE LV (Out)"
+    "Brock Bowers TE LV (Questionable)"
    ]
   },
   {
@@ -1017,7 +1035,7 @@
     "Cooper Rush QB ATL"
    ],
    "ir": [
-    "Michael Penix QB ATL (Out)"
+    "Michael Penix QB ATL (Questionable)"
    ]
   },
   {
@@ -1027,12 +1045,12 @@
    "record": "0-1",
    "pts_for": 174.56,
    "pts_week": 0.0,
-   "faab_left": 150,
+   "faab_left": 139,
    "counts": {
     "QB": 3,
-    "RB": 4,
+    "RB": 5,
     "K": 1,
-    "WR": 5,
+    "WR": 4,
     "TE": 2,
     "DEF": 1
    },
@@ -1051,10 +1069,10 @@
    ],
    "bench": [
     "Blake Corum RB LAR",
+    "Kaelon Black RB SF",
     "Daniel Jones QB IND",
     "Michael Mayer TE LV",
-    "Josh Downs WR IND",
-    "Quentin Johnston WR LAC"
+    "Josh Downs WR IND"
    ],
    "ir": []
   },
@@ -1081,16 +1099,16 @@
     "WR: Malik Nabers WR NYG",
     "WR: Jaylen Waddle WR DEN",
     "TE: Juwan Johnson TE NO",
-    "FLEX: Tre Tucker WR LV",
+    "FLEX: Khalil Shakir WR BUF",
     "FLEX: Quinshon Judkins RB CLE",
     "SUPER_FLEX: Caleb Williams QB CHI",
     "K: Ka'imi Fairbairn K HOU",
     "DEF: Jacksonville Jaguars DEF JAX"
    ],
    "bench": [
+    "Tre Tucker WR LV",
     "MarShawn Lloyd RB GB",
     "Kenny Gainwell RB TB",
-    "Khalil Shakir WR BUF",
     "Malik Willis QB MIA"
    ],
    "ir": [
@@ -1104,7 +1122,7 @@
    "record": "1-0",
    "pts_for": 262.14,
    "pts_week": 0.0,
-   "faab_left": 150,
+   "faab_left": 129,
    "counts": {
     "WR": 5,
     "QB": 3,
@@ -1130,8 +1148,8 @@
     "Jayden Reed WR GB",
     "Brian Thomas WR JAX (Questionable)",
     "Woody Marks RB HOU",
-    "Deshaun Watson QB CLE",
-    "Jalen Nailor WR LV"
+    "Matthew Golden WR GB",
+    "Deshaun Watson QB CLE"
    ],
    "ir": []
   },
@@ -1142,11 +1160,11 @@
    "record": "0-1",
    "pts_for": 153.6,
    "pts_week": 0.0,
-   "faab_left": 150,
+   "faab_left": 146,
    "counts": {
-    "WR": 4,
+    "WR": 5,
     "QB": 3,
-    "RB": 5,
+    "RB": 4,
     "TE": 2,
     "K": 1,
     "DEF": 1
@@ -1157,18 +1175,18 @@
     "RB: Tyler Allgeier RB ARI",
     "WR: Garrett Wilson WR NYJ",
     "WR: Rome Odunze WR CHI",
-    "TE: Greg Dulcich TE MIA",
+    "TE: George Kittle TE SF",
     "FLEX: Jordan Addison WR MIN",
-    "FLEX: George Kittle TE SF",
+    "FLEX: Greg Dulcich TE MIA",
     "SUPER_FLEX: Jaxson Dart QB NYG",
     "K: Chase McLaughlin K TB",
     "DEF: Buffalo Bills DEF BUF"
    ],
    "bench": [
     "Xavier Worthy WR KC",
-    "Nicholas Singleton RB TEN (Out)",
-    "Jonah Coleman RB DEN",
-    "Kyler Murray QB MIN (Out)",
+    "Devaughn Vele WR NO",
+    "Nicholas Singleton RB TEN",
+    "Kyler Murray QB MIN (Questionable)",
     "Tyjae Spears RB TEN"
    ],
    "ir": []
@@ -1242,7 +1260,7 @@
    ],
    "bench": [
     "Justice Hill RB BAL",
-    "Tua Tagovailoa QB ATL (Out)",
+    "Tua Tagovailoa QB ATL (Questionable)",
     "Rachaad White RB WAS",
     "C.J. Stroud QB HOU",
     "Baltimore Ravens DEF BAL"
@@ -1256,13 +1274,13 @@
    "record": "0-1",
    "pts_for": 114.58,
    "pts_week": 0.0,
-   "faab_left": 150,
+   "faab_left": 145,
    "counts": {
     "RB": 4,
     "TE": 3,
-    "WR": 4,
-    "QB": 3,
+    "QB": 4,
     "K": 1,
+    "WR": 3,
     "DEF": 1
    },
    "starters": [
@@ -1274,14 +1292,14 @@
     "TE: Colston Loveland TE CHI",
     "FLEX: Kyle Pitts TE ATL",
     "FLEX: Rico Dowdle RB PIT",
-    "SUPER_FLEX: Sam Darnold QB SEA (Out)",
+    "SUPER_FLEX: Sam Darnold QB SEA (Doubtful)",
     "K: Jason Myers K SEA",
     "DEF: Pittsburgh Steelers DEF PIT"
    ],
    "bench": [
     "RJ Harvey RB DEN",
-    "Makai Lemon WR PHI",
     "Geno Smith QB NYJ",
+    "Drew Lock QB SEA",
     "Jake Ferguson TE DAL",
     "Wan'Dale Robinson WR TEN"
    ],
