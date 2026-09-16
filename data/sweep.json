@@ -1,6 +1,6 @@
 {
- "generated": "Wed Sep 16, 2026 10:45 AM PT",
- "generated_ms": 1789580700665,
+ "generated": "Wed Sep 16, 2026 1:12 PM PT",
+ "generated_ms": 1789589556976,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -103,12 +103,12 @@
    "name": "Joe Burrow",
    "pos": "QB",
    "team": "CIN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
+   "flag": "amber",
+   "why": "Questionable \u00b7 Back \u00b7 Soreness",
+   "injury": "Questionable",
    "depth": "QB1",
-   "news": "Sep 14",
-   "news_ms": 1789360860746,
+   "news": "Sep 16",
+   "news_ms": 1789588820812,
    "slot": "START",
    "stories": []
   },
@@ -135,8 +135,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 14",
-   "news_ms": 1789427407369,
+   "news": "Sep 16",
+   "news_ms": 1789585542659,
    "slot": "BN",
    "stories": []
   },
@@ -326,19 +326,6 @@
  "fa_qbs": [],
  "trending": [
   {
-   "id": "13296",
-   "name": "Caleb Douglas",
-   "pos": "WR",
-   "team": "MIA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 16",
-   "news_ms": 1789574459925,
-   "adds": 3009344
-  },
-  {
    "id": "12472",
    "name": "Raheim Sanders",
    "pos": "RB",
@@ -349,7 +336,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789504252807,
-   "adds": 1082336
+   "adds": 1154752
   },
   {
    "id": "12492",
@@ -362,7 +349,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789518054967,
-   "adds": 721928
+   "adds": 758104
   },
   {
    "id": "4993",
@@ -375,7 +362,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 673652
+   "adds": 680092
   },
   {
    "id": "3286",
@@ -388,7 +375,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 565980
+   "adds": 611136
   },
   {
    "id": "9486",
@@ -401,7 +388,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 530496
+   "adds": 542346
   },
   {
    "id": "4177",
@@ -414,7 +401,7 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 489531
+   "adds": 522732
   },
   {
    "id": "4066",
@@ -427,7 +414,7 @@
    "depth": "TE1",
    "news": "Sep 16",
    "news_ms": 1789518054978,
-   "adds": 415408
+   "adds": 433528
   },
   {
    "id": "13330",
@@ -440,7 +427,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 382788
+   "adds": 403992
   },
   {
    "id": "4454",
@@ -453,7 +440,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 357570
+   "adds": 365391
   },
   {
    "id": "3634",
@@ -466,7 +453,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 327360
+   "adds": 335340
   },
   {
    "id": "11729",
@@ -479,7 +466,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789500360224,
-   "adds": 259574
+   "adds": 290514
   },
   {
    "id": "11630",
@@ -492,7 +479,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435508374,
-   "adds": 205713
+   "adds": 216756
   },
   {
    "id": "11625",
@@ -505,20 +492,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789426207303,
-   "adds": 162696
-  },
-  {
-   "id": "9757",
-   "name": "Kendre Miller",
-   "pos": "RB",
-   "team": "NO",
-   "flag": "amber",
-   "why": "RB3 on the depth chart",
-   "injury": null,
-   "depth": "RB3",
-   "news": "Sep 14",
-   "news_ms": 1789421106276,
-   "adds": 138280
+   "adds": 172808
   },
   {
    "id": "11610",
@@ -531,20 +505,20 @@
    "depth": "SWR1",
    "news": "Sep 15",
    "news_ms": 1789503352493,
-   "adds": 134008
+   "adds": 149184
   },
   {
-   "id": "13301",
-   "name": "Antonio Williams",
-   "pos": "WR",
-   "team": "WAS",
+   "id": "9757",
+   "name": "Kendre Miller",
+   "pos": "RB",
+   "team": "NO",
    "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "why": "RB3 on the depth chart",
    "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 16",
-   "news_ms": 1789574759909,
-   "adds": 115482
+   "depth": "RB3",
+   "news": "Sep 14",
+   "news_ms": 1789421106276,
+   "adds": 144578
   },
   {
    "id": "4035",
@@ -557,20 +531,20 @@
    "depth": "RB2",
    "news": "Sep 13",
    "news_ms": 1789314953421,
-   "adds": 108512
+   "adds": 122592
   },
   {
-   "id": "6826",
-   "name": "Cole Kmet",
-   "pos": "TE",
-   "team": "CHI",
-   "flag": "green",
-   "why": "Healthy, starting",
+   "id": "13301",
+   "name": "Antonio Williams",
+   "pos": "WR",
+   "team": "WAS",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "TE2",
+   "depth": "SWR3",
    "news": "Sep 16",
-   "news_ms": 1789523455049,
-   "adds": 84222
+   "news_ms": 1789574759909,
+   "adds": 121620
   },
   {
    "id": "7049",
@@ -583,10 +557,51 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789431907990,
-   "adds": 78827
+   "adds": 91504
+  },
+  {
+   "id": "6826",
+   "name": "Cole Kmet",
+   "pos": "TE",
+   "team": "CHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE2",
+   "news": "Sep 16",
+   "news_ms": 1789523455049,
+   "adds": 85050
+  },
+  {
+   "id": "7571",
+   "name": "Rashod Bateman",
+   "pos": "WR",
+   "team": "BAL",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "LWR2",
+   "news": "Sep 14",
+   "news_ms": 1789423209267,
+   "adds": 82625
   }
  ],
  "transactions": [
+  {
+   "type": "free_agent",
+   "status": "complete",
+   "team": "jimmyd66",
+   "adds": [
+    "Caleb Douglas"
+   ],
+   "drops": [
+    "Wan'Dale Robinson"
+   ],
+   "bid": null,
+   "note": null,
+   "faab_moved": [],
+   "ts": 1789587141222
+  },
   {
    "type": "free_agent",
    "status": "complete",
@@ -1012,8 +1027,8 @@
     "Aaron Rodgers QB PIT"
    ],
    "ir": [
-    "Ja'Kobi Lane WR BAL (Doubtful)",
-    "De'Zhaun Stribling WR SF (Doubtful)"
+    "Ja'Kobi Lane WR BAL (IR)",
+    "De'Zhaun Stribling WR SF (Out)"
    ]
   },
   {
@@ -1189,7 +1204,7 @@
     "DEF": 1
    },
    "starters": [
-    "QB: Joe Burrow QB CIN",
+    "QB: Joe Burrow QB CIN (Questionable)",
     "RB: Chase Brown RB CIN",
     "RB: Jaylen Warren RB PIT",
     "WR: Malik Nabers WR NYG",
@@ -1375,9 +1390,9 @@
    "counts": {
     "RB": 4,
     "TE": 3,
+    "WR": 3,
     "QB": 4,
     "K": 1,
-    "WR": 3,
     "DEF": 1
    },
    "starters": [
@@ -1387,20 +1402,21 @@
     "WR: George Pickens WR DAL",
     "WR: Jameson Williams WR DET",
     "TE: Jake Ferguson TE DAL",
-    "FLEX: RJ Harvey RB DEN",
+    "FLEX: Rico Dowdle RB PIT",
     "FLEX: Colston Loveland TE CHI",
     "SUPER_FLEX: Drew Lock QB SEA",
     "K: Jason Myers K SEA",
     "DEF: Pittsburgh Steelers DEF PIT"
    ],
    "bench": [
+    "RJ Harvey RB DEN",
+    "Caleb Douglas WR MIA",
     "Geno Smith QB NYJ",
-    "Sam Darnold QB SEA (Doubtful)",
-    "Rico Dowdle RB PIT",
-    "Kyle Pitts TE ATL",
-    "Wan'Dale Robinson WR TEN"
+    "Kyle Pitts TE ATL"
    ],
-   "ir": []
+   "ir": [
+    "Sam Darnold QB SEA (Out)"
+   ]
   },
   {
    "team": "EasyIP",
