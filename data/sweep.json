@@ -1,6 +1,6 @@
 {
- "generated": "Wed Sep 16, 2026 1:51 AM PT",
- "generated_ms": 1789548666125,
+ "generated": "Wed Sep 16, 2026 7:15 AM PT",
+ "generated_ms": 1789568115529,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -322,7 +322,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 2810400
+   "adds": 2986640
   },
   {
    "id": "3161",
@@ -335,7 +335,7 @@
    "depth": "QB2",
    "news": "Sep 15",
    "news_ms": 1789452609370,
-   "adds": 1267212
+   "adds": 1345836
   },
   {
    "id": "12472",
@@ -348,20 +348,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789504252807,
-   "adds": 933048
-  },
-  {
-   "id": "4993",
-   "name": "Mike Gesicki",
-   "pos": "TE",
-   "team": "CIN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789398903824,
-   "adds": 661076
+   "adds": 1032648
   },
   {
    "id": "12492",
@@ -374,20 +361,20 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789518054967,
-   "adds": 635208
+   "adds": 696024
   },
   {
-   "id": "9486",
-   "name": "Dontayvion Wicks",
-   "pos": "WR",
-   "team": "PHI",
+   "id": "4993",
+   "name": "Mike Gesicki",
+   "pos": "TE",
+   "team": "CIN",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 15",
-   "news_ms": 1789509954875,
-   "adds": 501513
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789398903824,
+   "adds": 684216
   },
   {
    "id": "3286",
@@ -400,7 +387,20 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 493962
+   "adds": 539616
+  },
+  {
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 15",
+   "news_ms": 1789509954875,
+   "adds": 530466
   },
   {
    "id": "4177",
@@ -413,7 +413,7 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 408639
+   "adds": 461433
   },
   {
    "id": "4066",
@@ -426,20 +426,7 @@
    "depth": "TE1",
    "news": "Sep 16",
    "news_ms": 1789518054978,
-   "adds": 358976
-  },
-  {
-   "id": "4454",
-   "name": "Kendrick Bourne",
-   "pos": "WR",
-   "team": "ARI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789427707415,
-   "adds": 341067
+   "adds": 395720
   },
   {
    "id": "13330",
@@ -452,7 +439,20 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 328977
+   "adds": 366696
+  },
+  {
+   "id": "4454",
+   "name": "Kendrick Bourne",
+   "pos": "WR",
+   "team": "ARI",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 14",
+   "news_ms": 1789427707415,
+   "adds": 357090
   },
   {
    "id": "3634",
@@ -465,7 +465,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 310406
+   "adds": 325968
   },
   {
    "id": "11729",
@@ -478,7 +478,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789500360224,
-   "adds": 206619
+   "adds": 241066
   },
   {
    "id": "11630",
@@ -491,7 +491,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435508374,
-   "adds": 178434
+   "adds": 196497
   },
   {
    "id": "11625",
@@ -504,7 +504,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789426207303,
-   "adds": 139872
+   "adds": 155464
   },
   {
    "id": "9757",
@@ -517,20 +517,7 @@
    "depth": "RB3",
    "news": "Sep 14",
    "news_ms": 1789421106276,
-   "adds": 128306
-  },
-  {
-   "id": "13301",
-   "name": "Antonio Williams",
-   "pos": "WR",
-   "team": "WAS",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 15",
-   "news_ms": 1789500961997,
-   "adds": 102794
+   "adds": 136160
   },
   {
    "id": "11610",
@@ -543,7 +530,20 @@
    "depth": "SWR1",
    "news": "Sep 15",
    "news_ms": 1789503352493,
-   "adds": 98752
+   "adds": 121464
+  },
+  {
+   "id": "13301",
+   "name": "Antonio Williams",
+   "pos": "WR",
+   "team": "WAS",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 15",
+   "news_ms": 1789500961997,
+   "adds": 110915
   },
   {
    "id": "4035",
@@ -556,7 +556,7 @@
    "depth": "RB2",
    "news": "Sep 13",
    "news_ms": 1789314953421,
-   "adds": 82328
+   "adds": 99400
   },
   {
    "id": "6826",
@@ -569,10 +569,38 @@
    "depth": "TE2",
    "news": "Sep 16",
    "news_ms": 1789523455049,
-   "adds": 81513
+   "adds": 85788
   }
  ],
  "transactions": [
+  {
+   "type": "free_agent",
+   "status": "complete",
+   "team": "HappyChappy18",
+   "adds": [
+    "Dalton Schultz"
+   ],
+   "drops": [],
+   "bid": null,
+   "note": null,
+   "faab_moved": [],
+   "ts": 1789551166965
+  },
+  {
+   "type": "free_agent",
+   "status": "complete",
+   "team": "HappyChappy18",
+   "adds": [
+    "Ja'Kobi Lane"
+   ],
+   "drops": [
+    "Dalton Schultz"
+   ],
+   "bid": null,
+   "note": null,
+   "faab_moved": [],
+   "ts": 1789551137082
+  },
   {
    "type": "free_agent",
    "status": "complete",
@@ -890,7 +918,7 @@
     "TE": 2,
     "QB": 3,
     "RB": 4,
-    "WR": 6,
+    "WR": 7,
     "K": 1,
     "DEF": 1
    },
@@ -915,6 +943,7 @@
     "Aaron Rodgers QB PIT"
    ],
    "ir": [
+    "Ja'Kobi Lane WR BAL (Doubtful)",
     "De'Zhaun Stribling WR SF (Doubtful)"
    ]
   },
@@ -1289,18 +1318,18 @@
     "RB: De'Von Achane RB MIA",
     "WR: George Pickens WR DAL",
     "WR: Jameson Williams WR DET",
-    "TE: Colston Loveland TE CHI",
-    "FLEX: Kyle Pitts TE ATL",
-    "FLEX: Rico Dowdle RB PIT",
-    "SUPER_FLEX: Sam Darnold QB SEA (Doubtful)",
+    "TE: Jake Ferguson TE DAL",
+    "FLEX: RJ Harvey RB DEN",
+    "FLEX: Colston Loveland TE CHI",
+    "SUPER_FLEX: Drew Lock QB SEA",
     "K: Jason Myers K SEA",
     "DEF: Pittsburgh Steelers DEF PIT"
    ],
    "bench": [
-    "RJ Harvey RB DEN",
     "Geno Smith QB NYJ",
-    "Drew Lock QB SEA",
-    "Jake Ferguson TE DAL",
+    "Sam Darnold QB SEA (Doubtful)",
+    "Rico Dowdle RB PIT",
+    "Kyle Pitts TE ATL",
     "Wan'Dale Robinson WR TEN"
    ],
    "ir": []
