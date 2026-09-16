@@ -1,58 +1,57 @@
 {
-  "headline": "Grab free-agent RB Aaron Jones (MIN) for your open bench spot now, no bid needed — Jordan Mason is Questionable (thumb) for Sunday 10 AM PT at Chicago.",
-  "summary": "Danny's starting lineup is already optimal this week — nobody on it is flagged, and Judkins and Shakir correctly hold the FLEX spots on volume over Lloyd and Tucker. The only clean move is a free add: Aaron Jones is the healthy half of a near-even Vikings backfield split with Mason banged up, and it costs nothing to grab. Drew Lock isn't yet showing as a free agent in the data despite reports he starts for Seattle, so he's on watch rather than an add until the sweep confirms it.",
+  "headline": "Set Malik Willis as Joe Burrow's AutoSub before Sun 10:00 AM PT kickoff — Burrow (back) was limited at Wednesday's practice with Cincinnati's Week 2 injury report still pending.",
+  "summary": "Danny is 1-0 and his lineup is already the right one this week, so there are no start/sit changes to make. The one open task is pairing Burrow with Willis before Sunday's early kickoff; Gainwell and A.J. Brown are just status notes, and nothing on waivers — including the heavily-trending Raheim Sanders behind a fully healthy Judkins — clears the bar to touch a full bench.",
   "lineup": [],
-  "adds": [
+  "adds": [],
+  "ir": [],
+  "subs": [
     {
-      "add": "Aaron Jones",
-      "pos": "RB",
-      "team": "MIN",
-      "drop": null,
-      "how": "add now",
-      "bid": 0,
-      "backup": false,
-      "processes": null,
-      "why": "Tier 3 speculative bench RB — free, fills Danny's one open bench spot, no cost either way.",
-      "evidence": "Today's room shows Jones RB1 and Mason RB2 (Questionable, thumb) for MIN's Sun 10:00 AM game at CHI; Jones carries no injury flag. Reports dated Sept 15, 2026 say Jones and Mason split reps almost evenly in week 1 (29 vs 30 snaps) with Mason now added to the injury report, so Jones is positioned to see extra work if Mason sits.",
+      "starter": "Joe Burrow",
+      "sub": "Malik Willis",
+      "slot": "QB",
+      "why": "Burrow (Questionable, back soreness) was limited and not full participation at Wednesday's practice with Cincinnati's first Week 2 injury report still pending (Sep 16); set the pair before Sun 10:00 AM PT, Burrow's own kickoff, which is earlier than Willis's Sun 1:25 PM PT game.",
       "urgency": "medium"
     }
   ],
-  "ir": [],
-  "subs": [],
   "flags": [
     {
-      "player": "A.J. Brown",
-      "severity": "red",
-      "what": "IR, high ankle sprain (hurt Sept 9); reports since Sept 11 put him out at least 4 weeks, targeting a week 8 return vs Miami."
+      "player": "Joe Burrow",
+      "severity": "amber",
+      "what": "Questionable, back soreness; limited at Wednesday practice, Week 2 injury report pending (Sep 16)"
     },
     {
       "player": "Kenny Gainwell",
       "severity": "amber",
-      "what": "RB2 in TB's backfield behind Bucky Irving; per Sept 2026 reports he's the passing-down/change-of-pace piece in Tampa Bay's two-back 'pony package', not a lead role."
+      "what": "RB2 behind Bucky Irving in Tampa Bay's backfield; Sean Tucker (RB3) still working back from hamstring, next chance to play is this Sunday (Sep 16)"
+    },
+    {
+      "player": "A.J. Brown",
+      "severity": "red",
+      "what": "On IR, high-ankle sprain from Sep 9; reported ~6-week timeline, targeting a return around Week 6-7 (Rapoport, Sep 13)"
     }
   ],
   "watch": [
     {
-      "player": "Drew Lock (QB, SEA)",
-      "what": "Reported the Week 2 starter with Sam Darnold out (soft-tissue injury, no firm timeline, per Sept 15 reports); not yet showing as a free agent in the data, but grab him if he surfaces — he'd fix the week-6 bye overlap between Burrow and Willis."
+      "player": "Raheim Sanders",
+      "what": "Judkins' Browns backup is Sleeper's most-added free agent in this league (1.1M adds/48h) despite Judkins carrying no injury flag and a full 15.7-carry workload today (Sep 16); add only if Judkins' status changes"
     },
     {
-      "player": "Jordan Mason (RB, MIN)",
-      "what": "Questionable, thumb, for Sunday vs CHI; if he sits, Aaron Jones becomes the clear early-down back in Minnesota."
+      "player": "Joe Burrow / Malik Willis",
+      "what": "Both share the Week 6 bye with no third startable QB behind them; watch the wire for a free-agent starting QB with a different bye to claim 2 waiver runs ahead (none available today)"
     },
     {
-      "player": "Chig Okonkwo (TE, WAS)",
-      "what": "Dropped by HappyChappy18 Sept 16 while Questionable with a hamstring injury; not worth a claim while hurt, and Danny has no bench-TE need right now."
+      "player": "A.J. Brown",
+      "what": "High-ankle sprain, ~6-week timeline; targeting a return around Week 6-7 (Oct 18-22) per Rapoport, Sep 13"
     }
   ],
   "alerts": [
     {
-      "key": "add:aaron-jones-for-none-wk2",
+      "key": "sub:burrow-willis-wk2",
       "urgency": "medium",
-      "title": "➕ Add Aaron Jones (MIN RB), free",
-      "body": "Jordan Mason is Questionable (thumb) for Sunday's game at Chicago. Aaron Jones is the healthy half of MIN's near-even backfield split — add him now for your open bench spot, no bid needed."
+      "title": "🟡 Set Willis as Burrow's auto-sub",
+      "body": "Burrow (back) was limited at Wednesday's practice; pair him with Malik Willis before Sun 10:00 AM PT kickoff in case he's out."
     }
   ],
-  "ts": 1789568068000,
+  "ts": 1789589526000,
   "week": 2
 }
