@@ -1,11 +1,58 @@
-{"headline":"Claim Drew Lock (bid 3, no drop needed) before tonight's waiver run at 12:05 AM PT — Danny has an open bench spot and Lock is Seattle's active starter with Darnold hurt, fixing the week-6 QB bye hole.",
-"summary":"Danny is 1-0 at 168.42 points with A.J. Brown out on IR (high ankle sprain, out roughly through week 8) and no other injury issues on his active roster. The lineup is essentially right for week 2 except one FLEX swap: Khalil Shakir's Thursday-night matchup and team total are much stronger than Tre Tucker's Sunday spot. Two clean actions today: a cheap waiver claim to patch the week-6 QB bye hole, and a Thursday-deadline lineup swap.",
-"lineup":[{"slot":"FLEX","start":"Khalil Shakir","sit":"Tre Tucker","why":"Shakir projects for more targets (5.8 vs 5.3) on a Bills team favored by 4.5 with a 29.5 implied total, versus Tucker as a 6.5-point underdog with an 18.5 implied total.","evidence":"Shakir is BUF's clear WR2 behind DJ Moore and played through his Week 1 role (4 of 6 targets) after an August ankle scare that did not carry into the season; no Sleeper injury flag on him now. Tucker is confirmed LV's WR1 by snaps and routes in Week 1 (48 snaps, 27 routes) but the Raiders' offense runs through Ashton Jeanty at RB and Tucker faces a tougher Chargers defense on the road.","urgency":"high"}],
-"adds":[{"add":"Drew Lock","pos":"QB","team":"SEA","drop":null,"how":"waiver claim","bid":3,"backup":false,"processes":"Wed, Sep 16, 12:05 AM PT","why":"Bye-week insurance claim (tier per the season plan's bye rule, 1-3): Danny has an open bench spot (16 of 18 roster spots filled) so no drop is required, and Lock has a different bye (11) than Burrow and Willis, who both hit bye 6 in four weeks.","evidence":"Lock is confirmed Seattle's starter with Sam Darnold (hip, MRI Sept 9-10) out for Week 2 at Arizona; coach Macdonald called it a possible 1-2 week issue, so Lock's runway past week 3-4 is unresolved. Danny's bench (Willis, Gainwell, Lloyd, Shakir) has one open slot beyond those four, confirmed from the roster count (16 of 18 spots used, 1 of 2 IR used).","urgency":"medium"}],
-"ir":[],
-"subs":[],
-"flags":[{"player":"A.J. Brown","severity":"red","what":"High ankle sprain, MRI Sept 9-10, placed on IR Sept 11; reported to miss about 6 weeks (out through roughly week 8, no surgery)."},{"player":"Kenny Gainwell","severity":"amber","what":"Confirmed change-of-pace/passing-down role behind Bucky Irving per Bucs coaching comments (Todd Bowles: Irving starter, Gainwell the '1B') — bench-only volume, not a start."}],
-"watch":[{"player":"Sam Darnold","what":"Hip injury timeline — if he returns before week 6, Drew Lock loses his starting job and the bye-week claim needs a rethink."},{"player":"A.J. Brown","what":"Expected back around week 8; watch practice reports as that window approaches before planning his return to the lineup."}],
-"alerts":[{"key":"add:drew-lock-for-none-wk2","urgency":"high","title":"➕ Claim Drew Lock before tonight's run","body":"Waiver run is 12:05 AM PT tonight (Wed Sep 16). Bid 3 for Drew Lock (SEA), no drop needed — you have an open bench spot. Fixes the week-6 bye hole (Burrow and Willis both off that week)."},{"key":"lineup:shakir-over-tucker-wk2","urgency":"high","title":"🔁 Start Shakir over Tucker before Thursday","body":"Set Khalil Shakir in FLEX for Tre Tucker before Thursday 5:15 PM PT kickoff. Bills' 29.5 implied total and favorite spot beat Tucker's 18.5 implied total as a big underdog."}],
-"ts":1789532041000,
-"week":2}
+{
+  "headline": "Grab free-agent RB Aaron Jones (MIN) for your open bench spot now, no bid needed — Jordan Mason is Questionable (thumb) for Sunday 10 AM PT at Chicago.",
+  "summary": "Danny's starting lineup is already optimal this week — nobody on it is flagged, and Judkins and Shakir correctly hold the FLEX spots on volume over Lloyd and Tucker. The only clean move is a free add: Aaron Jones is the healthy half of a near-even Vikings backfield split with Mason banged up, and it costs nothing to grab. Drew Lock isn't yet showing as a free agent in the data despite reports he starts for Seattle, so he's on watch rather than an add until the sweep confirms it.",
+  "lineup": [],
+  "adds": [
+    {
+      "add": "Aaron Jones",
+      "pos": "RB",
+      "team": "MIN",
+      "drop": null,
+      "how": "add now",
+      "bid": 0,
+      "backup": false,
+      "processes": null,
+      "why": "Tier 3 speculative bench RB — free, fills Danny's one open bench spot, no cost either way.",
+      "evidence": "Today's room shows Jones RB1 and Mason RB2 (Questionable, thumb) for MIN's Sun 10:00 AM game at CHI; Jones carries no injury flag. Reports dated Sept 15, 2026 say Jones and Mason split reps almost evenly in week 1 (29 vs 30 snaps) with Mason now added to the injury report, so Jones is positioned to see extra work if Mason sits.",
+      "urgency": "medium"
+    }
+  ],
+  "ir": [],
+  "subs": [],
+  "flags": [
+    {
+      "player": "A.J. Brown",
+      "severity": "red",
+      "what": "IR, high ankle sprain (hurt Sept 9); reports since Sept 11 put him out at least 4 weeks, targeting a week 8 return vs Miami."
+    },
+    {
+      "player": "Kenny Gainwell",
+      "severity": "amber",
+      "what": "RB2 in TB's backfield behind Bucky Irving; per Sept 2026 reports he's the passing-down/change-of-pace piece in Tampa Bay's two-back 'pony package', not a lead role."
+    }
+  ],
+  "watch": [
+    {
+      "player": "Drew Lock (QB, SEA)",
+      "what": "Reported the Week 2 starter with Sam Darnold out (soft-tissue injury, no firm timeline, per Sept 15 reports); not yet showing as a free agent in the data, but grab him if he surfaces — he'd fix the week-6 bye overlap between Burrow and Willis."
+    },
+    {
+      "player": "Jordan Mason (RB, MIN)",
+      "what": "Questionable, thumb, for Sunday vs CHI; if he sits, Aaron Jones becomes the clear early-down back in Minnesota."
+    },
+    {
+      "player": "Chig Okonkwo (TE, WAS)",
+      "what": "Dropped by HappyChappy18 Sept 16 while Questionable with a hamstring injury; not worth a claim while hurt, and Danny has no bench-TE need right now."
+    }
+  ],
+  "alerts": [
+    {
+      "key": "add:aaron-jones-for-none-wk2",
+      "urgency": "medium",
+      "title": "➕ Add Aaron Jones (MIN RB), free",
+      "body": "Jordan Mason is Questionable (thumb) for Sunday's game at Chicago. Aaron Jones is the healthy half of MIN's near-even backfield split — add him now for your open bench spot, no bid needed."
+    }
+  ],
+  "ts": 1789568068000,
+  "week": 2
+}
