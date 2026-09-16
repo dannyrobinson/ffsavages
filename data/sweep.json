@@ -1,6 +1,6 @@
 {
- "generated": "Tue Sep 15, 2026 4:34 PM PT",
- "generated_ms": 1789515278295,
+ "generated": "Tue Sep 15, 2026 9:14 PM PT",
+ "generated_ms": 1789532096993,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -218,7 +218,7 @@
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR1",
+   "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789475713945,
    "slot": "START",
@@ -335,7 +335,7 @@
    "depth": "SWR2",
    "news": "Sep 14",
    "news_ms": 1789393504525,
-   "adds": 3549854
+   "adds": 4118289
   },
   {
    "id": "13296",
@@ -348,7 +348,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789399803938,
-   "adds": 2014320
+   "adds": 2542144
   },
   {
    "id": "6130",
@@ -361,7 +361,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789478412496,
-   "adds": 1673469
+   "adds": 2027979
   },
   {
    "id": "13414",
@@ -374,7 +374,7 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789497360029,
-   "adds": 1269779
+   "adds": 1616629
   },
   {
    "id": "3161",
@@ -387,20 +387,7 @@
    "depth": "QB2",
    "news": "Sep 15",
    "news_ms": 1789452609370,
-   "adds": 935196
-  },
-  {
-   "id": "4993",
-   "name": "Mike Gesicki",
-   "pos": "TE",
-   "team": "CIN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789398903824,
-   "adds": 634800
+   "adds": 1135074
   },
   {
    "id": "12472",
@@ -413,7 +400,20 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789504252807,
-   "adds": 496576
+   "adds": 799848
+  },
+  {
+   "id": "4993",
+   "name": "Mike Gesicki",
+   "pos": "TE",
+   "team": "CIN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789398903824,
+   "adds": 643764
   },
   {
    "id": "12492",
@@ -424,9 +424,9 @@
    "why": "WR3 on the depth chart",
    "injury": null,
    "depth": "SWR3",
-   "news": "Sep 15",
-   "news_ms": 1789481112948,
-   "adds": 441920
+   "news": "Sep 16",
+   "news_ms": 1789518054967,
+   "adds": 573784
   },
   {
    "id": "9486",
@@ -439,7 +439,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 408291
+   "adds": 466302
   },
   {
    "id": "3286",
@@ -452,7 +452,33 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 323796
+   "adds": 439836
+  },
+  {
+   "id": "4177",
+   "name": "Mack Hollins",
+   "pos": "WR",
+   "team": "NE",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 16",
+   "news_ms": 1789522254580,
+   "adds": 356712
+  },
+  {
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 16",
+   "news_ms": 1789518054978,
+   "adds": 326224
   },
   {
    "id": "4454",
@@ -465,59 +491,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 269502
-  },
-  {
-   "id": "4066",
-   "name": "Evan Engram",
-   "pos": "TE",
-   "team": "DEN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 15",
-   "news_ms": 1789476913969,
-   "adds": 260808
-  },
-  {
-   "id": "4177",
-   "name": "Mack Hollins",
-   "pos": "WR",
-   "team": "NE",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 10",
-   "news_ms": 1789053904718,
-   "adds": 250095
-  },
-  {
-   "id": "3634",
-   "name": "Kalif Raymond",
-   "pos": "WR",
-   "team": "CHI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789428306629,
-   "adds": 237796
-  },
-  {
-   "id": "12501",
-   "name": "Matthew Golden",
-   "pos": "WR",
-   "team": "GB",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "RWR3",
-   "news": "Sep 14",
-   "news_ms": 1789362960844,
-   "adds": 234248
+   "adds": 316680
   },
   {
    "id": "13330",
@@ -530,33 +504,33 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 215505
+   "adds": 288153
   },
   {
-   "id": "11630",
-   "name": "Roman Wilson",
+   "id": "3634",
+   "name": "Kalif Raymond",
    "pos": "WR",
-   "team": "PIT",
+   "team": "CHI",
    "flag": "amber",
    "why": "WR3 on the depth chart",
    "injury": null,
    "depth": "SWR3",
-   "news": "Sep 15",
-   "news_ms": 1789435508374,
-   "adds": 107145
+   "news": "Sep 14",
+   "news_ms": 1789428306629,
+   "adds": 288134
   },
   {
-   "id": "5854",
-   "name": "Drew Lock",
-   "pos": "QB",
-   "team": "SEA",
+   "id": "12501",
+   "name": "Matthew Golden",
+   "pos": "WR",
+   "team": "GB",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "QB1",
-   "news": "Sep 15",
-   "news_ms": 1789486813667,
-   "adds": 93648
+   "depth": "RWR2",
+   "news": "Sep 14",
+   "news_ms": 1789362960844,
+   "adds": 282744
   },
   {
    "id": "11729",
@@ -569,20 +543,46 @@
    "depth": "RB2",
    "news": "Sep 15",
    "news_ms": 1789500360224,
-   "adds": 92113
+   "adds": 169694
   },
   {
-   "id": "9757",
-   "name": "Kendre Miller",
-   "pos": "RB",
-   "team": "NO",
+   "id": "11630",
+   "name": "Roman Wilson",
+   "pos": "WR",
+   "team": "PIT",
    "flag": "amber",
-   "why": "RB3 on the depth chart",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "RB3",
+   "depth": "SWR3",
+   "news": "Sep 15",
+   "news_ms": 1789435508374,
+   "adds": 156357
+  },
+  {
+   "id": "5854",
+   "name": "Drew Lock",
+   "pos": "QB",
+   "team": "SEA",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "QB1",
+   "news": "Sep 15",
+   "news_ms": 1789486813667,
+   "adds": 133030
+  },
+  {
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
    "news": "Sep 14",
-   "news_ms": 1789421106276,
-   "adds": 87954
+   "news_ms": 1789426207303,
+   "adds": 120952
   }
  ],
  "transactions": [],
@@ -1156,7 +1156,7 @@
     "RB: Breece Hall RB NYJ",
     "RB: Tyler Allgeier RB ARI",
     "WR: Garrett Wilson WR NYJ",
-    "WR: Xavier Worthy WR KC",
+    "WR: Rome Odunze WR CHI",
     "TE: Greg Dulcich TE MIA",
     "FLEX: Jordan Addison WR MIN",
     "FLEX: George Kittle TE SF",
@@ -1165,7 +1165,7 @@
     "DEF: Buffalo Bills DEF BUF"
    ],
    "bench": [
-    "Rome Odunze WR CHI",
+    "Xavier Worthy WR KC",
     "Nicholas Singleton RB TEN (Out)",
     "Jonah Coleman RB DEN",
     "Kyler Murray QB MIN (Out)",
