@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 17, 2026 1:55 AM PT",
- "generated_ms": 1789635311954,
+ "generated": "Thu Sep 17, 2026 7:15 AM PT",
+ "generated_ms": 1789654541499,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -247,8 +247,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "SWR2",
-   "news": "Sep 15",
-   "news_ms": 1789487760811,
+   "news": "Sep 17",
+   "news_ms": 1789653928053,
    "slot": "START",
    "stories": []
   },
@@ -336,7 +336,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789611023391,
-   "adds": 1230200
+   "adds": 1189416
   },
   {
    "id": "3286",
@@ -349,7 +349,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 669462
+   "adds": 640734
   },
   {
    "id": "12492",
@@ -362,7 +362,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789518054967,
-   "adds": 662592
+   "adds": 623192
   },
   {
    "id": "4993",
@@ -375,7 +375,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 594608
+   "adds": 527888
   },
   {
    "id": "4177",
@@ -388,7 +388,7 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 557415
+   "adds": 523665
   },
   {
    "id": "9486",
@@ -401,7 +401,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 495909
+   "adds": 445416
   },
   {
    "id": "13330",
@@ -414,7 +414,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 417015
+   "adds": 404352
   },
   {
    "id": "4066",
@@ -427,7 +427,7 @@
    "depth": "TE1",
    "news": "Sep 16",
    "news_ms": 1789518054978,
-   "adds": 394000
+   "adds": 355688
   },
   {
    "id": "11729",
@@ -440,7 +440,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789605322784,
-   "adds": 336525
+   "adds": 338030
   },
   {
    "id": "4454",
@@ -453,7 +453,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 325674
+   "adds": 287811
   },
   {
    "id": "3634",
@@ -466,7 +466,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 313960
+   "adds": 283656
   },
   {
    "id": "11630",
@@ -479,7 +479,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435508374,
-   "adds": 228006
+   "adds": 214317
   },
   {
    "id": "11610",
@@ -492,20 +492,7 @@
    "depth": "SWR1",
    "news": "Sep 15",
    "news_ms": 1789503352493,
-   "adds": 186168
-  },
-  {
-   "id": "11625",
-   "name": "Adonai Mitchell",
-   "pos": "WR",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 14",
-   "news_ms": 1789426207303,
-   "adds": 178000
+   "adds": 186760
   },
   {
    "id": "4035",
@@ -518,46 +505,20 @@
    "depth": "RB2",
    "news": "Sep 16",
    "news_ms": 1789594523165,
-   "adds": 177592
+   "adds": 184752
   },
   {
-   "id": "9757",
-   "name": "Kendre Miller",
-   "pos": "RB",
-   "team": "NO",
-   "flag": "amber",
-   "why": "RB3 on the depth chart",
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "RB3",
+   "depth": "RWR2",
    "news": "Sep 14",
-   "news_ms": 1789421106276,
-   "adds": 137338
-  },
-  {
-   "id": "13301",
-   "name": "Antonio Williams",
-   "pos": "WR",
-   "team": "WAS",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 16",
-   "news_ms": 1789574759909,
-   "adds": 123595
-  },
-  {
-   "id": "7049",
-   "name": "Jauan Jennings",
-   "pos": "WR",
-   "team": "MIN",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 16",
-   "news_ms": 1789595123502,
-   "adds": 113127
+   "news_ms": 1789426207303,
+   "adds": 169976
   },
   {
    "id": "10218",
@@ -570,7 +531,46 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789487115211,
-   "adds": 110103
+   "adds": 128884
+  },
+  {
+   "id": "9757",
+   "name": "Kendre Miller",
+   "pos": "RB",
+   "team": "NO",
+   "flag": "amber",
+   "why": "RB3 on the depth chart",
+   "injury": null,
+   "depth": "RB3",
+   "news": "Sep 14",
+   "news_ms": 1789421106276,
+   "adds": 123980
+  },
+  {
+   "id": "13301",
+   "name": "Antonio Williams",
+   "pos": "WR",
+   "team": "WAS",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 16",
+   "news_ms": 1789574759909,
+   "adds": 116866
+  },
+  {
+   "id": "7049",
+   "name": "Jauan Jennings",
+   "pos": "WR",
+   "team": "MIN",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 16",
+   "news_ms": 1789595123502,
+   "adds": 111440
   },
   {
    "id": "13347",
@@ -583,10 +583,25 @@
    "depth": "RB3",
    "news": "Sep 17",
    "news_ms": 1789606523762,
-   "adds": 97854
+   "adds": 105654
   }
  ],
  "transactions": [
+  {
+   "type": "free_agent",
+   "status": "complete",
+   "team": "KUZ1",
+   "adds": [
+    "Pat Freiermuth"
+   ],
+   "drops": [
+    "Greg Dulcich"
+   ],
+   "bid": null,
+   "note": null,
+   "faab_moved": [],
+   "ts": 1789637410739
+  },
   {
    "type": "free_agent",
    "status": "complete",
@@ -777,8 +792,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "LWR1",
-    "news": "Sep 15",
-    "news_ms": 1789486515258
+    "news": "Sep 17",
+    "news_ms": 1789653928058
    },
    {
     "id": "8130",
@@ -790,7 +805,7 @@
     "injury": null,
     "depth": "TE1",
     "news": "Sep 17",
-    "news_ms": 1789608323085
+    "news_ms": 1789643728199
    },
    {
     "id": "7611",
@@ -813,8 +828,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "TE1",
-    "news": "Sep 14",
-    "news_ms": 1789397403210
+    "news": "Sep 17",
+    "news_ms": 1789654228455
    },
    {
     "id": "11563",
@@ -1288,18 +1303,18 @@
     "WR: Garrett Wilson WR NYJ",
     "WR: Rome Odunze WR CHI",
     "TE: George Kittle TE SF (Questionable)",
-    "FLEX: Jordan Addison WR MIN",
-    "FLEX: Greg Dulcich TE MIA",
+    "FLEX: Devaughn Vele WR NO",
+    "FLEX: Pat Freiermuth TE PIT",
     "SUPER_FLEX: Jaxson Dart QB NYG",
     "K: Chase McLaughlin K TB",
     "DEF: Buffalo Bills DEF BUF"
    ],
    "bench": [
     "Xavier Worthy WR KC",
-    "Devaughn Vele WR NO",
     "Nicholas Singleton RB TEN",
     "Kyler Murray QB MIN (Questionable)",
-    "Tyjae Spears RB TEN"
+    "Tyjae Spears RB TEN",
+    "Jordan Addison WR MIN"
    ],
    "ir": []
   },
