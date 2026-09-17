@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 17, 2026 1:14 PM PT",
- "generated_ms": 1789676070608,
+ "generated": "Thu Sep 17, 2026 3:26 PM PT",
+ "generated_ms": 1789684011849,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -108,7 +108,7 @@
    "injury": "Questionable",
    "depth": "QB1",
    "news": "Sep 17",
-   "news_ms": 1789668630027,
+   "news_ms": 1789683331618,
    "slot": "START",
    "stories": []
   },
@@ -191,8 +191,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 16",
-   "news_ms": 1789592721338,
+   "news": "Sep 17",
+   "news_ms": 1789676430875,
    "slot": "BN",
    "stories": []
   },
@@ -261,8 +261,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "LWR1",
-   "news": "Sep 15",
-   "news_ms": 1789488658914,
+   "news": "Sep 17",
+   "news_ms": 1789678232654,
    "slot": "START",
    "stories": []
   },
@@ -290,7 +290,7 @@
    "injury": "Questionable",
    "depth": "TE1",
    "news": "Sep 17",
-   "news_ms": 1789675231314,
+   "news_ms": 1789678831737,
    "slot": "START",
    "stories": []
   },
@@ -336,7 +336,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789611023391,
-   "adds": 1079192
+   "adds": 1013104
   },
   {
    "id": "3286",
@@ -349,7 +349,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 577068
+   "adds": 558084
   },
   {
    "id": "12492",
@@ -362,7 +362,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789518054967,
-   "adds": 524472
+   "adds": 493528
   },
   {
    "id": "4177",
@@ -375,7 +375,7 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 457506
+   "adds": 440643
   },
   {
    "id": "4993",
@@ -388,7 +388,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 412656
+   "adds": 391092
   },
   {
    "id": "13330",
@@ -401,7 +401,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 371889
+   "adds": 359829
   },
   {
    "id": "9486",
@@ -414,7 +414,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 356433
+   "adds": 332511
   },
   {
    "id": "11729",
@@ -427,7 +427,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789605322784,
-   "adds": 330288
+   "adds": 323099
   },
   {
    "id": "4066",
@@ -440,7 +440,7 @@
    "depth": "TE1",
    "news": "Sep 16",
    "news_ms": 1789518054978,
-   "adds": 286720
+   "adds": 272824
   },
   {
    "id": "3634",
@@ -453,7 +453,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 229182
+   "adds": 215022
   },
   {
    "id": "4454",
@@ -466,7 +466,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 227145
+   "adds": 211515
   },
   {
    "id": "4035",
@@ -477,9 +477,9 @@
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 16",
-   "news_ms": 1789594523165,
-   "adds": 187440
+   "news": "Sep 17",
+   "news_ms": 1789680631370,
+   "adds": 192216
   },
   {
    "id": "11610",
@@ -492,20 +492,7 @@
    "depth": "SWR1",
    "news": "Sep 15",
    "news_ms": 1789503352493,
-   "adds": 186824
-  },
-  {
-   "id": "11630",
-   "name": "Roman Wilson",
-   "pos": "WR",
-   "team": "PIT",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 15",
-   "news_ms": 1789435508374,
-   "adds": 185319
+   "adds": 189112
   },
   {
    "id": "10218",
@@ -518,7 +505,20 @@
    "depth": "LWR2",
    "news": "Sep 15",
    "news_ms": 1789487115211,
-   "adds": 160979
+   "adds": 177688
+  },
+  {
+   "id": "11630",
+   "name": "Roman Wilson",
+   "pos": "WR",
+   "team": "PIT",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 15",
+   "news_ms": 1789435508374,
+   "adds": 176580
   },
   {
    "id": "11625",
@@ -531,7 +531,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789426207303,
-   "adds": 153280
+   "adds": 145688
   },
   {
    "id": "13347",
@@ -544,7 +544,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789606523762,
-   "adds": 116562
+   "adds": 120273
   },
   {
    "id": "7049",
@@ -555,9 +555,9 @@
    "why": "WR3 on the depth chart",
    "injury": null,
    "depth": "SWR3",
-   "news": "Sep 16",
-   "news_ms": 1789595123502,
-   "adds": 108052
+   "news": "Sep 17",
+   "news_ms": 1789681533201,
+   "adds": 108395
   },
   {
    "id": "13301",
@@ -570,20 +570,20 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789574759909,
-   "adds": 104357
+   "adds": 100690
   },
   {
-   "id": "9757",
-   "name": "Kendre Miller",
+   "id": "6931",
+   "name": "DeeJay Dallas",
    "pos": "RB",
-   "team": "NO",
+   "team": "MIN",
    "flag": "amber",
    "why": "RB3 on the depth chart",
    "injury": null,
    "depth": "RB3",
-   "news": "Sep 14",
-   "news_ms": 1789421106276,
-   "adds": 100452
+   "news": "Sep 16",
+   "news_ms": 1789598422560,
+   "adds": 93159
   }
  ],
  "transactions": [
@@ -816,8 +816,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 10",
-    "news_ms": 1789052704550
+    "news": "Sep 17",
+    "news_ms": 1789678531287
    },
    {
     "id": "8131",
@@ -1184,7 +1184,7 @@
     "QB: Jayden Daniels QB WAS",
     "RB: Omarion Hampton RB LAC",
     "RB: Blake Corum RB LAR",
-    "WR: Chris Olave WR NO",
+    "WR: Chris Olave WR NO (Questionable)",
     "WR: Emeka Egbuka WR TB",
     "TE: Mark Andrews TE BAL",
     "FLEX: Christian Watson WR GB",
