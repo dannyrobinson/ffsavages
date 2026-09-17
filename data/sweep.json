@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 17, 2026 10:44 AM PT",
- "generated_ms": 1789667085129,
+ "generated": "Thu Sep 17, 2026 1:14 PM PT",
+ "generated_ms": 1789676070608,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -107,8 +107,8 @@
    "why": "Questionable \u00b7 Back \u00b7 Soreness",
    "injury": "Questionable",
    "depth": "QB1",
-   "news": "Sep 16",
-   "news_ms": 1789597823568,
+   "news": "Sep 17",
+   "news_ms": 1789668630027,
    "slot": "START",
    "stories": []
   },
@@ -177,8 +177,8 @@
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 14",
-   "news_ms": 1789359960506,
+   "news": "Sep 17",
+   "news_ms": 1789674030507,
    "slot": "BN",
    "stories": []
   },
@@ -290,7 +290,7 @@
    "injury": "Questionable",
    "depth": "TE1",
    "news": "Sep 17",
-   "news_ms": 1789661729198,
+   "news_ms": 1789675231314,
    "slot": "START",
    "stories": []
   },
@@ -336,7 +336,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789611023391,
-   "adds": 1107008
+   "adds": 1079192
   },
   {
    "id": "3286",
@@ -349,7 +349,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 588732
+   "adds": 577068
   },
   {
    "id": "12492",
@@ -362,7 +362,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789518054967,
-   "adds": 550152
+   "adds": 524472
   },
   {
    "id": "4177",
@@ -375,7 +375,7 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 470700
+   "adds": 457506
   },
   {
    "id": "4993",
@@ -388,7 +388,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 437736
+   "adds": 412656
   },
   {
    "id": "13330",
@@ -401,7 +401,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 379440
+   "adds": 371889
   },
   {
    "id": "9486",
@@ -414,7 +414,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 377193
+   "adds": 356433
   },
   {
    "id": "11729",
@@ -427,7 +427,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789605322784,
-   "adds": 331072
+   "adds": 330288
   },
   {
    "id": "4066",
@@ -440,7 +440,7 @@
    "depth": "TE1",
    "news": "Sep 16",
    "news_ms": 1789518054978,
-   "adds": 300624
+   "adds": 286720
   },
   {
    "id": "3634",
@@ -453,7 +453,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 241296
+   "adds": 229182
   },
   {
    "id": "4454",
@@ -466,33 +466,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 241146
-  },
-  {
-   "id": "11630",
-   "name": "Roman Wilson",
-   "pos": "WR",
-   "team": "PIT",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 15",
-   "news_ms": 1789435508374,
-   "adds": 192510
-  },
-  {
-   "id": "11610",
-   "name": "Malik Washington",
-   "pos": "WR",
-   "team": "MIA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR1",
-   "news": "Sep 15",
-   "news_ms": 1789503352493,
-   "adds": 185208
+   "adds": 227145
   },
   {
    "id": "4035",
@@ -505,20 +479,33 @@
    "depth": "RB2",
    "news": "Sep 16",
    "news_ms": 1789594523165,
-   "adds": 184880
+   "adds": 187440
   },
   {
-   "id": "11625",
-   "name": "Adonai Mitchell",
+   "id": "11610",
+   "name": "Malik Washington",
    "pos": "WR",
-   "team": "NYJ",
+   "team": "MIA",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 14",
-   "news_ms": 1789426207303,
-   "adds": 157432
+   "depth": "SWR1",
+   "news": "Sep 15",
+   "news_ms": 1789503352493,
+   "adds": 186824
+  },
+  {
+   "id": "11630",
+   "name": "Roman Wilson",
+   "pos": "WR",
+   "team": "PIT",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 15",
+   "news_ms": 1789435508374,
+   "adds": 185319
   },
   {
    "id": "10218",
@@ -531,7 +518,20 @@
    "depth": "LWR2",
    "news": "Sep 15",
    "news_ms": 1789487115211,
-   "adds": 147819
+   "adds": 160979
+  },
+  {
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 14",
+   "news_ms": 1789426207303,
+   "adds": 153280
   },
   {
    "id": "13347",
@@ -544,7 +544,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789606523762,
-   "adds": 112503
+   "adds": 116562
   },
   {
    "id": "7049",
@@ -557,7 +557,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789595123502,
-   "adds": 107681
+   "adds": 108052
   },
   {
    "id": "13301",
@@ -570,7 +570,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789574759909,
-   "adds": 107466
+   "adds": 104357
   },
   {
    "id": "9757",
@@ -583,7 +583,7 @@
    "depth": "RB3",
    "news": "Sep 14",
    "news_ms": 1789421106276,
-   "adds": 106890
+   "adds": 100452
   }
  ],
  "transactions": [
@@ -1038,7 +1038,7 @@
     "Jonathon Brooks RB CAR",
     "Dalton Schultz TE HOU",
     "Michael Pittman WR PIT (Questionable)",
-    "Alec Pierce WR IND",
+    "Alec Pierce WR IND (Questionable)",
     "Aaron Rodgers QB PIT"
    ],
    "ir": [
@@ -1343,13 +1343,13 @@
     "TE: Dallas Goedert TE PHI",
     "FLEX: Bucky Irving RB TB",
     "FLEX: Parker Washington WR JAX",
-    "SUPER_FLEX: Travis Kelce TE KC",
+    "SUPER_FLEX: Cam Ward QB TEN",
     "K: Tyler Loop K BAL",
     "DEF: Philadelphia Eagles DEF PHI"
    ],
    "bench": [
     "Chris Rodriguez RB JAX",
-    "Cam Ward QB TEN",
+    "Travis Kelce TE KC",
     "Stefon Diggs WR WAS",
     "T.J. Hockenson TE MIN",
     "Deebo Samuel WR SF"
