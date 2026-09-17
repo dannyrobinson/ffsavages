@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 17, 2026 7:15 AM PT",
- "generated_ms": 1789654541499,
+ "generated": "Thu Sep 17, 2026 10:44 AM PT",
+ "generated_ms": 1789667085129,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -93,8 +93,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 14",
-   "news_ms": 1789361759080,
+   "news": "Sep 17",
+   "news_ms": 1789655428174,
    "slot": "START",
    "stories": []
   },
@@ -290,7 +290,7 @@
    "injury": "Questionable",
    "depth": "TE1",
    "news": "Sep 17",
-   "news_ms": 1789612523308,
+   "news_ms": 1789661729198,
    "slot": "START",
    "stories": []
   },
@@ -336,7 +336,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789611023391,
-   "adds": 1189416
+   "adds": 1107008
   },
   {
    "id": "3286",
@@ -349,7 +349,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 640734
+   "adds": 588732
   },
   {
    "id": "12492",
@@ -362,20 +362,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789518054967,
-   "adds": 623192
-  },
-  {
-   "id": "4993",
-   "name": "Mike Gesicki",
-   "pos": "TE",
-   "team": "CIN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789398903824,
-   "adds": 527888
+   "adds": 550152
   },
   {
    "id": "4177",
@@ -388,20 +375,20 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 523665
+   "adds": 470700
   },
   {
-   "id": "9486",
-   "name": "Dontayvion Wicks",
-   "pos": "WR",
-   "team": "PHI",
+   "id": "4993",
+   "name": "Mike Gesicki",
+   "pos": "TE",
+   "team": "CIN",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 15",
-   "news_ms": 1789509954875,
-   "adds": 445416
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789398903824,
+   "adds": 437736
   },
   {
    "id": "13330",
@@ -414,20 +401,20 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 404352
+   "adds": 379440
   },
   {
-   "id": "4066",
-   "name": "Evan Engram",
-   "pos": "TE",
-   "team": "DEN",
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "TE1",
-   "news": "Sep 16",
-   "news_ms": 1789518054978,
-   "adds": 355688
+   "depth": "RWR2",
+   "news": "Sep 15",
+   "news_ms": 1789509954875,
+   "adds": 377193
   },
   {
    "id": "11729",
@@ -440,20 +427,20 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789605322784,
-   "adds": 338030
+   "adds": 331072
   },
   {
-   "id": "4454",
-   "name": "Kendrick Bourne",
-   "pos": "WR",
-   "team": "ARI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789427707415,
-   "adds": 287811
+   "depth": "TE1",
+   "news": "Sep 16",
+   "news_ms": 1789518054978,
+   "adds": 300624
   },
   {
    "id": "3634",
@@ -466,7 +453,20 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789428306629,
-   "adds": 283656
+   "adds": 241296
+  },
+  {
+   "id": "4454",
+   "name": "Kendrick Bourne",
+   "pos": "WR",
+   "team": "ARI",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 14",
+   "news_ms": 1789427707415,
+   "adds": 241146
   },
   {
    "id": "11630",
@@ -479,7 +479,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435508374,
-   "adds": 214317
+   "adds": 192510
   },
   {
    "id": "11610",
@@ -492,7 +492,7 @@
    "depth": "SWR1",
    "news": "Sep 15",
    "news_ms": 1789503352493,
-   "adds": 186760
+   "adds": 185208
   },
   {
    "id": "4035",
@@ -505,7 +505,7 @@
    "depth": "RB2",
    "news": "Sep 16",
    "news_ms": 1789594523165,
-   "adds": 184752
+   "adds": 184880
   },
   {
    "id": "11625",
@@ -518,46 +518,33 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789426207303,
-   "adds": 169976
+   "adds": 157432
   },
   {
    "id": "10218",
    "name": "Xavier Hutchinson",
    "pos": "WR",
    "team": "HOU",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "LWR3",
+   "depth": "LWR2",
    "news": "Sep 15",
    "news_ms": 1789487115211,
-   "adds": 128884
+   "adds": 147819
   },
   {
-   "id": "9757",
-   "name": "Kendre Miller",
+   "id": "13347",
+   "name": "Demond Claiborne",
    "pos": "RB",
-   "team": "NO",
+   "team": "MIN",
    "flag": "amber",
-   "why": "RB3 on the depth chart",
+   "why": "RB2 on the depth chart",
    "injury": null,
-   "depth": "RB3",
-   "news": "Sep 14",
-   "news_ms": 1789421106276,
-   "adds": 123980
-  },
-  {
-   "id": "13301",
-   "name": "Antonio Williams",
-   "pos": "WR",
-   "team": "WAS",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 16",
-   "news_ms": 1789574759909,
-   "adds": 116866
+   "depth": "RB2",
+   "news": "Sep 17",
+   "news_ms": 1789606523762,
+   "adds": 112503
   },
   {
    "id": "7049",
@@ -570,20 +557,33 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789595123502,
-   "adds": 111440
+   "adds": 107681
   },
   {
-   "id": "13347",
-   "name": "Demond Claiborne",
+   "id": "13301",
+   "name": "Antonio Williams",
+   "pos": "WR",
+   "team": "WAS",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 16",
+   "news_ms": 1789574759909,
+   "adds": 107466
+  },
+  {
+   "id": "9757",
+   "name": "Kendre Miller",
    "pos": "RB",
-   "team": "MIN",
+   "team": "NO",
    "flag": "amber",
    "why": "RB3 on the depth chart",
    "injury": null,
    "depth": "RB3",
-   "news": "Sep 17",
-   "news_ms": 1789606523762,
-   "adds": 105654
+   "news": "Sep 14",
+   "news_ms": 1789421106276,
+   "adds": 106890
   }
  ],
  "transactions": [
