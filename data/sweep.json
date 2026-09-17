@@ -1,6 +1,6 @@
 {
- "generated": "Wed Sep 16, 2026 9:14 PM PT",
- "generated_ms": 1789618441811,
+ "generated": "Thu Sep 17, 2026 1:55 AM PT",
+ "generated_ms": 1789635311954,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -336,7 +336,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789611023391,
-   "adds": 1251112
+   "adds": 1230200
   },
   {
    "id": "3286",
@@ -349,7 +349,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 684258
+   "adds": 669462
   },
   {
    "id": "12492",
@@ -362,7 +362,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789518054967,
-   "adds": 678552
+   "adds": 662592
   },
   {
    "id": "4993",
@@ -375,7 +375,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 645940
+   "adds": 594608
   },
   {
    "id": "4177",
@@ -388,7 +388,7 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 572529
+   "adds": 557415
   },
   {
    "id": "9486",
@@ -401,7 +401,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 530553
+   "adds": 495909
   },
   {
    "id": "13330",
@@ -414,7 +414,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 428940
+   "adds": 417015
   },
   {
    "id": "4066",
@@ -427,33 +427,7 @@
    "depth": "TE1",
    "news": "Sep 16",
    "news_ms": 1789518054978,
-   "adds": 415112
-  },
-  {
-   "id": "4454",
-   "name": "Kendrick Bourne",
-   "pos": "WR",
-   "team": "ARI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789427707415,
-   "adds": 354981
-  },
-  {
-   "id": "3634",
-   "name": "Kalif Raymond",
-   "pos": "WR",
-   "team": "CHI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789428306629,
-   "adds": 333622
+   "adds": 394000
   },
   {
    "id": "11729",
@@ -466,7 +440,33 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789605322784,
-   "adds": 332185
+   "adds": 336525
+  },
+  {
+   "id": "4454",
+   "name": "Kendrick Bourne",
+   "pos": "WR",
+   "team": "ARI",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 14",
+   "news_ms": 1789427707415,
+   "adds": 325674
+  },
+  {
+   "id": "3634",
+   "name": "Kalif Raymond",
+   "pos": "WR",
+   "team": "CHI",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 14",
+   "news_ms": 1789428306629,
+   "adds": 313960
   },
   {
    "id": "11630",
@@ -479,7 +479,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435508374,
-   "adds": 235476
+   "adds": 228006
   },
   {
    "id": "11610",
@@ -492,7 +492,7 @@
    "depth": "SWR1",
    "news": "Sep 15",
    "news_ms": 1789503352493,
-   "adds": 185536
+   "adds": 186168
   },
   {
    "id": "11625",
@@ -505,7 +505,7 @@
    "depth": "RWR2",
    "news": "Sep 14",
    "news_ms": 1789426207303,
-   "adds": 184184
+   "adds": 178000
   },
   {
    "id": "4035",
@@ -518,7 +518,7 @@
    "depth": "RB2",
    "news": "Sep 16",
    "news_ms": 1789594523165,
-   "adds": 173352
+   "adds": 177592
   },
   {
    "id": "9757",
@@ -531,7 +531,7 @@
    "depth": "RB3",
    "news": "Sep 14",
    "news_ms": 1789421106276,
-   "adds": 145514
+   "adds": 137338
   },
   {
    "id": "13301",
@@ -544,7 +544,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789574759909,
-   "adds": 127777
+   "adds": 123595
   },
   {
    "id": "7049",
@@ -557,7 +557,7 @@
    "depth": "SWR3",
    "news": "Sep 16",
    "news_ms": 1789595123502,
-   "adds": 113169
+   "adds": 113127
   },
   {
    "id": "10218",
@@ -570,7 +570,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789487115211,
-   "adds": 100730
+   "adds": 110103
   },
   {
    "id": "13347",
@@ -583,7 +583,7 @@
    "depth": "RB3",
    "news": "Sep 17",
    "news_ms": 1789606523762,
-   "adds": 93015
+   "adds": 97854
   }
  ],
  "transactions": [
@@ -1168,7 +1168,7 @@
    "starters": [
     "QB: Jayden Daniels QB WAS",
     "RB: Omarion Hampton RB LAC",
-    "RB: J.K. Dobbins RB DEN",
+    "RB: Blake Corum RB LAR",
     "WR: Chris Olave WR NO",
     "WR: Emeka Egbuka WR TB",
     "TE: Mark Andrews TE BAL",
@@ -1179,9 +1179,9 @@
     "DEF: Green Bay Packers DEF GB"
    ],
    "bench": [
-    "Blake Corum RB LAR",
     "Kaelon Black RB SF",
     "Daniel Jones QB IND",
+    "J.K. Dobbins RB DEN",
     "Michael Mayer TE LV",
     "Josh Downs WR IND"
    ],
