@@ -1,57 +1,11 @@
-{
-  "headline": "Set Malik Willis as Joe Burrow's AutoSub before Sun 10:00 AM PT kickoff — Burrow (back) was limited at Wednesday's practice with Cincinnati's Week 2 injury report still pending.",
-  "summary": "Danny is 1-0 and his lineup is already the right one this week, so there are no start/sit changes to make. The one open task is pairing Burrow with Willis before Sunday's early kickoff; Gainwell and A.J. Brown are just status notes, and nothing on waivers — including the heavily-trending Raheim Sanders behind a fully healthy Judkins — clears the bar to touch a full bench.",
-  "lineup": [],
-  "adds": [],
-  "ir": [],
-  "subs": [
-    {
-      "starter": "Joe Burrow",
-      "sub": "Malik Willis",
-      "slot": "QB",
-      "why": "Burrow (Questionable, back soreness) was limited and not full participation at Wednesday's practice with Cincinnati's first Week 2 injury report still pending (Sep 16); set the pair before Sun 10:00 AM PT, Burrow's own kickoff, which is earlier than Willis's Sun 1:25 PM PT game.",
-      "urgency": "medium"
-    }
-  ],
-  "flags": [
-    {
-      "player": "Joe Burrow",
-      "severity": "amber",
-      "what": "Questionable, back soreness; limited at Wednesday practice, Week 2 injury report pending (Sep 16)"
-    },
-    {
-      "player": "Kenny Gainwell",
-      "severity": "amber",
-      "what": "RB2 behind Bucky Irving in Tampa Bay's backfield; Sean Tucker (RB3) still working back from hamstring, next chance to play is this Sunday (Sep 16)"
-    },
-    {
-      "player": "A.J. Brown",
-      "severity": "red",
-      "what": "On IR, high-ankle sprain from Sep 9; reported ~6-week timeline, targeting a return around Week 6-7 (Rapoport, Sep 13)"
-    }
-  ],
-  "watch": [
-    {
-      "player": "Raheim Sanders",
-      "what": "Judkins' Browns backup is Sleeper's most-added free agent in this league (1.1M adds/48h) despite Judkins carrying no injury flag and a full 15.7-carry workload today (Sep 16); add only if Judkins' status changes"
-    },
-    {
-      "player": "Joe Burrow / Malik Willis",
-      "what": "Both share the Week 6 bye with no third startable QB behind them; watch the wire for a free-agent starting QB with a different bye to claim 2 waiver runs ahead (none available today)"
-    },
-    {
-      "player": "A.J. Brown",
-      "what": "High-ankle sprain, ~6-week timeline; targeting a return around Week 6-7 (Oct 18-22) per Rapoport, Sep 13"
-    }
-  ],
-  "alerts": [
-    {
-      "key": "sub:burrow-willis-wk2",
-      "urgency": "medium",
-      "title": "🟡 Set Willis as Burrow's auto-sub",
-      "body": "Burrow (back) was limited at Wednesday's practice; pair him with Malik Willis before Sun 10:00 AM PT kickoff in case he's out."
-    }
-  ],
-  "ts": 1789589526000,
-  "week": 2
-}
+{"headline": "Start Aaron Jones over Quinshon Judkins at FLEX before Sunday 10:00 AM PT kickoff — Jordan Mason's move to IR (Sept 16) hands Jones the clear Vikings backfield lead in a far better spot.",
+ "summary": "Danny is 1-0 and mostly set; the one real lineup call is swapping newly-added Aaron Jones in for Judkins, who draws an 8.5-point road dog spot. Burrow (back tightness, limited Wed) and Juwan Johnson (illness, DNP Wed) are both Questionable — Burrow still expects to play, but Johnson has no bench TE cover if he doesn't practice Friday.",
+ "lineup": [{"slot": "FLEX", "start": "Aaron Jones", "sit": "Quinshon Judkins", "why": "Jordan Mason (MIN) went to IR Sept 16, clearing Jones as the lead back with passing-down work in a plus game script (implied 22), while Judkins is an 8.5-point underdog in a 16.5-implied game.", "evidence": "Jones: room lists him RB1 with Mason now inactive/IR; DK Network (Sept 16) reports Mason to IR ~4 weeks, Jones out-snapped him 30-29 in Week 1 and projects toward a 60% share with more passing-down work as Minnesota is expected to throw more. Judkins: room still lists him CLE RB1 ahead of Sanders/McLaughlin with no injury, but Cleveland is an 8.5-point underdog at Tampa Bay (implied 16.5), the specific game-script spot the playbook downgrades a runner in.", "urgency": "medium"}],
+ "adds": [],
+ "ir": [],
+ "subs": [{"starter": "Joe Burrow", "sub": "Malik Willis", "slot": "QB", "why": "Burrow (back tightness) was limited at Wednesday's practice but says he expects to play Sunday; set Willis as his AutoSub before the 10:00 AM PT kickoff as free insurance.", "urgency": "medium"}, {"starter": "Juwan Johnson", "sub": null, "slot": "TE", "why": "Johnson (illness) did not practice Wednesday and Danny carries no other rostered TE, so there is no eligible AutoSub; if he isn't a full participant by Friday, decide yourself by about 8:30 AM PT Sunday (90 minutes before his 10:00 AM kickoff).", "urgency": "medium"}],
+ "flags": [{"player": "Joe Burrow", "severity": "amber", "what": "Questionable · back tightness/soreness, limited practice Wed Sep 16, expects to play"}, {"player": "Juwan Johnson", "severity": "amber", "what": "Questionable · illness, DNP Wed Sep 16"}, {"player": "Kenny Gainwell", "severity": "amber", "what": "RB2 behind Bucky Irving on Tampa Bay's depth chart, bench-only"}, {"player": "A.J. Brown", "severity": "red", "what": "On IR · ankle sprain"}],
+ "watch": [{"player": "Wan'Dale Robinson", "what": "Dropped by a rival Sept 16; role unclear from today's search and he doesn't look like a clear upgrade over Tre Tucker — don't grab yet, watch for clarity."}, {"player": "Aaron Jones", "what": "Now the clear Vikings back with Mason on IR ~4 weeks; hold him as a starter going forward, not just this week."}, {"player": "QB3 bye collision", "what": "Burrow and Willis both have the week 6 bye; no free-agent starting QB is available yet — watch waivers for one with a different bye to claim 1-3 around week 4."}],
+ "alerts": [{"key": "lineup:jones-over-judkins-wk2", "urgency": "medium", "title": "🔁 Start Jones over Judkins", "body": "Jordan Mason (MIN) went to IR Sept 16, clearing Aaron Jones as the lead back in a plus matchup (implied 22). Judkins is an 8.5-pt road dog at 16.5 implied. Swap FLEX before Sun 10:00 AM PT kickoff."}, {"key": "flag:juwan-johnson-questionable-wk2", "urgency": "medium", "title": "🟡 Juwan Johnson Questionable (illness)", "body": "DNP Wednesday vs BAL (Sun 10:00 AM PT). No bench TE to cover him — if he's not full practice by Friday, decide yourself by about 8:30 AM PT Sunday."}],
+ "ts": 1789618324000,
+ "week": 2}
