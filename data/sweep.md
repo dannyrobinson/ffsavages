@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 2 · Wed Sep 16, 2026 3:21 PM PT
+# Sleeper sweep — Week 2 · Wed Sep 16, 2026 9:14 PM PT
 
 Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 
@@ -17,7 +17,7 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - GREEN WR  Khalil Shakir (BUF, START) — Healthy, starting · news Sep 15
 - GREEN WR  Malik Nabers (NYG, START) — Healthy, starting · news Sep 15
 - GREEN WR  Tre Tucker (LV, BN) — Healthy, starting · news Sep 14
-- AMBER TE  Juwan Johnson (NO, START) — Questionable · Illness · news Sep 16
+- AMBER TE  Juwan Johnson (NO, START) — Questionable · Illness · news Sep 17
 - GREEN K   Ka'imi Fairbairn (HOU, START) — Healthy, starting · news Sep 15
 - GREEN DEF Jacksonville Jaguars (JAX, START) — Healthy, starting
 
@@ -25,26 +25,26 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - none
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- RB  Raheim Sanders (CLE) · 1,191,576 adds · RB2 · RB2 on the depth chart
-- WR  Pat Bryant (DEN) · 777,144 adds · SWR3 · WR3 on the depth chart
-- TE  Mike Gesicki (CIN) · 681,220 adds · TE1 · Healthy, starting
-- WR  Demarcus Robinson (SF) · 640,566 adds · LWR3 · WR3 on the depth chart
-- WR  Dontayvion Wicks (PHI) · 545,553 adds · RWR2 · Healthy, starting
-- WR  Mack Hollins (NE) · 541,032 adds · RWR2 · Healthy, starting
-- TE  Evan Engram (DEN) · 443,056 adds · TE1 · Healthy, starting
-- TE  Kenyon Sadiq (NYJ) · 415,935 adds · TE1 · Healthy, starting
-- WR  Kendrick Bourne (ARI) · 367,425 adds · SWR3 · WR3 on the depth chart
-- WR  Kalif Raymond (CHI) · 338,098 adds · SWR3 · WR3 on the depth chart
-- RB  Sione Vaki (DET) · 305,186 adds · RB2 · RB2 on the depth chart
-- WR  Roman Wilson (PIT) · 223,641 adds · SWR3 · WR3 on the depth chart
-- WR  Adonai Mitchell (NYJ) · 178,040 adds · RWR2 · Healthy, starting
-- WR  Malik Washington (MIA) · 158,592 adds · SWR1 · Healthy, starting
-- RB  Kendre Miller (NO) · 146,452 adds · RB3 · RB3 on the depth chart
-- RB  Alvin Kamara (NO) · 141,360 adds · RB2 · RB2 on the depth chart
-- WR  Antonio Williams (WAS) · 124,293 adds · SWR3 · WR3 on the depth chart
-- WR  Jauan Jennings (MIN) · 99,519 adds · SWR3 · WR3 on the depth chart
-- WR  Rashod Bateman (BAL) · 85,210 adds · LWR2 · Healthy, starting
-- TE  Cole Kmet (CHI) · 84,411 adds · TE2 · Healthy, starting
+- RB  Raheim Sanders (CLE) · 1,251,112 adds · RB2 · RB2 on the depth chart
+- WR  Demarcus Robinson (SF) · 684,258 adds · LWR3 · WR3 on the depth chart
+- WR  Pat Bryant (DEN) · 678,552 adds · SWR3 · WR3 on the depth chart
+- TE  Mike Gesicki (CIN) · 645,940 adds · TE1 · Healthy, starting
+- WR  Mack Hollins (NE) · 572,529 adds · RWR2 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 530,553 adds · RWR2 · Healthy, starting
+- TE  Kenyon Sadiq (NYJ) · 428,940 adds · TE1 · Healthy, starting
+- TE  Evan Engram (DEN) · 415,112 adds · TE1 · Healthy, starting
+- WR  Kendrick Bourne (ARI) · 354,981 adds · SWR3 · WR3 on the depth chart
+- WR  Kalif Raymond (CHI) · 333,622 adds · SWR3 · WR3 on the depth chart
+- RB  Sione Vaki (DET) · 332,185 adds · RB2 · RB2 on the depth chart
+- WR  Roman Wilson (PIT) · 235,476 adds · SWR3 · WR3 on the depth chart
+- WR  Malik Washington (MIA) · 185,536 adds · SWR1 · Healthy, starting
+- WR  Adonai Mitchell (NYJ) · 184,184 adds · RWR2 · Healthy, starting
+- RB  Alvin Kamara (NO) · 173,352 adds · RB2 · RB2 on the depth chart
+- RB  Kendre Miller (NO) · 145,514 adds · RB3 · RB3 on the depth chart
+- WR  Antonio Williams (WAS) · 127,777 adds · SWR3 · WR3 on the depth chart
+- WR  Jauan Jennings (MIN) · 113,169 adds · SWR3 · WR3 on the depth chart
+- WR  Xavier Hutchinson (HOU) · 100,730 adds · LWR3 · WR3 on the depth chart
+- RB  Demond Claiborne (MIN) · 93,015 adds · RB3 · RB3 on the depth chart
 
 ## League transactions, week 2
 - jimmyd66: free_agent complete +['Caleb Douglas'] -["Wan'Dale Robinson"]
@@ -67,7 +67,7 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - RB  Rhamondre Stevenson (NE) GREEN
 - TE  Isaiah Likely (NYG) GREEN
 - QB  Bo Nix (DEN) GREEN
-- K   Eddy Pineiro (SF) GREEN
+- K   Eddy Pineiro (SF) AMBER
 - DEF Seattle Seahawks (SEA) GREEN
 
 ## FAAB left by team (waiver-priority order)
@@ -105,9 +105,9 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - RB: Kyren Williams RB LAR
 - RB: Jadarian Price RB SEA
 - WR: Justin Jefferson WR MIN
-- WR: Nico Collins WR HOU (Questionable)
+- WR: Tee Higgins WR CIN
 - TE: Dalton Kincaid TE BUF
-- FLEX: Tee Higgins WR CIN
+- FLEX: Nico Collins WR HOU (Questionable)
 - FLEX: D'Andre Swift RB CHI (Questionable)
 - SUPER_FLEX: Trevor Lawrence QB JAX
 - K: Cameron Dicker K LAC
@@ -224,7 +224,7 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - FLEX: Rhamondre Stevenson RB NE
 - FLEX: Isaiah Likely TE NYG
 - SUPER_FLEX: Bo Nix QB DEN
-- K: Eddy Pineiro K SF
+- K: Eddy Pineiro K SF (Questionable)
 - DEF: Seattle Seahawks DEF SEA
 - BN: Jayden Reed WR GB
 - BN: Brian Thomas WR JAX (Questionable)
@@ -238,7 +238,7 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - RB: Tyler Allgeier RB ARI
 - WR: Garrett Wilson WR NYJ
 - WR: Rome Odunze WR CHI
-- TE: George Kittle TE SF
+- TE: George Kittle TE SF (Questionable)
 - FLEX: Jordan Addison WR MIN
 - FLEX: Greg Dulcich TE MIA
 - SUPER_FLEX: Jaxson Dart QB NYG
