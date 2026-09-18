@@ -1,6 +1,6 @@
-# Sleeper sweep — Week 2 · Thu Sep 17, 2026 9:13 PM PT
+# Sleeper sweep — Week 2 · Fri Sep 18, 2026 1:30 AM PT
 
-Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
+Record 1-0 · FAAB $144 left of $150 · waiver priority 12 of 12 (ties only)
 
 ## Roster
 - GREEN QB  Caleb Williams (CHI, START) — Healthy, starting · news Sep 17
@@ -14,9 +14,9 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - GREEN RB  Quinshon Judkins (CLE, START) — Healthy, starting · news Sep 14
 - RED   WR  A.J. Brown (NE, IR) — IR · Ankle · Sprain · news Sep 13
 - GREEN WR  Jaylen Waddle (DEN, START) — Healthy, starting · news Sep 15
-- GREEN WR  Khalil Shakir (BUF, START) — Healthy, starting · news Sep 17
+- GREEN WR  Khalil Shakir (BUF, START) — Healthy, starting · news Sep 18
 - GREEN WR  Malik Nabers (NYG, START) — Healthy, starting · news Sep 17
-- GREEN WR  Tre Tucker (LV, BN) — Healthy, starting · news Sep 14
+- GREEN WR  Quentin Johnston (LAC, BN) — Healthy, starting · news Sep 17
 - AMBER TE  Juwan Johnson (NO, START) — Questionable · Illness · news Sep 17
 - GREEN K   Ka'imi Fairbairn (HOU, START) — Healthy, starting · news Sep 15
 - GREEN DEF Jacksonville Jaguars (JAX, START) — Healthy, starting
@@ -25,28 +25,29 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - none
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- RB  Raheim Sanders (CLE) · 734,840 adds · RB2 · RB2 on the depth chart
-- WR  Demarcus Robinson (SF) · 460,584 adds · LWR3 · WR3 on the depth chart
-- WR  Mack Hollins (NE) · 345,978 adds · RWR2 · Healthy, starting
-- WR  Pat Bryant (DEN) · 342,512 adds · SWR3 · WR3 on the depth chart
-- TE  Mike Gesicki (CIN) · 308,700 adds · TE1 · Healthy, starting
-- TE  Kenyon Sadiq (NYJ) · 282,195 adds · TE1 · Healthy, starting
-- RB  Sione Vaki (DET) · 268,275 adds · RB2 · RB2 on the depth chart
-- WR  Dontayvion Wicks (PHI) · 231,375 adds · RWR2 · Healthy, starting
-- WR  Xavier Hutchinson (HOU) · 227,374 adds · LWR2 · Healthy, starting
-- TE  Evan Engram (DEN) · 214,016 adds · TE1 · Healthy, starting
-- RB  Alvin Kamara (NO) · 202,104 adds · RB2 · RB2 on the depth chart
-- WR  Malik Washington (MIA) · 188,424 adds · SWR1 · Healthy, starting
-- WR  Kalif Raymond (CHI) · 147,074 adds · SWR3 · WR3 on the depth chart
-- WR  Kendrick Bourne (ARI) · 142,215 adds · SWR3 · WR3 on the depth chart
-- WR  Roman Wilson (PIT) · 131,031 adds · SWR3 · WR3 on the depth chart
-- RB  Demond Claiborne (MIN) · 127,551 adds · RB2 · RB2 on the depth chart
-- WR  Keon Coleman (BUF) · 122,976 adds · LWR3 · WR3 on the depth chart
-- RB  DeeJay Dallas (MIN) · 109,803 adds · RB3 · RB3 on the depth chart
-- WR  Adonai Mitchell (NYJ) · 107,056 adds · RWR2 · Healthy, starting
-- WR  Jauan Jennings (MIN) · 106,120 adds · SWR3 · WR3 on the depth chart
+- RB  Raheim Sanders (CLE) · 565,904 adds · RB2 · RB2 on the depth chart
+- WR  Demarcus Robinson (SF) · 385,728 adds · LWR3 · WR3 on the depth chart
+- WR  Mack Hollins (NE) · 279,894 adds · RWR2 · Healthy, starting
+- WR  Pat Bryant (DEN) · 258,552 adds · SWR3 · WR3 on the depth chart
+- TE  Mike Gesicki (CIN) · 251,224 adds · TE1 · Healthy, starting
+- WR  Xavier Hutchinson (HOU) · 234,654 adds · LWR2 · Healthy, starting
+- TE  Kenyon Sadiq (NYJ) · 225,441 adds · TE1 · Healthy, starting
+- RB  Sione Vaki (DET) · 221,144 adds · RB2 · RB2 on the depth chart
+- RB  Alvin Kamara (NO) · 193,072 adds · RB2 · RB2 on the depth chart
+- TE  Evan Engram (DEN) · 174,952 adds · TE1 · Healthy, starting
+- WR  Malik Washington (MIA) · 173,320 adds · SWR1 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 171,804 adds · RWR2 · Healthy, starting
+- WR  Keon Coleman (BUF) · 150,885 adds · LWR3 · WR3 on the depth chart
+- RB  Demond Claiborne (MIN) · 128,802 adds · RB2 · RB2 on the depth chart
+- RB  DeeJay Dallas (MIN) · 112,365 adds · RB3 · RB3 on the depth chart
+- WR  Kalif Raymond (CHI) · 107,842 adds · SWR3 · WR3 on the depth chart
+- WR  Roman Wilson (PIT) · 103,959 adds · SWR3 · WR3 on the depth chart
+- WR  Kendrick Bourne (ARI) · 100,209 adds · SWR3 · WR3 on the depth chart
+- WR  Jauan Jennings (MIN) · 99,757 adds · SWR3 · WR3 on the depth chart
+- WR  Tyreek Hill (FA) · 96,408 adds ·  · Free agent / no team
 
 ## League transactions, week 2
+- Robinsavages: waiver complete +['Quentin Johnston'] -['Tre Tucker'] ($1)
 - KUZ1: free_agent complete +['Pat Freiermuth'] -['Greg Dulcich']
 - jimmyd66: free_agent complete +['Caleb Douglas'] -["Wan'Dale Robinson"]
 - MasonMafia: free_agent complete +['Tampa Bay Buccaneers'] -['Fernando Mendoza']
@@ -78,12 +79,12 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - smitty1060: $150 (priority 4)
 - HappyChappy18: $150 (priority 5)
 - EasyIP: $150 (priority 6)
-- Robinsavages: $145 (priority 7)
-- kwiksl: $129 (priority 8)
-- MasonMafia: $130 (priority 9)
-- GK: $139 (priority 10)
-- jimmyd66: $145 (priority 11)
-- KUZ1: $146 (priority 12)
+- kwiksl: $129 (priority 7)
+- MasonMafia: $130 (priority 8)
+- GK: $139 (priority 9)
+- jimmyd66: $145 (priority 10)
+- KUZ1: $146 (priority 11)
+- Robinsavages: $144 (priority 12)
 
 ## QB depth by team (buyers have 2)
 - MasonMafia: 2 — Jared Goff, Jalen Hurts
@@ -196,7 +197,7 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - BN: Michael Mayer TE LV
 - BN: Josh Downs WR IND
 
-### Robinsavages (Danny) — 1-0, 168.42 PF, $145 FAAB · DEF1, K1, QB3, RB6, TE1, WR5
+### Robinsavages (Danny) — 1-0, 168.42 PF, $144 FAAB · DEF1, K1, QB3, RB6, TE1, WR5
 - QB: Joe Burrow QB CIN (Questionable)
 - RB: Chase Brown RB CIN
 - RB: Jaylen Warren RB PIT
@@ -208,11 +209,11 @@ Record 1-0 · FAAB $145 left of $150 · waiver priority 7 of 12 (ties only)
 - SUPER_FLEX: Caleb Williams QB CHI
 - K: Ka'imi Fairbairn K HOU
 - DEF: Jacksonville Jaguars DEF JAX
-- BN: Tre Tucker WR LV
 - BN: MarShawn Lloyd RB GB
 - BN: Aaron Jones RB MIN
 - BN: Kenny Gainwell RB TB
 - BN: Malik Willis QB MIA
+- BN: Quentin Johnston WR LAC
 - IR: A.J. Brown WR NE (IR)
 
 ### kwiksl — 1-0, 262.14 PF, $129 FAAB · DEF1, K1, QB3, RB4, TE2, WR5
