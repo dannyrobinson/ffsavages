@@ -1,6 +1,6 @@
 {
- "generated": "Fri Sep 18, 2026 7:14 AM PT",
- "generated_ms": 1789740898167,
+ "generated": "Fri Sep 18, 2026 10:13 AM PT",
+ "generated_ms": 1789751627336,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -107,8 +107,8 @@
    "why": "Questionable \u00b7 Back \u00b7 Soreness",
    "injury": "Questionable",
    "depth": "QB1",
-   "news": "Sep 17",
-   "news_ms": 1789683331618,
+   "news": "Sep 18",
+   "news_ms": 1789750547805,
    "slot": "START",
    "stories": []
   },
@@ -248,7 +248,7 @@
    "injury": null,
    "depth": "SWR2",
    "news": "Sep 18",
-   "news_ms": 1789708235366,
+   "news_ms": 1789741246974,
    "slot": "START",
    "stories": []
   },
@@ -323,7 +323,20 @@
    "stories": []
   }
  ],
- "fa_qbs": [],
+ "fa_qbs": [
+  {
+   "id": "4574",
+   "name": "Cooper Rush",
+   "pos": "QB",
+   "team": "ATL",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "QB1",
+   "news": "Sep 18",
+   "news_ms": 1789749947785
+  }
+ ],
  "trending": [
   {
    "id": "12472",
@@ -336,7 +349,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789611023391,
-   "adds": 489888
+   "adds": 444384
   },
   {
    "id": "3286",
@@ -349,20 +362,33 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 348864
+   "adds": 324750
   },
   {
    "id": "10218",
    "name": "Xavier Hutchinson",
    "pos": "WR",
    "team": "HOU",
-   "flag": "green",
-   "why": "Healthy, starting",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "LWR2",
+   "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789487115211,
-   "adds": 246190
+   "adds": 272293
+  },
+  {
+   "id": "11637",
+   "name": "Keon Coleman",
+   "pos": "WR",
+   "team": "BUF",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "LWR3",
+   "news": "Sep 18",
+   "news_ms": 1789741246949,
+   "adds": 236232
   },
   {
    "id": "4177",
@@ -375,7 +401,7 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 238557
+   "adds": 211821
   },
   {
    "id": "4993",
@@ -388,59 +414,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 213948
-  },
-  {
-   "id": "12492",
-   "name": "Pat Bryant",
-   "pos": "WR",
-   "team": "DEN",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 16",
-   "news_ms": 1789518054967,
-   "adds": 205904
-  },
-  {
-   "id": "11637",
-   "name": "Keon Coleman",
-   "pos": "WR",
-   "team": "BUF",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "LWR3",
-   "news": "Sep 18",
-   "news_ms": 1789707934917,
-   "adds": 195318
-  },
-  {
-   "id": "11729",
-   "name": "Sione Vaki",
-   "pos": "RB",
-   "team": "DET",
-   "flag": "amber",
-   "why": "RB4 on the depth chart",
-   "injury": null,
-   "depth": "RB4",
-   "news": "Sep 17",
-   "news_ms": 1789605322784,
-   "adds": 194341
-  },
-  {
-   "id": "13330",
-   "name": "Kenyon Sadiq",
-   "pos": "TE",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789411204698,
-   "adds": 193635
+   "adds": 191280
   },
   {
    "id": "4035",
@@ -453,7 +427,46 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789680631370,
-   "adds": 189280
+   "adds": 187976
+  },
+  {
+   "id": "11729",
+   "name": "Sione Vaki",
+   "pos": "RB",
+   "team": "DET",
+   "flag": "amber",
+   "why": "RB4 on the depth chart",
+   "injury": null,
+   "depth": "RB4",
+   "news": "Sep 18",
+   "news_ms": 1789742446512,
+   "adds": 177632
+  },
+  {
+   "id": "12492",
+   "name": "Pat Bryant",
+   "pos": "WR",
+   "team": "DEN",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 16",
+   "news_ms": 1789518054967,
+   "adds": 175368
+  },
+  {
+   "id": "13330",
+   "name": "Kenyon Sadiq",
+   "pos": "TE",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 14",
+   "news_ms": 1789411204698,
+   "adds": 173241
   },
   {
    "id": "11610",
@@ -466,33 +479,7 @@
    "depth": "SWR1",
    "news": "Sep 15",
    "news_ms": 1789503352493,
-   "adds": 159488
-  },
-  {
-   "id": "4066",
-   "name": "Evan Engram",
-   "pos": "TE",
-   "team": "DEN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 16",
-   "news_ms": 1789518054978,
-   "adds": 146440
-  },
-  {
-   "id": "9486",
-   "name": "Dontayvion Wicks",
-   "pos": "WR",
-   "team": "PHI",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 15",
-   "news_ms": 1789509954875,
-   "adds": 138672
+   "adds": 152008
   },
   {
    "id": "13347",
@@ -505,7 +492,33 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789606523762,
-   "adds": 130599
+   "adds": 132390
+  },
+  {
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 16",
+   "news_ms": 1789518054978,
+   "adds": 130680
+  },
+  {
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 15",
+   "news_ms": 1789509954875,
+   "adds": 119550
   },
   {
    "id": "6931",
@@ -518,7 +531,7 @@
    "depth": "RB3",
    "news": "Sep 16",
    "news_ms": 1789598422560,
-   "adds": 115926
+   "adds": 119361
   },
   {
    "id": "3321",
@@ -531,7 +544,7 @@
    "depth": null,
    "news": "Sep 16",
    "news_ms": 1789571759747,
-   "adds": 92248
+   "adds": 85512
   },
   {
    "id": "11630",
@@ -544,20 +557,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435508374,
-   "adds": 91368
-  },
-  {
-   "id": "3634",
-   "name": "Kalif Raymond",
-   "pos": "WR",
-   "team": "CHI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789428306629,
-   "adds": 89040
+   "adds": 85230
   },
   {
    "id": "7049",
@@ -570,7 +570,20 @@
    "depth": "SWR3",
    "news": "Sep 18",
    "news_ms": 1789699533559,
-   "adds": 88102
+   "adds": 78988
+  },
+  {
+   "id": "3634",
+   "name": "Kalif Raymond",
+   "pos": "WR",
+   "team": "CHI",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 14",
+   "news_ms": 1789428306629,
+   "adds": 77928
   },
   {
    "id": "4454",
@@ -583,7 +596,7 @@
    "depth": "SWR3",
    "news": "Sep 14",
    "news_ms": 1789427707415,
-   "adds": 81102
+   "adds": 70074
   }
  ],
  "transactions": [
@@ -772,7 +785,7 @@
     "injury": null,
     "depth": "RB1",
     "news": "Sep 18",
-    "news_ms": 1789704034684
+    "news_ms": 1789742446521
    },
    {
     "id": "3198",
@@ -795,8 +808,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "LWR1",
-    "news": "Sep 15",
-    "news_ms": 1789509055981
+    "news": "Sep 18",
+    "news_ms": 1789746045719
    },
    {
     "id": "4983",
@@ -1091,7 +1104,7 @@
     "DEF: Houston Texans DEF HOU"
    ],
    "bench": [
-    "Jalen Coker WR CAR (Questionable)",
+    "Jalen Coker WR CAR",
     "KC Concepcion WR CLE",
     "Chris Bell WR MIA",
     "Jacoby Brissett QB ARI",

@@ -1,10 +1,10 @@
-# Sleeper sweep — Week 2 · Fri Sep 18, 2026 7:14 AM PT
+# Sleeper sweep — Week 2 · Fri Sep 18, 2026 10:13 AM PT
 
 Record 1-0 · FAAB $144 left of $150 · waiver priority 12 of 12 (ties only)
 
 ## Roster
 - GREEN QB  Caleb Williams (CHI, START) — Healthy, starting · news Sep 17
-- AMBER QB  Joe Burrow (CIN, START) — Questionable · Back · Soreness · news Sep 17
+- AMBER QB  Joe Burrow (CIN, START) — Questionable · Back · Soreness · news Sep 18
 - GREEN QB  Malik Willis (MIA, BN) — Healthy, starting · news Sep 15
 - GREEN RB  Aaron Jones (MIN, START) — Healthy, starting · news Sep 16
 - GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 14
@@ -22,29 +22,29 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 12 of 12 (ties only)
 - GREEN DEF Jacksonville Jaguars (JAX, START) — Healthy, starting
 
 ## Free-agent QBs who start for their NFL team
-- none
+- Cooper Rush (ATL) — Healthy, starting
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- RB  Raheim Sanders (CLE) · 489,888 adds · RB2 · RB2 on the depth chart
-- WR  Demarcus Robinson (SF) · 348,864 adds · LWR3 · WR3 on the depth chart
-- WR  Xavier Hutchinson (HOU) · 246,190 adds · LWR2 · Healthy, starting
-- WR  Mack Hollins (NE) · 238,557 adds · RWR2 · Healthy, starting
-- TE  Mike Gesicki (CIN) · 213,948 adds · TE1 · Healthy, starting
-- WR  Pat Bryant (DEN) · 205,904 adds · SWR3 · WR3 on the depth chart
-- WR  Keon Coleman (BUF) · 195,318 adds · LWR3 · WR3 on the depth chart
-- RB  Sione Vaki (DET) · 194,341 adds · RB4 · RB4 on the depth chart
-- TE  Kenyon Sadiq (NYJ) · 193,635 adds · TE1 · Healthy, starting
-- RB  Alvin Kamara (NO) · 189,280 adds · RB2 · RB2 on the depth chart
-- WR  Malik Washington (MIA) · 159,488 adds · SWR1 · Healthy, starting
-- TE  Evan Engram (DEN) · 146,440 adds · TE1 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 138,672 adds · RWR2 · Healthy, starting
-- RB  Demond Claiborne (MIN) · 130,599 adds · RB2 · RB2 on the depth chart
-- RB  DeeJay Dallas (MIN) · 115,926 adds · RB3 · RB3 on the depth chart
-- WR  Tyreek Hill (FA) · 92,248 adds ·  · Free agent / no team
-- WR  Roman Wilson (PIT) · 91,368 adds · SWR3 · WR3 on the depth chart
-- WR  Kalif Raymond (CHI) · 89,040 adds · SWR3 · WR3 on the depth chart
-- WR  Jauan Jennings (MIN) · 88,102 adds · SWR3 · WR3 on the depth chart
-- WR  Kendrick Bourne (ARI) · 81,102 adds · SWR3 · WR3 on the depth chart
+- RB  Raheim Sanders (CLE) · 444,384 adds · RB2 · RB2 on the depth chart
+- WR  Demarcus Robinson (SF) · 324,750 adds · LWR3 · WR3 on the depth chart
+- WR  Xavier Hutchinson (HOU) · 272,293 adds · LWR3 · WR3 on the depth chart
+- WR  Keon Coleman (BUF) · 236,232 adds · LWR3 · WR3 on the depth chart
+- WR  Mack Hollins (NE) · 211,821 adds · RWR2 · Healthy, starting
+- TE  Mike Gesicki (CIN) · 191,280 adds · TE1 · Healthy, starting
+- RB  Alvin Kamara (NO) · 187,976 adds · RB2 · RB2 on the depth chart
+- RB  Sione Vaki (DET) · 177,632 adds · RB4 · RB4 on the depth chart
+- WR  Pat Bryant (DEN) · 175,368 adds · SWR3 · WR3 on the depth chart
+- TE  Kenyon Sadiq (NYJ) · 173,241 adds · TE1 · Healthy, starting
+- WR  Malik Washington (MIA) · 152,008 adds · SWR1 · Healthy, starting
+- RB  Demond Claiborne (MIN) · 132,390 adds · RB2 · RB2 on the depth chart
+- TE  Evan Engram (DEN) · 130,680 adds · TE1 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 119,550 adds · RWR2 · Healthy, starting
+- RB  DeeJay Dallas (MIN) · 119,361 adds · RB3 · RB3 on the depth chart
+- WR  Tyreek Hill (FA) · 85,512 adds ·  · Free agent / no team
+- WR  Roman Wilson (PIT) · 85,230 adds · SWR3 · WR3 on the depth chart
+- WR  Jauan Jennings (MIN) · 78,988 adds · SWR3 · WR3 on the depth chart
+- WR  Kalif Raymond (CHI) · 77,928 adds · SWR3 · WR3 on the depth chart
+- WR  Kendrick Bourne (ARI) · 70,074 adds · SWR3 · WR3 on the depth chart
 
 ## League transactions, week 2
 - Robinsavages: waiver complete +['Quentin Johnston'] -['Tre Tucker'] ($1)
@@ -134,7 +134,7 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 12 of 12 (ties only)
 - SUPER_FLEX: Matthew Stafford QB LAR
 - K: Harrison Mevis K LAR
 - DEF: Houston Texans DEF HOU
-- BN: Jalen Coker WR CAR (Questionable)
+- BN: Jalen Coker WR CAR
 - BN: KC Concepcion WR CLE
 - BN: Chris Bell WR MIA
 - BN: Jacoby Brissett QB ARI
