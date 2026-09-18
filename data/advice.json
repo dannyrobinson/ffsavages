@@ -1,62 +1,11 @@
-{
-  "headline": "Set Malik Willis as Joe Burrow's AutoSub before Sunday's 10:00 AM PT kickoff — Burrow's back kept him limited through Thursday and no Friday designation is out yet, and Danny's app still shows no subs recorded.",
-  "summary": "Danny is 1-0 and the lineup is already right after Wednesday/Thursday's Jones-for-Judkins move; nothing material changed overnight. The open items are the same two: Burrow (back) and Juwan Johnson (illness) were both limited again Thursday with Friday's official designations not out yet, so the auto-subs need to actually be set, not just advised.",
-  "lineup": [],
-  "adds": [],
-  "ir": [],
-  "subs": [
-    {
-      "starter": "Joe Burrow",
-      "sub": "Malik Willis",
-      "slot": "QB",
-      "why": "Questionable, back — limited again Thursday (Sept 17), doing more work than Wednesday, and he says he expects to play, but Friday's designation isn't out yet; Willis kicks off later (1:25 PM) so set the pair before Burrow's 10:00 AM Sunday kickoff.",
-      "urgency": "high"
-    },
-    {
-      "starter": "Juwan Johnson",
-      "sub": "none available",
-      "slot": "TE",
-      "why": "Questionable, illness — DNP Wednesday, limited Thursday (Sept 17); Danny carries no bench TE, so if Friday's report doesn't upgrade him to full, decide it himself by about 8:30 AM PT Sunday (90 minutes before his 10:00 AM kickoff).",
-      "urgency": "low"
-    }
-  ],
-  "flags": [
-    {
-      "player": "Joe Burrow",
-      "severity": "amber",
-      "what": "Questionable, back — limited practice Wed and Thu (Sept 17), no Friday designation yet, says he expects to play"
-    },
-    {
-      "player": "Juwan Johnson",
-      "severity": "amber",
-      "what": "Questionable, illness — DNP Wed, limited Thu (Sept 17), no Friday update yet"
-    },
-    {
-      "player": "A.J. Brown",
-      "severity": "red",
-      "what": "On IR, ankle sprain (Sept 13 report: out roughly 6 weeks, minimum 4 games)"
-    },
-    {
-      "player": "Kenny Gainwell",
-      "severity": "amber",
-      "what": "RB2 behind Bucky Irving in Tampa Bay, bench-only"
-    }
-  ],
-  "watch": [
-    {
-      "player": "Wan'Dale Robinson",
-      "what": "Dropped by a rival (jimmyd66) and still unowned; claims on him process today, Fri Sep 18 12:32 PM PT. He's Tennessee's real WR2 (5-of-6 for 38 in Week 1), but that doesn't clearly beat Quentin Johnston, Danny's own Thursday WR stash — no add unless Johnston's role fades."
-    },
-    {
-      "player": "Free-agent starting QB",
-      "what": "Still none exists for the week-6 Burrow/Willis bye clash; keep checking each run as the bye gets closer."
-    },
-    {
-      "player": "Juwan Johnson",
-      "what": "Watch Friday's practice report; no bench TE cover exists, so if he isn't full, Danny decides himself Sunday morning."
-    }
-  ],
-  "alerts": [],
-  "ts": 1789740840000,
-  "week": 2
-}
+{"headline": "Add free-agent QB Cooper Rush for Malik Willis now, then set Rush as Joe Burrow's AutoSub before Sunday's 10:00 AM PT kickoff.",
+ "summary": "Danny is 1-0 and Thursday's lineup calls (Jones over Judkins, Shakir and Jones in the flex spots) still hold today, nothing changed. The live issue is Burrow's back, limited in practice again Thursday with no official game-status tag yet, and a week 6 QB bye collision that a zero-cost free-agent QB fixes right now.",
+ "lineup": [],
+ "adds": [{"add": "Cooper Rush", "pos": "QB", "team": "ATL", "drop": "Malik Willis", "how": "add now", "bid": 0, "backup": false, "processes": null, "why": "fixes the week 6 double bye: Burrow and Willis both sit week 6, Rush's bye is 11", "evidence": "Rush makes his 2nd straight start for Atlanta Sunday with Michael Penix (ACL, close to returning) and Tua Tagovailoa (oblique) both inactive, per Fri Sep 18 reports; Willis remains Miami's starter (room shows him QB1, no competition) but shares Burrow's week 6 bye so he gives Danny no cover that week", "urgency": "high"}],
+ "ir": [],
+ "subs": [{"starter": "Joe Burrow", "sub": "Cooper Rush", "slot": "QB", "why": "Burrow was a limited practice participant Wed and Thu with back soreness and still has no official game-status designation as of Fri Sep 18; add Rush first (above), then set the pair before Sunday's 10:00 AM PT kickoff (both games kick off then)", "urgency": "high"}],
+ "flags": [{"player": "Joe Burrow", "severity": "amber", "what": "Questionable, back soreness; limited practice Wed/Thu, no game-status tag yet, expected to play (Fri Sep 18)"}, {"player": "A.J. Brown", "severity": "red", "what": "on IR, high-ankle sprain, expected out into week 6 (Sep 13)"}, {"player": "Kenny Gainwell", "severity": "amber", "what": "RB2 behind Bucky Irving in Tampa Bay's backfield, bench-only"}],
+ "watch": [{"player": "Cooper Rush", "what": "Atlanta could hand the job back to Penix or Tua as soon as either clears his injury — check Falcons inactives before ever starting him"}, {"player": "Wan'Dale Robinson", "what": "dropped by a rival Wednesday but today's news on his role is mixed/stale; check Sunday's Titans inactives before considering him over Quentin Johnston"}, {"player": "Quinshon Judkins", "what": "projected carries (15.7) now edge Aaron Jones' (14.4); if Cleveland's implied total climbs off 16.5 he becomes the better flex play"}],
+ "alerts": [{"key": "add:cooper-rush-for-malik-willis-wk2", "urgency": "high", "title": "➕ Add Cooper Rush, drop Willis", "body": "Rush is ATL's starter again Sunday with Penix and Tua both inactive, and his bye (11) fixes your Burrow/Willis week 6 double bye. Add free, drop Willis, no bid needed."}, {"key": "sub:burrow-rush-wk2", "urgency": "high", "title": "🔁 Set Rush as Burrow's auto-sub", "body": "Burrow was limited again Thursday with back soreness and still has no official tag. After adding Rush, set him as Burrow's Sleeper AutoSub before Sunday 10:00 AM PT kickoff."}],
+ "ts": 1789762451000,
+ "week": 2}
