@@ -1,6 +1,6 @@
 {
- "generated": "Thu Sep 17, 2026 3:26 PM PT",
- "generated_ms": 1789684011849,
+ "generated": "Thu Sep 17, 2026 9:13 PM PT",
+ "generated_ms": 1789704839701,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -336,7 +336,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789611023391,
-   "adds": 1013104
+   "adds": 734840
   },
   {
    "id": "3286",
@@ -349,20 +349,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 558084
-  },
-  {
-   "id": "12492",
-   "name": "Pat Bryant",
-   "pos": "WR",
-   "team": "DEN",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 16",
-   "news_ms": 1789518054967,
-   "adds": 493528
+   "adds": 460584
   },
   {
    "id": "4177",
@@ -375,7 +362,20 @@
    "depth": "RWR2",
    "news": "Sep 16",
    "news_ms": 1789522254580,
-   "adds": 440643
+   "adds": 345978
+  },
+  {
+   "id": "12492",
+   "name": "Pat Bryant",
+   "pos": "WR",
+   "team": "DEN",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 16",
+   "news_ms": 1789518054967,
+   "adds": 342512
   },
   {
    "id": "4993",
@@ -388,7 +388,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789398903824,
-   "adds": 391092
+   "adds": 308700
   },
   {
    "id": "13330",
@@ -401,20 +401,7 @@
    "depth": "TE1",
    "news": "Sep 14",
    "news_ms": 1789411204698,
-   "adds": 359829
-  },
-  {
-   "id": "9486",
-   "name": "Dontayvion Wicks",
-   "pos": "WR",
-   "team": "PHI",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 15",
-   "news_ms": 1789509954875,
-   "adds": 332511
+   "adds": 282195
   },
   {
    "id": "11729",
@@ -427,72 +414,20 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789605322784,
-   "adds": 323099
+   "adds": 268275
   },
   {
-   "id": "4066",
-   "name": "Evan Engram",
-   "pos": "TE",
-   "team": "DEN",
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "TE1",
-   "news": "Sep 16",
-   "news_ms": 1789518054978,
-   "adds": 272824
-  },
-  {
-   "id": "3634",
-   "name": "Kalif Raymond",
-   "pos": "WR",
-   "team": "CHI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789428306629,
-   "adds": 215022
-  },
-  {
-   "id": "4454",
-   "name": "Kendrick Bourne",
-   "pos": "WR",
-   "team": "ARI",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 14",
-   "news_ms": 1789427707415,
-   "adds": 211515
-  },
-  {
-   "id": "4035",
-   "name": "Alvin Kamara",
-   "pos": "RB",
-   "team": "NO",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 17",
-   "news_ms": 1789680631370,
-   "adds": 192216
-  },
-  {
-   "id": "11610",
-   "name": "Malik Washington",
-   "pos": "WR",
-   "team": "MIA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR1",
+   "depth": "RWR2",
    "news": "Sep 15",
-   "news_ms": 1789503352493,
-   "adds": 189112
+   "news_ms": 1789509954875,
+   "adds": 231375
   },
   {
    "id": "10218",
@@ -505,7 +440,72 @@
    "depth": "LWR2",
    "news": "Sep 15",
    "news_ms": 1789487115211,
-   "adds": 177688
+   "adds": 227374
+  },
+  {
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 16",
+   "news_ms": 1789518054978,
+   "adds": 214016
+  },
+  {
+   "id": "4035",
+   "name": "Alvin Kamara",
+   "pos": "RB",
+   "team": "NO",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 17",
+   "news_ms": 1789680631370,
+   "adds": 202104
+  },
+  {
+   "id": "11610",
+   "name": "Malik Washington",
+   "pos": "WR",
+   "team": "MIA",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "SWR1",
+   "news": "Sep 15",
+   "news_ms": 1789503352493,
+   "adds": 188424
+  },
+  {
+   "id": "3634",
+   "name": "Kalif Raymond",
+   "pos": "WR",
+   "team": "CHI",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 14",
+   "news_ms": 1789428306629,
+   "adds": 147074
+  },
+  {
+   "id": "4454",
+   "name": "Kendrick Bourne",
+   "pos": "WR",
+   "team": "ARI",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 14",
+   "news_ms": 1789427707415,
+   "adds": 142215
   },
   {
    "id": "11630",
@@ -518,20 +518,7 @@
    "depth": "SWR3",
    "news": "Sep 15",
    "news_ms": 1789435508374,
-   "adds": 176580
-  },
-  {
-   "id": "11625",
-   "name": "Adonai Mitchell",
-   "pos": "WR",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 14",
-   "news_ms": 1789426207303,
-   "adds": 145688
+   "adds": 131031
   },
   {
    "id": "13347",
@@ -544,33 +531,20 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789606523762,
-   "adds": 120273
+   "adds": 127551
   },
   {
-   "id": "7049",
-   "name": "Jauan Jennings",
+   "id": "11637",
+   "name": "Keon Coleman",
    "pos": "WR",
-   "team": "MIN",
+   "team": "BUF",
    "flag": "amber",
    "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "SWR3",
+   "depth": "LWR3",
    "news": "Sep 17",
-   "news_ms": 1789681533201,
-   "adds": 108395
-  },
-  {
-   "id": "13301",
-   "name": "Antonio Williams",
-   "pos": "WR",
-   "team": "WAS",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 16",
-   "news_ms": 1789574759909,
-   "adds": 100690
+   "news_ms": 1789653928031,
+   "adds": 122976
   },
   {
    "id": "6931",
@@ -583,7 +557,33 @@
    "depth": "RB3",
    "news": "Sep 16",
    "news_ms": 1789598422560,
-   "adds": 93159
+   "adds": 109803
+  },
+  {
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 14",
+   "news_ms": 1789426207303,
+   "adds": 107056
+  },
+  {
+   "id": "7049",
+   "name": "Jauan Jennings",
+   "pos": "WR",
+   "team": "MIN",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 18",
+   "news_ms": 1789699533559,
+   "adds": 106120
   }
  ],
  "transactions": [
@@ -756,8 +756,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 17",
-    "news_ms": 1789604722693
+    "news": "Sep 18",
+    "news_ms": 1789704034684
    },
    {
     "id": "3198",
@@ -788,12 +788,12 @@
     "name": "DJ Moore",
     "pos": "WR",
     "team": "BUF",
-    "flag": "green",
-    "why": "Healthy, starting",
-    "injury": null,
+    "flag": "red",
+    "why": "Out \u00b7 Shoulder",
+    "injury": "Out",
     "depth": "LWR1",
-    "news": "Sep 17",
-    "news_ms": 1789653928058
+    "news": "Sep 18",
+    "news_ms": 1789698033483
    },
    {
     "id": "8130",
@@ -804,8 +804,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "TE1",
-    "news": "Sep 17",
-    "news_ms": 1789643728199
+    "news": "Sep 18",
+    "news_ms": 1789689632695
    },
    {
     "id": "7611",
@@ -852,8 +852,8 @@
     "why": "Questionable \u00b7 Illness",
     "injury": "Questionable",
     "depth": "K1",
-    "news": "Sep 17",
-    "news_ms": 1789603223275
+    "news": "Sep 18",
+    "news_ms": 1789692333534
    },
    {
     "id": "SEA",
@@ -868,8 +868,8 @@
     "news_ms": null
    }
   ],
-  "my_points": 0.0,
-  "their_points": 0.0
+  "my_points": 7.8,
+  "their_points": 26.2
  },
  "qb_depth": [
   {
@@ -1011,7 +1011,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 205.42,
-   "pts_week": 0.0,
+   "pts_week": 28.0,
    "faab_left": 150,
    "counts": {
     "TE": 2,
@@ -1092,7 +1092,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 141.56,
-   "pts_week": 0.0,
+   "pts_week": 37.28,
    "faab_left": 130,
    "counts": {
     "TE": 3,
@@ -1117,7 +1117,7 @@
    ],
    "bench": [
     "AJ Barner TE SEA",
-    "Samaje Perine RB CIN",
+    "Samaje Perine RB CIN (Questionable)",
     "Courtland Sutton WR DEN",
     "Tony Pollard RB TEN",
     "Denver Broncos DEF DEN"
@@ -1132,7 +1132,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 253.4,
-   "pts_week": 0.0,
+   "pts_week": 37.7,
    "faab_left": 150,
    "counts": {
     "WR": 4,
@@ -1194,7 +1194,7 @@
     "DEF: Green Bay Packers DEF GB"
    ],
    "bench": [
-    "Kaelon Black RB SF",
+    "Kaelon Black RB SF (Questionable)",
     "Daniel Jones QB IND",
     "J.K. Dobbins RB DEN",
     "Michael Mayer TE LV",
@@ -1208,7 +1208,7 @@
    "mine": true,
    "record": "1-0",
    "pts_for": 168.42,
-   "pts_week": 0.0,
+   "pts_week": 7.8,
    "faab_left": 145,
    "counts": {
     "WR": 5,
@@ -1248,7 +1248,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 262.14,
-   "pts_week": 0.0,
+   "pts_week": 26.2,
    "faab_left": 129,
    "counts": {
     "WR": 5,
@@ -1263,7 +1263,7 @@
     "RB: Jahmyr Gibbs RB DET",
     "RB: Derrick Henry RB BAL",
     "WR: DeVonta Smith WR PHI",
-    "WR: DJ Moore WR BUF",
+    "WR: DJ Moore WR BUF (Out)",
     "TE: Trey McBride TE ARI",
     "FLEX: Rhamondre Stevenson RB NE",
     "FLEX: Isaiah Likely TE NYG",
@@ -1286,7 +1286,7 @@
    "mine": false,
    "record": "0-1",
    "pts_for": 153.6,
-   "pts_week": 0.0,
+   "pts_week": 4.0,
    "faab_left": 146,
    "counts": {
     "WR": 5,
@@ -1324,7 +1324,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 209.98,
-   "pts_week": 0.0,
+   "pts_week": 23.9,
    "faab_left": 150,
    "counts": {
     "RB": 4,
@@ -1400,7 +1400,7 @@
    "mine": false,
    "record": "0-1",
    "pts_for": 114.58,
-   "pts_week": 0.0,
+   "pts_week": 6.3,
    "faab_left": 145,
    "counts": {
     "RB": 4,
@@ -1439,7 +1439,7 @@
    "mine": false,
    "record": "0-1",
    "pts_for": 163.12,
-   "pts_week": 0.0,
+   "pts_week": 73.02,
    "faab_left": 150,
    "counts": {
     "TE": 1,
