@@ -1,6 +1,6 @@
 {
- "generated": "Sat Sep 19, 2026 9:48 AM PT",
- "generated_ms": 1789836538484,
+ "generated": "Sat Sep 19, 2026 1:13 PM PT",
+ "generated_ms": 1789848795013,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -261,8 +261,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "LWR2",
-   "news": "Sep 17",
-   "news_ms": 1789660229045,
+   "news": "Sep 19",
+   "news_ms": 1789839645876,
    "slot": "BN",
    "stories": []
   },
@@ -333,8 +333,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 18",
-   "news_ms": 1789754147325
+   "news": "Sep 19",
+   "news_ms": 1789836638891
   }
  ],
  "trending": [
@@ -349,7 +349,7 @@
    "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789818337307,
-   "adds": 473879
+   "adds": 522459
   },
   {
    "id": "11637",
@@ -362,20 +362,7 @@
    "depth": "LWR3",
    "news": "Sep 18",
    "news_ms": 1789741246949,
-   "adds": 429066
-  },
-  {
-   "id": "12472",
-   "name": "Raheim Sanders",
-   "pos": "RB",
-   "team": "CLE",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 19",
-   "news_ms": 1789832438468,
-   "adds": 194072
+   "adds": 452574
   },
   {
    "id": "4035",
@@ -388,7 +375,20 @@
    "depth": "RB2",
    "news": "Sep 19",
    "news_ms": 1789830038261,
-   "adds": 174744
+   "adds": 181752
+  },
+  {
+   "id": "12472",
+   "name": "Raheim Sanders",
+   "pos": "RB",
+   "team": "CLE",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 19",
+   "news_ms": 1789832438468,
+   "adds": 174648
   },
   {
    "id": "3286",
@@ -401,7 +401,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 161658
+   "adds": 149280
   },
   {
    "id": "4993",
@@ -414,7 +414,20 @@
    "depth": "TE1",
    "news": "Sep 18",
    "news_ms": 1789764048389,
-   "adds": 109192
+   "adds": 103024
+  },
+  {
+   "id": "11630",
+   "name": "Roman Wilson",
+   "pos": "WR",
+   "team": "PIT",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "SWR2",
+   "news": "Sep 19",
+   "news_ms": 1789839046388,
+   "adds": 102654
   },
   {
    "id": "4177",
@@ -427,7 +440,7 @@
    "depth": "RWR2",
    "news": "Sep 19",
    "news_ms": 1789799752016,
-   "adds": 100014
+   "adds": 93294
   },
   {
    "id": "11610",
@@ -440,7 +453,7 @@
    "depth": "SWR1",
    "news": "Sep 19",
    "news_ms": 1789823737699,
-   "adds": 97672
+   "adds": 93176
   },
   {
    "id": "13330",
@@ -453,20 +466,7 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789826138033,
-   "adds": 92844
-  },
-  {
-   "id": "11630",
-   "name": "Roman Wilson",
-   "pos": "WR",
-   "team": "PIT",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 19",
-   "news_ms": 1789788951039,
-   "adds": 76617
+   "adds": 88164
   },
   {
    "id": "4066",
@@ -479,20 +479,7 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789784150451,
-   "adds": 73080
-  },
-  {
-   "id": "11729",
-   "name": "Sione Vaki",
-   "pos": "RB",
-   "team": "DET",
-   "flag": "amber",
-   "why": "RB4 on the depth chart",
-   "injury": null,
-   "depth": "RB4",
-   "news": "Sep 19",
-   "news_ms": 1789779050539,
-   "adds": 69223
+   "adds": 69384
   },
   {
    "id": "6931",
@@ -505,7 +492,20 @@
    "depth": "RB2",
    "news": "Sep 16",
    "news_ms": 1789598422560,
-   "adds": 66153
+   "adds": 63537
+  },
+  {
+   "id": "11729",
+   "name": "Sione Vaki",
+   "pos": "RB",
+   "team": "DET",
+   "flag": "amber",
+   "why": "RB4 on the depth chart",
+   "injury": null,
+   "depth": "RB4",
+   "news": "Sep 19",
+   "news_ms": 1789779050539,
+   "adds": 59717
   },
   {
    "id": "3321",
@@ -518,7 +518,7 @@
    "depth": null,
    "news": "Sep 16",
    "news_ms": 1789571759747,
-   "adds": 62016
+   "adds": 57896
   },
   {
    "id": "12492",
@@ -531,7 +531,7 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789783550344,
-   "adds": 58832
+   "adds": 54072
   },
   {
    "id": "9486",
@@ -544,7 +544,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 50700
+   "adds": 47601
   },
   {
    "id": "9504",
@@ -557,7 +557,7 @@
    "depth": "RWR2",
    "news": "Sep 18",
    "news_ms": 1789770349789,
-   "adds": 41499
+   "adds": 43599
   },
   {
    "id": "7571",
@@ -570,7 +570,20 @@
    "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789820137375,
-   "adds": 37685
+   "adds": 39856
+  },
+  {
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 19",
+   "news_ms": 1789825837908,
+   "adds": 36936
   },
   {
    "id": "3634",
@@ -583,20 +596,7 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789800352249,
-   "adds": 36616
-  },
-  {
-   "id": "13347",
-   "name": "Demond Claiborne",
-   "pos": "RB",
-   "team": "MIN",
-   "flag": "amber",
-   "why": "RB3 on the depth chart",
-   "injury": null,
-   "depth": "RB3",
-   "news": "Sep 18",
-   "news_ms": 1789765248194,
-   "adds": 34746
+   "adds": 34732
   }
  ],
  "transactions": [
@@ -1129,7 +1129,7 @@
     "WR: Justin Jefferson WR MIN",
     "WR: Tee Higgins WR CIN",
     "TE: Dalton Kincaid TE BUF",
-    "FLEX: Michael Pittman WR PIT (Questionable)",
+    "FLEX: Michael Pittman WR PIT (Out)",
     "FLEX: D'Andre Swift RB CHI",
     "SUPER_FLEX: Trevor Lawrence QB JAX",
     "K: Cameron Dicker K LAC",
@@ -1287,12 +1287,12 @@
    "starters": [
     "QB: Jayden Daniels QB WAS",
     "RB: Omarion Hampton RB LAC",
-    "RB: Blake Corum RB LAR",
+    "RB: Jeremiyah Love RB ARI",
     "WR: Chris Olave WR NO (Questionable)",
-    "WR: Emeka Egbuka WR TB",
+    "WR: Christian Watson WR GB",
     "TE: Mark Andrews TE BAL",
-    "FLEX: Christian Watson WR GB",
-    "FLEX: Jeremiyah Love RB ARI",
+    "FLEX: Emeka Egbuka WR TB",
+    "FLEX: Blake Corum RB LAR",
     "SUPER_FLEX: Dak Prescott QB DAL",
     "K: Spencer Shrader K IND",
     "DEF: Green Bay Packers DEF GB"
