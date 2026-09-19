@@ -1,6 +1,6 @@
 {
- "generated": "Sat Sep 19, 2026 7:12 AM PT",
- "generated_ms": 1789827167323,
+ "generated": "Sat Sep 19, 2026 9:48 AM PT",
+ "generated_ms": 1789836538484,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -289,8 +289,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "TE1",
-   "news": "Sep 18",
-   "news_ms": 1789748145958,
+   "news": "Sep 19",
+   "news_ms": 1789834838701,
    "slot": "BN",
    "stories": []
   },
@@ -346,10 +346,10 @@
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "LWR2",
+   "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789818337307,
-   "adds": 455749
+   "adds": 473879
   },
   {
    "id": "11637",
@@ -362,7 +362,7 @@
    "depth": "LWR3",
    "news": "Sep 18",
    "news_ms": 1789741246949,
-   "adds": 413991
+   "adds": 429066
   },
   {
    "id": "12472",
@@ -373,9 +373,22 @@
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 17",
-   "news_ms": 1789611023391,
-   "adds": 219128
+   "news": "Sep 19",
+   "news_ms": 1789832438468,
+   "adds": 194072
+  },
+  {
+   "id": "4035",
+   "name": "Alvin Kamara",
+   "pos": "RB",
+   "team": "NO",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 19",
+   "news_ms": 1789830038261,
+   "adds": 174744
   },
   {
    "id": "3286",
@@ -388,20 +401,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 178506
-  },
-  {
-   "id": "4035",
-   "name": "Alvin Kamara",
-   "pos": "RB",
-   "team": "NO",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 18",
-   "news_ms": 1789755348611,
-   "adds": 177224
+   "adds": 161658
   },
   {
    "id": "4993",
@@ -414,7 +414,7 @@
    "depth": "TE1",
    "news": "Sep 18",
    "news_ms": 1789764048389,
-   "adds": 118164
+   "adds": 109192
   },
   {
    "id": "4177",
@@ -427,7 +427,7 @@
    "depth": "RWR2",
    "news": "Sep 19",
    "news_ms": 1789799752016,
-   "adds": 112266
+   "adds": 100014
   },
   {
    "id": "11610",
@@ -440,7 +440,7 @@
    "depth": "SWR1",
    "news": "Sep 19",
    "news_ms": 1789823737699,
-   "adds": 106528
+   "adds": 97672
   },
   {
    "id": "13330",
@@ -453,33 +453,7 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789826138033,
-   "adds": 100782
-  },
-  {
-   "id": "11729",
-   "name": "Sione Vaki",
-   "pos": "RB",
-   "team": "DET",
-   "flag": "amber",
-   "why": "RB4 on the depth chart",
-   "injury": null,
-   "depth": "RB4",
-   "news": "Sep 19",
-   "news_ms": 1789779050539,
-   "adds": 80500
-  },
-  {
-   "id": "4066",
-   "name": "Evan Engram",
-   "pos": "TE",
-   "team": "DEN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 19",
-   "news_ms": 1789784150451,
-   "adds": 78864
+   "adds": 92844
   },
   {
    "id": "11630",
@@ -492,7 +466,33 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789788951039,
-   "adds": 75717
+   "adds": 76617
+  },
+  {
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 19",
+   "news_ms": 1789784150451,
+   "adds": 73080
+  },
+  {
+   "id": "11729",
+   "name": "Sione Vaki",
+   "pos": "RB",
+   "team": "DET",
+   "flag": "amber",
+   "why": "RB4 on the depth chart",
+   "injury": null,
+   "depth": "RB4",
+   "news": "Sep 19",
+   "news_ms": 1789779050539,
+   "adds": 69223
   },
   {
    "id": "6931",
@@ -505,20 +505,7 @@
    "depth": "RB2",
    "news": "Sep 16",
    "news_ms": 1789598422560,
-   "adds": 73449
-  },
-  {
-   "id": "12492",
-   "name": "Pat Bryant",
-   "pos": "WR",
-   "team": "DEN",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 19",
-   "news_ms": 1789783550344,
-   "adds": 66848
+   "adds": 66153
   },
   {
    "id": "3321",
@@ -531,7 +518,20 @@
    "depth": null,
    "news": "Sep 16",
    "news_ms": 1789571759747,
-   "adds": 65168
+   "adds": 62016
+  },
+  {
+   "id": "12492",
+   "name": "Pat Bryant",
+   "pos": "WR",
+   "team": "DEN",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 19",
+   "news_ms": 1789783550344,
+   "adds": 58832
   },
   {
    "id": "9486",
@@ -544,7 +544,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 55755
+   "adds": 50700
   },
   {
    "id": "9504",
@@ -554,10 +554,23 @@
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR1",
+   "depth": "RWR2",
    "news": "Sep 18",
    "news_ms": 1789770349789,
-   "adds": 40697
+   "adds": 41499
+  },
+  {
+   "id": "7571",
+   "name": "Rashod Bateman",
+   "pos": "WR",
+   "team": "BAL",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "LWR1",
+   "news": "Sep 19",
+   "news_ms": 1789820137375,
+   "adds": 37685
   },
   {
    "id": "3634",
@@ -570,7 +583,7 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789800352249,
-   "adds": 40146
+   "adds": 36616
   },
   {
    "id": "13347",
@@ -583,20 +596,7 @@
    "depth": "RB3",
    "news": "Sep 18",
    "news_ms": 1789765248194,
-   "adds": 39840
-  },
-  {
-   "id": "7571",
-   "name": "Rashod Bateman",
-   "pos": "WR",
-   "team": "BAL",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "LWR2",
-   "news": "Sep 19",
-   "news_ms": 1789820137375,
-   "adds": 37525
+   "adds": 34746
   }
  ],
  "transactions": [
@@ -1171,16 +1171,16 @@
     "WR: Terry McLaurin WR WAS",
     "TE: Tucker Kraft TE GB",
     "FLEX: Bhayshul Tuten RB JAX",
-    "FLEX: DK Metcalf WR PIT",
+    "FLEX: Jalen Coker WR CAR",
     "SUPER_FLEX: Matthew Stafford QB LAR",
     "K: Harrison Mevis K LAR",
     "DEF: Houston Texans DEF HOU"
    ],
    "bench": [
-    "Jalen Coker WR CAR",
     "KC Concepcion WR CLE",
     "Chris Bell WR MIA",
     "Jacoby Brissett QB ARI",
+    "DK Metcalf WR PIT",
     "Brenton Strange TE JAX"
    ],
    "ir": [

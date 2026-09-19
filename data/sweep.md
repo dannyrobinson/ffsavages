@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 2 · Sat Sep 19, 2026 7:12 AM PT
+# Sleeper sweep — Week 2 · Sat Sep 19, 2026 9:48 AM PT
 
 Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 
@@ -17,7 +17,7 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - GREEN WR  Malik Nabers (NYG, START) — Healthy, starting · news Sep 17
 - GREEN WR  Quentin Johnston (LAC, BN) — Healthy, starting · news Sep 17
 - GREEN TE  Juwan Johnson (NO, START) — Healthy, starting · news Sep 19
-- GREEN TE  Kyle Pitts (ATL, BN) — Healthy, starting · news Sep 18
+- GREEN TE  Kyle Pitts (ATL, BN) — Healthy, starting · news Sep 19
 - GREEN K   Ka'imi Fairbairn (HOU, START) — Healthy, starting · news Sep 19
 - GREEN DEF Jacksonville Jaguars (JAX, START) — Healthy, starting
 
@@ -25,26 +25,26 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - Cooper Rush (ATL) — Healthy, starting
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- WR  Xavier Hutchinson (HOU) · 455,749 adds · LWR2 · Healthy, starting
-- WR  Keon Coleman (BUF) · 413,991 adds · LWR3 · WR3 on the depth chart
-- RB  Raheim Sanders (CLE) · 219,128 adds · RB2 · RB2 on the depth chart
-- WR  Demarcus Robinson (SF) · 178,506 adds · LWR3 · WR3 on the depth chart
-- RB  Alvin Kamara (NO) · 177,224 adds · RB2 · RB2 on the depth chart
-- TE  Mike Gesicki (CIN) · 118,164 adds · TE1 · Healthy, starting
-- WR  Mack Hollins (NE) · 112,266 adds · RWR2 · Healthy, starting
-- WR  Malik Washington (MIA) · 106,528 adds · SWR1 · Healthy, starting
-- TE  Kenyon Sadiq (NYJ) · 100,782 adds · TE1 · Healthy, starting
-- RB  Sione Vaki (DET) · 80,500 adds · RB4 · RB4 on the depth chart
-- TE  Evan Engram (DEN) · 78,864 adds · TE1 · Healthy, starting
-- WR  Roman Wilson (PIT) · 75,717 adds · SWR3 · WR3 on the depth chart
-- RB  DeeJay Dallas (MIN) · 73,449 adds · RB2 · RB2 on the depth chart
-- WR  Pat Bryant (DEN) · 66,848 adds · SWR3 · WR3 on the depth chart
-- WR  Tyreek Hill (FA) · 65,168 adds ·  · Free agent / no team
-- WR  Dontayvion Wicks (PHI) · 55,755 adds · RWR2 · Healthy, starting
-- WR  Kayshon Boutte (HOU) · 40,697 adds · RWR1 · Healthy, starting
-- WR  Kalif Raymond (CHI) · 40,146 adds · SWR3 · WR3 on the depth chart
-- RB  Demond Claiborne (MIN) · 39,840 adds · RB3 · RB3 on the depth chart
-- WR  Rashod Bateman (BAL) · 37,525 adds · LWR2 · Healthy, starting
+- WR  Xavier Hutchinson (HOU) · 473,879 adds · LWR1 · Healthy, starting
+- WR  Keon Coleman (BUF) · 429,066 adds · LWR3 · WR3 on the depth chart
+- RB  Raheim Sanders (CLE) · 194,072 adds · RB2 · RB2 on the depth chart
+- RB  Alvin Kamara (NO) · 174,744 adds · RB2 · RB2 on the depth chart
+- WR  Demarcus Robinson (SF) · 161,658 adds · LWR3 · WR3 on the depth chart
+- TE  Mike Gesicki (CIN) · 109,192 adds · TE1 · Healthy, starting
+- WR  Mack Hollins (NE) · 100,014 adds · RWR2 · Healthy, starting
+- WR  Malik Washington (MIA) · 97,672 adds · SWR1 · Healthy, starting
+- TE  Kenyon Sadiq (NYJ) · 92,844 adds · TE1 · Healthy, starting
+- WR  Roman Wilson (PIT) · 76,617 adds · SWR3 · WR3 on the depth chart
+- TE  Evan Engram (DEN) · 73,080 adds · TE1 · Healthy, starting
+- RB  Sione Vaki (DET) · 69,223 adds · RB4 · RB4 on the depth chart
+- RB  DeeJay Dallas (MIN) · 66,153 adds · RB2 · RB2 on the depth chart
+- WR  Tyreek Hill (FA) · 62,016 adds ·  · Free agent / no team
+- WR  Pat Bryant (DEN) · 58,832 adds · SWR3 · WR3 on the depth chart
+- WR  Dontayvion Wicks (PHI) · 50,700 adds · RWR2 · Healthy, starting
+- WR  Kayshon Boutte (HOU) · 41,499 adds · RWR2 · Healthy, starting
+- WR  Rashod Bateman (BAL) · 37,685 adds · LWR1 · Healthy, starting
+- WR  Kalif Raymond (CHI) · 36,616 adds · SWR3 · WR3 on the depth chart
+- RB  Demond Claiborne (MIN) · 34,746 adds · RB3 · RB3 on the depth chart
 
 ## League transactions, week 2
 - KUZ1: waiver complete +['Greg Dulcich'] -['Nicholas Singleton'] ($1)
@@ -135,14 +135,14 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - WR: Terry McLaurin WR WAS
 - TE: Tucker Kraft TE GB
 - FLEX: Bhayshul Tuten RB JAX
-- FLEX: DK Metcalf WR PIT
+- FLEX: Jalen Coker WR CAR
 - SUPER_FLEX: Matthew Stafford QB LAR
 - K: Harrison Mevis K LAR
 - DEF: Houston Texans DEF HOU
-- BN: Jalen Coker WR CAR
 - BN: KC Concepcion WR CLE
 - BN: Chris Bell WR MIA
 - BN: Jacoby Brissett QB ARI
+- BN: DK Metcalf WR PIT
 - BN: Brenton Strange TE JAX
 - IR: Jordyn Tyson WR NO (IR)
 
