@@ -1,6 +1,6 @@
 {
- "generated": "Sat Sep 19, 2026 1:17 AM PT",
- "generated_ms": 1789805878474,
+ "generated": "Sat Sep 19, 2026 7:12 AM PT",
+ "generated_ms": 1789827167323,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -69,19 +69,19 @@
    "position": 10
   },
   {
-   "team": "KUZ1",
-   "roster_id": 8,
-   "left": 146,
-   "position": 11
-  },
-  {
    "team": "Robinsavages",
    "roster_id": 6,
    "left": 144,
+   "position": 11
+  },
+  {
+   "team": "KUZ1",
+   "roster_id": 8,
+   "left": 145,
    "position": 12
   }
  ],
- "waiver_position": 12,
+ "waiver_position": 11,
  "record": "1-0",
  "roster": [
   {
@@ -107,8 +107,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 15",
-   "news_ms": 1789487413765,
+   "news": "Sep 19",
+   "news_ms": 1789825837943,
    "slot": "BN",
    "stories": []
   },
@@ -121,8 +121,8 @@
    "why": "Questionable \u00b7 Back \u00b7 Soreness",
    "injury": "Questionable",
    "depth": "QB1",
-   "news": "Sep 18",
-   "news_ms": 1789765248168,
+   "news": "Sep 19",
+   "news_ms": 1789826138035,
    "slot": "START",
    "stories": []
   },
@@ -303,8 +303,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "K1",
-   "news": "Sep 15",
-   "news_ms": 1789486515298,
+   "news": "Sep 19",
+   "news_ms": 1789820737565,
    "slot": "START",
    "stories": []
   },
@@ -343,13 +343,13 @@
    "name": "Xavier Hutchinson",
    "pos": "WR",
    "team": "HOU",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "LWR3",
-   "news": "Sep 18",
-   "news_ms": 1789770949425,
-   "adds": 434777
+   "depth": "LWR2",
+   "news": "Sep 19",
+   "news_ms": 1789818337307,
+   "adds": 455749
   },
   {
    "id": "11637",
@@ -362,7 +362,7 @@
    "depth": "LWR3",
    "news": "Sep 18",
    "news_ms": 1789741246949,
-   "adds": 400167
+   "adds": 413991
   },
   {
    "id": "12472",
@@ -375,7 +375,7 @@
    "depth": "RB2",
    "news": "Sep 17",
    "news_ms": 1789611023391,
-   "adds": 249024
+   "adds": 219128
   },
   {
    "id": "3286",
@@ -388,7 +388,7 @@
    "depth": "LWR3",
    "news": "Sep 15",
    "news_ms": 1789451109211,
-   "adds": 196158
+   "adds": 178506
   },
   {
    "id": "4035",
@@ -401,7 +401,7 @@
    "depth": "RB2",
    "news": "Sep 18",
    "news_ms": 1789755348611,
-   "adds": 181296
+   "adds": 177224
   },
   {
    "id": "4993",
@@ -414,7 +414,7 @@
    "depth": "TE1",
    "news": "Sep 18",
    "news_ms": 1789764048389,
-   "adds": 126948
+   "adds": 118164
   },
   {
    "id": "4177",
@@ -427,7 +427,7 @@
    "depth": "RWR2",
    "news": "Sep 19",
    "news_ms": 1789799752016,
-   "adds": 124032
+   "adds": 112266
   },
   {
    "id": "11610",
@@ -438,9 +438,9 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "SWR1",
-   "news": "Sep 15",
-   "news_ms": 1789503352493,
-   "adds": 113928
+   "news": "Sep 19",
+   "news_ms": 1789823737699,
+   "adds": 106528
   },
   {
    "id": "13330",
@@ -451,9 +451,9 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "TE1",
-   "news": "Sep 14",
-   "news_ms": 1789411204698,
-   "adds": 109404
+   "news": "Sep 19",
+   "news_ms": 1789826138033,
+   "adds": 100782
   },
   {
    "id": "11729",
@@ -466,7 +466,7 @@
    "depth": "RB4",
    "news": "Sep 19",
    "news_ms": 1789779050539,
-   "adds": 93093
+   "adds": 80500
   },
   {
    "id": "4066",
@@ -479,33 +479,7 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789784150451,
-   "adds": 85024
-  },
-  {
-   "id": "6931",
-   "name": "DeeJay Dallas",
-   "pos": "RB",
-   "team": "MIN",
-   "flag": "amber",
-   "why": "RB3 on the depth chart",
-   "injury": null,
-   "depth": "RB3",
-   "news": "Sep 16",
-   "news_ms": 1789598422560,
-   "adds": 82437
-  },
-  {
-   "id": "12492",
-   "name": "Pat Bryant",
-   "pos": "WR",
-   "team": "DEN",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 19",
-   "news_ms": 1789783550344,
-   "adds": 76064
+   "adds": 78864
   },
   {
    "id": "11630",
@@ -518,7 +492,33 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789788951039,
-   "adds": 74466
+   "adds": 75717
+  },
+  {
+   "id": "6931",
+   "name": "DeeJay Dallas",
+   "pos": "RB",
+   "team": "MIN",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 16",
+   "news_ms": 1789598422560,
+   "adds": 73449
+  },
+  {
+   "id": "12492",
+   "name": "Pat Bryant",
+   "pos": "WR",
+   "team": "DEN",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 19",
+   "news_ms": 1789783550344,
+   "adds": 66848
   },
   {
    "id": "3321",
@@ -531,7 +531,7 @@
    "depth": null,
    "news": "Sep 16",
    "news_ms": 1789571759747,
-   "adds": 67944
+   "adds": 65168
   },
   {
    "id": "9486",
@@ -544,20 +544,20 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 61737
+   "adds": 55755
   },
   {
-   "id": "13347",
-   "name": "Demond Claiborne",
-   "pos": "RB",
-   "team": "MIN",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
+   "id": "9504",
+   "name": "Kayshon Boutte",
+   "pos": "WR",
+   "team": "HOU",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "RB2",
+   "depth": "RWR1",
    "news": "Sep 18",
-   "news_ms": 1789765248194,
-   "adds": 45468
+   "news_ms": 1789770349789,
+   "adds": 40697
   },
   {
    "id": "3634",
@@ -570,20 +570,20 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789800352249,
-   "adds": 44054
+   "adds": 40146
   },
   {
-   "id": "9504",
-   "name": "Kayshon Boutte",
-   "pos": "WR",
-   "team": "HOU",
-   "flag": "green",
-   "why": "Healthy, starting",
+   "id": "13347",
+   "name": "Demond Claiborne",
+   "pos": "RB",
+   "team": "MIN",
+   "flag": "amber",
+   "why": "RB3 on the depth chart",
    "injury": null,
-   "depth": "RWR2",
+   "depth": "RB3",
    "news": "Sep 18",
-   "news_ms": 1789770349789,
-   "adds": 39987
+   "news_ms": 1789765248194,
+   "adds": 39840
   },
   {
    "id": "7571",
@@ -595,11 +595,26 @@
    "injury": null,
    "depth": "LWR2",
    "news": "Sep 19",
-   "news_ms": 1789780850103,
-   "adds": 37369
+   "news_ms": 1789820137375,
+   "adds": 37525
   }
  ],
  "transactions": [
+  {
+   "type": "waiver",
+   "status": "complete",
+   "team": "KUZ1",
+   "adds": [
+    "Greg Dulcich"
+   ],
+   "drops": [
+    "Nicholas Singleton"
+   ],
+   "bid": 1,
+   "note": "Your waiver claim was processed successfully!",
+   "faab_moved": [],
+   "ts": 1789806695915
+  },
   {
    "type": "free_agent",
    "status": "complete",
@@ -854,8 +869,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 13",
-    "news_ms": 1789337757697
+    "news": "Sep 19",
+    "news_ms": 1789805452795
    },
    {
     "id": "7525",
@@ -891,7 +906,7 @@
     "injury": null,
     "depth": "TE1",
     "news": "Sep 19",
-    "news_ms": 1789777249596
+    "news_ms": 1789814153618
    },
    {
     "id": "7611",
@@ -1376,13 +1391,13 @@
    "record": "0-1",
    "pts_for": 153.6,
    "pts_week": 4.0,
-   "faab_left": 146,
+   "faab_left": 145,
    "counts": {
     "WR": 5,
     "QB": 3,
-    "RB": 4,
-    "TE": 2,
+    "TE": 3,
     "K": 1,
+    "RB": 3,
     "DEF": 1
    },
    "starters": [
@@ -1400,8 +1415,8 @@
    ],
    "bench": [
     "Xavier Worthy WR KC",
-    "Nicholas Singleton RB TEN",
     "Kyler Murray QB MIN (Out)",
+    "Greg Dulcich TE MIA",
     "Tyjae Spears RB TEN",
     "Jordan Addison WR MIN"
    ],
@@ -1508,14 +1523,14 @@
     "TE: Jake Ferguson TE DAL",
     "FLEX: Rico Dowdle RB PIT",
     "FLEX: Colston Loveland TE CHI",
-    "SUPER_FLEX: Drew Lock QB SEA",
+    "SUPER_FLEX: Malik Willis QB MIA",
     "K: Jason Myers K SEA",
     "DEF: Pittsburgh Steelers DEF PIT"
    ],
    "bench": [
     "RJ Harvey RB DEN (Questionable)",
     "Caleb Douglas WR MIA",
-    "Malik Willis QB MIA"
+    "Drew Lock QB SEA"
    ],
    "ir": [
     "Sam Darnold QB SEA (Out)"
