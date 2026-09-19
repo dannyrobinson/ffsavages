@@ -1,6 +1,6 @@
 {
- "generated": "Sat Sep 19, 2026 1:13 PM PT",
- "generated_ms": 1789848795013,
+ "generated": "Sat Sep 19, 2026 2:46 PM PT",
+ "generated_ms": 1789854398518,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -349,7 +349,7 @@
    "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789818337307,
-   "adds": 522459
+   "adds": 570955
   },
   {
    "id": "11637",
@@ -362,7 +362,7 @@
    "depth": "LWR3",
    "news": "Sep 18",
    "news_ms": 1789741246949,
-   "adds": 452574
+   "adds": 470925
   },
   {
    "id": "4035",
@@ -375,7 +375,7 @@
    "depth": "RB2",
    "news": "Sep 19",
    "news_ms": 1789830038261,
-   "adds": 181752
+   "adds": 184536
   },
   {
    "id": "12472",
@@ -388,7 +388,7 @@
    "depth": "RB2",
    "news": "Sep 19",
    "news_ms": 1789832438468,
-   "adds": 174648
+   "adds": 162424
   },
   {
    "id": "3286",
@@ -399,22 +399,9 @@
    "why": "WR3 on the depth chart",
    "injury": null,
    "depth": "LWR3",
-   "news": "Sep 15",
-   "news_ms": 1789451109211,
-   "adds": 149280
-  },
-  {
-   "id": "4993",
-   "name": "Mike Gesicki",
-   "pos": "TE",
-   "team": "CIN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 18",
-   "news_ms": 1789764048389,
-   "adds": 103024
+   "news": "Sep 19",
+   "news_ms": 1789851047079,
+   "adds": 143574
   },
   {
    "id": "11630",
@@ -427,20 +414,20 @@
    "depth": "SWR2",
    "news": "Sep 19",
    "news_ms": 1789839046388,
-   "adds": 102654
+   "adds": 125721
   },
   {
-   "id": "4177",
-   "name": "Mack Hollins",
-   "pos": "WR",
-   "team": "NE",
+   "id": "4993",
+   "name": "Mike Gesicki",
+   "pos": "TE",
+   "team": "CIN",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 19",
-   "news_ms": 1789799752016,
-   "adds": 93294
+   "depth": "TE1",
+   "news": "Sep 18",
+   "news_ms": 1789764048389,
+   "adds": 97684
   },
   {
    "id": "11610",
@@ -453,7 +440,20 @@
    "depth": "SWR1",
    "news": "Sep 19",
    "news_ms": 1789823737699,
-   "adds": 93176
+   "adds": 91480
+  },
+  {
+   "id": "4177",
+   "name": "Mack Hollins",
+   "pos": "WR",
+   "team": "NE",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 19",
+   "news_ms": 1789799752016,
+   "adds": 90141
   },
   {
    "id": "13330",
@@ -466,7 +466,7 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789826138033,
-   "adds": 88164
+   "adds": 85122
   },
   {
    "id": "4066",
@@ -479,7 +479,7 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789784150451,
-   "adds": 69384
+   "adds": 66920
   },
   {
    "id": "6931",
@@ -492,20 +492,7 @@
    "depth": "RB2",
    "news": "Sep 16",
    "news_ms": 1789598422560,
-   "adds": 63537
-  },
-  {
-   "id": "11729",
-   "name": "Sione Vaki",
-   "pos": "RB",
-   "team": "DET",
-   "flag": "amber",
-   "why": "RB4 on the depth chart",
-   "injury": null,
-   "depth": "RB4",
-   "news": "Sep 19",
-   "news_ms": 1789779050539,
-   "adds": 59717
+   "adds": 62958
   },
   {
    "id": "3321",
@@ -518,7 +505,20 @@
    "depth": null,
    "news": "Sep 16",
    "news_ms": 1789571759747,
-   "adds": 57896
+   "adds": 56968
+  },
+  {
+   "id": "11729",
+   "name": "Sione Vaki",
+   "pos": "RB",
+   "team": "DET",
+   "flag": "amber",
+   "why": "RB4 on the depth chart",
+   "injury": null,
+   "depth": "RB4",
+   "news": "Sep 19",
+   "news_ms": 1789779050539,
+   "adds": 53053
   },
   {
    "id": "12492",
@@ -531,7 +531,7 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789783550344,
-   "adds": 54072
+   "adds": 52744
   },
   {
    "id": "9486",
@@ -544,7 +544,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 47601
+   "adds": 45972
   },
   {
    "id": "9504",
@@ -557,7 +557,7 @@
    "depth": "RWR2",
    "news": "Sep 18",
    "news_ms": 1789770349789,
-   "adds": 43599
+   "adds": 45551
   },
   {
    "id": "7571",
@@ -570,7 +570,7 @@
    "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789820137375,
-   "adds": 39856
+   "adds": 44048
   },
   {
    "id": "11625",
@@ -583,7 +583,7 @@
    "depth": "RWR2",
    "news": "Sep 19",
    "news_ms": 1789825837908,
-   "adds": 36936
+   "adds": 38896
   },
   {
    "id": "3634",
@@ -596,7 +596,7 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789800352249,
-   "adds": 34732
+   "adds": 33646
   }
  ],
  "transactions": [
@@ -954,7 +954,7 @@
     "injury": "Questionable",
     "depth": "K1",
     "news": "Sep 19",
-    "news_ms": 1789801852472
+    "news_ms": 1789848648392
    },
    {
     "id": "SEA",
@@ -1144,7 +1144,7 @@
    ],
    "ir": [
     "Ja'Kobi Lane WR BAL (IR)",
-    "De'Zhaun Stribling WR SF (Out)"
+    "De'Zhaun Stribling WR SF (IR)"
    ]
   },
   {
@@ -1220,7 +1220,7 @@
     "Brock Bowers TE LV (Doubtful)",
     "Samaje Perine RB CIN",
     "Devin Singletary RB NYG",
-    "Zay Flowers WR BAL (Doubtful)",
+    "Zay Flowers WR BAL (Out)",
     "Denver Broncos DEF DEN"
    ],
    "ir": [
