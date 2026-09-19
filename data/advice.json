@@ -1,44 +1,11 @@
-{
-  "headline": "Set Geno Smith as Joe Burrow's AutoSub before Sunday's 10:00 AM PT kickoff",
-  "summary": "Danny is 1-0 and his starting lineup is already correctly set for week 2. Burrow practiced fully Friday and is trending to play despite the back-soreness Questionable tag, so the only live task is pairing him with an AutoSub before kickoff. No lineup swaps or waiver adds are worth making right now.",
-  "lineup": [],
-  "adds": [],
-  "ir": [],
-  "subs": [
-    {
-      "starter": "Joe Burrow",
-      "sub": "Geno Smith",
-      "slot": "QB",
-      "why": "Burrow is Questionable (back soreness) but was a full practice participant Friday Sep 18 and expects to play; Smith kicks off at the same Sun 10:00 AM PT window so the pair must be set before then to cover an inactive call.",
-      "urgency": "high"
-    }
-  ],
-  "flags": [
-    {
-      "player": "Joe Burrow",
-      "severity": "amber",
-      "what": "Questionable, back soreness (Fri Sep 18) — limited Wed/Thu, full practice Friday, expected to play"
-    },
-    {
-      "player": "A.J. Brown",
-      "severity": "red",
-      "what": "IR, ankle sprain, locked until an eligible off-IR designation clears"
-    }
-  ],
-  "watch": [
-    {
-      "player": "Kyle Pitts",
-      "what": "Held out of the lineup for Juwan Johnson (Fri Sep 18: Pitts drew just 1 target in Week 1 and Atlanta's QB situation is shaky; Johnson is an entrenched 20%+ target-share TE1). Re-check if Pitts' role clearly expands."
-    }
-  ],
-  "alerts": [
-    {
-      "key": "sub:burrow-geno-wk2",
-      "urgency": "high",
-      "title": "🔁 Set Burrow's AutoSub before 10 AM Sun",
-      "body": "Pair Geno Smith as Joe Burrow's AutoSub before Sunday's 10:00 AM PT kickoff — Burrow (Questionable, back) practiced fully Friday and is expected to play, but both he and Smith kick off at the same time, so cover has to be set beforehand."
-    }
-  ],
-  "ts": 1789791156000,
-  "week": 2
-}
+{"headline": "Set Geno Smith as Joe Burrow's AutoSub before Sunday's 10:00 AM PT kickoff, but plan to start Burrow.",
+ "summary": "Danny is 1-0 and his Week 2 lineup is already right: Chase Brown, Jaylen Warren and Aaron Jones anchor the flex spots, Nabers and Waddle start at WR, and Caleb Williams holds the superflex, so nothing needs to change there. The only open item is Joe Burrow's back-soreness tag; he was limited Wed-Thu but practiced fully Friday Sep 18 and is expected to play, so the job is just getting his AutoSub locked in before both Sunday 10 AM games kick off. No waiver claim is worth Danny's FAAB this week: the notable rival drops (Nicholas Singleton, Wan'Dale Robinson) don't clearly beat his bench.",
+ "lineup": [],
+ "adds": [],
+ "ir": [],
+ "subs": [{"starter": "Joe Burrow", "sub": "Geno Smith", "slot": "QB", "why": "Questionable (back soreness) but a full practice participant Friday Sep 18, so he should play; set the pair before Sunday's 10:00 AM PT kickoff since both his and Geno Smith's games start at the same time.", "urgency": "high"}],
+ "flags": [{"player": "Joe Burrow", "severity": "amber", "what": "Questionable, back soreness; limited practice Wed-Thu, full participant Friday Sep 18, expected to play Sunday"}, {"player": "A.J. Brown", "severity": "red", "what": "on IR, ankle sprain"}],
+ "watch": [{"player": "Nicholas Singleton (RB TEN)", "what": "dropped by a rival Sat Sep 19; confirmed RB4 and inactive Week 1 behind Pollard/Spears/Chestnut, so he doesn't beat Danny's bench - not worth a claim"}, {"player": "Wan'Dale Robinson (WR TEN)", "what": "dropped by a rival Wed Sep 16; was expected to be Tennessee's #2 target getter this season but didn't appear in Sleeper's top free-agent list after Week 1 - check his target share before considering an add"}],
+ "alerts": [{"key": "sub:burrow-geno-wk2", "urgency": "high", "title": "🔁 Set Burrow's AutoSub", "body": "Burrow (Questionable, back) practiced fully Friday and should play, but pair him with Geno Smith as his AutoSub before Sunday 10:00 AM PT - both games kick off then."}],
+ "ts": 1789827119000,
+ "week": 2}
