@@ -1,1 +1,19 @@
-{"headline": "Set Geno Smith as Joe Burrow's AutoSub before Sunday's 10:00 AM PT kickoff — Burrow (back, Questionable) was a full practice participant Friday and plans to start.", "summary": "Danny is 1-0 and his current lineup is already the best one available: no free agent this week clearly beats his bench, and the Geno Smith/Kyle Pitts trade fixed his QB byes (Burrow wk6, C. Williams wk10, Smith wk13), so no waiver moves are worth making today. The only live risk is Burrow's back soreness — full practice Friday, Sep 18 and expected to start — but the Geno Smith AutoSub (same 10:00 AM kickoff) is free insurance and still isn't set. A.J. Brown stays on IR (high ankle sprain) with no eligible IR moves available.", "lineup": [], "adds": [], "ir": [], "subs": [{"starter": "Joe Burrow", "sub": "Geno Smith", "slot": "QB", "why": "Burrow is Questionable (back soreness) but was a full practice participant Fri, Sep 18 and is expected to start; Geno Smith kicks off at the same time (Sun 10:00 AM PT vs GB), so set the pair before then for free cover.", "urgency": "high"}], "flags": [{"player": "Joe Burrow", "severity": "amber", "what": "Questionable, back soreness; full practice participant Fri Sep 18, coach called him good to go"}, {"player": "A.J. Brown", "severity": "red", "what": "On IR, high ankle sprain since Sep 13; out at least 4 games, reportedly could miss ~6, earliest return week 6 vs NYJ"}], "watch": [{"player": "MarShawn Lloyd (GB)", "what": "Committee with Chris Brooks and Kaleb Johnson while Josh Jacobs sits on the exempt list (since Sep 2); his volume (11.5 carries/2.5 targets) still trails Aaron Jones — recheck if his touches climb before swapping him in for Jones"}, {"player": "Kyle Pitts (ATL)", "what": "Target volume (5.6) is now essentially even with Juwan Johnson's (5.5); it's only week 2 so hold, but recheck once one pulls ahead on usage"}], "alerts": [{"key": "sub:burrow-geno-wk2", "urgency": "high", "title": "🔁 Set Geno as Burrow's AutoSub", "body": "Burrow (Questionable, back) plans to start, but pair Geno Smith as his AutoSub before Sunday 10:00 AM PT kickoff — free insurance since both games start at the same time."}], "ts": 1789848732000, "week": 2}
+{"headline": "Set Geno Smith as Joe Burrow's AutoSub before Sunday's 10:00 AM PT kickoff (both games start together).",
+ "summary": "Danny is 1-0 and the lineup is already right: Shakir already played, Aaron Jones has the clearer workload over Lloyd and Judkins, and Juwan Johnson (cleared an illness Friday) stays over Kyle Pitts, who managed one target all of Week 1. The only open action is insuring Burrow's Questionable back with an AutoSub before it locks; nothing on the wire beats what's already on the bench.",
+ "lineup": [],
+ "adds": [],
+ "ir": [],
+ "subs": [{"starter": "Joe Burrow", "sub": "Geno Smith", "slot": "QB", "why": "Burrow (back soreness) was a full practice participant Friday Sep 18 and is expected to start, but he's still Questionable and his kickoff (Sun 10:00 AM @ HOU) matches Geno Smith's (Sun 10:00 AM vs GB); set the pair before 10:00 AM PT Sunday.", "urgency": "high"}],
+ "flags": [
+  {"player": "Joe Burrow", "severity": "amber", "what": "Questionable, back soreness; limited Wed/Thu, full practice Fri Sep 18, expected to start"},
+  {"player": "A.J. Brown", "severity": "red", "what": "On IR, high-ankle sprain; ~6-week timeline, eligible to return Week 6 (reported Sep 13)"}
+ ],
+ "watch": [
+  {"player": "Kyle Pitts", "what": "Week 1: 1 target, 0 catches, 4.5% target share despite the TE1 label; leave benched behind Juwan Johnson until the role shows up in a box score"},
+  {"player": "Nicholas Singleton", "what": "Dropped by KUZ1 Sep 19 but was a Week 1 healthy scratch behind Pollard/Spears/Chestnut in TEN; not an upgrade over Danny's bench backs"}
+ ],
+ "alerts": [
+  {"key": "sub:burrow-geno-wk2", "urgency": "high", "title": "🟡 Set Burrow's AutoSub before 10 AM Sun", "body": "Burrow (Questionable, back) is expected to start, but no AutoSub is recorded. Set Geno Smith as his AutoSub before 10:00 AM PT Sunday — same kickoff as Burrow's game."}
+ ],
+ "ts": 1789877537000,
+ "week": 2}
