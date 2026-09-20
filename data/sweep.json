@@ -1,6 +1,6 @@
 {
- "generated": "Sun Sep 20, 2026 1:49 AM PT",
- "generated_ms": 1789894179551,
+ "generated": "Sun Sep 20, 2026 7:12 AM PT",
+ "generated_ms": 1789913538697,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -121,8 +121,8 @@
    "why": "Questionable \u00b7 Back \u00b7 Soreness",
    "injury": "Questionable",
    "depth": "QB1",
-   "news": "Sep 19",
-   "news_ms": 1789826138035,
+   "news": "Sep 20",
+   "news_ms": 1789907453527,
    "slot": "START",
    "stories": []
   },
@@ -349,7 +349,7 @@
    "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789818337307,
-   "adds": 624939
+   "adds": 682542
   },
   {
    "id": "11637",
@@ -362,7 +362,7 @@
    "depth": "LWR3",
    "news": "Sep 18",
    "news_ms": 1789741246949,
-   "adds": 365940
+   "adds": 342891
   },
   {
    "id": "11630",
@@ -375,7 +375,7 @@
    "depth": "SWR2",
    "news": "Sep 19",
    "news_ms": 1789839046388,
-   "adds": 204390
+   "adds": 261414
   },
   {
    "id": "4035",
@@ -388,7 +388,7 @@
    "depth": "RB2",
    "news": "Sep 19",
    "news_ms": 1789830038261,
-   "adds": 174928
+   "adds": 184360
   },
   {
    "id": "3286",
@@ -401,7 +401,7 @@
    "depth": "LWR3",
    "news": "Sep 19",
    "news_ms": 1789851047079,
-   "adds": 100854
+   "adds": 107670
   },
   {
    "id": "12472",
@@ -414,7 +414,7 @@
    "depth": "RB2",
    "news": "Sep 19",
    "news_ms": 1789832438468,
-   "adds": 94216
+   "adds": 90224
   },
   {
    "id": "11610",
@@ -427,7 +427,7 @@
    "depth": "SWR1",
    "news": "Sep 19",
    "news_ms": 1789823737699,
-   "adds": 72544
+   "adds": 75704
   },
   {
    "id": "4177",
@@ -438,9 +438,9 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RWR2",
-   "news": "Sep 19",
-   "news_ms": 1789799752016,
-   "adds": 67506
+   "news": "Sep 20",
+   "news_ms": 1789911353919,
+   "adds": 70083
   },
   {
    "id": "13330",
@@ -453,7 +453,7 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789826138033,
-   "adds": 65070
+   "adds": 65700
   },
   {
    "id": "4993",
@@ -466,7 +466,7 @@
    "depth": "TE1",
    "news": "Sep 18",
    "news_ms": 1789764048389,
-   "adds": 61280
+   "adds": 61332
   },
   {
    "id": "6931",
@@ -479,7 +479,7 @@
    "depth": "RB2",
    "news": "Sep 16",
    "news_ms": 1789598422560,
-   "adds": 54042
+   "adds": 58818
   },
   {
    "id": "7571",
@@ -492,85 +492,7 @@
    "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789820137375,
-   "adds": 48756
-  },
-  {
-   "id": "3321",
-   "name": "Tyreek Hill",
-   "pos": "WR",
-   "team": "FA",
-   "flag": "red",
-   "why": "Free agent / no team",
-   "injury": "",
-   "depth": null,
-   "news": "Sep 16",
-   "news_ms": 1789571759747,
-   "adds": 48232
-  },
-  {
-   "id": "4066",
-   "name": "Evan Engram",
-   "pos": "TE",
-   "team": "DEN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 19",
-   "news_ms": 1789784150451,
-   "adds": 46264
-  },
-  {
-   "id": "12492",
-   "name": "Pat Bryant",
-   "pos": "WR",
-   "team": "DEN",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 19",
-   "news_ms": 1789783550344,
-   "adds": 43696
-  },
-  {
-   "id": "11625",
-   "name": "Adonai Mitchell",
-   "pos": "WR",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 19",
-   "news_ms": 1789825837908,
-   "adds": 43192
-  },
-  {
-   "id": "9504",
-   "name": "Kayshon Boutte",
-   "pos": "WR",
-   "team": "HOU",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 18",
-   "news_ms": 1789770349789,
-   "adds": 41002
-  },
-  {
-   "id": "9486",
-   "name": "Dontayvion Wicks",
-   "pos": "WR",
-   "team": "PHI",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 15",
-   "news_ms": 1789509954875,
-   "adds": 33906
+   "adds": 54024
   },
   {
    "id": "12718",
@@ -583,7 +505,85 @@
    "depth": "LWR3",
    "news": "Sep 12",
    "news_ms": 1789172715636,
-   "adds": 33489
+   "adds": 50823
+  },
+  {
+   "id": "3321",
+   "name": "Tyreek Hill",
+   "pos": "WR",
+   "team": "FA",
+   "flag": "red",
+   "why": "Free agent / no team",
+   "injury": "",
+   "depth": null,
+   "news": "Sep 16",
+   "news_ms": 1789571759747,
+   "adds": 49664
+  },
+  {
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 19",
+   "news_ms": 1789825837908,
+   "adds": 47480
+  },
+  {
+   "id": "12492",
+   "name": "Pat Bryant",
+   "pos": "WR",
+   "team": "DEN",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 19",
+   "news_ms": 1789783550344,
+   "adds": 46160
+  },
+  {
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 19",
+   "news_ms": 1789784150451,
+   "adds": 46016
+  },
+  {
+   "id": "9504",
+   "name": "Kayshon Boutte",
+   "pos": "WR",
+   "team": "HOU",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 18",
+   "news_ms": 1789770349789,
+   "adds": 42807
+  },
+  {
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 15",
+   "news_ms": 1789509954875,
+   "adds": 34749
   },
   {
    "id": "19",
@@ -596,7 +596,7 @@
    "depth": "QB2",
    "news": "Jun 20",
    "news_ms": 1781961641331,
-   "adds": 31554
+   "adds": 34479
   }
  ],
  "transactions": [
