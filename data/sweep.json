@@ -1,6 +1,6 @@
 {
- "generated": "Sat Sep 19, 2026 9:12 PM PT",
- "generated_ms": 1789877578234,
+ "generated": "Sun Sep 20, 2026 1:49 AM PT",
+ "generated_ms": 1789894179551,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -349,7 +349,7 @@
    "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789818337307,
-   "adds": 603764
+   "adds": 624939
   },
   {
    "id": "11637",
@@ -362,20 +362,7 @@
    "depth": "LWR3",
    "news": "Sep 18",
    "news_ms": 1789741246949,
-   "adds": 398628
-  },
-  {
-   "id": "4035",
-   "name": "Alvin Kamara",
-   "pos": "RB",
-   "team": "NO",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 19",
-   "news_ms": 1789830038261,
-   "adds": 173864
+   "adds": 365940
   },
   {
    "id": "11630",
@@ -388,20 +375,20 @@
    "depth": "SWR2",
    "news": "Sep 19",
    "news_ms": 1789839046388,
-   "adds": 172719
+   "adds": 204390
   },
   {
-   "id": "12472",
-   "name": "Raheim Sanders",
+   "id": "4035",
+   "name": "Alvin Kamara",
    "pos": "RB",
-   "team": "CLE",
+   "team": "NO",
    "flag": "amber",
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
    "news": "Sep 19",
-   "news_ms": 1789832438468,
-   "adds": 104640
+   "news_ms": 1789830038261,
+   "adds": 174928
   },
   {
    "id": "3286",
@@ -414,7 +401,20 @@
    "depth": "LWR3",
    "news": "Sep 19",
    "news_ms": 1789851047079,
-   "adds": 104076
+   "adds": 100854
+  },
+  {
+   "id": "12472",
+   "name": "Raheim Sanders",
+   "pos": "RB",
+   "team": "CLE",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 19",
+   "news_ms": 1789832438468,
+   "adds": 94216
   },
   {
    "id": "11610",
@@ -427,7 +427,7 @@
    "depth": "SWR1",
    "news": "Sep 19",
    "news_ms": 1789823737699,
-   "adds": 73944
+   "adds": 72544
   },
   {
    "id": "4177",
@@ -440,7 +440,7 @@
    "depth": "RWR2",
    "news": "Sep 19",
    "news_ms": 1789799752016,
-   "adds": 69252
+   "adds": 67506
   },
   {
    "id": "13330",
@@ -453,7 +453,7 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789826138033,
-   "adds": 67689
+   "adds": 65070
   },
   {
    "id": "4993",
@@ -466,7 +466,7 @@
    "depth": "TE1",
    "news": "Sep 18",
    "news_ms": 1789764048389,
-   "adds": 65808
+   "adds": 61280
   },
   {
    "id": "6931",
@@ -479,33 +479,7 @@
    "depth": "RB2",
    "news": "Sep 16",
    "news_ms": 1789598422560,
-   "adds": 53715
-  },
-  {
-   "id": "3321",
-   "name": "Tyreek Hill",
-   "pos": "WR",
-   "team": "FA",
-   "flag": "red",
-   "why": "Free agent / no team",
-   "injury": "",
-   "depth": null,
-   "news": "Sep 16",
-   "news_ms": 1789571759747,
-   "adds": 49416
-  },
-  {
-   "id": "4066",
-   "name": "Evan Engram",
-   "pos": "TE",
-   "team": "DEN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 19",
-   "news_ms": 1789784150451,
-   "adds": 49056
+   "adds": 54042
   },
   {
    "id": "7571",
@@ -518,7 +492,33 @@
    "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789820137375,
-   "adds": 46629
+   "adds": 48756
+  },
+  {
+   "id": "3321",
+   "name": "Tyreek Hill",
+   "pos": "WR",
+   "team": "FA",
+   "flag": "red",
+   "why": "Free agent / no team",
+   "injury": "",
+   "depth": null,
+   "news": "Sep 16",
+   "news_ms": 1789571759747,
+   "adds": 48232
+  },
+  {
+   "id": "4066",
+   "name": "Evan Engram",
+   "pos": "TE",
+   "team": "DEN",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 19",
+   "news_ms": 1789784150451,
+   "adds": 46264
   },
   {
    "id": "12492",
@@ -531,20 +531,7 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789783550344,
-   "adds": 44376
-  },
-  {
-   "id": "9504",
-   "name": "Kayshon Boutte",
-   "pos": "WR",
-   "team": "HOU",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 18",
-   "news_ms": 1789770349789,
-   "adds": 41005
+   "adds": 43696
   },
   {
    "id": "11625",
@@ -557,7 +544,20 @@
    "depth": "RWR2",
    "news": "Sep 19",
    "news_ms": 1789825837908,
-   "adds": 40840
+   "adds": 43192
+  },
+  {
+   "id": "9504",
+   "name": "Kayshon Boutte",
+   "pos": "WR",
+   "team": "HOU",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 18",
+   "news_ms": 1789770349789,
+   "adds": 41002
   },
   {
    "id": "9486",
@@ -570,20 +570,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789509954875,
-   "adds": 35586
-  },
-  {
-   "id": "19",
-   "name": "Joe Flacco",
-   "pos": "QB",
-   "team": "CIN",
-   "flag": "red",
-   "why": "Not the starter (QB2)",
-   "injury": null,
-   "depth": "QB2",
-   "news": "Jun 20",
-   "news_ms": 1781961641331,
-   "adds": 29574
+   "adds": 33906
   },
   {
    "id": "12718",
@@ -596,7 +583,20 @@
    "depth": "LWR3",
    "news": "Sep 12",
    "news_ms": 1789172715636,
-   "adds": 27036
+   "adds": 33489
+  },
+  {
+   "id": "19",
+   "name": "Joe Flacco",
+   "pos": "QB",
+   "team": "CIN",
+   "flag": "red",
+   "why": "Not the starter (QB2)",
+   "injury": null,
+   "depth": "QB2",
+   "news": "Jun 20",
+   "news_ms": 1781961641331,
+   "adds": 31554
   }
  ],
  "transactions": [
@@ -917,8 +917,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 19",
-    "news_ms": 1789797951832
+    "news": "Sep 20",
+    "news_ms": 1789880449909
    },
    {
     "id": "8131",

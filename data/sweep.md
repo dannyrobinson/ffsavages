@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 2 · Sat Sep 19, 2026 9:12 PM PT
+# Sleeper sweep — Week 2 · Sun Sep 20, 2026 1:49 AM PT
 
 Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 
@@ -25,26 +25,26 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - Cooper Rush (ATL) — Healthy, starting
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- WR  Xavier Hutchinson (HOU) · 603,764 adds · LWR1 · Healthy, starting
-- WR  Keon Coleman (BUF) · 398,628 adds · LWR3 · WR3 on the depth chart
-- RB  Alvin Kamara (NO) · 173,864 adds · RB2 · RB2 on the depth chart
-- WR  Roman Wilson (PIT) · 172,719 adds · SWR2 · Healthy, starting
-- RB  Raheim Sanders (CLE) · 104,640 adds · RB2 · RB2 on the depth chart
-- WR  Demarcus Robinson (SF) · 104,076 adds · LWR3 · WR3 on the depth chart
-- WR  Malik Washington (MIA) · 73,944 adds · SWR1 · Healthy, starting
-- WR  Mack Hollins (NE) · 69,252 adds · RWR2 · Healthy, starting
-- TE  Kenyon Sadiq (NYJ) · 67,689 adds · TE1 · Healthy, starting
-- TE  Mike Gesicki (CIN) · 65,808 adds · TE1 · Healthy, starting
-- RB  DeeJay Dallas (MIN) · 53,715 adds · RB2 · RB2 on the depth chart
-- WR  Tyreek Hill (FA) · 49,416 adds ·  · Free agent / no team
-- TE  Evan Engram (DEN) · 49,056 adds · TE1 · Healthy, starting
-- WR  Rashod Bateman (BAL) · 46,629 adds · LWR1 · Healthy, starting
-- WR  Pat Bryant (DEN) · 44,376 adds · SWR3 · WR3 on the depth chart
-- WR  Kayshon Boutte (HOU) · 41,005 adds · RWR2 · Healthy, starting
-- WR  Adonai Mitchell (NYJ) · 40,840 adds · RWR2 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 35,586 adds · RWR2 · Healthy, starting
-- QB  Joe Flacco (CIN) · 29,574 adds · QB2 · Not the starter (QB2)
-- WR  Konata Mumpfield (LAR) · 27,036 adds · LWR3 · WR3 on the depth chart
+- WR  Xavier Hutchinson (HOU) · 624,939 adds · LWR1 · Healthy, starting
+- WR  Keon Coleman (BUF) · 365,940 adds · LWR3 · WR3 on the depth chart
+- WR  Roman Wilson (PIT) · 204,390 adds · SWR2 · Healthy, starting
+- RB  Alvin Kamara (NO) · 174,928 adds · RB2 · RB2 on the depth chart
+- WR  Demarcus Robinson (SF) · 100,854 adds · LWR3 · WR3 on the depth chart
+- RB  Raheim Sanders (CLE) · 94,216 adds · RB2 · RB2 on the depth chart
+- WR  Malik Washington (MIA) · 72,544 adds · SWR1 · Healthy, starting
+- WR  Mack Hollins (NE) · 67,506 adds · RWR2 · Healthy, starting
+- TE  Kenyon Sadiq (NYJ) · 65,070 adds · TE1 · Healthy, starting
+- TE  Mike Gesicki (CIN) · 61,280 adds · TE1 · Healthy, starting
+- RB  DeeJay Dallas (MIN) · 54,042 adds · RB2 · RB2 on the depth chart
+- WR  Rashod Bateman (BAL) · 48,756 adds · LWR1 · Healthy, starting
+- WR  Tyreek Hill (FA) · 48,232 adds ·  · Free agent / no team
+- TE  Evan Engram (DEN) · 46,264 adds · TE1 · Healthy, starting
+- WR  Pat Bryant (DEN) · 43,696 adds · SWR3 · WR3 on the depth chart
+- WR  Adonai Mitchell (NYJ) · 43,192 adds · RWR2 · Healthy, starting
+- WR  Kayshon Boutte (HOU) · 41,002 adds · RWR2 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 33,906 adds · RWR2 · Healthy, starting
+- WR  Konata Mumpfield (LAR) · 33,489 adds · LWR3 · WR3 on the depth chart
+- QB  Joe Flacco (CIN) · 31,554 adds · QB2 · Not the starter (QB2)
 
 ## League transactions, week 2
 - KUZ1: waiver complete +['Greg Dulcich'] -['Nicholas Singleton'] ($1)
