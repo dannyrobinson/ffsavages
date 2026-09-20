@@ -1,6 +1,6 @@
 {
- "generated": "Sun Sep 20, 2026 1:14 PM PT",
- "generated_ms": 1789935283734,
+ "generated": "Sun Sep 20, 2026 2:50 PM PT",
+ "generated_ms": 1789941056600,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -94,7 +94,7 @@
    "injury": "Out",
    "depth": "QB1",
    "news": "Sep 20",
-   "news_ms": 1789935057076,
+   "news_ms": 1789938058401,
    "slot": "START",
    "stories": []
   },
@@ -122,7 +122,7 @@
    "injury": null,
    "depth": "QB1",
    "news": "Sep 20",
-   "news_ms": 1789919155176,
+   "news_ms": 1789940158713,
    "slot": "START",
    "stories": []
   },
@@ -136,7 +136,7 @@
    "injury": "Questionable",
    "depth": "RB1",
    "news": "Sep 20",
-   "news_ms": 1789934757202,
+   "news_ms": 1789936257409,
    "slot": "START",
    "stories": []
   },
@@ -149,8 +149,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 18",
-   "news_ms": 1789763748001,
+   "news": "Sep 20",
+   "news_ms": 1789938358480,
    "slot": "START",
    "stories": []
   },
@@ -163,8 +163,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 19",
-   "news_ms": 1789788050975,
+   "news": "Sep 20",
+   "news_ms": 1789939858717,
    "slot": "START",
    "stories": []
   },
@@ -349,7 +349,7 @@
    "depth": "LWR1",
    "news": "Sep 19",
    "news_ms": 1789818337307,
-   "adds": 807331
+   "adds": 725858
   },
   {
    "id": "11630",
@@ -362,7 +362,7 @@
    "depth": "SWR2",
    "news": "Sep 19",
    "news_ms": 1789839046388,
-   "adds": 382770
+   "adds": 378414
   },
   {
    "id": "11637",
@@ -375,7 +375,7 @@
    "depth": "LWR3",
    "news": "Sep 18",
    "news_ms": 1789741246949,
-   "adds": 310914
+   "adds": 286749
   },
   {
    "id": "4035",
@@ -388,7 +388,7 @@
    "depth": "RB2",
    "news": "Sep 19",
    "news_ms": 1789830038261,
-   "adds": 237800
+   "adds": 228112
   },
   {
    "id": "9225",
@@ -399,9 +399,9 @@
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 15",
-   "news_ms": 1789508754804,
-   "adds": 128912
+   "news": "Sep 20",
+   "news_ms": 1789937159486,
+   "adds": 144809
   },
   {
    "id": "12718",
@@ -414,20 +414,7 @@
    "depth": "LWR3",
    "news": "Sep 12",
    "news_ms": 1789172715636,
-   "adds": 126387
-  },
-  {
-   "id": "11610",
-   "name": "Malik Washington",
-   "pos": "WR",
-   "team": "MIA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR1",
-   "news": "Sep 19",
-   "news_ms": 1789823737699,
-   "adds": 101288
+   "adds": 133956
   },
   {
    "id": "2505",
@@ -440,98 +427,20 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789790150884,
-   "adds": 88461
+   "adds": 117981
   },
   {
-   "id": "12472",
-   "name": "Raheim Sanders",
-   "pos": "RB",
-   "team": "CLE",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
+   "id": "11610",
+   "name": "Malik Washington",
+   "pos": "WR",
+   "team": "MIA",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "RB2",
+   "depth": "SWR1",
    "news": "Sep 19",
-   "news_ms": 1789832438468,
-   "adds": 82440
-  },
-  {
-   "id": "13285",
-   "name": "Malachi Fields",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 15",
-   "news_ms": 1789434908408,
-   "adds": 77655
-  },
-  {
-   "id": "4177",
-   "name": "Mack Hollins",
-   "pos": "WR",
-   "team": "NE",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 20",
-   "news_ms": 1789911353919,
-   "adds": 76245
-  },
-  {
-   "id": "11625",
-   "name": "Adonai Mitchell",
-   "pos": "WR",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 19",
-   "news_ms": 1789825837908,
-   "adds": 72944
-  },
-  {
-   "id": "6931",
-   "name": "DeeJay Dallas",
-   "pos": "RB",
-   "team": "MIN",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 16",
-   "news_ms": 1789598422560,
-   "adds": 71031
-  },
-  {
-   "id": "7571",
-   "name": "Rashod Bateman",
-   "pos": "WR",
-   "team": "BAL",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "LWR1",
-   "news": "Sep 20",
-   "news_ms": 1789916154456,
-   "adds": 69900
-  },
-  {
-   "id": "13330",
-   "name": "Kenyon Sadiq",
-   "pos": "TE",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 19",
-   "news_ms": 1789826138033,
-   "adds": 67266
+   "news_ms": 1789823737699,
+   "adds": 95872
   },
   {
    "id": "11256",
@@ -544,7 +453,111 @@
    "depth": "QB3",
    "news": "Sep 16",
    "news_ms": 1789593322805,
-   "adds": 65748
+   "adds": 90102
+  },
+  {
+   "id": "13285",
+   "name": "Malachi Fields",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 15",
+   "news_ms": 1789434908408,
+   "adds": 81850
+  },
+  {
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 19",
+   "news_ms": 1789825837908,
+   "adds": 79200
+  },
+  {
+   "id": "12472",
+   "name": "Raheim Sanders",
+   "pos": "RB",
+   "team": "CLE",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 19",
+   "news_ms": 1789832438468,
+   "adds": 72608
+  },
+  {
+   "id": "4177",
+   "name": "Mack Hollins",
+   "pos": "WR",
+   "team": "NE",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 20",
+   "news_ms": 1789911353919,
+   "adds": 67686
+  },
+  {
+   "id": "6931",
+   "name": "DeeJay Dallas",
+   "pos": "RB",
+   "team": "MIN",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 16",
+   "news_ms": 1789598422560,
+   "adds": 67530
+  },
+  {
+   "id": "7571",
+   "name": "Rashod Bateman",
+   "pos": "WR",
+   "team": "BAL",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "LWR1",
+   "news": "Sep 20",
+   "news_ms": 1789938658402,
+   "adds": 66836
+  },
+  {
+   "id": "10213",
+   "name": "Tre Tucker",
+   "pos": "WR",
+   "team": "LV",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "LWR1",
+   "news": "Sep 18",
+   "news_ms": 1789768248580,
+   "adds": 64068
+  },
+  {
+   "id": "13330",
+   "name": "Kenyon Sadiq",
+   "pos": "TE",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE1",
+   "news": "Sep 19",
+   "news_ms": 1789826138033,
+   "adds": 60876
   },
   {
    "id": "12492",
@@ -557,7 +570,7 @@
    "depth": "SWR3",
    "news": "Sep 19",
    "news_ms": 1789783550344,
-   "adds": 60656
+   "adds": 56416
   },
   {
    "id": "4066",
@@ -570,33 +583,20 @@
    "depth": "TE1",
    "news": "Sep 19",
    "news_ms": 1789784150451,
-   "adds": 57272
+   "adds": 54888
   },
   {
-   "id": "4993",
-   "name": "Mike Gesicki",
-   "pos": "TE",
-   "team": "CIN",
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "TE1",
-   "news": "Sep 18",
-   "news_ms": 1789764048389,
-   "adds": 56640
-  },
-  {
-   "id": "3321",
-   "name": "Tyreek Hill",
-   "pos": "WR",
-   "team": "FA",
-   "flag": "red",
-   "why": "Free agent / no team",
-   "injury": "",
-   "depth": null,
-   "news": "Sep 16",
-   "news_ms": 1789571759747,
-   "adds": 51848
+   "depth": "RWR2",
+   "news": "Sep 20",
+   "news_ms": 1789938059068,
+   "adds": 52092
   }
  ],
  "transactions": [
@@ -884,8 +884,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "QB1",
-    "news": "Sep 19",
-    "news_ms": 1789791351147
+    "news": "Sep 20",
+    "news_ms": 1789936258016
    },
    {
     "id": "9221",
@@ -908,8 +908,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 19",
-    "news_ms": 1789805452795
+    "news": "Sep 20",
+    "news_ms": 1789938058404
    },
    {
     "id": "7525",
@@ -920,8 +920,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "LWR1",
-    "news": "Sep 18",
-    "news_ms": 1789746045719
+    "news": "Sep 20",
+    "news_ms": 1789937459236
    },
    {
     "id": "4983",
@@ -957,7 +957,7 @@
     "injury": null,
     "depth": "RB1",
     "news": "Sep 20",
-    "news_ms": 1789880449909
+    "news_ms": 1789937158300
    },
    {
     "id": "8131",
@@ -1008,8 +1008,8 @@
     "news_ms": null
    }
   ],
-  "my_points": 105.2,
-  "their_points": 110.58
+  "my_points": 118.3,
+  "their_points": 148.22
  },
  "qb_depth": [
   {
@@ -1151,7 +1151,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 205.42,
-   "pts_week": 118.62,
+   "pts_week": 130.96,
    "faab_left": 150,
    "counts": {
     "TE": 2,
@@ -1192,7 +1192,7 @@
    "mine": false,
    "record": "0-1",
    "pts_for": 130.8,
-   "pts_week": 44.0,
+   "pts_week": 89.92,
    "faab_left": 150,
    "counts": {
     "WR": 7,
@@ -1232,7 +1232,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 141.56,
-   "pts_week": 120.94,
+   "pts_week": 125.04,
    "faab_left": 130,
    "counts": {
     "TE": 3,
@@ -1257,7 +1257,7 @@
    ],
    "bench": [
     "Brock Bowers TE LV (Out)",
-    "Demarcus Robinson WR SF",
+    "Demarcus Robinson WR SF (Questionable)",
     "Samaje Perine RB CIN",
     "Devin Singletary RB NYG",
     "Denver Broncos DEF DEN"
@@ -1273,7 +1273,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 253.4,
-   "pts_week": 83.0,
+   "pts_week": 94.1,
    "faab_left": 150,
    "counts": {
     "WR": 4,
@@ -1314,7 +1314,7 @@
    "mine": false,
    "record": "0-1",
    "pts_for": 174.56,
-   "pts_week": 69.5,
+   "pts_week": 138.02,
    "faab_left": 139,
    "counts": {
     "QB": 3,
@@ -1352,7 +1352,7 @@
    "mine": true,
    "record": "1-0",
    "pts_for": 168.42,
-   "pts_week": 105.2,
+   "pts_week": 118.3,
    "faab_left": 144,
    "counts": {
     "QB": 3,
@@ -1392,7 +1392,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 262.14,
-   "pts_week": 110.58,
+   "pts_week": 148.22,
    "faab_left": 129,
    "counts": {
     "WR": 5,
@@ -1430,7 +1430,7 @@
    "mine": false,
    "record": "0-1",
    "pts_for": 153.6,
-   "pts_week": 112.3,
+   "pts_week": 115.6,
    "faab_left": 145,
    "counts": {
     "WR": 5,
@@ -1468,7 +1468,7 @@
    "mine": false,
    "record": "1-0",
    "pts_for": 209.98,
-   "pts_week": 91.5,
+   "pts_week": 142.42,
    "faab_left": 150,
    "counts": {
     "RB": 4,
@@ -1506,7 +1506,7 @@
    "mine": false,
    "record": "0-1",
    "pts_for": 128.54,
-   "pts_week": 106.14,
+   "pts_week": 134.54,
    "faab_left": 150,
    "counts": {
     "WR": 4,
@@ -1544,7 +1544,7 @@
    "mine": false,
    "record": "0-1",
    "pts_for": 114.58,
-   "pts_week": 39.24,
+   "pts_week": 80.06,
    "faab_left": 145,
    "counts": {
     "RB": 5,
@@ -1584,7 +1584,7 @@
    "mine": false,
    "record": "0-1",
    "pts_for": 163.12,
-   "pts_week": 108.32,
+   "pts_week": 118.32,
    "faab_left": 150,
    "counts": {
     "TE": 1,
