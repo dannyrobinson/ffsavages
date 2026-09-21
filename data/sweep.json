@@ -1,6 +1,6 @@
 {
- "generated": "Mon Sep 21, 2026 1:13 PM PT",
- "generated_ms": 1790021592911,
+ "generated": "Mon Sep 21, 2026 3:49 PM PT",
+ "generated_ms": 1790030994373,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -94,7 +94,7 @@
    "injury": "Out",
    "depth": "QB1",
    "news": "Sep 21",
-   "news_ms": 1790010305025,
+   "news_ms": 1790023526382,
    "slot": "START",
    "stories": []
   },
@@ -136,7 +136,7 @@
    "injury": "Questionable",
    "depth": "RB2",
    "news": "Sep 21",
-   "news_ms": 1789953960379,
+   "news_ms": 1790024126190,
    "slot": "START",
    "stories": []
   },
@@ -339,17 +339,17 @@
  ],
  "trending": [
   {
-   "id": "10218",
-   "name": "Xavier Hutchinson",
-   "pos": "WR",
-   "team": "HOU",
+   "id": "11435",
+   "name": "Emanuel Wilson",
+   "pos": "RB",
+   "team": "SEA",
    "flag": "amber",
-   "why": "WR5 on the depth chart",
+   "why": "RB3 on the depth chart",
    "injury": null,
-   "depth": "LWR5",
+   "depth": "RB3",
    "news": "Sep 21",
-   "news_ms": 1789968361913,
-   "adds": 503748
+   "news_ms": 1790001304327,
+   "adds": 495054
   },
   {
    "id": "10213",
@@ -362,20 +362,20 @@
    "depth": "LWR1",
    "news": "Sep 21",
    "news_ms": 1790012725186,
-   "adds": 382644
+   "adds": 431982
   },
   {
-   "id": "11435",
-   "name": "Emanuel Wilson",
-   "pos": "RB",
-   "team": "SEA",
+   "id": "10218",
+   "name": "Xavier Hutchinson",
+   "pos": "WR",
+   "team": "HOU",
    "flag": "amber",
-   "why": "RB3 on the depth chart",
+   "why": "WR5 on the depth chart",
    "injury": null,
-   "depth": "RB3",
+   "depth": "LWR5",
    "news": "Sep 21",
-   "news_ms": 1790001304327,
-   "adds": 377046
+   "news_ms": 1790028652972,
+   "adds": 419279
   },
   {
    "id": "9225",
@@ -388,20 +388,7 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790004604231,
-   "adds": 367549
-  },
-  {
-   "id": "11630",
-   "name": "Roman Wilson",
-   "pos": "WR",
-   "team": "PIT",
-   "flag": "amber",
-   "why": "WR4 on the depth chart",
-   "injury": null,
-   "depth": "SWR4",
-   "news": "Sep 21",
-   "news_ms": 1789949159851,
-   "adds": 352179
+   "adds": 389928
   },
   {
    "id": "2505",
@@ -414,7 +401,20 @@
    "depth": "TE1",
    "news": "Sep 21",
    "news_ms": 1789960260882,
-   "adds": 347499
+   "adds": 381591
+  },
+  {
+   "id": "11630",
+   "name": "Roman Wilson",
+   "pos": "WR",
+   "team": "PIT",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "SWR4",
+   "news": "Sep 21",
+   "news_ms": 1789949159851,
+   "adds": 318069
   },
   {
    "id": "11637",
@@ -427,7 +427,7 @@
    "depth": "LWR3",
    "news": "Sep 18",
    "news_ms": 1789741246949,
-   "adds": 323919
+   "adds": 316728
   },
   {
    "id": "11625",
@@ -440,7 +440,7 @@
    "depth": "RWR2",
    "news": "Sep 21",
    "news_ms": 1789953359372,
-   "adds": 262640
+   "adds": 305592
   },
   {
    "id": "11256",
@@ -453,7 +453,7 @@
    "depth": "QB2",
    "news": "Sep 20",
    "news_ms": 1789941959142,
-   "adds": 227490
+   "adds": 238650
   },
   {
    "id": "4035",
@@ -466,20 +466,7 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790020826589,
-   "adds": 222496
-  },
-  {
-   "id": "12718",
-   "name": "Konata Mumpfield",
-   "pos": "WR",
-   "team": "LAR",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "LWR3",
-   "news": "Sep 12",
-   "news_ms": 1789172715636,
-   "adds": 189297
+   "adds": 211696
   },
   {
    "id": "13346",
@@ -492,7 +479,20 @@
    "depth": "LWR3",
    "news": "Sep 21",
    "news_ms": 1790004004180,
-   "adds": 173836
+   "adds": 196068
+  },
+  {
+   "id": "12718",
+   "name": "Konata Mumpfield",
+   "pos": "WR",
+   "team": "LAR",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "LWR3",
+   "news": "Sep 12",
+   "news_ms": 1789172715636,
+   "adds": 192699
   },
   {
    "id": "13345",
@@ -505,7 +505,7 @@
    "depth": "RB3",
    "news": "Sep 21",
    "news_ms": 1790000704016,
-   "adds": 162798
+   "adds": 186766
   },
   {
    "id": "2307",
@@ -517,8 +517,8 @@
    "injury": null,
    "depth": "QB2",
    "news": "Sep 21",
-   "news_ms": 1790020525871,
-   "adds": 144028
+   "news_ms": 1790022027707,
+   "adds": 158432
   },
   {
    "id": "13285",
@@ -531,7 +531,20 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789434908408,
-   "adds": 138215
+   "adds": 145850
+  },
+  {
+   "id": "1339",
+   "name": "Zach Ertz",
+   "pos": "TE",
+   "team": "PHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": null,
+   "news": "Sep 21",
+   "news_ms": 1790029553570,
+   "adds": 111177
   },
   {
    "id": "9486",
@@ -544,7 +557,7 @@
    "depth": "RWR3",
    "news": "Sep 20",
    "news_ms": 1789947959027,
-   "adds": 103851
+   "adds": 109734
   },
   {
    "id": "11610",
@@ -557,7 +570,7 @@
    "depth": "SWR1",
    "news": "Sep 21",
    "news_ms": 1789997404978,
-   "adds": 88384
+   "adds": 82600
   },
   {
    "id": "7571",
@@ -570,7 +583,7 @@
    "depth": "LWR2",
    "news": "Sep 21",
    "news_ms": 1790019025933,
-   "adds": 79883
+   "adds": 75472
   },
   {
    "id": "8188",
@@ -583,20 +596,7 @@
    "depth": "LWR3",
    "news": "Sep 21",
    "news_ms": 1790007006332,
-   "adds": 70441
-  },
-  {
-   "id": "12487",
-   "name": "Terrance Ferguson",
-   "pos": "TE",
-   "team": "LAR",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE2",
-   "news": "Sep 20",
-   "news_ms": 1789869348952,
-   "adds": 69288
+   "adds": 73864
   }
  ],
  "transactions": [
@@ -1596,7 +1596,7 @@
    },
    "starters": [
     "QB: Josh Allen QB BUF",
-    "RB: Brian Robinson RB ATL",
+    "RB: Brian Robinson RB ATL (Questionable)",
     "RB: Travis Etienne RB NO",
     "WR: Luther Burden WR CHI",
     "WR: Davante Adams WR LAR",
