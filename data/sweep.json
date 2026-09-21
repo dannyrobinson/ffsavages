@@ -1,6 +1,6 @@
 {
- "generated": "Mon Sep 21, 2026 7:15 AM PT",
- "generated_ms": 1790000123819,
+ "generated": "Mon Sep 21, 2026 11:54 AM PT",
+ "generated_ms": 1790016874358,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -94,7 +94,7 @@
    "injury": "Out",
    "depth": "QB1",
    "news": "Sep 21",
-   "news_ms": 1789952158261,
+   "news_ms": 1790010305025,
    "slot": "START",
    "stories": []
   },
@@ -304,7 +304,7 @@
    "injury": null,
    "depth": "K1",
    "news": "Sep 21",
-   "news_ms": 1789968361861,
+   "news_ms": 1790005207666,
    "slot": "START",
    "stories": []
   },
@@ -349,7 +349,20 @@
    "depth": "LWR5",
    "news": "Sep 21",
    "news_ms": 1789968361913,
-   "adds": 606067
+   "adds": 520982
+  },
+  {
+   "id": "10213",
+   "name": "Tre Tucker",
+   "pos": "WR",
+   "team": "LV",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "LWR1",
+   "news": "Sep 21",
+   "news_ms": 1790012725186,
+   "adds": 358254
   },
   {
    "id": "11630",
@@ -362,20 +375,7 @@
    "depth": "SWR4",
    "news": "Sep 21",
    "news_ms": 1789949159851,
-   "adds": 381321
-  },
-  {
-   "id": "11637",
-   "name": "Keon Coleman",
-   "pos": "WR",
-   "team": "BUF",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "LWR3",
-   "news": "Sep 18",
-   "news_ms": 1789741246949,
-   "adds": 317457
+   "adds": 357786
   },
   {
    "id": "9225",
@@ -386,9 +386,9 @@
    "why": "RB2 on the depth chart",
    "injury": null,
    "depth": "RB2",
-   "news": "Sep 20",
-   "news_ms": 1789947658892,
-   "adds": 293202
+   "news": "Sep 21",
+   "news_ms": 1790004604231,
+   "adds": 357028
   },
   {
    "id": "2505",
@@ -401,33 +401,7 @@
    "depth": "TE1",
    "news": "Sep 21",
    "news_ms": 1789960260882,
-   "adds": 284085
-  },
-  {
-   "id": "10213",
-   "name": "Tre Tucker",
-   "pos": "WR",
-   "team": "LV",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "LWR1",
-   "news": "Sep 21",
-   "news_ms": 1789994404623,
-   "adds": 283740
-  },
-  {
-   "id": "4035",
-   "name": "Alvin Kamara",
-   "pos": "RB",
-   "team": "NO",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 21",
-   "news_ms": 1789951560014,
-   "adds": 229072
+   "adds": 334935
   },
   {
    "id": "11435",
@@ -439,21 +413,21 @@
    "injury": null,
    "depth": "RB3",
    "news": "Sep 21",
-   "news_ms": 1789953059417,
-   "adds": 211248
+   "news_ms": 1790001304327,
+   "adds": 331308
   },
   {
-   "id": "11256",
-   "name": "Tyson Bagent",
-   "pos": "QB",
-   "team": "CHI",
-   "flag": "red",
-   "why": "Not the starter (QB2)",
+   "id": "11637",
+   "name": "Keon Coleman",
+   "pos": "WR",
+   "team": "BUF",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "QB2",
-   "news": "Sep 20",
-   "news_ms": 1789941959142,
-   "adds": 194526
+   "depth": "LWR3",
+   "news": "Sep 18",
+   "news_ms": 1789741246949,
+   "adds": 321777
   },
   {
    "id": "11625",
@@ -466,7 +440,33 @@
    "depth": "RWR2",
    "news": "Sep 21",
    "news_ms": 1789953359372,
-   "adds": 185504
+   "adds": 242560
+  },
+  {
+   "id": "4035",
+   "name": "Alvin Kamara",
+   "pos": "RB",
+   "team": "NO",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 21",
+   "news_ms": 1790000704016,
+   "adds": 223536
+  },
+  {
+   "id": "11256",
+   "name": "Tyson Bagent",
+   "pos": "QB",
+   "team": "CHI",
+   "flag": "red",
+   "why": "Not the starter (QB2)",
+   "injury": null,
+   "depth": "QB2",
+   "news": "Sep 20",
+   "news_ms": 1789941959142,
+   "adds": 220758
   },
   {
    "id": "12718",
@@ -479,7 +479,7 @@
    "depth": "LWR3",
    "news": "Sep 12",
    "news_ms": 1789172715636,
-   "adds": 178668
+   "adds": 189108
   },
   {
    "id": "13346",
@@ -491,8 +491,21 @@
    "injury": null,
    "depth": "LWR3",
    "news": "Sep 21",
-   "news_ms": 1789969801879,
-   "adds": 125370
+   "news_ms": 1790004004180,
+   "adds": 163398
+  },
+  {
+   "id": "13345",
+   "name": "Jonah Coleman",
+   "pos": "RB",
+   "team": "DEN",
+   "flag": "amber",
+   "why": "RB3 on the depth chart",
+   "injury": null,
+   "depth": "RB3",
+   "news": "Sep 21",
+   "news_ms": 1790000704016,
+   "adds": 151562
   },
   {
    "id": "13285",
@@ -505,7 +518,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789434908408,
-   "adds": 124670
+   "adds": 135935
   },
   {
    "id": "2307",
@@ -518,33 +531,7 @@
    "depth": "QB2",
    "news": "Sep 21",
    "news_ms": 1789962960628,
-   "adds": 109816
-  },
-  {
-   "id": "13345",
-   "name": "Jonah Coleman",
-   "pos": "RB",
-   "team": "DEN",
-   "flag": "amber",
-   "why": "RB3 on the depth chart",
-   "injury": null,
-   "depth": "RB3",
-   "news": "Sep 21",
-   "news_ms": 1789985704060,
-   "adds": 105726
-  },
-  {
-   "id": "11610",
-   "name": "Malik Washington",
-   "pos": "WR",
-   "team": "MIA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR1",
-   "news": "Sep 21",
-   "news_ms": 1789997404978,
-   "adds": 93624
+   "adds": 131724
   },
   {
    "id": "9486",
@@ -557,7 +544,20 @@
    "depth": "RWR3",
    "news": "Sep 20",
    "news_ms": 1789947959027,
-   "adds": 89730
+   "adds": 100830
+  },
+  {
+   "id": "11610",
+   "name": "Malik Washington",
+   "pos": "WR",
+   "team": "MIA",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "SWR1",
+   "news": "Sep 21",
+   "news_ms": 1789997404978,
+   "adds": 89072
   },
   {
    "id": "7571",
@@ -570,7 +570,7 @@
    "depth": "LWR2",
    "news": "Sep 21",
    "news_ms": 1789952759708,
-   "adds": 78898
+   "adds": 79408
   },
   {
    "id": "12487",
@@ -583,7 +583,7 @@
    "depth": "TE2",
    "news": "Sep 20",
    "news_ms": 1789869348952,
-   "adds": 67952
+   "adds": 70832
   },
   {
    "id": "8188",
@@ -594,9 +594,9 @@
    "why": "WR3 on the depth chart",
    "injury": null,
    "depth": "LWR3",
-   "news": "Sep 19",
-   "news_ms": 1789831538331,
-   "adds": 60613
+   "news": "Sep 21",
+   "news_ms": 1790007006332,
+   "adds": 68404
   }
  ],
  "transactions": [
@@ -992,8 +992,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "K1",
-    "news": "Sep 20",
-    "news_ms": 1789933857907
+    "news": "Sep 21",
+    "news_ms": 1789999505419
    },
    {
     "id": "SEA",

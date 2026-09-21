@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 2 · Mon Sep 21, 2026 7:15 AM PT
+# Sleeper sweep — Week 2 · Mon Sep 21, 2026 11:54 AM PT
 
 Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 
@@ -25,26 +25,26 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - Fernando Mendoza (LV) — Healthy, starting
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- WR  Xavier Hutchinson (HOU) · 606,067 adds · LWR5 · WR5 on the depth chart
-- WR  Roman Wilson (PIT) · 381,321 adds · SWR4 · WR4 on the depth chart
-- WR  Keon Coleman (BUF) · 317,457 adds · LWR3 · WR3 on the depth chart
-- RB  Tank Bigsby (PHI) · 293,202 adds · RB2 · RB2 on the depth chart
-- TE  Darren Waller (CAR) · 284,085 adds · TE1 · Healthy, starting
-- WR  Tre Tucker (LV) · 283,740 adds · LWR1 · Healthy, starting
-- RB  Alvin Kamara (NO) · 229,072 adds · RB2 · RB2 on the depth chart
-- RB  Emanuel Wilson (SEA) · 211,248 adds · RB3 · RB3 on the depth chart
-- QB  Tyson Bagent (CHI) · 194,526 adds · QB2 · Not the starter (QB2)
-- WR  Adonai Mitchell (NYJ) · 185,504 adds · RWR2 · Healthy, starting
-- WR  Konata Mumpfield (LAR) · 178,668 adds · LWR3 · WR3 on the depth chart
-- WR  Denzel Boston (CLE) · 125,370 adds · LWR3 · WR3 on the depth chart
-- WR  Malachi Fields (NYG) · 124,670 adds · RWR2 · Healthy, starting
-- QB  Marcus Mariota (WAS) · 109,816 adds · QB2 · Not the starter (QB2)
-- RB  Jonah Coleman (DEN) · 105,726 adds · RB3 · RB3 on the depth chart
-- WR  Malik Washington (MIA) · 93,624 adds · SWR1 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 89,730 adds · RWR3 · WR3 on the depth chart
-- WR  Rashod Bateman (BAL) · 78,898 adds · LWR2 · Healthy, starting
-- TE  Terrance Ferguson (LAR) · 67,952 adds · TE2 · Healthy, starting
-- WR  Tyquan Thornton (KC) · 60,613 adds · LWR3 · WR3 on the depth chart
+- WR  Xavier Hutchinson (HOU) · 520,982 adds · LWR5 · WR5 on the depth chart
+- WR  Tre Tucker (LV) · 358,254 adds · LWR1 · Healthy, starting
+- WR  Roman Wilson (PIT) · 357,786 adds · SWR4 · WR4 on the depth chart
+- RB  Tank Bigsby (PHI) · 357,028 adds · RB2 · RB2 on the depth chart
+- TE  Darren Waller (CAR) · 334,935 adds · TE1 · Healthy, starting
+- RB  Emanuel Wilson (SEA) · 331,308 adds · RB3 · RB3 on the depth chart
+- WR  Keon Coleman (BUF) · 321,777 adds · LWR3 · WR3 on the depth chart
+- WR  Adonai Mitchell (NYJ) · 242,560 adds · RWR2 · Healthy, starting
+- RB  Alvin Kamara (NO) · 223,536 adds · RB2 · RB2 on the depth chart
+- QB  Tyson Bagent (CHI) · 220,758 adds · QB2 · Not the starter (QB2)
+- WR  Konata Mumpfield (LAR) · 189,108 adds · LWR3 · WR3 on the depth chart
+- WR  Denzel Boston (CLE) · 163,398 adds · LWR3 · WR3 on the depth chart
+- RB  Jonah Coleman (DEN) · 151,562 adds · RB3 · RB3 on the depth chart
+- WR  Malachi Fields (NYG) · 135,935 adds · RWR2 · Healthy, starting
+- QB  Marcus Mariota (WAS) · 131,724 adds · QB2 · Not the starter (QB2)
+- WR  Dontayvion Wicks (PHI) · 100,830 adds · RWR3 · WR3 on the depth chart
+- WR  Malik Washington (MIA) · 89,072 adds · SWR1 · Healthy, starting
+- WR  Rashod Bateman (BAL) · 79,408 adds · LWR2 · Healthy, starting
+- TE  Terrance Ferguson (LAR) · 70,832 adds · TE2 · Healthy, starting
+- WR  Tyquan Thornton (KC) · 68,404 adds · LWR3 · WR3 on the depth chart
 
 ## League transactions, week 2
 - MasonMafia: free_agent complete +['Demarcus Robinson'] -[]
