@@ -1,1 +1,20 @@
-{"headline": "Nothing to do right now: Burrow is active vs. HOU and Danny's lineup is already right — the early games are locking as this posts.", "summary": "Danny's roster is clean this week: Burrow cleared his back-tightness tag and is starting, and the only flagged player is A.J. Brown, already parked on IR. All three QBs (Burrow, Williams, Smith) keep different byes, and neither DEF nor K matchup is bad enough to churn.", "lineup": [], "adds": [], "ir": [], "subs": [], "flags": [{"player": "A.J. Brown", "severity": "red", "what": "IR, high-ankle sprain (Sept 13-17 reports); on IR already, on pace for a Week 8 return"}], "watch": [{"player": "A.J. Brown", "what": "NFL Network/insider reports (dated Sept 13-17) put him on a 6-week timeline, first realistic return Week 8 vs. MIA; he'll come off IR then if healthy"}, {"player": "Nicholas Singleton (RB TEN)", "what": "Dropped by KUZ1 in this league Sat (unowned, claims clear Mon 1:31 AM PT); outlook pieces (this week) still have him buried in Tennessee's backfield with no clear early role — not worth a claim over Judkins or Lloyd"}], "alerts": [], "ts": 1789935136000, "week": 2}
+{"headline": "Caleb Williams is Out with a hamstring (MRI Monday) and locked in your Superflex slot until Tuesday morning — move him to IR then and start Geno Smith in his place.",
+ "summary": "Danny is 1-0 and almost the whole week is already locked in; only Monday night's Nabers game is still to be played and he's already correctly starting. The one open task is Tuesday's IR move for Caleb Williams, whose hamstring severity won't be known until his Monday MRI.",
+ "lineup": [],
+ "adds": [],
+ "ir": [{"player": "Caleb Williams", "move": "to IR", "why": "Out with a hamstring, carted off Sun Sep 20 vs MIN; he's locked in the Superflex slot until the week's games complete Tuesday morning, so the IR move (and starting Geno Smith in his place) can only happen then.", "urgency": "high"}],
+ "subs": [],
+ "flags": [
+   {"player": "Caleb Williams", "severity": "red", "what": "Out · hamstring, carted off Sun Sep 20; MRI Monday Sep 21 decides 1-3 weeks (grade 1 strain) vs. months (tear)"},
+   {"player": "Aaron Jones", "severity": "amber", "what": "Questionable · knee, briefly left Sun Sep 20's game but returned and finished it"},
+   {"player": "A.J. Brown", "severity": "red", "what": "on IR · ankle sprain, not yet eligible to come off"}
+ ],
+ "watch": [
+   {"player": "Caleb Williams", "what": "Monday Sep 21 MRI result — if it's a multi-week tear, revisit QB depth then; a low-end starter like Cooper Rush is not worth a claim right now since Geno Smith already covers the bye/injury gap better"},
+   {"player": "Nicholas Singleton", "what": "TEN RB dropped by KUZ1 Sat Sep 19 — buried 3rd on the depth chart (healthy scratch Week 1 behind Pollard/Spears), does not beat your bench RBs, skip him"}
+ ],
+ "alerts": [
+   {"key": "ir:caleb-williams-wk2", "urgency": "medium", "title": "🔴 Move Caleb Williams to IR Tuesday", "body": "He's Out with a hamstring (MRI Monday) and locked until the week's games complete Tuesday morning — put him on IR then and start Geno Smith in the Superflex slot for week 3."}
+ ],
+ "ts": 1789963984000,
+ "week": 2}
