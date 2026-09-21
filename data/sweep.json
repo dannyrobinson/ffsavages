@@ -1,6 +1,6 @@
 {
- "generated": "Sun Sep 20, 2026 9:14 PM PT",
- "generated_ms": 1789964079191,
+ "generated": "Mon Sep 21, 2026 2:18 AM PT",
+ "generated_ms": 1789982300264,
  "season": "2026",
  "week": 2,
  "faab_total": 150,
@@ -121,8 +121,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 20",
-   "news_ms": 1789940158713,
+   "news": "Sep 21",
+   "news_ms": 1789966561501,
    "slot": "START",
    "stories": []
   },
@@ -149,8 +149,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 20",
-   "news_ms": 1789938358480,
+   "news": "Sep 21",
+   "news_ms": 1789966561491,
    "slot": "START",
    "stories": []
   },
@@ -191,8 +191,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "RB1",
-   "news": "Sep 20",
-   "news_ms": 1789945259829,
+   "news": "Sep 21",
+   "news_ms": 1789969801900,
    "slot": "BN",
    "stories": []
   },
@@ -262,7 +262,7 @@
    "injury": null,
    "depth": "LWR2",
    "news": "Sep 21",
-   "news_ms": 1789956659735,
+   "news_ms": 1789967460293,
    "slot": "BN",
    "stories": []
   },
@@ -303,8 +303,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "K1",
-   "news": "Sep 19",
-   "news_ms": 1789820737565,
+   "news": "Sep 21",
+   "news_ms": 1789968361861,
    "slot": "START",
    "stories": []
   },
@@ -347,9 +347,9 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "LWR1",
-   "news": "Sep 19",
-   "news_ms": 1789818337307,
-   "adds": 666834
+   "news": "Sep 21",
+   "news_ms": 1789968361913,
+   "adds": 633703
   },
   {
    "id": "11630",
@@ -362,7 +362,7 @@
    "depth": "SWR2",
    "news": "Sep 21",
    "news_ms": 1789949159851,
-   "adds": 385587
+   "adds": 383121
   },
   {
    "id": "11637",
@@ -375,7 +375,7 @@
    "depth": "LWR3",
    "news": "Sep 18",
    "news_ms": 1789741246949,
-   "adds": 311796
+   "adds": 309141
   },
   {
    "id": "9225",
@@ -388,20 +388,7 @@
    "depth": "RB2",
    "news": "Sep 20",
    "news_ms": 1789947658892,
-   "adds": 233828
-  },
-  {
-   "id": "4035",
-   "name": "Alvin Kamara",
-   "pos": "RB",
-   "team": "NO",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 21",
-   "news_ms": 1789951560014,
-   "adds": 231680
+   "adds": 255724
   },
   {
    "id": "2505",
@@ -414,7 +401,7 @@
    "depth": "TE1",
    "news": "Sep 21",
    "news_ms": 1789960260882,
-   "adds": 230796
+   "adds": 251460
   },
   {
    "id": "10213",
@@ -426,21 +413,21 @@
    "injury": null,
    "depth": "LWR1",
    "news": "Sep 21",
-   "news_ms": 1789950358767,
-   "adds": 214890
+   "news_ms": 1789967760439,
+   "adds": 245892
   },
   {
-   "id": "12718",
-   "name": "Konata Mumpfield",
-   "pos": "WR",
-   "team": "LAR",
+   "id": "4035",
+   "name": "Alvin Kamara",
+   "pos": "RB",
+   "team": "NO",
    "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "why": "RB2 on the depth chart",
    "injury": null,
-   "depth": "LWR3",
-   "news": "Sep 12",
-   "news_ms": 1789172715636,
-   "adds": 167202
+   "depth": "RB2",
+   "news": "Sep 21",
+   "news_ms": 1789951560014,
+   "adds": 228368
   },
   {
    "id": "11256",
@@ -453,20 +440,20 @@
    "depth": "QB3",
    "news": "Sep 20",
    "news_ms": 1789941959142,
-   "adds": 161730
+   "adds": 174744
   },
   {
-   "id": "11625",
-   "name": "Adonai Mitchell",
+   "id": "12718",
+   "name": "Konata Mumpfield",
    "pos": "WR",
-   "team": "NYJ",
-   "flag": "green",
-   "why": "Healthy, starting",
+   "team": "LAR",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 21",
-   "news_ms": 1789953359372,
-   "adds": 141640
+   "depth": "LWR3",
+   "news": "Sep 12",
+   "news_ms": 1789172715636,
+   "adds": 172341
   },
   {
    "id": "11435",
@@ -479,7 +466,20 @@
    "depth": "RB3",
    "news": "Sep 21",
    "news_ms": 1789953059417,
-   "adds": 129996
+   "adds": 162504
+  },
+  {
+   "id": "11625",
+   "name": "Adonai Mitchell",
+   "pos": "WR",
+   "team": "NYJ",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 21",
+   "news_ms": 1789953359372,
+   "adds": 160896
   },
   {
    "id": "13285",
@@ -492,20 +492,7 @@
    "depth": "RWR2",
    "news": "Sep 15",
    "news_ms": 1789434908408,
-   "adds": 112740
-  },
-  {
-   "id": "11610",
-   "name": "Malik Washington",
-   "pos": "WR",
-   "team": "MIA",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "SWR2",
-   "news": "Sep 19",
-   "news_ms": 1789823737699,
-   "adds": 95640
+   "adds": 117880
   },
   {
    "id": "13346",
@@ -517,8 +504,8 @@
    "injury": null,
    "depth": "LWR2",
    "news": "Sep 21",
-   "news_ms": 1789952459105,
-   "adds": 88654
+   "news_ms": 1789969801879,
+   "adds": 103684
   },
   {
    "id": "2307",
@@ -531,33 +518,20 @@
    "depth": "QB2",
    "news": "Sep 21",
    "news_ms": 1789962960628,
-   "adds": 85296
+   "adds": 95396
   },
   {
-   "id": "9486",
-   "name": "Dontayvion Wicks",
+   "id": "11610",
+   "name": "Malik Washington",
    "pos": "WR",
-   "team": "PHI",
+   "team": "MIA",
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 20",
-   "news_ms": 1789947959027,
-   "adds": 76338
-  },
-  {
-   "id": "7571",
-   "name": "Rashod Bateman",
-   "pos": "WR",
-   "team": "BAL",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "LWR1",
-   "news": "Sep 21",
-   "news_ms": 1789952759708,
-   "adds": 75223
+   "depth": "SWR2",
+   "news": "Sep 19",
+   "news_ms": 1789823737699,
+   "adds": 94192
   },
   {
    "id": "13345",
@@ -570,7 +544,33 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1789961760394,
-   "adds": 71450
+   "adds": 86198
+  },
+  {
+   "id": "9486",
+   "name": "Dontayvion Wicks",
+   "pos": "WR",
+   "team": "PHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "RWR2",
+   "news": "Sep 20",
+   "news_ms": 1789947959027,
+   "adds": 81789
+  },
+  {
+   "id": "7571",
+   "name": "Rashod Bateman",
+   "pos": "WR",
+   "team": "BAL",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "LWR1",
+   "news": "Sep 21",
+   "news_ms": 1789952759708,
+   "adds": 76561
   },
   {
    "id": "12487",
@@ -583,7 +583,7 @@
    "depth": "TE2",
    "news": "Sep 20",
    "news_ms": 1789869348952,
-   "adds": 62920
+   "adds": 65096
   },
   {
    "id": "6931",
@@ -596,7 +596,7 @@
    "depth": "RB3",
    "news": "Sep 21",
    "news_ms": 1789952760108,
-   "adds": 62883
+   "adds": 60399
   }
  ],
  "transactions": [
@@ -920,8 +920,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "LWR1",
-    "news": "Sep 20",
-    "news_ms": 1789947060031
+    "news": "Sep 21",
+    "news_ms": 1789964159821
    },
    {
     "id": "4983",
@@ -945,7 +945,7 @@
     "injury": null,
     "depth": "TE1",
     "news": "Sep 21",
-    "news_ms": 1789949458729
+    "news_ms": 1789963861041
    },
    {
     "id": "7611",
@@ -956,8 +956,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "RB1",
-    "news": "Sep 20",
-    "news_ms": 1789946759967
+    "news": "Sep 21",
+    "news_ms": 1789964759967
    },
    {
     "id": "8131",
