@@ -1,20 +1,61 @@
-{"headline": "Caleb Williams is Out with a hamstring (MRI Monday) and locked in your Superflex slot until Tuesday morning — move him to IR then and start Geno Smith in his place.",
- "summary": "Danny is 1-0 and almost the whole week is already locked in; only Monday night's Nabers game is still to be played and he's already correctly starting. The one open task is Tuesday's IR move for Caleb Williams, whose hamstring severity won't be known until his Monday MRI.",
- "lineup": [],
- "adds": [],
- "ir": [{"player": "Caleb Williams", "move": "to IR", "why": "Out with a hamstring, carted off Sun Sep 20 vs MIN; he's locked in the Superflex slot until the week's games complete Tuesday morning, so the IR move (and starting Geno Smith in his place) can only happen then.", "urgency": "high"}],
- "subs": [],
- "flags": [
-   {"player": "Caleb Williams", "severity": "red", "what": "Out · hamstring, carted off Sun Sep 20; MRI Monday Sep 21 decides 1-3 weeks (grade 1 strain) vs. months (tear)"},
-   {"player": "Aaron Jones", "severity": "amber", "what": "Questionable · knee, briefly left Sun Sep 20's game but returned and finished it"},
-   {"player": "A.J. Brown", "severity": "red", "what": "on IR · ankle sprain, not yet eligible to come off"}
- ],
- "watch": [
-   {"player": "Caleb Williams", "what": "Monday Sep 21 MRI result — if it's a multi-week tear, revisit QB depth then; a low-end starter like Cooper Rush is not worth a claim right now since Geno Smith already covers the bye/injury gap better"},
-   {"player": "Nicholas Singleton", "what": "TEN RB dropped by KUZ1 Sat Sep 19 — buried 3rd on the depth chart (healthy scratch Week 1 behind Pollard/Spears), does not beat your bench RBs, skip him"}
- ],
- "alerts": [
-   {"key": "ir:caleb-williams-wk2", "urgency": "medium", "title": "🔴 Move Caleb Williams to IR Tuesday", "body": "He's Out with a hamstring (MRI Monday) and locked until the week's games complete Tuesday morning — put him on IR then and start Geno Smith in the Superflex slot for week 3."}
- ],
- "ts": 1789963984000,
- "week": 2}
+{
+  "headline": "Nothing to do before kickoff — Caleb Williams stays locked with a hamstring until Tuesday morning, then move him to IR and start Geno Smith.",
+  "summary": "Danny is 1-0 and week 2 is basically already played; only Monday night's Nabers game is left, and he's off the injury report and correctly starting. The lone open task is Tuesday's IR swap for Caleb Williams; the free-agent QB the checker flagged (Fernando Mendoza) turns out not to be a real pickup — Kirk Cousins is still the Raiders' starter.",
+  "lineup": [],
+  "adds": [],
+  "ir": [
+    {
+      "player": "Caleb Williams",
+      "move": "to IR",
+      "why": "Out with a hamstring, carted off Sun Sep 20 vs MIN; MRI was today (Mon Sep 21) with no grade announced yet, and he's locked in the Superflex slot until the week's games complete Tuesday morning, so the IR move (and starting Geno Smith in his place) can only happen then.",
+      "urgency": "high"
+    }
+  ],
+  "subs": [],
+  "flags": [
+    {
+      "player": "Caleb Williams",
+      "severity": "red",
+      "what": "Out · hamstring, carted off Sun Sep 20; Monday Sep 21 MRI pending, early hope is a grade 1 strain (1-3 weeks)"
+    },
+    {
+      "player": "Aaron Jones",
+      "severity": "amber",
+      "what": "Questionable · knee, briefly left Sun Sep 20's game but returned and finished with 18 carries for 85 yards"
+    },
+    {
+      "player": "MarShawn Lloyd",
+      "severity": "amber",
+      "what": "RB2 behind Josh Jacobs, who is NA/Personal (exempt list) — Lloyd is one absence away from real touches"
+    },
+    {
+      "player": "A.J. Brown",
+      "severity": "red",
+      "what": "on IR · high-ankle sprain from Sep 9, reported out about 6 weeks, targeting a week 8 return — not yet eligible to come off"
+    }
+  ],
+  "watch": [
+    {
+      "player": "Fernando Mendoza",
+      "what": "the data lists him as LV's starting QB, but that's stale — Kirk Cousins started and threw 3 TDs in Sunday Sep 20's 26-14 win over the Chargers, Mendoza never played. Skip the claim."
+    },
+    {
+      "player": "Caleb Williams",
+      "what": "Monday Sep 21 MRI result — if it comes back worse than a grade 1 strain, take a real look at QB depth (not Mendoza) before week 3; Geno Smith covers the gap fine either way this week"
+    },
+    {
+      "player": "Nicholas Singleton",
+      "what": "TEN RB dropped by KUZ1 Sat Sep 19 — was a healthy scratch Week 1 behind Pollard and Spears, doesn't beat your bench RBs, skip him"
+    }
+  ],
+  "alerts": [
+    {
+      "key": "ir:caleb-williams-wk2",
+      "urgency": "medium",
+      "title": "🔴 Move Caleb Williams to IR Tuesday",
+      "body": "He's Out with a hamstring (MRI Monday, no grade yet) and locked until the week's games complete Tuesday morning — put him on IR then and start Geno Smith in the Superflex slot for week 3."
+    }
+  ],
+  "ts": 1790000054000,
+  "week": 2
+}
