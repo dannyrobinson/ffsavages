@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 2 · Mon Sep 21, 2026 2:18 AM PT
+# Sleeper sweep — Week 2 · Mon Sep 21, 2026 7:15 AM PT
 
 Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 
@@ -9,7 +9,7 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - AMBER RB  Aaron Jones (MIN, START) — Questionable · Knee · news Sep 21
 - GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 21
 - GREEN RB  Jaylen Warren (PIT, START) — Healthy, starting · news Sep 20
-- GREEN RB  MarShawn Lloyd (GB, BN) — Healthy, starting · news Sep 21
+- AMBER RB  MarShawn Lloyd (GB, BN) — RB2 on the depth chart · news Sep 21
 - GREEN RB  Quinshon Judkins (CLE, BN) — Healthy, starting · news Sep 21
 - RED   WR  A.J. Brown (NE, IR) — IR · Ankle · Sprain · news Sep 13
 - GREEN WR  Jaylen Waddle (DEN, START) — Healthy, starting · news Sep 21
@@ -22,29 +22,29 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - GREEN DEF Jacksonville Jaguars (JAX, START) — Healthy, starting
 
 ## Free-agent QBs who start for their NFL team
-- Cooper Rush (ATL) — Healthy, starting
+- Fernando Mendoza (LV) — Healthy, starting
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- WR  Xavier Hutchinson (HOU) · 633,703 adds · LWR1 · Healthy, starting
-- WR  Roman Wilson (PIT) · 383,121 adds · SWR2 · Healthy, starting
-- WR  Keon Coleman (BUF) · 309,141 adds · LWR3 · WR3 on the depth chart
-- RB  Tank Bigsby (PHI) · 255,724 adds · RB2 · RB2 on the depth chart
-- TE  Darren Waller (CAR) · 251,460 adds · TE1 · Healthy, starting
-- WR  Tre Tucker (LV) · 245,892 adds · LWR1 · Healthy, starting
-- RB  Alvin Kamara (NO) · 228,368 adds · RB2 · RB2 on the depth chart
-- QB  Tyson Bagent (CHI) · 174,744 adds · QB3 · Not the starter (QB3)
-- WR  Konata Mumpfield (LAR) · 172,341 adds · LWR3 · WR3 on the depth chart
-- RB  Emanuel Wilson (SEA) · 162,504 adds · RB3 · RB3 on the depth chart
-- WR  Adonai Mitchell (NYJ) · 160,896 adds · RWR2 · Healthy, starting
-- WR  Malachi Fields (NYG) · 117,880 adds · RWR2 · Healthy, starting
-- WR  Denzel Boston (CLE) · 103,684 adds · LWR2 · Healthy, starting
-- QB  Marcus Mariota (WAS) · 95,396 adds · QB2 · Not the starter (QB2)
-- WR  Malik Washington (MIA) · 94,192 adds · SWR2 · Healthy, starting
-- RB  Jonah Coleman (DEN) · 86,198 adds · RB2 · RB2 on the depth chart
-- WR  Dontayvion Wicks (PHI) · 81,789 adds · RWR2 · Healthy, starting
-- WR  Rashod Bateman (BAL) · 76,561 adds · LWR1 · Healthy, starting
-- TE  Terrance Ferguson (LAR) · 65,096 adds · TE2 · Healthy, starting
-- RB  DeeJay Dallas (MIN) · 60,399 adds · RB3 · RB3 on the depth chart
+- WR  Xavier Hutchinson (HOU) · 606,067 adds · LWR5 · WR5 on the depth chart
+- WR  Roman Wilson (PIT) · 381,321 adds · SWR4 · WR4 on the depth chart
+- WR  Keon Coleman (BUF) · 317,457 adds · LWR3 · WR3 on the depth chart
+- RB  Tank Bigsby (PHI) · 293,202 adds · RB2 · RB2 on the depth chart
+- TE  Darren Waller (CAR) · 284,085 adds · TE1 · Healthy, starting
+- WR  Tre Tucker (LV) · 283,740 adds · LWR1 · Healthy, starting
+- RB  Alvin Kamara (NO) · 229,072 adds · RB2 · RB2 on the depth chart
+- RB  Emanuel Wilson (SEA) · 211,248 adds · RB3 · RB3 on the depth chart
+- QB  Tyson Bagent (CHI) · 194,526 adds · QB2 · Not the starter (QB2)
+- WR  Adonai Mitchell (NYJ) · 185,504 adds · RWR2 · Healthy, starting
+- WR  Konata Mumpfield (LAR) · 178,668 adds · LWR3 · WR3 on the depth chart
+- WR  Denzel Boston (CLE) · 125,370 adds · LWR3 · WR3 on the depth chart
+- WR  Malachi Fields (NYG) · 124,670 adds · RWR2 · Healthy, starting
+- QB  Marcus Mariota (WAS) · 109,816 adds · QB2 · Not the starter (QB2)
+- RB  Jonah Coleman (DEN) · 105,726 adds · RB3 · RB3 on the depth chart
+- WR  Malik Washington (MIA) · 93,624 adds · SWR1 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 89,730 adds · RWR3 · WR3 on the depth chart
+- WR  Rashod Bateman (BAL) · 78,898 adds · LWR2 · Healthy, starting
+- TE  Terrance Ferguson (LAR) · 67,952 adds · TE2 · Healthy, starting
+- WR  Tyquan Thornton (KC) · 60,613 adds · LWR3 · WR3 on the depth chart
 
 ## League transactions, week 2
 - MasonMafia: free_agent complete +['Demarcus Robinson'] -[]
@@ -74,7 +74,7 @@ Record 1-0 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - WR  DeVonta Smith (PHI) GREEN
 - WR  DJ Moore (BUF) RED
 - TE  Trey McBride (ARI) GREEN
-- RB  Rhamondre Stevenson (NE) GREEN
+- RB  Rhamondre Stevenson (NE) AMBER
 - TE  Isaiah Likely (NYG) GREEN
 - QB  Bo Nix (DEN) GREEN
 - K   Eddy Pineiro (SF) GREEN
