@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 3 · Tue Sep 22, 2026 1:49 AM PT
+# Sleeper sweep — Week 3 · Tue Sep 22, 2026 7:09 AM PT
 
 Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 
@@ -9,7 +9,7 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - AMBER RB  Aaron Jones (MIN, START) — Questionable · Knee · news Sep 21
 - GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 21
 - GREEN RB  Jaylen Warren (PIT, START) — Healthy, starting · news Sep 20
-- AMBER RB  MarShawn Lloyd (GB, BN) — RB2 on the depth chart · news Sep 21
+- GREEN RB  MarShawn Lloyd (GB, BN) — Healthy, starting · news Sep 21
 - GREEN RB  Quinshon Judkins (CLE, BN) — Healthy, starting · news Sep 21
 - RED   WR  A.J. Brown (NE, IR) — IR · Ankle · Sprain · news Sep 13
 - GREEN WR  Jaylen Waddle (DEN, START) — Healthy, starting · news Sep 21
@@ -25,26 +25,26 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - Fernando Mendoza (LV) — Healthy, starting
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- RB  Emanuel Wilson (SEA) · 1,165,518 adds · RB3 · RB3 on the depth chart
-- WR  Tre Tucker (LV) · 748,320 adds · LWR1 · Healthy, starting
-- WR  Adonai Mitchell (NYJ) · 591,720 adds · RWR2 · Healthy, starting
-- TE  Darren Waller (CAR) · 553,149 adds · TE1 · Healthy, starting
-- RB  Tank Bigsby (PHI) · 502,691 adds · RB2 · RB2 on the depth chart
-- WR  Konata Mumpfield (LAR) · 420,660 adds · LWR2 · Healthy, starting
-- WR  Keon Coleman (BUF) · 386,892 adds · LWR3 · WR3 on the depth chart
-- WR  Malachi Fields (NYG) · 357,730 adds · RWR2 · Healthy, starting
-- TE  Zach Ertz (PHI) · 340,128 adds ·  · Healthy, starting
-- WR  Denzel Boston (CLE) · 315,106 adds · LWR3 · WR3 on the depth chart
-- WR  Xavier Hutchinson (HOU) · 309,715 adds · LWR5 · WR5 on the depth chart
-- QB  Tyson Bagent (CHI) · 300,978 adds · QB2 · Not the starter (QB2)
-- RB  Jonah Coleman (DEN) · 295,040 adds · RB3 · RB3 on the depth chart
-- WR  Roman Wilson (PIT) · 248,013 adds · SWR4 · WR4 on the depth chart
-- QB  Marcus Mariota (WAS) · 227,336 adds · QB2 · Not the starter (QB2)
-- RB  Alvin Kamara (NO) · 214,096 adds · RB2 · RB2 on the depth chart
-- WR  Darnell Mooney (NYG) · 195,912 adds · SWR3 · WR3 on the depth chart
-- TE  Terrance Ferguson (LAR) · 194,464 adds · TE2 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 168,891 adds · RWR3 · WR3 on the depth chart
-- WR  Tutu Atwell (LAR) · 116,718 adds · RWR4 · WR4 on the depth chart
+- RB  Emanuel Wilson (SEA) · 1,734,939 adds · RB2 · RB2 on the depth chart
+- WR  Tre Tucker (LV) · 967,176 adds · LWR1 · Healthy, starting
+- WR  Adonai Mitchell (NYJ) · 920,648 adds · RWR2 · Healthy, starting
+- TE  Darren Waller (CAR) · 681,399 adds · TE1 · Healthy, starting
+- RB  Tank Bigsby (PHI) · 595,448 adds · RB2 · RB2 on the depth chart
+- WR  Keon Coleman (BUF) · 482,175 adds · LWR3 · WR3 on the depth chart
+- TE  Zach Ertz (PHI) · 457,911 adds ·  · Healthy, starting
+- WR  Konata Mumpfield (LAR) · 412,389 adds · LWR3 · WR3 on the depth chart
+- WR  Denzel Boston (CLE) · 407,634 adds · LWR3 · WR3 on the depth chart
+- RB  Jonah Coleman (DEN) · 388,078 adds · RB3 · RB3 on the depth chart
+- QB  Tyson Bagent (CHI) · 367,602 adds · QB2 · Not the starter (QB2)
+- WR  Malachi Fields (NYG) · 352,965 adds · RWR2 · Healthy, starting
+- QB  Marcus Mariota (WAS) · 302,652 adds · QB2 · Not the starter (QB2)
+- WR  Xavier Hutchinson (HOU) · 256,970 adds · LWR4 · WR4 on the depth chart
+- TE  Terrance Ferguson (LAR) · 245,456 adds · TE1 · Healthy, starting
+- RB  Alvin Kamara (NO) · 236,760 adds · RB2 · RB2 on the depth chart
+- WR  Dontayvion Wicks (PHI) · 235,413 adds · RWR3 · WR3 on the depth chart
+- WR  Roman Wilson (PIT) · 209,844 adds · SWR4 · WR4 on the depth chart
+- WR  Darnell Mooney (NYG) · 196,335 adds · SWR3 · WR3 on the depth chart
+- WR  Tyquan Thornton (KC) · 147,469 adds · LWR3 · WR3 on the depth chart
 
 ## League transactions, week 3
 - none yet
@@ -290,12 +290,12 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - TE: Jake Ferguson TE DAL
 - FLEX: Rico Dowdle RB PIT (Out)
 - FLEX: Colston Loveland TE CHI
-- SUPER_FLEX: Malik Willis QB MIA
+- SUPER_FLEX: Drew Lock QB SEA
 - K: Jason Myers K SEA
 - DEF: Pittsburgh Steelers DEF PIT
 - BN: Chris Brooks RB GB
 - BN: Caleb Douglas WR MIA (Questionable)
-- BN: Drew Lock QB SEA
+- BN: Malik Willis QB MIA
 - BN: Kayshon Boutte WR HOU
 - IR: RJ Harvey RB DEN (Out)
 - IR: Sam Darnold QB SEA (Out)
