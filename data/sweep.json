@@ -1,6 +1,6 @@
 {
- "generated": "Tue Sep 22, 2026 1:10 PM PT",
- "generated_ms": 1790107829204,
+ "generated": "Tue Sep 22, 2026 3:25 PM PT",
+ "generated_ms": 1790115911093,
  "season": "2026",
  "week": 3,
  "faab_total": 150,
@@ -349,7 +349,7 @@
    "depth": "RB2",
    "news": "Sep 22",
    "news_ms": 1790038855149,
-   "adds": 2617893
+   "adds": 2930445
   },
   {
    "id": "11625",
@@ -362,7 +362,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790085658581,
-   "adds": 1583456
+   "adds": 1829680
   },
   {
    "id": "10213",
@@ -375,7 +375,7 @@
    "depth": "LWR1",
    "news": "Sep 21",
    "news_ms": 1790012725186,
-   "adds": 1263696
+   "adds": 1332786
   },
   {
    "id": "2505",
@@ -388,7 +388,7 @@
    "depth": "TE1",
    "news": "Sep 22",
    "news_ms": 1790090458893,
-   "adds": 838080
+   "adds": 860985
   },
   {
    "id": "1339",
@@ -401,7 +401,7 @@
    "depth": "TE4",
    "news": "Sep 22",
    "news_ms": 1790097961295,
-   "adds": 677160
+   "adds": 775629
   },
   {
    "id": "11637",
@@ -414,7 +414,7 @@
    "depth": "LWR3",
    "news": "Sep 22",
    "news_ms": 1790087458640,
-   "adds": 642645
+   "adds": 699804
   },
   {
    "id": "9225",
@@ -427,7 +427,7 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790004604231,
-   "adds": 627515
+   "adds": 656705
   },
   {
    "id": "13346",
@@ -440,7 +440,7 @@
    "depth": "LWR1",
    "news": "Sep 21",
    "news_ms": 1790004004180,
-   "adds": 559780
+   "adds": 604778
   },
   {
    "id": "13345",
@@ -453,20 +453,7 @@
    "depth": "RB3",
    "news": "Sep 22",
    "news_ms": 1790103960498,
-   "adds": 531074
-  },
-  {
-   "id": "11256",
-   "name": "Tyson Bagent",
-   "pos": "QB",
-   "team": "CHI",
-   "flag": "red",
-   "why": "Not the starter (QB2) \u00b7 Questionable \u00b7 Concussion",
-   "injury": "Questionable",
-   "depth": "QB2",
-   "news": "Sep 22",
-   "news_ms": 1790102160016,
-   "adds": 466182
+   "adds": 581548
   },
   {
    "id": "2307",
@@ -479,20 +466,20 @@
    "depth": "QB1",
    "news": "Sep 22",
    "news_ms": 1790101860059,
-   "adds": 431824
+   "adds": 482600
   },
   {
-   "id": "12718",
-   "name": "Konata Mumpfield",
-   "pos": "WR",
-   "team": "LAR",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "LWR2",
-   "news": "Sep 21",
-   "news_ms": 1790032553475,
-   "adds": 345375
+   "id": "11256",
+   "name": "Tyson Bagent",
+   "pos": "QB",
+   "team": "CHI",
+   "flag": "red",
+   "why": "Not the starter (QB2) \u00b7 Questionable \u00b7 Concussion",
+   "injury": "Questionable",
+   "depth": "QB2",
+   "news": "Sep 22",
+   "news_ms": 1790102160016,
+   "adds": 406014
   },
   {
    "id": "12487",
@@ -505,7 +492,7 @@
    "depth": "TE2",
    "news": "Sep 22",
    "news_ms": 1790086558453,
-   "adds": 327608
+   "adds": 374504
   },
   {
    "id": "9486",
@@ -518,7 +505,20 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790084758236,
-   "adds": 326664
+   "adds": 356742
+  },
+  {
+   "id": "12718",
+   "name": "Konata Mumpfield",
+   "pos": "WR",
+   "team": "LAR",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "LWR2",
+   "news": "Sep 21",
+   "news_ms": 1790032553475,
+   "adds": 337536
   },
   {
    "id": "13285",
@@ -531,7 +531,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790085658580,
-   "adds": 313385
+   "adds": 307940
   },
   {
    "id": "4035",
@@ -544,7 +544,7 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790020826589,
-   "adds": 210048
+   "adds": 226808
   },
   {
    "id": "8188",
@@ -557,7 +557,7 @@
    "depth": "LWR3",
    "news": "Sep 22",
    "news_ms": 1790051155762,
-   "adds": 206598
+   "adds": 226100
   },
   {
    "id": "7090",
@@ -570,7 +570,7 @@
    "depth": "SWR3",
    "news": "Sep 22",
    "news_ms": 1790080259675,
-   "adds": 184401
+   "adds": 183645
   },
   {
    "id": "7571",
@@ -583,7 +583,7 @@
    "depth": "LWR2",
    "news": "Sep 21",
    "news_ms": 1790019025933,
-   "adds": 139929
+   "adds": 149826
   },
   {
    "id": "7562",
@@ -596,7 +596,7 @@
    "depth": "RWR3",
    "news": "Sep 22",
    "news_ms": 1790078759384,
-   "adds": 101857
+   "adds": 100380
   }
  ],
  "transactions": [],
@@ -698,8 +698,8 @@
     "why": "Healthy, starting",
     "injury": null,
     "depth": "TE1",
-    "news": "Sep 21",
-    "news_ms": 1790031653237
+    "news": "Sep 22",
+    "news_ms": 1790110801033
    },
    {
     "id": "5849",
@@ -1295,7 +1295,7 @@
     "WR: George Pickens WR DAL",
     "WR: Jameson Williams WR DET",
     "TE: Jake Ferguson TE DAL",
-    "FLEX: Rico Dowdle RB PIT (Out)",
+    "FLEX: Rico Dowdle RB PIT (Questionable)",
     "FLEX: Colston Loveland TE CHI",
     "SUPER_FLEX: Drew Lock QB SEA",
     "K: Jason Myers K SEA",
