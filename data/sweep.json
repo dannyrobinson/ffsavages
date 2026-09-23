@@ -1,6 +1,6 @@
 {
- "generated": "Wed Sep 23, 2026 7:08 AM PT",
- "generated_ms": 1790172499713,
+ "generated": "Wed Sep 23, 2026 1:09 PM PT",
+ "generated_ms": 1790194149846,
  "season": "2026",
  "week": 3,
  "faab_total": 150,
@@ -93,8 +93,8 @@
    "why": "Doubtful \u00b7 Hamstring \u00b7 Strain",
    "injury": "Doubtful",
    "depth": "QB3",
-   "news": "Sep 22",
-   "news_ms": 1790100660066,
+   "news": "Sep 23",
+   "news_ms": 1790186116073,
    "slot": "IR",
    "stories": []
   },
@@ -121,8 +121,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 21",
-   "news_ms": 1789966561501,
+   "news": "Sep 23",
+   "news_ms": 1790183717357,
    "slot": "START",
    "stories": []
   },
@@ -131,12 +131,12 @@
    "name": "Aaron Jones",
    "pos": "RB",
    "team": "MIN",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
+   "flag": "amber",
+   "why": "Questionable \u00b7 Undisclosed",
+   "injury": "Questionable",
    "depth": "RB1",
-   "news": "Sep 21",
-   "news_ms": 1790024126190,
+   "news": "Sep 23",
+   "news_ms": 1790190317736,
    "slot": "START",
    "stories": []
   },
@@ -159,12 +159,12 @@
    "name": "Jaylen Warren",
    "pos": "RB",
    "team": "PIT",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
+   "flag": "amber",
+   "why": "Questionable \u00b7 Undisclosed",
+   "injury": "Questionable",
    "depth": "RB1",
-   "news": "Sep 20",
-   "news_ms": 1789948559665,
+   "news": "Sep 23",
+   "news_ms": 1790183116296,
    "slot": "START",
    "stories": []
   },
@@ -345,8 +345,8 @@
    "why": "Questionable \u00b7 Concussion",
    "injury": "Questionable",
    "depth": "QB1",
-   "news": "Sep 22",
-   "news_ms": 1790102160016
+   "news": "Sep 23",
+   "news_ms": 1790185816331
   }
  ],
  "trending": [
@@ -361,7 +361,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790085658581,
-   "adds": 3369312
+   "adds": 3569080
   },
   {
    "id": "10213",
@@ -374,7 +374,7 @@
    "depth": "LWR1",
    "news": "Sep 21",
    "news_ms": 1790012725186,
-   "adds": 1698672
+   "adds": 1723764
   },
   {
    "id": "1339",
@@ -387,7 +387,7 @@
    "depth": "TE2",
    "news": "Sep 22",
    "news_ms": 1790097961295,
-   "adds": 1367487
+   "adds": 1512279
   },
   {
    "id": "9225",
@@ -400,20 +400,7 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790004604231,
-   "adds": 881769
-  },
-  {
-   "id": "13345",
-   "name": "Jonah Coleman",
-   "pos": "RB",
-   "team": "DEN",
-   "flag": "amber",
-   "why": "RB3 on the depth chart",
-   "injury": null,
-   "depth": "RB3",
-   "news": "Sep 22",
-   "news_ms": 1790103960498,
-   "adds": 766788
+   "adds": 903434
   },
   {
    "id": "12487",
@@ -426,20 +413,20 @@
    "depth": "TE1",
    "news": "Sep 22",
    "news_ms": 1790086558453,
-   "adds": 686208
+   "adds": 761200
   },
   {
-   "id": "9486",
-   "name": "Dontayvion Wicks",
-   "pos": "WR",
-   "team": "PHI",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 22",
-   "news_ms": 1790084758236,
-   "adds": 551181
+   "id": "13345",
+   "name": "Jonah Coleman",
+   "pos": "RB",
+   "team": "DEN",
+   "flag": "amber",
+   "why": "Questionable \u00b7 Ankle",
+   "injury": "Questionable",
+   "depth": "RB3",
+   "news": "Sep 23",
+   "news_ms": 1790190316358,
+   "adds": 732708
   },
   {
    "id": "11256",
@@ -450,9 +437,9 @@
    "why": "Questionable \u00b7 Concussion",
    "injury": "Questionable",
    "depth": "QB1",
-   "news": "Sep 22",
-   "news_ms": 1790102160016,
-   "adds": 477456
+   "news": "Sep 23",
+   "news_ms": 1790185816331,
+   "adds": 475344
   },
   {
    "id": "4035",
@@ -465,7 +452,7 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790020826589,
-   "adds": 385008
+   "adds": 441160
   },
   {
    "id": "8188",
@@ -478,7 +465,7 @@
    "depth": "LWR3",
    "news": "Sep 22",
    "news_ms": 1790051155762,
-   "adds": 355775
+   "adds": 402738
   },
   {
    "id": "12718",
@@ -486,12 +473,12 @@
    "pos": "WR",
    "team": "LAR",
    "flag": "amber",
-   "why": "WR4 on the depth chart",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "LWR4",
+   "depth": "LWR3",
    "news": "Sep 23",
-   "news_ms": 1790121615739,
-   "adds": 295299
+   "news_ms": 1790191216613,
+   "adds": 280359
   },
   {
    "id": "13285",
@@ -504,7 +491,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790085658580,
-   "adds": 273530
+   "adds": 261155
   },
   {
    "id": "11608",
@@ -517,7 +504,7 @@
    "depth": "SWR3",
    "news": "Sep 21",
    "news_ms": 1790033453507,
-   "adds": 204096
+   "adds": 229704
   },
   {
    "id": "11610",
@@ -530,20 +517,20 @@
    "depth": "SWR1",
    "news": "Sep 22",
    "news_ms": 1790090758935,
-   "adds": 177920
+   "adds": 220728
   },
   {
-   "id": "7090",
-   "name": "Darnell Mooney",
-   "pos": "WR",
-   "team": "NYG",
+   "id": "6828",
+   "name": "AJ Dillon",
+   "pos": "RB",
+   "team": "CAR",
    "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "why": "RB2 on the depth chart",
    "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 22",
-   "news_ms": 1790119811492,
-   "adds": 168858
+   "depth": "RB2",
+   "news": "Sep 23",
+   "news_ms": 1790184617040,
+   "adds": 186112
   },
   {
    "id": "2306",
@@ -556,7 +543,7 @@
    "depth": "QB1",
    "news": "Sep 22",
    "news_ms": 1790104260796,
-   "adds": 164210
+   "adds": 180492
   },
   {
    "id": "6149",
@@ -569,20 +556,20 @@
    "depth": "RWR5",
    "news": "Sep 22",
    "news_ms": 1790040953716,
-   "adds": 139128
+   "adds": 162744
   },
   {
-   "id": "6828",
-   "name": "AJ Dillon",
-   "pos": "RB",
-   "team": "CAR",
+   "id": "7090",
+   "name": "Darnell Mooney",
+   "pos": "WR",
+   "team": "NYG",
    "flag": "amber",
-   "why": "RB2 on the depth chart",
+   "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "RB2",
-   "news": "Sep 23",
-   "news_ms": 1790128510600,
-   "adds": 103136
+   "depth": "SWR3",
+   "news": "Sep 22",
+   "news_ms": 1790119811492,
+   "adds": 162252
   },
   {
    "id": "11630",
@@ -595,23 +582,51 @@
    "depth": "SWR3",
    "news": "Sep 21",
    "news_ms": 1790031053095,
-   "adds": 99954
+   "adds": 103473
   },
   {
-   "id": "7562",
-   "name": "Tutu Atwell",
-   "pos": "WR",
-   "team": "LAR",
-   "flag": "amber",
-   "why": "WR5 on the depth chart",
+   "id": "MIN",
+   "name": "Minnesota Vikings",
+   "pos": "DEF",
+   "team": "MIN",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "RWR5",
-   "news": "Sep 23",
-   "news_ms": 1790122510138,
-   "adds": 89866
+   "depth": null,
+   "news": null,
+   "news_ms": null,
+   "adds": 930320
+  },
+  {
+   "id": "NYG",
+   "name": "New York Giants",
+   "pos": "DEF",
+   "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": null,
+   "news": null,
+   "news_ms": null,
+   "adds": 317828
   }
  ],
  "transactions": [
+  {
+   "type": "free_agent",
+   "status": "complete",
+   "team": "HappyChappy18",
+   "adds": [
+    "Dontayvion Wicks"
+   ],
+   "drops": [
+    "Jonathon Brooks"
+   ],
+   "bid": null,
+   "note": null,
+   "faab_moved": [],
+   "ts": 1790172960617
+  },
   {
    "type": "free_agent",
    "status": "complete",
@@ -913,8 +928,8 @@
    "counts": {
     "TE": 2,
     "QB": 3,
-    "RB": 4,
-    "WR": 7,
+    "RB": 3,
+    "WR": 8,
     "K": 1,
     "DEF": 1
    },
@@ -932,15 +947,15 @@
     "DEF: Los Angeles Rams DEF LAR"
    ],
    "bench": [
-    "Jonathon Brooks RB CAR (IR)",
     "Denzel Boston WR CLE",
     "Michael Pittman WR PIT (Questionable)",
     "Nico Collins WR HOU (Questionable)",
+    "Dontayvion Wicks WR PHI",
     "Aaron Rodgers QB PIT"
    ],
    "ir": [
     "Ja'Kobi Lane WR BAL (IR)",
-    "Alec Pierce WR IND (Doubtful)"
+    "Alec Pierce WR IND (Out)"
    ]
   },
   {
@@ -967,7 +982,7 @@
     "WR: Terry McLaurin WR WAS",
     "TE: Tucker Kraft TE GB",
     "FLEX: Bhayshul Tuten RB JAX",
-    "FLEX: Jalen Coker WR CAR",
+    "FLEX: Jalen Coker WR CAR (Questionable)",
     "SUPER_FLEX: Matthew Stafford QB LAR",
     "K: Harrison Mevis K LAR",
     "DEF: Houston Texans DEF HOU"
@@ -1002,7 +1017,7 @@
    "starters": [
     "QB: Jalen Hurts QB PHI",
     "RB: TreVeyon Henderson RB NE",
-    "RB: Tony Pollard RB TEN",
+    "RB: Tony Pollard RB TEN (Questionable)",
     "WR: Marvin Harrison WR ARI",
     "WR: Courtland Sutton WR DEN",
     "TE: Hunter Henry TE NE",
@@ -1102,7 +1117,7 @@
     "Michael Mayer TE LV"
    ],
    "ir": [
-    "Jayden Daniels QB WAS (Doubtful)"
+    "Jayden Daniels QB WAS (Out)"
    ]
   },
   {
@@ -1124,12 +1139,12 @@
    "starters": [
     "QB: Joe Burrow QB CIN",
     "RB: Chase Brown RB CIN",
-    "RB: Jaylen Warren RB PIT",
+    "RB: Jaylen Warren RB PIT (Questionable)",
     "WR: Malik Nabers WR NYG (Questionable)",
     "WR: Jaylen Waddle WR DEN",
     "TE: Juwan Johnson TE NO",
     "FLEX: Khalil Shakir WR BUF",
-    "FLEX: Aaron Jones RB MIN",
+    "FLEX: Aaron Jones RB MIN (Questionable)",
     "SUPER_FLEX: Geno Smith QB NYJ",
     "K: Ka'imi Fairbairn K HOU",
     "DEF: Jacksonville Jaguars DEF JAX"
@@ -1218,11 +1233,11 @@
     "Rome Odunze WR CHI",
     "Tyler Allgeier RB ARI",
     "Greg Dulcich TE MIA",
-    "Tyjae Spears RB TEN",
+    "Tyjae Spears RB TEN (Questionable)",
     "Jordan Addison WR MIN"
    ],
    "ir": [
-    "Jaxson Dart QB NYG (Doubtful)"
+    "Jaxson Dart QB NYG (Out)"
    ]
   },
   {
@@ -1280,7 +1295,7 @@
     "DEF": 2
    },
    "starters": [
-    "QB: Baker Mayfield QB TB",
+    "QB: C.J. Stroud QB HOU",
     "RB: Cam Skattebo RB NYG",
     "RB: Chuba Hubbard RB CAR",
     "WR: Ja'Marr Chase WR CIN",
@@ -1293,10 +1308,10 @@
     "DEF: New England Patriots DEF NE"
    ],
    "bench": [
+    "Baker Mayfield QB TB",
     "Justice Hill RB BAL",
     "Tua Tagovailoa QB ATL",
     "Rachaad White RB WAS",
-    "C.J. Stroud QB HOU",
     "Baltimore Ravens DEF BAL"
    ],
    "ir": []
