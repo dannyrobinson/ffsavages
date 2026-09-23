@@ -1,6 +1,6 @@
 {
- "generated": "Tue Sep 22, 2026 9:10 PM PT",
- "generated_ms": 1790136602471,
+ "generated": "Wed Sep 23, 2026 7:08 AM PT",
+ "generated_ms": 1790172499713,
  "season": "2026",
  "week": 3,
  "faab_total": 150,
@@ -33,55 +33,55 @@
    "position": 4
   },
   {
-   "team": "HappyChappy18",
-   "roster_id": 1,
-   "left": 150,
-   "position": 5
-  },
-  {
    "team": "EasyIP",
    "roster_id": 12,
    "left": 150,
-   "position": 6
+   "position": 5
   },
   {
    "team": "kwiksl",
    "roster_id": 7,
    "left": 129,
-   "position": 7
+   "position": 6
   },
   {
    "team": "MasonMafia",
    "roster_id": 3,
    "left": 130,
-   "position": 8
-  },
-  {
-   "team": "GK",
-   "roster_id": 5,
-   "left": 139,
-   "position": 9
-  },
-  {
-   "team": "jimmyd66",
-   "roster_id": 11,
-   "left": 145,
-   "position": 10
+   "position": 7
   },
   {
    "team": "Robinsavages",
    "roster_id": 6,
    "left": 144,
-   "position": 11
+   "position": 8
+  },
+  {
+   "team": "HappyChappy18",
+   "roster_id": 1,
+   "left": 134,
+   "position": 9
+  },
+  {
+   "team": "GK",
+   "roster_id": 5,
+   "left": 128,
+   "position": 10
   },
   {
    "team": "KUZ1",
    "roster_id": 8,
-   "left": 145,
+   "left": 140,
+   "position": 11
+  },
+  {
+   "team": "jimmyd66",
+   "roster_id": 11,
+   "left": 143,
    "position": 12
   }
  ],
- "waiver_position": 11,
+ "waiver_position": 8,
  "record": "1-1",
  "roster": [
   {
@@ -90,8 +90,8 @@
    "pos": "QB",
    "team": "CHI",
    "flag": "red",
-   "why": "Out \u00b7 Hamstring",
-   "injury": "Out",
+   "why": "Doubtful \u00b7 Hamstring \u00b7 Strain",
+   "injury": "Doubtful",
    "depth": "QB3",
    "news": "Sep 22",
    "news_ms": 1790100660066,
@@ -107,8 +107,8 @@
    "why": "Healthy, starting",
    "injury": null,
    "depth": "QB1",
-   "news": "Sep 21",
-   "news_ms": 1789952159849,
+   "news": "Sep 23",
+   "news_ms": 1790140511135,
    "slot": "START",
    "stories": []
   },
@@ -131,9 +131,9 @@
    "name": "Aaron Jones",
    "pos": "RB",
    "team": "MIN",
-   "flag": "amber",
-   "why": "Questionable \u00b7 Knee",
-   "injury": "Questionable",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
    "depth": "RB1",
    "news": "Sep 21",
    "news_ms": 1790024126190,
@@ -337,18 +337,6 @@
    "news_ms": 1790104260796
   },
   {
-   "id": "2307",
-   "name": "Marcus Mariota",
-   "pos": "QB",
-   "team": "WAS",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "QB1",
-   "news": "Sep 22",
-   "news_ms": 1790101860059
-  },
-  {
    "id": "11256",
    "name": "Tyson Bagent",
    "pos": "QB",
@@ -363,19 +351,6 @@
  ],
  "trending": [
   {
-   "id": "11435",
-   "name": "Emanuel Wilson",
-   "pos": "RB",
-   "team": "SEA",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 22",
-   "news_ms": 1790038855149,
-   "adds": 3901761
-  },
-  {
    "id": "11625",
    "name": "Adonai Mitchell",
    "pos": "WR",
@@ -386,7 +361,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790085658581,
-   "adds": 2668376
+   "adds": 3369312
   },
   {
    "id": "10213",
@@ -399,7 +374,7 @@
    "depth": "LWR1",
    "news": "Sep 21",
    "news_ms": 1790012725186,
-   "adds": 1500444
+   "adds": 1698672
   },
   {
    "id": "1339",
@@ -412,46 +387,7 @@
    "depth": "TE2",
    "news": "Sep 22",
    "news_ms": 1790097961295,
-   "adds": 1091007
-  },
-  {
-   "id": "2505",
-   "name": "Darren Waller",
-   "pos": "TE",
-   "team": "CAR",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "TE1",
-   "news": "Sep 22",
-   "news_ms": 1790090458893,
-   "adds": 961164
-  },
-  {
-   "id": "11637",
-   "name": "Keon Coleman",
-   "pos": "WR",
-   "team": "BUF",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "LWR3",
-   "news": "Sep 22",
-   "news_ms": 1790087458640,
-   "adds": 882036
-  },
-  {
-   "id": "13346",
-   "name": "Denzel Boston",
-   "pos": "WR",
-   "team": "CLE",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "LWR1",
-   "news": "Sep 21",
-   "news_ms": 1790004004180,
-   "adds": 752762
+   "adds": 1367487
   },
   {
    "id": "9225",
@@ -464,7 +400,7 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790004604231,
-   "adds": 746403
+   "adds": 881769
   },
   {
    "id": "13345",
@@ -477,20 +413,7 @@
    "depth": "RB3",
    "news": "Sep 22",
    "news_ms": 1790103960498,
-   "adds": 701282
-  },
-  {
-   "id": "2307",
-   "name": "Marcus Mariota",
-   "pos": "QB",
-   "team": "WAS",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "QB1",
-   "news": "Sep 22",
-   "news_ms": 1790101860059,
-   "adds": 580632
+   "adds": 766788
   },
   {
    "id": "12487",
@@ -503,7 +426,7 @@
    "depth": "TE1",
    "news": "Sep 22",
    "news_ms": 1790086558453,
-   "adds": 528800
+   "adds": 686208
   },
   {
    "id": "9486",
@@ -516,7 +439,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790084758236,
-   "adds": 456171
+   "adds": 551181
   },
   {
    "id": "11256",
@@ -529,33 +452,7 @@
    "depth": "QB1",
    "news": "Sep 22",
    "news_ms": 1790102160016,
-   "adds": 433776
-  },
-  {
-   "id": "12718",
-   "name": "Konata Mumpfield",
-   "pos": "WR",
-   "team": "LAR",
-   "flag": "amber",
-   "why": "WR4 on the depth chart",
-   "injury": null,
-   "depth": "LWR4",
-   "news": "Sep 23",
-   "news_ms": 1790121615739,
-   "adds": 308835
-  },
-  {
-   "id": "8188",
-   "name": "Tyquan Thornton",
-   "pos": "WR",
-   "team": "KC",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "LWR3",
-   "news": "Sep 22",
-   "news_ms": 1790051155762,
-   "adds": 287021
+   "adds": 477456
   },
   {
    "id": "4035",
@@ -568,7 +465,33 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790020826589,
-   "adds": 286912
+   "adds": 385008
+  },
+  {
+   "id": "8188",
+   "name": "Tyquan Thornton",
+   "pos": "WR",
+   "team": "KC",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "LWR3",
+   "news": "Sep 22",
+   "news_ms": 1790051155762,
+   "adds": 355775
+  },
+  {
+   "id": "12718",
+   "name": "Konata Mumpfield",
+   "pos": "WR",
+   "team": "LAR",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
+   "injury": null,
+   "depth": "LWR4",
+   "news": "Sep 23",
+   "news_ms": 1790121615739,
+   "adds": 295299
   },
   {
    "id": "13285",
@@ -581,33 +504,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790085658580,
-   "adds": 282330
-  },
-  {
-   "id": "7571",
-   "name": "Rashod Bateman",
-   "pos": "WR",
-   "team": "BAL",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "LWR2",
-   "news": "Sep 21",
-   "news_ms": 1790019025933,
-   "adds": 179926
-  },
-  {
-   "id": "7090",
-   "name": "Darnell Mooney",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
-   "injury": null,
-   "depth": "SWR3",
-   "news": "Sep 22",
-   "news_ms": 1790119811492,
-   "adds": 173349
+   "adds": 273530
   },
   {
    "id": "11608",
@@ -620,10 +517,115 @@
    "depth": "SWR3",
    "news": "Sep 21",
    "news_ms": 1790033453507,
-   "adds": 153384
+   "adds": 204096
+  },
+  {
+   "id": "11610",
+   "name": "Malik Washington",
+   "pos": "WR",
+   "team": "MIA",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "SWR1",
+   "news": "Sep 22",
+   "news_ms": 1790090758935,
+   "adds": 177920
+  },
+  {
+   "id": "7090",
+   "name": "Darnell Mooney",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 22",
+   "news_ms": 1790119811492,
+   "adds": 168858
+  },
+  {
+   "id": "2306",
+   "name": "Jameis Winston",
+   "pos": "QB",
+   "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "QB1",
+   "news": "Sep 22",
+   "news_ms": 1790104260796,
+   "adds": 164210
+  },
+  {
+   "id": "6149",
+   "name": "Darius Slayton",
+   "pos": "WR",
+   "team": "IND",
+   "flag": "amber",
+   "why": "WR5 on the depth chart",
+   "injury": null,
+   "depth": "RWR5",
+   "news": "Sep 22",
+   "news_ms": 1790040953716,
+   "adds": 139128
+  },
+  {
+   "id": "6828",
+   "name": "AJ Dillon",
+   "pos": "RB",
+   "team": "CAR",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 23",
+   "news_ms": 1790128510600,
+   "adds": 103136
+  },
+  {
+   "id": "11630",
+   "name": "Roman Wilson",
+   "pos": "WR",
+   "team": "PIT",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 21",
+   "news_ms": 1790031053095,
+   "adds": 99954
+  },
+  {
+   "id": "7562",
+   "name": "Tutu Atwell",
+   "pos": "WR",
+   "team": "LAR",
+   "flag": "amber",
+   "why": "WR5 on the depth chart",
+   "injury": null,
+   "depth": "RWR5",
+   "news": "Sep 23",
+   "news_ms": 1790122510138,
+   "adds": 89866
   }
  ],
- "transactions": [],
+ "transactions": [
+  {
+   "type": "free_agent",
+   "status": "complete",
+   "team": "kwiksl",
+   "adds": [
+    "Rashod Bateman"
+   ],
+   "drops": [],
+   "bid": null,
+   "note": null,
+   "faab_moved": [],
+   "ts": 1790153086172
+  }
+ ],
  "opponent": {
   "team": "KUZ1",
   "roster_id": 8,
@@ -654,16 +656,16 @@
     "news_ms": 1789952159818
    },
    {
-    "id": "8132",
-    "name": "Tyler Allgeier",
+    "id": "11435",
+    "name": "Emanuel Wilson",
     "pos": "RB",
-    "team": "ARI",
+    "team": "SEA",
     "flag": "amber",
     "why": "RB2 on the depth chart",
     "injury": null,
     "depth": "RB2",
-    "news": "Sep 21",
-    "news_ms": 1790013325463
+    "news": "Sep 22",
+    "news_ms": 1790038855149
    },
    {
     "id": "8146",
@@ -730,9 +732,9 @@
     "name": "Kyler Murray",
     "pos": "QB",
     "team": "MIN",
-    "flag": "red",
-    "why": "Out \u00b7 Concussion",
-    "injury": "Out",
+    "flag": "green",
+    "why": "Healthy, starting",
+    "injury": null,
     "depth": "QB1",
     "news": "Sep 21",
     "news_ms": 1790015727009
@@ -819,17 +821,6 @@
    "record": "1-1"
   },
   {
-   "team": "GK",
-   "roster_id": 5,
-   "qbs": [
-    "Jayden Daniels",
-    "Dak Prescott",
-    "Daniel Jones"
-   ],
-   "n": 3,
-   "record": "0-2"
-  },
-  {
    "team": "Robinsavages",
    "roster_id": 6,
    "qbs": [
@@ -886,6 +877,18 @@
    "record": "2-0"
   },
   {
+   "team": "GK",
+   "roster_id": 5,
+   "qbs": [
+    "Jayden Daniels",
+    "Marcus Mariota",
+    "Dak Prescott",
+    "Daniel Jones"
+   ],
+   "n": 4,
+   "record": "0-2"
+  },
+  {
    "team": "jimmyd66",
    "roster_id": 11,
    "qbs": [
@@ -906,7 +909,7 @@
    "record": "1-1",
    "pts_for": 373.2,
    "pts_week": 0.0,
-   "faab_left": 150,
+   "faab_left": 134,
    "counts": {
     "TE": 2,
     "QB": 3,
@@ -929,15 +932,15 @@
     "DEF: Los Angeles Rams DEF LAR"
    ],
    "bench": [
-    "Jonathon Brooks RB CAR (Questionable)",
-    "De'Zhaun Stribling WR SF (IR)",
-    "Michael Pittman WR PIT (Out)",
-    "Nico Collins WR HOU (Out)",
+    "Jonathon Brooks RB CAR (IR)",
+    "Denzel Boston WR CLE",
+    "Michael Pittman WR PIT (Questionable)",
+    "Nico Collins WR HOU (Questionable)",
     "Aaron Rodgers QB PIT"
    ],
    "ir": [
     "Ja'Kobi Lane WR BAL (IR)",
-    "Alec Pierce WR IND (Out)"
+    "Alec Pierce WR IND (Doubtful)"
    ]
   },
   {
@@ -1010,15 +1013,15 @@
     "DEF: Tampa Bay Buccaneers DEF TB"
    ],
    "bench": [
-    "Brock Bowers TE LV (Out)",
-    "Demarcus Robinson WR SF (Out)",
+    "Brock Bowers TE LV (Questionable)",
+    "Demarcus Robinson WR SF (Doubtful)",
     "Samaje Perine RB CIN",
     "Devin Singletary RB NYG",
     "Denver Broncos DEF DEN"
    ],
    "ir": [
     "Zach Charbonnet RB SEA (PUP)",
-    "Zay Flowers WR BAL (Out)"
+    "Zay Flowers WR BAL (Questionable)"
    ]
   },
   {
@@ -1041,7 +1044,7 @@
     "QB: Bryce Young QB CAR",
     "RB: Ashton Jeanty RB LV",
     "RB: Kenneth Walker RB KC",
-    "WR: Puka Nacua WR LAR (Out)",
+    "WR: Puka Nacua WR LAR (Questionable)",
     "WR: Amon-Ra St. Brown WR DET",
     "TE: Tyler Warren TE IND",
     "FLEX: Javonte Williams RB DAL",
@@ -1058,7 +1061,7 @@
     "Mike Evans WR SF (Questionable)"
    ],
    "ir": [
-    "Michael Penix QB ATL (Out)",
+    "Michael Penix QB ATL",
     "Jordan Mason RB MIN (IR)"
    ]
   },
@@ -1069,9 +1072,9 @@
    "record": "0-2",
    "pts_for": 347.56,
    "pts_week": 0.0,
-   "faab_left": 139,
+   "faab_left": 128,
    "counts": {
-    "QB": 3,
+    "QB": 4,
     "RB": 5,
     "K": 1,
     "WR": 4,
@@ -1094,11 +1097,12 @@
    "bench": [
     "Blake Corum RB LAR",
     "Kaelon Black RB SF",
+    "Marcus Mariota QB WAS",
     "J.K. Dobbins RB DEN (Questionable)",
     "Michael Mayer TE LV"
    ],
    "ir": [
-    "Jayden Daniels QB WAS (Out)"
+    "Jayden Daniels QB WAS (Doubtful)"
    ]
   },
   {
@@ -1125,7 +1129,7 @@
     "WR: Jaylen Waddle WR DEN",
     "TE: Juwan Johnson TE NO",
     "FLEX: Khalil Shakir WR BUF",
-    "FLEX: Aaron Jones RB MIN (Questionable)",
+    "FLEX: Aaron Jones RB MIN",
     "SUPER_FLEX: Geno Smith QB NYJ",
     "K: Ka'imi Fairbairn K HOU",
     "DEF: Jacksonville Jaguars DEF JAX"
@@ -1137,7 +1141,7 @@
     "Quentin Johnston WR LAC"
    ],
    "ir": [
-    "Caleb Williams QB CHI (Out)",
+    "Caleb Williams QB CHI (Doubtful)",
     "A.J. Brown WR NE (IR)"
    ]
   },
@@ -1150,7 +1154,7 @@
    "pts_week": 0.0,
    "faab_left": 129,
    "counts": {
-    "WR": 5,
+    "WR": 6,
     "QB": 3,
     "RB": 4,
     "K": 1,
@@ -1162,7 +1166,7 @@
     "RB: Jahmyr Gibbs RB DET",
     "RB: Derrick Henry RB BAL",
     "WR: DeVonta Smith WR PHI",
-    "WR: empty",
+    "WR: Matthew Golden WR GB",
     "TE: Trey McBride TE ARI",
     "FLEX: Rhamondre Stevenson RB NE",
     "FLEX: Isaiah Likely TE NYG",
@@ -1173,12 +1177,12 @@
    "bench": [
     "Brian Thomas WR JAX",
     "Woody Marks RB HOU",
-    "Matthew Golden WR GB",
-    "Deshaun Watson QB CLE"
+    "Deshaun Watson QB CLE",
+    "DJ Moore WR BUF (Questionable)",
+    "Rashod Bateman WR BAL"
    ],
    "ir": [
-    "Jayden Reed WR GB (Out)",
-    "DJ Moore WR BUF (Out)"
+    "Jayden Reed WR GB (Doubtful)"
    ]
   },
   {
@@ -1188,36 +1192,37 @@
    "record": "0-2",
    "pts_for": 295.6,
    "pts_week": 0.0,
-   "faab_left": 145,
+   "faab_left": 140,
    "counts": {
+    "RB": 4,
     "WR": 5,
     "QB": 3,
     "TE": 3,
     "K": 1,
-    "RB": 3,
     "DEF": 1
    },
    "starters": [
     "QB: Lamar Jackson QB BAL",
     "RB: Breece Hall RB NYJ",
-    "RB: Tyler Allgeier RB ARI",
+    "RB: Emanuel Wilson RB SEA",
     "WR: Garrett Wilson WR NYJ",
     "WR: Xavier Worthy WR KC",
     "TE: George Kittle TE SF",
     "FLEX: Devaughn Vele WR NO",
     "FLEX: Pat Freiermuth TE PIT",
-    "SUPER_FLEX: Kyler Murray QB MIN (Out)",
+    "SUPER_FLEX: Kyler Murray QB MIN",
     "K: Chase McLaughlin K TB",
     "DEF: Buffalo Bills DEF BUF"
    ],
    "bench": [
     "Rome Odunze WR CHI",
+    "Tyler Allgeier RB ARI",
     "Greg Dulcich TE MIA",
     "Tyjae Spears RB TEN",
     "Jordan Addison WR MIN"
    ],
    "ir": [
-    "Jaxson Dart QB NYG (Out)"
+    "Jaxson Dart QB NYG (Doubtful)"
    ]
   },
   {
@@ -1252,7 +1257,7 @@
    "bench": [
     "Chris Rodriguez RB JAX",
     "Ladd McConkey WR LAC",
-    "Dallas Goedert TE PHI (Questionable)",
+    "Dallas Goedert TE PHI (Doubtful)",
     "T.J. Hockenson TE MIN",
     "Deebo Samuel WR SF"
    ],
@@ -1289,7 +1294,7 @@
    ],
    "bench": [
     "Justice Hill RB BAL",
-    "Tua Tagovailoa QB ATL (Out)",
+    "Tua Tagovailoa QB ATL",
     "Rachaad White RB WAS",
     "C.J. Stroud QB HOU",
     "Baltimore Ravens DEF BAL"
@@ -1303,11 +1308,11 @@
    "record": "0-2",
    "pts_for": 242.14,
    "pts_week": 0.0,
-   "faab_left": 145,
+   "faab_left": 143,
    "counts": {
     "RB": 5,
-    "TE": 2,
     "WR": 4,
+    "TE": 3,
     "K": 1,
     "QB": 4,
     "DEF": 1
@@ -1327,13 +1332,14 @@
    ],
    "bench": [
     "Chris Brooks RB GB",
-    "Caleb Douglas WR MIA (Questionable)",
+    "Keon Coleman WR BUF",
+    "Darren Waller TE CAR",
     "Malik Willis QB MIA",
     "Kayshon Boutte WR HOU"
    ],
    "ir": [
-    "RJ Harvey RB DEN (Out)",
-    "Sam Darnold QB SEA (Out)"
+    "RJ Harvey RB DEN (Questionable)",
+    "Sam Darnold QB SEA (Questionable)"
    ]
   },
   {
@@ -1354,7 +1360,7 @@
    },
    "starters": [
     "QB: Josh Allen QB BUF",
-    "RB: Brian Robinson RB ATL (Questionable)",
+    "RB: Brian Robinson RB ATL",
     "RB: Travis Etienne RB NO",
     "WR: Luther Burden WR CHI",
     "WR: Davante Adams WR LAR",

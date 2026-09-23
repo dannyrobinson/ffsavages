@@ -1,12 +1,12 @@
-# Sleeper sweep — Week 3 · Tue Sep 22, 2026 9:10 PM PT
+# Sleeper sweep — Week 3 · Wed Sep 23, 2026 7:08 AM PT
 
-Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
+Record 1-1 · FAAB $144 left of $150 · waiver priority 8 of 12 (ties only)
 
 ## Roster
-- RED   QB  Caleb Williams (CHI, IR) — Out · Hamstring · news Sep 22
-- GREEN QB  Geno Smith (NYJ, START) — Healthy, starting · news Sep 21
+- RED   QB  Caleb Williams (CHI, IR) — Doubtful · Hamstring · Strain · news Sep 22
+- GREEN QB  Geno Smith (NYJ, START) — Healthy, starting · news Sep 23
 - GREEN QB  Joe Burrow (CIN, START) — Healthy, starting · news Sep 21
-- AMBER RB  Aaron Jones (MIN, START) — Questionable · Knee · news Sep 21
+- GREEN RB  Aaron Jones (MIN, START) — Healthy, starting · news Sep 21
 - GREEN RB  Chase Brown (CIN, START) — Healthy, starting · news Sep 21
 - GREEN RB  Jaylen Warren (PIT, START) — Healthy, starting · news Sep 20
 - GREEN RB  MarShawn Lloyd (GB, BN) — Healthy, starting · news Sep 21
@@ -23,44 +23,43 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 
 ## Free-agent QBs who start for their NFL team
 - Jameis Winston (NYG) — Healthy, starting
-- Marcus Mariota (WAS) — Healthy, starting
 - Tyson Bagent (CHI) — Questionable · Concussion
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- RB  Emanuel Wilson (SEA) · 3,901,761 adds · RB2 · RB2 on the depth chart
-- WR  Adonai Mitchell (NYJ) · 2,668,376 adds · RWR2 · Healthy, starting
-- WR  Tre Tucker (LV) · 1,500,444 adds · LWR1 · Healthy, starting
-- TE  Zach Ertz (PHI) · 1,091,007 adds · TE2 · Healthy, starting
-- TE  Darren Waller (CAR) · 961,164 adds · TE1 · Healthy, starting
-- WR  Keon Coleman (BUF) · 882,036 adds · LWR3 · WR3 on the depth chart
-- WR  Denzel Boston (CLE) · 752,762 adds · LWR1 · Healthy, starting
-- RB  Tank Bigsby (PHI) · 746,403 adds · RB2 · RB2 on the depth chart
-- RB  Jonah Coleman (DEN) · 701,282 adds · RB3 · RB3 on the depth chart
-- QB  Marcus Mariota (WAS) · 580,632 adds · QB1 · Healthy, starting
-- TE  Terrance Ferguson (LAR) · 528,800 adds · TE1 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 456,171 adds · RWR2 · Healthy, starting
-- QB  Tyson Bagent (CHI) · 433,776 adds · QB1 · Questionable · Concussion
-- WR  Konata Mumpfield (LAR) · 308,835 adds · LWR4 · WR4 on the depth chart
-- WR  Tyquan Thornton (KC) · 287,021 adds · LWR3 · WR3 on the depth chart
-- RB  Alvin Kamara (NO) · 286,912 adds · RB2 · RB2 on the depth chart
-- WR  Malachi Fields (NYG) · 282,330 adds · RWR2 · Healthy, starting
-- WR  Rashod Bateman (BAL) · 179,926 adds · LWR2 · Healthy, starting
-- WR  Darnell Mooney (NYG) · 173,349 adds · SWR3 · WR3 on the depth chart
-- WR  Isaiah Williams (NYJ) · 153,384 adds · SWR3 · WR3 on the depth chart
+- WR  Adonai Mitchell (NYJ) · 3,369,312 adds · RWR2 · Healthy, starting
+- WR  Tre Tucker (LV) · 1,698,672 adds · LWR1 · Healthy, starting
+- TE  Zach Ertz (PHI) · 1,367,487 adds · TE2 · Healthy, starting
+- RB  Tank Bigsby (PHI) · 881,769 adds · RB2 · RB2 on the depth chart
+- RB  Jonah Coleman (DEN) · 766,788 adds · RB3 · RB3 on the depth chart
+- TE  Terrance Ferguson (LAR) · 686,208 adds · TE1 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 551,181 adds · RWR2 · Healthy, starting
+- QB  Tyson Bagent (CHI) · 477,456 adds · QB1 · Questionable · Concussion
+- RB  Alvin Kamara (NO) · 385,008 adds · RB2 · RB2 on the depth chart
+- WR  Tyquan Thornton (KC) · 355,775 adds · LWR3 · WR3 on the depth chart
+- WR  Konata Mumpfield (LAR) · 295,299 adds · LWR4 · WR4 on the depth chart
+- WR  Malachi Fields (NYG) · 273,530 adds · RWR2 · Healthy, starting
+- WR  Isaiah Williams (NYJ) · 204,096 adds · SWR3 · WR3 on the depth chart
+- WR  Malik Washington (MIA) · 177,920 adds · SWR1 · Healthy, starting
+- WR  Darnell Mooney (NYG) · 168,858 adds · SWR3 · WR3 on the depth chart
+- QB  Jameis Winston (NYG) · 164,210 adds · QB1 · Healthy, starting
+- WR  Darius Slayton (IND) · 139,128 adds · RWR5 · WR5 on the depth chart
+- RB  AJ Dillon (CAR) · 103,136 adds · RB2 · RB2 on the depth chart
+- WR  Roman Wilson (PIT) · 99,954 adds · SWR3 · WR3 on the depth chart
+- WR  Tutu Atwell (LAR) · 89,866 adds · RWR5 · WR5 on the depth chart
 
 ## League transactions, week 3
-- none yet
+- kwiksl: free_agent complete +['Rashod Bateman'] -[]
 
 ## Opponent: KUZ1 (0-2)
 - QB  Lamar Jackson (BAL) GREEN
 - RB  Breece Hall (NYJ) GREEN
-- RB  Tyler Allgeier (ARI) AMBER
+- RB  Emanuel Wilson (SEA) AMBER
 - WR  Garrett Wilson (NYJ) GREEN
 - WR  Xavier Worthy (KC) GREEN
 - TE  George Kittle (SF) GREEN
 - WR  Devaughn Vele (NO) GREEN
 - TE  Pat Freiermuth (PIT) GREEN
-- QB  Kyler Murray (MIN) RED
+- QB  Kyler Murray (MIN) GREEN
 - K   Chase McLaughlin (TB) GREEN
 - DEF Buffalo Bills (BUF) GREEN
 
@@ -69,14 +68,14 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - daviddhaliwal: $150 (priority 2)
 - wflemons33: $150 (priority 3)
 - smitty1060: $150 (priority 4)
-- HappyChappy18: $150 (priority 5)
-- EasyIP: $150 (priority 6)
-- kwiksl: $129 (priority 7)
-- MasonMafia: $130 (priority 8)
-- GK: $139 (priority 9)
-- jimmyd66: $145 (priority 10)
-- Robinsavages: $144 (priority 11)
-- KUZ1: $145 (priority 12)
+- EasyIP: $150 (priority 5)
+- kwiksl: $129 (priority 6)
+- MasonMafia: $130 (priority 7)
+- Robinsavages: $144 (priority 8)
+- HappyChappy18: $134 (priority 9)
+- GK: $128 (priority 10)
+- KUZ1: $140 (priority 11)
+- jimmyd66: $143 (priority 12)
 
 ## QB depth by team (buyers have 2)
 - MasonMafia: 2 — Jared Goff, Jalen Hurts
@@ -84,17 +83,17 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - EasyIP: 2 — Patrick Mahomes, Josh Allen
 - HappyChappy18: 3 — Drake Maye, Trevor Lawrence, Aaron Rodgers
 - paulhemsley: 3 — Jacoby Brissett, Matthew Stafford, Brock Purdy
-- GK: 3 — Jayden Daniels, Dak Prescott, Daniel Jones
 - Robinsavages: 3 — Caleb Williams, Geno Smith, Joe Burrow
 - kwiksl: 3 — Bo Nix, Tyler Shough, Deshaun Watson
 - KUZ1: 3 — Jaxson Dart, Lamar Jackson, Kyler Murray
 - smitty1060: 3 — Baker Mayfield, Tua Tagovailoa, C.J. Stroud
 - daviddhaliwal: 4 — Michael Penix, Kirk Cousins, Carson Wentz, Bryce Young
+- GK: 4 — Jayden Daniels, Marcus Mariota, Dak Prescott, Daniel Jones
 - jimmyd66: 4 — Sam Darnold, Drew Lock, Justin Herbert, Malik Willis
 
 ## Every team's roster (the trade view)
 
-### HappyChappy18 — 1-1, 373.2 PF, $150 FAAB · DEF1, K1, QB3, RB4, TE2, WR7
+### HappyChappy18 — 1-1, 373.2 PF, $134 FAAB · DEF1, K1, QB3, RB4, TE2, WR7
 - QB: Drake Maye QB NE
 - RB: Kyren Williams RB LAR
 - RB: D'Andre Swift RB CHI
@@ -106,13 +105,13 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - SUPER_FLEX: Trevor Lawrence QB JAX
 - K: Cameron Dicker K LAC
 - DEF: Los Angeles Rams DEF LAR
-- BN: Jonathon Brooks RB CAR (Questionable)
-- BN: De'Zhaun Stribling WR SF (IR)
-- BN: Michael Pittman WR PIT (Out)
-- BN: Nico Collins WR HOU (Out)
+- BN: Jonathon Brooks RB CAR (IR)
+- BN: Denzel Boston WR CLE
+- BN: Michael Pittman WR PIT (Questionable)
+- BN: Nico Collins WR HOU (Questionable)
 - BN: Aaron Rodgers QB PIT
 - IR: Ja'Kobi Lane WR BAL (IR)
-- IR: Alec Pierce WR IND (Out)
+- IR: Alec Pierce WR IND (Doubtful)
 
 ### paulhemsley — 1-1, 332.46 PF, $150 FAAB · DEF1, K1, QB3, RB3, TE2, WR7
 - QB: Brock Purdy QB SF
@@ -145,19 +144,19 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - SUPER_FLEX: Jared Goff QB DET
 - K: Evan McPherson K CIN
 - DEF: Tampa Bay Buccaneers DEF TB
-- BN: Brock Bowers TE LV (Out)
-- BN: Demarcus Robinson WR SF (Out)
+- BN: Brock Bowers TE LV (Questionable)
+- BN: Demarcus Robinson WR SF (Doubtful)
 - BN: Samaje Perine RB CIN
 - BN: Devin Singletary RB NYG
 - BN: Denver Broncos DEF DEN
 - IR: Zach Charbonnet RB SEA (PUP)
-- IR: Zay Flowers WR BAL (Out)
+- IR: Zay Flowers WR BAL (Questionable)
 
 ### daviddhaliwal — 2-0, 428.94 PF, $150 FAAB · DEF1, K1, QB4, RB7, TE1, WR4
 - QB: Bryce Young QB CAR
 - RB: Ashton Jeanty RB LV
 - RB: Kenneth Walker RB KC
-- WR: Puka Nacua WR LAR (Out)
+- WR: Puka Nacua WR LAR (Questionable)
 - WR: Amon-Ra St. Brown WR DET
 - TE: Tyler Warren TE IND
 - FLEX: Javonte Williams RB DAL
@@ -170,10 +169,10 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - BN: Jacory Croskey-Merritt RB WAS
 - BN: Kyle Monangai RB CHI
 - BN: Mike Evans WR SF (Questionable)
-- IR: Michael Penix QB ATL (Out)
+- IR: Michael Penix QB ATL
 - IR: Jordan Mason RB MIN (IR)
 
-### GK — 0-2, 347.56 PF, $139 FAAB · DEF1, K1, QB3, RB5, TE2, WR4
+### GK — 0-2, 347.56 PF, $128 FAAB · DEF1, K1, QB4, RB5, TE2, WR4
 - QB: Dak Prescott QB DAL
 - RB: Omarion Hampton RB LAC
 - RB: Jeremiyah Love RB ARI
@@ -187,9 +186,10 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - DEF: Green Bay Packers DEF GB
 - BN: Blake Corum RB LAR
 - BN: Kaelon Black RB SF
+- BN: Marcus Mariota QB WAS
 - BN: J.K. Dobbins RB DEN (Questionable)
 - BN: Michael Mayer TE LV
-- IR: Jayden Daniels QB WAS (Out)
+- IR: Jayden Daniels QB WAS (Doubtful)
 
 ### Robinsavages (Danny) — 1-1, 294.52 PF, $144 FAAB · DEF1, K1, QB3, RB5, TE2, WR5
 - QB: Joe Burrow QB CIN
@@ -199,7 +199,7 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - WR: Jaylen Waddle WR DEN
 - TE: Juwan Johnson TE NO
 - FLEX: Khalil Shakir WR BUF
-- FLEX: Aaron Jones RB MIN (Questionable)
+- FLEX: Aaron Jones RB MIN
 - SUPER_FLEX: Geno Smith QB NYJ
 - K: Ka'imi Fairbairn K HOU
 - DEF: Jacksonville Jaguars DEF JAX
@@ -207,15 +207,15 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - BN: Quinshon Judkins RB CLE
 - BN: Kyle Pitts TE ATL
 - BN: Quentin Johnston WR LAC
-- IR: Caleb Williams QB CHI (Out)
+- IR: Caleb Williams QB CHI (Doubtful)
 - IR: A.J. Brown WR NE (IR)
 
-### kwiksl — 2-0, 445.24 PF, $129 FAAB · DEF1, K1, QB3, RB4, TE2, WR5
+### kwiksl — 2-0, 445.24 PF, $129 FAAB · DEF1, K1, QB3, RB4, TE2, WR6
 - QB: Tyler Shough QB NO
 - RB: Jahmyr Gibbs RB DET
 - RB: Derrick Henry RB BAL
 - WR: DeVonta Smith WR PHI
-- WR: empty
+- WR: Matthew Golden WR GB
 - TE: Trey McBride TE ARI
 - FLEX: Rhamondre Stevenson RB NE
 - FLEX: Isaiah Likely TE NYG
@@ -224,28 +224,29 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - DEF: Seattle Seahawks DEF SEA
 - BN: Brian Thomas WR JAX
 - BN: Woody Marks RB HOU
-- BN: Matthew Golden WR GB
 - BN: Deshaun Watson QB CLE
-- IR: Jayden Reed WR GB (Out)
-- IR: DJ Moore WR BUF (Out)
+- BN: DJ Moore WR BUF (Questionable)
+- BN: Rashod Bateman WR BAL
+- IR: Jayden Reed WR GB (Doubtful)
 
-### KUZ1 — 0-2, 295.6 PF, $145 FAAB · DEF1, K1, QB3, RB3, TE3, WR5
+### KUZ1 — 0-2, 295.6 PF, $140 FAAB · DEF1, K1, QB3, RB4, TE3, WR5
 - QB: Lamar Jackson QB BAL
 - RB: Breece Hall RB NYJ
-- RB: Tyler Allgeier RB ARI
+- RB: Emanuel Wilson RB SEA
 - WR: Garrett Wilson WR NYJ
 - WR: Xavier Worthy WR KC
 - TE: George Kittle TE SF
 - FLEX: Devaughn Vele WR NO
 - FLEX: Pat Freiermuth TE PIT
-- SUPER_FLEX: Kyler Murray QB MIN (Out)
+- SUPER_FLEX: Kyler Murray QB MIN
 - K: Chase McLaughlin K TB
 - DEF: Buffalo Bills DEF BUF
 - BN: Rome Odunze WR CHI
+- BN: Tyler Allgeier RB ARI
 - BN: Greg Dulcich TE MIA
 - BN: Tyjae Spears RB TEN
 - BN: Jordan Addison WR MIN
-- IR: Jaxson Dart QB NYG (Out)
+- IR: Jaxson Dart QB NYG (Doubtful)
 
 ### wflemons33 — 2-0, 424.3 PF, $150 FAAB · DEF1, K1, QB2, RB4, TE3, WR5
 - QB: Jordan Love QB GB
@@ -261,7 +262,7 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - DEF: Philadelphia Eagles DEF PHI
 - BN: Chris Rodriguez RB JAX
 - BN: Ladd McConkey WR LAC
-- BN: Dallas Goedert TE PHI (Questionable)
+- BN: Dallas Goedert TE PHI (Doubtful)
 - BN: T.J. Hockenson TE MIN
 - BN: Deebo Samuel WR SF
 
@@ -278,12 +279,12 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - K: Cam Little K JAX
 - DEF: New England Patriots DEF NE
 - BN: Justice Hill RB BAL
-- BN: Tua Tagovailoa QB ATL (Out)
+- BN: Tua Tagovailoa QB ATL
 - BN: Rachaad White RB WAS
 - BN: C.J. Stroud QB HOU
 - BN: Baltimore Ravens DEF BAL
 
-### jimmyd66 — 0-2, 242.14 PF, $145 FAAB · DEF1, K1, QB4, RB5, TE2, WR4
+### jimmyd66 — 0-2, 242.14 PF, $143 FAAB · DEF1, K1, QB4, RB5, TE3, WR4
 - QB: Justin Herbert QB LAC
 - RB: Bijan Robinson RB ATL
 - RB: De'Von Achane RB MIA
@@ -296,15 +297,16 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - K: Jason Myers K SEA
 - DEF: Pittsburgh Steelers DEF PIT
 - BN: Chris Brooks RB GB
-- BN: Caleb Douglas WR MIA (Questionable)
+- BN: Keon Coleman WR BUF
+- BN: Darren Waller TE CAR
 - BN: Malik Willis QB MIA
 - BN: Kayshon Boutte WR HOU
-- IR: RJ Harvey RB DEN (Out)
-- IR: Sam Darnold QB SEA (Out)
+- IR: RJ Harvey RB DEN (Questionable)
+- IR: Sam Darnold QB SEA (Questionable)
 
 ### EasyIP — 1-1, 384.22 PF, $150 FAAB · DEF1, K1, QB2, RB7, TE1, WR6
 - QB: Josh Allen QB BUF
-- RB: Brian Robinson RB ATL (Questionable)
+- RB: Brian Robinson RB ATL
 - RB: Travis Etienne RB NO
 - WR: Luther Burden WR CHI
 - WR: Davante Adams WR LAR
