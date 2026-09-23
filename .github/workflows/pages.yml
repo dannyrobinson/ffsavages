@@ -3,13 +3,9 @@ name: Sweep Sleeper and publish the GM app
 on:
   push:
     branches: [main]
-  schedule:
-    # Pacific time is UTC-7 in season. 13:30 UTC = 6:30 AM PT. The committed sweep is only the offline
-    # fallback baked into the page; the Vercel app pulls Sleeper live and its advisor runs on its own.
-    # 15 minutes before each run of the "Robinsavages advisor" cloud routine (7 AM, 1 PM, 9 PM PT while PDT holds):
-    # the routine's sandbox cannot reach Sleeper or Vercel, so it reads data/context.json from this commit
-    - cron: "45 3,13,19 * * *"
   workflow_dispatch:
+  # Scheduled cron removed: the automated advisor/checker loop is killed. This workflow now only
+  # runs on a manual push or workflow_dispatch, to rebuild/redeploy the app on demand.
 
 permissions:
   contents: write

@@ -3,12 +3,6 @@
   "buildCommand": "python3 scripts/build.py --no-fetch",
   "outputDirectory": "site",
   "framework": null,
-  "crons": [
-    {
-      "path": "/api/check",
-      "schedule": "*/15 * * * *"
-    }
-  ],
   "functions": {
     "api/check.js": {
       "maxDuration": 600
