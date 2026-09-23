@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 3 · Tue Sep 22, 2026 7:18 PM PT
+# Sleeper sweep — Week 3 · Tue Sep 22, 2026 9:10 PM PT
 
 Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 
@@ -27,26 +27,26 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - Tyson Bagent (CHI) — Questionable · Concussion
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- RB  Emanuel Wilson (SEA) · 3,519,162 adds · RB2 · RB2 on the depth chart
-- WR  Adonai Mitchell (NYJ) · 2,340,504 adds · RWR2 · Healthy, starting
-- WR  Tre Tucker (LV) · 1,423,098 adds · LWR1 · Healthy, starting
-- TE  Zach Ertz (PHI) · 971,415 adds · TE2 · Healthy, starting
-- TE  Darren Waller (CAR) · 915,822 adds · TE1 · Healthy, starting
-- WR  Keon Coleman (BUF) · 805,356 adds · LWR3 · WR3 on the depth chart
-- RB  Tank Bigsby (PHI) · 704,060 adds · RB2 · RB2 on the depth chart
-- WR  Denzel Boston (CLE) · 693,094 adds · LWR1 · Healthy, starting
-- RB  Jonah Coleman (DEN) · 650,656 adds · RB3 · RB3 on the depth chart
-- QB  Marcus Mariota (WAS) · 524,048 adds · QB1 · Healthy, starting
-- TE  Terrance Ferguson (LAR) · 468,128 adds · TE1 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 415,710 adds · RWR2 · Healthy, starting
-- QB  Tyson Bagent (CHI) · 412,746 adds · QB1 · Questionable · Concussion
-- WR  Konata Mumpfield (LAR) · 317,457 adds · LWR4 · WR4 on the depth chart
-- WR  Malachi Fields (NYG) · 289,885 adds · RWR2 · Healthy, starting
-- WR  Tyquan Thornton (KC) · 270,977 adds · LWR3 · WR3 on the depth chart
-- RB  Alvin Kamara (NO) · 262,904 adds · RB2 · RB2 on the depth chart
-- WR  Darnell Mooney (NYG) · 177,066 adds · SWR3 · WR3 on the depth chart
-- WR  Rashod Bateman (BAL) · 167,942 adds · LWR2 · Healthy, starting
-- WR  Isaiah Williams (NYJ) · 128,532 adds · SWR3 · WR3 on the depth chart
+- RB  Emanuel Wilson (SEA) · 3,901,761 adds · RB2 · RB2 on the depth chart
+- WR  Adonai Mitchell (NYJ) · 2,668,376 adds · RWR2 · Healthy, starting
+- WR  Tre Tucker (LV) · 1,500,444 adds · LWR1 · Healthy, starting
+- TE  Zach Ertz (PHI) · 1,091,007 adds · TE2 · Healthy, starting
+- TE  Darren Waller (CAR) · 961,164 adds · TE1 · Healthy, starting
+- WR  Keon Coleman (BUF) · 882,036 adds · LWR3 · WR3 on the depth chart
+- WR  Denzel Boston (CLE) · 752,762 adds · LWR1 · Healthy, starting
+- RB  Tank Bigsby (PHI) · 746,403 adds · RB2 · RB2 on the depth chart
+- RB  Jonah Coleman (DEN) · 701,282 adds · RB3 · RB3 on the depth chart
+- QB  Marcus Mariota (WAS) · 580,632 adds · QB1 · Healthy, starting
+- TE  Terrance Ferguson (LAR) · 528,800 adds · TE1 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 456,171 adds · RWR2 · Healthy, starting
+- QB  Tyson Bagent (CHI) · 433,776 adds · QB1 · Questionable · Concussion
+- WR  Konata Mumpfield (LAR) · 308,835 adds · LWR4 · WR4 on the depth chart
+- WR  Tyquan Thornton (KC) · 287,021 adds · LWR3 · WR3 on the depth chart
+- RB  Alvin Kamara (NO) · 286,912 adds · RB2 · RB2 on the depth chart
+- WR  Malachi Fields (NYG) · 282,330 adds · RWR2 · Healthy, starting
+- WR  Rashod Bateman (BAL) · 179,926 adds · LWR2 · Healthy, starting
+- WR  Darnell Mooney (NYG) · 173,349 adds · SWR3 · WR3 on the depth chart
+- WR  Isaiah Williams (NYJ) · 153,384 adds · SWR3 · WR3 on the depth chart
 
 ## League transactions, week 3
 - none yet
@@ -107,12 +107,12 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - K: Cameron Dicker K LAC
 - DEF: Los Angeles Rams DEF LAR
 - BN: Jonathon Brooks RB CAR (Questionable)
+- BN: De'Zhaun Stribling WR SF (IR)
 - BN: Michael Pittman WR PIT (Out)
 - BN: Nico Collins WR HOU (Out)
-- BN: Alec Pierce WR IND (Out)
 - BN: Aaron Rodgers QB PIT
 - IR: Ja'Kobi Lane WR BAL (IR)
-- IR: De'Zhaun Stribling WR SF (IR)
+- IR: Alec Pierce WR IND (Out)
 
 ### paulhemsley — 1-1, 332.46 PF, $150 FAAB · DEF1, K1, QB3, RB3, TE2, WR7
 - QB: Brock Purdy QB SF

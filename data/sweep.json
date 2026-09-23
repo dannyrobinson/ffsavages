@@ -1,6 +1,6 @@
 {
- "generated": "Tue Sep 22, 2026 7:18 PM PT",
- "generated_ms": 1790129927365,
+ "generated": "Tue Sep 22, 2026 9:10 PM PT",
+ "generated_ms": 1790136602471,
  "season": "2026",
  "week": 3,
  "faab_total": 150,
@@ -373,7 +373,7 @@
    "depth": "RB2",
    "news": "Sep 22",
    "news_ms": 1790038855149,
-   "adds": 3519162
+   "adds": 3901761
   },
   {
    "id": "11625",
@@ -386,7 +386,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790085658581,
-   "adds": 2340504
+   "adds": 2668376
   },
   {
    "id": "10213",
@@ -399,7 +399,7 @@
    "depth": "LWR1",
    "news": "Sep 21",
    "news_ms": 1790012725186,
-   "adds": 1423098
+   "adds": 1500444
   },
   {
    "id": "1339",
@@ -412,7 +412,7 @@
    "depth": "TE2",
    "news": "Sep 22",
    "news_ms": 1790097961295,
-   "adds": 971415
+   "adds": 1091007
   },
   {
    "id": "2505",
@@ -425,7 +425,7 @@
    "depth": "TE1",
    "news": "Sep 22",
    "news_ms": 1790090458893,
-   "adds": 915822
+   "adds": 961164
   },
   {
    "id": "11637",
@@ -438,20 +438,7 @@
    "depth": "LWR3",
    "news": "Sep 22",
    "news_ms": 1790087458640,
-   "adds": 805356
-  },
-  {
-   "id": "9225",
-   "name": "Tank Bigsby",
-   "pos": "RB",
-   "team": "PHI",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 21",
-   "news_ms": 1790004604231,
-   "adds": 704060
+   "adds": 882036
   },
   {
    "id": "13346",
@@ -464,7 +451,20 @@
    "depth": "LWR1",
    "news": "Sep 21",
    "news_ms": 1790004004180,
-   "adds": 693094
+   "adds": 752762
+  },
+  {
+   "id": "9225",
+   "name": "Tank Bigsby",
+   "pos": "RB",
+   "team": "PHI",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 21",
+   "news_ms": 1790004604231,
+   "adds": 746403
   },
   {
    "id": "13345",
@@ -477,7 +477,7 @@
    "depth": "RB3",
    "news": "Sep 22",
    "news_ms": 1790103960498,
-   "adds": 650656
+   "adds": 701282
   },
   {
    "id": "2307",
@@ -490,7 +490,7 @@
    "depth": "QB1",
    "news": "Sep 22",
    "news_ms": 1790101860059,
-   "adds": 524048
+   "adds": 580632
   },
   {
    "id": "12487",
@@ -503,7 +503,7 @@
    "depth": "TE1",
    "news": "Sep 22",
    "news_ms": 1790086558453,
-   "adds": 468128
+   "adds": 528800
   },
   {
    "id": "9486",
@@ -516,7 +516,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790084758236,
-   "adds": 415710
+   "adds": 456171
   },
   {
    "id": "11256",
@@ -529,7 +529,7 @@
    "depth": "QB1",
    "news": "Sep 22",
    "news_ms": 1790102160016,
-   "adds": 412746
+   "adds": 433776
   },
   {
    "id": "12718",
@@ -542,20 +542,7 @@
    "depth": "LWR4",
    "news": "Sep 23",
    "news_ms": 1790121615739,
-   "adds": 317457
-  },
-  {
-   "id": "13285",
-   "name": "Malachi Fields",
-   "pos": "WR",
-   "team": "NYG",
-   "flag": "green",
-   "why": "Healthy, starting",
-   "injury": null,
-   "depth": "RWR2",
-   "news": "Sep 22",
-   "news_ms": 1790085658580,
-   "adds": 289885
+   "adds": 308835
   },
   {
    "id": "8188",
@@ -568,7 +555,7 @@
    "depth": "LWR3",
    "news": "Sep 22",
    "news_ms": 1790051155762,
-   "adds": 270977
+   "adds": 287021
   },
   {
    "id": "4035",
@@ -581,20 +568,20 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790020826589,
-   "adds": 262904
+   "adds": 286912
   },
   {
-   "id": "7090",
-   "name": "Darnell Mooney",
+   "id": "13285",
+   "name": "Malachi Fields",
    "pos": "WR",
    "team": "NYG",
-   "flag": "amber",
-   "why": "WR3 on the depth chart",
+   "flag": "green",
+   "why": "Healthy, starting",
    "injury": null,
-   "depth": "SWR3",
+   "depth": "RWR2",
    "news": "Sep 22",
-   "news_ms": 1790119811492,
-   "adds": 177066
+   "news_ms": 1790085658580,
+   "adds": 282330
   },
   {
    "id": "7571",
@@ -607,7 +594,20 @@
    "depth": "LWR2",
    "news": "Sep 21",
    "news_ms": 1790019025933,
-   "adds": 167942
+   "adds": 179926
+  },
+  {
+   "id": "7090",
+   "name": "Darnell Mooney",
+   "pos": "WR",
+   "team": "NYG",
+   "flag": "amber",
+   "why": "WR3 on the depth chart",
+   "injury": null,
+   "depth": "SWR3",
+   "news": "Sep 22",
+   "news_ms": 1790119811492,
+   "adds": 173349
   },
   {
    "id": "11608",
@@ -620,7 +620,7 @@
    "depth": "SWR3",
    "news": "Sep 21",
    "news_ms": 1790033453507,
-   "adds": 128532
+   "adds": 153384
   }
  ],
  "transactions": [],
@@ -930,14 +930,14 @@
    ],
    "bench": [
     "Jonathon Brooks RB CAR (Questionable)",
+    "De'Zhaun Stribling WR SF (IR)",
     "Michael Pittman WR PIT (Out)",
     "Nico Collins WR HOU (Out)",
-    "Alec Pierce WR IND (Out)",
     "Aaron Rodgers QB PIT"
    ],
    "ir": [
     "Ja'Kobi Lane WR BAL (IR)",
-    "De'Zhaun Stribling WR SF (IR)"
+    "Alec Pierce WR IND (Out)"
    ]
   },
   {
