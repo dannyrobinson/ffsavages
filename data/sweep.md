@@ -1,4 +1,4 @@
-# Sleeper sweep — Week 3 · Tue Sep 22, 2026 3:25 PM PT
+# Sleeper sweep — Week 3 · Tue Sep 22, 2026 7:18 PM PT
 
 Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 
@@ -22,29 +22,31 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 - GREEN DEF Jacksonville Jaguars (JAX, START) — Healthy, starting
 
 ## Free-agent QBs who start for their NFL team
+- Jameis Winston (NYG) — Healthy, starting
 - Marcus Mariota (WAS) — Healthy, starting
+- Tyson Bagent (CHI) — Questionable · Concussion
 
 ## Trending adds that are free agents in this league (48h Sleeper adds)
-- RB  Emanuel Wilson (SEA) · 2,930,445 adds · RB2 · RB2 on the depth chart
-- WR  Adonai Mitchell (NYJ) · 1,829,680 adds · RWR2 · Healthy, starting
-- WR  Tre Tucker (LV) · 1,332,786 adds · LWR1 · Healthy, starting
-- TE  Darren Waller (CAR) · 860,985 adds · TE1 · Healthy, starting
-- TE  Zach Ertz (PHI) · 775,629 adds · TE4 · TE4 on the depth chart
-- WR  Keon Coleman (BUF) · 699,804 adds · LWR3 · WR3 on the depth chart
-- RB  Tank Bigsby (PHI) · 656,705 adds · RB2 · RB2 on the depth chart
-- WR  Denzel Boston (CLE) · 604,778 adds · LWR1 · Healthy, starting
-- RB  Jonah Coleman (DEN) · 581,548 adds · RB3 · RB3 on the depth chart
-- QB  Marcus Mariota (WAS) · 482,600 adds · QB1 · Healthy, starting
-- QB  Tyson Bagent (CHI) · 406,014 adds · QB2 · Not the starter (QB2) · Questionable · Concussion
-- TE  Terrance Ferguson (LAR) · 374,504 adds · TE2 · Healthy, starting
-- WR  Dontayvion Wicks (PHI) · 356,742 adds · RWR2 · Healthy, starting
-- WR  Konata Mumpfield (LAR) · 337,536 adds · LWR2 · Healthy, starting
-- WR  Malachi Fields (NYG) · 307,940 adds · RWR2 · Healthy, starting
-- RB  Alvin Kamara (NO) · 226,808 adds · RB2 · RB2 on the depth chart
-- WR  Tyquan Thornton (KC) · 226,100 adds · LWR3 · WR3 on the depth chart
-- WR  Darnell Mooney (NYG) · 183,645 adds · SWR3 · WR3 on the depth chart
-- WR  Rashod Bateman (BAL) · 149,826 adds · LWR2 · Healthy, starting
-- WR  Tutu Atwell (LAR) · 100,380 adds · RWR3 · WR3 on the depth chart
+- RB  Emanuel Wilson (SEA) · 3,519,162 adds · RB2 · RB2 on the depth chart
+- WR  Adonai Mitchell (NYJ) · 2,340,504 adds · RWR2 · Healthy, starting
+- WR  Tre Tucker (LV) · 1,423,098 adds · LWR1 · Healthy, starting
+- TE  Zach Ertz (PHI) · 971,415 adds · TE2 · Healthy, starting
+- TE  Darren Waller (CAR) · 915,822 adds · TE1 · Healthy, starting
+- WR  Keon Coleman (BUF) · 805,356 adds · LWR3 · WR3 on the depth chart
+- RB  Tank Bigsby (PHI) · 704,060 adds · RB2 · RB2 on the depth chart
+- WR  Denzel Boston (CLE) · 693,094 adds · LWR1 · Healthy, starting
+- RB  Jonah Coleman (DEN) · 650,656 adds · RB3 · RB3 on the depth chart
+- QB  Marcus Mariota (WAS) · 524,048 adds · QB1 · Healthy, starting
+- TE  Terrance Ferguson (LAR) · 468,128 adds · TE1 · Healthy, starting
+- WR  Dontayvion Wicks (PHI) · 415,710 adds · RWR2 · Healthy, starting
+- QB  Tyson Bagent (CHI) · 412,746 adds · QB1 · Questionable · Concussion
+- WR  Konata Mumpfield (LAR) · 317,457 adds · LWR4 · WR4 on the depth chart
+- WR  Malachi Fields (NYG) · 289,885 adds · RWR2 · Healthy, starting
+- WR  Tyquan Thornton (KC) · 270,977 adds · LWR3 · WR3 on the depth chart
+- RB  Alvin Kamara (NO) · 262,904 adds · RB2 · RB2 on the depth chart
+- WR  Darnell Mooney (NYG) · 177,066 adds · SWR3 · WR3 on the depth chart
+- WR  Rashod Bateman (BAL) · 167,942 adds · LWR2 · Healthy, starting
+- WR  Isaiah Williams (NYJ) · 128,532 adds · SWR3 · WR3 on the depth chart
 
 ## League transactions, week 3
 - none yet
@@ -95,12 +97,12 @@ Record 1-1 · FAAB $144 left of $150 · waiver priority 11 of 12 (ties only)
 ### HappyChappy18 — 1-1, 373.2 PF, $150 FAAB · DEF1, K1, QB3, RB4, TE2, WR7
 - QB: Drake Maye QB NE
 - RB: Kyren Williams RB LAR
-- RB: Jadarian Price RB SEA (Questionable)
+- RB: D'Andre Swift RB CHI
 - WR: Justin Jefferson WR MIN
 - WR: Tee Higgins WR CIN
 - TE: Dalton Kincaid TE BUF
 - FLEX: Dalton Schultz TE HOU
-- FLEX: D'Andre Swift RB CHI
+- FLEX: Jadarian Price RB SEA (Questionable)
 - SUPER_FLEX: Trevor Lawrence QB JAX
 - K: Cameron Dicker K LAC
 - DEF: Los Angeles Rams DEF LAR

@@ -1,6 +1,6 @@
 {
- "generated": "Tue Sep 22, 2026 3:25 PM PT",
- "generated_ms": 1790115911093,
+ "generated": "Tue Sep 22, 2026 7:18 PM PT",
+ "generated_ms": 1790129927365,
  "season": "2026",
  "week": 3,
  "faab_total": 150,
@@ -92,7 +92,7 @@
    "flag": "red",
    "why": "Out \u00b7 Hamstring",
    "injury": "Out",
-   "depth": "QB1",
+   "depth": "QB3",
    "news": "Sep 22",
    "news_ms": 1790100660066,
    "slot": "IR",
@@ -325,6 +325,18 @@
  ],
  "fa_qbs": [
   {
+   "id": "2306",
+   "name": "Jameis Winston",
+   "pos": "QB",
+   "team": "NYG",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "QB1",
+   "news": "Sep 22",
+   "news_ms": 1790104260796
+  },
+  {
    "id": "2307",
    "name": "Marcus Mariota",
    "pos": "QB",
@@ -335,6 +347,18 @@
    "depth": "QB1",
    "news": "Sep 22",
    "news_ms": 1790101860059
+  },
+  {
+   "id": "11256",
+   "name": "Tyson Bagent",
+   "pos": "QB",
+   "team": "CHI",
+   "flag": "amber",
+   "why": "Questionable \u00b7 Concussion",
+   "injury": "Questionable",
+   "depth": "QB1",
+   "news": "Sep 22",
+   "news_ms": 1790102160016
   }
  ],
  "trending": [
@@ -349,7 +373,7 @@
    "depth": "RB2",
    "news": "Sep 22",
    "news_ms": 1790038855149,
-   "adds": 2930445
+   "adds": 3519162
   },
   {
    "id": "11625",
@@ -362,7 +386,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790085658581,
-   "adds": 1829680
+   "adds": 2340504
   },
   {
    "id": "10213",
@@ -375,7 +399,20 @@
    "depth": "LWR1",
    "news": "Sep 21",
    "news_ms": 1790012725186,
-   "adds": 1332786
+   "adds": 1423098
+  },
+  {
+   "id": "1339",
+   "name": "Zach Ertz",
+   "pos": "TE",
+   "team": "PHI",
+   "flag": "green",
+   "why": "Healthy, starting",
+   "injury": null,
+   "depth": "TE2",
+   "news": "Sep 22",
+   "news_ms": 1790097961295,
+   "adds": 971415
   },
   {
    "id": "2505",
@@ -388,20 +425,7 @@
    "depth": "TE1",
    "news": "Sep 22",
    "news_ms": 1790090458893,
-   "adds": 860985
-  },
-  {
-   "id": "1339",
-   "name": "Zach Ertz",
-   "pos": "TE",
-   "team": "PHI",
-   "flag": "amber",
-   "why": "TE4 on the depth chart",
-   "injury": null,
-   "depth": "TE4",
-   "news": "Sep 22",
-   "news_ms": 1790097961295,
-   "adds": 775629
+   "adds": 915822
   },
   {
    "id": "11637",
@@ -414,7 +438,7 @@
    "depth": "LWR3",
    "news": "Sep 22",
    "news_ms": 1790087458640,
-   "adds": 699804
+   "adds": 805356
   },
   {
    "id": "9225",
@@ -427,7 +451,7 @@
    "depth": "RB2",
    "news": "Sep 21",
    "news_ms": 1790004604231,
-   "adds": 656705
+   "adds": 704060
   },
   {
    "id": "13346",
@@ -440,7 +464,7 @@
    "depth": "LWR1",
    "news": "Sep 21",
    "news_ms": 1790004004180,
-   "adds": 604778
+   "adds": 693094
   },
   {
    "id": "13345",
@@ -453,7 +477,7 @@
    "depth": "RB3",
    "news": "Sep 22",
    "news_ms": 1790103960498,
-   "adds": 581548
+   "adds": 650656
   },
   {
    "id": "2307",
@@ -466,20 +490,7 @@
    "depth": "QB1",
    "news": "Sep 22",
    "news_ms": 1790101860059,
-   "adds": 482600
-  },
-  {
-   "id": "11256",
-   "name": "Tyson Bagent",
-   "pos": "QB",
-   "team": "CHI",
-   "flag": "red",
-   "why": "Not the starter (QB2) \u00b7 Questionable \u00b7 Concussion",
-   "injury": "Questionable",
-   "depth": "QB2",
-   "news": "Sep 22",
-   "news_ms": 1790102160016,
-   "adds": 406014
+   "adds": 524048
   },
   {
    "id": "12487",
@@ -489,10 +500,10 @@
    "flag": "green",
    "why": "Healthy, starting",
    "injury": null,
-   "depth": "TE2",
+   "depth": "TE1",
    "news": "Sep 22",
    "news_ms": 1790086558453,
-   "adds": 374504
+   "adds": 468128
   },
   {
    "id": "9486",
@@ -505,20 +516,33 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790084758236,
-   "adds": 356742
+   "adds": 415710
+  },
+  {
+   "id": "11256",
+   "name": "Tyson Bagent",
+   "pos": "QB",
+   "team": "CHI",
+   "flag": "amber",
+   "why": "Questionable \u00b7 Concussion",
+   "injury": "Questionable",
+   "depth": "QB1",
+   "news": "Sep 22",
+   "news_ms": 1790102160016,
+   "adds": 412746
   },
   {
    "id": "12718",
    "name": "Konata Mumpfield",
    "pos": "WR",
    "team": "LAR",
-   "flag": "green",
-   "why": "Healthy, starting",
+   "flag": "amber",
+   "why": "WR4 on the depth chart",
    "injury": null,
-   "depth": "LWR2",
-   "news": "Sep 21",
-   "news_ms": 1790032553475,
-   "adds": 337536
+   "depth": "LWR4",
+   "news": "Sep 23",
+   "news_ms": 1790121615739,
+   "adds": 317457
   },
   {
    "id": "13285",
@@ -531,20 +555,7 @@
    "depth": "RWR2",
    "news": "Sep 22",
    "news_ms": 1790085658580,
-   "adds": 307940
-  },
-  {
-   "id": "4035",
-   "name": "Alvin Kamara",
-   "pos": "RB",
-   "team": "NO",
-   "flag": "amber",
-   "why": "RB2 on the depth chart",
-   "injury": null,
-   "depth": "RB2",
-   "news": "Sep 21",
-   "news_ms": 1790020826589,
-   "adds": 226808
+   "adds": 289885
   },
   {
    "id": "8188",
@@ -557,7 +568,20 @@
    "depth": "LWR3",
    "news": "Sep 22",
    "news_ms": 1790051155762,
-   "adds": 226100
+   "adds": 270977
+  },
+  {
+   "id": "4035",
+   "name": "Alvin Kamara",
+   "pos": "RB",
+   "team": "NO",
+   "flag": "amber",
+   "why": "RB2 on the depth chart",
+   "injury": null,
+   "depth": "RB2",
+   "news": "Sep 21",
+   "news_ms": 1790020826589,
+   "adds": 262904
   },
   {
    "id": "7090",
@@ -569,8 +593,8 @@
    "injury": null,
    "depth": "SWR3",
    "news": "Sep 22",
-   "news_ms": 1790080259675,
-   "adds": 183645
+   "news_ms": 1790119811492,
+   "adds": 177066
   },
   {
    "id": "7571",
@@ -583,20 +607,20 @@
    "depth": "LWR2",
    "news": "Sep 21",
    "news_ms": 1790019025933,
-   "adds": 149826
+   "adds": 167942
   },
   {
-   "id": "7562",
-   "name": "Tutu Atwell",
+   "id": "11608",
+   "name": "Isaiah Williams",
    "pos": "WR",
-   "team": "LAR",
+   "team": "NYJ",
    "flag": "amber",
    "why": "WR3 on the depth chart",
    "injury": null,
-   "depth": "RWR3",
-   "news": "Sep 22",
-   "news_ms": 1790078759384,
-   "adds": 100380
+   "depth": "SWR3",
+   "news": "Sep 21",
+   "news_ms": 1790033453507,
+   "adds": 128532
   }
  ],
  "transactions": [],
@@ -894,12 +918,12 @@
    "starters": [
     "QB: Drake Maye QB NE",
     "RB: Kyren Williams RB LAR",
-    "RB: Jadarian Price RB SEA (Questionable)",
+    "RB: D'Andre Swift RB CHI",
     "WR: Justin Jefferson WR MIN",
     "WR: Tee Higgins WR CIN",
     "TE: Dalton Kincaid TE BUF",
     "FLEX: Dalton Schultz TE HOU",
-    "FLEX: D'Andre Swift RB CHI",
+    "FLEX: Jadarian Price RB SEA (Questionable)",
     "SUPER_FLEX: Trevor Lawrence QB JAX",
     "K: Cameron Dicker K LAC",
     "DEF: Los Angeles Rams DEF LAR"
